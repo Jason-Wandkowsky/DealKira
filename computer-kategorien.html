@@ -293,14 +293,17 @@
     <img src="20879_nobg (1).png" alt="DealKira Logo">
   </div>
 
-  <button class="menu-button"
-          id="menuButton"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-          aria-expanded="false">
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false">
+
     <span></span>
     <span></span>
     <span></span>
+
   </button>
 
   <div class="menu-panel" id="menuPanel">
@@ -339,7 +342,9 @@
 
 <section class="page-header">
 
-  <h1><span>Computer</span> entdecken</h1>
+  <h1>
+    <span>Computer</span> entdecken
+  </h1>
 
   <p>
     Finde Computer, Zubehör und Komponenten schnell und übersichtlich.
@@ -351,7 +356,7 @@
 <section class="categories">
 
   <!-- 1. FERTIGE COMPUTER -->
-  <a href="#" class="category-card">
+  <a href="fertige-computer.html" class="category-card">
 
     <div class="category-icon">🖥️</div>
 
@@ -365,7 +370,7 @@
 
 
   <!-- 2. BILDSCHIRME -->
-  <a href="#" class="category-card">
+  <a href="bildschirme.html" class="category-card">
 
     <div class="category-icon">🖥️</div>
 
@@ -379,7 +384,7 @@
 
 
   <!-- 3. MÄUSE -->
-  <a href="#" class="category-card">
+  <a href="maeuse.html" class="category-card">
 
     <div class="category-icon">🖱️</div>
 
@@ -393,7 +398,7 @@
 
 
   <!-- 4. TASTATUREN -->
-  <a href="#" class="category-card">
+  <a href="tastaturen.html" class="category-card">
 
     <div class="category-icon">⌨️</div>
 
@@ -407,7 +412,7 @@
 
 
   <!-- 5. COMPUTER-ZUBEHÖR -->
-  <a href="#" class="category-card">
+  <a href="computer-zubehoer.html" class="category-card">
 
     <div class="category-icon">🔌</div>
 
@@ -449,57 +454,64 @@
 
 <script>
 
-  function toggleMenu() {
+function toggleMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
 
-    const isOpen = menu.classList.toggle("open");
+  const isOpen = menu.classList.toggle("open");
 
-    button.classList.toggle("active");
+  button.classList.toggle("active");
 
-    button.setAttribute("aria-expanded", isOpen);
+  button.setAttribute("aria-expanded", isOpen);
+
+}
+
+
+function closeMenu() {
+
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
+
+  menu.classList.remove("open");
+
+  button.classList.remove("active");
+
+  button.setAttribute("aria-expanded", "false");
+
+}
+
+
+document.addEventListener("click", function(event) {
+
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
+
+  if (
+    !menu.contains(event.target) &&
+    !button.contains(event.target)
+  ) {
+
+    closeMenu();
 
   }
 
+});
 
-  function closeMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+document.addEventListener("keydown", function(event) {
 
-    menu.classList.remove("open");
-    button.classList.remove("active");
+  if (event.key === "Escape") {
 
-    button.setAttribute("aria-expanded", "false");
+    closeMenu();
 
   }
 
-
-  document.addEventListener("click", function(event) {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    if (
-      !menu.contains(event.target) &&
-      !button.contains(event.target)
-    ) {
-      closeMenu();
-    }
-
-  });
-
-
-  document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-      closeMenu();
-    }
-
-  });
+});
 
 </script>
 
 </body>
 </html>
+
+
