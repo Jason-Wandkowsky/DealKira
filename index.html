@@ -6,7 +6,10 @@
 
     <title>DealKira – Deals & Preise vergleichen</title>
 
+    <meta name="description" content="DealKira – Produkte entdecken, Preise vergleichen und interessante Angebote finden.">
+
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,10 +17,12 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #f5f5f5;
             color: #222;
         }
+
+        /* HEADER */
 
         header {
             background: #111;
@@ -30,7 +35,8 @@
 
         .logo {
             font-size: 28px;
-            font-weight: bold;
+            font-weight: 800;
+            letter-spacing: -1px;
         }
 
         .logo span {
@@ -42,22 +48,26 @@
             text-decoration: none;
             margin-left: 25px;
             font-size: 15px;
+            transition: 0.2s;
         }
 
         nav a:hover {
             color: #ffd000;
         }
 
+        /* HERO */
+
         .hero {
             background: #111;
             color: white;
             text-align: center;
-            padding: 70px 20px 80px;
+            padding: 75px 20px 85px;
         }
 
         .hero h1 {
-            font-size: 46px;
-            margin-bottom: 15px;
+            font-size: 48px;
+            line-height: 1.1;
+            margin-bottom: 18px;
         }
 
         .hero h1 span {
@@ -67,43 +77,48 @@
         .hero p {
             color: #ccc;
             font-size: 18px;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
         .search-box {
-            max-width: 650px;
+            max-width: 680px;
             margin: auto;
             display: flex;
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
         }
 
         .search-box input {
             flex: 1;
             border: none;
-            padding: 17px;
+            padding: 18px;
             font-size: 16px;
             outline: none;
+            min-width: 0;
         }
 
         .search-box button {
             border: none;
             background: #ffd000;
-            padding: 0 25px;
+            padding: 0 28px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
+            transition: 0.2s;
         }
 
         .search-box button:hover {
             background: #e6bb00;
         }
 
+        /* CONTAINER */
+
         .container {
             max-width: 1200px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 55px 20px;
         }
 
         .section-title {
@@ -111,79 +126,117 @@
             margin-bottom: 25px;
         }
 
+        /* CATEGORIES */
+
         .categories {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 18px;
-            margin-bottom: 60px;
+            margin-bottom: 65px;
         }
 
         .category {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
+            padding: 28px 20px;
+            border-radius: 12px;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             transition: 0.2s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            border: 1px solid #eee;
         }
 
         .category:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+            border-color: #ffd000;
         }
+
+        /* PRODUCTS */
 
         .products {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 22px;
         }
 
         .product {
+            position: relative;
             background: white;
-            border-radius: 10px;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: 0.2s;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.25s;
+            border: 1px solid #eee;
         }
 
         .product:hover {
-            transform: translateY(-3px);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.14);
         }
 
+        /* DEAL BADGE */
+
+        .deal-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 2;
+            background: #ffd000;
+            color: #111;
+            padding: 7px 11px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* PRODUCT IMAGE */
+
         .product-image {
-            height: 180px;
-            background: #e9e9e9;
+            height: 200px;
+            background: linear-gradient(135deg, #eeeeee, #dedede);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #888;
-            font-size: 45px;
+            color: #777;
+            font-size: 65px;
         }
 
+        /* PRODUCT CONTENT */
+
         .product-content {
-            padding: 18px;
+            padding: 20px;
         }
 
         .product h3 {
-            font-size: 17px;
-            margin-bottom: 10px;
-            min-height: 40px;
+            font-size: 18px;
+            line-height: 1.3;
+            margin-bottom: 9px;
+            min-height: 47px;
         }
 
         .category-name {
-            color: #777;
-            font-size: 13px;
-            margin-bottom: 12px;
+            display: inline-block;
+            color: #666;
+            background: #f1f1f1;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 16px;
         }
 
         .price {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
-            margin-bottom: 15px;
+            color: #444;
+            margin-bottom: 17px;
+            min-height: 18px;
         }
+
+        /* BUTTON */
 
         .amazon-button {
             display: block;
@@ -191,91 +244,174 @@
             background: #ffd000;
             color: #111;
             text-decoration: none;
-            padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
+            padding: 13px;
+            border-radius: 7px;
+            font-weight: 800;
+            font-size: 14px;
+            transition: 0.2s;
         }
 
         .amazon-button:hover {
             background: #e6bb00;
+            transform: scale(1.02);
         }
+
+        /* SEARCH RESULTS */
 
         #resultsSection {
             display: none;
-            margin-bottom: 60px;
+            margin-bottom: 65px;
         }
 
         #results {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 22px;
         }
 
         #noResults {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
+            padding: 40px 25px;
+            border-radius: 12px;
             text-align: center;
             color: #666;
             grid-column: 1 / -1;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
         }
+
+        #noResults h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
 
         footer {
             background: #111;
-            color: #aaa;
+            color: #999;
             text-align: center;
-            padding: 30px 20px;
+            padding: 35px 20px;
             margin-top: 30px;
+            font-size: 14px;
         }
 
-        @media (max-width: 900px) {
+        /* TABLET */
+
+        @media (max-width: 1000px) {
 
             .products,
             #results {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .categories {
                 grid-template-columns: repeat(2, 1fr);
             }
+
         }
 
-        @media (max-width: 600px) {
+        /* MOBILE */
+
+        @media (max-width: 700px) {
 
             header {
                 flex-direction: column;
                 gap: 15px;
+                padding: 18px 20px;
             }
 
             nav a {
                 margin: 0 8px;
             }
 
+            .hero {
+                padding: 55px 18px 65px;
+            }
+
             .hero h1 {
-                font-size: 34px;
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                line-height: 1.5;
             }
 
             .search-box {
                 flex-direction: column;
+                border-radius: 9px;
+            }
+
+            .search-box input {
+                padding: 16px;
             }
 
             .search-box button {
                 padding: 15px;
             }
 
+            .container {
+                padding: 40px 15px;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+
+            .products,
+            #results {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+
+            .product-image {
+                height: 160px;
+                font-size: 52px;
+            }
+
+            .product-content {
+                padding: 15px;
+            }
+
+            .product h3 {
+                font-size: 16px;
+            }
+
+            .amazon-button {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+
+        }
+
+        @media (max-width: 450px) {
+
             .products,
             #results {
                 grid-template-columns: 1fr;
             }
 
-            .categories {
-                grid-template-columns: 1fr 1fr;
+            .product-image {
+                height: 190px;
             }
+
+            .categories {
+                gap: 10px;
+            }
+
+            .category {
+                padding: 22px 10px;
+                font-size: 16px;
+            }
+
         }
+
     </style>
+
 </head>
 
 <body>
+
 
 <header>
 
@@ -386,6 +522,10 @@
 
             <div class="product">
 
+                <div class="deal-badge">
+                    Top Deal
+                </div>
+
                 <div class="product-image">
                     🎮
                 </div>
@@ -421,6 +561,10 @@
             <!-- SAMSUNG -->
 
             <div class="product">
+
+                <div class="deal-badge">
+                    Top Deal
+                </div>
 
                 <div class="product-image">
                     📱
@@ -458,6 +602,10 @@
 
             <div class="product">
 
+                <div class="deal-badge">
+                    Top Deal
+                </div>
+
                 <div class="product-image">
                     📱
                 </div>
@@ -494,6 +642,10 @@
 
             <div class="product">
 
+                <div class="deal-badge">
+                    Top Deal
+                </div>
+
                 <div class="product-image">
                     🔋
                 </div>
@@ -529,6 +681,10 @@
             <!-- MONITOR -->
 
             <div class="product">
+
+                <div class="deal-badge">
+                    Top Deal
+                </div>
 
                 <div class="product-image">
                     🖥️
@@ -698,6 +854,10 @@
 
                 <div class="product">
 
+                    <div class="deal-badge">
+                        Deal
+                    </div>
+
                     <div class="product-image">
                         ${product.emoji}
                     </div>
@@ -751,6 +911,7 @@
     }
 
 </script>
+
 
 </body>
 </html>
