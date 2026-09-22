@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DealKira – Deals & Preise vergleichen</title>
 
     <style>
@@ -159,7 +160,7 @@
             align-items: center;
             justify-content: center;
             color: #888;
-            font-size: 15px;
+            font-size: 45px;
         }
 
         .product-content {
@@ -169,6 +170,7 @@
         .product h3 {
             font-size: 17px;
             margin-bottom: 10px;
+            min-height: 40px;
         }
 
         .category-name {
@@ -178,7 +180,7 @@
         }
 
         .price {
-            font-size: 22px;
+            font-size: 15px;
             font-weight: bold;
             margin-bottom: 15px;
         }
@@ -203,12 +205,19 @@
             margin-bottom: 60px;
         }
 
+        #results {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
         #noResults {
             background: white;
             padding: 30px;
             border-radius: 10px;
             text-align: center;
             color: #666;
+            grid-column: 1 / -1;
         }
 
         footer {
@@ -220,7 +229,9 @@
         }
 
         @media (max-width: 900px) {
-            .products {
+
+            .products,
+            #results {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -230,6 +241,7 @@
         }
 
         @media (max-width: 600px) {
+
             header {
                 flex-direction: column;
                 gap: 15px;
@@ -251,7 +263,8 @@
                 padding: 15px;
             }
 
-            .products {
+            .products,
+            #results {
                 grid-template-columns: 1fr;
             }
 
@@ -265,24 +278,32 @@
 <body>
 
 <header>
-    <div class="logo">Deal<span>Kira</span></div>
+
+    <div class="logo">
+        Deal<span>Kira</span>
+    </div>
 
     <nav>
         <a href="#">Startseite</a>
         <a href="#deals">Deals</a>
         <a href="#kategorien">Kategorien</a>
     </nav>
+
 </header>
 
 
 <section class="hero">
-    <h1>Finde <span>bessere Deals.</span></h1>
+
+    <h1>
+        Finde <span>bessere Deals.</span>
+    </h1>
 
     <p>
         Produkte entdecken, Preise vergleichen und Angebote finden.
     </p>
 
     <div class="search-box">
+
         <input
             type="text"
             id="searchInput"
@@ -293,32 +314,47 @@
         <button onclick="searchProduct()">
             Suchen
         </button>
+
     </div>
+
 </section>
 
 
 <div class="container">
 
+
+    <!-- KATEGORIEN -->
+
     <section id="kategorien">
-        <h2 class="section-title">Kategorien</h2>
+
+        <h2 class="section-title">
+            Kategorien
+        </h2>
 
         <div class="categories">
-            <div class="category" onclick="searchCategory('Elektronik')">
+
+            <div class="category"
+                 onclick="searchCategory('Elektronik')">
                 📱 Elektronik
             </div>
 
-            <div class="category" onclick="searchCategory('Computer')">
+            <div class="category"
+                 onclick="searchCategory('Computer')">
                 💻 Computer
             </div>
 
-            <div class="category" onclick="searchCategory('Gaming')">
+            <div class="category"
+                 onclick="searchCategory('Gaming')">
                 🎮 Gaming
             </div>
 
-            <div class="category" onclick="searchCategory('Haushalt')">
+            <div class="category"
+                 onclick="searchCategory('Haushalt')">
                 🏠 Haushalt
             </div>
+
         </div>
+
     </section>
 
 
@@ -330,7 +366,7 @@
             Suchergebnisse
         </h2>
 
-        <div class="products" id="results"></div>
+        <div id="results"></div>
 
     </section>
 
@@ -340,101 +376,191 @@
     <section id="deals">
 
         <h2 class="section-title">
-            Top Deals
+            🔥 Top Deals
         </h2>
 
         <div class="products">
 
+
+            <!-- PS5 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    Produktbild
+                    🎮
                 </div>
 
                 <div class="product-content">
-                    <h3>Beispielprodukt</h3>
 
-                    <div class="category-name">
-                        Elektronik
-                    </div>
-
-                    <div class="price">
-                        99,99 €
-                    </div>
-
-                    <a href="#" class="amazon-button">
-                        Bei Amazon ansehen
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <div class="product-image">
-                    Produktbild
-                </div>
-
-                <div class="product-content">
-                    <h3>Beispielprodukt</h3>
-
-                    <div class="category-name">
-                        Computer
-                    </div>
-
-                    <div class="price">
-                        149,99 €
-                    </div>
-
-                    <a href="#" class="amazon-button">
-                        Bei Amazon ansehen
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <div class="product-image">
-                    Produktbild
-                </div>
-
-                <div class="product-content">
-                    <h3>Beispielprodukt</h3>
+                    <h3>
+                        PlayStation 5
+                    </h3>
 
                     <div class="category-name">
                         Gaming
                     </div>
 
                     <div class="price">
-                        199,99 €
+                        Preis auf Amazon prüfen
                     </div>
 
-                    <a href="#" class="amazon-button">
+                    <a
+                        href="https://amzn.to/4yW9vEp"
+                        class="amazon-button"
+                        target="_blank"
+                        rel="nofollow sponsored"
+                    >
                         Bei Amazon ansehen
                     </a>
+
                 </div>
+
             </div>
 
 
+            <!-- SAMSUNG -->
+
             <div class="product">
+
                 <div class="product-image">
-                    Produktbild
+                    📱
                 </div>
 
                 <div class="product-content">
-                    <h3>Beispielprodukt</h3>
+
+                    <h3>
+                        Samsung Galaxy S26 Ultra
+                    </h3>
 
                     <div class="category-name">
-                        Haushalt
+                        Elektronik
                     </div>
 
                     <div class="price">
-                        249,99 €
+                        Preis auf Amazon prüfen
                     </div>
 
-                    <a href="#" class="amazon-button">
+                    <a
+                        href="https://amzn.to/4yL6uGH"
+                        class="amazon-button"
+                        target="_blank"
+                        rel="nofollow sponsored"
+                    >
                         Bei Amazon ansehen
                     </a>
+
                 </div>
+
             </div>
+
+
+            <!-- IPHONE -->
+
+            <div class="product">
+
+                <div class="product-image">
+                    📱
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Apple iPhone 17
+                    </h3>
+
+                    <div class="category-name">
+                        Elektronik
+                    </div>
+
+                    <div class="price">
+                        Preis auf Amazon prüfen
+                    </div>
+
+                    <a
+                        href="https://amzn.to/3VsXwj3"
+                        class="amazon-button"
+                        target="_blank"
+                        rel="nofollow sponsored"
+                    >
+                        Bei Amazon ansehen
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- POWERBANK -->
+
+            <div class="product">
+
+                <div class="product-image">
+                    🔋
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Powerbank
+                    </h3>
+
+                    <div class="category-name">
+                        Elektronik
+                    </div>
+
+                    <div class="price">
+                        Preis auf Amazon prüfen
+                    </div>
+
+                    <a
+                        href="https://amzn.to/4yJVCJc"
+                        class="amazon-button"
+                        target="_blank"
+                        rel="nofollow sponsored"
+                    >
+                        Bei Amazon ansehen
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MONITOR -->
+
+            <div class="product">
+
+                <div class="product-image">
+                    🖥️
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        27-Zoll-Monitor
+                    </h3>
+
+                    <div class="category-name">
+                        Computer
+                    </div>
+
+                    <div class="price">
+                        Preis auf Amazon prüfen
+                    </div>
+
+                    <a
+                        href="https://amzn.to/4rq0uRq"
+                        class="amazon-button"
+                        target="_blank"
+                        rel="nofollow sponsored"
+                    >
+                        Bei Amazon ansehen
+                    </a>
+
+                </div>
+
+            </div>
+
 
         </div>
 
@@ -444,7 +570,9 @@
 
 
 <footer>
+
     © 2026 DealKira – Preise vergleichen & Deals finden
+
 </footer>
 
 
@@ -453,51 +581,38 @@
     const products = [
 
         {
+            name: "PlayStation 5",
+            category: "Gaming",
+            emoji: "🎮",
+            url: "https://amzn.to/4yW9vEp"
+        },
+
+        {
             name: "Samsung Galaxy S26 Ultra",
             category: "Elektronik",
-            price: "1.199,00 €"
+            emoji: "📱",
+            url: "https://amzn.to/4yL6uGH"
         },
 
         {
-            name: "Gaming Monitor 27 Zoll",
-            category: "Gaming",
-            price: "199,99 €"
-        },
-
-        {
-            name: "Gaming Tastatur",
-            category: "Computer",
-            price: "59,99 €"
-        },
-
-        {
-            name: "Kabellose Gaming Maus",
-            category: "Gaming",
-            price: "39,99 €"
-        },
-
-        {
-            name: "Bluetooth Kopfhörer",
+            name: "Apple iPhone 17",
             category: "Elektronik",
-            price: "79,99 €"
+            emoji: "📱",
+            url: "https://amzn.to/3VsXwj3"
         },
 
         {
-            name: "Gaming PC",
+            name: "Powerbank",
+            category: "Elektronik",
+            emoji: "🔋",
+            url: "https://amzn.to/4yJVCJc"
+        },
+
+        {
+            name: "27-Zoll-Monitor",
             category: "Computer",
-            price: "899,99 €"
-        },
-
-        {
-            name: "Waschmaschine",
-            category: "Haushalt",
-            price: "499,99 €"
-        },
-
-        {
-            name: "Staubsauger",
-            category: "Haushalt",
-            price: "129,99 €"
+            emoji: "🖥️",
+            url: "https://amzn.to/4rq0uRq"
         }
 
     ];
@@ -505,15 +620,20 @@
 
     function searchProduct() {
 
-        const input = document.getElementById("searchInput");
+        const input =
+            document.getElementById("searchInput");
 
-        const query = input.value.trim().toLowerCase();
+        const query =
+            input.value.trim().toLowerCase();
 
-        const section = document.getElementById("resultsSection");
+        const section =
+            document.getElementById("resultsSection");
 
-        const resultsContainer = document.getElementById("results");
+        const resultsContainer =
+            document.getElementById("results");
 
-        const title = document.getElementById("resultsTitle");
+        const title =
+            document.getElementById("resultsTitle");
 
 
         if (query === "") {
@@ -521,45 +641,65 @@
             section.style.display = "none";
 
             return;
+
         }
 
 
-        const matches = products.filter(product => {
+        const matches =
+            products.filter(product => {
 
-            return (
-                product.name.toLowerCase().includes(query) ||
-                product.category.toLowerCase().includes(query)
-            );
+                return (
+                    product.name
+                        .toLowerCase()
+                        .includes(query)
+                    ||
+                    product.category
+                        .toLowerCase()
+                        .includes(query)
+                );
 
-        });
+            });
 
 
         section.style.display = "block";
 
+
         title.textContent =
-            'Suchergebnisse für „' + input.value.trim() + '“';
+            'Suchergebnisse für „' +
+            input.value.trim() +
+            '“';
 
 
         if (matches.length === 0) {
 
             resultsContainer.innerHTML = `
+
                 <div id="noResults">
-                    <h3>Keine Produkte gefunden.</h3>
+
+                    <h3>
+                        Keine Produkte gefunden.
+                    </h3>
+
                     <p>
                         Versuch es zum Beispiel mit
-                        „Gaming“, „Samsung“, „Computer“ oder „Haushalt“.
+                        „PS5“, „Samsung“, „iPhone“,
+                        „Powerbank“, „Monitor“ oder
+                        „Gaming“.
                     </p>
+
                 </div>
+
             `;
 
         } else {
 
-            resultsContainer.innerHTML = matches.map(product => `
+            resultsContainer.innerHTML =
+                matches.map(product => `
 
                 <div class="product">
 
                     <div class="product-image">
-                        Produktbild
+                        ${product.emoji}
                     </div>
 
                     <div class="product-content">
@@ -573,10 +713,15 @@
                         </div>
 
                         <div class="price">
-                            ${product.price}
+                            Preis auf Amazon prüfen
                         </div>
 
-                        <a href="#" class="amazon-button">
+                        <a
+                            href="${product.url}"
+                            class="amazon-button"
+                            target="_blank"
+                            rel="nofollow sponsored"
+                        >
                             Bei Amazon ansehen
                         </a>
 
@@ -598,7 +743,8 @@
 
     function searchCategory(category) {
 
-        document.getElementById("searchInput").value = category;
+        document.getElementById("searchInput").value =
+            category;
 
         searchProduct();
 
