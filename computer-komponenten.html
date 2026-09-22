@@ -19,7 +19,6 @@
       line-height: 1.5;
     }
 
-    /* HEADER */
     header {
       height: 72px;
       background: #111;
@@ -33,7 +32,6 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
 
-    /* LOGO */
     .logo {
       width: 220px;
       height: 55px;
@@ -50,7 +48,6 @@
       display: block;
     }
 
-    /* HAMBURGER */
     .menu-button {
       width: 48px;
       height: 48px;
@@ -69,8 +66,8 @@
       width: 23px;
       height: 3px;
       background: #ffd400;
-      border-radius: 3px;
-      transition: 0.2s;
+      border-radius: 2px;
+      transition: 0.25s;
     }
 
     .menu-button:hover {
@@ -90,7 +87,6 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* MENÜ */
     .menu-panel {
       position: absolute;
       top: 82px;
@@ -100,8 +96,7 @@
       border: 1px solid #333;
       border-radius: 14px;
       padding: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -142,68 +137,92 @@
       margin: 8px 5px;
     }
 
-    /* ZURÜCK-PFEIL */
-    .back-button {
-      padding: 18px 6% 0;
+    .page-header {
+      background: linear-gradient(135deg, #111, #222);
+      color: white;
+      padding: 70px 6%;
+      text-align: center;
     }
 
-    .back-button a {
-      color: #ffd400;
-      text-decoration: none;
+    .page-header h1 {
       font-size: 42px;
-      font-weight: 300;
-      line-height: 1;
-      display: inline-block;
+      margin-bottom: 12px;
     }
 
-    .back-button a:hover {
-      opacity: .7;
+    .page-header h1 span {
+      color: #ffd400;
     }
 
-    /* INHALT */
-    main {
-      padding: 30px 6% 60px;
+    .page-header p {
+      color: #ccc;
+      font-size: 18px;
     }
 
-    h1 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      color: #666;
-      margin-bottom: 30px;
-    }
-
-    /* KOMPONENTEN */
     .categories {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 6%;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      max-width: 900px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
 
-    .category {
+    .category-card {
       background: white;
-      border-radius: 14px;
-      padding: 25px;
+      border-radius: 16px;
+      padding: 35px 25px;
+      text-align: center;
       text-decoration: none;
       color: #111;
-      font-size: 19px;
-      font-weight: 700;
-      border: 1px solid #e5e5e5;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
       transition: 0.2s;
     }
 
-    .category:hover {
-      transform: translateY(-2px);
-      border-color: #ffd400;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.13);
     }
 
-    /* TABLET */
-    @media(max-width:800px) {
+    .category-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .category-card h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .category-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 30px;
+    }
+
+    footer strong {
+      color: #ffd400;
+    }
+
+    footer p {
+      margin-top: 6px;
+      color: #aaa;
+    }
+
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+      }
+    }
+
+    @media (max-width: 800px) {
       header {
         padding: 0 5%;
       }
@@ -220,18 +239,12 @@
         right: 5%;
       }
 
-      main {
-        padding-left: 5%;
-        padding-right: 5%;
-      }
-
-      .categories {
-        grid-template-columns: 1fr;
+      .page-header h1 {
+        font-size: 34px;
       }
     }
 
-    /* HANDY */
-    @media(max-width:550px) {
+    @media (max-width: 550px) {
       header {
         height: 68px;
         padding: 0 5%;
@@ -257,21 +270,16 @@
         width: 260px;
       }
 
-      .back-button {
-        padding: 16px 5% 0;
+      .page-header {
+        padding: 55px 5%;
       }
 
-      main {
-        padding: 25px 5% 50px;
+      .page-header h1 {
+        font-size: 30px;
       }
 
-      h1 {
-        font-size: 28px;
-      }
-
-      .category {
-        padding: 22px;
-        font-size: 18px;
+      .page-header p {
+        font-size: 16px;
       }
     }
   </style>
@@ -279,151 +287,275 @@
 
 <body>
 
-  <header>
+<header>
 
-    <a href="index.html" class="logo">
-      <img src="logo.png" alt="DealKira">
-    </a>
-
-    <button
-      class="menu-button"
-      id="menuButton"
-      onclick="toggleMenu()"
-      aria-label="Menü öffnen"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <div class="menu-panel" id="menuPanel">
-
-      <a href="index.html">
-        <span class="menu-icon">🏠</span>
-        Startseite
-      </a>
-
-      <a href="deals.html">
-        <span class="menu-icon">🔥</span>
-        Deals
-      </a>
-
-      <a href="kategorien.html">
-        <span class="menu-icon">📂</span>
-        Kategorien
-      </a>
-
-      <a href="suche.html">
-        <span class="menu-icon">🔍</span>
-        Suche
-      </a>
-
-      <div class="menu-divider"></div>
-
-      <a href="konto.html">
-        <span class="menu-icon">👤</span>
-        Konto / Anmelden
-      </a>
-
-    </div>
-
-  </header>
-
-  <!-- ZURÜCK -->
-  <div class="back-button">
-    <a href="computer-kategorien.html">‹</a>
+  <div class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira Logo">
   </div>
 
-  <main>
+  <button class="menu-button"
+          id="menuButton"
+          onclick="toggleMenu()"
+          aria-label="Menü öffnen"
+          aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <h1>Computer-Komponenten</h1>
+  <div class="menu-panel" id="menuPanel">
 
-    <p class="subtitle">
-      Finde passende Angebote für deine Computer-Komponenten.
+    <a href="index.html">
+      <span class="menu-icon">🏠</span>
+      Startseite
+    </a>
+
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
+
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
+
+    <div class="menu-divider"></div>
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="page-header">
+
+  <h1><span>Computer-Komponenten</span></h1>
+
+  <p>
+    Finde die passenden Komponenten für deinen Computer.
+  </p>
+
+</section>
+
+
+<section class="categories">
+
+  <!-- MAINBOARDS -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🧩</div>
+
+    <h2>Mainboards</h2>
+
+    <p>
+      Mainboards für verschiedene Prozessoren und Systeme.
     </p>
 
-    <div class="categories">
+  </a>
 
-      <a href="#" class="category">
-        🖥️ Mainboards
-      </a>
 
-      <a href="#" class="category">
-        ⚡ Netzteile
-      </a>
+  <!-- NETZTEILE -->
+  <a href="#" class="category-card">
 
-      <a href="#" class="category">
-        🎮 Grafikkarten
-      </a>
+    <div class="category-icon">⚡</div>
 
-      <a href="#" class="category">
-        💾 RAM
-      </a>
+    <h2>Netzteile</h2>
 
-      <a href="#" class="category">
-        🌀 Lüfter
-      </a>
+    <p>
+      Netzteile für zuverlässige Stromversorgung.
+    </p>
 
-      <a href="#" class="category">
-        ❄️ Wasserkühlung
-      </a>
+  </a>
 
-      <a href="#" class="category">
-        🧠 CPU
-      </a>
 
-      <a href="#" class="category">
-        🌡️ CPU-Kühler
-      </a>
+  <!-- GRAFIKKARTEN -->
+  <a href="#" class="category-card">
 
-      <a href="#" class="category">
-        🖥️ Gehäuse
-      </a>
+    <div class="category-icon">🎮</div>
 
-      <a href="#" class="category">
-        💿 Speicherplatten
-      </a>
+    <h2>Grafikkarten</h2>
 
-    </div>
+    <p>
+      Grafikkarten für Gaming, Arbeit und Multimedia.
+    </p>
 
-  </main>
+  </a>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
 
-      const isOpen = menu.classList.toggle("open");
+  <!-- RAM -->
+  <a href="#" class="category-card">
 
-      button.classList.toggle("active");
-      button.setAttribute("aria-expanded", isOpen);
+    <div class="category-icon">🧠</div>
+
+    <h2>RAM</h2>
+
+    <p>
+      Arbeitsspeicher für schnelle und zuverlässige Systeme.
+    </p>
+
+  </a>
+
+
+  <!-- LÜFTER -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🌀</div>
+
+    <h2>Lüfter</h2>
+
+    <p>
+      Gehäuse- und Systemlüfter für eine gute Kühlung.
+    </p>
+
+  </a>
+
+
+  <!-- WASSERKÜHLUNG -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">💧</div>
+
+    <h2>Wasserkühlung</h2>
+
+    <p>
+      Wasserkühlungen für leistungsstarke Computersysteme.
+    </p>
+
+  </a>
+
+
+  <!-- CPU -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🔲</div>
+
+    <h2>CPU</h2>
+
+    <p>
+      Prozessoren für Gaming, Arbeit und leistungsstarke Systeme.
+    </p>
+
+  </a>
+
+
+  <!-- CPU-KÜHLER -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">❄️</div>
+
+    <h2>CPU-Kühler</h2>
+
+    <p>
+      Luft- und Kühllösungen für Prozessoren.
+    </p>
+
+  </a>
+
+
+  <!-- GEHÄUSE -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🖥️</div>
+
+    <h2>Gehäuse</h2>
+
+    <p>
+      PC-Gehäuse für unterschiedliche Komponenten und Systeme.
+    </p>
+
+  </a>
+
+
+  <!-- SPEICHERPLATTEN -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">💾</div>
+
+    <h2>Speicherplatten</h2>
+
+    <p>
+      SSDs und Festplatten für deine Daten und Programme.
+    </p>
+
+  </a>
+
+</section>
+
+
+<footer>
+
+  <strong>DealKira</strong>
+
+  <p>
+    Produkte entdecken. Deals finden. Preise vergleichen.
+  </p>
+
+</footer>
+
+
+<script>
+
+  function toggleMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    const isOpen = menu.classList.toggle("open");
+
+    button.classList.toggle("active");
+
+    button.setAttribute("aria-expanded", isOpen);
+
+  }
+
+
+  function closeMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+    button.setAttribute("aria-expanded", "false");
+
+  }
+
+
+  document.addEventListener("click", function(event) {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    if (
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+      closeMenu();
     }
 
-    function closeMenu() {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
+  });
 
-      menu.classList.remove("open");
-      button.classList.remove("active");
-      button.setAttribute("aria-expanded", "false");
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeMenu();
     }
 
-    document.addEventListener("click", function(event) {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
+  });
 
-      if (!menu.contains(event.target) && !button.contains(event.target)) {
-        closeMenu();
-      }
-    });
-
-    document.addEventListener("keydown", function(event) {
-      if (event.key === "Escape") {
-        closeMenu();
-      }
-    });
-  </script>
+</script>
 
 </body>
 </html>
