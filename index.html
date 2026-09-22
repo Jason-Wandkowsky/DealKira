@@ -3,130 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="DealKira – Produkte entdecken, Preise vergleichen und bessere Deals finden."
-  >
-
-  <meta name="theme-color" content="#111111">
-
-  <title>DealKira – Bessere Deals finden</title>
+  <title>DealKira – Gute Deals entdecken</title>
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
+      background: #181818;
+      color: #fff;
       font-family: Arial, Helvetica, sans-serif;
-      background: #111;
-      color: white;
-      min-height: 100vh;
+      line-height: 1.5;
     }
 
-
-    /* =========================
-       HEADER
-    ========================== */
-
+    /* HEADER */
     header {
       height: 72px;
       background: #111;
       padding: 0 6%;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      position: relative;
+      position: sticky;
+      top: 0;
       z-index: 1000;
-
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
     }
 
-
-    /* =========================
-       LOGO
-    ========================== */
-
+    /* LOGO */
     .logo {
-      width: 220px;
-      height: 55px;
-
+      width: 250px;
+      height: 60px;
       display: flex;
       align-items: center;
-
       overflow: visible;
       position: relative;
     }
 
     .logo img {
-      height: 240px;
+      height: 280px;
       width: auto;
       max-width: none;
-
       display: block;
-
-      transform-origin: left center;
     }
 
-
-    /* =========================
-       HAMBURGER BUTTON
-    ========================== */
-
+    /* HAMBURGER */
     .menu-button {
       width: 48px;
       height: 48px;
-
       background: #1c1c1c;
-
       border: 1px solid #333;
       border-radius: 10px;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       gap: 5px;
-
       cursor: pointer;
+    }
 
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
       transition: 0.2s;
-
-      position: relative;
-      z-index: 1100;
     }
 
     .menu-button:hover {
       background: #252525;
       border-color: #ffd400;
     }
-
-    .menu-button span {
-      width: 23px;
-      height: 3px;
-
-      background: #ffd400;
-
-      border-radius: 3px;
-
-      transition: 0.25s;
-    }
-
-
-    /* =========================
-       MENU ANIMATION
-    ========================== */
 
     .menu-button.active span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
@@ -140,60 +90,39 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-
-    /* =========================
-       MENU PANEL
-    ========================== */
-
+    /* MENÜ */
     .menu-panel {
       position: absolute;
-
       top: 82px;
       right: 6%;
-
       width: 270px;
-
       background: #111;
-
       border: 1px solid #333;
       border-radius: 14px;
-
       padding: 10px;
-
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
       opacity: 0;
       visibility: hidden;
-
       transform: translateY(-10px);
-
-      transition: 0.2s ease;
+      transition: 0.2s;
     }
 
     .menu-panel.open {
       opacity: 1;
       visibility: visible;
-
       transform: translateY(0);
     }
 
     .menu-panel a {
       display: flex;
       align-items: center;
-
       gap: 12px;
-
       color: white;
-
       text-decoration: none;
-
       padding: 14px 15px;
-
       border-radius: 9px;
-
       font-weight: 700;
-
-      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -203,135 +132,143 @@
 
     .menu-icon {
       width: 25px;
-
       text-align: center;
-
       font-size: 19px;
     }
 
     .menu-divider {
       height: 1px;
-
       background: #333;
-
       margin: 8px 5px;
     }
 
-
-    /* =========================
-       STARTSEITE
-    ========================== */
-
+    /* STARTSEITE */
     .hero {
       min-height: calc(100vh - 72px);
-
       display: flex;
-      flex-direction: column;
-
-      justify-content: center;
       align-items: center;
-
+      justify-content: center;
       text-align: center;
-
-      padding: 40px 20px 80px;
-
-      background:
-        radial-gradient(
-          circle at center,
-          #242424 0%,
-          #181818 45%,
-          #111 100%
-        );
+      padding: 60px 6%;
     }
 
+    .hero-content {
+      max-width: 850px;
+    }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
-
-      line-height: 1.05;
-
+      font-size: 58px;
+      line-height: 1.1;
       margin-bottom: 22px;
-
-      font-weight: 900;
-
-      letter-spacing: -2px;
+      font-weight: 800;
+      color: #fff;
     }
 
     .hero h1 span {
       color: #ffd400;
     }
 
-
     .hero p {
-      max-width: 700px;
-
-      font-size: clamp(17px, 2vw, 21px);
-
-      line-height: 1.6;
-
-      color: #d6d6d6;
+      font-size: 21px;
+      color: #bdbdbd;
+      max-width: 650px;
+      margin: 0 auto 35px;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      background: #0b0b0b;
-
-      color: #777;
-
-      text-align: center;
-
-      padding: 25px 20px;
+    /* BUTTON */
+    .hero-button {
+      display: inline-block;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      border: 2px solid #ffd400;
+      transition: 0.2s;
     }
 
-    footer .footer-logo {
-      color: white;
-
-      font-size: 22px;
-
-      font-weight: 900;
-
-      margin-bottom: 8px;
-    }
-
-    footer .footer-logo span {
+    .hero-button:hover {
+      background: #111;
       color: #ffd400;
     }
 
-    footer p {
-      font-size: 13px;
+    /* FLAMME */
+    .flame {
+      display: inline-block;
+      transform-origin: bottom center;
+      animation: flameBurn 0.55s ease-in-out infinite;
     }
 
+    @keyframes flameBurn {
+      0% {
+        transform: translateY(0) scale(1, 1) rotate(-2deg);
+      }
 
-    /* =========================
-       RESPONSIVE
-    ========================== */
+      15% {
+        transform: translateY(-1px) scale(1.08, 0.94) rotate(3deg);
+      }
 
-    @media (max-width: 800px) {
+      30% {
+        transform: translateY(0) scale(0.94, 1.08) rotate(-4deg);
+      }
+
+      45% {
+        transform: translateY(-2px) scale(1.06, 0.96) rotate(2deg);
+      }
+
+      60% {
+        transform: translateY(0) scale(0.96, 1.06) rotate(-3deg);
+      }
+
+      75% {
+        transform: translateY(-1px) scale(1.08, 0.94) rotate(4deg);
+      }
+
+      90% {
+        transform: translateY(0) scale(0.95, 1.05) rotate(-2deg);
+      }
+
+      100% {
+        transform: translateY(0) scale(1, 1) rotate(2deg);
+      }
+    }
+
+    /* TABLET */
+    @media(max-width:800px) {
 
       header {
         padding: 0 5%;
       }
 
       .logo {
-        width: 180px;
+        width: 205px;
       }
 
       .logo img {
-        height: 210px;
+        height: 245px;
       }
 
       .menu-panel {
         right: 5%;
       }
 
+      .hero {
+        padding: 50px 5%;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      .hero p {
+        font-size: 19px;
+      }
     }
 
-
-    @media (max-width: 550px) {
+    /* HANDY */
+    @media(max-width:550px) {
 
       header {
         height: 68px;
@@ -339,12 +276,12 @@
       }
 
       .logo {
-        width: 145px;
+        width: 170px;
         height: 50px;
       }
 
       .logo img {
-        height: 184px;
+        height: 215px;
       }
 
       .menu-button {
@@ -355,46 +292,38 @@
       .menu-panel {
         top: 78px;
         right: 5%;
-
         width: 260px;
       }
 
       .hero {
         min-height: calc(100vh - 68px);
-
-        padding: 30px 20px 60px;
+        padding: 40px 5%;
       }
 
       .hero h1 {
-        letter-spacing: -1px;
+        font-size: 37px;
       }
 
-    }
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
 
+      .hero-button {
+        font-size: 17px;
+        padding: 14px 25px;
+      }
+    }
   </style>
 </head>
 
-
 <body>
-
-
-  <!-- =========================
-       HEADER
-  ========================== -->
 
   <header>
 
-    <div class="logo">
-
-      <img
-        src="20879_nobg (1).png"
-        alt="DealKira Logo"
-      >
-
-    </div>
-
-
-    <!-- HAMBURGER -->
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="DealKira">
+    </a>
 
     <button
       class="menu-button"
@@ -403,47 +332,34 @@
       aria-label="Menü öffnen"
       aria-expanded="false"
     >
-
       <span></span>
       <span></span>
       <span></span>
-
     </button>
 
-
-    <!-- MENU -->
-
-    <div
-      class="menu-panel"
-      id="menuPanel"
-    >
+    <div class="menu-panel" id="menuPanel">
 
       <a href="index.html">
         <span class="menu-icon">🏠</span>
         Startseite
       </a>
 
-
       <a href="deals.html">
         <span class="menu-icon">🔥</span>
         Deals
       </a>
-
 
       <a href="kategorien.html">
         <span class="menu-icon">📂</span>
         Kategorien
       </a>
 
-
       <a href="suche.html">
         <span class="menu-icon">🔍</span>
         Suche
       </a>
 
-
       <div class="menu-divider"></div>
-
 
       <a href="konto.html">
         <span class="menu-icon">👤</span>
@@ -454,141 +370,62 @@
 
   </header>
 
+  <main class="hero">
 
-  <!-- =========================
-       STARTSEITE
-  ========================== -->
-
-  <main>
-
-    <section class="hero">
+    <div class="hero-content">
 
       <h1>
         Finde bessere <span>Deals.</span>
       </h1>
 
-
       <p>
-        Produkte entdecken, Preise vergleichen und Angebote finden.
+        DealKira hilft dir dabei, interessante Angebote
+        und gute Preise schneller zu entdecken.
       </p>
 
-    </section>
+      <a href="deals.html" class="hero-button">
+        <span class="flame">🔥</span> Deals entdecken
+      </a>
+
+    </div>
 
   </main>
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer>
-
-    <div class="footer-logo">
-      Deal<span>Kira</span>
-    </div>
-
-    <p>
-      Produkte entdecken. Deals finden. Preise vergleichen.
-    </p>
-
-  </footer>
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
   <script>
-
     function toggleMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-      const menu =
-        document.getElementById("menuPanel");
-
-      const button =
-        document.getElementById("menuButton");
-
-
-      const isOpen =
-        menu.classList.toggle("open");
-
+      const isOpen = menu.classList.toggle("open");
 
       button.classList.toggle("active");
-
-
-      button.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
-
+      button.setAttribute("aria-expanded", isOpen);
     }
-
 
     function closeMenu() {
-
-      const menu =
-        document.getElementById("menuPanel");
-
-      const button =
-        document.getElementById("menuButton");
-
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
       menu.classList.remove("open");
-
       button.classList.remove("active");
-
-
-      button.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
+      button.setAttribute("aria-expanded", "false");
     }
 
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-    /* Menü schließen bei Klick außerhalb */
-
-    document.addEventListener(
-      "click",
-      function(event) {
-
-        const menu =
-          document.getElementById("menuPanel");
-
-        const button =
-          document.getElementById("menuButton");
-
-
-        if (
-          !menu.contains(event.target) &&
-          !button.contains(event.target)
-        ) {
-
-          closeMenu();
-
-        }
-
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        closeMenu();
       }
-    );
+    });
 
-
-    /* Menü mit ESC schließen */
-
-    document.addEventListener(
-      "keydown",
-      function(event) {
-
-        if (event.key === "Escape") {
-
-          closeMenu();
-
-        }
-
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeMenu();
       }
-    );
-
+    });
   </script>
-
 
 </body>
 </html>
