@@ -161,10 +161,10 @@
     .categories {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 60px 6%;
+      padding: 60px 20px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 22px;
     }
 
     .category-card {
@@ -184,18 +184,12 @@
     }
 
     .category-icon {
-      font-size: 60px;
+      font-size: 55px;
       margin-bottom: 15px;
     }
 
     .category-card h2 {
       font-size: 22px;
-      margin-bottom: 8px;
-    }
-
-    .category-card p {
-      color: #666;
-      font-size: 15px;
     }
 
     footer {
@@ -215,14 +209,11 @@
       color: #aaa;
     }
 
-    @media (max-width: 900px) {
-      .categories {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-      }
-    }
-
     @media (max-width: 800px) {
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       header {
         padding: 0 5%;
       }
@@ -245,14 +236,16 @@
     }
 
     @media (max-width: 550px) {
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
       header {
         height: 68px;
-        padding: 0 5%;
       }
 
       .logo {
         width: 145px;
-        height: 50px;
       }
 
       .logo img {
@@ -277,10 +270,6 @@
       .page-header h1 {
         font-size: 30px;
       }
-
-      .page-header p {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
@@ -293,14 +282,17 @@
     <img src="20879_nobg (1).png" alt="DealKira Logo">
   </div>
 
-  <button class="menu-button"
-          id="menuButton"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-          aria-expanded="false">
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false">
+
     <span></span>
     <span></span>
     <span></span>
+
   </button>
 
   <div class="menu-panel" id="menuPanel">
@@ -339,10 +331,12 @@
 
 <section class="page-header">
 
-  <h1><span>Computer-Komponenten</span></h1>
+  <h1>
+    <span>Computer</span>-Komponenten
+  </h1>
 
   <p>
-    Finde die passenden Komponenten für deinen Computer.
+    Komponenten für deinen Computer entdecken.
   </p>
 
 </section>
@@ -350,143 +344,54 @@
 
 <section class="categories">
 
-  <!-- MAINBOARDS -->
-  <a href="#" class="category-card">
-
+  <a href="mainboards.html" class="category-card">
     <div class="category-icon">🧩</div>
-
     <h2>Mainboards</h2>
-
-    <p>
-      Mainboards für verschiedene Prozessoren und Systeme.
-    </p>
-
   </a>
 
-
-  <!-- NETZTEILE -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">⚡</div>
-
+  <a href="netzteile.html" class="category-card">
+    <div class="category-icon">🔋</div>
     <h2>Netzteile</h2>
-
-    <p>
-      Netzteile für zuverlässige Stromversorgung.
-    </p>
-
   </a>
 
-
-  <!-- GRAFIKKARTEN -->
-  <a href="#" class="category-card">
-
+  <a href="grafikkarten.html" class="category-card">
     <div class="category-icon">🎮</div>
-
     <h2>Grafikkarten</h2>
-
-    <p>
-      Grafikkarten für Gaming, Arbeit und Multimedia.
-    </p>
-
   </a>
 
-
-  <!-- RAM -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">🧠</div>
-
-    <h2>RAM</h2>
-
-    <p>
-      Arbeitsspeicher für schnelle und zuverlässige Systeme.
-    </p>
-
-  </a>
-
-
-  <!-- LÜFTER -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">🌀</div>
-
-    <h2>Lüfter</h2>
-
-    <p>
-      Gehäuse- und Systemlüfter für eine gute Kühlung.
-    </p>
-
-  </a>
-
-
-  <!-- WASSERKÜHLUNG -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">💧</div>
-
-    <h2>Wasserkühlung</h2>
-
-    <p>
-      Wasserkühlungen für leistungsstarke Computersysteme.
-    </p>
-
-  </a>
-
-
-  <!-- CPU -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">🔲</div>
-
-    <h2>CPU</h2>
-
-    <p>
-      Prozessoren für Gaming, Arbeit und leistungsstarke Systeme.
-    </p>
-
-  </a>
-
-
-  <!-- CPU-KÜHLER -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">❄️</div>
-
-    <h2>CPU-Kühler</h2>
-
-    <p>
-      Luft- und Kühllösungen für Prozessoren.
-    </p>
-
-  </a>
-
-
-  <!-- GEHÄUSE -->
-  <a href="#" class="category-card">
-
-    <div class="category-icon">🖥️</div>
-
-    <h2>Gehäuse</h2>
-
-    <p>
-      PC-Gehäuse für unterschiedliche Komponenten und Systeme.
-    </p>
-
-  </a>
-
-
-  <!-- SPEICHERPLATTEN -->
-  <a href="#" class="category-card">
-
+  <a href="ram.html" class="category-card">
     <div class="category-icon">💾</div>
+    <h2>RAM</h2>
+  </a>
 
+  <a href="luefter.html" class="category-card">
+    <div class="category-icon">🌀</div>
+    <h2>Lüfter</h2>
+  </a>
+
+  <a href="wasserkuehlung.html" class="category-card">
+    <div class="category-icon">💧</div>
+    <h2>Wasserkühlung</h2>
+  </a>
+
+  <a href="cpu.html" class="category-card">
+    <div class="category-icon">🧠</div>
+    <h2>CPU</h2>
+  </a>
+
+  <a href="cpu-kuehler.html" class="category-card">
+    <div class="category-icon">❄️</div>
+    <h2>CPU-Kühler</h2>
+  </a>
+
+  <a href="gehaeuse.html" class="category-card">
+    <div class="category-icon">🖥️</div>
+    <h2>Gehäuse</h2>
+  </a>
+
+  <a href="speicherplatten.html" class="category-card">
+    <div class="category-icon">💽</div>
     <h2>Speicherplatten</h2>
-
-    <p>
-      SSDs und Festplatten für deine Daten und Programme.
-    </p>
-
   </a>
 
 </section>
@@ -505,57 +410,57 @@
 
 <script>
 
-  function toggleMenu() {
+function toggleMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
 
-    const isOpen = menu.classList.toggle("open");
+  const isOpen = menu.classList.toggle("open");
 
-    button.classList.toggle("active");
+  button.classList.toggle("active");
 
-    button.setAttribute("aria-expanded", isOpen);
+  button.setAttribute("aria-expanded", isOpen);
 
+}
+
+function closeMenu() {
+
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
+
+  menu.classList.remove("open");
+
+  button.classList.remove("active");
+
+  button.setAttribute("aria-expanded", "false");
+
+}
+
+document.addEventListener("click", function(event) {
+
+  const menu = document.getElementById("menuPanel");
+  const button = document.getElementById("menuButton");
+
+  if (
+    !menu.contains(event.target) &&
+    !button.contains(event.target)
+  ) {
+    closeMenu();
   }
 
+});
 
-  function closeMenu() {
+document.addEventListener("keydown", function(event) {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    menu.classList.remove("open");
-    button.classList.remove("active");
-
-    button.setAttribute("aria-expanded", "false");
-
+  if (event.key === "Escape") {
+    closeMenu();
   }
 
-
-  document.addEventListener("click", function(event) {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    if (
-      !menu.contains(event.target) &&
-      !button.contains(event.target)
-    ) {
-      closeMenu();
-    }
-
-  });
-
-
-  document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-      closeMenu();
-    }
-
-  });
+});
 
 </script>
 
 </body>
 </html>
+
+
