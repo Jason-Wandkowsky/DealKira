@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>DealKira – Preise vergleichen & Deals finden</title>
-    <meta name="description" content="DealKira hilft dir, Produkte und Deals schnell zu finden und Preise zu vergleichen.">
+    <title>DealKira – Deals & Preise vergleichen</title>
 
     <style>
         * {
@@ -15,53 +13,50 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f6f7f9;
-            color: #171717;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
         }
 
         header {
-            background: white;
-            border-bottom: 1px solid #e5e7eb;
+            background: #111;
+            color: white;
             padding: 18px 6%;
-        }
-
-        .nav {
-            max-width: 1200px;
-            margin: auto;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
             font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -1px;
+            font-weight: bold;
         }
 
         .logo span {
             color: #ffd000;
         }
 
-        .nav a {
+        nav a {
+            color: white;
             text-decoration: none;
-            color: #555;
             margin-left: 25px;
             font-size: 15px;
         }
 
+        nav a:hover {
+            color: #ffd000;
+        }
+
         .hero {
+            background: #111;
+            color: white;
             text-align: center;
-            padding: 80px 20px 65px;
-            background: white;
+            padding: 70px 20px 80px;
         }
 
         .hero h1 {
-            font-size: clamp(38px, 7vw, 64px);
-            line-height: 1.05;
-            letter-spacing: -2px;
-            margin-bottom: 18px;
+            font-size: 46px;
+            margin-bottom: 15px;
         }
 
         .hero h1 span {
@@ -69,48 +64,48 @@
         }
 
         .hero p {
-            color: #666;
+            color: #ccc;
             font-size: 18px;
             margin-bottom: 30px;
         }
 
-        .search {
-            max-width: 700px;
+        .search-box {
+            max-width: 650px;
             margin: auto;
             display: flex;
             background: white;
-            border: 1px solid #d9dce1;
-            border-radius: 14px;
-            padding: 6px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        .search input {
+        .search-box input {
             flex: 1;
             border: none;
-            outline: none;
-            padding: 15px;
+            padding: 17px;
             font-size: 16px;
-            min-width: 0;
+            outline: none;
         }
 
-        .search button {
+        .search-box button {
             border: none;
             background: #ffd000;
-            color: white;
             padding: 0 25px;
-            border-radius: 10px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
         }
 
-        .section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 55px 20px;
+        .search-box button:hover {
+            background: #e6bb00;
         }
 
-        .section h2 {
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
             font-size: 28px;
             margin-bottom: 25px;
         }
@@ -118,103 +113,150 @@
         .categories {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
+            gap: 18px;
+            margin-bottom: 60px;
         }
 
         .category {
             background: white;
             padding: 25px;
-            border-radius: 14px;
-            border: 1px solid #e5e7eb;
+            border-radius: 10px;
             text-align: center;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: bold;
             cursor: pointer;
             transition: 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
         .category:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
         }
 
         .products {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
+            gap: 20px;
         }
 
         .product {
             background: white;
-            border-radius: 14px;
-            padding: 20px;
-            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .product:hover {
+            transform: translateY(-3px);
         }
 
         .product-image {
-            height: 150px;
-            background: #f1f2f4;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            height: 180px;
+            background: #e9e9e9;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #999;
+            color: #888;
+            font-size: 15px;
+        }
+
+        .product-content {
+            padding: 18px;
         }
 
         .product h3 {
-            font-size: 16px;
+            font-size: 17px;
             margin-bottom: 10px;
+        }
+
+        .category-name {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 12px;
         }
 
         .price {
             font-size: 22px;
-            font-weight: 800;
-            margin-bottom: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
         }
 
-        .amazon {
+        .amazon-button {
             display: block;
             text-align: center;
             background: #ffd000;
-            color: white;
+            color: #111;
             text-decoration: none;
-            padding: 11px;
-            border-radius: 8px;
-            font-weight: 700;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .amazon-button:hover {
+            background: #e6bb00;
+        }
+
+        #resultsSection {
+            display: none;
+            margin-bottom: 60px;
+        }
+
+        #noResults {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: #666;
         }
 
         footer {
-            margin-top: 30px;
-            background: #171717;
+            background: #111;
             color: #aaa;
             text-align: center;
             padding: 30px 20px;
-            font-size: 14px;
+            margin-top: 30px;
         }
 
-        @media (max-width: 800px) {
-            .categories,
+        @media (max-width: 900px) {
             .products {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .nav a {
-                display: none;
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 500px) {
-            .categories,
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box button {
+                padding: 15px;
+            }
+
             .products {
                 grid-template-columns: 1fr;
             }
 
-            .hero {
-                padding-top: 55px;
-            }
-
-            .search button {
-                padding: 0 16px;
+            .categories {
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
@@ -223,157 +265,346 @@
 <body>
 
 <header>
-    <div class="nav">
-        <div class="logo">Deal<span>Kira</span></div>
+    <div class="logo">Deal<span>Kira</span></div>
 
-        <nav>
-            <a href="#">Startseite</a>
-            <a href="#">Deals</a>
-            <a href="#">Kategorien</a>
-        </nav>
-    </div>
+    <nav>
+        <a href="#">Startseite</a>
+        <a href="#deals">Deals</a>
+        <a href="#kategorien">Kategorien</a>
+    </nav>
 </header>
 
-<section class="hero">
 
+<section class="hero">
     <h1>Finde <span>bessere Deals.</span></h1>
 
     <p>
         Produkte entdecken, Preise vergleichen und Angebote finden.
     </p>
 
-    <div class="search">
-    <input
-        id="searchInput"
-        type="text"
-        placeholder="Was möchtest du suchen?"
-        onkeydown="if(event.key === 'Enter') searchProduct()"
-    >
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Was möchtest du suchen?"
+            onkeydown="if(event.key === 'Enter') searchProduct()"
+        >
 
-    <button onclick="searchProduct()">
-        Suchen
-    </button>
+        <button onclick="searchProduct()">
+            Suchen
+        </button>
     </div>
-
 </section>
 
-<section class="section">
 
-    <h2>Kategorien</h2>
+<div class="container">
 
-    <div class="categories">
+    <section id="kategorien">
+        <h2 class="section-title">Kategorien</h2>
 
-        <div class="category">📱 Elektronik</div>
-
-        <div class="category">💻 Computer</div>
-
-        <div class="category">🎮 Gaming</div>
-
-        <div class="category">🏠 Haushalt</div>
-
-    </div>
-
-</section>
-
-<section class="section">
-
-    <h2>Top Deals</h2>
-
-    <div class="products">
-
-        <div class="product">
-
-            <div class="product-image">
-                Produktbild
+        <div class="categories">
+            <div class="category" onclick="searchCategory('Elektronik')">
+                📱 Elektronik
             </div>
 
-            <h3>Beispielprodukt</h3>
-
-            <div class="price">
-                99,99 €
+            <div class="category" onclick="searchCategory('Computer')">
+                💻 Computer
             </div>
 
-            <a class="amazon" href="#">
-                Bei Amazon ansehen
-            </a>
+            <div class="category" onclick="searchCategory('Gaming')">
+                🎮 Gaming
+            </div>
+
+            <div class="category" onclick="searchCategory('Haushalt')">
+                🏠 Haushalt
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SUCHERGEBNISSE -->
+
+    <section id="resultsSection">
+
+        <h2 class="section-title" id="resultsTitle">
+            Suchergebnisse
+        </h2>
+
+        <div class="products" id="results"></div>
+
+    </section>
+
+
+    <!-- TOP DEALS -->
+
+    <section id="deals">
+
+        <h2 class="section-title">
+            Top Deals
+        </h2>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="product-image">
+                    Produktbild
+                </div>
+
+                <div class="product-content">
+                    <h3>Beispielprodukt</h3>
+
+                    <div class="category-name">
+                        Elektronik
+                    </div>
+
+                    <div class="price">
+                        99,99 €
+                    </div>
+
+                    <a href="#" class="amazon-button">
+                        Bei Amazon ansehen
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    Produktbild
+                </div>
+
+                <div class="product-content">
+                    <h3>Beispielprodukt</h3>
+
+                    <div class="category-name">
+                        Computer
+                    </div>
+
+                    <div class="price">
+                        149,99 €
+                    </div>
+
+                    <a href="#" class="amazon-button">
+                        Bei Amazon ansehen
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    Produktbild
+                </div>
+
+                <div class="product-content">
+                    <h3>Beispielprodukt</h3>
+
+                    <div class="category-name">
+                        Gaming
+                    </div>
+
+                    <div class="price">
+                        199,99 €
+                    </div>
+
+                    <a href="#" class="amazon-button">
+                        Bei Amazon ansehen
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    Produktbild
+                </div>
+
+                <div class="product-content">
+                    <h3>Beispielprodukt</h3>
+
+                    <div class="category-name">
+                        Haushalt
+                    </div>
+
+                    <div class="price">
+                        249,99 €
+                    </div>
+
+                    <a href="#" class="amazon-button">
+                        Bei Amazon ansehen
+                    </a>
+                </div>
+            </div>
 
         </div>
 
-        <div class="product">
+    </section>
 
-            <div class="product-image">
-                Produktbild
-            </div>
+</div>
 
-            <h3>Beispielprodukt</h3>
-
-            <div class="price">
-                149,99 €
-            </div>
-
-            <a class="amazon" href="#">
-                Bei Amazon ansehen
-            </a>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-image">
-                Produktbild
-            </div>
-
-            <h3>Beispielprodukt</h3>
-
-            <div class="price">
-                199,99 €
-            </div>
-
-            <a class="amazon" href="#">
-                Bei Amazon ansehen
-            </a>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-image">
-                Produktbild
-            </div>
-
-            <h3>Beispielprodukt</h3>
-
-            <div class="price">
-                249,99 €
-            </div>
-
-            <a class="amazon" href="#">
-                Bei Amazon ansehen
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
 
 <footer>
     © 2026 DealKira – Preise vergleichen & Deals finden
 </footer>
-    
-<script>
-function searchProduct() {
-    const input = document.getElementById("searchInput");
-    const search = input.value.trim();
 
-    if (search === "") {
-        alert("Bitte gib ein Produkt ein.");
-        return;
+
+<script>
+
+    const products = [
+
+        {
+            name: "Samsung Galaxy S26 Ultra",
+            category: "Elektronik",
+            price: "1.199,00 €"
+        },
+
+        {
+            name: "Gaming Monitor 27 Zoll",
+            category: "Gaming",
+            price: "199,99 €"
+        },
+
+        {
+            name: "Gaming Tastatur",
+            category: "Computer",
+            price: "59,99 €"
+        },
+
+        {
+            name: "Kabellose Gaming Maus",
+            category: "Gaming",
+            price: "39,99 €"
+        },
+
+        {
+            name: "Bluetooth Kopfhörer",
+            category: "Elektronik",
+            price: "79,99 €"
+        },
+
+        {
+            name: "Gaming PC",
+            category: "Computer",
+            price: "899,99 €"
+        },
+
+        {
+            name: "Waschmaschine",
+            category: "Haushalt",
+            price: "499,99 €"
+        },
+
+        {
+            name: "Staubsauger",
+            category: "Haushalt",
+            price: "129,99 €"
+        }
+
+    ];
+
+
+    function searchProduct() {
+
+        const input = document.getElementById("searchInput");
+
+        const query = input.value.trim().toLowerCase();
+
+        const section = document.getElementById("resultsSection");
+
+        const resultsContainer = document.getElementById("results");
+
+        const title = document.getElementById("resultsTitle");
+
+
+        if (query === "") {
+
+            section.style.display = "none";
+
+            return;
+        }
+
+
+        const matches = products.filter(product => {
+
+            return (
+                product.name.toLowerCase().includes(query) ||
+                product.category.toLowerCase().includes(query)
+            );
+
+        });
+
+
+        section.style.display = "block";
+
+        title.textContent =
+            'Suchergebnisse für „' + input.value.trim() + '“';
+
+
+        if (matches.length === 0) {
+
+            resultsContainer.innerHTML = `
+                <div id="noResults">
+                    <h3>Keine Produkte gefunden.</h3>
+                    <p>
+                        Versuch es zum Beispiel mit
+                        „Gaming“, „Samsung“, „Computer“ oder „Haushalt“.
+                    </p>
+                </div>
+            `;
+
+        } else {
+
+            resultsContainer.innerHTML = matches.map(product => `
+
+                <div class="product">
+
+                    <div class="product-image">
+                        Produktbild
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>
+                            ${product.name}
+                        </h3>
+
+                        <div class="category-name">
+                            ${product.category}
+                        </div>
+
+                        <div class="price">
+                            ${product.price}
+                        </div>
+
+                        <a href="#" class="amazon-button">
+                            Bei Amazon ansehen
+                        </a>
+
+                    </div>
+
+                </div>
+
+            `).join("");
+
+        }
+
+
+        section.scrollIntoView({
+            behavior: "smooth"
+        });
+
     }
 
-    alert("DealKira sucht nach: " + search);
-}
+
+    function searchCategory(category) {
+
+        document.getElementById("searchInput").value = category;
+
+        searchProduct();
+
+    }
+
 </script>
-    
+
 </body>
 </html>
