@@ -14,6 +14,7 @@
   <title>DealKira – Bessere Deals finden</title>
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -26,10 +27,11 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      line-height: 1.5;
+      background: #111;
+      color: white;
+      min-height: 100vh;
     }
+
 
     /* =========================
        HEADER
@@ -38,22 +40,30 @@
     header {
       height: 72px;
       background: #111;
-      color: white;
       padding: 0 6%;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
+
+      position: relative;
       z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
     }
+
+
+    /* =========================
+       LOGO
+    ========================== */
 
     .logo {
       width: 220px;
       height: 55px;
+
       display: flex;
       align-items: center;
+
       overflow: visible;
       position: relative;
     }
@@ -62,9 +72,12 @@
       height: 240px;
       width: auto;
       max-width: none;
+
       display: block;
+
       transform-origin: left center;
     }
+
 
     /* =========================
        HAMBURGER BUTTON
@@ -73,16 +86,23 @@
     .menu-button {
       width: 48px;
       height: 48px;
+
       background: #1c1c1c;
+
       border: 1px solid #333;
       border-radius: 10px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       gap: 5px;
+
       cursor: pointer;
+
       transition: 0.2s;
+
       position: relative;
       z-index: 1100;
     }
@@ -95,12 +115,18 @@
     .menu-button span {
       width: 23px;
       height: 3px;
+
       background: #ffd400;
+
       border-radius: 3px;
+
       transition: 0.25s;
     }
 
-    /* Animation when menu is open */
+
+    /* =========================
+       MENU ANIMATION
+    ========================== */
 
     .menu-button.active span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
@@ -114,42 +140,59 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
+
     /* =========================
-       MENU
+       MENU PANEL
     ========================== */
 
     .menu-panel {
       position: absolute;
+
       top: 82px;
       right: 6%;
+
       width: 270px;
+
       background: #111;
+
       border: 1px solid #333;
       border-radius: 14px;
+
       padding: 10px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 
       opacity: 0;
       visibility: hidden;
+
       transform: translateY(-10px);
+
       transition: 0.2s ease;
     }
 
     .menu-panel.open {
       opacity: 1;
       visibility: visible;
+
       transform: translateY(0);
     }
 
     .menu-panel a {
       display: flex;
       align-items: center;
+
       gap: 12px;
+
       color: white;
+
       text-decoration: none;
+
       padding: 14px 15px;
+
       border-radius: 9px;
+
       font-weight: 700;
+
       transition: 0.2s;
     }
 
@@ -160,32 +203,57 @@
 
     .menu-icon {
       width: 25px;
+
       text-align: center;
+
       font-size: 19px;
     }
 
     .menu-divider {
       height: 1px;
+
       background: #333;
+
       margin: 8px 5px;
     }
 
+
     /* =========================
-       HERO
+       STARTSEITE
     ========================== */
 
     .hero {
-      background: linear-gradient(135deg, #111 0%, #202020 100%);
-      color: white;
+      min-height: calc(100vh - 72px);
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
       text-align: center;
-      padding: 80px 20px 90px;
+
+      padding: 40px 20px 80px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          #242424 0%,
+          #181818 45%,
+          #111 100%
+        );
     }
 
+
     .hero h1 {
-      font-size: clamp(38px, 6vw, 68px);
+      font-size: clamp(42px, 7vw, 78px);
+
       line-height: 1.05;
-      margin-bottom: 18px;
+
+      margin-bottom: 22px;
+
       font-weight: 900;
+
       letter-spacing: -2px;
     }
 
@@ -193,274 +261,40 @@
       color: #ffd400;
     }
 
+
     .hero p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      font-size: 18px;
+      max-width: 700px;
+
+      font-size: clamp(17px, 2vw, 21px);
+
+      line-height: 1.6;
+
       color: #d6d6d6;
     }
 
-    .search-box {
-      max-width: 650px;
-      margin: auto;
-      display: flex;
-      background: white;
-      border-radius: 14px;
-      padding: 6px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-    }
-
-    .search-box input {
-      flex: 1;
-      border: none;
-      outline: none;
-      padding: 15px;
-      font-size: 16px;
-      border-radius: 10px;
-      min-width: 0;
-    }
-
-    .search-box button {
-      border: none;
-      background: #ffd400;
-      color: #111;
-      font-weight: 800;
-      padding: 0 24px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .search-box button:hover {
-      background: #ffdf3c;
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       GENERAL
-    ========================== */
-
-    .container {
-      width: min(1180px, 92%);
-      margin: auto;
-    }
-
-    section {
-      padding: 60px 0;
-    }
-
-    .section-title {
-      font-size: 32px;
-      margin-bottom: 30px;
-      font-weight: 900;
-    }
-
-    /* =========================
-       CATEGORIES
-    ========================== */
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .category {
-      background: white;
-      padding: 25px 20px;
-      border-radius: 16px;
-      text-align: center;
-      font-weight: 800;
-      cursor: pointer;
-      border: 1px solid #e8e8e8;
-      transition: 0.25s;
-    }
-
-    .category:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-      border-color: #ffd400;
-    }
-
-    .category-icon {
-      font-size: 38px;
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    /* =========================
-       DEAL GRID
-    ========================== */
-
-    .deal-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-    }
-
-    .deal-card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      position: relative;
-      border: 1px solid #e8e8e8;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
-      transition: 0.25s;
-    }
-
-    .deal-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
-    }
-
-    /* =========================
-       PRODUCT VISUAL
-    ========================== */
-
-    .product-image {
-      height: 210px;
-      background:
-        radial-gradient(
-          circle at 50% 30%,
-          #ffffff 0%,
-          #f4f4f4 55%,
-          #e7e7e7 100%
-        );
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-image::after {
-      content: "";
-      position: absolute;
-      width: 130px;
-      height: 25px;
-      background: rgba(0, 0, 0, 0.10);
-      filter: blur(12px);
-      bottom: 25px;
-      border-radius: 50%;
-    }
-
-    .product-icon {
-      font-size: 95px;
-      position: relative;
-      z-index: 2;
-      filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.18));
-    }
-
-    .phone {
-      font-size: 105px;
-    }
-
-    .monitor {
-      font-size: 105px;
-    }
-
-    .powerbank {
-      font-size: 90px;
-    }
-
-    /* =========================
-       BADGES
-    ========================== */
-
-    .top-deal {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      z-index: 5;
-      background: #ffd400;
-      color: #111;
-      font-size: 12px;
-      font-weight: 900;
-      padding: 6px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-    }
-
-    .deal-badge {
-      display: inline-block;
-      background: #111;
-      color: #ffd400;
-      font-size: 11px;
-      font-weight: 900;
-      padding: 5px 8px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    /* =========================
-       CARD CONTENT
-    ========================== */
-
-    .card-content {
-      padding: 18px;
-    }
-
-    .card-content h3 {
-      font-size: 17px;
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-
-    .category-label {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 14px;
-    }
-
-    .check-price {
-      display: block;
-      width: 100%;
-      background: #ffd400;
-      color: #111;
-      text-align: center;
-      text-decoration: none;
-      font-weight: 900;
-      padding: 12px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
-
-    .check-price:hover {
-      background: #ffdf3c;
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       SEARCH RESULTS
-    ========================== */
-
-    #results-section {
-      display: none;
-    }
-
-    .results-message {
-      color: #666;
-      margin-top: -15px;
-      margin-bottom: 25px;
-    }
 
     /* =========================
        FOOTER
     ========================== */
 
     footer {
-      background: #111;
-      color: #aaa;
+      background: #0b0b0b;
+
+      color: #777;
+
       text-align: center;
-      padding: 35px 20px;
-      margin-top: 30px;
+
+      padding: 25px 20px;
     }
 
     footer .footer-logo {
       color: white;
+
       font-size: 22px;
+
       font-weight: 900;
-      margin-bottom: 10px;
+
+      margin-bottom: 8px;
     }
 
     footer .footer-logo span {
@@ -471,17 +305,10 @@
       font-size: 13px;
     }
 
+
     /* =========================
        RESPONSIVE
     ========================== */
-
-    @media (max-width: 1100px) {
-
-      .deal-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-    }
 
     @media (max-width: 800px) {
 
@@ -501,19 +328,8 @@
         right: 5%;
       }
 
-      .categories {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .deal-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero {
-        padding: 65px 18px 75px;
-      }
-
     }
+
 
     @media (max-width: 550px) {
 
@@ -539,44 +355,18 @@
       .menu-panel {
         top: 78px;
         right: 5%;
+
         width: 260px;
+      }
+
+      .hero {
+        min-height: calc(100vh - 68px);
+
+        padding: 30px 20px 60px;
       }
 
       .hero h1 {
         letter-spacing: -1px;
-      }
-
-      .search-box {
-        flex-direction: column;
-        background: transparent;
-        box-shadow: none;
-        gap: 8px;
-      }
-
-      .search-box input {
-        width: 100%;
-        background: white;
-      }
-
-      .search-box button {
-        min-height: 50px;
-      }
-
-      .categories {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-      }
-
-      .category {
-        padding: 20px 10px;
-      }
-
-      .deal-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .product-image {
-        height: 230px;
       }
 
     }
@@ -584,18 +374,25 @@
   </style>
 </head>
 
+
 <body>
 
-  <!-- HEADER -->
+
+  <!-- =========================
+       HEADER
+  ========================== -->
 
   <header>
 
     <div class="logo">
+
       <img
         src="20879_nobg (1).png"
         alt="DealKira Logo"
       >
+
     </div>
+
 
     <!-- HAMBURGER -->
 
@@ -606,10 +403,13 @@
       aria-label="Menü öffnen"
       aria-expanded="false"
     >
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
+
 
     <!-- MENU -->
 
@@ -618,34 +418,36 @@
       id="menuPanel"
     >
 
-      <a href="#" onclick="closeMenu()">
-        <span class="menu-icon">👤</span>
-        Konto / Anmelden
-      </a>
-
-      <div class="menu-divider"></div>
-
-      <a href="#start" onclick="closeMenu()">
+      <a href="index.html">
         <span class="menu-icon">🏠</span>
         Startseite
       </a>
 
-      <a href="#deals" onclick="closeMenu()">
+
+      <a href="deals.html">
         <span class="menu-icon">🔥</span>
         Deals
       </a>
 
-      <a href="#kategorien" onclick="closeMenu()">
+
+      <a href="kategorien.html">
         <span class="menu-icon">📂</span>
         Kategorien
       </a>
 
-      <a
-        href="#start"
-        onclick="focusSearch(event)"
-      >
+
+      <a href="suche.html">
         <span class="menu-icon">🔍</span>
         Suche
+      </a>
+
+
+      <div class="menu-divider"></div>
+
+
+      <a href="konto.html">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
       </a>
 
     </div>
@@ -653,342 +455,31 @@
   </header>
 
 
-  <!-- HERO -->
+  <!-- =========================
+       STARTSEITE
+  ========================== -->
 
-  <section class="hero" id="start">
+  <main>
 
-    <h1>
-      Finde bessere <span>Deals.</span>
-    </h1>
+    <section class="hero">
 
-    <p>
-      Produkte entdecken, Preise vergleichen und Angebote finden.
-    </p>
+      <h1>
+        Finde bessere <span>Deals.</span>
+      </h1>
 
-    <div class="search-box">
 
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Was suchst du?"
-        autocomplete="off"
-      >
+      <p>
+        Produkte entdecken, Preise vergleichen und Angebote finden.
+      </p>
 
-      <button onclick="searchProducts()">
-        Suchen
-      </button>
+    </section>
 
-    </div>
+  </main>
 
-  </section>
 
-
-  <!-- KATEGORIEN -->
-
-  <section id="kategorien">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Kategorien
-      </h2>
-
-      <div class="categories">
-
-        <div
-          class="category"
-          onclick="searchCategory('Elektronik')"
-        >
-          <span class="category-icon">📱</span>
-          Elektronik
-        </div>
-
-        <div
-          class="category"
-          onclick="searchCategory('Computer')"
-        >
-          <span class="category-icon">💻</span>
-          Computer
-        </div>
-
-        <div
-          class="category"
-          onclick="searchCategory('Gaming')"
-        >
-          <span class="category-icon">🎮</span>
-          Gaming
-        </div>
-
-        <div
-          class="category"
-          onclick="searchCategory('Haushalt')"
-        >
-          <span class="category-icon">🏠</span>
-          Haushalt
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TOP DEALS -->
-
-  <section id="deals">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Top Deals
-      </h2>
-
-      <div class="deal-grid">
-
-
-        <!-- PS5 -->
-
-        <article class="deal-card">
-
-          <span class="top-deal">
-            Top Deal
-          </span>
-
-          <div class="product-image">
-            <div class="product-icon">
-              🎮
-            </div>
-          </div>
-
-          <div class="card-content">
-
-            <span class="deal-badge">
-              Deal
-            </span>
-
-            <h3>
-              PlayStation 5
-            </h3>
-
-            <div class="category-label">
-              Gaming
-            </div>
-
-            <a
-              class="check-price"
-              href="https://amzn.to/4yW9vEp"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- S26 ULTRA -->
-
-        <article class="deal-card">
-
-          <span class="top-deal">
-            Top Deal
-          </span>
-
-          <div class="product-image">
-            <div class="product-icon phone">
-              📱
-            </div>
-          </div>
-
-          <div class="card-content">
-
-            <span class="deal-badge">
-              Deal
-            </span>
-
-            <h3>
-              Samsung Galaxy S26 Ultra
-            </h3>
-
-            <div class="category-label">
-              Elektronik
-            </div>
-
-            <a
-              class="check-price"
-              href="https://amzn.to/4yL6uGH"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- IPHONE 17 -->
-
-        <article class="deal-card">
-
-          <span class="top-deal">
-            Top Deal
-          </span>
-
-          <div class="product-image">
-            <div class="product-icon phone">
-              📱
-            </div>
-          </div>
-
-          <div class="card-content">
-
-            <span class="deal-badge">
-              Deal
-            </span>
-
-            <h3>
-              Apple iPhone 17
-            </h3>
-
-            <div class="category-label">
-              Elektronik
-            </div>
-
-            <a
-              class="check-price"
-              href="https://amzn.to/3VsXwj3"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- POWERBANK -->
-
-        <article class="deal-card">
-
-          <span class="top-deal">
-            Top Deal
-          </span>
-
-          <div class="product-image">
-            <div class="product-icon powerbank">
-              🔋
-            </div>
-          </div>
-
-          <div class="card-content">
-
-            <span class="deal-badge">
-              Deal
-            </span>
-
-            <h3>
-              Powerbank
-            </h3>
-
-            <div class="category-label">
-              Elektronik
-            </div>
-
-            <a
-              class="check-price"
-              href="https://amzn.to/4yJVCJc"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- MONITOR -->
-
-        <article class="deal-card">
-
-          <span class="top-deal">
-            Top Deal
-          </span>
-
-          <div class="product-image">
-            <div class="product-icon monitor">
-              🖥️
-            </div>
-          </div>
-
-          <div class="card-content">
-
-            <span class="deal-badge">
-              Deal
-            </span>
-
-            <h3>
-              27-Zoll Monitor
-            </h3>
-
-            <div class="category-label">
-              Computer
-            </div>
-
-            <a
-              class="check-price"
-              href="https://amzn.to/4rq0uRq"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SUCHERGEBNISSE -->
-
-  <section id="results-section">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Suchergebnisse
-      </h2>
-
-      <p
-        id="resultsMessage"
-        class="results-message"
-      ></p>
-
-      <div
-        id="results"
-        class="deal-grid"
-      ></div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
 
@@ -1003,58 +494,11 @@
   </footer>
 
 
-  <!-- JAVASCRIPT -->
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
   <script>
-
-    const products = [
-
-      {
-        name: "PlayStation 5",
-        category: "Gaming",
-        keywords: "ps5 playstation 5 konsole gaming sony",
-        icon: "🎮",
-        link: "https://amzn.to/4yW9vEp"
-      },
-
-      {
-        name: "Samsung Galaxy S26 Ultra",
-        category: "Elektronik",
-        keywords: "samsung galaxy s26 ultra smartphone handy",
-        icon: "📱",
-        link: "https://amzn.to/4yL6uGH"
-      },
-
-      {
-        name: "Apple iPhone 17",
-        category: "Elektronik",
-        keywords: "apple iphone 17 smartphone handy iphone",
-        icon: "📱",
-        link: "https://amzn.to/3VsXwj3"
-      },
-
-      {
-        name: "Powerbank",
-        category: "Elektronik",
-        keywords: "powerbank akku ladegerät usb-c smartphone",
-        icon: "🔋",
-        link: "https://amzn.to/4yJVCJc"
-      },
-
-      {
-        name: "27-Zoll Monitor",
-        category: "Computer",
-        keywords: "monitor 27 zoll pc gaming bildschirm computer",
-        icon: "🖥️",
-        link: "https://amzn.to/4rq0uRq"
-      }
-
-    ];
-
-
-    /* =========================
-       HAMBURGER MENU
-    ========================== */
 
     function toggleMenu() {
 
@@ -1064,10 +508,13 @@
       const button =
         document.getElementById("menuButton");
 
+
       const isOpen =
         menu.classList.toggle("open");
 
+
       button.classList.toggle("active");
+
 
       button.setAttribute(
         "aria-expanded",
@@ -1085,9 +532,11 @@
       const button =
         document.getElementById("menuButton");
 
+
       menu.classList.remove("open");
 
       button.classList.remove("active");
+
 
       button.setAttribute(
         "aria-expanded",
@@ -1097,7 +546,7 @@
     }
 
 
-    /* Menü schließen, wenn außerhalb geklickt wird */
+    /* Menü schließen bei Klick außerhalb */
 
     document.addEventListener(
       "click",
@@ -1108,6 +557,7 @@
 
         const button =
           document.getElementById("menuButton");
+
 
         if (
           !menu.contains(event.target) &&
@@ -1137,175 +587,8 @@
       }
     );
 
-
-    /* Suche aus dem Menü öffnen */
-
-    function focusSearch(event) {
-
-      event.preventDefault();
-
-      closeMenu();
-
-      document
-        .getElementById("searchInput")
-        .focus();
-
-      document
-        .getElementById("start")
-        .scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-
-    }
-
-
-    /* =========================
-       SEARCH
-    ========================== */
-
-    function searchProducts() {
-
-      const input =
-        document
-          .getElementById("searchInput")
-          .value
-          .trim()
-          .toLowerCase();
-
-      const resultsSection =
-        document.getElementById("results-section");
-
-      const results =
-        document.getElementById("results");
-
-      const message =
-        document.getElementById("resultsMessage");
-
-
-      if (!input) {
-
-        resultsSection.style.display = "none";
-
-        return;
-      }
-
-
-      const filtered =
-        products.filter(product => {
-
-          return (
-            product.name.toLowerCase().includes(input) ||
-            product.category.toLowerCase().includes(input) ||
-            product.keywords.toLowerCase().includes(input)
-          );
-
-        });
-
-
-      results.innerHTML = "";
-
-
-      if (filtered.length === 0) {
-
-        message.textContent =
-          "Keine Produkte gefunden.";
-
-      } else {
-
-        message.textContent =
-          filtered.length +
-          (filtered.length === 1
-            ? " Produkt gefunden."
-            : " Produkte gefunden.");
-
-        filtered.forEach(product => {
-
-          const card =
-            document.createElement("article");
-
-          card.className = "deal-card";
-
-
-          card.innerHTML = `
-
-            <div class="product-image">
-
-              <div class="product-icon">
-                ${product.icon}
-              </div>
-
-            </div>
-
-            <div class="card-content">
-
-              <span class="deal-badge">
-                Deal
-              </span>
-
-              <h3>
-                ${product.name}
-              </h3>
-
-              <div class="category-label">
-                ${product.category}
-              </div>
-
-              <a
-                class="check-price"
-                href="${product.link}"
-                target="_blank"
-                rel="nofollow sponsored"
-              >
-                Preis auf Amazon prüfen
-              </a>
-
-            </div>
-
-          `;
-
-
-          results.appendChild(card);
-
-        });
-
-      }
-
-
-      resultsSection.style.display = "block";
-
-      resultsSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-
-    }
-
-
-    function searchCategory(category) {
-
-      document
-        .getElementById("searchInput")
-        .value = category;
-
-      searchProducts();
-
-    }
-
-
-    document
-      .getElementById("searchInput")
-      .addEventListener("keydown", function(event) {
-
-        if (event.key === "Enter") {
-
-          searchProducts();
-
-        }
-
-      });
-
   </script>
 
+
 </body>
-  </html>
+</html>
