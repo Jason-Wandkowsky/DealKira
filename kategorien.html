@@ -3,68 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="DealKira – Kategorien entdecken und passende Produkte finden."
-  >
-
-  <meta name="theme-color" content="#111111">
-
-  <title>DealKira – Kategorien</title>
+  <title>Kategorien – DealKira</title>
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      font-family: Arial, Helvetica, sans-serif;
       background: #f5f5f5;
       color: #111;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.5;
     }
-
-
-    /* =========================
-       HEADER
-    ========================== */
 
     header {
       height: 72px;
       background: #111;
       padding: 0 6%;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       position: sticky;
       top: 0;
       z-index: 1000;
-
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
-
-
-    /* =========================
-       LOGO
-    ========================== */
 
     .logo {
       width: 220px;
       height: 55px;
-
       display: flex;
       align-items: center;
-
       overflow: visible;
       position: relative;
     }
@@ -73,55 +45,34 @@
       height: 240px;
       width: auto;
       max-width: none;
-
       display: block;
-
-      transform-origin: left center;
     }
-
-
-    /* =========================
-       HAMBURGER
-    ========================== */
 
     .menu-button {
       width: 48px;
       height: 48px;
-
       background: #1c1c1c;
-
       border: 1px solid #333;
       border-radius: 10px;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       gap: 5px;
-
       cursor: pointer;
-
-      transition: 0.2s;
-
-      position: relative;
-      z-index: 1100;
-    }
-
-    .menu-button:hover {
-      background: #252525;
-      border-color: #ffd400;
     }
 
     .menu-button span {
       width: 23px;
       height: 3px;
-
       background: #ffd400;
-
-      border-radius: 3px;
-
+      border-radius: 2px;
       transition: 0.25s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
     }
 
     .menu-button.active span:nth-child(1) {
@@ -136,34 +87,20 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-
-    /* =========================
-       MENU
-    ========================== */
-
     .menu-panel {
       position: absolute;
-
       top: 82px;
       right: 6%;
-
       width: 270px;
-
       background: #111;
-
       border: 1px solid #333;
       border-radius: 14px;
-
       padding: 10px;
-
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
       opacity: 0;
       visibility: hidden;
-
       transform: translateY(-10px);
-
-      transition: 0.2s ease;
+      transition: 0.2s;
     }
 
     .menu-panel.open {
@@ -175,20 +112,12 @@
     .menu-panel a {
       display: flex;
       align-items: center;
-
       gap: 12px;
-
       color: white;
-
       text-decoration: none;
-
       padding: 14px 15px;
-
       border-radius: 9px;
-
       font-weight: 700;
-
-      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -208,31 +137,15 @@
       margin: 8px 5px;
     }
 
-
-    /* =========================
-       PAGE HEADER
-    ========================== */
-
     .page-header {
-      background:
-        linear-gradient(
-          135deg,
-          #111 0%,
-          #202020 100%
-        );
-
+      background: linear-gradient(135deg, #111, #222);
       color: white;
-
+      padding: 70px 6%;
       text-align: center;
-
-      padding: 70px 20px 65px;
     }
 
     .page-header h1 {
-      font-size: clamp(38px, 6vw, 60px);
-
-      font-weight: 900;
-
+      font-size: 42px;
       margin-bottom: 12px;
     }
 
@@ -241,151 +154,75 @@
     }
 
     .page-header p {
-      color: #d6d6d6;
+      color: #ccc;
       font-size: 18px;
     }
 
-
-    /* =========================
-       CATEGORIES
-    ========================== */
-
-    .categories-section {
-      padding: 60px 0 80px;
-    }
-
-    .container {
-      width: min(1180px, 92%);
-      margin: auto;
-    }
-
-    .category-grid {
+    .categories {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 6%;
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
-
-
-    /* =========================
-       CATEGORY CARD
-    ========================== */
 
     .category-card {
       background: white;
-
-      border-radius: 18px;
-
-      min-height: 250px;
-
-      padding: 30px 20px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
+      border-radius: 16px;
+      padding: 35px 25px;
       text-align: center;
-
       text-decoration: none;
-
       color: #111;
-
-      border: 1px solid #e8e8e8;
-
-      box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.05);
-
-      transition: 0.25s;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
     }
 
     .category-card:hover {
-      transform: translateY(-6px);
-
-      box-shadow:
-        0 18px 35px rgba(0, 0, 0, 0.12);
-
-      border-color: #ffd400;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.13);
     }
 
     .category-icon {
-      font-size: 70px;
-
-      margin-bottom: 20px;
-
-      filter:
-        drop-shadow(
-          0 8px 8px
-          rgba(0, 0, 0, 0.12)
-        );
+      font-size: 60px;
+      margin-bottom: 15px;
     }
 
     .category-card h2 {
-      font-size: 23px;
-
-      font-weight: 900;
-
+      font-size: 22px;
       margin-bottom: 8px;
     }
 
     .category-card p {
-      color: #777;
-
-      font-size: 14px;
+      color: #666;
+      font-size: 15px;
     }
-
-
-    /* =========================
-       FOOTER
-    ========================== */
 
     footer {
       background: #111;
-
-      color: #aaa;
-
-      text-align: center;
-
-      padding: 35px 20px;
-    }
-
-    footer .footer-logo {
       color: white;
-
-      font-size: 22px;
-
-      font-weight: 900;
-
-      margin-bottom: 10px;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 30px;
     }
 
-    footer .footer-logo span {
+    footer strong {
       color: #ffd400;
     }
 
     footer p {
-      font-size: 13px;
+      margin-top: 6px;
+      color: #aaa;
     }
 
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
-
-    @media (max-width: 1100px) {
-
-      .category-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: 1fr;
+        max-width: 600px;
       }
-
     }
-
 
     @media (max-width: 800px) {
-
       header {
         padding: 0 5%;
       }
@@ -402,11 +239,12 @@
         right: 5%;
       }
 
+      .page-header h1 {
+        font-size: 34px;
+      }
     }
 
-
     @media (max-width: 550px) {
-
       header {
         height: 68px;
         padding: 0 5%;
@@ -433,323 +271,193 @@
       }
 
       .page-header {
-        padding: 55px 20px;
+        padding: 55px 5%;
       }
 
-      .category-grid {
-        grid-template-columns: 1fr;
+      .page-header h1 {
+        font-size: 30px;
       }
 
+      .page-header p {
+        font-size: 16px;
+      }
     }
-
   </style>
 </head>
 
-
 <body>
 
+<header>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <div class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira Logo">
+  </div>
 
-  <header>
+  <button class="menu-button"
+          id="menuButton"
+          onclick="toggleMenu()"
+          aria-label="Menü öffnen"
+          aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <div class="logo">
+  <div class="menu-panel" id="menuPanel">
 
-      <img
-        src="20879_nobg (1).png"
-        alt="DealKira Logo"
-      >
+    <a href="index.html">
+      <span class="menu-icon">🏠</span>
+      Startseite
+    </a>
 
-    </div>
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
 
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
 
-    <!-- HAMBURGER -->
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
 
-    <button
-      class="menu-button"
-      id="menuButton"
-      onclick="toggleMenu()"
-      aria-label="Menü öffnen"
-      aria-expanded="false"
-    >
+    <div class="menu-divider"></div>
 
-      <span></span>
-      <span></span>
-      <span></span>
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
+    </a>
 
-    </button>
+  </div>
 
-
-    <!-- MENU -->
-
-    <div
-      class="menu-panel"
-      id="menuPanel"
-    >
-
-      <a href="index.html">
-        <span class="menu-icon">🏠</span>
-        Startseite
-      </a>
-
-      <a href="deals.html">
-        <span class="menu-icon">🔥</span>
-        Deals
-      </a>
-
-      <a href="kategorien.html">
-        <span class="menu-icon">📂</span>
-        Kategorien
-      </a>
-
-      <a href="suche.html">
-        <span class="menu-icon">🔍</span>
-        Suche
-      </a>
-
-      <div class="menu-divider"></div>
-
-      <a href="konto.html">
-        <span class="menu-icon">👤</span>
-        Konto / Anmelden
-      </a>
-
-    </div>
-
-  </header>
+</header>
 
 
-  <!-- =========================
-       PAGE HEADER
-  ========================== -->
+<section class="page-header">
 
-  <section class="page-header">
+  <h1><span>Kategorien</span> entdecken</h1>
 
-    <h1>
-      <span>Kategorien</span> entdecken
-    </h1>
+  <p>
+    Finde passende Produkte schnell und übersichtlich.
+  </p>
+
+</section>
+
+
+<section class="categories">
+
+  <!-- 1. COMPUTER -->
+  <a href="computer-kategorien.html" class="category-card">
+
+    <div class="category-icon">💻</div>
+
+    <h2>Computer</h2>
 
     <p>
-      Finde passende Produkte schnell und übersichtlich.
+      Computer, Bildschirme, Zubehör und Komponenten.
     </p>
 
-  </section>
+  </a>
 
 
-  <!-- =========================
-       CATEGORIES
-  ========================== -->
+  <!-- 2. TELEFONE / TABLETS -->
+  <a href="telefone-tablets.html" class="category-card">
 
-  <main>
+    <div class="category-icon">📱</div>
 
-    <section class="categories-section">
-
-      <div class="container">
-
-        <div class="category-grid">
-
-
-          <!-- GAMING -->
-
-          <a
-            href="gaming.html"
-            class="category-card"
-          >
-
-            <div class="category-icon">
-              🎮
-            </div>
-
-            <h2>
-              Gaming
-            </h2>
-
-            <p>
-              Konsolen, Zubehör und Gaming-Produkte
-            </p>
-
-          </a>
-
-
-          <!-- ELEKTRONIK -->
-
-          <a
-            href="elektronik.html"
-            class="category-card"
-          >
-
-            <div class="category-icon">
-              📱
-            </div>
-
-            <h2>
-              Elektronik
-            </h2>
-
-            <p>
-              Smartphones, Powerbanks und mehr
-            </p>
-
-          </a>
-
-
-          <!-- COMPUTER -->
-
-          <a
-            href="computer.html"
-            class="category-card"
-          >
-
-            <div class="category-icon">
-              💻
-            </div>
-
-            <h2>
-              Computer
-            </h2>
-
-            <p>
-              Monitore, Hardware und Computer-Zubehör
-            </p>
-
-          </a>
-
-
-          <!-- HAUSHALT -->
-
-          <a
-            href="haushalt.html"
-            class="category-card"
-          >
-
-            <div class="category-icon">
-              🏠
-            </div>
-
-            <h2>
-              Haushalt
-            </h2>
-
-            <p>
-              Praktische Produkte für dein Zuhause
-            </p>
-
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer>
-
-    <div class="footer-logo">
-      Deal<span>Kira</span>
-    </div>
+    <h2>Telefone / Tablets & Zubehör</h2>
 
     <p>
-      Produkte entdecken. Deals finden. Preise vergleichen.
+      Telefone, Tablets, Kabel, Adapter, Powerbanks und mehr.
     </p>
 
-  </footer>
+  </a>
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
+  <!-- 3. HAUSHALTSGERÄTE -->
+  <a href="haushaltsgeraete.html" class="category-card">
 
-  <script>
+    <div class="category-icon">🏠</div>
 
-    function toggleMenu() {
+    <h2>Haushaltsgeräte</h2>
 
-      const menu =
-        document.getElementById("menuPanel");
+    <p>
+      Haushaltsgeräte für Küche, Wäsche, Reinigung und mehr.
+    </p>
 
-      const button =
-        document.getElementById("menuButton");
+  </a>
 
-      const isOpen =
-        menu.classList.toggle("open");
+</section>
 
-      button.classList.toggle("active");
 
-      button.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
+<footer>
 
+  <strong>DealKira</strong>
+
+  <p>
+    Produkte entdecken. Deals finden. Preise vergleichen.
+  </p>
+
+</footer>
+
+
+<script>
+
+  function toggleMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    const isOpen = menu.classList.toggle("open");
+
+    button.classList.toggle("active");
+
+    button.setAttribute("aria-expanded", isOpen);
+
+  }
+
+
+  function closeMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+    button.setAttribute("aria-expanded", "false");
+
+  }
+
+
+  document.addEventListener("click", function(event) {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    if (
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+      closeMenu();
     }
 
+  });
 
-    function closeMenu() {
 
-      const menu =
-        document.getElementById("menuPanel");
+  document.addEventListener("keydown", function(event) {
 
-      const button =
-        document.getElementById("menuButton");
-
-      menu.classList.remove("open");
-
-      button.classList.remove("active");
-
-      button.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
+    if (event.key === "Escape") {
+      closeMenu();
     }
 
+  });
 
-    document.addEventListener(
-      "click",
-      function(event) {
-
-        const menu =
-          document.getElementById("menuPanel");
-
-        const button =
-          document.getElementById("menuButton");
-
-        if (
-          !menu.contains(event.target) &&
-          !button.contains(event.target)
-        ) {
-
-          closeMenu();
-
-        }
-
-      }
-    );
-
-
-    document.addEventListener(
-      "keydown",
-      function(event) {
-
-        if (event.key === "Escape") {
-
-          closeMenu();
-
-        }
-
-      }
-    );
-
-  </script>
-
+</script>
 
 </body>
 </html>
