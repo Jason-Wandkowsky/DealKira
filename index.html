@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DealKira – Preise vergleichen & Deals finden</title>
-    <meta name="description" content="DealKira vergleicht Preise und hilft dir, gute Angebote zu finden.">
+    <meta name="description" content="DealKira hilft dir, Produkte und Deals schnell zu finden und Preise zu vergleichen.">
+
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
         }
 
         body {
-            background: #f5f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f7f9;
             color: #171717;
         }
 
         header {
             background: white;
-            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 6%;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #ddd;
+            justify-content: space-between;
         }
 
         .logo {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: #ffd000;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 25px;
+            font-size: 15px;
         }
 
         .hero {
             text-align: center;
-            padding: 70px 20px;
+            padding: 80px 20px 65px;
             background: white;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: clamp(38px, 7vw, 64px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #ffd000;
         }
 
         .hero p {
@@ -50,67 +75,147 @@
         }
 
         .search {
-            max-width: 650px;
+            max-width: 700px;
             margin: auto;
             display: flex;
-            gap: 10px;
+            background: white;
+            border: 1px solid #d9dce1;
+            border-radius: 14px;
+            padding: 6px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
 
         .search input {
             flex: 1;
-            padding: 16px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding: 15px;
             font-size: 16px;
+            min-width: 0;
         }
 
         .search button {
-            padding: 16px 25px;
             border: none;
-            border-radius: 10px;
-            background: #111;
+            background: #ffd000;
             color: white;
-            font-weight: bold;
+            padding: 0 25px;
+            border-radius: 10px;
+            font-weight: 700;
             cursor: pointer;
         }
 
         .section {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 20px;
         }
 
         .section h2 {
+            font-size: 28px;
             margin-bottom: 25px;
         }
 
-        .cards {
+        .categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
         }
 
-        .card {
+        .category {
             background: white;
             padding: 25px;
-            border-radius: 15px;
-            border: 1px solid #e1e1e1;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
         }
 
-        .card h3 {
+        .category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .product-image {
+            height: 150px;
+            background: #f1f2f4;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .product h3 {
+            font-size: 16px;
             margin-bottom: 10px;
         }
 
-        .card p {
-            color: #666;
+        .price {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .amazon {
+            display: block;
+            text-align: center;
+            background: #ffd000;
+            color: white;
+            text-decoration: none;
+            padding: 11px;
+            border-radius: 8px;
+            font-weight: 700;
         }
 
         footer {
-            margin-top: 80px;
-            padding: 30px;
+            margin-top: 30px;
+            background: #171717;
+            color: #aaa;
             text-align: center;
-            background: #111;
-            color: white;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .categories,
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav a {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .categories,
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 55px;
+            }
+
+            .search button {
+                padding: 0 16px;
+            }
         }
     </style>
 </head>
@@ -118,47 +223,140 @@
 <body>
 
 <header>
-    <div class="logo">DealKira</div>
+    <div class="nav">
+        <div class="logo">Deal<span>Kira</span></div>
+
+        <nav>
+            <a href="#">Startseite</a>
+            <a href="#">Deals</a>
+            <a href="#">Kategorien</a>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-    <h1>Finde bessere Deals.</h1>
-    <p>Preise vergleichen, Angebote entdecken und Geld sparen.</p>
+
+    <h1>Finde <span>bessere Deals.</span></h1>
+
+    <p>
+        Produkte entdecken, Preise vergleichen und Angebote finden.
+    </p>
 
     <div class="search">
-        <input type="text" placeholder="Was möchtest du vergleichen?">
-        <button>Suchen</button>
+        <input
+            type="text"
+            placeholder="Was möchtest du suchen?"
+        >
+
+        <button>
+            Suchen
+        </button>
     </div>
+
 </section>
 
 <section class="section">
-    <h2>Beliebte Kategorien</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3>📱 Elektronik</h3>
-            <p>Smartphones, Fernseher, Zubehör und mehr.</p>
-        </div>
+    <h2>Kategorien</h2>
 
-        <div class="card">
-            <h3>💻 Computer</h3>
-            <p>Laptops, PCs, Komponenten und Zubehör.</p>
-        </div>
+    <div class="categories">
 
-        <div class="card">
-            <h3>🏠 Haushalt</h3>
-            <p>Haushaltsgeräte und Produkte für Zuhause.</p>
-        </div>
+        <div class="category">📱 Elektronik</div>
 
-        <div class="card">
-            <h3>🎮 Gaming</h3>
-            <p>Konsolen, Spiele und Gaming-Zubehör.</p>
-        </div>
+        <div class="category">💻 Computer</div>
+
+        <div class="category">🎮 Gaming</div>
+
+        <div class="category">🏠 Haushalt</div>
+
     </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Top Deals</h2>
+
+    <div class="products">
+
+        <div class="product">
+
+            <div class="product-image">
+                Produktbild
+            </div>
+
+            <h3>Beispielprodukt</h3>
+
+            <div class="price">
+                99,99 €
+            </div>
+
+            <a class="amazon" href="#">
+                Bei Amazon ansehen
+            </a>
+
+        </div>
+
+        <div class="product">
+
+            <div class="product-image">
+                Produktbild
+            </div>
+
+            <h3>Beispielprodukt</h3>
+
+            <div class="price">
+                149,99 €
+            </div>
+
+            <a class="amazon" href="#">
+                Bei Amazon ansehen
+            </a>
+
+        </div>
+
+        <div class="product">
+
+            <div class="product-image">
+                Produktbild
+            </div>
+
+            <h3>Beispielprodukt</h3>
+
+            <div class="price">
+                199,99 €
+            </div>
+
+            <a class="amazon" href="#">
+                Bei Amazon ansehen
+            </a>
+
+        </div>
+
+        <div class="product">
+
+            <div class="product-image">
+                Produktbild
+            </div>
+
+            <h3>Beispielprodukt</h3>
+
+            <div class="price">
+                249,99 €
+            </div>
+
+            <a class="amazon" href="#">
+                Bei Amazon ansehen
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
 <footer>
-    © 2026 DealKira
+    © 2026 DealKira – Preise vergleichen & Deals finden
 </footer>
 
 </body>
