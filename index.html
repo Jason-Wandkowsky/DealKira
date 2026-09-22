@@ -49,9 +49,6 @@
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Der Bereich bleibt gleich groß.
-       Nur das Bild wird größer dargestellt. */
-
     .logo {
       width: 220px;
       height: 55px;
@@ -69,20 +66,108 @@
       transform-origin: left center;
     }
 
-    nav {
+    /* =========================
+       HAMBURGER BUTTON
+    ========================== */
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
       display: flex;
-      gap: 28px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+      position: relative;
+      z-index: 1100;
     }
 
-    nav a {
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: 0.25s;
+    }
+
+    /* Animation when menu is open */
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* =========================
+       MENU
+    ========================== */
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.2s ease;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       color: white;
       text-decoration: none;
-      font-weight: 600;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
       transition: 0.2s;
     }
 
-    nav a:hover {
+    .menu-panel a:hover {
+      background: #222;
       color: #ffd400;
+    }
+
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
     }
 
     /* =========================
@@ -412,9 +497,8 @@
         height: 210px;
       }
 
-      nav {
-        gap: 14px;
-        font-size: 14px;
+      .menu-panel {
+        right: 5%;
       }
 
       .categories {
@@ -447,9 +531,15 @@
         height: 184px;
       }
 
-      nav {
-        gap: 10px;
-        font-size: 12px;
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
+      .menu-panel {
+        top: 78px;
+        right: 5%;
+        width: 260px;
       }
 
       .hero h1 {
@@ -507,11 +597,58 @@
       >
     </div>
 
-    <nav>
-      <a href="#start">Startseite</a>
-      <a href="#deals">Deals</a>
-      <a href="#kategorien">Kategorien</a>
-    </nav>
+    <!-- HAMBURGER -->
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      onclick="toggleMenu()"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+
+    <div
+      class="menu-panel"
+      id="menuPanel"
+    >
+
+      <a href="#" onclick="closeMenu()">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
+      </a>
+
+      <div class="menu-divider"></div>
+
+      <a href="#start" onclick="closeMenu()">
+        <span class="menu-icon">🏠</span>
+        Startseite
+      </a>
+
+      <a href="#deals" onclick="closeMenu()">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
+
+      <a href="#kategorien" onclick="closeMenu()">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
+
+      <a
+        href="#start"
+        onclick="focusSearch(event)"
+      >
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
+
+    </div>
 
   </header>
 
@@ -915,6 +1052,118 @@
     ];
 
 
+    /* =========================
+       HAMBURGER MENU
+    ========================== */
+
+    function toggleMenu() {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+      const isOpen =
+        menu.classList.toggle("open");
+
+      button.classList.toggle("active");
+
+      button.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
+    }
+
+
+    function closeMenu() {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+      menu.classList.remove("open");
+
+      button.classList.remove("active");
+
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+
+    /* Menü schließen, wenn außerhalb geklickt wird */
+
+    document.addEventListener(
+      "click",
+      function(event) {
+
+        const menu =
+          document.getElementById("menuPanel");
+
+        const button =
+          document.getElementById("menuButton");
+
+        if (
+          !menu.contains(event.target) &&
+          !button.contains(event.target)
+        ) {
+
+          closeMenu();
+
+        }
+
+      }
+    );
+
+
+    /* Menü mit ESC schließen */
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (event.key === "Escape") {
+
+          closeMenu();
+
+        }
+
+      }
+    );
+
+
+    /* Suche aus dem Menü öffnen */
+
+    function focusSearch(event) {
+
+      event.preventDefault();
+
+      closeMenu();
+
+      document
+        .getElementById("searchInput")
+        .focus();
+
+      document
+        .getElementById("start")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    }
+
+
+    /* =========================
+       SEARCH
+    ========================== */
+
     function searchProducts() {
 
       const input =
@@ -1059,4 +1308,4 @@
   </script>
 
 </body>
-</html>
+  </html>
