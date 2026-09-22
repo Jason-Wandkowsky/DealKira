@@ -1,426 +1,504 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Computer – DealKira</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer – DealKira</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-background:#f5f5f5;
-color:#111;
-font-family:Arial,Helvetica,sans-serif;
-line-height:1.5;
-}
+    body {
+      background: #f5f5f5;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
 
-header{
-height:72px;
-background:#111;
-padding:0 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 12px rgba(0,0,0,.2);
-}
+    header {
+      height: 72px;
+      background: #111;
+      padding: 0 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
 
-.logo{
-width:220px;
-height:55px;
-display:flex;
-align-items:center;
-overflow:visible;
-position:relative;
-}
+    .logo {
+      width: 220px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      position: relative;
+    }
 
-.logo img{
-height:240px;
-width:auto;
-max-width:none;
-display:block;
-}
+    .logo img {
+      height: 240px;
+      width: auto;
+      max-width: none;
+      display: block;
+    }
 
-.menu-button{
-width:48px;
-height:48px;
-background:#1c1c1c;
-border:1px solid #333;
-border-radius:10px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-gap:5px;
-cursor:pointer;
-}
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
 
-.menu-button span{
-width:23px;
-height:3px;
-background:#ffd400;
-border-radius:2px;
-transition:.25s;
-}
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 2px;
+      transition: 0.25s;
+    }
 
-.menu-button:hover{
-background:#252525;
-border-color:#ffd400;
-}
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
 
-.menu-button.active span:nth-child(1){
-transform:translateY(8px) rotate(45deg);
-}
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
 
-.menu-button.active span:nth-child(2){
-opacity:0;
-}
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
 
-.menu-button.active span:nth-child(3){
-transform:translateY(-8px) rotate(-45deg);
-}
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
 
-.menu-panel{
-position:absolute;
-top:82px;
-right:6%;
-width:270px;
-background:#111;
-border:1px solid #333;
-border-radius:14px;
-padding:10px;
-box-shadow:0 12px 30px rgba(0,0,0,.35);
-opacity:0;
-visibility:hidden;
-transform:translateY(-10px);
-transition:.2s;
-}
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.2s;
+    }
 
-.menu-panel.open{
-opacity:1;
-visibility:visible;
-transform:translateY(0);
-}
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
 
-.menu-panel a{
-display:flex;
-align-items:center;
-gap:12px;
-color:white;
-text-decoration:none;
-padding:14px 15px;
-border-radius:9px;
-font-weight:700;
-}
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
 
-.menu-panel a:hover{
-background:#222;
-color:#ffd400;
-}
+    .menu-panel a:hover {
+      background: #222;
+      color: #ffd400;
+    }
 
-.menu-icon{
-width:25px;
-text-align:center;
-font-size:19px;
-}
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
 
-.menu-divider{
-height:1px;
-background:#333;
-margin:8px 5px;
-}
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
 
-/* ZURÜCK-PFEIL */
-.back-button{
-padding:18px 6% 0;
-}
+    .page-header {
+      background: linear-gradient(135deg, #111, #222);
+      color: white;
+      padding: 70px 6%;
+      text-align: center;
+    }
 
-.back-button a{
-color:#ffd400;
-text-decoration:none;
-font-size:42px;
-font-weight:300;
-line-height:1;
-display:inline-block;
-}
+    .page-header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
 
-.back-button a:hover{
-opacity:.7;
-}
+    .page-header h1 span {
+      color: #ffd400;
+    }
 
-.page-header{
-background:linear-gradient(135deg,#111,#222);
-color:white;
-padding:50px 6% 70px;
-text-align:center;
-}
+    .page-header p {
+      color: #ccc;
+      font-size: 18px;
+    }
 
-.page-header h1{
-font-size:42px;
-margin-bottom:12px;
-}
+    .categories {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 6%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
 
-.page-header h1 span{
-color:#ffd400;
-}
+    .category-card {
+      background: white;
+      border-radius: 16px;
+      padding: 35px 25px;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
 
-.page-header p{
-color:#ccc;
-font-size:18px;
-}
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.13);
+    }
 
-.categories{
-max-width:1100px;
-margin:0 auto;
-padding:60px 6%;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
+    .category-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
 
-.category-card{
-background:white;
-border-radius:16px;
-padding:35px 25px;
-text-align:center;
-text-decoration:none;
-color:#111;
-box-shadow:0 4px 18px rgba(0,0,0,.08);
-transition:.2s;
-}
+    .category-card h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
 
-.category-card:hover{
-transform:translateY(-5px);
-box-shadow:0 8px 25px rgba(0,0,0,.13);
-}
+    .category-card p {
+      color: #666;
+      font-size: 15px;
+    }
 
-.category-icon{
-font-size:60px;
-margin-bottom:15px;
-}
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 30px;
+    }
 
-.category-card h2{
-font-size:22px;
-margin-bottom:8px;
-}
+    footer strong {
+      color: #ffd400;
+    }
 
-.category-card p{
-color:#666;
-font-size:15px;
-}
+    footer p {
+      margin-top: 6px;
+      color: #aaa;
+    }
 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:35px 20px;
-margin-top:30px;
-}
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+      }
+    }
 
-footer strong{color:#ffd400}
+    @media (max-width: 800px) {
+      header {
+        padding: 0 5%;
+      }
 
-footer p{
-margin-top:6px;
-color:#aaa;
-}
+      .logo {
+        width: 180px;
+      }
 
-@media(max-width:900px){
-.categories{
-grid-template-columns:1fr;
-max-width:600px;
-}
-}
+      .logo img {
+        height: 210px;
+      }
 
-@media(max-width:800px){
-header{padding:0 5%}
+      .menu-panel {
+        right: 5%;
+      }
 
-.logo{width:180px}
+      .page-header h1 {
+        font-size: 34px;
+      }
+    }
 
-.logo img{height:210px}
+    @media (max-width: 550px) {
+      header {
+        height: 68px;
+        padding: 0 5%;
+      }
 
-.menu-panel{right:5%}
+      .logo {
+        width: 145px;
+        height: 50px;
+      }
 
-.page-header h1{font-size:34px}
-}
+      .logo img {
+        height: 184px;
+      }
 
-@media(max-width:550px){
-header{
-height:68px;
-padding:0 5%;
-}
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
 
-.logo{
-width:145px;
-height:50px;
-}
+      .menu-panel {
+        top: 78px;
+        right: 5%;
+        width: 260px;
+      }
 
-.logo img{height:184px}
+      .page-header {
+        padding: 55px 5%;
+      }
 
-.menu-button{
-width:45px;
-height:45px;
-}
+      .page-header h1 {
+        font-size: 30px;
+      }
 
-.menu-panel{
-top:78px;
-right:5%;
-width:260px;
-}
-
-.back-button{
-padding:16px 5% 0;
-}
-
-.page-header{
-padding:45px 5% 55px;
-}
-
-.page-header h1{
-font-size:30px;
-}
-
-.page-header p{
-font-size:16px;
-}
-}
-</style>
+      .page-header p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">
-<img src="20879_nobg (1).png" alt="DealKira Logo">
-</div>
+  <div class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira Logo">
+  </div>
 
-<button class="menu-button"
-id="menuButton"
-onclick="toggleMenu()"
-aria-label="Menü öffnen"
-aria-expanded="false">
-<span></span>
-<span></span>
-<span></span>
-</button>
+  <button class="menu-button"
+          id="menuButton"
+          onclick="toggleMenu()"
+          aria-label="Menü öffnen"
+          aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-<div class="menu-panel" id="menuPanel">
+  <div class="menu-panel" id="menuPanel">
 
-<a href="index.html">
-<span class="menu-icon">🏠</span>Startseite
-</a>
+    <a href="index.html">
+      <span class="menu-icon">🏠</span>
+      Startseite
+    </a>
 
-<a href="deals.html">
-<span class="menu-icon">🔥</span>Deals
-</a>
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
 
-<a href="kategorien.html">
-<span class="menu-icon">📂</span>Kategorien
-</a>
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
 
-<a href="suche.html">
-<span class="menu-icon">🔍</span>Suche
-</a>
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
 
-<div class="menu-divider"></div>
+    <div class="menu-divider"></div>
 
-<a href="konto.html">
-<span class="menu-icon">👤</span>Konto / Anmelden
-</a>
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
+    </a>
 
-</div>
+  </div>
 
 </header>
 
-<div class="back-button">
-<a href="kategorien.html">‹</a>
-</div>
 
 <section class="page-header">
 
-<h1><span>Computer</span></h1>
+  <h1><span>Computer</span> entdecken</h1>
 
-<p>Entdecke Computer, Zubehör und Komponenten.</p>
+  <p>
+    Finde Computer, Zubehör und Komponenten schnell und übersichtlich.
+  </p>
 
 </section>
+
 
 <section class="categories">
 
-<a href="#" class="category-card">
-<div class="category-icon">🖥️</div>
-<h2>Fertige Computer</h2>
-<p>Komplette PCs für verschiedene Anwendungen.</p>
-</a>
+  <!-- 1. FERTIGE COMPUTER -->
+  <a href="#" class="category-card">
 
-<a href="#" class="category-card">
-<div class="category-icon">🖥️</div>
-<h2>Bildschirme</h2>
-<p>Monitore für Gaming, Arbeit und Alltag.</p>
-</a>
+    <div class="category-icon">🖥️</div>
 
-<a href="#" class="category-card">
-<div class="category-icon">🖱️</div>
-<h2>Mäuse</h2>
-<p>Gaming-Mäuse und klassische Computermäuse.</p>
-</a>
+    <h2>Fertige Computer</h2>
 
-<a href="#" class="category-card">
-<div class="category-icon">⌨️</div>
-<h2>Tastaturen</h2>
-<p>Mechanische und klassische Tastaturen.</p>
-</a>
+    <p>
+      Komplett-PCs und fertige Computersysteme.
+    </p>
 
-<a href="#" class="category-card">
-<div class="category-icon">🔌</div>
-<h2>Computer-Zubehör</h2>
-<p>Praktisches Zubehör für deinen Computer.</p>
-</a>
+  </a>
 
-<a href="computer-komponenten.html" class="category-card">
-<div class="category-icon">⚙️</div>
-<h2>Computer-Komponenten</h2>
-<p>Einzelne PC-Komponenten entdecken.</p>
-</a>
+
+  <!-- 2. BILDSCHIRME -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🖥️</div>
+
+    <h2>Bildschirme</h2>
+
+    <p>
+      Monitore für Gaming, Arbeit und Multimedia.
+    </p>
+
+  </a>
+
+
+  <!-- 3. MÄUSE -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🖱️</div>
+
+    <h2>Mäuse</h2>
+
+    <p>
+      Computer-Mäuse für Gaming, Arbeit und Alltag.
+    </p>
+
+  </a>
+
+
+  <!-- 4. TASTATUREN -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">⌨️</div>
+
+    <h2>Tastaturen</h2>
+
+    <p>
+      Tastaturen für Gaming, Arbeit und Alltag.
+    </p>
+
+  </a>
+
+
+  <!-- 5. COMPUTER-ZUBEHÖR -->
+  <a href="#" class="category-card">
+
+    <div class="category-icon">🔌</div>
+
+    <h2>Computer-Zubehör</h2>
+
+    <p>
+      Praktisches Zubehör für deinen Computer.
+    </p>
+
+  </a>
+
+
+  <!-- 6. COMPUTER-KOMPONENTEN -->
+  <a href="computer-komponenten.html" class="category-card">
+
+    <div class="category-icon">⚙️</div>
+
+    <h2>Computer-Komponenten</h2>
+
+    <p>
+      Mainboards, Grafikkarten, RAM, CPUs und weitere Komponenten.
+    </p>
+
+  </a>
 
 </section>
 
+
 <footer>
-<strong>DealKira</strong>
-<p>Produkte entdecken. Deals finden. Preise vergleichen.</p>
+
+  <strong>DealKira</strong>
+
+  <p>
+    Produkte entdecken. Deals finden. Preise vergleichen.
+  </p>
+
 </footer>
 
+
 <script>
-function toggleMenu(){
-const menu=document.getElementById("menuPanel");
-const button=document.getElementById("menuButton");
-const isOpen=menu.classList.toggle("open");
-button.classList.toggle("active");
-button.setAttribute("aria-expanded",isOpen);
-}
 
-function closeMenu(){
-const menu=document.getElementById("menuPanel");
-const button=document.getElementById("menuButton");
-menu.classList.remove("open");
-button.classList.remove("active");
-button.setAttribute("aria-expanded","false");
-}
+  function toggleMenu() {
 
-document.addEventListener("click",function(event){
-const menu=document.getElementById("menuPanel");
-const button=document.getElementById("menuButton");
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
 
-if(!menu.contains(event.target)&&!button.contains(event.target)){
-closeMenu();
-}
-});
+    const isOpen = menu.classList.toggle("open");
 
-document.addEventListener("keydown",function(event){
-if(event.key==="Escape")closeMenu();
-});
+    button.classList.toggle("active");
+
+    button.setAttribute("aria-expanded", isOpen);
+
+  }
+
+
+  function closeMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+    button.setAttribute("aria-expanded", "false");
+
+  }
+
+
+  document.addEventListener("click", function(event) {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    if (
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+      closeMenu();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+
+  });
+
 </script>
 
 </body>
