@@ -396,11 +396,13 @@
     <img src="20879_nobg (1).png" alt="DealKira Logo">
   </div>
 
-  <button class="menu-button"
-          id="menuButton"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-          aria-expanded="false">
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false"
+  >
     <span></span>
     <span></span>
     <span></span>
@@ -439,7 +441,6 @@
 
 </header>
 
-
 <section class="page-header">
 
   <h1><span>Produkte suchen</span></h1>
@@ -449,7 +450,6 @@
   </p>
 
 </section>
-
 
 <section class="search-section">
 
@@ -470,13 +470,11 @@
 
 </section>
 
-
 <section class="results">
 
   <div id="resultsContainer"></div>
 
 </section>
-
 
 <footer>
 
@@ -488,88 +486,253 @@
 
 </footer>
 
-
 <script>
 
   const products = [
+
     {
       name: "PlayStation 5",
       category: "Gaming",
       icon: "🎮",
       link: "https://amzn.to/4yW9vEp"
     },
+
     {
       name: "Samsung Galaxy S26 Ultra",
       category: "Elektronik",
       icon: "📱",
       link: "https://amzn.to/4yL6uGH"
     },
+
     {
       name: "Apple iPhone 17",
       category: "Elektronik",
       icon: "📱",
       link: "https://amzn.to/3VsXwj3"
     },
+
     {
       name: "Powerbank",
       category: "Elektronik",
       icon: "🔋",
       link: "https://amzn.to/4yJVCJc"
     },
+
     {
       name: "27-Zoll Monitor",
       category: "Computer",
       icon: "🖥️",
       link: "https://amzn.to/4rq0uRq"
     }
+
   ];
 
 
-  function searchProducts() {
+  /* =========================
+     TEXT NORMALISIEREN
+  ========================== */
 
-    const searchTerm = document
-      .getElementById("searchInput")
-      .value
+  function normalizeText(text) {
+
+    return text
       .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9äöüß\s]/g, "")
       .trim();
 
-    const container = document.getElementById("resultsContainer");
+  }
 
-    if (searchTerm === "") {
-      container.innerHTML = `
-        <div class="no-results">
-          <div class="no-results-icon">🔍</div>
-          <h2>Was möchtest du suchen?</h2>
-          <p>Gib oben einen Produktnamen ein.</p>
-        </div>
-      `;
-      return;
+
+  /* =========================
+     LEVENSHTEIN-DISTANZ
+  ========================== */
+
+  function levenshteinDistance(a, b) {
+
+    const matrix = [];
+
+    for (let i = 0; i <= b.length; i++) {
+      matrix[i] = [i];
     }
 
-    const results = products.filter(product =>
-      product.name.toLowerCase().includes(searchTerm) ||
-      product.category.toLowerCase().includes(searchTerm)
-    );
+    for (let j = 0; j <= a.length; j++) {
+      matrix[0][j] = j;
+    }
+
+    for (let i = 1; i <= b.length; i++) {
+
+      for (let j = 1; j <= a.length; j++) {
+
+        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+
+          matrix[i][j] = matrix[i - 1][j - 1];
+
+        } else {
+
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1,
+            matrix[i][j - 1] + 1,
+            matrix[i - 1][j] + 1
+          );
+
+        }
+
+      }
+
+    }
+
+    return matrix[b.length][a.length];
+
+  }
+
+
+  /* =========================
+     ÄHNLICHKEIT PRÜFEN
+  ========================== */
+
+  function isSimilar(searchTerm, text) {
+
+    searchTerm = normalizeText(searchTerm);
+    text = normalizeText(text);
+
+    if (text.includes(searchTerm)) {
+      return true;
+    }
+
+    const searchWords = searchTerm.split(/\s+/);
+    const textWords = text.split(/\s+/);
+
+
+    return searchWords.some(searchWord => {
+
+      if (searchWord.length < 3) {
+        return text.includes(searchWord);
+      }
+
+
+      return textWords.some(textWord => {
+
+        if (textWord.length < 3) {
+          return false;
+        }
+
+        const distance =
+          levenshteinDistance(searchWord, textWord);
+
+
+        let allowedErrors = 1;
+
+        if (searchWord.length >= 6) {
+          allowedErrors = 2;
+        }
+
+        if (searchWord.length >= 10) {
+          allowedErrors = 3;
+        }
+
+
+        return distance <= allowedErrors;
+
+      });
+
+    });
+
+  }
+
+
+  /* =========================
+     PRODUKTE SUCHEN
+  ========================== */
+
+  function searchProducts() {
+
+    const searchTerm =
+      document
+        .getElementById("searchInput")
+        .value
+        .trim();
+
+    const container =
+      document.getElementById("resultsContainer");
+
+
+    if (searchTerm === "") {
+
+      container.innerHTML = `
+
+        <div class="no-results">
+
+          <div class="no-results-icon">
+            🔍
+          </div>
+
+          <h2>
+            Was möchtest du suchen?
+          </h2>
+
+          <p>
+            Gib oben einen Produktnamen ein.
+          </p>
+
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    const results =
+      products.filter(product => {
+
+        return (
+          isSimilar(searchTerm, product.name) ||
+          isSimilar(searchTerm, product.category)
+        );
+
+      });
 
 
     if (results.length === 0) {
 
       container.innerHTML = `
+
         <div class="no-results">
-          <div class="no-results-icon">😕</div>
-          <h2>Keine Produkte gefunden</h2>
-          <p>Versuche einen anderen Suchbegriff.</p>
+
+          <div class="no-results-icon">
+            😕
+          </div>
+
+          <h2>
+            Keine Produkte gefunden
+          </h2>
+
+          <p>
+            Wir konnten leider kein passendes Produkt finden.
+            Versuche einen anderen Suchbegriff.
+          </p>
+
         </div>
+
       `;
 
       return;
+
     }
 
 
     container.innerHTML = `
+
       <div class="results-title">
-        ${results.length} ${results.length === 1 ? "Produkt" : "Produkte"} gefunden
+
+        ${results.length}
+        ${results.length === 1 ? "Produkt" : "Produkte"}
+        gefunden
+
       </div>
+
 
       <div class="product-grid">
 
@@ -603,10 +766,15 @@
         `).join("")}
 
       </div>
+
     `;
 
   }
 
+
+  /* =========================
+     ENTER-TASTE
+  ========================== */
 
   document
     .getElementById("searchInput")
@@ -619,55 +787,84 @@
     });
 
 
+  /* =========================
+     HAMBURGER MENÜ
+  ========================== */
+
   function toggleMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+    const menu =
+      document.getElementById("menuPanel");
 
-    const isOpen = menu.classList.toggle("open");
+    const button =
+      document.getElementById("menuButton");
+
+    const isOpen =
+      menu.classList.toggle("open");
 
     button.classList.toggle("active");
 
-    button.setAttribute("aria-expanded", isOpen);
+    button.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
 
   }
 
 
   function closeMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
 
     menu.classList.remove("open");
+
     button.classList.remove("active");
 
-    button.setAttribute("aria-expanded", "false");
+    button.setAttribute(
+      "aria-expanded",
+      "false"
+    );
 
   }
 
 
-  document.addEventListener("click", function(event) {
+  document.addEventListener(
+    "click",
+    function(event) {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+      const menu =
+        document.getElementById("menuPanel");
 
-    if (
-      !menu.contains(event.target) &&
-      !button.contains(event.target)
-    ) {
-      closeMenu();
+      const button =
+        document.getElementById("menuButton");
+
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+
+        closeMenu();
+
+      }
+
     }
+  );
 
-  });
 
+  document.addEventListener(
+    "keydown",
+    function(event) {
 
-  document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
 
-    if (event.key === "Escape") {
-      closeMenu();
     }
-
-  });
+  );
 
 </script>
 
