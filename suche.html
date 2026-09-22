@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suche – DealKira</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      height: 72px;
+      background: #111;
+      padding: 0 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      width: 220px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      position: relative;
+    }
+
+    .logo img {
+      height: 240px;
+      width: auto;
+      max-width: none;
+      display: block;
+    }
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 2px;
+      transition: 0.25s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
+
+    .menu-panel a:hover {
+      background: #222;
+      color: #ffd400;
+    }
+
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #111, #222);
+      color: white;
+      padding: 65px 6%;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 span {
+      color: #ffd400;
+    }
+
+    .page-header p {
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .search-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 6% 30px;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-box input {
+      flex: 1;
+      height: 55px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 0 18px;
+      font-size: 17px;
+      outline: none;
+      background: white;
+    }
+
+    .search-box input:focus {
+      border-color: #ffd400;
+      box-shadow: 0 0 0 3px rgba(255,212,0,0.15);
+    }
+
+    .search-box button {
+      height: 55px;
+      padding: 0 25px;
+      border: none;
+      border-radius: 12px;
+      background: #ffd400;
+      color: #111;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background: #e8bf00;
+    }
+
+    .results {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 6% 60px;
+    }
+
+    .results-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .product-image {
+      height: 160px;
+      background: #f1f1f1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      margin-bottom: 18px;
+    }
+
+    .product-category {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    .product-card h3 {
+      font-size: 21px;
+      margin-bottom: 15px;
+    }
+
+    .product-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
+
+    .product-button:hover {
+      background: #ffd400;
+      color: #111;
+    }
+
+    .no-results {
+      background: white;
+      border-radius: 16px;
+      padding: 45px 20px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .no-results-icon {
+      font-size: 50px;
+      margin-bottom: 12px;
+    }
+
+    .no-results h2 {
+      margin-bottom: 8px;
+    }
+
+    .no-results p {
+      color: #666;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      color: #ffd400;
+    }
+
+    footer p {
+      margin-top: 6px;
+      color: #aaa;
+    }
+
+    @media (max-width: 900px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 800px) {
+      header {
+        padding: 0 5%;
+      }
+
+      .logo {
+        width: 180px;
+      }
+
+      .logo img {
+        height: 210px;
+      }
+
+      .menu-panel {
+        right: 5%;
+      }
+
+      .page-header h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      header {
+        height: 68px;
+        padding: 0 5%;
+      }
+
+      .logo {
+        width: 145px;
+        height: 50px;
+      }
+
+      .logo img {
+        height: 184px;
+      }
+
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
+      .menu-panel {
+        top: 78px;
+        right: 5%;
+        width: 260px;
+      }
+
+      .page-header {
+        padding: 55px 5%;
+      }
+
+      .page-header h1 {
+        font-size: 30px;
+      }
+
+      .page-header p {
+        font-size: 16px;
+      }
+
+      .search-box {
+        flex-direction: column;
+      }
+
+      .search-box button {
+        width: 100%;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira Logo">
+  </div>
+
+  <button class="menu-button"
+          id="menuButton"
+          onclick="toggleMenu()"
+          aria-label="Menü öffnen"
+          aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-panel" id="menuPanel">
+
+    <a href="index.html">
+      <span class="menu-icon">🏠</span>
+      Startseite
+    </a>
+
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
+
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
+
+    <div class="menu-divider"></div>
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="page-header">
+
+  <h1><span>Produkte suchen</span></h1>
+
+  <p>
+    Finde Produkte schnell und einfach.
+  </p>
+
+</section>
+
+
+<section class="search-section">
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Produkt suchen..."
+      autocomplete="off"
+    >
+
+    <button onclick="searchProducts()">
+      Suchen
+    </button>
+
+  </div>
+
+</section>
+
+
+<section class="results">
+
+  <div id="resultsContainer"></div>
+
+</section>
+
+
+<footer>
+
+  <strong>DealKira</strong>
+
+  <p>
+    Produkte entdecken. Deals finden. Preise vergleichen.
+  </p>
+
+</footer>
+
+
+<script>
+
+  const products = [
+    {
+      name: "PlayStation 5",
+      category: "Gaming",
+      icon: "🎮",
+      link: "https://amzn.to/4yW9vEp"
+    },
+    {
+      name: "Samsung Galaxy S26 Ultra",
+      category: "Elektronik",
+      icon: "📱",
+      link: "https://amzn.to/4yL6uGH"
+    },
+    {
+      name: "Apple iPhone 17",
+      category: "Elektronik",
+      icon: "📱",
+      link: "https://amzn.to/3VsXwj3"
+    },
+    {
+      name: "Powerbank",
+      category: "Elektronik",
+      icon: "🔋",
+      link: "https://amzn.to/4yJVCJc"
+    },
+    {
+      name: "27-Zoll Monitor",
+      category: "Computer",
+      icon: "🖥️",
+      link: "https://amzn.to/4rq0uRq"
+    }
+  ];
+
+
+  function searchProducts() {
+
+    const searchTerm = document
+      .getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
+
+    const container = document.getElementById("resultsContainer");
+
+    if (searchTerm === "") {
+      container.innerHTML = `
+        <div class="no-results">
+          <div class="no-results-icon">🔍</div>
+          <h2>Was möchtest du suchen?</h2>
+          <p>Gib oben einen Produktnamen ein.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const results = products.filter(product =>
+      product.name.toLowerCase().includes(searchTerm) ||
+      product.category.toLowerCase().includes(searchTerm)
+    );
+
+
+    if (results.length === 0) {
+
+      container.innerHTML = `
+        <div class="no-results">
+          <div class="no-results-icon">😕</div>
+          <h2>Keine Produkte gefunden</h2>
+          <p>Versuche einen anderen Suchbegriff.</p>
+        </div>
+      `;
+
+      return;
+    }
+
+
+    container.innerHTML = `
+      <div class="results-title">
+        ${results.length} ${results.length === 1 ? "Produkt" : "Produkte"} gefunden
+      </div>
+
+      <div class="product-grid">
+
+        ${results.map(product => `
+
+          <div class="product-card">
+
+            <div class="product-image">
+              ${product.icon}
+            </div>
+
+            <div class="product-category">
+              ${product.category}
+            </div>
+
+            <h3>
+              ${product.name}
+            </h3>
+
+            <a
+              class="product-button"
+              href="${product.link}"
+              target="_blank"
+              rel="nofollow sponsored"
+            >
+              Preis auf Amazon prüfen
+            </a>
+
+          </div>
+
+        `).join("")}
+
+      </div>
+    `;
+
+  }
+
+
+  document
+    .getElementById("searchInput")
+    .addEventListener("keydown", function(event) {
+
+      if (event.key === "Enter") {
+        searchProducts();
+      }
+
+    });
+
+
+  function toggleMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    const isOpen = menu.classList.toggle("open");
+
+    button.classList.toggle("active");
+
+    button.setAttribute("aria-expanded", isOpen);
+
+  }
+
+
+  function closeMenu() {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+    button.setAttribute("aria-expanded", "false");
+
+  }
+
+
+  document.addEventListener("click", function(event) {
+
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
+
+    if (
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+      closeMenu();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
