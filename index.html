@@ -243,14 +243,16 @@
     </p>
 
     <div class="search">
-        <input
-            type="text"
-            placeholder="Was möchtest du suchen?"
-        >
+    <input
+        id="searchInput"
+        type="text"
+        placeholder="Was möchtest du suchen?"
+        onkeydown="if(event.key === 'Enter') searchProduct()"
+    >
 
-        <button>
-            Suchen
-        </button>
+    <button onclick="searchProduct()">
+        Suchen
+    </button>
     </div>
 
 </section>
@@ -358,6 +360,20 @@
 <footer>
     © 2026 DealKira – Preise vergleichen & Deals finden
 </footer>
+    
+<script>
+function searchProduct() {
+    const input = document.getElementById("searchInput");
+    const search = input.value.trim();
 
+    if (search === "") {
+        alert("Bitte gib ein Produkt ein.");
+        return;
+    }
+
+    alert("DealKira sucht nach: " + search);
+}
+</script>
+    
 </body>
 </html>
