@@ -13,28 +13,26 @@
     }
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
       background: #f5f5f5;
       color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
+      min-height: 100vh;
     }
 
     header {
-      height: 72px;
+      height: 82px;
       background: #111;
-      padding: 0 6%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
+      justify-content: space-between;
+      padding: 0 6%;
+      position: relative;
       z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
 
     .logo {
-      width: 220px;
-      height: 55px;
+      width: 280px;
+      height: 65px;
       display: flex;
       align-items: center;
       overflow: visible;
@@ -42,7 +40,7 @@
     }
 
     .logo img {
-      height: 240px;
+      height: 320px;
       width: auto;
       max-width: none;
       display: block;
@@ -60,14 +58,15 @@
       align-items: center;
       gap: 5px;
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .menu-button span {
       width: 23px;
       height: 3px;
       background: #ffd400;
-      border-radius: 2px;
-      transition: 0.25s;
+      border-radius: 3px;
+      transition: 0.2s;
     }
 
     .menu-button:hover {
@@ -96,7 +95,7 @@
       border: 1px solid #333;
       border-radius: 14px;
       padding: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -113,11 +112,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      color: white;
+      color: #fff;
       text-decoration: none;
       padding: 14px 15px;
       border-radius: 9px;
       font-weight: 700;
+      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -137,188 +137,233 @@
       margin: 8px 5px;
     }
 
-    .page-header {
-      background: linear-gradient(135deg, #111, #222);
-      color: white;
-      padding: 65px 6%;
+    .hero {
+      background: #111;
+      color: #fff;
       text-align: center;
+      padding: 55px 20px 60px;
     }
 
-    .page-header h1 {
+    .hero h1 {
       font-size: 42px;
       margin-bottom: 12px;
     }
 
-    .page-header h1 span {
+    .hero h1 span {
       color: #ffd400;
     }
 
-    .page-header p {
-      color: #ccc;
+    .hero p {
       font-size: 18px;
+      color: #ccc;
     }
 
     .account-section {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 55px 6% 70px;
+      max-width: 600px;
+      margin: 55px auto 70px;
+      padding: 0 20px;
     }
 
     .account-card {
-      background: white;
+      background: #fff;
       border-radius: 16px;
-      padding: 35px 30px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .account-icon {
-      width: 75px;
-      height: 75px;
-      margin: 0 auto 20px;
-      background: #111;
-      color: #ffd400;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 36px;
+      padding: 35px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
     }
 
     .account-card h2 {
       font-size: 26px;
       margin-bottom: 10px;
+      text-align: center;
     }
 
-    .account-card p {
+    .account-card > p {
       color: #666;
-      margin-bottom: 25px;
+      text-align: center;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #ccc;
+      border-radius: 9px;
+      font-size: 16px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    .form-group input:focus {
+      border-color: #ffd400;
+      box-shadow: 0 0 0 3px rgba(255,212,0,.2);
     }
 
     .login-button {
-      display: block;
       width: 100%;
-      padding: 14px;
       background: #ffd400;
       color: #111;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 16px;
       border: none;
+      border-radius: 10px;
+      padding: 13px 20px;
+      font-size: 16px;
+      font-weight: 700;
       cursor: pointer;
+      transition: 0.2s;
+      margin-top: 5px;
     }
 
     .login-button:hover {
-      background: #e8bf00;
+      transform: translateY(-2px);
+    }
+
+    .account-divider {
+      height: 1px;
+      background: #ddd;
+      margin: 28px 0;
+    }
+
+    .register-text {
+      text-align: center;
+      color: #666;
+      font-size: 15px;
     }
 
     .register-button {
       display: block;
       width: 100%;
-      padding: 14px;
-      margin-top: 10px;
+      margin-top: 12px;
       background: #111;
-      color: white;
+      color: #fff;
       text-decoration: none;
+      text-align: center;
       border-radius: 10px;
-      font-weight: 700;
+      padding: 13px 20px;
       font-size: 16px;
-      border: none;
-      cursor: pointer;
+      font-weight: 700;
+      transition: 0.2s;
     }
 
     .register-button:hover {
       background: #222;
+      color: #ffd400;
     }
 
-    .coming-soon {
-      margin-top: 25px;
-      padding: 12px;
-      background: #f5f5f5;
-      border-radius: 9px;
-      color: #777;
+    .account-message {
+      display: none;
+      background: #fffbea;
+      border: 1px solid #ffd400;
+      border-radius: 10px;
+      padding: 13px 15px;
+      margin-top: 18px;
+      text-align: center;
+      color: #555;
       font-size: 14px;
+    }
+
+    .account-message.show {
+      display: block;
     }
 
     footer {
       background: #111;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    footer strong {
-      color: #ffd400;
-    }
-
-    footer p {
-      margin-top: 6px;
       color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
     }
 
     @media (max-width: 800px) {
-      header {
-        padding: 0 5%;
-      }
-
       .logo {
-        width: 180px;
+        width: 225px;
       }
 
       .logo img {
-        height: 210px;
-      }
-
-      .menu-panel {
-        right: 5%;
-      }
-
-      .page-header h1 {
-        font-size: 34px;
+        height: 275px;
       }
     }
 
     @media (max-width: 550px) {
       header {
-        height: 68px;
         padding: 0 5%;
       }
 
       .logo {
-        width: 145px;
+        width: 190px;
         height: 50px;
       }
 
       .logo img {
-        height: 184px;
+        height: 235px;
+      }
+
+      .menu-panel {
+        right: 5%;
+        width: 270px;
+      }
+
+      .hero {
+        padding: 42px 15px 48px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .account-section {
+        margin: 35px auto 50px;
+        padding: 0 12px;
+      }
+
+      .account-card {
+        padding: 25px 18px;
+        border-radius: 13px;
+      }
+
+      .account-card h2 {
+        font-size: 21px;
+      }
+
+      .account-card > p {
+        font-size: 14px;
+      }
+
+      .form-group input {
+        font-size: 15px;
+      }
+
+      .login-button,
+      .register-button {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .logo {
+        width: 170px;
+      }
+
+      .logo img {
+        height: 215px;
       }
 
       .menu-button {
         width: 45px;
         height: 45px;
-      }
-
-      .menu-panel {
-        top: 78px;
-        right: 5%;
-        width: 260px;
-      }
-
-      .page-header {
-        padding: 55px 5%;
-      }
-
-      .page-header h1 {
-        font-size: 30px;
-      }
-
-      .page-header p {
-        font-size: 16px;
-      }
-
-      .account-card {
-        padding: 30px 20px;
       }
     }
   </style>
@@ -326,167 +371,172 @@
 
 <body>
 
-<header>
+  <header>
 
-  <div class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div>
-
-  <button class="menu-button"
-          id="menuButton"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-          aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <div class="menu-panel" id="menuPanel">
-
-    <a href="index.html">
-      <span class="menu-icon">🏠</span>
-      Startseite
+    <a href="index.html" class="logo">
+      <img src="20879_nobg (1).png" alt="DealKira">
     </a>
 
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
-    </a>
-
-    <a href="kategorien.html">
-      <span class="menu-icon">📂</span>
-      Kategorien
-    </a>
-
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
-    </a>
-
-    <div class="menu-divider"></div>
-
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
-    </a>
-
-  </div>
-
-</header>
-
-
-<section class="page-header">
-
-  <h1><span>Dein Konto</span></h1>
-
-  <p>
-    Verwalte dein DealKira-Konto.
-  </p>
-
-</section>
-
-
-<section class="account-section">
-
-  <div class="account-card">
-
-    <div class="account-icon">
-      👤
-    </div>
-
-    <h2>Willkommen bei DealKira</h2>
-
-    <p>
-      Melde dich an oder erstelle ein neues Konto.
-    </p>
-
-    <button class="login-button" onclick="comingSoon()">
-      Anmelden
+    <button
+      class="menu-button"
+      id="menuButton"
+      onclick="toggleMenu()"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <button class="register-button" onclick="comingSoon()">
-      Konto erstellen
-    </button>
+    <div class="menu-panel" id="menuPanel">
 
-    <div class="coming-soon">
-      🔒 Die Konto-Funktion wird bald verfügbar sein.
+      <a href="konto.html">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
+      </a>
+
+      <div class="menu-divider"></div>
+
+      <a href="suche.html">
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
+
+      <a href="kategorien.html">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
+
+      <a href="deals.html">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
+
+      <a href="einstellungen.html">
+        <span class="menu-icon">⚙️</span>
+        Einstellungen
+      </a>
+
     </div>
 
-  </div>
+  </header>
 
-</section>
+  <section class="hero">
+    <h1>Konto / <span>Anmelden</span></h1>
+    <p>Verwalte dein DealKira-Konto und deine persönlichen Einstellungen</p>
+  </section>
 
+  <main class="account-section">
 
-<footer>
+    <div class="account-card">
 
-  <strong>DealKira</strong>
+      <h2>Anmelden</h2>
 
-  <p>
-    Produkte entdecken. Deals finden. Preise vergleichen.
-  </p>
+      <p>
+        Melde dich an, um dein DealKira-Konto zu verwenden.
+      </p>
 
-</footer>
+      <form onsubmit="login(event)">
 
+        <div class="form-group">
+          <label for="email">E-Mail-Adresse</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="deine@email.de"
+            required
+          >
+        </div>
 
-<script>
+        <div class="form-group">
+          <label for="password">Passwort</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Passwort"
+            required
+          >
+        </div>
 
-  function comingSoon() {
-    alert("Die Konto-Funktion kommt bald.");
-  }
+        <button type="submit" class="login-button">
+          Anmelden
+        </button>
 
+      </form>
 
-  function toggleMenu() {
+      <div class="account-message" id="accountMessage">
+        Die Konto-Funktion befindet sich noch in Bearbeitung.
+      </div>
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+      <div class="account-divider"></div>
 
-    const isOpen = menu.classList.toggle("open");
+      <div class="register-text">
+        Noch kein Konto?
+      </div>
 
-    button.classList.toggle("active");
+      <a href="#" class="register-button" onclick="register(event)">
+        Konto erstellen
+      </a>
 
-    button.setAttribute("aria-expanded", isOpen);
+    </div>
 
-  }
+  </main>
 
+  <footer>
+    © 2026 DealKira – Bessere Deals finden
+  </footer>
 
-  function closeMenu() {
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
+      const isOpen = menu.classList.toggle("open");
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    menu.classList.remove("open");
-    button.classList.remove("active");
-
-    button.setAttribute("aria-expanded", "false");
-
-  }
-
-
-  document.addEventListener("click", function(event) {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    if (
-      !menu.contains(event.target) &&
-      !button.contains(event.target)
-    ) {
-      closeMenu();
+      button.classList.toggle("active");
+      button.setAttribute("aria-expanded", isOpen);
     }
 
-  });
+    function closeMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-
-  document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-      closeMenu();
+      menu.classList.remove("open");
+      button.classList.remove("active");
+      button.setAttribute("aria-expanded", "false");
     }
 
-  });
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-</script>
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    function login(event) {
+      event.preventDefault();
+
+      const message = document.getElementById("accountMessage");
+      message.classList.add("show");
+    }
+
+    function register(event) {
+      event.preventDefault();
+
+      const message = document.getElementById("accountMessage");
+      message.classList.add("show");
+    }
+  </script>
 
 </body>
 </html>
