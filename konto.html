@@ -161,7 +161,7 @@
     }
 
     .account-section {
-      max-width: 600px;
+      max-width: 650px;
       width: 100%;
       margin: 55px auto 70px;
       padding: 0 20px;
@@ -286,6 +286,7 @@
       text-align: center;
       font-weight: 700;
       text-decoration: none;
+      cursor: pointer;
     }
 
     .switch-link:hover {
@@ -344,21 +345,238 @@
       line-height: 1.4;
     }
 
-    .logged-in-email {
+    /* =========================
+       ANGEMELDETES KONTO
+    ========================= */
+
+    .account-name {
       text-align: center;
-      font-size: 18px;
-      font-weight: 700;
-      margin: 20px 0 25px;
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 35px;
       word-break: break-word;
     }
 
-    .account-status {
+    .account-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .account-menu-button {
+      width: 100%;
       background: #f7f7f7;
-      border-radius: 10px;
-      padding: 15px;
+      color: #111;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 17px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .account-menu-button:hover {
+      background: #fff;
+      border-color: #ffd400;
+      transform: translateY(-2px);
+    }
+
+    .account-menu-left {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .account-menu-icon {
+      width: 28px;
       text-align: center;
-      color: #555;
-      margin-bottom: 20px;
+      font-size: 21px;
+    }
+
+    .account-arrow {
+      font-size: 22px;
+      color: #777;
+    }
+
+    .logout-account-button {
+      width: 100%;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 17px 18px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 8px;
+    }
+
+    .logout-account-button:hover {
+      background: #222;
+      color: #ffd400;
+    }
+
+    /* =========================
+       KONTOEINSTELLUNGEN
+    ========================= */
+
+    .settings-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .back-button {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #ddd;
+      background: #f7f7f7;
+      border-radius: 9px;
+      font-size: 22px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .back-button:hover {
+      background: #ffd400;
+      border-color: #ffd400;
+    }
+
+    .settings-header h2 {
+      flex: 1;
+      text-align: left;
+      margin: 0;
+    }
+
+    .settings-item {
+      background: #f7f7f7;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 17px;
+      margin-bottom: 12px;
+    }
+
+    .settings-item-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .settings-item-label {
+      color: #777;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .settings-item-value {
+      font-size: 16px;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .edit-button {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border: none;
+      background: #ffd400;
+      color: #111;
+      border-radius: 9px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .edit-button:hover {
+      transform: scale(1.05);
+    }
+
+    .edit-area {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .edit-area.show {
+      display: block;
+    }
+
+    .edit-area input {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #ccc;
+      border-radius: 9px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .edit-area input:focus {
+      border-color: #ffd400;
+      box-shadow: 0 0 0 3px rgba(255,212,0,.2);
+    }
+
+    .edit-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .small-save-button,
+    .small-cancel-button {
+      flex: 1;
+      border: none;
+      border-radius: 9px;
+      padding: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .small-save-button {
+      background: #ffd400;
+      color: #111;
+    }
+
+    .small-cancel-button {
+      background: #ddd;
+      color: #111;
+    }
+
+    .settings-note {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+
+    /* =========================
+       FAVORITEN / BENACHRICHTIGUNGEN
+    ========================= */
+
+    .empty-account-section {
+      text-align: center;
+      padding: 25px 10px 10px;
+    }
+
+    .empty-account-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .empty-account-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .empty-account-section p {
+      color: #666;
       line-height: 1.5;
     }
 
@@ -438,6 +656,20 @@
       .secondary-button {
         font-size: 15px;
       }
+
+      .account-name {
+        font-size: 30px;
+        margin-bottom: 28px;
+      }
+
+      .account-menu-button {
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      .settings-item {
+        padding: 14px;
+      }
     }
 
     @media (max-width: 380px) {
@@ -452,6 +684,10 @@
       .menu-button {
         width: 45px;
         height: 45px;
+      }
+
+      .account-name {
+        font-size: 27px;
       }
     }
   </style>
@@ -519,7 +755,9 @@
 
     <div class="account-card">
 
-      <!-- ANMELDEN -->
+      <!-- =========================
+           ANMELDEN
+      ========================== -->
 
       <div class="account-view active" id="loginView">
 
@@ -592,7 +830,9 @@
       </div>
 
 
-      <!-- REGISTRIEREN -->
+      <!-- =========================
+           REGISTRIEREN
+      ========================== -->
 
       <div class="account-view" id="registerView">
 
@@ -689,7 +929,9 @@
       </div>
 
 
-      <!-- PASSWORT VERGESSEN -->
+      <!-- =========================
+           PASSWORT VERGESSEN
+      ========================== -->
 
       <div class="account-view" id="forgotView">
 
@@ -739,37 +981,381 @@
       </div>
 
 
-      <!-- ANGEMELDET -->
+      <!-- =========================
+           ANGEMELDETES KONTO
+      ========================== -->
 
       <div class="account-view" id="loggedInView">
 
-        <h2>Willkommen bei DealKira</h2>
-
-        <p>
-          Du bist erfolgreich angemeldet.
-        </p>
-
-        <div class="account-status">
-          Angemeldet als:
-        </div>
-
         <div
-          class="logged-in-email"
-          id="loggedInEmail"
+          class="account-name"
+          id="loggedInName"
         >
         </div>
 
-        <button
-          class="secondary-button"
-          onclick="logout()"
-        >
-          Abmelden
-        </button>
+        <div class="account-menu">
+
+          <button
+            class="account-menu-button"
+            onclick="showView('settingsView')"
+          >
+            <span class="account-menu-left">
+              <span class="account-menu-icon">⚙️</span>
+              <span>Kontoeinstellungen</span>
+            </span>
+
+            <span class="account-arrow">›</span>
+          </button>
+
+          <button
+            class="account-menu-button"
+            onclick="showView('favoritesView')"
+          >
+            <span class="account-menu-left">
+              <span class="account-menu-icon">❤️</span>
+              <span>Favoriten</span>
+            </span>
+
+            <span class="account-arrow">›</span>
+          </button>
+
+          <button
+            class="account-menu-button"
+            onclick="showView('notificationsView')"
+          >
+            <span class="account-menu-left">
+              <span class="account-menu-icon">🔔</span>
+              <span>Benachrichtigungen</span>
+            </span>
+
+            <span class="account-arrow">›</span>
+          </button>
+
+          <button
+            class="logout-account-button"
+            onclick="logout()"
+          >
+            🚪 Abmelden
+          </button>
+
+        </div>
 
         <div
           class="account-message"
           id="logoutMessage"
         ></div>
+
+      </div>
+
+
+      <!-- =========================
+           KONTOEINSTELLUNGEN
+      ========================== -->
+
+      <div class="account-view" id="settingsView">
+
+        <div class="settings-header">
+
+          <button
+            class="back-button"
+            onclick="showView('loggedInView')"
+            aria-label="Zurück"
+          >
+            ←
+          </button>
+
+          <h2>Kontoeinstellungen</h2>
+
+        </div>
+
+
+        <!-- NAME -->
+
+        <div class="settings-item">
+
+          <div class="settings-item-top">
+
+            <div>
+              <div class="settings-item-label">
+                Name
+              </div>
+
+              <div
+                class="settings-item-value"
+                id="settingsName"
+              >
+              </div>
+            </div>
+
+            <button
+              class="edit-button"
+              onclick="toggleEdit('nameEdit')"
+              aria-label="Name bearbeiten"
+            >
+              ✏️
+            </button>
+
+          </div>
+
+          <div
+            class="edit-area"
+            id="nameEdit"
+          >
+
+            <input
+              type="text"
+              id="newName"
+              placeholder="Neuer Name"
+              maxlength="80"
+            >
+
+            <div class="edit-buttons">
+
+              <button
+                class="small-save-button"
+                onclick="saveName()"
+              >
+                Speichern
+              </button>
+
+              <button
+                class="small-cancel-button"
+                onclick="cancelEdit('nameEdit')"
+              >
+                Abbrechen
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- E-MAIL -->
+
+        <div class="settings-item">
+
+          <div class="settings-item-top">
+
+            <div>
+              <div class="settings-item-label">
+                E-Mail-Adresse
+              </div>
+
+              <div
+                class="settings-item-value"
+                id="settingsEmail"
+              >
+              </div>
+            </div>
+
+            <button
+              class="edit-button"
+              onclick="toggleEdit('emailEdit')"
+              aria-label="E-Mail bearbeiten"
+            >
+              ✏️
+            </button>
+
+          </div>
+
+          <div
+            class="edit-area"
+            id="emailEdit"
+          >
+
+            <input
+              type="email"
+              id="newEmail"
+              placeholder="Neue E-Mail-Adresse"
+              autocomplete="email"
+            >
+
+            <div class="settings-note">
+              Nach der Änderung erhältst du von Supabase eine
+              Bestätigungs-E-Mail. Die neue Adresse wird erst nach
+              der Bestätigung übernommen.
+            </div>
+
+            <div class="edit-buttons">
+
+              <button
+                class="small-save-button"
+                onclick="saveEmail()"
+              >
+                Ändern
+              </button>
+
+              <button
+                class="small-cancel-button"
+                onclick="cancelEdit('emailEdit')"
+              >
+                Abbrechen
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- PASSWORT -->
+
+        <div class="settings-item">
+
+          <div class="settings-item-top">
+
+            <div>
+              <div class="settings-item-label">
+                Passwort
+              </div>
+
+              <div class="settings-item-value">
+                ••••••••••••
+              </div>
+            </div>
+
+            <button
+              class="edit-button"
+              onclick="toggleEdit('passwordEdit')"
+              aria-label="Passwort bearbeiten"
+            >
+              ✏️
+            </button>
+
+          </div>
+
+          <div
+            class="edit-area"
+            id="passwordEdit"
+          >
+
+            <input
+              type="password"
+              id="newPassword"
+              placeholder="Neues Passwort"
+              minlength="8"
+              autocomplete="new-password"
+            >
+
+            <br><br>
+
+            <input
+              type="password"
+              id="newPasswordConfirm"
+              placeholder="Neues Passwort bestätigen"
+              minlength="8"
+              autocomplete="new-password"
+            >
+
+            <div class="settings-note">
+              Das Passwort muss mindestens 8 Zeichen enthalten.
+            </div>
+
+            <div class="edit-buttons">
+
+              <button
+                class="small-save-button"
+                onclick="savePassword()"
+              >
+                Speichern
+              </button>
+
+              <button
+                class="small-cancel-button"
+                onclick="cancelEdit('passwordEdit')"
+              >
+                Abbrechen
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+          class="account-message"
+          id="settingsMessage"
+        ></div>
+
+      </div>
+
+
+      <!-- =========================
+           FAVORITEN
+      ========================== -->
+
+      <div class="account-view" id="favoritesView">
+
+        <div class="settings-header">
+
+          <button
+            class="back-button"
+            onclick="showView('loggedInView')"
+            aria-label="Zurück"
+          >
+            ←
+          </button>
+
+          <h2>Favoriten</h2>
+
+        </div>
+
+        <div class="empty-account-section">
+
+          <div class="empty-account-icon">
+            ❤️
+          </div>
+
+          <h2>Noch keine Favoriten</h2>
+
+          <p>
+            Hier werden später deine gespeicherten Produkte
+            und Deals angezeigt.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           BENACHRICHTIGUNGEN
+      ========================== -->
+
+      <div class="account-view" id="notificationsView">
+
+        <div class="settings-header">
+
+          <button
+            class="back-button"
+            onclick="showView('loggedInView')"
+            aria-label="Zurück"
+          >
+            ←
+          </button>
+
+          <h2>Benachrichtigungen</h2>
+
+        </div>
+
+        <div class="empty-account-section">
+
+          <div class="empty-account-icon">
+            🔔
+          </div>
+
+          <h2>Keine Benachrichtigungen</h2>
+
+          <p>
+            Hier werden später wichtige Hinweise,
+            Preisalarme und andere Benachrichtigungen angezeigt.
+          </p>
+
+        </div>
 
       </div>
 
@@ -800,9 +1386,11 @@
         SUPABASE_PUBLISHABLE_KEY
       );
 
-
     const REDIRECT_URL =
       "https://dealkira.com/konto.html";
+
+
+    let currentUser = null;
 
 
     /* =========================
@@ -934,6 +1522,10 @@
       const message =
         document.getElementById(elementId);
 
+      if (!message) {
+        return;
+      }
+
       message.textContent = text;
 
       message.classList.remove(
@@ -985,6 +1577,7 @@
             ? "Wird gesendet..."
             : "Link anfordern";
       }
+
     }
 
 
@@ -1338,6 +1931,403 @@
 
 
     /* =========================
+       ANGEMELDETEN BENUTZER
+       LADEN
+    ========================= */
+
+    function getUserName(user) {
+
+      if (!user) {
+        return "Mein Konto";
+      }
+
+      return (
+        user.user_metadata?.name ||
+        user.user_metadata?.full_name ||
+        "Mein Konto"
+      );
+    }
+
+
+    function updateLoggedInView(user) {
+
+      currentUser = user;
+
+      const name =
+        getUserName(user);
+
+      const loggedInName =
+        document.getElementById(
+          "loggedInName"
+        );
+
+      const settingsName =
+        document.getElementById(
+          "settingsName"
+        );
+
+      const settingsEmail =
+        document.getElementById(
+          "settingsEmail"
+        );
+
+
+      if (loggedInName) {
+        loggedInName.textContent = name;
+      }
+
+      if (settingsName) {
+        settingsName.textContent = name;
+      }
+
+      if (settingsEmail) {
+        settingsEmail.textContent =
+          user.email || "";
+      }
+
+
+      showView(
+        "loggedInView"
+      );
+
+    }
+
+
+    /* =========================
+       KONTENEINSTELLUNGEN
+    ========================= */
+
+    function toggleEdit(editId) {
+
+      const area =
+        document.getElementById(editId);
+
+      if (!area) {
+        return;
+      }
+
+      area.classList.toggle("show");
+
+      if (
+        editId === "nameEdit" &&
+        area.classList.contains("show")
+      ) {
+
+        document.getElementById(
+          "newName"
+        ).value =
+          getUserName(currentUser);
+
+      }
+
+      if (
+        editId === "emailEdit" &&
+        area.classList.contains("show")
+      ) {
+
+        document.getElementById(
+          "newEmail"
+        ).value =
+          currentUser?.email || "";
+
+      }
+
+    }
+
+
+    function cancelEdit(editId) {
+
+      const area =
+        document.getElementById(editId);
+
+      if (area) {
+        area.classList.remove("show");
+      }
+
+    }
+
+
+    /* =========================
+       NAME ÄNDERN
+    ========================= */
+
+    async function saveName() {
+
+      if (!currentUser) {
+        return;
+      }
+
+      const input =
+        document.getElementById(
+          "newName"
+        );
+
+      const newName =
+        input.value.trim();
+
+
+      if (!newName) {
+
+        showMessage(
+          "settingsMessage",
+          "Bitte gib einen Namen ein.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.updateUser({
+
+            data: {
+              name: newName
+            }
+
+          });
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        currentUser =
+          data.user || currentUser;
+
+
+        updateLoggedInView(
+          currentUser
+        );
+
+        document.getElementById(
+          "settingsName"
+        ).textContent =
+          newName;
+
+        document.getElementById(
+          "loggedInName"
+        ).textContent =
+          newName;
+
+        document.getElementById(
+          "nameEdit"
+        ).classList.remove("show");
+
+
+        showView(
+          "settingsView"
+        );
+
+        showMessage(
+          "settingsMessage",
+          "Dein Name wurde erfolgreich geändert.",
+          "success"
+        );
+
+      } catch (error) {
+
+        showMessage(
+          "settingsMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       E-MAIL ÄNDERN
+    ========================= */
+
+    async function saveEmail() {
+
+      if (!currentUser) {
+        return;
+      }
+
+      const input =
+        document.getElementById(
+          "newEmail"
+        );
+
+      const newEmail =
+        input.value.trim();
+
+
+      if (!newEmail) {
+
+        showMessage(
+          "settingsMessage",
+          "Bitte gib eine neue E-Mail-Adresse ein.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      if (
+        newEmail.toLowerCase() ===
+        (currentUser.email || "").toLowerCase()
+      ) {
+
+        showMessage(
+          "settingsMessage",
+          "Das ist bereits deine aktuelle E-Mail-Adresse.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      try {
+
+        const {
+          error
+        } =
+          await supabaseClient.auth.updateUser({
+
+            email: newEmail
+
+          });
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        document.getElementById(
+          "emailEdit"
+        ).classList.remove("show");
+
+
+        showMessage(
+          "settingsMessage",
+          "Eine Bestätigungs-E-Mail wurde an die neue Adresse gesendet. Bitte bestätige die Änderung über den Link in der E-Mail.",
+          "success"
+        );
+
+      } catch (error) {
+
+        showMessage(
+          "settingsMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       PASSWORT ÄNDERN
+    ========================= */
+
+    async function savePassword() {
+
+      if (!currentUser) {
+        return;
+      }
+
+      const password =
+        document.getElementById(
+          "newPassword"
+        ).value;
+
+      const passwordConfirm =
+        document.getElementById(
+          "newPasswordConfirm"
+        ).value;
+
+
+      if (password.length < 8) {
+
+        showMessage(
+          "settingsMessage",
+          "Das neue Passwort muss mindestens 8 Zeichen enthalten.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      if (
+        password !== passwordConfirm
+      ) {
+
+        showMessage(
+          "settingsMessage",
+          "Die beiden Passwörter stimmen nicht überein.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      try {
+
+        const {
+          error
+        } =
+          await supabaseClient.auth.updateUser({
+
+            password: password
+
+          });
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        document.getElementById(
+          "newPassword"
+        ).value = "";
+
+        document.getElementById(
+          "newPasswordConfirm"
+        ).value = "";
+
+        document.getElementById(
+          "passwordEdit"
+        ).classList.remove("show");
+
+
+        showMessage(
+          "settingsMessage",
+          "Dein Passwort wurde erfolgreich geändert.",
+          "success"
+        );
+
+      } catch (error) {
+
+        showMessage(
+          "settingsMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      }
+
+    }
+
+
+    /* =========================
        ABMELDEN
     ========================= */
 
@@ -1354,7 +2344,11 @@
           throw error;
         }
 
-        showView("loginView");
+        currentUser = null;
+
+        showView(
+          "loginView"
+        );
 
         document.getElementById(
           "loginEmail"
@@ -1373,27 +2367,6 @@
         );
 
       }
-
-    }
-
-
-    /* =========================
-       ANGEMELDETER BENUTZER
-    ========================= */
-
-    function updateLoggedInView(user) {
-
-      const emailElement =
-        document.getElementById(
-          "loggedInEmail"
-        );
-
-      emailElement.textContent =
-        user.email || "";
-
-      showView(
-        "loggedInView"
-      );
 
     }
 
@@ -1462,4 +2435,4 @@
   </script>
 
 </body>
-</html>
+  </html>
