@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealKira – Gute Deals entdecken</title>
+
+  <title>DealKira – Bessere Deals finden</title>
+  <meta name="description" content="DealKira hilft dir dabei, interessante Angebote und gute Preise schneller zu entdecken.">
 
   <style>
     * {
@@ -22,7 +24,10 @@
       flex-direction: column;
     }
 
-    /* HEADER */
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
       height: 72px;
       background: #111;
@@ -36,7 +41,6 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.4);
     }
 
-    /* LOGO */
     .logo {
       width: 280px;
       height: 65px;
@@ -53,19 +57,25 @@
       display: block;
     }
 
-    /* HAMBURGER */
+    /* =========================
+       BURGER BUTTON
+    ========================= */
+
     .menu-button {
       width: 48px;
       height: 48px;
       background: #1c1c1c;
       border: 1px solid #333;
       border-radius: 10px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 5px;
+
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .menu-button span {
@@ -81,6 +91,8 @@
       border-color: #ffd400;
     }
 
+    /* X wenn geöffnet */
+
     .menu-button.active span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
     }
@@ -93,20 +105,29 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* MENÜ */
+    /* =========================
+       BURGER MENU
+    ========================= */
+
     .menu-panel {
       position: absolute;
       top: 82px;
       right: 6%;
+
       width: 270px;
+
       background: #111;
       border: 1px solid #333;
       border-radius: 14px;
+
       padding: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
+
       transition: 0.2s;
     }
 
@@ -119,12 +140,19 @@
     .menu-panel a {
       display: flex;
       align-items: center;
+
       gap: 12px;
-      color: white;
+
+      color: #fff;
       text-decoration: none;
+
       padding: 14px 15px;
+
       border-radius: 9px;
+
       font-weight: 700;
+
+      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -144,13 +172,19 @@
       margin: 8px 5px;
     }
 
-    /* STARTSEITE */
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
       flex: 1;
+
       display: flex;
       align-items: flex-start;
       justify-content: center;
+
       text-align: center;
+
       padding: 55px 6% 50px;
     }
 
@@ -162,7 +196,9 @@
     .hero h1 {
       font-size: 58px;
       line-height: 1.1;
+
       margin-bottom: 14px;
+
       font-weight: 800;
       color: #fff;
     }
@@ -174,29 +210,41 @@
     .hero p {
       font-size: 21px;
       color: #bdbdbd;
+
       max-width: 650px;
+
       margin: 0 auto 28px;
     }
 
-    /* SHORTCUTS */
+    /* =========================
+       SHORTCUTS
+    ========================= */
+
     .shortcuts {
       display: flex;
       justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
+
       margin-top: 5px;
     }
 
     .shortcut {
       min-width: 180px;
+
       padding: 14px 20px;
+
       background: #222;
       border: 1px solid #333;
+
       border-radius: 10px;
-      color: white;
+
+      color: #fff;
       text-decoration: none;
+
       font-size: 16px;
       font-weight: 700;
+
       transition: 0.2s;
     }
 
@@ -204,63 +252,45 @@
       background: #ffd400;
       color: #111;
       border-color: #ffd400;
+
       transform: translateY(-2px);
+    }
+
+    /* Deals entdecken bleibt gelb */
+
+    .shortcut.primary {
+      background: #ffd400;
+      border-color: #ffd400;
+      color: #111;
+    }
+
+    .shortcut.primary:hover {
+      background: #111;
+      color: #ffd400;
+      border-color: #ffd400;
     }
 
     .shortcut-icon {
       margin-right: 7px;
     }
 
-    /* FLAMME */
-    .flame {
-      display: inline-block;
-      transform-origin: bottom center;
-      animation: flameBurn 0.55s ease-in-out infinite;
-    }
+    /* =========================
+       FOOTER
+    ========================= */
 
-    @keyframes flameBurn {
-      0% {
-        transform: translateY(0) scale(1, 1) rotate(-2deg);
-      }
-
-      15% {
-        transform: translateY(-1px) scale(1.08, 0.94) rotate(3deg);
-      }
-
-      30% {
-        transform: translateY(0) scale(0.94, 1.08) rotate(-4deg);
-      }
-
-      45% {
-        transform: translateY(-2px) scale(1.06, 0.96) rotate(2deg);
-      }
-
-      60% {
-        transform: translateY(0) scale(0.96, 1.06) rotate(-3deg);
-      }
-
-      75% {
-        transform: translateY(-1px) scale(1.08, 0.94) rotate(4deg);
-      }
-
-      90% {
-        transform: translateY(0) scale(0.95, 1.05) rotate(-2deg);
-      }
-
-      100% {
-        transform: translateY(0) scale(1, 1) rotate(2deg);
-      }
-    }
-
-    /* FOOTER */
     footer {
       background: #111;
+
       border-top: 1px solid #292929;
+
       padding: 18px 6%;
+
       display: flex;
       justify-content: center;
       align-items: center;
+
       gap: 22px;
+
       flex-wrap: wrap;
     }
 
@@ -275,9 +305,12 @@
 
     .footer-support {
       color: #fff;
+
       text-decoration: none;
+
       font-weight: 700;
       font-size: 14px;
+
       transition: 0.2s;
     }
 
@@ -285,12 +318,11 @@
       color: #ffd400;
     }
 
-    /* TABLET */
-    @media(max-width:800px) {
+    /* =========================
+       TABLET
+    ========================= */
 
-      header {
-        padding: 0 5%;
-      }
+    @media (max-width: 800px) {
 
       .logo {
         width: 225px;
@@ -298,10 +330,6 @@
 
       .logo img {
         height: 275px;
-      }
-
-      .menu-panel {
-        right: 5%;
       }
 
       .hero {
@@ -321,8 +349,11 @@
       }
     }
 
-    /* HANDY */
-    @media(max-width:550px) {
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 550px) {
 
       header {
         height: 68px;
@@ -364,7 +395,6 @@
 
       .shortcuts {
         flex-direction: column;
-        align-items: stretch;
         gap: 10px;
       }
 
@@ -377,19 +407,23 @@
         gap: 10px;
       }
 
-      .footer-separator {
-        display: none;
-      }
-
       .footer-copy,
       .footer-support {
         font-size: 13px;
+      }
+
+      .footer-separator {
+        display: none;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
 
   <header>
 
@@ -409,38 +443,59 @@
       <span></span>
     </button>
 
+    <!-- =========================
+         BURGER MENU
+    ========================= -->
+
     <div class="menu-panel" id="menuPanel">
 
-      <a href="index.html">
-        <span class="menu-icon">🏠</span>
-        Startseite
-      </a>
-
-      <a href="deals.html">
-        <span class="menu-icon">🔥</span>
-        Deals
-      </a>
-
-      <a href="kategorien.html">
-        <span class="menu-icon">📂</span>
-        Kategorien
-      </a>
-
-      <a href="suche.html">
-        <span class="menu-icon">🔍</span>
-        Suche
-      </a>
-
-      <div class="menu-divider"></div>
+      <!-- Konto ganz oben -->
 
       <a href="konto.html">
         <span class="menu-icon">👤</span>
         Konto / Anmelden
       </a>
 
+      <!-- Trennlinie -->
+
+      <div class="menu-divider"></div>
+
+      <!-- Suche -->
+
+      <a href="suche.html">
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
+
+      <!-- Kategorien -->
+
+      <a href="kategorien.html">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
+
+      <!-- Deals -->
+
+      <a href="deals.html">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
+
+      <!-- Einstellungen -->
+
+      <a href="einstellungen.html">
+        <span class="menu-icon">⚙️</span>
+        Einstellungen
+      </a>
+
     </div>
 
   </header>
+
+
+  <!-- =========================
+       STARTSEITE
+  ========================= -->
 
   <main class="hero">
 
@@ -451,14 +506,18 @@
       </h1>
 
       <p>
-        DealKira hilft dir dabei, interessante Angebote
-        und gute Preise schneller zu entdecken.
+        DealKira hilft dir dabei, interessante Angebote und gute Preise schneller zu entdecken.
       </p>
+
+
+      <!-- =========================
+           SHORTCUTS
+      ========================= -->
 
       <div class="shortcuts">
 
-        <a href="deals.html" class="shortcut">
-          <span class="shortcut-icon flame">🔥</span>
+        <a href="deals.html" class="shortcut primary">
+          <span class="shortcut-icon">🔥</span>
           Deals entdecken
         </a>
 
@@ -478,13 +537,20 @@
 
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
   <footer>
 
     <span class="footer-copy">
       © DealKira 2026
     </span>
 
-    <span class="footer-separator">|</span>
+    <span class="footer-separator">
+      |
+    </span>
 
     <a href="support.html" class="footer-support">
       Support
@@ -492,43 +558,77 @@
 
   </footer>
 
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
   <script>
+
     function toggleMenu() {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
       const isOpen = menu.classList.toggle("open");
 
       button.classList.toggle("active");
-      button.setAttribute("aria-expanded", isOpen);
+
+      button.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
     }
 
+
     function closeMenu() {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
       menu.classList.remove("open");
+
       button.classList.remove("active");
-      button.setAttribute("aria-expanded", "false");
+
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
     }
 
+
+    /* Menü schließen, wenn außerhalb geklickt wird */
+
     document.addEventListener("click", function(event) {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
-      if (!menu.contains(event.target) && !button.contains(event.target)) {
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+
         closeMenu();
+
       }
+
     });
 
+
+    /* ESC schließt Menü */
+
     document.addEventListener("keydown", function(event) {
+
       if (event.key === "Escape") {
+
         closeMenu();
+
       }
+
     });
+
   </script>
 
 </body>
 </html>
-
-
