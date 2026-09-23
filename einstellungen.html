@@ -672,7 +672,7 @@
             <div>
               <h2>Allgemeine Einstellungen</h2>
               <p class="settings-card-description">
-                Darstellung, Währung, bevorzugte Shops und Datenschutz
+                Darstellung, bevorzugte Shops und Datenschutz
               </p>
             </div>
           </div>
@@ -713,137 +713,6 @@
                 <span class="option-left">
                   <span class="check">✓</span>
                   💻 System
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-
-          <!-- WÄHRUNG -->
-
-          <div class="option-group">
-
-            <h3>💶 Währung</h3>
-
-            <div class="option-list">
-
-              <button class="option" onclick="setCurrency('EUR', '€')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇪🇺 Euro (€)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('GBP', '£')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇬🇧 Britisches Pfund (£)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('CHF', 'CHF')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇨🇭 Schweizer Franken (CHF)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('PLN', 'zł')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇵🇱 Polnischer Złoty (zł)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('CZK', 'Kč')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇨🇿 Tschechische Krone (Kč)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('DKK', 'kr')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇩🇰 Dänische Krone (kr)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('SEK', 'kr')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇸🇪 Schwedische Krone (kr)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('NOK', 'kr')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇳🇴 Norwegische Krone (kr)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('ISK', 'kr')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇮🇸 Isländische Króna (kr)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('HUF', 'Ft')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇭🇺 Ungarischer Forint (Ft)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('RON', 'lei')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇷🇴 Rumänischer Leu (lei)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('BGN', 'лв')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇧🇬 Bulgarischer Lew (лв)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('RSD', 'дин')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇷🇸 Serbischer Dinar (дин)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('ALL', 'L')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇦🇱 Albanischer Lek (L)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('BAM', 'KM')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇧🇦 Konvertible Mark (KM)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('MKD', 'ден')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇲🇰 Mazedonischer Denar (ден)
-                </span>
-              </button>
-
-              <button class="option" onclick="setCurrency('UAH', '₴')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇺🇦 Ukrainische Hrywnja (₴)
                 </span>
               </button>
 
@@ -1096,87 +965,6 @@
 
 
     /* =========================
-       WÄHRUNG
-    ========================= */
-
-    function setCurrency(code, symbol) {
-
-      localStorage.setItem("dealkiraCurrency", code);
-      localStorage.setItem("dealkiraCurrencySymbol", symbol);
-
-      document.querySelectorAll(
-        ".option-list .option"
-      ).forEach(function(button) {
-
-        if (
-          button.closest(".option-group") &&
-          button.closest(".option-group").querySelector("h3") &&
-          button.closest(".option-group").querySelector("h3").textContent.includes("Währung")
-        ) {
-
-          button.classList.remove("selected");
-        }
-
-      });
-
-      const buttons = document.querySelectorAll(
-        ".option-group"
-      );
-
-      buttons.forEach(function(group) {
-
-        const heading = group.querySelector("h3");
-
-        if (!heading) return;
-
-        if (heading.textContent.includes("Währung")) {
-
-          group.querySelectorAll(".option").forEach(function(button) {
-
-            if (
-              button.getAttribute("onclick") &&
-              button.getAttribute("onclick").includes("'" + code + "'")
-            ) {
-
-              button.classList.add("selected");
-            }
-
-          });
-
-        }
-
-      });
-
-      showMessage(
-        "Währung gespeichert: " + code
-      );
-    }
-
-
-    function updateCurrencyButton() {
-
-      const currency =
-        localStorage.getItem("dealkiraCurrency") || "EUR";
-
-      document.querySelectorAll(".option").forEach(function(button) {
-
-        const action = button.getAttribute("onclick");
-
-        if (!action) return;
-
-        if (action.includes("setCurrency")) {
-
-          button.classList.toggle(
-            "selected",
-            action.includes("'" + currency + "'")
-          );
-        }
-
-      });
-    }
-
-
-    /* =========================
        BEVORZUGTE SHOPS
     ========================= */
 
@@ -1314,7 +1102,6 @@
 
     loadShopPreference();
     loadCookiePreference();
-    updateCurrencyButton();
 
   </script>
 
