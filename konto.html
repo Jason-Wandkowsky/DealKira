@@ -238,6 +238,12 @@
       transform: translateY(-2px);
     }
 
+    .main-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
     .secondary-button {
       display: block;
       width: 100%;
@@ -324,12 +330,36 @@
       color: #9f2925;
     }
 
+    .account-message.success {
+      background: #f5fff5;
+      border-color: #65b865;
+      color: #286b28;
+    }
+
     .password-hint {
       color: #777;
       font-size: 13px;
       margin-top: -10px;
       margin-bottom: 18px;
       line-height: 1.4;
+    }
+
+    .logged-in-email {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0 25px;
+      word-break: break-word;
+    }
+
+    .account-status {
+      background: #f7f7f7;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     footer {
@@ -533,7 +563,11 @@
             Passwort vergessen?
           </a>
 
-          <button type="submit" class="main-button">
+          <button
+            type="submit"
+            class="main-button"
+            id="loginButton"
+          >
             Anmelden
           </button>
 
@@ -626,7 +660,11 @@
             >
           </div>
 
-          <button type="submit" class="main-button">
+          <button
+            type="submit"
+            class="main-button"
+            id="registerButton"
+          >
             Konto erstellen
           </button>
 
@@ -658,8 +696,8 @@
         <h2>Passwort vergessen</h2>
 
         <p>
-          Gib deine E-Mail-Adresse ein. Sobald die Konto-Funktion aktiv ist,
-          kannst du darüber dein Passwort zurücksetzen.
+          Gib deine E-Mail-Adresse ein, um einen Link zum Zurücksetzen
+          deines Passworts anzufordern.
         </p>
 
         <form onsubmit="forgotPassword(event)">
@@ -676,7 +714,11 @@
             >
           </div>
 
-          <button type="submit" class="main-button">
+          <button
+            type="submit"
+            class="main-button"
+            id="forgotButton"
+          >
             Link anfordern
           </button>
 
@@ -696,6 +738,41 @@
 
       </div>
 
+
+      <!-- ANGEMELDET -->
+
+      <div class="account-view" id="loggedInView">
+
+        <h2>Willkommen bei DealKira</h2>
+
+        <p>
+          Du bist erfolgreich angemeldet.
+        </p>
+
+        <div class="account-status">
+          Angemeldet als:
+        </div>
+
+        <div
+          class="logged-in-email"
+          id="loggedInEmail"
+        >
+        </div>
+
+        <button
+          class="secondary-button"
+          onclick="logout()"
+        >
+          Abmelden
+        </button>
+
+        <div
+          class="account-message"
+          id="logoutMessage"
+        ></div>
+
+      </div>
+
     </div>
 
   </main>
@@ -705,7 +782,32 @@
   </footer>
 
 
+  <!-- SUPABASE -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <script>
+
+    const SUPABASE_URL =
+      "https://zniknbouugmgvqkkoamo.supabase.co";
+
+    const SUPABASE_PUBLISHABLE_KEY =
+      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
+
+    const supabaseClient =
+      window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_PUBLISHABLE_KEY
+      );
+
+
+    const REDIRECT_URL =
+      "https://dealkira.com/konto.html";
+
+
+    /* =========================
+       MENÜ
+    ========================= */
 
     function toggleMenu() {
 
@@ -779,6 +881,10 @@
     );
 
 
+    /* =========================
+       ANSICHTEN
+    ========================= */
+
     function showView(viewId) {
 
       const views =
@@ -793,14 +899,11 @@
       const selectedView =
         document.getElementById(viewId);
 
-      selectedView.classList.add("active");
+      if (selectedView) {
+        selectedView.classList.add("active");
+      }
 
       clearMessages();
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
     }
 
 
@@ -814,6 +917,7 @@
 
           message.classList.remove("show");
           message.classList.remove("error");
+          message.classList.remove("success");
           message.textContent = "";
 
         }
@@ -821,70 +925,539 @@
     }
 
 
-    function showMessage(elementId, text, error = false) {
+    function showMessage(
+      elementId,
+      text,
+      type = "normal"
+    ) {
 
       const message =
         document.getElementById(elementId);
 
       message.textContent = text;
 
-      message.classList.toggle(
+      message.classList.remove(
         "error",
-        error
+        "success"
       );
+
+      if (type === "error") {
+        message.classList.add("error");
+      }
+
+      if (type === "success") {
+        message.classList.add("success");
+      }
 
       message.classList.add("show");
     }
 
 
-    function login(event) {
+    function setButtonLoading(
+      buttonId,
+      loading
+    ) {
 
-      event.preventDefault();
+      const button =
+        document.getElementById(buttonId);
 
-      showMessage(
-        "loginMessage",
-        "Die Konto-Funktion befindet sich noch in Bearbeitung."
-      );
+      if (!button) {
+        return;
+      }
+
+      button.disabled = loading;
+
+      if (buttonId === "loginButton") {
+        button.textContent =
+          loading ? "Anmeldung..." : "Anmelden";
+      }
+
+      if (buttonId === "registerButton") {
+        button.textContent =
+          loading
+            ? "Konto wird erstellt..."
+            : "Konto erstellen";
+      }
+
+      if (buttonId === "forgotButton") {
+        button.textContent =
+          loading
+            ? "Wird gesendet..."
+            : "Link anfordern";
+      }
     }
 
 
-    function register(event) {
+    /* =========================
+       FEHLERMELDUNGEN
+    ========================= */
+
+    function translateAuthError(error) {
+
+      if (!error) {
+        return "Es ist ein unbekannter Fehler aufgetreten.";
+      }
+
+      const message =
+        error.message || "";
+
+      const lower =
+        message.toLowerCase();
+
+
+      if (
+        lower.includes("invalid login credentials")
+      ) {
+        return "E-Mail-Adresse oder Passwort ist falsch.";
+      }
+
+
+      if (
+        lower.includes("email not confirmed")
+      ) {
+        return "Bitte bestätige zuerst deine E-Mail-Adresse.";
+      }
+
+
+      if (
+        lower.includes("user already registered")
+      ) {
+        return "Für diese E-Mail-Adresse existiert bereits ein Konto.";
+      }
+
+
+      if (
+        lower.includes("password should be at least")
+      ) {
+        return "Das Passwort ist zu kurz.";
+      }
+
+
+      if (
+        lower.includes("rate limit")
+      ) {
+        return "Zu viele Versuche. Bitte warte kurz und versuche es erneut.";
+      }
+
+
+      if (
+        lower.includes("invalid email")
+      ) {
+        return "Bitte gib eine gültige E-Mail-Adresse ein.";
+      }
+
+
+      return "Es ist ein Fehler aufgetreten. Bitte versuche es erneut.";
+    }
+
+
+    /* =========================
+       REGISTRIEREN
+    ========================= */
+
+    async function register(event) {
 
       event.preventDefault();
 
+      clearMessages();
+
+      const name =
+        document.getElementById(
+          "registerName"
+        ).value.trim();
+
+      const email =
+        document.getElementById(
+          "registerEmail"
+        ).value.trim();
+
       const password =
-        document.getElementById("registerPassword").value;
+        document.getElementById(
+          "registerPassword"
+        ).value;
 
       const passwordConfirm =
-        document.getElementById("registerPasswordConfirm").value;
+        document.getElementById(
+          "registerPasswordConfirm"
+        ).value;
+
 
       if (password !== passwordConfirm) {
 
         showMessage(
           "registerMessage",
           "Die beiden Passwörter stimmen nicht überein.",
-          true
+          "error"
         );
 
         return;
       }
 
-      showMessage(
-        "registerMessage",
-        "Die Konto-Funktion befindet sich noch in Bearbeitung."
+
+      if (password.length < 8) {
+
+        showMessage(
+          "registerMessage",
+          "Das Passwort muss mindestens 8 Zeichen enthalten.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      setButtonLoading(
+        "registerButton",
+        true
       );
+
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.signUp({
+
+            email: email,
+
+            password: password,
+
+            options: {
+
+              data: {
+                name: name
+              },
+
+              emailRedirectTo:
+                REDIRECT_URL
+
+            }
+
+          });
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        if (
+          data.user &&
+          data.session
+        ) {
+
+          showMessage(
+            "registerMessage",
+            "Dein Konto wurde erstellt und du bist bereits angemeldet.",
+            "success"
+          );
+
+          setTimeout(
+            function() {
+
+              updateLoggedInView(
+                data.user
+              );
+
+            },
+            800
+          );
+
+        } else {
+
+          showMessage(
+            "registerMessage",
+            "Konto erstellt. Bitte prüfe deine E-Mails und bestätige deine E-Mail-Adresse.",
+            "success"
+          );
+
+        }
+
+      } catch (error) {
+
+        showMessage(
+          "registerMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      } finally {
+
+        setButtonLoading(
+          "registerButton",
+          false
+        );
+
+      }
+
     }
 
 
-    function forgotPassword(event) {
+    /* =========================
+       ANMELDEN
+    ========================= */
+
+    async function login(event) {
 
       event.preventDefault();
 
-      showMessage(
-        "forgotMessage",
-        "Die Passwort-Zurücksetzung befindet sich noch in Bearbeitung."
+      clearMessages();
+
+      const email =
+        document.getElementById(
+          "loginEmail"
+        ).value.trim();
+
+      const password =
+        document.getElementById(
+          "loginPassword"
+        ).value;
+
+
+      setButtonLoading(
+        "loginButton",
+        true
       );
+
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.signInWithPassword({
+
+            email: email,
+
+            password: password
+
+          });
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        if (data.user) {
+
+          updateLoggedInView(
+            data.user
+          );
+
+        }
+
+      } catch (error) {
+
+        showMessage(
+          "loginMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      } finally {
+
+        setButtonLoading(
+          "loginButton",
+          false
+        );
+
+      }
+
     }
+
+
+    /* =========================
+       PASSWORT VERGESSEN
+    ========================= */
+
+    async function forgotPassword(event) {
+
+      event.preventDefault();
+
+      clearMessages();
+
+      const email =
+        document.getElementById(
+          "forgotEmail"
+        ).value.trim();
+
+
+      setButtonLoading(
+        "forgotButton",
+        true
+      );
+
+
+      try {
+
+        const {
+          error
+        } =
+          await supabaseClient.auth.resetPasswordForEmail(
+            email,
+            {
+              redirectTo:
+                REDIRECT_URL
+            }
+          );
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        showMessage(
+          "forgotMessage",
+          "Wenn für diese E-Mail-Adresse ein Konto existiert, wurde ein Link zum Zurücksetzen des Passworts versendet.",
+          "success"
+        );
+
+      } catch (error) {
+
+        showMessage(
+          "forgotMessage",
+          translateAuthError(error),
+          "error"
+        );
+
+      } finally {
+
+        setButtonLoading(
+          "forgotButton",
+          false
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       ABMELDEN
+    ========================= */
+
+    async function logout() {
+
+      try {
+
+        const {
+          error
+        } =
+          await supabaseClient.auth.signOut();
+
+        if (error) {
+          throw error;
+        }
+
+        showView("loginView");
+
+        document.getElementById(
+          "loginEmail"
+        ).value = "";
+
+        document.getElementById(
+          "loginPassword"
+        ).value = "";
+
+      } catch (error) {
+
+        showMessage(
+          "logoutMessage",
+          "Das Abmelden ist fehlgeschlagen. Bitte versuche es erneut.",
+          "error"
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       ANGEMELDETER BENUTZER
+    ========================= */
+
+    function updateLoggedInView(user) {
+
+      const emailElement =
+        document.getElementById(
+          "loggedInEmail"
+        );
+
+      emailElement.textContent =
+        user.email || "";
+
+      showView(
+        "loggedInView"
+      );
+
+    }
+
+
+    /* =========================
+       AKTUELLEN LOGIN PRÜFEN
+    ========================= */
+
+    async function checkCurrentUser() {
+
+      try {
+
+        const {
+          data
+        } =
+          await supabaseClient.auth.getUser();
+
+        if (data.user) {
+
+          updateLoggedInView(
+            data.user
+          );
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       AUTH STATUS
+    ========================= */
+
+    supabaseClient.auth.onAuthStateChange(
+      function(event, session) {
+
+        if (
+          session &&
+          session.user
+        ) {
+
+          updateLoggedInView(
+            session.user
+          );
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       START
+    ========================= */
+
+    checkCurrentUser();
 
   </script>
 
