@@ -636,6 +636,113 @@
     }
 
     /* =========================
+       BENACHRICHTIGUNGSEINSTELLUNGEN
+    ========================= */
+
+    .notifications-intro {
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .notification-setting {
+      background: #f7f7f7;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 17px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .notification-setting-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .notification-setting-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .notification-setting-description {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    /* Schalter */
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 52px;
+      height: 30px;
+      min-width: 52px;
+      cursor: pointer;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: #ccc;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+
+    .slider::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 4px;
+      top: 4px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    }
+
+    .switch input:checked + .slider {
+      background: #ffd400;
+    }
+
+    .switch input:checked + .slider::before {
+      transform: translateX(22px);
+    }
+
+    .switch input:focus-visible + .slider {
+      box-shadow: 0 0 0 3px rgba(255,212,0,.3);
+    }
+
+    .switch input:disabled + .slider {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .notifications-loading {
+      text-align: center;
+      color: #777;
+      padding: 25px 10px;
+    }
+
+    .notifications-loading-icon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    /* =========================
        FAVORITEN-LISTE
     ========================= */
 
@@ -814,6 +921,18 @@
 
       .settings-item {
         padding: 14px;
+      }
+
+      .notification-setting {
+        padding: 14px;
+      }
+
+      .notification-setting-title {
+        font-size: 15px;
+      }
+
+      .notification-setting-description {
+        font-size: 12px;
       }
 
       .favorite-card-content {
@@ -1766,22 +1885,132 @@
 
         </div>
 
-        <div class="empty-account-section">
+        <p class="notifications-intro">
+          Verwalte hier, welche Benachrichtigungen du von DealKira
+          erhalten möchtest.
+        </p>
 
-          <div class="empty-account-icon">
-            🔔
+        <div
+          id="notificationsLoading"
+          class="notifications-loading"
+        >
+
+          <div class="notifications-loading-icon">
+            ⏳
           </div>
 
-          <h2>
-            Keine Benachrichtigungen
-          </h2>
-
-          <p>
-            Hier werden später wichtige Hinweise,
-            Preisalarme und andere Benachrichtigungen angezeigt.
-          </p>
+          <div>
+            Benachrichtigungseinstellungen werden geladen...
+          </div>
 
         </div>
+
+        <div
+          id="notificationsSettings"
+          style="display:none;"
+        >
+
+          <!-- NEUE DEALS -->
+
+          <div class="notification-setting">
+
+            <div class="notification-setting-text">
+
+              <div class="notification-setting-title">
+                🔥 Neue Deals
+              </div>
+
+              <div class="notification-setting-description">
+                Erhalte Benachrichtigungen über neue interessante
+                Deals und Angebote.
+              </div>
+
+            </div>
+
+            <label class="switch">
+
+              <input
+                type="checkbox"
+                id="dealNotifications"
+                onchange="saveNotificationSettings()"
+              >
+
+              <span class="slider"></span>
+
+            </label>
+
+          </div>
+
+
+          <!-- PREISALARME -->
+
+          <div class="notification-setting">
+
+            <div class="notification-setting-text">
+
+              <div class="notification-setting-title">
+                💰 Preisalarme
+              </div>
+
+              <div class="notification-setting-description">
+                Erhalte Hinweise, wenn sich bei gespeicherten
+                Produkten der Preis verändert.
+              </div>
+
+            </div>
+
+            <label class="switch">
+
+              <input
+                type="checkbox"
+                id="priceAlerts"
+                onchange="saveNotificationSettings()"
+              >
+
+              <span class="slider"></span>
+
+            </label>
+
+          </div>
+
+
+          <!-- KONTO -->
+
+          <div class="notification-setting">
+
+            <div class="notification-setting-text">
+
+              <div class="notification-setting-title">
+                👤 Konto-Benachrichtigungen
+              </div>
+
+              <div class="notification-setting-description">
+                Erhalte wichtige Hinweise zu deinem DealKira-Konto
+                und deinen Einstellungen.
+              </div>
+
+            </div>
+
+            <label class="switch">
+
+              <input
+                type="checkbox"
+                id="accountNotifications"
+                onchange="saveNotificationSettings()"
+              >
+
+              <span class="slider"></span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+        <div
+          class="account-message"
+          id="notificationsMessage"
+        ></div>
 
       </div>
 
@@ -1816,6 +2045,8 @@
       "https://dealkira.com/konto.html";
 
     let currentUser = null;
+
+    let notificationSaveTimer = null;
 
 
     /* =========================
@@ -1986,6 +2217,8 @@
 
     function showView(viewId) {
 
+      clearMessages();
+
       const views =
         document.querySelectorAll(".account-view");
 
@@ -2002,11 +2235,15 @@
         selectedView.classList.add("active");
       }
 
+
       if (viewId === "favoritesView") {
         loadFavorites();
       }
 
-      clearMessages();
+
+      if (viewId === "notificationsView") {
+        loadNotificationSettings();
+      }
 
     }
 
@@ -3157,6 +3394,320 @@
 
 
     /* =========================
+       BENACHRICHTIGUNGEN LADEN
+    ========================= */
+
+    async function loadNotificationSettings() {
+
+      if (!currentUser) {
+        return;
+      }
+
+
+      const loading =
+        document.getElementById(
+          "notificationsLoading"
+        );
+
+      const settings =
+        document.getElementById(
+          "notificationsSettings"
+        );
+
+
+      if (!loading || !settings) {
+        return;
+      }
+
+
+      loading.style.display =
+        "block";
+
+      settings.style.display =
+        "none";
+
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient
+            .from("benachrichtigungseinstellungen")
+            .select("*")
+            .eq(
+              "user_id",
+              currentUser.id
+            )
+            .maybeSingle();
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        let notificationSettings =
+          data;
+
+
+        /*
+          Falls für diesen Benutzer noch keine
+          Einstellungen existieren, werden die
+          Standardwerte automatisch angelegt.
+        */
+
+        if (!notificationSettings) {
+
+          const {
+            data: created,
+            error: createError
+          } =
+            await supabaseClient
+              .from("benachrichtigungseinstellungen")
+              .insert({
+
+                user_id:
+                  currentUser.id,
+
+                deal_benachrichtigungen:
+                  true,
+
+                preisalarme:
+                  true,
+
+                konto_benachrichtigungen:
+                  true
+
+              })
+              .select()
+              .single();
+
+
+          if (createError) {
+            throw createError;
+          }
+
+
+          notificationSettings =
+            created;
+
+        }
+
+
+        applyNotificationSettings(
+          notificationSettings
+        );
+
+
+        loading.style.display =
+          "none";
+
+        settings.style.display =
+          "block";
+
+
+      } catch (error) {
+
+        console.error(
+          "Benachrichtigungseinstellungen konnten nicht geladen werden:",
+          error
+        );
+
+
+        loading.style.display =
+          "none";
+
+        settings.style.display =
+          "none";
+
+
+        showMessage(
+          "notificationsMessage",
+          "Die Benachrichtigungseinstellungen konnten nicht geladen werden. Bitte versuche es erneut.",
+          "error"
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       BENACHRICHTIGUNGSEINSTELLUNGEN
+       ANWENDEN
+    ========================= */
+
+    function applyNotificationSettings(
+      settings
+    ) {
+
+      const deal =
+        document.getElementById(
+          "dealNotifications"
+        );
+
+      const price =
+        document.getElementById(
+          "priceAlerts"
+        );
+
+      const account =
+        document.getElementById(
+          "accountNotifications"
+        );
+
+
+      if (deal) {
+
+        deal.checked =
+          !!settings.deal_benachrichtigungen;
+
+      }
+
+
+      if (price) {
+
+        price.checked =
+          !!settings.preisalarme;
+
+      }
+
+
+      if (account) {
+
+        account.checked =
+          !!settings.konto_benachrichtigungen;
+
+      }
+
+    }
+
+
+    /* =========================
+       BENACHRICHTIGUNGEN SPEICHERN
+    ========================= */
+
+    function saveNotificationSettings() {
+
+      if (!currentUser) {
+        return;
+      }
+
+
+      const deal =
+        document.getElementById(
+          "dealNotifications"
+        );
+
+      const price =
+        document.getElementById(
+          "priceAlerts"
+        );
+
+      const account =
+        document.getElementById(
+          "accountNotifications"
+        );
+
+
+      if (
+        !deal ||
+        !price ||
+        !account
+      ) {
+        return;
+      }
+
+
+      if (notificationSaveTimer) {
+
+        clearTimeout(
+          notificationSaveTimer
+        );
+
+      }
+
+
+      notificationSaveTimer =
+        setTimeout(
+          async function() {
+
+            try {
+
+              const {
+                error
+              } =
+                await supabaseClient
+                  .from(
+                    "benachrichtigungseinstellungen"
+                  )
+                  .upsert(
+
+                    {
+
+                      user_id:
+                        currentUser.id,
+
+                      deal_benachrichtigungen:
+                        deal.checked,
+
+                      preisalarme:
+                        price.checked,
+
+                      konto_benachrichtigungen:
+                        account.checked,
+
+                      updated_at:
+                        new Date().toISOString()
+
+                    },
+
+                    {
+                      onConflict:
+                        "user_id"
+                    }
+
+                  );
+
+
+              if (error) {
+                throw error;
+              }
+
+
+              showMessage(
+                "notificationsMessage",
+                "Deine Benachrichtigungseinstellungen wurden gespeichert.",
+                "success"
+              );
+
+
+            } catch (error) {
+
+              console.error(
+                "Benachrichtigungseinstellungen konnten nicht gespeichert werden:",
+                error
+              );
+
+
+              showMessage(
+                "notificationsMessage",
+                "Die Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.",
+                "error"
+              );
+
+            }
+
+          },
+          150
+        );
+
+    }
+
+
+    /* =========================
        HTML ABSICHERN
     ========================= */
 
@@ -3312,4 +3863,4 @@
   </script>
 
 </body>
-                  </html>
+</html>
