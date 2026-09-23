@@ -199,6 +199,29 @@
       color: #888;
     }
 
+    /* CLEAR BUTTON */
+
+    .clear-button {
+      width: 55px;
+      min-width: 55px;
+      border: none;
+      background: #fff;
+      color: #777;
+      font-size: 29px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .clear-button:hover {
+      color: #111;
+      background: #f2f2f2;
+    }
+
     .search-button {
       width: 65px;
       min-width: 65px;
@@ -401,6 +424,12 @@
         font-size: 16px;
       }
 
+      .clear-button {
+        width: 45px;
+        min-width: 45px;
+        font-size: 26px;
+      }
+
       .search-button {
         width: 58px;
         min-width: 58px;
@@ -551,6 +580,15 @@
       placeholder="Wonach suchst du?"
       autocomplete="off"
     >
+
+    <button
+      class="clear-button"
+      onclick="clearSearch()"
+      aria-label="Suche löschen"
+      title="Suche löschen"
+    >
+      ×
+    </button>
 
     <button
       class="search-button"
@@ -832,6 +870,41 @@
       document.getElementById("filterMessage");
 
     message.classList.toggle("show");
+
+  }
+
+
+  /* SUCHE LÖSCHEN */
+
+  function clearSearch() {
+
+    const input =
+      document.getElementById("searchInput");
+
+    const results =
+      document.getElementById("results");
+
+    const cards =
+      document.querySelectorAll(".result-card");
+
+    const noResults =
+      document.getElementById("noResults");
+
+    input.value = "";
+
+    results.classList.remove("show");
+
+    cards.forEach(
+      function(card) {
+
+        card.style.display = "none";
+
+      }
+    );
+
+    noResults.classList.remove("show");
+
+    input.focus();
 
   }
 
