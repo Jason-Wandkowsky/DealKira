@@ -1,310 +1,323 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telefon- & Tablet-Zubehör – DealKira</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<title>Telefon & Tablet Zubehör – DealKira</title>
 
-    body {
-      background: #f5f5f5;
-      color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
-    }
+<style>
 
-    header {
-      height: 72px;
-      background: #111;
-      padding: 0 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    .logo {
-      width: 220px;
-      height: 55px;
-      display: flex;
-      align-items: center;
-      overflow: visible;
-      position: relative;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
 
-    .logo img {
-      height: 240px;
-      width: auto;
-      max-width: none;
-      display: block;
-    }
+header {
+  height: 82px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: relative;
+  z-index: 1000;
+}
 
-    .menu-button {
-      width: 48px;
-      height: 48px;
-      background: #1c1c1c;
-      border: 1px solid #333;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      cursor: pointer;
-    }
+.logo {
+  width: 280px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+}
 
-    .menu-button span {
-      width: 23px;
-      height: 3px;
-      background: #ffd400;
-      border-radius: 2px;
-      transition: 0.25s;
-    }
+.logo img {
+  height: 320px;
+  width: auto;
+  max-width: none;
+  display: block;
+}
 
-    .menu-button:hover {
-      background: #252525;
-      border-color: #ffd400;
-    }
+.menu-button {
+  width: 48px;
+  height: 48px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 
-    .menu-button.active span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
+.menu-button span {
+  width: 23px;
+  height: 3px;
+  background: #ffd400;
+  border-radius: 3px;
+  transition: 0.2s;
+}
 
-    .menu-button.active span:nth-child(2) {
-      opacity: 0;
-    }
+.menu-button:hover {
+  background: #252525;
+  border-color: #ffd400;
+}
 
-    .menu-button.active span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
+.menu-button.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-    .menu-panel {
-      position: absolute;
-      top: 82px;
-      right: 6%;
-      width: 270px;
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 14px;
-      padding: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: 0.2s;
-    }
+.menu-button.active span:nth-child(2) {
+  opacity: 0;
+}
 
-    .menu-panel.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
+.menu-button.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-    .menu-panel a {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: white;
-      text-decoration: none;
-      padding: 14px 15px;
-      border-radius: 9px;
-      font-weight: 700;
-    }
+.menu-panel {
+  position: absolute;
+  top: 82px;
+  right: 6%;
+  width: 270px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
 
-    .menu-panel a:hover {
-      background: #222;
-      color: #ffd400;
-    }
+.menu-panel.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
-    .menu-icon {
-      width: 25px;
-      text-align: center;
-      font-size: 19px;
-    }
+.menu-panel a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 15px;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: 0.2s;
+}
 
-    .menu-divider {
-      height: 1px;
-      background: #333;
-      margin: 8px 5px;
-    }
+.menu-panel a:hover {
+  background: #222;
+  color: #ffd400;
+}
 
-    .page-header {
-      background: linear-gradient(135deg, #111, #222);
-      color: white;
-      padding: 70px 6%;
-      text-align: center;
-    }
+.menu-icon {
+  width: 25px;
+  text-align: center;
+  font-size: 19px;
+}
 
-    .page-header h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
-    }
+.menu-divider {
+  height: 1px;
+  background: #333;
+  margin: 8px 5px;
+}
 
-    .page-header h1 span {
-      color: #ffd400;
-    }
+.hero {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 55px 20px 60px;
+}
 
-    .page-header p {
-      color: #ccc;
-      font-size: 18px;
-    }
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
 
-    .categories {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 6%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.hero h1 span {
+  color: #ffd400;
+}
 
-    .category-card {
-      background: white;
-      border-radius: 16px;
-      padding: 35px 25px;
-      text-align: center;
-      text-decoration: none;
-      color: #111;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      transition: 0.2s;
-    }
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+}
 
-    .category-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.13);
-    }
+.categories {
+  max-width: 1100px;
+  margin: 55px auto 70px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
 
-    .category-icon {
-      font-size: 60px;
-      margin-bottom: 15px;
-    }
+.category-card {
+  min-height: 210px;
+  background: #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  transition: .2s;
+}
 
-    .category-card h2 {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
 
-    .category-card p {
-      color: #666;
-      font-size: 15px;
-    }
+.category-icon {
+  font-size: 58px;
+  margin-bottom: 15px;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-      margin-top: 30px;
-    }
+.category-card h2 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
 
-    footer strong {
-      color: #ffd400;
-    }
+.category-card p {
+  color: #666;
+  font-size: 14px;
+}
 
-    footer p {
-      margin-top: 6px;
-      color: #aaa;
-    }
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
 
-    @media (max-width: 900px) {
-      .categories {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-      }
-    }
+@media (max-width: 800px) {
 
-    @media (max-width: 800px) {
-      header {
-        padding: 0 5%;
-      }
+  .logo {
+    width: 225px;
+  }
 
-      .logo {
-        width: 180px;
-      }
+  .logo img {
+    height: 275px;
+  }
 
-      .logo img {
-        height: 210px;
-      }
+}
 
-      .menu-panel {
-        right: 5%;
-      }
+@media (max-width: 550px) {
 
-      .page-header h1 {
-        font-size: 34px;
-      }
-    }
+  header {
+    padding: 0 5%;
+  }
 
-    @media (max-width: 600px) {
-      .categories {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-      }
-    }
+  .logo {
+    width: 190px;
+    height: 50px;
+  }
 
-    @media (max-width: 550px) {
-      header {
-        height: 68px;
-        padding: 0 5%;
-      }
+  .logo img {
+    height: 235px;
+  }
 
-      .logo {
-        width: 145px;
-        height: 50px;
-      }
+  .menu-panel {
+    right: 5%;
+    width: 270px;
+  }
 
-      .logo img {
-        height: 184px;
-      }
+  .hero {
+    padding: 42px 15px 48px;
+  }
 
-      .menu-button {
-        width: 45px;
-        height: 45px;
-      }
+  .hero h1 {
+    font-size: 30px;
+  }
 
-      .menu-panel {
-        top: 78px;
-        right: 5%;
-        width: 260px;
-      }
+  .hero p {
+    font-size: 15px;
+  }
 
-      .page-header {
-        padding: 55px 5%;
-      }
+  .categories {
+    margin: 35px auto 50px;
+    padding: 0 12px;
+    gap: 12px;
+  }
 
-      .page-header h1 {
-        font-size: 30px;
-      }
+  .category-card {
+    min-height: 175px;
+    padding: 15px 8px;
+    border-radius: 13px;
+  }
 
-      .page-header p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  .category-icon {
+    font-size: 43px;
+    margin-bottom: 10px;
+  }
+
+  .category-card h2 {
+    font-size: 16px;
+  }
+
+  .category-card p {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .logo {
+    width: 170px;
+  }
+
+  .logo img {
+    height: 215px;
+  }
+
+  .menu-button {
+    width: 45px;
+    height: 45px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
 
-  <div class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div>
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
 
-  <button class="menu-button"
-          id="menuButton"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-          aria-expanded="false">
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false"
+  >
     <span></span>
     <span></span>
     <span></span>
@@ -312,14 +325,16 @@
 
   <div class="menu-panel" id="menuPanel">
 
-    <a href="index.html">
-      <span class="menu-icon">🏠</span>
-      Startseite
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
     </a>
 
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
+    <div class="menu-divider"></div>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
     </a>
 
     <a href="kategorien.html">
@@ -327,79 +342,32 @@
       Kategorien
     </a>
 
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
     </a>
 
-    <div class="menu-divider"></div>
-
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
     </a>
 
   </div>
 
 </header>
 
+<section class="hero">
 
-<section class="page-header">
-
-  <h1><span>Telefon- & Tablet-Zubehör</span></h1>
+  <h1>Telefon / Tablet <span>Zubehör</span></h1>
 
   <p>
-    Entdecke passendes Zubehör für deine mobilen Geräte.
+    Zubehör für Smartphones und Tablets entdecken
   </p>
 
 </section>
 
-
 <section class="categories">
 
-  <!-- 1. KABEL -->
-  <a href="telefon-kabel.html" class="category-card">
-
-    <div class="category-icon">🔌</div>
-
-    <h2>Kabel</h2>
-
-    <p>
-      Ladekabel und Verbindungskabel für verschiedene Geräte.
-    </p>
-
-  </a>
-
-
-  <!-- 2. NETZTEIL / ADAPTER -->
-  <a href="telefon-netzteile-adapter.html" class="category-card">
-
-    <div class="category-icon">⚡</div>
-
-    <h2>Netzteil / Adapter</h2>
-
-    <p>
-      Ladegeräte, Netzteile und Adapter für Smartphones und Tablets.
-    </p>
-
-  </a>
-
-
-  <!-- 3. POWERBANKS -->
-  <a href="telefon-powerbanks.html" class="category-card">
-
-    <div class="category-icon">🔋</div>
-
-    <h2>Powerbanks</h2>
-
-    <p>
-      Mobile Akkus zum Laden unterwegs.
-    </p>
-
-  </a>
-
-
-  <!-- 4. SCHUTZ -->
   <a href="telefon-schutz.html" class="category-card">
 
     <div class="category-icon">🛡️</div>
@@ -407,13 +375,51 @@
     <h2>Schutz</h2>
 
     <p>
-      Hüllen, Displayschutz und weiteres Schutz-Zubehör.
+      Hüllen, Schutzfolien und weiteres Zubehör zum Schutz deiner Geräte.
     </p>
 
   </a>
 
 
-  <!-- 5. AUTO -->
+  <a href="telefon-kabel.html" class="category-card">
+
+    <div class="category-icon">🔌</div>
+
+    <h2>Kabel</h2>
+
+    <p>
+      Ladekabel und weitere Kabel für Smartphones und Tablets.
+    </p>
+
+  </a>
+
+
+  <a href="telefon-netzteile-adapter.html" class="category-card">
+
+    <div class="category-icon">⚡</div>
+
+    <h2>Netzteil / Adapter</h2>
+
+    <p>
+      Netzteile, Ladeadapter und passende Stromversorgung entdecken.
+    </p>
+
+  </a>
+
+
+  <a href="telefon-powerbanks.html" class="category-card">
+
+    <div class="category-icon">🔋</div>
+
+    <h2>Powerbanks</h2>
+
+    <p>
+      Mobile Energie für Smartphone und Tablet unterwegs.
+    </p>
+
+  </a>
+
+
   <a href="telefon-auto.html" class="category-card">
 
     <div class="category-icon">🚗</div>
@@ -421,13 +427,12 @@
     <h2>Auto</h2>
 
     <p>
-      Handyhalterungen, Ladegeräte und Zubehör fürs Auto.
+      Smartphone-Zubehör für die Nutzung im Auto entdecken.
     </p>
 
   </a>
 
 
-  <!-- 6. AUDIO -->
   <a href="telefon-audio.html" class="category-card">
 
     <div class="category-icon">🎧</div>
@@ -435,27 +440,25 @@
     <h2>Audio</h2>
 
     <p>
-      Kopfhörer, Headsets und weiteres Audio-Zubehör.
+      Kopfhörer, Lautsprecher und weiteres Audio-Zubehör.
     </p>
 
   </a>
 
 
-  <!-- 7. FOTO & VIDEO -->
   <a href="telefon-foto-video.html" class="category-card">
 
     <div class="category-icon">📷</div>
 
-    <h2>Foto & Video</h2>
+    <h2>Foto / Video</h2>
 
     <p>
-      Zubehör für Smartphone-Fotografie und Videos.
+      Zubehör für Fotos, Videos und Smartphone-Aufnahmen.
     </p>
 
   </a>
 
 
-  <!-- 8. SPEICHER -->
   <a href="telefon-speicher.html" class="category-card">
 
     <div class="category-icon">💾</div>
@@ -463,13 +466,12 @@
     <h2>Speicher</h2>
 
     <p>
-      Speicherkarten, USB-Speicher und weiteres Speicher-Zubehör.
+      Speicherlösungen und Zubehör für Smartphones und Tablets.
     </p>
 
   </a>
 
 
-  <!-- 9. GAMING -->
   <a href="telefon-gaming.html" class="category-card">
 
     <div class="category-icon">🎮</div>
@@ -477,76 +479,94 @@
     <h2>Gaming</h2>
 
     <p>
-      Gaming-Zubehör für Smartphones und Tablets.
+      Gaming-Zubehör für Smartphones und Tablets entdecken.
     </p>
 
   </a>
 
 </section>
 
-
 <footer>
 
-  <strong>DealKira</strong>
-
-  <p>
-    Produkte entdecken. Deals finden. Preise vergleichen.
-  </p>
+  © 2026 DealKira – Bessere Deals finden
 
 </footer>
 
-
 <script>
 
-  function toggleMenu() {
+function toggleMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+  const menu =
+    document.getElementById("menuPanel");
 
-    const isOpen = menu.classList.toggle("open");
+  const button =
+    document.getElementById("menuButton");
 
-    button.classList.toggle("active");
+  const isOpen =
+    menu.classList.toggle("open");
 
-    button.setAttribute("aria-expanded", isOpen);
+  button.classList.toggle("active");
 
-  }
+  button.setAttribute(
+    "aria-expanded",
+    isOpen
+  );
 
+}
 
-  function closeMenu() {
+function closeMenu() {
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+  const menu =
+    document.getElementById("menuPanel");
 
-    menu.classList.remove("open");
-    button.classList.remove("active");
+  const button =
+    document.getElementById("menuButton");
 
-    button.setAttribute("aria-expanded", "false");
+  menu.classList.remove("open");
 
-  }
+  button.classList.remove("active");
 
+  button.setAttribute(
+    "aria-expanded",
+    "false"
+  );
 
-  document.addEventListener("click", function(event) {
+}
 
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
 
     if (
       !menu.contains(event.target) &&
       !button.contains(event.target)
     ) {
+
       closeMenu();
+
     }
 
-  });
+  }
+);
 
-
-  document.addEventListener("keydown", function(event) {
+document.addEventListener(
+  "keydown",
+  function(event) {
 
     if (event.key === "Escape") {
+
       closeMenu();
+
     }
 
-  });
+  }
+);
 
 </script>
 
