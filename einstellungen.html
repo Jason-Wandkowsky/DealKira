@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Einstellungen – DealKira</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #181818;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      height: 72px;
+      background: #111;
+      padding: 0 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      width: 280px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      position: relative;
+    }
+
+    .logo img {
+      height: 320px;
+      width: auto;
+      max-width: none;
+      display: block;
+    }
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: 0.2s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
+
+    .menu-panel a:hover {
+      background: #222;
+      color: #ffd400;
+    }
+
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 55px 6% 50px;
+    }
+
+    .settings-box {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .settings-box h1 {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .settings-box h1 span {
+      color: #ffd400;
+    }
+
+    .settings-box > p {
+      color: #bdbdbd;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .settings-card {
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 15px;
+    }
+
+    .settings-card h2 {
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .settings-card p {
+      color: #999;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #111;
+      border-top: 1px solid #292929;
+      padding: 18px 6%;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .logo {
+        width: 225px;
+      }
+
+      .logo img {
+        height: 275px;
+      }
+
+      main {
+        padding: 45px 5% 40px;
+      }
+
+      .settings-box h1 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      header {
+        height: 68px;
+        padding: 0 5%;
+      }
+
+      .logo {
+        width: 190px;
+        height: 50px;
+      }
+
+      .logo img {
+        height: 235px;
+      }
+
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
+      .menu-panel {
+        top: 78px;
+        right: 5%;
+        width: 260px;
+      }
+
+      main {
+        padding: 35px 5% 35px;
+      }
+
+      .settings-box h1 {
+        font-size: 37px;
+      }
+
+      .settings-box > p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <a href="index.html" class="logo">
+      <img src="20879_nobg (1).png" alt="DealKira">
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      onclick="toggleMenu()"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-panel" id="menuPanel">
+
+      <a href="konto.html">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
+      </a>
+
+      <div class="menu-divider"></div>
+
+      <a href="suche.html">
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
+
+      <a href="kategorien.html">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
+
+      <a href="deals.html">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
+
+      <a href="einstellungen.html">
+        <span class="menu-icon">⚙️</span>
+        Einstellungen
+      </a>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="settings-box">
+
+      <h1><span>Einstellungen</span></h1>
+
+      <p>
+        Hier kannst du später deine persönlichen DealKira-Einstellungen verwalten.
+      </p>
+
+      <div class="settings-card">
+        <h2>⚙️ Allgemeine Einstellungen</h2>
+        <p>Noch keine Einstellungen verfügbar.</p>
+      </div>
+
+      <div class="settings-card">
+        <h2>🔔 Benachrichtigungen</h2>
+        <p>Benachrichtigungen werden später hier eingerichtet.</p>
+      </div>
+
+      <div class="settings-card">
+        <h2>🌐 Sprache</h2>
+        <p>Deutsch</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © DealKira 2026
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
+
+      const isOpen = menu.classList.toggle("open");
+
+      button.classList.toggle("active");
+      button.setAttribute("aria-expanded", isOpen);
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
+
+      menu.classList.remove("open");
+      button.classList.remove("active");
+      button.setAttribute("aria-expanded", "false");
+    }
+
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
+
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+  </script>
+
+</body>
+</html>
