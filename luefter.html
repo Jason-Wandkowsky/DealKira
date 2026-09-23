@@ -1,48 +1,65 @@
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lüfter – DealKira</title><style>
+
+<title>Lüfter – DealKira</title>
+
+<style>
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f5f5f5;
   color: #111;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
+
 header {
   height: 72px;
-  background: #111;
-  padding: 0 6%;
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 6%;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .logo {
-  width: 220px;
-  height: 55px;
+  width: 280px;
+  height: 65px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 
 .logo img {
-  width: 240px;
-  height: auto;
+  height: 320px;
+  width: auto;
+  max-width: none;
   display: block;
 }
 
-/* MENU BUTTON */
+/* =========================
+   MENÜ BUTTON
+========================= */
+
 .menu-button {
   width: 48px;
   height: 48px;
@@ -51,8 +68,8 @@ header {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
   transition: 0.2s;
@@ -83,7 +100,10 @@ header {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* MENU PANEL */
+/* =========================
+   MENÜ PANEL
+========================= */
+
 .menu-panel {
   position: absolute;
   top: 82px;
@@ -93,7 +113,7 @@ header {
   border: 1px solid #333;
   border-radius: 14px;
   padding: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -110,7 +130,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 14px 15px;
   border-radius: 9px;
@@ -135,38 +155,95 @@ header {
   margin: 8px 5px;
 }
 
-/* PAGE HEADER */
-.page-header {
-  background: linear-gradient(135deg, #111, #222);
-  color: white;
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  background: white;
   text-align: center;
-  padding: 55px 20px;
+  padding: 55px 20px 45px;
+  border-bottom: 1px solid #eee;
 }
 
-.page-header h1 {
-  margin: 0 0 10px;
-  font-size: 38px;
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
 }
 
-.page-header h1 span {
-  color: #ffd400;
+.hero p {
+  color: #666;
+  font-size: 18px;
 }
 
-.page-header p {
-  margin: 0;
-  color: #ccc;
+/* =========================
+   PRODUKTE
+========================= */
+
+.products-section {
+  max-width: 1100px;
+  margin: 45px auto 70px;
+  padding: 0 20px;
+}
+
+.products-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.filter-button {
+  background: #ffd400;
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
   font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-/* EMPTY STATE */
+.filter-button:hover {
+  transform: translateY(-2px);
+}
+
+.filter-message {
+  display: none;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 18px;
+  margin-bottom: 22px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+  color: #555;
+}
+
+.filter-message.show {
+  display: block;
+}
+
+/* =========================
+   PRODUKT GRID
+========================= */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
 .empty-state {
-  max-width: 700px;
-  margin: 70px auto;
-  padding: 55px 30px;
+  grid-column: 1 / -1;
   background: white;
   border-radius: 16px;
+  padding: 55px 30px;
   text-align: center;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
 }
 
 .empty-icon {
@@ -176,174 +253,360 @@ header {
 
 .empty-state h2 {
   font-size: 26px;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .empty-state p {
   color: #666;
   font-size: 16px;
-  margin: 0;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
-  margin-top: 100px;
-  background: #111;
-  color: white;
+  background: #000;
+  color: #fff;
   text-align: center;
   padding: 30px 20px;
-}
-
-footer strong {
-  color: #ffd400;
-  font-size: 20px;
+  margin-top: 20px;
 }
 
 footer p {
   color: #aaa;
-  margin-bottom: 0;
+  font-size: 14px;
 }
 
-/* MOBILE */
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 800px) {
+
   .logo {
-    width: 210px;
+    width: 225px;
   }
 
   .logo img {
-    width: 230px;
+    height: 275px;
   }
 
-  .menu-panel {
-    right: 5%;
+  .hero h1 {
+    font-size: 34px;
   }
+
+  .hero p {
+    font-size: 16px;
+  }
+
 }
 
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 550px) {
+
   header {
     padding: 0 5%;
   }
 
   .logo {
-    width: 184px;
+    width: 190px;
+    height: 50px;
   }
 
   .logo img {
-    width: 210px;
+    height: 235px;
   }
 
   .menu-button {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
   }
 
   .menu-panel {
-    width: 90%;
     right: 5%;
+    width: 270px;
   }
 
-  .page-header {
-    padding: 45px 20px;
+  .hero {
+    padding: 40px 15px 35px;
   }
 
-  .page-header h1 {
-    font-size: 32px;
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .products-section {
+    margin: 35px auto 50px;
+    padding: 0 12px;
+  }
+
+  .products-top {
+    margin-bottom: 18px;
+  }
+
+  .filter-button {
+    padding: 10px 17px;
+    font-size: 14px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
   .empty-state {
-    margin: 50px 5%;
-    padding: 45px 20px;
+    padding: 45px 15px;
+    border-radius: 13px;
   }
+
+  .empty-icon {
+    font-size: 50px;
+  }
+
+  .empty-state h2 {
+    font-size: 20px;
+  }
+
+  .empty-state p {
+    font-size: 14px;
+  }
+
 }
-</style></head><body><header>
-  <div class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div><button
-class="menu-button"
-id="menuButton"
-onclick="toggleMenu()"
-aria-label="Menü öffnen"
-aria-expanded="false"
 
-«»
+</style>
+</head>
 
-<span></span>
-<span></span>
-<span></span>
+<body>
 
-  </button>  <div class="menu-panel" id="menuPanel"><a href="index.html">
-  <span class="menu-icon">🏠</span>
-  Startseite
-</a>
+<!-- =========================
+     HEADER
+========================= -->
 
-<a href="deals.html">
-  <span class="menu-icon">🔥</span>
-  Deals
-</a>
+<header>
 
-<a href="kategorien.html">
-  <span class="menu-icon">📂</span>
-  Kategorien
-</a>
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
 
-<a href="suche.html">
-  <span class="menu-icon">🔍</span>
-  Suche
-</a>
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-<div class="menu-divider"></div>
+  <div class="menu-panel" id="menuPanel">
 
-<a href="konto.html">
-  <span class="menu-icon">👤</span>
-  Konto / Anmelden
-</a>
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
+    </a>
+
+    <div class="menu-divider"></div>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
+
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
+
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
+
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
+    </a>
 
   </div>
-</header><section class="page-header">
-  <h1><span>Lüfter</span></h1>
-  <p>Gehäuse- und Systemlüfter für eine optimale Kühlung.</p>
-</section><section class="empty-state">
-  <div class="empty-icon">🌀</div>
-  <h2>Noch keine Produkte vorhanden</h2>
-  <p>
-    In dieser Kategorie werden bald passende Produkte und Deals angezeigt.
-  </p>
-</section><footer>
-  <strong>DealKira</strong>
-  <p>Produkte entdecken. Deals finden. Preise vergleichen.</p>
-</footer><script>
-function toggleMenu() {
-  const menu = document.getElementById("menuPanel");
-  const button = document.getElementById("menuButton");
 
-  const isOpen = menu.classList.toggle("open");
+</header>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <h1>Lüfter</h1>
+
+  <p>
+    PC-Lüfter für eine zuverlässige und effektive Kühlung entdecken
+  </p>
+
+</section>
+
+<!-- =========================
+     PRODUKTE
+========================= -->
+
+<section class="products-section">
+
+  <div class="products-top">
+
+    <button
+      class="filter-button"
+      onclick="toggleFilter()"
+    >
+      ⚙️ Filter
+    </button>
+
+  </div>
+
+  <div
+    class="filter-message"
+    id="filterMessage"
+  >
+    Der Filter befindet sich noch in Bearbeitung.
+  </div>
+
+  <div class="products">
+
+    <div class="empty-state">
+
+      <div class="empty-icon">
+        🌬️
+      </div>
+
+      <h2>
+        Noch keine Produkte vorhanden
+      </h2>
+
+      <p>
+        Wir arbeiten bereits daran, passende Lüfter und Angebote für dich bereitzustellen.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <p>
+    © 2026 DealKira – Bessere Deals finden
+  </p>
+
+</footer>
+
+<script>
+
+/* =========================
+   MENÜ
+========================= */
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById("menuPanel");
+
+  const button =
+    document.getElementById("menuButton");
+
+  const isOpen =
+    menu.classList.toggle("open");
 
   button.classList.toggle("active");
-  button.setAttribute("aria-expanded", isOpen);
+
+  button.setAttribute(
+    "aria-expanded",
+    isOpen
+  );
+
 }
 
 function closeMenu() {
-  const menu = document.getElementById("menuPanel");
-  const button = document.getElementById("menuButton");
+
+  const menu =
+    document.getElementById("menuPanel");
+
+  const button =
+    document.getElementById("menuButton");
 
   menu.classList.remove("open");
+
   button.classList.remove("active");
-  button.setAttribute("aria-expanded", "false");
+
+  button.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
 }
 
-document.addEventListener("click", function(event) {
-  const menu = document.getElementById("menuPanel");
-  const button = document.getElementById("menuButton");
+document.addEventListener(
+  "click",
+  function(event) {
 
-  if (!menu.contains(event.target) && !button.contains(event.target)) {
-    closeMenu();
-  }
-});
+    const menu =
+      document.getElementById("menuPanel");
 
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    closeMenu();
+    const button =
+      document.getElementById("menuButton");
+
+    if (
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+
+      closeMenu();
+
+    }
+
   }
-});
-</script></body>
+);
+
+document.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (event.key === "Escape") {
+
+      closeMenu();
+
+    }
+
+  }
+);
+
+/* =========================
+   FILTER
+========================= */
+
+function toggleFilter() {
+
+  const message =
+    document.getElementById("filterMessage");
+
+  message.classList.toggle("show");
+
+}
+
+</script>
+
+</body>
 </html>
