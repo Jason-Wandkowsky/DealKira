@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html><html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mikrofone – DealKira</title>
-
-<style>
+<title>Mikrofone – DealKira</title><style>
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,25 +20,28 @@ header {
   background: #111;
   padding: 0 6%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 .logo {
-  width: 220px;
-  height: 55px;
+  width: 280px;
+  height: 65px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+  text-decoration: none;
 }
 
 .logo img {
-  width: 240px;
-  height: auto;
+  height: 320px;
+  width: auto;
+  max-width: none;
   display: block;
 }
 
@@ -57,6 +57,7 @@ header {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .menu-button span {
@@ -64,7 +65,7 @@ header {
   height: 3px;
   background: #ffd400;
   border-radius: 3px;
-  transition: 0.25s;
+  transition: 0.2s;
 }
 
 .menu-button:hover {
@@ -93,7 +94,7 @@ header {
   border: 1px solid #333;
   border-radius: 14px;
   padding: 10px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -155,9 +156,49 @@ header {
   font-size: 17px;
 }
 
+.filter-area {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-button {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-button:hover {
+  background: #ffd400;
+  color: #111;
+  border-color: #ffd400;
+}
+
+.filter-message {
+  display: none;
+  max-width: 1100px;
+  margin: 15px auto 0;
+  padding: 0 20px;
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+}
+
+.filter-message.show {
+  display: block;
+}
+
 .empty-state {
   max-width: 700px;
-  margin: 70px auto;
+  margin: 50px auto 70px;
   padding: 55px 30px;
   background: white;
   border-radius: 16px;
@@ -199,8 +240,12 @@ footer p {
 }
 
 @media (max-width: 800px) {
+  .logo {
+    width: 225px;
+  }
+
   .logo img {
-    width: 210px;
+    height: 275px;
   }
 
   .menu-button {
@@ -215,19 +260,29 @@ footer p {
   .page-header h1 {
     font-size: 32px;
   }
+
+  .filter-area {
+    padding: 0 5%;
+  }
+
+  .filter-message {
+    padding: 0 5%;
+  }
 }
 
 @media (max-width: 550px) {
   header {
+    height: 68px;
     padding: 0 5%;
   }
 
   .logo {
-    width: 184px;
+    width: 190px;
+    height: 50px;
   }
 
   .logo img {
-    width: 184px;
+    height: 235px;
   }
 
   .menu-panel {
@@ -243,90 +298,80 @@ footer p {
     font-size: 28px;
   }
 
+  .filter-area {
+    margin-top: 25px;
+  }
+
+  .filter-button {
+    width: 100%;
+  }
+
+  .filter-message {
+    text-align: center;
+  }
+
   .empty-state {
-    margin: 50px 5%;
+    margin: 45px 5% 50px;
     padding: 45px 20px;
   }
 }
-</style>
-</head>
-
-<body>
-
-<header>
-
-  <div class="logo">
+</style></head><body><header>  <a href="index.html" class="logo">
     <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div>
+  </a><button
+class="menu-button"
+id="menuButton"
+onclick="toggleMenu()"
+aria-label="Menü öffnen"
+aria-expanded="false"
 
-  <button
-    class="menu-button"
-    id="menuButton"
-    onclick="toggleMenu()"
-    aria-label="Menü öffnen"
-    aria-expanded="false"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+«»
 
-  <div class="menu-panel" id="menuPanel">
+<span></span>
+<span></span>
+<span></span>
 
-    <a href="index.html">
-      <span class="menu-icon">🏠</span>
-      Startseite
-    </a>
+  </button>  <div class="menu-panel" id="menuPanel"><a href="konto.html">
+  <span class="menu-icon">👤</span>
+  Konto / Anmelden
+</a>
 
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
-    </a>
+<div class="menu-divider"></div>
 
-    <a href="kategorien.html">
-      <span class="menu-icon">📂</span>
-      Kategorien
-    </a>
+<a href="suche.html">
+  <span class="menu-icon">🔍</span>
+  Suche
+</a>
 
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
-    </a>
+<a href="kategorien.html">
+  <span class="menu-icon">📂</span>
+  Kategorien
+</a>
 
-    <div class="menu-divider"></div>
+<a href="deals.html">
+  <span class="menu-icon">🔥</span>
+  Deals
+</a>
 
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
-    </a>
+<a href="einstellungen.html">
+  <span class="menu-icon">⚙️</span>
+  Einstellungen
+</a>
 
-  </div>
-
-</header>
-
-<section class="page-header">
+  </div></header><section class="page-header">
   <h1><span>Mikrofone</span></h1>
   <p>Mikrofone für Gaming, Streaming, Aufnahmen und Kommunikation.</p>
-</section>
-
-<section class="empty-state">
-
-  <div class="empty-icon">🎙️</div>
-
-  <h2>Noch keine Produkte vorhanden</h2>
-
-  <p>
+</section><div class="filter-area">
+  <button class="filter-button" onclick="toggleFilter()">
+    ⚙️ Filter
+  </button>
+</div><div class="filter-message" id="filterMessage">
+  Der Filter befindet sich noch in Bearbeitung.
+</div><section class="empty-state">  <div class="empty-icon">🎙️</div>  <h2>Noch keine Produkte vorhanden</h2>  <p>
     In dieser Kategorie werden bald passende Produkte und Deals angezeigt.
-  </p>
-
-</section>
-
-<footer>
+  </p></section><footer>
   <strong>DealKira</strong>
   <p>Produkte entdecken. Deals finden. Preise vergleichen.</p>
-</footer>
-
-<script>
+</footer><script>
 function toggleMenu() {
   const menu = document.getElementById("menuPanel");
   const button = document.getElementById("menuButton");
@@ -346,6 +391,11 @@ function closeMenu() {
   button.setAttribute("aria-expanded", "false");
 }
 
+function toggleFilter() {
+  const message = document.getElementById("filterMessage");
+  message.classList.toggle("show");
+}
+
 document.addEventListener("click", function(event) {
   const menu = document.getElementById("menuPanel");
   const button = document.getElementById("menuButton");
@@ -360,9 +410,5 @@ document.addEventListener("keydown", function(event) {
     closeMenu();
   }
 });
-</script>
-
-</body>
+</script></body>
 </html>
-
-
