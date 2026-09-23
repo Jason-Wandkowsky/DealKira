@@ -20,10 +20,11 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      transition: background 0.2s, color 0.2s;
     }
 
     header {
-      height: 72px;
+      height: 82px;
       background: #111;
       padding: 0 6%;
       display: flex;
@@ -63,6 +64,7 @@
       align-items: center;
       gap: 5px;
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .menu-button span {
@@ -100,7 +102,6 @@
       border-radius: 14px;
       padding: 10px;
       box-shadow: 0 12px 35px rgba(0,0,0,0.5);
-
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -122,6 +123,7 @@
       padding: 14px 15px;
       border-radius: 9px;
       font-weight: 700;
+      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -175,16 +177,264 @@
       border-radius: 14px;
       padding: 22px;
       margin-bottom: 15px;
+      transition: 0.2s;
+    }
+
+    .settings-card:hover {
+      border-color: #555;
+    }
+
+    .settings-card.clickable {
+      cursor: pointer;
+    }
+
+    .settings-card.clickable:hover {
+      transform: translateY(-2px);
+      border-color: #ffd400;
+    }
+
+    .settings-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .settings-card-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .settings-card-icon {
+      font-size: 24px;
+      width: 30px;
+      text-align: center;
     }
 
     .settings-card h2 {
       font-size: 19px;
-      margin-bottom: 7px;
     }
 
-    .settings-card p {
+    .settings-card-description {
       color: #999;
       font-size: 15px;
+      margin-top: 7px;
+    }
+
+    .arrow {
+      color: #ffd400;
+      font-size: 25px;
+      transition: 0.2s;
+    }
+
+    .settings-card:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    .settings-content {
+      display: none;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+
+    .settings-content.open {
+      display: block;
+    }
+
+    .option-group {
+      margin-bottom: 25px;
+    }
+
+    .option-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .option-group h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .option-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .option {
+      width: 100%;
+      background: #181818;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 10px;
+      padding: 13px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      text-align: left;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .option:hover {
+      border-color: #ffd400;
+      background: #202020;
+    }
+
+    .option.selected {
+      border-color: #ffd400;
+      background: #292500;
+    }
+
+    .option-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .check {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #555;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .option.selected .check {
+      border-color: #ffd400;
+      background: #ffd400;
+      color: #111;
+    }
+
+    .shop-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #181818;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 13px 15px;
+    }
+
+    .shop-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .shop-logo {
+      width: 38px;
+      height: 38px;
+      background: #fff;
+      color: #111;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .switch {
+      position: relative;
+      width: 48px;
+      height: 26px;
+      flex-shrink: 0;
+    }
+
+    .switch input {
+      display: none;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #444;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .slider::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 3px;
+      top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+
+    .switch input:checked + .slider {
+      background: #ffd400;
+    }
+
+    .switch input:checked + .slider::before {
+      transform: translateX(22px);
+    }
+
+    .cookie-box {
+      background: #181818;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .cookie-box h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .cookie-box p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .cookie-required {
+      color: #7fd88a;
+      font-size: 13px;
+      margin-top: 7px;
+      font-weight: 700;
+    }
+
+    .save-message {
+      display: none;
+      background: #243b20;
+      border: 1px solid #4b7f43;
+      color: #b9f0ad;
+      border-radius: 10px;
+      padding: 12px 15px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .save-message.show {
+      display: block;
+    }
+
+    .reset-button {
+      background: transparent;
+      color: #aaa;
+      border: 1px solid #444;
+      border-radius: 9px;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .reset-button:hover {
+      color: #fff;
+      border-color: #ffd400;
     }
 
     footer {
@@ -194,6 +444,71 @@
       text-align: center;
       color: #888;
       font-size: 14px;
+    }
+
+    /* HELLER MODUS */
+
+    body.light-mode {
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    body.light-mode .settings-box > p {
+      color: #666;
+    }
+
+    body.light-mode .settings-card {
+      background: #fff;
+      border-color: #ddd;
+    }
+
+    body.light-mode .settings-card:hover {
+      border-color: #bbb;
+    }
+
+    body.light-mode .settings-card.clickable:hover {
+      border-color: #ffd400;
+    }
+
+    body.light-mode .settings-content {
+      border-color: #ddd;
+    }
+
+    body.light-mode .option {
+      background: #f5f5f5;
+      color: #111;
+      border-color: #ddd;
+    }
+
+    body.light-mode .option:hover {
+      background: #fff;
+    }
+
+    body.light-mode .option.selected {
+      background: #fffbea;
+      border-color: #d5b300;
+    }
+
+    body.light-mode .shop-option,
+    body.light-mode .cookie-box {
+      background: #f5f5f5;
+      border-color: #ddd;
+    }
+
+    body.light-mode .cookie-box p,
+    body.light-mode .settings-card-description {
+      color: #666;
+    }
+
+    body.light-mode .save-message {
+      background: #e9f7e6;
+      border-color: #9aca91;
+      color: #32652d;
+    }
+
+    body.light-mode .reset-button {
+      color: #666;
+      border-color: #ccc;
     }
 
     @media (max-width: 800px) {
@@ -250,6 +565,33 @@
 
       .settings-box > p {
         font-size: 17px;
+      }
+
+      .settings-card {
+        padding: 18px;
+      }
+
+      .settings-card h2 {
+        font-size: 17px;
+      }
+
+      .settings-card-description {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .logo {
+        width: 170px;
+      }
+
+      .logo img {
+        height: 215px;
+      }
+
+      .menu-button {
+        width: 45px;
+        height: 45px;
       }
     }
   </style>
@@ -315,22 +657,713 @@
       <h1><span>Einstellungen</span></h1>
 
       <p>
-        Hier kannst du später deine persönlichen DealKira-Einstellungen verwalten.
+        Passe DealKira nach deinen persönlichen Wünschen an.
       </p>
 
-      <div class="settings-card">
-        <h2>⚙️ Allgemeine Einstellungen</h2>
-        <p>Noch keine Einstellungen verfügbar.</p>
+      <!-- ALLGEMEINE EINSTELLUNGEN -->
+
+      <div class="settings-card clickable" onclick="toggleSection('generalContent', this)">
+
+        <div class="settings-card-header">
+
+          <div class="settings-card-title">
+            <div class="settings-card-icon">⚙️</div>
+
+            <div>
+              <h2>Allgemeine Einstellungen</h2>
+              <p class="settings-card-description">
+                Darstellung, Währung, bevorzugte Shops und Datenschutz
+              </p>
+            </div>
+          </div>
+
+          <div class="arrow">›</div>
+
+        </div>
+
+        <div
+          class="settings-content"
+          id="generalContent"
+          onclick="event.stopPropagation()"
+        >
+
+          <!-- DARSTELLUNG -->
+
+          <div class="option-group">
+
+            <h3>🎨 Darstellung</h3>
+
+            <div class="option-list">
+
+              <button class="option" id="themeLight" onclick="setTheme('light')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  ☀️ Hell
+                </span>
+              </button>
+
+              <button class="option" id="themeDark" onclick="setTheme('dark')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🌙 Dunkel
+                </span>
+              </button>
+
+              <button class="option" id="themeSystem" onclick="setTheme('system')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  💻 System
+                </span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <!-- WÄHRUNG -->
+
+          <div class="option-group">
+
+            <h3>💶 Währung</h3>
+
+            <div class="option-list">
+
+              <button class="option" onclick="setCurrency('EUR', '€')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇪🇺 Euro (€)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('GBP', '£')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇬🇧 Britisches Pfund (£)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('CHF', 'CHF')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇨🇭 Schweizer Franken (CHF)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('PLN', 'zł')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇵🇱 Polnischer Złoty (zł)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('CZK', 'Kč')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇨🇿 Tschechische Krone (Kč)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('DKK', 'kr')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇩🇰 Dänische Krone (kr)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('SEK', 'kr')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇸🇪 Schwedische Krone (kr)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('NOK', 'kr')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇳🇴 Norwegische Krone (kr)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('ISK', 'kr')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇮🇸 Isländische Króna (kr)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('HUF', 'Ft')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇭🇺 Ungarischer Forint (Ft)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('RON', 'lei')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇷🇴 Rumänischer Leu (lei)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('BGN', 'лв')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇧🇬 Bulgarischer Lew (лв)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('RSD', 'дин')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇷🇸 Serbischer Dinar (дин)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('ALL', 'L')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇦🇱 Albanischer Lek (L)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('BAM', 'KM')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇧🇦 Konvertible Mark (KM)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('MKD', 'ден')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇲🇰 Mazedonischer Denar (ден)
+                </span>
+              </button>
+
+              <button class="option" onclick="setCurrency('UAH', '₴')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇺🇦 Ukrainische Hrywnja (₴)
+                </span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <!-- BEVORZUGTE SHOPS -->
+
+          <div class="option-group">
+
+            <h3>🛒 Bevorzugte Shops</h3>
+
+            <div class="shop-option">
+
+              <div class="shop-left">
+
+                <div class="shop-logo">
+                  amazon
+                </div>
+
+                <div>
+                  <strong>Amazon</strong>
+                  <p class="settings-card-description">
+                    Amazon-Angebote bevorzugen
+                  </p>
+                </div>
+
+              </div>
+
+              <label class="switch">
+
+                <input
+                  type="checkbox"
+                  id="amazonShop"
+                  onchange="saveShopPreference()"
+                >
+
+                <span class="slider"></span>
+
+              </label>
+
+            </div>
+
+            <button class="reset-button" onclick="showMessage('Weitere Shops können später hinzugefügt werden.')">
+              Weitere Shops später hinzufügen
+            </button>
+
+          </div>
+
+          <!-- DATENSCHUTZ & COOKIES -->
+
+          <div class="option-group">
+
+            <h3>🍪 Datenschutz & Cookies</h3>
+
+            <div class="cookie-box">
+
+              <h3>Notwendige Cookies</h3>
+
+              <p>
+                Diese Cookies sind erforderlich, damit grundlegende Funktionen
+                von DealKira funktionieren.
+              </p>
+
+              <div class="cookie-required">
+                Immer aktiv
+              </div>
+
+            </div>
+
+            <div class="cookie-box">
+
+              <h3>Optionale Cookies</h3>
+
+              <p>
+                Optionale Cookies können beispielsweise für Analyse- und
+                Komfortfunktionen verwendet werden.
+              </p>
+
+              <label class="switch" style="margin-top:12px;">
+
+                <input
+                  type="checkbox"
+                  id="optionalCookies"
+                  onchange="saveCookiePreference()"
+                >
+
+                <span class="slider"></span>
+
+              </label>
+
+            </div>
+
+            <button
+              class="reset-button"
+              onclick="resetCookieSettings()"
+            >
+              Cookie-Einstellungen zurücksetzen
+            </button>
+
+          </div>
+
+          <div class="save-message" id="generalMessage"></div>
+
+        </div>
+
       </div>
 
-      <div class="settings-card">
-        <h2>🔔 Benachrichtigungen</h2>
-        <p>Benachrichtigungen werden später hier eingerichtet.</p>
+
+      <!-- BENACHRICHTIGUNGEN -->
+
+      <div class="settings-card clickable" onclick="toggleSection('notificationContent', this)">
+
+        <div class="settings-card-header">
+
+          <div class="settings-card-title">
+
+            <div class="settings-card-icon">🔔</div>
+
+            <div>
+
+              <h2>Benachrichtigungen</h2>
+
+              <p class="settings-card-description">
+                DealKira-Neuigkeiten, neue Deals und E-Mail-Benachrichtigungen
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="arrow">›</div>
+
+        </div>
+
+
+        <div
+          class="settings-content"
+          id="notificationContent"
+          onclick="event.stopPropagation()"
+        >
+
+          <div class="option-group">
+
+            <h3>📢 DealKira-Neuigkeiten</h3>
+
+            <div class="shop-option">
+
+              <div>
+                <strong>Neuigkeiten</strong>
+
+                <p class="settings-card-description">
+                  Informationen über neue Funktionen und wichtige Änderungen.
+                </p>
+              </div>
+
+              <label class="switch">
+
+                <input
+                  type="checkbox"
+                  id="newsNotifications"
+                  onchange="saveNotificationSettings()"
+                >
+
+                <span class="slider"></span>
+
+              </label>
+
+            </div>
+
+          </div>
+
+
+          <div class="option-group">
+
+            <h3>🔥 Neue Deals</h3>
+
+            <div class="shop-option">
+
+              <div>
+                <strong>Neue Deals</strong>
+
+                <p class="settings-card-description">
+                  Benachrichtigungen über neu hinzugefügte Deals.
+                </p>
+              </div>
+
+              <label class="switch">
+
+                <input
+                  type="checkbox"
+                  id="dealNotifications"
+                  onchange="saveNotificationSettings()"
+                >
+
+                <span class="slider"></span>
+
+              </label>
+
+            </div>
+
+          </div>
+
+
+          <div class="option-group">
+
+            <h3>📧 E-Mail-Benachrichtigungen</h3>
+
+            <div class="shop-option">
+
+              <div>
+                <strong>E-Mail-Benachrichtigungen</strong>
+
+                <p class="settings-card-description">
+                  Erlaube DealKira, dir Benachrichtigungen per E-Mail zu senden.
+                </p>
+              </div>
+
+              <label class="switch">
+
+                <input
+                  type="checkbox"
+                  id="emailNotifications"
+                  onchange="saveNotificationSettings()"
+                >
+
+                <span class="slider"></span>
+
+              </label>
+
+            </div>
+
+          </div>
+
+          <div class="save-message" id="notificationMessage"></div>
+
+        </div>
+
       </div>
 
-      <div class="settings-card">
-        <h2>🌐 Sprache</h2>
-        <p>Deutsch</p>
+
+      <!-- SPRACHE -->
+
+      <div class="settings-card clickable" onclick="toggleSection('languageContent', this)">
+
+        <div class="settings-card-header">
+
+          <div class="settings-card-title">
+
+            <div class="settings-card-icon">🌍</div>
+
+            <div>
+
+              <h2>Sprache</h2>
+
+              <p class="settings-card-description" id="currentLanguageText">
+                Deutsch
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="arrow">›</div>
+
+        </div>
+
+
+        <div
+          class="settings-content"
+          id="languageContent"
+          onclick="event.stopPropagation()"
+        >
+
+          <div class="option-group">
+
+            <h3>🌍 Sprache auswählen</h3>
+
+            <div class="option-list">
+
+              <button class="option" onclick="setLanguage('Deutsch')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇩🇪 Deutsch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('English')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇬🇧 Englisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Français')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇫🇷 Französisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Español')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇪🇸 Spanisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Italiano')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇮🇹 Italienisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Português')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇵🇹 Portugiesisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Nederlands')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇳🇱 Niederländisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Dansk')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇩🇰 Dänisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Svenska')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇸🇪 Schwedisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Norsk')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇳🇴 Norwegisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Suomi')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇫🇮 Finnisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Íslenska')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇮🇸 Isländisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Polski')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇵🇱 Polnisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Čeština')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇨🇿 Tschechisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Slovenčina')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇸🇰 Slowakisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Magyar')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇭🇺 Ungarisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Română')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇷🇴 Rumänisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Български')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇧🇬 Bulgarisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Hrvatski')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇭🇷 Kroatisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Slovenščina')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇸🇮 Slowenisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Srpski')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇷🇸 Serbisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Bosanski')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇧🇦 Bosnisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Shqip')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇦🇱 Albanisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Ελληνικά')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇬🇷 Griechisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Українська')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇺🇦 Ukrainisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Eesti')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇪🇪 Estnisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Latviešu')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇱🇻 Lettisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Lietuvių')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇱🇹 Litauisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Malti')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇲🇹 Maltesisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Lëtzebuergesch')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇱🇺 Luxemburgisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Català')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇪🇸 Katalanisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Gaeilge')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇮🇪 Irisch
+                </span>
+              </button>
+
+              <button class="option" onclick="setLanguage('Русский')">
+                <span class="option-left">
+                  <span class="check">✓</span>
+                  🇷🇺 Russisch
+                </span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="save-message" id="languageMessage"></div>
+
+        </div>
+
       </div>
 
     </div>
@@ -341,8 +1374,15 @@
     © DealKira 2026
   </footer>
 
+
   <script>
+
+    /* =========================
+       MENÜ
+    ========================= */
+
     function toggleMenu() {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
@@ -352,7 +1392,9 @@
       button.setAttribute("aria-expanded", isOpen);
     }
 
+
     function closeMenu() {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
@@ -361,7 +1403,9 @@
       button.setAttribute("aria-expanded", "false");
     }
 
+
     document.addEventListener("click", function(event) {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
@@ -371,14 +1415,490 @@
       ) {
         closeMenu();
       }
+
     });
 
+
     document.addEventListener("keydown", function(event) {
+
       if (event.key === "Escape") {
         closeMenu();
       }
+
     });
+
+
+    /* =========================
+       EINSTELLUNGSBEREICHE
+    ========================= */
+
+    function toggleSection(id, card) {
+
+      const content = document.getElementById(id);
+
+      if (!content) return;
+
+      content.classList.toggle("open");
+
+      const arrow = card.querySelector(".arrow");
+
+      if (content.classList.contains("open")) {
+        arrow.textContent = "⌄";
+      } else {
+        arrow.textContent = "›";
+      }
+    }
+
+
+    /* =========================
+       DARSTELLUNG
+    ========================= */
+
+    function setTheme(theme) {
+
+      localStorage.setItem("dealkiraTheme", theme);
+
+      applyTheme(theme);
+
+      updateThemeButtons();
+
+      showMessage("Darstellung gespeichert.");
+    }
+
+
+    function applyTheme(theme) {
+
+      let selectedTheme = theme;
+
+      if (theme === "system") {
+
+        selectedTheme =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark";
+      }
+
+      document.body.classList.toggle(
+        "light-mode",
+        selectedTheme === "light"
+      );
+    }
+
+
+    function updateThemeButtons() {
+
+      const theme =
+        localStorage.getItem("dealkiraTheme") || "system";
+
+      document
+        .getElementById("themeLight")
+        .classList.toggle("selected", theme === "light");
+
+      document
+        .getElementById("themeDark")
+        .classList.toggle("selected", theme === "dark");
+
+      document
+        .getElementById("themeSystem")
+        .classList.toggle("selected", theme === "system");
+    }
+
+
+    /* =========================
+       WÄHRUNG
+    ========================= */
+
+    function setCurrency(code, symbol) {
+
+      localStorage.setItem("dealkiraCurrency", code);
+      localStorage.setItem("dealkiraCurrencySymbol", symbol);
+
+      document.querySelectorAll(
+        ".option-list .option"
+      ).forEach(function(button) {
+
+        if (button.closest(".option-group") &&
+            button.closest(".option-group").querySelector("h3") &&
+            button.closest(".option-group").querySelector("h3").textContent.includes("Währung")) {
+
+          button.classList.remove("selected");
+        }
+
+      });
+
+      const buttons = document.querySelectorAll(
+        ".option-group"
+      );
+
+      buttons.forEach(function(group) {
+
+        const heading = group.querySelector("h3");
+
+        if (!heading) return;
+
+        if (heading.textContent.includes("Währung")) {
+
+          group.querySelectorAll(".option").forEach(function(button) {
+
+            if (button.getAttribute("onclick") &&
+                button.getAttribute("onclick").includes("'" + code + "'")) {
+
+              button.classList.add("selected");
+            }
+
+          });
+
+        }
+
+      });
+
+      showMessage(
+        "Währung gespeichert: " + code
+      );
+    }
+
+
+    function updateCurrencyButton() {
+
+      const currency =
+        localStorage.getItem("dealkiraCurrency") || "EUR";
+
+      document.querySelectorAll(".option").forEach(function(button) {
+
+        const action = button.getAttribute("onclick");
+
+        if (!action) return;
+
+        if (action.includes("setCurrency")) {
+
+          button.classList.toggle(
+            "selected",
+            action.includes("'" + currency + "'")
+          );
+        }
+
+      });
+    }
+
+
+    /* =========================
+       BEVORZUGTE SHOPS
+    ========================= */
+
+    function saveShopPreference() {
+
+      const amazon =
+        document.getElementById("amazonShop").checked;
+
+      localStorage.setItem(
+        "dealkiraAmazonPreferred",
+        amazon ? "true" : "false"
+      );
+
+      showMessage(
+        amazon
+          ? "Amazon als bevorzugter Shop gespeichert."
+          : "Amazon wurde aus deinen bevorzugten Shops entfernt."
+      );
+    }
+
+
+    function loadShopPreference() {
+
+      const saved =
+        localStorage.getItem("dealkiraAmazonPreferred");
+
+      document.getElementById("amazonShop").checked =
+        saved === null ? true : saved === "true";
+    }
+
+
+    /* =========================
+       COOKIES
+    ========================= */
+
+    function saveCookiePreference() {
+
+      const enabled =
+        document.getElementById("optionalCookies").checked;
+
+      localStorage.setItem(
+        "dealkiraOptionalCookies",
+        enabled ? "true" : "false"
+      );
+
+      showMessage(
+        enabled
+          ? "Optionale Cookies wurden aktiviert."
+          : "Optionale Cookies wurden deaktiviert."
+      );
+    }
+
+
+    function loadCookiePreference() {
+
+      const saved =
+        localStorage.getItem("dealkiraOptionalCookies");
+
+      document.getElementById("optionalCookies").checked =
+        saved === "true";
+    }
+
+
+    function resetCookieSettings() {
+
+      localStorage.removeItem(
+        "dealkiraOptionalCookies"
+      );
+
+      document.getElementById(
+        "optionalCookies"
+      ).checked = false;
+
+      showMessage(
+        "Cookie-Einstellungen wurden zurückgesetzt."
+      );
+    }
+
+
+    /* =========================
+       BENACHRICHTIGUNGEN
+    ========================= */
+
+    function saveNotificationSettings() {
+
+      const settings = {
+
+        news:
+          document.getElementById("newsNotifications").checked,
+
+        deals:
+          document.getElementById("dealNotifications").checked,
+
+        email:
+          document.getElementById("emailNotifications").checked
+
+      };
+
+      localStorage.setItem(
+        "dealkiraNotifications",
+        JSON.stringify(settings)
+      );
+
+      showNotificationMessage(
+        "Benachrichtigungseinstellungen gespeichert."
+      );
+    }
+
+
+    function loadNotificationSettings() {
+
+      const saved =
+        localStorage.getItem("dealkiraNotifications");
+
+      if (!saved) return;
+
+      try {
+
+        const settings = JSON.parse(saved);
+
+        document.getElementById(
+          "newsNotifications"
+        ).checked = !!settings.news;
+
+        document.getElementById(
+          "dealNotifications"
+        ).checked = !!settings.deals;
+
+        document.getElementById(
+          "emailNotifications"
+        ).checked = !!settings.email;
+
+      } catch (error) {
+
+        console.log(
+          "Benachrichtigungseinstellungen konnten nicht geladen werden."
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       SPRACHE
+    ========================= */
+
+    function setLanguage(language) {
+
+      localStorage.setItem(
+        "dealkiraLanguage",
+        language
+      );
+
+      document.getElementById(
+        "currentLanguageText"
+      ).textContent = language;
+
+      document.querySelectorAll(
+        "#languageContent .option"
+      ).forEach(function(button) {
+
+        button.classList.remove("selected");
+
+        const action =
+          button.getAttribute("onclick");
+
+        if (
+          action &&
+          action.includes(
+            "setLanguage('" + language + "')"
+          )
+        ) {
+          button.classList.add("selected");
+        }
+
+      });
+
+      showLanguageMessage(
+        "Sprache gespeichert: " + language
+      );
+    }
+
+
+    function loadLanguage() {
+
+      const language =
+        localStorage.getItem("dealkiraLanguage") ||
+        "Deutsch";
+
+      document.getElementById(
+        "currentLanguageText"
+      ).textContent = language;
+
+      document.querySelectorAll(
+        "#languageContent .option"
+      ).forEach(function(button) {
+
+        const action =
+          button.getAttribute("onclick");
+
+        if (
+          action &&
+          action.includes(
+            "setLanguage('" + language + "')"
+          )
+        ) {
+          button.classList.add("selected");
+        }
+
+      });
+
+    }
+
+
+    /* =========================
+       MELDUNGEN
+    ========================= */
+
+    function showMessage(message) {
+
+      const element =
+        document.getElementById("generalMessage");
+
+      element.textContent = message;
+      element.classList.add("show");
+
+      clearTimeout(
+        window.generalMessageTimeout
+      );
+
+      window.generalMessageTimeout =
+        setTimeout(function() {
+          element.classList.remove("show");
+        }, 3000);
+    }
+
+
+    function showNotificationMessage(message) {
+
+      const element =
+        document.getElementById("notificationMessage");
+
+      element.textContent = message;
+      element.classList.add("show");
+
+      clearTimeout(
+        window.notificationMessageTimeout
+      );
+
+      window.notificationMessageTimeout =
+        setTimeout(function() {
+          element.classList.remove("show");
+        }, 3000);
+    }
+
+
+    function showLanguageMessage(message) {
+
+      const element =
+        document.getElementById("languageMessage");
+
+      element.textContent = message;
+      element.classList.add("show");
+
+      clearTimeout(
+        window.languageMessageTimeout
+      );
+
+      window.languageMessageTimeout =
+        setTimeout(function() {
+          element.classList.remove("show");
+        }, 3000);
+    }
+
+
+    /* =========================
+       SYSTEM-DARSTELLUNG
+    ========================= */
+
+    if (window.matchMedia) {
+
+      window.matchMedia(
+        "(prefers-color-scheme: light)"
+      ).addEventListener("change", function() {
+
+        const theme =
+          localStorage.getItem("dealkiraTheme");
+
+        if (theme === "system" || !theme) {
+          applyTheme("system");
+        }
+
+      });
+
+    }
+
+
+    /* =========================
+       START
+    ========================= */
+
+    const savedTheme =
+      localStorage.getItem("dealkiraTheme") ||
+      "system";
+
+    applyTheme(savedTheme);
+    updateThemeButtons();
+
+    loadShopPreference();
+    loadCookiePreference();
+    loadNotificationSettings();
+    loadLanguage();
+    updateCurrencyButton();
+
   </script>
 
 </body>
-</html>
+  </html>
