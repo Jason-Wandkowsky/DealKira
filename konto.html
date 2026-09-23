@@ -17,6 +17,8 @@
       background: #f5f5f5;
       color: #111;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -160,6 +162,7 @@
 
     .account-section {
       max-width: 600px;
+      width: 100%;
       margin: 55px auto 70px;
       padding: 0 20px;
     }
@@ -169,6 +172,14 @@
       border-radius: 16px;
       padding: 35px;
       box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    }
+
+    .account-view {
+      display: none;
+    }
+
+    .account-view.active {
+      display: block;
     }
 
     .account-card h2 {
@@ -209,7 +220,7 @@
       box-shadow: 0 0 0 3px rgba(255,212,0,.2);
     }
 
-    .login-button {
+    .main-button {
       width: 100%;
       background: #ffd400;
       color: #111;
@@ -223,23 +234,11 @@
       margin-top: 5px;
     }
 
-    .login-button:hover {
+    .main-button:hover {
       transform: translateY(-2px);
     }
 
-    .account-divider {
-      height: 1px;
-      background: #ddd;
-      margin: 28px 0;
-    }
-
-    .register-text {
-      text-align: center;
-      color: #666;
-      font-size: 15px;
-    }
-
-    .register-button {
+    .secondary-button {
       display: block;
       width: 100%;
       margin-top: 12px;
@@ -252,11 +251,54 @@
       font-size: 16px;
       font-weight: 700;
       transition: 0.2s;
+      border: none;
+      cursor: pointer;
     }
 
-    .register-button:hover {
+    .secondary-button:hover {
       background: #222;
       color: #ffd400;
+    }
+
+    .account-divider {
+      height: 1px;
+      background: #ddd;
+      margin: 28px 0;
+    }
+
+    .switch-text {
+      text-align: center;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .switch-link {
+      display: block;
+      margin-top: 12px;
+      color: #111;
+      text-align: center;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .switch-link:hover {
+      color: #d4ad00;
+    }
+
+    .forgot-link {
+      display: block;
+      text-align: right;
+      margin-top: -8px;
+      margin-bottom: 18px;
+      color: #555;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .forgot-link:hover {
+      color: #111;
     }
 
     .account-message {
@@ -269,10 +311,25 @@
       text-align: center;
       color: #555;
       font-size: 14px;
+      line-height: 1.5;
     }
 
     .account-message.show {
       display: block;
+    }
+
+    .account-message.error {
+      background: #fff5f5;
+      border-color: #d9534f;
+      color: #9f2925;
+    }
+
+    .password-hint {
+      color: #777;
+      font-size: 13px;
+      margin-top: -10px;
+      margin-bottom: 18px;
+      line-height: 1.4;
     }
 
     footer {
@@ -281,6 +338,7 @@
       text-align: center;
       padding: 30px 20px;
       font-size: 14px;
+      margin-top: auto;
     }
 
     @media (max-width: 800px) {
@@ -346,8 +404,8 @@
         font-size: 15px;
       }
 
-      .login-button,
-      .register-button {
+      .main-button,
+      .secondary-button {
         font-size: 15px;
       }
     }
@@ -431,55 +489,212 @@
 
     <div class="account-card">
 
-      <h2>Anmelden</h2>
+      <!-- ANMELDEN -->
 
-      <p>
-        Melde dich an, um dein DealKira-Konto zu verwenden.
-      </p>
+      <div class="account-view active" id="loginView">
 
-      <form onsubmit="login(event)">
+        <h2>Anmelden</h2>
 
-        <div class="form-group">
-          <label for="email">E-Mail-Adresse</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="deine@email.de"
-            required
+        <p>
+          Melde dich an, um dein DealKira-Konto zu verwenden.
+        </p>
+
+        <form onsubmit="login(event)">
+
+          <div class="form-group">
+            <label for="loginEmail">E-Mail-Adresse</label>
+
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="deine@email.de"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Passwort</label>
+
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Passwort"
+              autocomplete="current-password"
+              required
+            >
+          </div>
+
+          <a
+            href="#"
+            class="forgot-link"
+            onclick="showView('forgotView'); return false;"
           >
+            Passwort vergessen?
+          </a>
+
+          <button type="submit" class="main-button">
+            Anmelden
+          </button>
+
+        </form>
+
+        <div class="account-message" id="loginMessage"></div>
+
+        <div class="account-divider"></div>
+
+        <div class="switch-text">
+          Noch kein Konto?
         </div>
 
-        <div class="form-group">
-          <label for="password">Passwort</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Passwort"
-            required
-          >
+        <a
+          href="#"
+          class="secondary-button"
+          onclick="showView('registerView'); return false;"
+        >
+          Konto erstellen
+        </a>
+
+      </div>
+
+
+      <!-- REGISTRIEREN -->
+
+      <div class="account-view" id="registerView">
+
+        <h2>Konto erstellen</h2>
+
+        <p>
+          Erstelle dein kostenloses DealKira-Konto.
+        </p>
+
+        <form onsubmit="register(event)">
+
+          <div class="form-group">
+            <label for="registerName">Name</label>
+
+            <input
+              type="text"
+              id="registerName"
+              placeholder="Dein Name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="registerEmail">E-Mail-Adresse</label>
+
+            <input
+              type="email"
+              id="registerEmail"
+              placeholder="deine@email.de"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="registerPassword">Passwort</label>
+
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Passwort"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+          </div>
+
+          <div class="password-hint">
+            Das Passwort muss mindestens 8 Zeichen enthalten.
+          </div>
+
+          <div class="form-group">
+            <label for="registerPasswordConfirm">
+              Passwort bestätigen
+            </label>
+
+            <input
+              type="password"
+              id="registerPasswordConfirm"
+              placeholder="Passwort erneut eingeben"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+          </div>
+
+          <button type="submit" class="main-button">
+            Konto erstellen
+          </button>
+
+        </form>
+
+        <div class="account-message" id="registerMessage"></div>
+
+        <div class="account-divider"></div>
+
+        <div class="switch-text">
+          Du hast bereits ein Konto?
         </div>
 
-        <button type="submit" class="login-button">
-          Anmelden
-        </button>
+        <a
+          href="#"
+          class="switch-link"
+          onclick="showView('loginView'); return false;"
+        >
+          Zur Anmeldung
+        </a>
 
-      </form>
-
-      <div class="account-message" id="accountMessage">
-        Die Konto-Funktion befindet sich noch in Bearbeitung.
       </div>
 
-      <div class="account-divider"></div>
 
-      <div class="register-text">
-        Noch kein Konto?
+      <!-- PASSWORT VERGESSEN -->
+
+      <div class="account-view" id="forgotView">
+
+        <h2>Passwort vergessen</h2>
+
+        <p>
+          Gib deine E-Mail-Adresse ein. Sobald die Konto-Funktion aktiv ist,
+          kannst du darüber dein Passwort zurücksetzen.
+        </p>
+
+        <form onsubmit="forgotPassword(event)">
+
+          <div class="form-group">
+            <label for="forgotEmail">E-Mail-Adresse</label>
+
+            <input
+              type="email"
+              id="forgotEmail"
+              placeholder="deine@email.de"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <button type="submit" class="main-button">
+            Link anfordern
+          </button>
+
+        </form>
+
+        <div class="account-message" id="forgotMessage"></div>
+
+        <div class="account-divider"></div>
+
+        <a
+          href="#"
+          class="switch-link"
+          onclick="showView('loginView'); return false;"
+        >
+          Zurück zur Anmeldung
+        </a>
+
       </div>
-
-      <a href="#" class="register-button" onclick="register(event)">
-        Konto erstellen
-      </a>
 
     </div>
 
@@ -489,53 +704,188 @@
     © 2026 DealKira – Bessere Deals finden
   </footer>
 
+
   <script>
+
     function toggleMenu() {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
-      const isOpen = menu.classList.toggle("open");
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+      const isOpen =
+        menu.classList.toggle("open");
 
       button.classList.toggle("active");
-      button.setAttribute("aria-expanded", isOpen);
+
+      button.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
     }
+
 
     function closeMenu() {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
 
       menu.classList.remove("open");
+
       button.classList.remove("active");
-      button.setAttribute("aria-expanded", "false");
+
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
     }
 
-    document.addEventListener("click", function(event) {
-      const menu = document.getElementById("menuPanel");
-      const button = document.getElementById("menuButton");
 
-      if (!menu.contains(event.target) && !button.contains(event.target)) {
-        closeMenu();
-      }
-    });
+    document.addEventListener(
+      "click",
+      function(event) {
 
-    document.addEventListener("keydown", function(event) {
-      if (event.key === "Escape") {
-        closeMenu();
+        const menu =
+          document.getElementById("menuPanel");
+
+        const button =
+          document.getElementById("menuButton");
+
+        if (
+          !menu.contains(event.target) &&
+          !button.contains(event.target)
+        ) {
+          closeMenu();
+        }
+
       }
-    });
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+
+      }
+    );
+
+
+    function showView(viewId) {
+
+      const views =
+        document.querySelectorAll(".account-view");
+
+      views.forEach(
+        function(view) {
+          view.classList.remove("active");
+        }
+      );
+
+      const selectedView =
+        document.getElementById(viewId);
+
+      selectedView.classList.add("active");
+
+      clearMessages();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+
+    function clearMessages() {
+
+      const messages =
+        document.querySelectorAll(".account-message");
+
+      messages.forEach(
+        function(message) {
+
+          message.classList.remove("show");
+          message.classList.remove("error");
+          message.textContent = "";
+
+        }
+      );
+    }
+
+
+    function showMessage(elementId, text, error = false) {
+
+      const message =
+        document.getElementById(elementId);
+
+      message.textContent = text;
+
+      message.classList.toggle(
+        "error",
+        error
+      );
+
+      message.classList.add("show");
+    }
+
 
     function login(event) {
+
       event.preventDefault();
 
-      const message = document.getElementById("accountMessage");
-      message.classList.add("show");
+      showMessage(
+        "loginMessage",
+        "Die Konto-Funktion befindet sich noch in Bearbeitung."
+      );
     }
+
 
     function register(event) {
+
       event.preventDefault();
 
-      const message = document.getElementById("accountMessage");
-      message.classList.add("show");
+      const password =
+        document.getElementById("registerPassword").value;
+
+      const passwordConfirm =
+        document.getElementById("registerPasswordConfirm").value;
+
+      if (password !== passwordConfirm) {
+
+        showMessage(
+          "registerMessage",
+          "Die beiden Passwörter stimmen nicht überein.",
+          true
+        );
+
+        return;
+      }
+
+      showMessage(
+        "registerMessage",
+        "Die Konto-Funktion befindet sich noch in Bearbeitung."
+      );
     }
+
+
+    function forgotPassword(event) {
+
+      event.preventDefault();
+
+      showMessage(
+        "forgotMessage",
+        "Die Passwort-Zurücksetzung befindet sich noch in Bearbeitung."
+      );
+    }
+
   </script>
 
 </body>
