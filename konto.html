@@ -580,6 +580,93 @@
       line-height: 1.5;
     }
 
+    /* =========================
+       FAVORITEN-LISTE
+    ========================= */
+
+    .favorite-card {
+      background: #f7f7f7;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 12px;
+    }
+
+    .favorite-card-content {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .favorite-image {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 9px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .favorite-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .favorite-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      word-break: break-word;
+    }
+
+    .favorite-price {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .favorite-shop {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .favorite-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .favorite-open-button,
+    .favorite-remove-button {
+      flex: 1;
+      border: none;
+      border-radius: 9px;
+      padding: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .favorite-open-button {
+      background: #ffd400;
+      color: #111;
+    }
+
+    .favorite-remove-button {
+      background: #ddd;
+      color: #111;
+    }
+
+    .favorite-open-button:hover {
+      background: #e6bf00;
+    }
+
+    .favorite-remove-button:hover {
+      background: #ccc;
+    }
+
     footer {
       background: #111;
       color: #aaa;
@@ -590,6 +677,7 @@
     }
 
     @media (max-width: 800px) {
+
       .logo {
         width: 225px;
       }
@@ -597,9 +685,11 @@
       .logo img {
         height: 275px;
       }
+
     }
 
     @media (max-width: 550px) {
+
       header {
         padding: 0 5%;
       }
@@ -670,9 +760,28 @@
       .settings-item {
         padding: 14px;
       }
+
+      .favorite-card-content {
+        align-items: flex-start;
+      }
+
+      .favorite-image {
+        width: 65px;
+        height: 65px;
+      }
+
+      .favorite-name {
+        font-size: 14px;
+      }
+
+      .favorite-actions {
+        flex-direction: column;
+      }
+
     }
 
     @media (max-width: 380px) {
+
       .logo {
         width: 170px;
       }
@@ -689,6 +798,7 @@
       .account-name {
         font-size: 27px;
       }
+
     }
   </style>
 </head>
@@ -747,8 +857,15 @@
   </header>
 
   <section class="hero">
-    <h1>Konto / <span>Anmelden</span></h1>
-    <p>Verwalte dein DealKira-Konto und deine persönlichen Einstellungen</p>
+
+    <h1>
+      Konto / <span>Anmelden</span>
+    </h1>
+
+    <p>
+      Verwalte dein DealKira-Konto und deine persönlichen Einstellungen
+    </p>
+
   </section>
 
   <main class="account-section">
@@ -759,7 +876,10 @@
            ANMELDEN
       ========================== -->
 
-      <div class="account-view active" id="loginView">
+      <div
+        class="account-view active"
+        id="loginView"
+      >
 
         <h2>Anmelden</h2>
 
@@ -770,7 +890,10 @@
         <form onsubmit="login(event)">
 
           <div class="form-group">
-            <label for="loginEmail">E-Mail-Adresse</label>
+
+            <label for="loginEmail">
+              E-Mail-Adresse
+            </label>
 
             <input
               type="email"
@@ -779,10 +902,14 @@
               autocomplete="email"
               required
             >
+
           </div>
 
           <div class="form-group">
-            <label for="loginPassword">Passwort</label>
+
+            <label for="loginPassword">
+              Passwort
+            </label>
 
             <input
               type="password"
@@ -791,6 +918,7 @@
               autocomplete="current-password"
               required
             >
+
           </div>
 
           <a
@@ -811,7 +939,10 @@
 
         </form>
 
-        <div class="account-message" id="loginMessage"></div>
+        <div
+          class="account-message"
+          id="loginMessage"
+        ></div>
 
         <div class="account-divider"></div>
 
@@ -834,7 +965,10 @@
            REGISTRIEREN
       ========================== -->
 
-      <div class="account-view" id="registerView">
+      <div
+        class="account-view"
+        id="registerView"
+      >
 
         <h2>Konto erstellen</h2>
 
@@ -845,7 +979,10 @@
         <form onsubmit="register(event)">
 
           <div class="form-group">
-            <label for="registerName">Name</label>
+
+            <label for="registerName">
+              Name
+            </label>
 
             <input
               type="text"
@@ -854,10 +991,14 @@
               autocomplete="name"
               required
             >
+
           </div>
 
           <div class="form-group">
-            <label for="registerEmail">E-Mail-Adresse</label>
+
+            <label for="registerEmail">
+              E-Mail-Adresse
+            </label>
 
             <input
               type="email"
@@ -866,10 +1007,14 @@
               autocomplete="email"
               required
             >
+
           </div>
 
           <div class="form-group">
-            <label for="registerPassword">Passwort</label>
+
+            <label for="registerPassword">
+              Passwort
+            </label>
 
             <input
               type="password"
@@ -879,6 +1024,7 @@
               minlength="8"
               required
             >
+
           </div>
 
           <div class="password-hint">
@@ -886,6 +1032,7 @@
           </div>
 
           <div class="form-group">
+
             <label for="registerPasswordConfirm">
               Passwort bestätigen
             </label>
@@ -898,6 +1045,7 @@
               minlength="8"
               required
             >
+
           </div>
 
           <button
@@ -910,7 +1058,10 @@
 
         </form>
 
-        <div class="account-message" id="registerMessage"></div>
+        <div
+          class="account-message"
+          id="registerMessage"
+        ></div>
 
         <div class="account-divider"></div>
 
@@ -933,7 +1084,10 @@
            PASSWORT VERGESSEN
       ========================== -->
 
-      <div class="account-view" id="forgotView">
+      <div
+        class="account-view"
+        id="forgotView"
+      >
 
         <h2>Passwort vergessen</h2>
 
@@ -945,7 +1099,10 @@
         <form onsubmit="forgotPassword(event)">
 
           <div class="form-group">
-            <label for="forgotEmail">E-Mail-Adresse</label>
+
+            <label for="forgotEmail">
+              E-Mail-Adresse
+            </label>
 
             <input
               type="email"
@@ -954,6 +1111,7 @@
               autocomplete="email"
               required
             >
+
           </div>
 
           <button
@@ -966,7 +1124,10 @@
 
         </form>
 
-        <div class="account-message" id="forgotMessage"></div>
+        <div
+          class="account-message"
+          id="forgotMessage"
+        ></div>
 
         <div class="account-divider"></div>
 
@@ -985,7 +1146,10 @@
            ANGEMELDETES KONTO
       ========================== -->
 
-      <div class="account-view" id="loggedInView">
+      <div
+        class="account-view"
+        id="loggedInView"
+      >
 
         <div
           class="account-name"
@@ -999,36 +1163,69 @@
             class="account-menu-button"
             onclick="showView('settingsView')"
           >
+
             <span class="account-menu-left">
-              <span class="account-menu-icon">⚙️</span>
-              <span>Kontoeinstellungen</span>
+
+              <span class="account-menu-icon">
+                ⚙️
+              </span>
+
+              <span>
+                Kontoeinstellungen
+              </span>
+
             </span>
 
-            <span class="account-arrow">›</span>
+            <span class="account-arrow">
+              ›
+            </span>
+
           </button>
 
           <button
             class="account-menu-button"
             onclick="showView('favoritesView')"
           >
+
             <span class="account-menu-left">
-              <span class="account-menu-icon">❤️</span>
-              <span>Favoriten</span>
+
+              <span class="account-menu-icon">
+                ❤️
+              </span>
+
+              <span>
+                Favoriten
+              </span>
+
             </span>
 
-            <span class="account-arrow">›</span>
+            <span class="account-arrow">
+              ›
+            </span>
+
           </button>
 
           <button
             class="account-menu-button"
             onclick="showView('notificationsView')"
           >
+
             <span class="account-menu-left">
-              <span class="account-menu-icon">🔔</span>
-              <span>Benachrichtigungen</span>
+
+              <span class="account-menu-icon">
+                🔔
+              </span>
+
+              <span>
+                Benachrichtigungen
+              </span>
+
             </span>
 
-            <span class="account-arrow">›</span>
+            <span class="account-arrow">
+              ›
+            </span>
+
           </button>
 
           <button
@@ -1052,7 +1249,10 @@
            KONTOEINSTELLUNGEN
       ========================== -->
 
-      <div class="account-view" id="settingsView">
+      <div
+        class="account-view"
+        id="settingsView"
+      >
 
         <div class="settings-header">
 
@@ -1064,7 +1264,9 @@
             ←
           </button>
 
-          <h2>Kontoeinstellungen</h2>
+          <h2>
+            Kontoeinstellungen
+          </h2>
 
         </div>
 
@@ -1076,6 +1278,7 @@
           <div class="settings-item-top">
 
             <div>
+
               <div class="settings-item-label">
                 Name
               </div>
@@ -1085,6 +1288,7 @@
                 id="settingsName"
               >
               </div>
+
             </div>
 
             <button
@@ -1139,6 +1343,7 @@
           <div class="settings-item-top">
 
             <div>
+
               <div class="settings-item-label">
                 E-Mail-Adresse
               </div>
@@ -1148,6 +1353,7 @@
                 id="settingsEmail"
               >
               </div>
+
             </div>
 
             <button
@@ -1208,6 +1414,7 @@
           <div class="settings-item-top">
 
             <div>
+
               <div class="settings-item-label">
                 Passwort
               </div>
@@ -1215,6 +1422,7 @@
               <div class="settings-item-value">
                 ••••••••••••
               </div>
+
             </div>
 
             <button
@@ -1288,7 +1496,10 @@
            FAVORITEN
       ========================== -->
 
-      <div class="account-view" id="favoritesView">
+      <div
+        class="account-view"
+        id="favoritesView"
+      >
 
         <div class="settings-header">
 
@@ -1300,23 +1511,51 @@
             ←
           </button>
 
-          <h2>Favoriten</h2>
+          <h2>
+            Favoriten
+          </h2>
 
         </div>
 
-        <div class="empty-account-section">
+        <div
+          id="favoritesLoading"
+          class="empty-account-section"
+        >
+
+          <div class="empty-account-icon">
+            ⏳
+          </div>
+
+          <h2>
+            Favoriten werden geladen...
+          </h2>
+
+        </div>
+
+        <div
+          id="favoritesEmpty"
+          class="empty-account-section"
+          style="display:none;"
+        >
 
           <div class="empty-account-icon">
             ❤️
           </div>
 
-          <h2>Noch keine Favoriten</h2>
+          <h2>
+            Noch keine Favoriten
+          </h2>
 
           <p>
-            Hier werden später deine gespeicherten Produkte
-            und Deals angezeigt.
+            Hier werden deine gespeicherten Produkte und Deals angezeigt.
           </p>
 
+        </div>
+
+        <div
+          id="favoritesList"
+          style="display:none;"
+        >
         </div>
 
       </div>
@@ -1326,7 +1565,10 @@
            BENACHRICHTIGUNGEN
       ========================== -->
 
-      <div class="account-view" id="notificationsView">
+      <div
+        class="account-view"
+        id="notificationsView"
+      >
 
         <div class="settings-header">
 
@@ -1338,7 +1580,9 @@
             ←
           </button>
 
-          <h2>Benachrichtigungen</h2>
+          <h2>
+            Benachrichtigungen
+          </h2>
 
         </div>
 
@@ -1348,7 +1592,9 @@
             🔔
           </div>
 
-          <h2>Keine Benachrichtigungen</h2>
+          <h2>
+            Keine Benachrichtigungen
+          </h2>
 
           <p>
             Hier werden später wichtige Hinweise,
@@ -1388,7 +1634,6 @@
 
     const REDIRECT_URL =
       "https://dealkira.com/konto.html";
-
 
     let currentUser = null;
 
@@ -1489,6 +1734,10 @@
 
       if (selectedView) {
         selectedView.classList.add("active");
+      }
+
+      if (viewId === "favoritesView") {
+        loadFavorites();
       }
 
       clearMessages();
@@ -2328,6 +2577,353 @@
 
 
     /* =========================
+       FAVORITEN LADEN
+    ========================= */
+
+    async function loadFavorites() {
+
+      if (!currentUser) {
+        return;
+      }
+
+      const loading =
+        document.getElementById(
+          "favoritesLoading"
+        );
+
+      const empty =
+        document.getElementById(
+          "favoritesEmpty"
+        );
+
+      const list =
+        document.getElementById(
+          "favoritesList"
+        );
+
+
+      if (
+        !loading ||
+        !empty ||
+        !list
+      ) {
+        return;
+      }
+
+
+      loading.style.display =
+        "block";
+
+      empty.style.display =
+        "none";
+
+      list.style.display =
+        "none";
+
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient
+            .from("favoriten")
+            .select("*")
+            .eq(
+              "user_id",
+              currentUser.id
+            )
+            .order(
+              "created_at",
+              {
+                ascending: false
+              }
+            );
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        loading.style.display =
+          "none";
+
+
+        if (
+          !data ||
+          data.length === 0
+        ) {
+
+          empty.style.display =
+            "block";
+
+          return;
+
+        }
+
+
+        list.innerHTML = "";
+
+
+        data.forEach(
+          function(favorite) {
+
+            const card =
+              document.createElement(
+                "div"
+              );
+
+            card.className =
+              "favorite-card";
+
+
+            const imageHTML =
+              favorite.produkt_bild
+                ? `
+                  <img
+                    class="favorite-image"
+                    src="${escapeHtml(favorite.produkt_bild)}"
+                    alt="${escapeHtml(favorite.produkt_name)}"
+                  >
+                `
+                : `
+                  <div
+                    class="favorite-image"
+                    style="
+                      display:flex;
+                      align-items:center;
+                      justify-content:center;
+                      font-size:32px;
+                    "
+                  >
+                    📦
+                  </div>
+                `;
+
+
+            const priceHTML =
+              favorite.produkt_preis
+                ? `
+                  <div class="favorite-price">
+                    ${escapeHtml(
+                      favorite.produkt_preis
+                    )}
+                  </div>
+                `
+                : "";
+
+
+            const shopHTML =
+              favorite.produkt_shop
+                ? `
+                  <div class="favorite-shop">
+                    ${escapeHtml(
+                      favorite.produkt_shop
+                    )}
+                  </div>
+                `
+                : "";
+
+
+            const openButtonHTML =
+              favorite.produkt_link
+                ? `
+                  <a
+                    href="${escapeHtml(favorite.produkt_link)}"
+                    class="favorite-open-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Zum Produkt
+                  </a>
+                `
+                : "";
+
+
+            card.innerHTML = `
+
+              <div class="favorite-card-content">
+
+                ${imageHTML}
+
+                <div class="favorite-info">
+
+                  <div class="favorite-name">
+                    ${escapeHtml(
+                      favorite.produkt_name
+                    )}
+                  </div>
+
+                  ${priceHTML}
+
+                  ${shopHTML}
+
+                </div>
+
+              </div>
+
+              <div class="favorite-actions">
+
+                ${openButtonHTML}
+
+                <button
+                  class="favorite-remove-button"
+                  onclick="removeFavorite('${escapeHtml(favorite.id)}')"
+                >
+                  ❤️ Entfernen
+                </button>
+
+              </div>
+
+            `;
+
+
+            list.appendChild(
+              card
+            );
+
+          }
+        );
+
+
+        list.style.display =
+          "block";
+
+
+      } catch (error) {
+
+        console.error(
+          "Favoriten konnten nicht geladen werden:",
+          error
+        );
+
+
+        loading.style.display =
+          "none";
+
+
+        empty.style.display =
+          "block";
+
+
+        empty.innerHTML = `
+
+          <div class="empty-account-icon">
+            ⚠️
+          </div>
+
+          <h2>
+            Favoriten konnten nicht geladen werden
+          </h2>
+
+          <p>
+            Bitte versuche es später erneut.
+          </p>
+
+        `;
+
+      }
+
+    }
+
+
+    /* =========================
+       FAVORIT ENTFERNEN
+    ========================= */
+
+    async function removeFavorite(
+      favoriteId
+    ) {
+
+      if (!currentUser) {
+        return;
+      }
+
+
+      try {
+
+        const {
+          error
+        } =
+          await supabaseClient
+            .from("favoriten")
+            .delete()
+            .eq(
+              "id",
+              favoriteId
+            )
+            .eq(
+              "user_id",
+              currentUser.id
+            );
+
+
+        if (error) {
+          throw error;
+        }
+
+
+        loadFavorites();
+
+
+      } catch (error) {
+
+        console.error(
+          "Favorit konnte nicht gelöscht werden:",
+          error
+        );
+
+
+        alert(
+          "Der Favorit konnte nicht entfernt werden."
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       HTML ABSICHERN
+    ========================= */
+
+    function escapeHtml(value) {
+
+      if (
+        value === null ||
+        value === undefined
+      ) {
+        return "";
+      }
+
+      return String(value)
+        .replace(
+          /&/g,
+          "&amp;"
+        )
+        .replace(
+          /</g,
+          "&lt;"
+        )
+        .replace(
+          />/g,
+          "&gt;"
+        )
+        .replace(
+          /"/g,
+          "&quot;"
+        )
+        .replace(
+          /'/g,
+          "&#039;"
+        );
+
+    }
+
+
+    /* =========================
        ABMELDEN
     ========================= */
 
@@ -2340,23 +2936,29 @@
         } =
           await supabaseClient.auth.signOut();
 
+
         if (error) {
           throw error;
         }
 
+
         currentUser = null;
+
 
         showView(
           "loginView"
         );
 
+
         document.getElementById(
           "loginEmail"
         ).value = "";
 
+
         document.getElementById(
           "loginPassword"
         ).value = "";
+
 
       } catch (error) {
 
@@ -2384,6 +2986,7 @@
         } =
           await supabaseClient.auth.getUser();
 
+
         if (data.user) {
 
           updateLoggedInView(
@@ -2409,7 +3012,10 @@
     ========================= */
 
     supabaseClient.auth.onAuthStateChange(
-      function(event, session) {
+      function(
+        event,
+        session
+      ) {
 
         if (
           session &&
@@ -2435,4 +3041,4 @@
   </script>
 
 </body>
-  </html>
+          </html>
