@@ -13,28 +13,27 @@
     }
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
       background: #f5f5f5;
       color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
     }
 
+    /* HEADER */
+
     header {
-      height: 72px;
+      height: 82px;
       background: #111;
-      padding: 0 6%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
+      justify-content: space-between;
+      padding: 0 6%;
+      position: relative;
       z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
 
     .logo {
-      width: 220px;
-      height: 55px;
+      width: 280px;
+      height: 65px;
       display: flex;
       align-items: center;
       overflow: visible;
@@ -42,11 +41,13 @@
     }
 
     .logo img {
-      height: 240px;
+      height: 320px;
       width: auto;
       max-width: none;
       display: block;
     }
+
+    /* BURGER MENÜ */
 
     .menu-button {
       width: 48px;
@@ -60,14 +61,15 @@
       align-items: center;
       gap: 5px;
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .menu-button span {
       width: 23px;
       height: 3px;
       background: #ffd400;
-      border-radius: 2px;
-      transition: 0.25s;
+      border-radius: 3px;
+      transition: 0.2s;
     }
 
     .menu-button:hover {
@@ -96,7 +98,7 @@
       border: 1px solid #333;
       border-radius: 14px;
       padding: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -113,11 +115,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      color: white;
+      color: #fff;
       text-decoration: none;
       padding: 14px 15px;
       border-radius: 9px;
       font-weight: 700;
+      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -137,217 +140,327 @@
       margin: 8px 5px;
     }
 
-    .page-header {
-      background: linear-gradient(135deg, #111, #222);
-      color: white;
-      padding: 65px 6%;
+    /* HERO */
+
+    .hero {
+      background: #111;
+      color: #fff;
       text-align: center;
+      padding: 55px 20px 60px;
     }
 
-    .page-header h1 {
+    .hero h1 {
       font-size: 42px;
       margin-bottom: 12px;
     }
 
-    .page-header h1 span {
+    .hero h1 span {
       color: #ffd400;
     }
 
-    .page-header p {
-      color: #ccc;
+    .hero p {
       font-size: 18px;
+      color: #ccc;
     }
+
+    /* SUCHBEREICH */
 
     .search-section {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 6% 30px;
+      margin: 45px auto 70px;
+      padding: 0 20px;
     }
 
     .search-box {
       display: flex;
-      gap: 10px;
+      width: 100%;
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      border: 1px solid #ddd;
     }
 
     .search-box input {
       flex: 1;
-      height: 55px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 0 18px;
-      font-size: 17px;
-      outline: none;
-      background: white;
-    }
-
-    .search-box input:focus {
-      border-color: #ffd400;
-      box-shadow: 0 0 0 3px rgba(255,212,0,0.15);
-    }
-
-    .search-box button {
-      height: 55px;
-      padding: 0 25px;
+      min-width: 0;
       border: none;
-      border-radius: 12px;
+      outline: none;
+      padding: 18px 20px;
+      font-size: 18px;
+      color: #111;
+      background: #fff;
+    }
+
+    .search-box input::placeholder {
+      color: #888;
+    }
+
+    .search-button {
+      width: 65px;
+      min-width: 65px;
+      border: none;
       background: #ffd400;
       color: #111;
-      font-size: 16px;
+      font-size: 30px;
       font-weight: 700;
       cursor: pointer;
-    }
-
-    .search-box button:hover {
-      background: #e8bf00;
-    }
-
-    .results {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px 6% 60px;
-    }
-
-    .results-title {
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .product-card {
-      background: white;
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-    }
-
-    .product-image {
-      height: 160px;
-      background: #f1f1f1;
-      border-radius: 12px;
+      transition: 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 70px;
-      margin-bottom: 18px;
     }
 
-    .product-category {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 5px;
+    .search-button:hover {
+      background: #e6bf00;
     }
 
-    .product-card h3 {
-      font-size: 21px;
+    /* FILTER */
+
+    .filter-area {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    .filter-button {
+      background: #ffd400;
+      color: #111;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .filter-message {
+      display: none;
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px 18px;
+      margin-top: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      color: #555;
+    }
+
+    .filter-message.show {
+      display: block;
+    }
+
+    /* SUCHERGEBNISSE */
+
+    .results {
+      margin-top: 30px;
+      display: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .results.show {
+      display: grid;
+    }
+
+    .result-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      text-decoration: none;
+      color: #111;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: 0.2s;
+    }
+
+    .result-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+
+    .result-icon {
+      font-size: 55px;
       margin-bottom: 15px;
     }
 
-    .product-button {
-      display: block;
-      width: 100%;
-      text-align: center;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 12px;
-      border-radius: 9px;
-      font-weight: 700;
+    .result-card h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
     }
 
-    .product-button:hover {
-      background: #ffd400;
-      color: #111;
+    .result-card p {
+      color: #666;
+      font-size: 14px;
     }
+
+    /* KEINE ERGEBNISSE */
 
     .no-results {
-      background: white;
+      grid-column: 1 / -1;
+      background: #fff;
       border-radius: 16px;
-      padding: 45px 20px;
+      padding: 50px 25px;
       text-align: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      display: none;
+    }
+
+    .no-results.show {
+      display: block;
     }
 
     .no-results-icon {
-      font-size: 50px;
-      margin-bottom: 12px;
+      font-size: 55px;
+      margin-bottom: 15px;
     }
 
     .no-results h2 {
+      font-size: 24px;
       margin-bottom: 8px;
     }
 
     .no-results p {
       color: #666;
+      font-size: 15px;
     }
+
+    /* FOOTER */
 
     footer {
       background: #111;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    footer strong {
-      color: #ffd400;
-    }
-
-    footer p {
-      margin-top: 6px;
       color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
     }
 
-    @media (max-width: 900px) {
-      .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+    /* TABLET */
 
     @media (max-width: 800px) {
-      header {
-        padding: 0 5%;
-      }
 
       .logo {
-        width: 180px;
+        width: 225px;
       }
 
       .logo img {
-        height: 210px;
+        height: 275px;
       }
 
-      .menu-panel {
-        right: 5%;
-      }
-
-      .page-header h1 {
-        font-size: 34px;
-      }
     }
 
+    /* MOBILE */
+
     @media (max-width: 550px) {
+
       header {
-        height: 68px;
         padding: 0 5%;
       }
 
       .logo {
-        width: 145px;
+        width: 190px;
         height: 50px;
       }
 
       .logo img {
-        height: 184px;
+        height: 235px;
+      }
+
+      .menu-panel {
+        right: 5%;
+        width: 270px;
+      }
+
+      .hero {
+        padding: 42px 15px 48px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .search-section {
+        margin: 35px auto 50px;
+        padding: 0 12px;
+      }
+
+      .search-box input {
+        padding: 15px 14px;
+        font-size: 16px;
+      }
+
+      .search-button {
+        width: 58px;
+        min-width: 58px;
+        font-size: 27px;
+      }
+
+      .filter-area {
+        margin-top: 15px;
+      }
+
+      .filter-button {
+        padding: 10px 17px;
+        font-size: 14px;
+      }
+
+      .results {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 22px;
+      }
+
+      .result-card {
+        padding: 18px 10px;
+        border-radius: 13px;
+      }
+
+      .result-icon {
+        font-size: 43px;
+        margin-bottom: 10px;
+      }
+
+      .result-card h2 {
+        font-size: 16px;
+      }
+
+      .result-card p {
+        font-size: 12px;
+      }
+
+      .no-results {
+        padding: 40px 15px;
+        border-radius: 13px;
+      }
+
+      .no-results h2 {
+        font-size: 20px;
+      }
+
+      .no-results p {
+        font-size: 14px;
+      }
+
+    }
+
+    /* SEHR KLEINE HANDYS */
+
+    @media (max-width: 380px) {
+
+      .logo {
+        width: 170px;
+      }
+
+      .logo img {
+        height: 215px;
       }
 
       .menu-button {
@@ -355,35 +468,6 @@
         height: 45px;
       }
 
-      .menu-panel {
-        top: 78px;
-        right: 5%;
-        width: 260px;
-      }
-
-      .page-header {
-        padding: 55px 5%;
-      }
-
-      .page-header h1 {
-        font-size: 30px;
-      }
-
-      .page-header p {
-        font-size: 16px;
-      }
-
-      .search-box {
-        flex-direction: column;
-      }
-
-      .search-box button {
-        width: 100%;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
@@ -392,9 +476,9 @@
 
 <header>
 
-  <div class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div>
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
 
   <button
     class="menu-button"
@@ -410,14 +494,16 @@
 
   <div class="menu-panel" id="menuPanel">
 
-    <a href="index.html">
-      <span class="menu-icon">🏠</span>
-      Startseite
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
     </a>
 
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
+    <div class="menu-divider"></div>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
     </a>
 
     <a href="kategorien.html">
@@ -425,31 +511,31 @@
       Kategorien
     </a>
 
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
     </a>
 
-    <div class="menu-divider"></div>
-
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
     </a>
 
   </div>
 
 </header>
 
-<section class="page-header">
 
-  <h1><span>Produkte suchen</span></h1>
+<section class="hero">
+
+  <h1>Produkte <span>suchen</span></h1>
 
   <p>
-    Finde Produkte schnell und einfach.
+    Finde passende Produkte und Angebote auf DealKira
   </p>
 
 </section>
+
 
 <section class="search-section">
 
@@ -458,349 +544,217 @@
     <input
       type="text"
       id="searchInput"
-      placeholder="Produkt suchen..."
+      placeholder="Wonach suchst du?"
       autocomplete="off"
     >
 
-    <button onclick="searchProducts()">
-      Suchen
+    <button
+      class="search-button"
+      onclick="searchProducts()"
+      aria-label="Suchen"
+    >
+      ⌕
     </button>
+
+  </div>
+
+
+  <div class="filter-area">
+
+    <button
+      class="filter-button"
+      onclick="toggleFilter()"
+    >
+      ⚙️ Filter
+    </button>
+
+  </div>
+
+
+  <div
+    class="filter-message"
+    id="filterMessage"
+  >
+    Der Filter befindet sich noch in Bearbeitung.
+  </div>
+
+
+  <div
+    class="results"
+    id="results"
+  >
+
+    <!-- PLAYSTATION 5 -->
+
+    <a
+      class="result-card"
+      data-name="PlayStation 5"
+      data-category="Gaming"
+      href="https://amzn.to/4yW9vEp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="result-icon">
+        🎮
+      </div>
+
+      <h2>
+        PlayStation 5
+      </h2>
+
+      <p>
+        Gaming
+      </p>
+
+    </a>
+
+
+    <!-- SAMSUNG GALAXY S26 ULTRA -->
+
+    <a
+      class="result-card"
+      data-name="Samsung Galaxy S26 Ultra"
+      data-category="Elektronik"
+      href="https://amzn.to/4yL6uGH"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="result-icon">
+        📱
+      </div>
+
+      <h2>
+        Samsung Galaxy S26 Ultra
+      </h2>
+
+      <p>
+        Elektronik
+      </p>
+
+    </a>
+
+
+    <!-- IPHONE 17 -->
+
+    <a
+      class="result-card"
+      data-name="Apple iPhone 17"
+      data-category="Elektronik"
+      href="https://amzn.to/3VsXwj3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="result-icon">
+        📱
+      </div>
+
+      <h2>
+        Apple iPhone 17
+      </h2>
+
+      <p>
+        Elektronik
+      </p>
+
+    </a>
+
+
+    <!-- POWERBANK -->
+
+    <a
+      class="result-card"
+      data-name="Powerbank"
+      data-category="Elektronik"
+      href="https://amzn.to/4yJVCJc"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="result-icon">
+        🔋
+      </div>
+
+      <h2>
+        Powerbank
+      </h2>
+
+      <p>
+        Elektronik
+      </p>
+
+    </a>
+
+
+    <!-- MONITOR -->
+
+    <a
+      class="result-card"
+      data-name="27-Zoll Monitor"
+      data-category="Computer"
+      href="https://amzn.to/4rq0uRq"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="result-icon">
+        🖥️
+      </div>
+
+      <h2>
+        27-Zoll Monitor
+      </h2>
+
+      <p>
+        Computer
+      </p>
+
+    </a>
+
+
+    <!-- KEINE ERGEBNISSE -->
+
+    <div
+      class="no-results"
+      id="noResults"
+    >
+
+      <div class="no-results-icon">
+        🔍
+      </div>
+
+      <h2>
+        Keine Produkte gefunden
+      </h2>
+
+      <p>
+        Versuche einen anderen Suchbegriff.
+      </p>
+
+    </div>
 
   </div>
 
 </section>
 
-<section class="results">
-
-  <div id="resultsContainer"></div>
-
-</section>
 
 <footer>
-
-  <strong>DealKira</strong>
-
-  <p>
-    Produkte entdecken. Deals finden. Preise vergleichen.
-  </p>
-
+  © 2026 DealKira – Bessere Deals finden
 </footer>
+
 
 <script>
 
-  const products = [
-
-    {
-      name: "PlayStation 5",
-      category: "Gaming",
-      icon: "🎮",
-      link: "https://amzn.to/4yW9vEp"
-    },
-
-    {
-      name: "Samsung Galaxy S26 Ultra",
-      category: "Elektronik",
-      icon: "📱",
-      link: "https://amzn.to/4yL6uGH"
-    },
-
-    {
-      name: "Apple iPhone 17",
-      category: "Elektronik",
-      icon: "📱",
-      link: "https://amzn.to/3VsXwj3"
-    },
-
-    {
-      name: "Powerbank",
-      category: "Elektronik",
-      icon: "🔋",
-      link: "https://amzn.to/4yJVCJc"
-    },
-
-    {
-      name: "27-Zoll Monitor",
-      category: "Computer",
-      icon: "🖥️",
-      link: "https://amzn.to/4rq0uRq"
-    }
-
-  ];
-
-
-  /* =========================
-     TEXT NORMALISIEREN
-  ========================== */
-
-  function normalizeText(text) {
-
-    return text
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-z0-9äöüß\s]/g, "")
-      .trim();
-
-  }
-
-
-  /* =========================
-     LEVENSHTEIN-DISTANZ
-  ========================== */
-
-  function levenshteinDistance(a, b) {
-
-    const matrix = [];
-
-    for (let i = 0; i <= b.length; i++) {
-      matrix[i] = [i];
-    }
-
-    for (let j = 0; j <= a.length; j++) {
-      matrix[0][j] = j;
-    }
-
-    for (let i = 1; i <= b.length; i++) {
-
-      for (let j = 1; j <= a.length; j++) {
-
-        if (b.charAt(i - 1) === a.charAt(j - 1)) {
-
-          matrix[i][j] = matrix[i - 1][j - 1];
-
-        } else {
-
-          matrix[i][j] = Math.min(
-            matrix[i - 1][j - 1] + 1,
-            matrix[i][j - 1] + 1,
-            matrix[i - 1][j] + 1
-          );
-
-        }
-
-      }
-
-    }
-
-    return matrix[b.length][a.length];
-
-  }
-
-
-  /* =========================
-     ÄHNLICHKEIT PRÜFEN
-  ========================== */
-
-  function isSimilar(searchTerm, text) {
-
-    searchTerm = normalizeText(searchTerm);
-    text = normalizeText(text);
-
-    if (text.includes(searchTerm)) {
-      return true;
-    }
-
-    const searchWords = searchTerm.split(/\s+/);
-    const textWords = text.split(/\s+/);
-
-
-    return searchWords.some(searchWord => {
-
-      if (searchWord.length < 3) {
-        return text.includes(searchWord);
-      }
-
-
-      return textWords.some(textWord => {
-
-        if (textWord.length < 3) {
-          return false;
-        }
-
-        const distance =
-          levenshteinDistance(searchWord, textWord);
-
-
-        let allowedErrors = 1;
-
-        if (searchWord.length >= 6) {
-          allowedErrors = 2;
-        }
-
-        if (searchWord.length >= 10) {
-          allowedErrors = 3;
-        }
-
-
-        return distance <= allowedErrors;
-
-      });
-
-    });
-
-  }
-
-
-  /* =========================
-     PRODUKTE SUCHEN
-  ========================== */
-
-  function searchProducts() {
-
-    const searchTerm =
-      document
-        .getElementById("searchInput")
-        .value
-        .trim();
-
-    const container =
-      document.getElementById("resultsContainer");
-
-
-    if (searchTerm === "") {
-
-      container.innerHTML = `
-
-        <div class="no-results">
-
-          <div class="no-results-icon">
-            🔍
-          </div>
-
-          <h2>
-            Was möchtest du suchen?
-          </h2>
-
-          <p>
-            Gib oben einen Produktnamen ein.
-          </p>
-
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    const results =
-      products.filter(product => {
-
-        return (
-          isSimilar(searchTerm, product.name) ||
-          isSimilar(searchTerm, product.category)
-        );
-
-      });
-
-
-    if (results.length === 0) {
-
-      container.innerHTML = `
-
-        <div class="no-results">
-
-          <div class="no-results-icon">
-            😕
-          </div>
-
-          <h2>
-            Keine Produkte gefunden
-          </h2>
-
-          <p>
-            Wir konnten leider kein passendes Produkt finden.
-            Versuche einen anderen Suchbegriff.
-          </p>
-
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    container.innerHTML = `
-
-      <div class="results-title">
-
-        ${results.length}
-        ${results.length === 1 ? "Produkt" : "Produkte"}
-        gefunden
-
-      </div>
-
-
-      <div class="product-grid">
-
-        ${results.map(product => `
-
-          <div class="product-card">
-
-            <div class="product-image">
-              ${product.icon}
-            </div>
-
-            <div class="product-category">
-              ${product.category}
-            </div>
-
-            <h3>
-              ${product.name}
-            </h3>
-
-            <a
-              class="product-button"
-              href="${product.link}"
-              target="_blank"
-              rel="nofollow sponsored"
-            >
-              Preis auf Amazon prüfen
-            </a>
-
-          </div>
-
-        `).join("")}
-
-      </div>
-
-    `;
-
-  }
-
-
-  /* =========================
-     ENTER-TASTE
-  ========================== */
-
-  document
-    .getElementById("searchInput")
-    .addEventListener("keydown", function(event) {
-
-      if (event.key === "Enter") {
-        searchProducts();
-      }
-
-    });
-
-
-  /* =========================
-     HAMBURGER MENÜ
-  ========================== */
+  /* BURGER MENÜ */
 
   function toggleMenu() {
 
-    const menu =
-      document.getElementById("menuPanel");
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
 
-    const button =
-      document.getElementById("menuButton");
-
-    const isOpen =
-      menu.classList.toggle("open");
+    const isOpen = menu.classList.toggle("open");
 
     button.classList.toggle("active");
 
@@ -814,11 +768,8 @@
 
   function closeMenu() {
 
-    const menu =
-      document.getElementById("menuPanel");
-
-    const button =
-      document.getElementById("menuButton");
+    const menu = document.getElementById("menuPanel");
+    const button = document.getElementById("menuButton");
 
     menu.classList.remove("open");
 
@@ -860,11 +811,337 @@
     function(event) {
 
       if (event.key === "Escape") {
+
         closeMenu();
+
       }
 
     }
   );
+
+
+  /* FILTER */
+
+  function toggleFilter() {
+
+    const message =
+      document.getElementById("filterMessage");
+
+    message.classList.toggle("show");
+
+  }
+
+
+  /* FEHLERTOLERANTE SUCHE */
+
+  function levenshteinDistance(a, b) {
+
+    const matrix = [];
+
+    for (let i = 0; i <= b.length; i++) {
+
+      matrix[i] = [i];
+
+    }
+
+    for (let j = 0; j <= a.length; j++) {
+
+      matrix[0][j] = j;
+
+    }
+
+    for (let i = 1; i <= b.length; i++) {
+
+      for (let j = 1; j <= a.length; j++) {
+
+        if (
+          b.charAt(i - 1) ===
+          a.charAt(j - 1)
+        ) {
+
+          matrix[i][j] =
+            matrix[i - 1][j - 1];
+
+        } else {
+
+          matrix[i][j] =
+            Math.min(
+
+              matrix[i - 1][j - 1] + 1,
+
+              matrix[i][j - 1] + 1,
+
+              matrix[i - 1][j] + 1
+
+            );
+
+        }
+
+      }
+
+    }
+
+    return matrix[b.length][a.length];
+
+  }
+
+
+  function fuzzyMatch(searchTerm, text) {
+
+    searchTerm =
+      searchTerm.toLowerCase().trim();
+
+    text =
+      text.toLowerCase().trim();
+
+
+    /* Exakter Treffer */
+
+    if (
+      text.includes(searchTerm)
+    ) {
+
+      return true;
+
+    }
+
+
+    /* Suchbegriffe aufteilen */
+
+    const searchWords =
+      searchTerm.split(/\s+/);
+
+    const textWords =
+      text.split(/\s+/);
+
+
+    for (
+      const searchWord of searchWords
+    ) {
+
+      if (searchWord.length < 3) {
+
+        continue;
+
+      }
+
+
+      let wordFound = false;
+
+
+      for (
+        const textWord of textWords
+      ) {
+
+        /* Teiltreffer */
+
+        if (
+          textWord.includes(searchWord)
+        ) {
+
+          wordFound = true;
+
+          break;
+
+        }
+
+
+        /* Rechtschreibfehler */
+
+        const distance =
+          levenshteinDistance(
+            searchWord,
+            textWord
+          );
+
+
+        let allowedDistance = 1;
+
+
+        if (
+          searchWord.length >= 7
+        ) {
+
+          allowedDistance = 2;
+
+        }
+
+
+        if (
+          searchWord.length >= 11
+        ) {
+
+          allowedDistance = 3;
+
+        }
+
+
+        if (
+          distance <= allowedDistance
+        ) {
+
+          wordFound = true;
+
+          break;
+
+        }
+
+      }
+
+
+      if (!wordFound) {
+
+        return false;
+
+      }
+
+    }
+
+
+    return true;
+
+  }
+
+
+  /* PRODUKTSUCHE */
+
+  function searchProducts() {
+
+    const input =
+      document.getElementById("searchInput");
+
+    const searchTerm =
+      input.value.toLowerCase().trim();
+
+
+    const results =
+      document.getElementById("results");
+
+    const cards =
+      document.querySelectorAll(".result-card");
+
+    const noResults =
+      document.getElementById("noResults");
+
+
+    /* Keine Eingabe */
+
+    if (searchTerm === "") {
+
+      results.classList.remove("show");
+
+
+      cards.forEach(
+        function(card) {
+
+          card.style.display = "none";
+
+        }
+      );
+
+
+      noResults.classList.remove("show");
+
+      return;
+
+    }
+
+
+    /* Ergebnisse sichtbar machen */
+
+    results.classList.add("show");
+
+
+    let found = false;
+
+
+    cards.forEach(
+      function(card) {
+
+        const name =
+          card.dataset.name;
+
+        const category =
+          card.dataset.category;
+
+
+        const nameMatch =
+          fuzzyMatch(
+            searchTerm,
+            name
+          );
+
+
+        const categoryMatch =
+          fuzzyMatch(
+            searchTerm,
+            category
+          );
+
+
+        if (
+          nameMatch ||
+          categoryMatch
+        ) {
+
+          card.style.display = "block";
+
+          found = true;
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      }
+    );
+
+
+    /* Keine Treffer */
+
+    if (found) {
+
+      noResults.classList.remove("show");
+
+    } else {
+
+      noResults.classList.add("show");
+
+    }
+
+  }
+
+
+  /* ENTER-TASTE */
+
+  document
+    .getElementById("searchInput")
+    .addEventListener(
+      "keydown",
+      function(event) {
+
+        if (event.key === "Enter") {
+
+          searchProducts();
+
+        }
+
+      }
+    );
+
+
+  /* PRODUKTE BEIM START AUSBLENDEN */
+
+  document
+    .querySelectorAll(".result-card")
+    .forEach(
+      function(card) {
+
+        card.style.display = "none";
+
+      }
+    );
 
 </script>
 
