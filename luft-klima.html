@@ -13,28 +13,25 @@
     }
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
       background: #f5f5f5;
       color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
     }
 
     header {
-      height: 72px;
+      height: 82px;
       background: #111;
-      padding: 0 6%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
+      justify-content: space-between;
+      padding: 0 6%;
+      position: relative;
       z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
 
     .logo {
-      width: 220px;
-      height: 55px;
+      width: 280px;
+      height: 65px;
       display: flex;
       align-items: center;
       overflow: visible;
@@ -42,7 +39,7 @@
     }
 
     .logo img {
-      height: 240px;
+      height: 320px;
       width: auto;
       max-width: none;
       display: block;
@@ -60,14 +57,15 @@
       align-items: center;
       gap: 5px;
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .menu-button span {
       width: 23px;
       height: 3px;
       background: #ffd400;
-      border-radius: 2px;
-      transition: 0.25s;
+      border-radius: 3px;
+      transition: 0.2s;
     }
 
     .menu-button:hover {
@@ -96,7 +94,7 @@
       border: 1px solid #333;
       border-radius: 14px;
       padding: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -113,11 +111,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      color: white;
+      color: #fff;
       text-decoration: none;
       padding: 14px 15px;
       border-radius: 9px;
       font-weight: 700;
+      transition: 0.2s;
     }
 
     .menu-panel a:hover {
@@ -137,149 +136,159 @@
       margin: 8px 5px;
     }
 
-    .page-header {
-      background: linear-gradient(135deg, #111, #222);
-      color: white;
-      padding: 70px 6%;
+    .hero {
+      background: #111;
+      color: #fff;
       text-align: center;
+      padding: 55px 20px 60px;
     }
 
-    .page-header h1 {
+    .hero h1 {
       font-size: 42px;
       margin-bottom: 12px;
     }
 
-    .page-header h1 span {
+    .hero h1 span {
       color: #ffd400;
     }
 
-    .page-header p {
-      color: #ccc;
+    .hero p {
       font-size: 18px;
+      color: #ccc;
     }
 
     .categories {
       max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 6%;
+      margin: 55px auto 70px;
+      padding: 0 20px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
     }
 
     .category-card {
-      background: white;
+      min-height: 210px;
+      background: #fff;
       border-radius: 16px;
-      padding: 35px 25px;
-      text-align: center;
       text-decoration: none;
       color: #111;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      transition: 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: .2s;
     }
 
     .category-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.13);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
     }
 
     .category-icon {
-      font-size: 60px;
+      font-size: 58px;
       margin-bottom: 15px;
     }
 
     .category-card h2 {
       font-size: 22px;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
     .category-card p {
       color: #666;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     footer {
       background: #111;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-      margin-top: 30px;
-    }
-
-    footer strong {
-      color: #ffd400;
-    }
-
-    footer p {
-      margin-top: 6px;
       color: #aaa;
-    }
-
-    @media (max-width: 900px) {
-      .categories {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-      }
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
     }
 
     @media (max-width: 800px) {
-      header {
-        padding: 0 5%;
-      }
-
       .logo {
-        width: 180px;
+        width: 225px;
       }
 
       .logo img {
-        height: 210px;
-      }
-
-      .menu-panel {
-        right: 5%;
-      }
-
-      .page-header h1 {
-        font-size: 34px;
+        height: 275px;
       }
     }
 
     @media (max-width: 550px) {
       header {
-        height: 68px;
         padding: 0 5%;
       }
 
       .logo {
-        width: 145px;
+        width: 190px;
         height: 50px;
       }
 
       .logo img {
-        height: 184px;
+        height: 235px;
+      }
+
+      .menu-panel {
+        right: 5%;
+        width: 270px;
+      }
+
+      .hero {
+        padding: 42px 15px 48px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .categories {
+        margin: 35px auto 50px;
+        padding: 0 12px;
+        gap: 12px;
+      }
+
+      .category-card {
+        min-height: 175px;
+        padding: 15px 8px;
+        border-radius: 13px;
+      }
+
+      .category-icon {
+        font-size: 43px;
+        margin-bottom: 10px;
+      }
+
+      .category-card h2 {
+        font-size: 16px;
+      }
+
+      .category-card p {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .logo {
+        width: 170px;
+      }
+
+      .logo img {
+        height: 215px;
       }
 
       .menu-button {
         width: 45px;
         height: 45px;
-      }
-
-      .menu-panel {
-        top: 78px;
-        right: 5%;
-        width: 260px;
-      }
-
-      .page-header {
-        padding: 55px 5%;
-      }
-
-      .page-header h1 {
-        font-size: 30px;
-      }
-
-      .page-header p {
-        font-size: 16px;
       }
     }
   </style>
@@ -287,169 +296,122 @@
 
 <body>
 
-<header>
+  <header>
 
-  <div class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira Logo">
-  </div>
-
-  <button
-    class="menu-button"
-    id="menuButton"
-    onclick="toggleMenu()"
-    aria-label="Menü öffnen"
-    aria-expanded="false"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <div class="menu-panel" id="menuPanel">
-
-    <a href="index.html">
-      <span class="menu-icon">🏠</span>
-      Startseite
+    <a href="index.html" class="logo">
+      <img src="20879_nobg (1).png" alt="DealKira">
     </a>
 
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
+    <button
+      class="menu-button"
+      id="menuButton"
+      onclick="toggleMenu()"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-panel" id="menuPanel">
+
+      <a href="konto.html">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
+      </a>
+
+      <div class="menu-divider"></div>
+
+      <a href="suche.html">
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
+
+      <a href="kategorien.html">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
+
+      <a href="deals.html">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
+
+      <a href="einstellungen.html">
+        <span class="menu-icon">⚙️</span>
+        Einstellungen
+      </a>
+
+    </div>
+
+  </header>
+
+  <section class="hero">
+    <h1>Luft & <span>Klima</span></h1>
+    <p>Produkte für angenehme Raumluft und ein passendes Raumklima entdecken</p>
+  </section>
+
+  <main class="categories">
+
+    <a href="ventilatoren.html" class="category-card">
+      <div class="category-icon">🌀</div>
+      <h2>Ventilatoren</h2>
+      <p>Ventilatoren für eine angenehme Luftzirkulation</p>
     </a>
 
-    <a href="kategorien.html">
-      <span class="menu-icon">📂</span>
-      Kategorien
+    <a href="klimaanlagen.html" class="category-card">
+      <div class="category-icon">❄️</div>
+      <h2>Klimaanlagen</h2>
+      <p>Klimageräte für eine angenehme Raumtemperatur</p>
     </a>
 
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
+    <a href="mobile-heizungen.html" class="category-card">
+      <div class="category-icon">🔥</div>
+      <h2>Mobile Heizungen</h2>
+      <p>Flexible Heizgeräte für verschiedene Räume</p>
     </a>
 
-    <div class="menu-divider"></div>
+  </main>
 
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
-    </a>
+  <footer>
+    © 2026 DealKira – Bessere Deals finden
+  </footer>
 
-  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
+      const isOpen = menu.classList.toggle("open");
 
-</header>
-
-<section class="page-header">
-
-  <h1><span>Luft & Klima</span></h1>
-
-  <p>
-    Alles für angenehme Temperaturen und bessere Luft.
-  </p>
-
-</section>
-
-<section class="categories">
-
-  <a href="ventilatoren.html" class="category-card">
-
-    <div class="category-icon">🌬️</div>
-
-    <h2>Ventilatoren</h2>
-
-    <p>
-      Standventilatoren, Tischventilatoren und mehr.
-    </p>
-
-  </a>
-
-  <a href="klimaanlagen.html" class="category-card">
-
-    <div class="category-icon">❄️</div>
-
-    <h2>Klimaanlagen</h2>
-
-    <p>
-      Mobile und weitere Klimageräte für warme Tage.
-    </p>
-
-  </a>
-
-  <a href="mobile-heizungen.html" class="category-card">
-
-    <div class="category-icon">🔥</div>
-
-    <h2>Mobile Heizungen</h2>
-
-    <p>
-      Flexible Heizgeräte für verschiedene Räume.
-    </p>
-
-  </a>
-
-</section>
-
-<footer>
-
-  <strong>DealKira</strong>
-
-  <p>
-    Produkte entdecken. Deals finden. Preise vergleichen.
-  </p>
-
-</footer>
-
-<script>
-
-  function toggleMenu() {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    const isOpen = menu.classList.toggle("open");
-
-    button.classList.toggle("active");
-
-    button.setAttribute("aria-expanded", isOpen);
-
-  }
-
-  function closeMenu() {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    menu.classList.remove("open");
-    button.classList.remove("active");
-
-    button.setAttribute("aria-expanded", "false");
-
-  }
-
-  document.addEventListener("click", function(event) {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    if (
-      !menu.contains(event.target) &&
-      !button.contains(event.target)
-    ) {
-      closeMenu();
+      button.classList.toggle("active");
+      button.setAttribute("aria-expanded", isOpen);
     }
 
-  });
+    function closeMenu() {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-  document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-      closeMenu();
+      menu.classList.remove("open");
+      button.classList.remove("active");
+      button.setAttribute("aria-expanded", "false");
     }
 
-  });
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("menuPanel");
+      const button = document.getElementById("menuButton");
 
-</script>
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+  </script>
 
 </body>
 </html>
-
-
