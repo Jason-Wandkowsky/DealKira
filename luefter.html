@@ -25,14 +25,13 @@ body {
 ========================= */
 
 header {
-  height: 72px;
-  background: #000;
+  height: 82px;
+  background: #111;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 6%;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
 }
 
@@ -57,7 +56,7 @@ header {
 }
 
 /* =========================
-   MENÜ BUTTON
+   BURGER MENU
 ========================= */
 
 .menu-button {
@@ -101,7 +100,7 @@ header {
 }
 
 /* =========================
-   MENÜ PANEL
+   MENU PANEL
 ========================= */
 
 .menu-panel {
@@ -160,10 +159,10 @@ header {
 ========================= */
 
 .hero {
-  background: white;
+  background: #111;
+  color: #fff;
   text-align: center;
-  padding: 55px 20px 45px;
-  border-bottom: 1px solid #eee;
+  padding: 55px 20px 60px;
 }
 
 .hero h1 {
@@ -172,8 +171,8 @@ header {
 }
 
 .hero p {
-  color: #666;
   font-size: 18px;
+  color: #ccc;
 }
 
 /* =========================
@@ -266,15 +265,10 @@ header {
 ========================= */
 
 footer {
-  background: #000;
-  color: #fff;
+  background: #111;
+  color: #aaa;
   text-align: center;
   padding: 30px 20px;
-  margin-top: 20px;
-}
-
-footer p {
-  color: #aaa;
   font-size: 14px;
 }
 
@@ -290,14 +284,6 @@ footer p {
 
   .logo img {
     height: 275px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .hero p {
-    font-size: 16px;
   }
 
 }
@@ -321,26 +307,21 @@ footer p {
     height: 235px;
   }
 
-  .menu-button {
-    width: 46px;
-    height: 46px;
-  }
-
   .menu-panel {
     right: 5%;
     width: 270px;
   }
 
   .hero {
-    padding: 40px 15px 35px;
+    padding: 42px 15px 48px;
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .hero p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .products-section {
@@ -377,6 +358,27 @@ footer p {
 
   .empty-state p {
     font-size: 14px;
+  }
+
+}
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+  .logo {
+    width: 170px;
+  }
+
+  .logo img {
+    height: 215px;
+  }
+
+  .menu-button {
+    width: 45px;
+    height: 45px;
   }
 
 }
@@ -441,6 +443,7 @@ footer p {
 
 </header>
 
+
 <!-- =========================
      HERO
 ========================= -->
@@ -454,6 +457,7 @@ footer p {
   </p>
 
 </section>
+
 
 <!-- =========================
      PRODUKTE
@@ -472,12 +476,14 @@ footer p {
 
   </div>
 
+
   <div
     class="filter-message"
     id="filterMessage"
   >
     Der Filter befindet sich noch in Bearbeitung.
   </div>
+
 
   <div class="products">
 
@@ -487,12 +493,10 @@ footer p {
         🌬️
       </div>
 
-      <h2>
-        Noch keine Produkte vorhanden
-      </h2>
+      <h2>Noch keine Produkte vorhanden</h2>
 
       <p>
-        Wir arbeiten bereits daran, passende Lüfter und Angebote für dich bereitzustellen.
+        Hier werden bald passende Lüfter und Angebote angezeigt.
       </p>
 
     </div>
@@ -501,23 +505,23 @@ footer p {
 
 </section>
 
+
 <!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
 
-  <p>
-    © 2026 DealKira – Bessere Deals finden
-  </p>
+  © 2026 DealKira – Bessere Deals finden
 
 </footer>
 
-<script>
 
-/* =========================
-   MENÜ
-========================= */
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
 
 function toggleMenu() {
 
@@ -539,6 +543,7 @@ function toggleMenu() {
 
 }
 
+
 function closeMenu() {
 
   const menu =
@@ -557,6 +562,7 @@ function closeMenu() {
   );
 
 }
+
 
 document.addEventListener(
   "click",
@@ -580,6 +586,7 @@ document.addEventListener(
   }
 );
 
+
 document.addEventListener(
   "keydown",
   function(event) {
@@ -593,9 +600,6 @@ document.addEventListener(
   }
 );
 
-/* =========================
-   FILTER
-========================= */
 
 function toggleFilter() {
 
