@@ -888,7 +888,10 @@
 
             </div>
 
-            <button class="reset-button" onclick="showMessage('Weitere Shops können später hinzugefügt werden.')">
+            <button
+              class="reset-button"
+              onclick="showMessage('Weitere Shops können später hinzugefügt werden.')"
+            >
               Weitere Shops später hinzufügen
             </button>
 
@@ -948,419 +951,6 @@
           </div>
 
           <div class="save-message" id="generalMessage"></div>
-
-        </div>
-
-      </div>
-
-
-      <!-- BENACHRICHTIGUNGEN -->
-
-      <div class="settings-card clickable" onclick="toggleSection('notificationContent', this)">
-
-        <div class="settings-card-header">
-
-          <div class="settings-card-title">
-
-            <div class="settings-card-icon">🔔</div>
-
-            <div>
-
-              <h2>Benachrichtigungen</h2>
-
-              <p class="settings-card-description">
-                DealKira-Neuigkeiten, neue Deals und E-Mail-Benachrichtigungen
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="arrow">›</div>
-
-        </div>
-
-
-        <div
-          class="settings-content"
-          id="notificationContent"
-          onclick="event.stopPropagation()"
-        >
-
-          <div class="option-group">
-
-            <h3>📢 DealKira-Neuigkeiten</h3>
-
-            <div class="shop-option">
-
-              <div>
-                <strong>Neuigkeiten</strong>
-
-                <p class="settings-card-description">
-                  Informationen über neue Funktionen und wichtige Änderungen.
-                </p>
-              </div>
-
-              <label class="switch">
-
-                <input
-                  type="checkbox"
-                  id="newsNotifications"
-                  onchange="saveNotificationSettings()"
-                >
-
-                <span class="slider"></span>
-
-              </label>
-
-            </div>
-
-          </div>
-
-
-          <div class="option-group">
-
-            <h3>🔥 Neue Deals</h3>
-
-            <div class="shop-option">
-
-              <div>
-                <strong>Neue Deals</strong>
-
-                <p class="settings-card-description">
-                  Benachrichtigungen über neu hinzugefügte Deals.
-                </p>
-              </div>
-
-              <label class="switch">
-
-                <input
-                  type="checkbox"
-                  id="dealNotifications"
-                  onchange="saveNotificationSettings()"
-                >
-
-                <span class="slider"></span>
-
-              </label>
-
-            </div>
-
-          </div>
-
-
-          <div class="option-group">
-
-            <h3>📧 E-Mail-Benachrichtigungen</h3>
-
-            <div class="shop-option">
-
-              <div>
-                <strong>E-Mail-Benachrichtigungen</strong>
-
-                <p class="settings-card-description">
-                  Erlaube DealKira, dir Benachrichtigungen per E-Mail zu senden.
-                </p>
-              </div>
-
-              <label class="switch">
-
-                <input
-                  type="checkbox"
-                  id="emailNotifications"
-                  onchange="saveNotificationSettings()"
-                >
-
-                <span class="slider"></span>
-
-              </label>
-
-            </div>
-
-          </div>
-
-          <div class="save-message" id="notificationMessage"></div>
-
-        </div>
-
-      </div>
-
-
-      <!-- SPRACHE -->
-
-      <div class="settings-card clickable" onclick="toggleSection('languageContent', this)">
-
-        <div class="settings-card-header">
-
-          <div class="settings-card-title">
-
-            <div class="settings-card-icon">🌍</div>
-
-            <div>
-
-              <h2>Sprache</h2>
-
-              <p class="settings-card-description" id="currentLanguageText">
-                Deutsch
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="arrow">›</div>
-
-        </div>
-
-
-        <div
-          class="settings-content"
-          id="languageContent"
-          onclick="event.stopPropagation()"
-        >
-
-          <div class="option-group">
-
-            <h3>🌍 Sprache auswählen</h3>
-
-            <div class="option-list">
-
-              <button class="option" onclick="setLanguage('Deutsch')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇩🇪 Deutsch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('English')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇬🇧 Englisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Français')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇫🇷 Französisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Español')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇪🇸 Spanisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Italiano')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇮🇹 Italienisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Português')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇵🇹 Portugiesisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Nederlands')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇳🇱 Niederländisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Dansk')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇩🇰 Dänisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Svenska')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇸🇪 Schwedisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Norsk')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇳🇴 Norwegisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Suomi')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇫🇮 Finnisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Íslenska')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇮🇸 Isländisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Polski')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇵🇱 Polnisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Čeština')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇨🇿 Tschechisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Slovenčina')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇸🇰 Slowakisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Magyar')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇭🇺 Ungarisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Română')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇷🇴 Rumänisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Български')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇧🇬 Bulgarisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Hrvatski')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇭🇷 Kroatisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Slovenščina')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇸🇮 Slowenisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Srpski')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇷🇸 Serbisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Bosanski')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇧🇦 Bosnisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Shqip')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇦🇱 Albanisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Ελληνικά')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇬🇷 Griechisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Українська')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇺🇦 Ukrainisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Eesti')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇪🇪 Estnisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Latviešu')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇱🇻 Lettisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Lietuvių')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇱🇹 Litauisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Malti')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇲🇹 Maltesisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Lëtzebuergesch')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇱🇺 Luxemburgisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Català')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇪🇸 Katalanisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Gaeilge')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇮🇪 Irisch
-                </span>
-              </button>
-
-              <button class="option" onclick="setLanguage('Русский')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🇷🇺 Russisch
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-
-          <div class="save-message" id="languageMessage"></div>
 
         </div>
 
@@ -1429,7 +1019,7 @@
 
 
     /* =========================
-       EINSTELLUNGSBEREICHE
+       EINSTELLUNGSBEREICH
     ========================= */
 
     function toggleSection(id, card) {
@@ -1518,9 +1108,11 @@
         ".option-list .option"
       ).forEach(function(button) {
 
-        if (button.closest(".option-group") &&
-            button.closest(".option-group").querySelector("h3") &&
-            button.closest(".option-group").querySelector("h3").textContent.includes("Währung")) {
+        if (
+          button.closest(".option-group") &&
+          button.closest(".option-group").querySelector("h3") &&
+          button.closest(".option-group").querySelector("h3").textContent.includes("Währung")
+        ) {
 
           button.classList.remove("selected");
         }
@@ -1541,8 +1133,10 @@
 
           group.querySelectorAll(".option").forEach(function(button) {
 
-            if (button.getAttribute("onclick") &&
-                button.getAttribute("onclick").includes("'" + code + "'")) {
+            if (
+              button.getAttribute("onclick") &&
+              button.getAttribute("onclick").includes("'" + code + "'")
+            ) {
 
               button.classList.add("selected");
             }
@@ -1663,142 +1257,6 @@
 
 
     /* =========================
-       BENACHRICHTIGUNGEN
-    ========================= */
-
-    function saveNotificationSettings() {
-
-      const settings = {
-
-        news:
-          document.getElementById("newsNotifications").checked,
-
-        deals:
-          document.getElementById("dealNotifications").checked,
-
-        email:
-          document.getElementById("emailNotifications").checked
-
-      };
-
-      localStorage.setItem(
-        "dealkiraNotifications",
-        JSON.stringify(settings)
-      );
-
-      showNotificationMessage(
-        "Benachrichtigungseinstellungen gespeichert."
-      );
-    }
-
-
-    function loadNotificationSettings() {
-
-      const saved =
-        localStorage.getItem("dealkiraNotifications");
-
-      if (!saved) return;
-
-      try {
-
-        const settings = JSON.parse(saved);
-
-        document.getElementById(
-          "newsNotifications"
-        ).checked = !!settings.news;
-
-        document.getElementById(
-          "dealNotifications"
-        ).checked = !!settings.deals;
-
-        document.getElementById(
-          "emailNotifications"
-        ).checked = !!settings.email;
-
-      } catch (error) {
-
-        console.log(
-          "Benachrichtigungseinstellungen konnten nicht geladen werden."
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       SPRACHE
-    ========================= */
-
-    function setLanguage(language) {
-
-      localStorage.setItem(
-        "dealkiraLanguage",
-        language
-      );
-
-      document.getElementById(
-        "currentLanguageText"
-      ).textContent = language;
-
-      document.querySelectorAll(
-        "#languageContent .option"
-      ).forEach(function(button) {
-
-        button.classList.remove("selected");
-
-        const action =
-          button.getAttribute("onclick");
-
-        if (
-          action &&
-          action.includes(
-            "setLanguage('" + language + "')"
-          )
-        ) {
-          button.classList.add("selected");
-        }
-
-      });
-
-      showLanguageMessage(
-        "Sprache gespeichert: " + language
-      );
-    }
-
-
-    function loadLanguage() {
-
-      const language =
-        localStorage.getItem("dealkiraLanguage") ||
-        "Deutsch";
-
-      document.getElementById(
-        "currentLanguageText"
-      ).textContent = language;
-
-      document.querySelectorAll(
-        "#languageContent .option"
-      ).forEach(function(button) {
-
-        const action =
-          button.getAttribute("onclick");
-
-        if (
-          action &&
-          action.includes(
-            "setLanguage('" + language + "')"
-          )
-        ) {
-          button.classList.add("selected");
-        }
-
-      });
-
-    }
-
-
-    /* =========================
        MELDUNGEN
     ========================= */
 
@@ -1815,44 +1273,6 @@
       );
 
       window.generalMessageTimeout =
-        setTimeout(function() {
-          element.classList.remove("show");
-        }, 3000);
-    }
-
-
-    function showNotificationMessage(message) {
-
-      const element =
-        document.getElementById("notificationMessage");
-
-      element.textContent = message;
-      element.classList.add("show");
-
-      clearTimeout(
-        window.notificationMessageTimeout
-      );
-
-      window.notificationMessageTimeout =
-        setTimeout(function() {
-          element.classList.remove("show");
-        }, 3000);
-    }
-
-
-    function showLanguageMessage(message) {
-
-      const element =
-        document.getElementById("languageMessage");
-
-      element.textContent = message;
-      element.classList.add("show");
-
-      clearTimeout(
-        window.languageMessageTimeout
-      );
-
-      window.languageMessageTimeout =
         setTimeout(function() {
           element.classList.remove("show");
         }, 3000);
@@ -1894,11 +1314,9 @@
 
     loadShopPreference();
     loadCookiePreference();
-    loadNotificationSettings();
-    loadLanguage();
     updateCurrencyButton();
 
   </script>
 
 </body>
-  </html>
+</html>
