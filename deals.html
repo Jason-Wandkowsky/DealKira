@@ -200,11 +200,49 @@
       transition: 0.2s;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 
     .deal-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0,0,0,0.14);
+    }
+
+    /* =========================
+       FAVORIT BUTTON
+    ========================= */
+
+    .favorite-button {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 5;
+      transition: 0.2s;
+    }
+
+    .favorite-button:hover {
+      transform: scale(1.08);
+      background: #fff;
+    }
+
+    .favorite-button.active {
+      color: #e60023;
+    }
+
+    .favorite-button:disabled {
+      cursor: wait;
+      opacity: 0.7;
     }
 
     .deal-image {
@@ -341,6 +379,14 @@
         font-size: 13px;
       }
 
+      .favorite-button {
+        width: 38px;
+        height: 38px;
+        top: 8px;
+        right: 8px;
+        font-size: 21px;
+      }
+
       .page-header {
         padding: 50px 20px;
       }
@@ -438,7 +484,24 @@
   <section class="deals">
 
     <!-- 1 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="ps5-b0fn7zg39d"
+      data-product-name="PlayStation 5"
+      data-product-image="🎮"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4yW9vEp"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="PlayStation 5 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🎮</div>
 
@@ -463,7 +526,24 @@
 
 
     <!-- 2 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="samsung-galaxy-s26-ultra-b0g58wv7x4"
+      data-product-name="Samsung Galaxy S26 Ultra"
+      data-product-image="📱"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4yL6uGH"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S26 Ultra zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">📱</div>
 
@@ -488,7 +568,24 @@
 
 
     <!-- 3 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="iphone-17-b0fqg1tsy1"
+      data-product-name="Apple iPhone 17"
+      data-product-image="📱"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/3VsXwj3"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Apple iPhone 17 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">📱</div>
 
@@ -513,7 +610,24 @@
 
 
     <!-- 4 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="powerbank-b0cth7l29z"
+      data-product-name="Powerbank"
+      data-product-image="🔋"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4yJVCJc"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Powerbank zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🔋</div>
 
@@ -538,7 +652,24 @@
 
 
     <!-- 5 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="monitor-27-b0fhkxpwks"
+      data-product-name="27-Zoll Monitor"
+      data-product-image="🖥️"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4rq0uRq"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="27-Zoll Monitor zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🖥️</div>
 
@@ -563,7 +694,24 @@
 
 
     <!-- 6 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-1"
+      data-product-name="Testdeal 1"
+      data-product-image="⌨️"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 1 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">⌨️</div>
 
@@ -583,7 +731,24 @@
 
 
     <!-- 7 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-2"
+      data-product-name="Testdeal 2"
+      data-product-image="🖱️"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 2 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🖱️</div>
 
@@ -603,7 +768,24 @@
 
 
     <!-- 8 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-3"
+      data-product-name="Testdeal 3"
+      data-product-image="🎧"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 3 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🎧</div>
 
@@ -623,7 +805,24 @@
 
 
     <!-- 9 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-4"
+      data-product-name="Testdeal 4"
+      data-product-image="📺"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 4 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">📺</div>
 
@@ -643,7 +842,24 @@
 
 
     <!-- 10 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-5"
+      data-product-name="Testdeal 5"
+      data-product-image="💻"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 5 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">💻</div>
 
@@ -663,7 +879,24 @@
 
 
     <!-- 11 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-6"
+      data-product-name="Testdeal 6"
+      data-product-image="📷"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 6 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">📷</div>
 
@@ -683,7 +916,24 @@
 
 
     <!-- 12 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-7"
+      data-product-name="Testdeal 7"
+      data-product-image="🔌"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 7 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🔌</div>
 
@@ -703,7 +953,24 @@
 
 
     <!-- 13 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-8"
+      data-product-name="Testdeal 8"
+      data-product-image="📱"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 8 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">📱</div>
 
@@ -723,7 +990,24 @@
 
 
     <!-- 14 -->
-    <article class="deal-card">
+    <article
+      class="deal-card"
+      data-product-id="testdeal-9"
+      data-product-name="Testdeal 9"
+      data-product-image="🏠"
+      data-product-price=""
+      data-product-shop=""
+      data-product-link="#"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Testdeal 9 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="deal-image">🏠</div>
 
@@ -760,10 +1044,35 @@
 
 
   <!-- =========================
+       SUPABASE
+    ========================= -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+  <!-- =========================
        JAVASCRIPT
   ========================= -->
 
   <script>
+
+    /* =========================
+       SUPABASE
+    ========================= */
+
+    const SUPABASE_URL = "https://zniknbouugmgvqkkoamo.supabase.co";
+
+    const SUPABASE_KEY = "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
+
+    const supabaseClient = window.supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_KEY
+    );
+
+
+    /* =========================
+       BURGER MENU
+    ========================= */
 
     function toggleMenu() {
 
@@ -825,6 +1134,300 @@
       }
 
     });
+
+
+    /* =========================
+       FAVORITEN
+    ========================= */
+
+    async function getCurrentUser() {
+
+      const {
+        data,
+        error
+      } = await supabaseClient.auth.getUser();
+
+      if (error) {
+        console.error("Benutzer konnte nicht geladen werden:", error);
+        return null;
+      }
+
+      return data.user;
+    }
+
+
+    async function toggleFavorite(button) {
+
+      if (button.disabled) {
+        return;
+      }
+
+      const card = button.closest(".deal-card");
+
+      if (!card) {
+        return;
+      }
+
+      const user = await getCurrentUser();
+
+      if (!user) {
+
+        alert(
+          "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
+        );
+
+        window.location.href = "konto.html";
+
+        return;
+      }
+
+
+      const productId = card.dataset.productId;
+
+      const productName = card.dataset.productName;
+
+      const productImage = card.dataset.productImage;
+
+      const productPrice = card.dataset.productPrice || null;
+
+      const productShop = card.dataset.productShop || null;
+
+      const productLink = card.dataset.productLink || null;
+
+
+      button.disabled = true;
+
+
+      try {
+
+        /*
+         * Prüfen, ob der Favorit bereits existiert
+         */
+
+        const {
+          data: existingFavorite,
+          error: selectError
+        } = await supabaseClient
+          .from("favoriten")
+          .select("id")
+          .eq("user_id", user.id)
+          .eq("produkt_id", productId)
+          .maybeSingle();
+
+
+        if (selectError) {
+          throw selectError;
+        }
+
+
+        /*
+         * FAVORIT ENTFERNEN
+         */
+
+        if (existingFavorite) {
+
+          const {
+            error: deleteError
+          } = await supabaseClient
+            .from("favoriten")
+            .delete()
+            .eq("id", existingFavorite.id)
+            .eq("user_id", user.id);
+
+
+          if (deleteError) {
+            throw deleteError;
+          }
+
+
+          button.classList.remove("active");
+
+          button.textContent = "♡";
+
+          button.setAttribute(
+            "aria-label",
+            productName + " aus Favoriten entfernen"
+          );
+
+        }
+
+
+        /*
+         * FAVORIT HINZUFÜGEN
+         */
+
+        else {
+
+          const {
+            error: insertError
+          } = await supabaseClient
+            .from("favoriten")
+            .insert({
+              user_id: user.id,
+              produkt_id: productId,
+              produkt_name: productName,
+              produkt_bild: productImage,
+              produkt_preis: productPrice,
+              produkt_shop: productShop,
+              produkt_link: productLink
+            });
+
+
+          if (insertError) {
+            throw insertError;
+          }
+
+
+          button.classList.add("active");
+
+          button.textContent = "♥";
+
+          button.setAttribute(
+            "aria-label",
+            productName + " aus Favoriten entfernen"
+          );
+
+        }
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Fehler beim Ändern des Favoriten:",
+          error
+        );
+
+        alert(
+          "Der Favorit konnte momentan nicht gespeichert werden."
+        );
+
+      }
+
+      finally {
+
+        button.disabled = false;
+
+      }
+
+    }
+
+
+    /* =========================
+       FAVORITEN BEIM LADEN
+       PRÜFEN
+    ========================= */
+
+    async function loadFavorites() {
+
+      const user = await getCurrentUser();
+
+      if (!user) {
+        return;
+      }
+
+
+      const {
+        data: favorites,
+        error
+      } = await supabaseClient
+        .from("favoriten")
+        .select("produkt_id")
+        .eq("user_id", user.id);
+
+
+      if (error) {
+
+        console.error(
+          "Favoriten konnten nicht geladen werden:",
+          error
+        );
+
+        return;
+
+      }
+
+
+      const favoriteIds = new Set(
+        favorites.map(function(favorite) {
+          return favorite.produkt_id;
+        })
+      );
+
+
+      document
+        .querySelectorAll(".deal-card")
+        .forEach(function(card) {
+
+          const productId = card.dataset.productId;
+
+          const button =
+            card.querySelector(".favorite-button");
+
+          if (!button) {
+            return;
+          }
+
+
+          if (favoriteIds.has(productId)) {
+
+            button.classList.add("active");
+
+            button.textContent = "♥";
+
+            button.setAttribute(
+              "aria-label",
+              card.dataset.productName +
+              " aus Favoriten entfernen"
+            );
+
+          }
+
+        });
+
+    }
+
+
+    /* =========================
+       AUTH-ÄNDERUNGEN
+    ========================= */
+
+    supabaseClient.auth.onAuthStateChange(
+      function(event, session) {
+
+        if (session) {
+          loadFavorites();
+        }
+        else {
+
+          document
+            .querySelectorAll(".favorite-button")
+            .forEach(function(button) {
+
+              button.classList.remove("active");
+
+              button.textContent = "♡";
+
+            });
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       START
+    ========================= */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function() {
+
+        loadFavorites();
+
+      }
+    );
 
   </script>
 
