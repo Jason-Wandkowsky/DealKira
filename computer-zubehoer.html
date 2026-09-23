@@ -25,31 +25,43 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 20px;
-      position: relative;
+      padding: 0 6%;
+      position: sticky;
+      top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
     }
 
+    /* =========================
+       LOGO – WIE INDEX.HTML
+    ========================= */
+
     .logo {
+      width: 280px;
+      height: 65px;
       display: flex;
       align-items: center;
       text-decoration: none;
-      height: 72px;
       overflow: visible;
+      position: relative;
     }
 
     .logo img {
-      height: 120px;
-      width: 220px;
-      object-fit: contain;
+      height: 320px;
+      width: auto;
+      max-width: none;
       display: block;
     }
 
+    /* =========================
+       BURGER MENU
+    ========================= */
+
     .menu-button {
-      width: 46px;
-      height: 46px;
-      background: #ffd400;
-      border: none;
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
@@ -62,11 +74,16 @@
     }
 
     .menu-button span {
-      width: 24px;
+      width: 23px;
       height: 3px;
-      background: #111;
+      background: #ffd400;
       border-radius: 3px;
-      transition: .2s;
+      transition: 0.25s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
     }
 
     .menu-button.active span:nth-child(1) {
@@ -83,17 +100,18 @@
 
     .menu-panel {
       position: absolute;
-      top: 62px;
-      right: 20px;
-      width: 260px;
-      background: #fff;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
       border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
       padding: 10px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
-      transition: .2s;
+      transition: 0.2s;
       z-index: 1001;
     }
 
@@ -107,29 +125,33 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 14px 12px;
-      color: #111;
+      color: white;
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
+      padding: 14px 15px;
       border-radius: 9px;
+      font-weight: 700;
     }
 
     .menu-panel a:hover {
-      background: #f5f5f5;
+      background: #222;
+      color: #ffd400;
     }
 
     .menu-icon {
       width: 25px;
       text-align: center;
-      font-size: 20px;
+      font-size: 19px;
     }
 
     .menu-divider {
       height: 1px;
-      background: #ddd;
-      margin: 6px 4px;
+      background: #333;
+      margin: 8px 5px;
     }
+
+    /* =========================
+       SEITENKOPF
+    ========================= */
 
     .page-header {
       background: linear-gradient(135deg, #111 0%, #292929 100%);
@@ -151,6 +173,10 @@
       color: #ddd;
       font-size: 16px;
     }
+
+    /* =========================
+       KATEGORIEN
+    ========================= */
 
     .categories {
       max-width: 1100px;
@@ -196,6 +222,10 @@
       font-size: 14px;
     }
 
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
       background: #111;
       color: white;
@@ -214,15 +244,39 @@
       color: #bbb;
     }
 
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .logo {
+        width: 225px;
+      }
+
+      .logo img {
+        height: 275px;
+      }
+    }
+
+    /* =========================
+       MOBIL
+    ========================= */
+
     @media (max-width: 600px) {
+
       header {
         height: 72px;
         padding: 0 12px;
       }
 
-      .logo img {
-        height: 105px;
+      .logo {
         width: 190px;
+        height: 50px;
+      }
+
+      .logo img {
+        height: 235px;
       }
 
       .menu-panel {
@@ -375,6 +429,7 @@
 
 
   <script>
+
     function toggleMenu() {
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
@@ -385,6 +440,7 @@
       button.setAttribute("aria-expanded", isOpen);
     }
 
+
     function closeMenu() {
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
@@ -394,21 +450,30 @@
       button.setAttribute("aria-expanded", "false");
     }
 
+
     document.addEventListener("click", function(event) {
+
       const menu = document.getElementById("menuPanel");
       const button = document.getElementById("menuButton");
 
       if (!menu.contains(event.target) && !button.contains(event.target)) {
         closeMenu();
       }
+
     });
 
+
     document.addEventListener("keydown", function(event) {
+
       if (event.key === "Escape") {
         closeMenu();
       }
+
     });
+
   </script>
 
 </body>
 </html>
+
+
