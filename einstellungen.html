@@ -20,7 +20,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      transition: background 0.2s, color 0.2s;
     }
 
     header {
@@ -256,60 +255,6 @@
       margin-bottom: 12px;
     }
 
-    .option-list {
-      display: grid;
-      gap: 8px;
-    }
-
-    .option {
-      width: 100%;
-      background: #181818;
-      border: 1px solid #333;
-      color: #fff;
-      border-radius: 10px;
-      padding: 13px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      text-align: left;
-      font-size: 15px;
-      transition: 0.2s;
-    }
-
-    .option:hover {
-      border-color: #ffd400;
-      background: #202020;
-    }
-
-    .option.selected {
-      border-color: #ffd400;
-      background: #292500;
-    }
-
-    .option-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .check {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #555;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-    }
-
-    .option.selected .check {
-      border-color: #ffd400;
-      background: #ffd400;
-      color: #111;
-    }
-
     .shop-option {
       display: flex;
       align-items: center;
@@ -444,71 +389,6 @@
       text-align: center;
       color: #888;
       font-size: 14px;
-    }
-
-    /* HELLER MODUS */
-
-    body.light-mode {
-      background: #f5f5f5;
-      color: #111;
-    }
-
-    body.light-mode .settings-box > p {
-      color: #666;
-    }
-
-    body.light-mode .settings-card {
-      background: #fff;
-      border-color: #ddd;
-    }
-
-    body.light-mode .settings-card:hover {
-      border-color: #bbb;
-    }
-
-    body.light-mode .settings-card.clickable:hover {
-      border-color: #ffd400;
-    }
-
-    body.light-mode .settings-content {
-      border-color: #ddd;
-    }
-
-    body.light-mode .option {
-      background: #f5f5f5;
-      color: #111;
-      border-color: #ddd;
-    }
-
-    body.light-mode .option:hover {
-      background: #fff;
-    }
-
-    body.light-mode .option.selected {
-      background: #fffbea;
-      border-color: #d5b300;
-    }
-
-    body.light-mode .shop-option,
-    body.light-mode .cookie-box {
-      background: #f5f5f5;
-      border-color: #ddd;
-    }
-
-    body.light-mode .cookie-box p,
-    body.light-mode .settings-card-description {
-      color: #666;
-    }
-
-    body.light-mode .save-message {
-      background: #e9f7e6;
-      border-color: #9aca91;
-      color: #32652d;
-    }
-
-    body.light-mode .reset-button {
-      color: #666;
-      border-color: #ccc;
     }
 
     @media (max-width: 800px) {
@@ -672,7 +552,7 @@
             <div>
               <h2>Allgemeine Einstellungen</h2>
               <p class="settings-card-description">
-                Darstellung, bevorzugte Shops und Datenschutz
+                Bevorzugte Shops und Datenschutz
               </p>
             </div>
           </div>
@@ -686,39 +566,6 @@
           id="generalContent"
           onclick="event.stopPropagation()"
         >
-
-          <!-- DARSTELLUNG -->
-
-          <div class="option-group">
-
-            <h3>🎨 Darstellung</h3>
-
-            <div class="option-list">
-
-              <button class="option" id="themeLight" onclick="setTheme('light')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  ☀️ Hell
-                </span>
-              </button>
-
-              <button class="option" id="themeDark" onclick="setTheme('dark')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  🌙 Dunkel
-                </span>
-              </button>
-
-              <button class="option" id="themeSystem" onclick="setTheme('system')">
-                <span class="option-left">
-                  <span class="check">✓</span>
-                  💻 System
-                </span>
-              </button>
-
-            </div>
-
-          </div>
 
           <!-- BEVORZUGTE SHOPS -->
 
@@ -910,61 +757,6 @@
 
 
     /* =========================
-       DARSTELLUNG
-    ========================= */
-
-    function setTheme(theme) {
-
-      localStorage.setItem("dealkiraTheme", theme);
-
-      applyTheme(theme);
-
-      updateThemeButtons();
-
-      showMessage("Darstellung gespeichert.");
-    }
-
-
-    function applyTheme(theme) {
-
-      let selectedTheme = theme;
-
-      if (theme === "system") {
-
-        selectedTheme =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: light)").matches
-            ? "light"
-            : "dark";
-      }
-
-      document.body.classList.toggle(
-        "light-mode",
-        selectedTheme === "light"
-      );
-    }
-
-
-    function updateThemeButtons() {
-
-      const theme =
-        localStorage.getItem("dealkiraTheme") || "system";
-
-      document
-        .getElementById("themeLight")
-        .classList.toggle("selected", theme === "light");
-
-      document
-        .getElementById("themeDark")
-        .classList.toggle("selected", theme === "dark");
-
-      document
-        .getElementById("themeSystem")
-        .classList.toggle("selected", theme === "system");
-    }
-
-
-    /* =========================
        BEVORZUGTE SHOPS
     ========================= */
 
@@ -1068,37 +860,8 @@
 
 
     /* =========================
-       SYSTEM-DARSTELLUNG
-    ========================= */
-
-    if (window.matchMedia) {
-
-      window.matchMedia(
-        "(prefers-color-scheme: light)"
-      ).addEventListener("change", function() {
-
-        const theme =
-          localStorage.getItem("dealkiraTheme");
-
-        if (theme === "system" || !theme) {
-          applyTheme("system");
-        }
-
-      });
-
-    }
-
-
-    /* =========================
        START
     ========================= */
-
-    const savedTheme =
-      localStorage.getItem("dealkiraTheme") ||
-      "system";
-
-    applyTheme(savedTheme);
-    updateThemeButtons();
 
     loadShopPreference();
     loadCookiePreference();
