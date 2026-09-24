@@ -247,11 +247,19 @@
 
     .deal-image {
       height: 190px;
-      background: #eee;
+      background: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 80px;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    .deal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .deal-content {
@@ -362,7 +370,7 @@
 
       .deal-image {
         height: 130px;
-        font-size: 55px;
+        padding: 8px;
       }
 
       .deal-content {
@@ -488,7 +496,7 @@
       class="deal-card"
       data-product-id="ps5-b0fn7zg39d"
       data-product-name="PlayStation 5"
-      data-product-image="🎮"
+      data-product-image="https://m.media-amazon.com/images/P/B0FN7ZG39D.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
@@ -504,7 +512,12 @@
         ♡
       </button>
 
-      <div class="deal-image">🎮</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0FN7ZG39D.01.LZZZZZZZ.jpg"
+          alt="PlayStation 5"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -531,7 +544,7 @@
       class="deal-card"
       data-product-id="samsung-galaxy-s26-ultra-b0g58wv7x4"
       data-product-name="Samsung Galaxy S26 Ultra"
-      data-product-image="📱"
+      data-product-image="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Smartphones"
@@ -547,7 +560,12 @@
         ♡
       </button>
 
-      <div class="deal-image">📱</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
+          alt="Samsung Galaxy S26 Ultra"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -574,7 +592,7 @@
       class="deal-card"
       data-product-id="iphone-17-b0fqg1tsy1"
       data-product-name="Apple iPhone 17"
-      data-product-image="📱"
+      data-product-image="https://m.media-amazon.com/images/P/B0FQG1TSY1.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Smartphones"
@@ -590,7 +608,12 @@
         ♡
       </button>
 
-      <div class="deal-image">📱</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0FQG1TSY1.01.LZZZZZZZ.jpg"
+          alt="Apple iPhone 17"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -616,8 +639,8 @@
     <article
       class="deal-card"
       data-product-id="powerbank-b0cth7l29z"
-      data-product-name="Powerbank"
-      data-product-image="🔋"
+      data-product-name="JUOVI Power Bank, Portable Power Bank"
+      data-product-image="https://m.media-amazon.com/images/P/B0CTH7L29Z.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Zubehör"
@@ -627,18 +650,23 @@
       <button
         class="favorite-button"
         type="button"
-        aria-label="Powerbank zu Favoriten hinzufügen"
+        aria-label="JUOVI Power Bank zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
       >
         ♡
       </button>
 
-      <div class="deal-image">🔋</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0CTH7L29Z.01.LZZZZZZZ.jpg"
+          alt="JUOVI Power Bank, Portable Power Bank"
+        >
+      </div>
 
       <div class="deal-content">
 
         <h2>
-          Powerbank
+          JUOVI Power Bank, Portable Power Bank
         </h2>
 
         <a
@@ -659,8 +687,8 @@
     <article
       class="deal-card"
       data-product-id="monitor-27-b0fhkxpwks"
-      data-product-name="27-Zoll Monitor"
-      data-product-image="🖥️"
+      data-product-name="Lenovo Legion 27-10"
+      data-product-image="https://m.media-amazon.com/images/P/B0FHKXPWKS.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
@@ -670,18 +698,23 @@
       <button
         class="favorite-button"
         type="button"
-        aria-label="27-Zoll Monitor zu Favoriten hinzufügen"
+        aria-label="Lenovo Legion 27-10 zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
       >
         ♡
       </button>
 
-      <div class="deal-image">🖥️</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0FHKXPWKS.01.LZZZZZZZ.jpg"
+          alt="Lenovo Legion 27-10"
+        >
+      </div>
 
       <div class="deal-content">
 
         <h2>
-          27-Zoll Monitor
+          Lenovo Legion 27-10
         </h2>
 
         <a
@@ -703,7 +736,7 @@
       class="deal-card"
       data-product-id="logitech-g502-hero"
       data-product-name="Logitech G502 HERO"
-      data-product-image="🖱️"
+      data-product-image="https://m.media-amazon.com/images/P/B07GS6ZS8J.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
@@ -719,7 +752,12 @@
         ♡
       </button>
 
-      <div class="deal-image">🖱️</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B07GS6ZS8J.01.LZZZZZZZ.jpg"
+          alt="Logitech G502 HERO"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -746,7 +784,7 @@
       class="deal-card"
       data-product-id="steelseries-apex-3-tkl"
       data-product-name="SteelSeries Apex 3 TKL"
-      data-product-image="⌨️"
+      data-product-image="https://m.media-amazon.com/images/P/B09FQ98HRT.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
@@ -762,7 +800,12 @@
         ♡
       </button>
 
-      <div class="deal-image">⌨️</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B09FQ98HRT.01.LZZZZZZZ.jpg"
+          alt="SteelSeries Apex 3 TKL"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -789,7 +832,7 @@
       class="deal-card"
       data-product-id="hyperx-cloud-iii"
       data-product-name="HyperX Cloud III"
-      data-product-image="🎧"
+      data-product-image="https://m.media-amazon.com/images/P/B0C3BV19Q3.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
@@ -805,7 +848,12 @@
         ♡
       </button>
 
-      <div class="deal-image">🎧</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0C3BV19Q3.01.LZZZZZZZ.jpg"
+          alt="HyperX Cloud III"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -832,7 +880,7 @@
       class="deal-card"
       data-product-id="samsung-galaxy-tab-a11-plus"
       data-product-name="Samsung Galaxy Tab A11+"
-      data-product-image="📱"
+      data-product-image="https://m.media-amazon.com/images/P/B0FWKK9VK3.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Elektronik"
@@ -848,7 +896,12 @@
         ♡
       </button>
 
-      <div class="deal-image">📱</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0FWKK9VK3.01.LZZZZZZZ.jpg"
+          alt="Samsung Galaxy Tab A11+"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -875,7 +928,7 @@
       class="deal-card"
       data-product-id="asus-vivobook-16-x1607qa"
       data-product-name="ASUS Vivobook 16 X1607QA"
-      data-product-image="💻"
+      data-product-image="https://m.media-amazon.com/images/P/B0DX2X31XY.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
@@ -891,7 +944,12 @@
         ♡
       </button>
 
-      <div class="deal-image">💻</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0DX2X31XY.01.LZZZZZZZ.jpg"
+          alt="ASUS Vivobook 16 X1607QA"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -917,8 +975,8 @@
     <article
       class="deal-card"
       data-product-id="hisense-55e7ds"
-      data-product-name="Hisense 55E7DS 55 Zoll 4K UHD QLED TV"
-      data-product-image="📺"
+      data-product-name="Hisense 55E7DS TV 55 Inches, 4K UHD QLED"
+      data-product-image="https://m.media-amazon.com/images/P/B0GM1TVSMG.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Elektronik"
@@ -934,12 +992,17 @@
         ♡
       </button>
 
-      <div class="deal-image">📺</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0GM1TVSMG.01.LZZZZZZZ.jpg"
+          alt="Hisense 55E7DS TV 55 Inches, 4K UHD QLED"
+        >
+      </div>
 
       <div class="deal-content">
 
         <h2>
-          Hisense 55E7DS 55 Zoll 4K UHD QLED TV
+          Hisense 55E7DS TV 55 Inches, 4K UHD QLED
         </h2>
 
         <a
@@ -961,7 +1024,7 @@
       class="deal-card"
       data-product-id="lexar-es3-1tb"
       data-product-name="Lexar ES3 1TB Extreme Portable SSD"
-      data-product-image="💾"
+      data-product-image="https://m.media-amazon.com/images/P/B0HC7HBF4W.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
@@ -977,7 +1040,12 @@
         ♡
       </button>
 
-      <div class="deal-image">💾</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0HC7HBF4W.01.LZZZZZZZ.jpg"
+          alt="Lexar ES3 1TB Extreme Portable SSD"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -1003,8 +1071,8 @@
     <article
       class="deal-card"
       data-product-id="soundcore-anker-p20i"
-      data-product-name="Soundcore by Anker P20i"
-      data-product-image="🎧"
+      data-product-name="soundcore by Anker P20i"
+      data-product-image="https://m.media-amazon.com/images/P/B0BTYCRJSS.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Elektronik"
@@ -1014,18 +1082,23 @@
       <button
         class="favorite-button"
         type="button"
-        aria-label="Soundcore by Anker P20i zu Favoriten hinzufügen"
+        aria-label="soundcore by Anker P20i zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
       >
         ♡
       </button>
 
-      <div class="deal-image">🎧</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0BTYCRJSS.01.LZZZZZZZ.jpg"
+          alt="soundcore by Anker P20i"
+        >
+      </div>
 
       <div class="deal-content">
 
         <h2>
-          Soundcore by Anker P20i
+          soundcore by Anker P20i
         </h2>
 
         <a
@@ -1047,7 +1120,7 @@
       class="deal-card"
       data-product-id="hyperx-quadcast-2"
       data-product-name="HyperX QuadCast 2"
-      data-product-image="🎙️"
+      data-product-image="https://m.media-amazon.com/images/P/B0D9MCK4R8.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
@@ -1063,7 +1136,12 @@
         ♡
       </button>
 
-      <div class="deal-image">🎙️</div>
+      <div class="deal-image">
+        <img
+          src="https://m.media-amazon.com/images/P/B0D9MCK4R8.01.LZZZZZZZ.jpg"
+          alt="HyperX QuadCast 2"
+        >
+      </div>
 
       <div class="deal-content">
 
@@ -1111,6 +1189,7 @@
 
   <!-- =========================
        JAVASCRIPT
+       FAVORITEN
   ========================= -->
 
   <script>
