@@ -236,12 +236,22 @@
     }
 
     .samsung-series-section,
-    .iphone-series-section {
+    .iphone-series-section,
+    .redmi-series-section,
+    .pixel-series-section,
+    .oneplus-series-section,
+    .motorola-series-section,
+    .huawei-series-section {
       display: none;
     }
 
     .samsung-series-section.show,
-    .iphone-series-section.show {
+    .iphone-series-section.show,
+    .redmi-series-section.show,
+    .pixel-series-section.show,
+    .oneplus-series-section.show,
+    .motorola-series-section.show,
+    .huawei-series-section.show {
       display: block;
     }
 
@@ -593,6 +603,87 @@
         iPhone
       </button>
 
+      <button
+        class="filter-option"
+        id="filterXiaomi"
+        type="button"
+        onclick="toggleBrandFilter('Xiaomi')"
+      >
+        Xiaomi
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterRedmi"
+        type="button"
+        onclick="toggleBrandFilter('Redmi')"
+      >
+        Redmi
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterPoco"
+        type="button"
+        onclick="toggleBrandFilter('POCO')"
+      >
+        POCO
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterGooglePixel"
+        type="button"
+        onclick="toggleBrandFilter('Google Pixel')"
+      >
+        Google Pixel
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterOnePlus"
+        type="button"
+        onclick="toggleBrandFilter('OnePlus')"
+      >
+        OnePlus
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterNothing"
+        type="button"
+        onclick="toggleBrandFilter('Nothing')"
+      >
+        Nothing
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterCmf"
+        type="button"
+        onclick="toggleBrandFilter('CMF')"
+      >
+        CMF
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterMotorola"
+        type="button"
+        onclick="toggleBrandFilter('Motorola')"
+      >
+        Motorola
+      </button>
+
+      <button
+        class="filter-option"
+        id="filterHuawei"
+        type="button"
+        onclick="toggleBrandFilter('Huawei')"
+      >
+        Huawei
+      </button>
+
     </div>
 
 
@@ -725,6 +816,247 @@
           onclick="toggleIphoneSeriesFilter('17')"
         >
           17
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="redmi-series-section"
+      id="redmiSeriesSection"
+    >
+
+      <div class="filter-title">Redmi Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterRedmiSerie"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Serie')"
+        >
+          Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterRedmiNote"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Note')"
+        >
+          Note
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="pixel-series-section"
+      id="pixelSeriesSection"
+    >
+
+      <div class="filter-title">Google Pixel Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterPixel11"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('11')"
+        >
+          11
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixel10"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('10')"
+        >
+          10
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixel9"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('9')"
+        >
+          9
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixel8"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('8')"
+        >
+          8
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixel7"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('7')"
+        >
+          7
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixel6"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('6')"
+        >
+          6
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterPixelFold"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Fold')"
+        >
+          Fold
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="oneplus-series-section"
+      id="oneplusSeriesSection"
+    >
+
+      <div class="filter-title">OnePlus Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterOnePlusSerie"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Serie')"
+        >
+          Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterOnePlusNord"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Nord')"
+        >
+          Nord
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterOnePlusFold"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Fold')"
+        >
+          Fold
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="motorola-series-section"
+      id="motorolaSeriesSection"
+    >
+
+      <div class="filter-title">Motorola Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterMotorolaRazr"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Razr')"
+        >
+          Razr
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterMotorolaEdge"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Edge')"
+        >
+          Edge
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterMotorolaMotoG"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Moto G')"
+        >
+          Moto G
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterMotorolaE"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('E')"
+        >
+          E
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="huawei-series-section"
+      id="huaweiSeriesSection"
+    >
+
+      <div class="filter-title">Huawei Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterHuaweiPura"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Pura')"
+        >
+          Pura
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterHuaweiMate"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Mate')"
+        >
+          Mate
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterHuaweiNova"
+          type="button"
+          onclick="toggleAdditionalSeriesFilter('Nova')"
+        >
+          Nova
         </button>
 
       </div>
@@ -1079,6 +1411,7 @@
   let activeBrand = null;
   let activeSeries = null;
   let activeIphoneSeries = null;
+  let activeAdditionalSeries = null;
 
 
   function toggleBrandFilter(brand) {
@@ -1091,6 +1424,7 @@
 
     activeSeries = null;
     activeIphoneSeries = null;
+    activeAdditionalSeries = null;
 
     updateFilterButtons();
     applyFilters();
@@ -1109,6 +1443,7 @@
     if (activeSeries) {
       activeBrand = "Samsung";
       activeIphoneSeries = null;
+      activeAdditionalSeries = null;
     }
 
     updateFilterButtons();
@@ -1128,6 +1463,26 @@
     if (activeIphoneSeries) {
       activeBrand = "iPhone";
       activeSeries = null;
+      activeAdditionalSeries = null;
+    }
+
+    updateFilterButtons();
+    applyFilters();
+
+  }
+
+
+  function toggleAdditionalSeriesFilter(series) {
+
+    if (activeAdditionalSeries === series) {
+      activeAdditionalSeries = null;
+    } else {
+      activeAdditionalSeries = series;
+    }
+
+    if (activeAdditionalSeries) {
+      activeSeries = null;
+      activeIphoneSeries = null;
     }
 
     updateFilterButtons();
@@ -1144,6 +1499,33 @@
     const iphoneButton =
       document.getElementById("filterIphone");
 
+    const xiaomiButton =
+      document.getElementById("filterXiaomi");
+
+    const redmiButton =
+      document.getElementById("filterRedmi");
+
+    const pocoButton =
+      document.getElementById("filterPoco");
+
+    const googlePixelButton =
+      document.getElementById("filterGooglePixel");
+
+    const oneplusButton =
+      document.getElementById("filterOnePlus");
+
+    const nothingButton =
+      document.getElementById("filterNothing");
+
+    const cmfButton =
+      document.getElementById("filterCmf");
+
+    const motorolaButton =
+      document.getElementById("filterMotorola");
+
+    const huaweiButton =
+      document.getElementById("filterHuawei");
+
 
     const samsungSeriesSection =
       document.getElementById(
@@ -1153,6 +1535,31 @@
     const iphoneSeriesSection =
       document.getElementById(
         "iphoneSeriesSection"
+      );
+
+    const redmiSeriesSection =
+      document.getElementById(
+        "redmiSeriesSection"
+      );
+
+    const pixelSeriesSection =
+      document.getElementById(
+        "pixelSeriesSection"
+      );
+
+    const oneplusSeriesSection =
+      document.getElementById(
+        "oneplusSeriesSection"
+      );
+
+    const motorolaSeriesSection =
+      document.getElementById(
+        "motorolaSeriesSection"
+      );
+
+    const huaweiSeriesSection =
+      document.getElementById(
+        "huaweiSeriesSection"
       );
 
 
@@ -1166,6 +1573,51 @@
       activeBrand === "iPhone"
     );
 
+    xiaomiButton.classList.toggle(
+      "active",
+      activeBrand === "Xiaomi"
+    );
+
+    redmiButton.classList.toggle(
+      "active",
+      activeBrand === "Redmi"
+    );
+
+    pocoButton.classList.toggle(
+      "active",
+      activeBrand === "POCO"
+    );
+
+    googlePixelButton.classList.toggle(
+      "active",
+      activeBrand === "Google Pixel"
+    );
+
+    oneplusButton.classList.toggle(
+      "active",
+      activeBrand === "OnePlus"
+    );
+
+    nothingButton.classList.toggle(
+      "active",
+      activeBrand === "Nothing"
+    );
+
+    cmfButton.classList.toggle(
+      "active",
+      activeBrand === "CMF"
+    );
+
+    motorolaButton.classList.toggle(
+      "active",
+      activeBrand === "Motorola"
+    );
+
+    huaweiButton.classList.toggle(
+      "active",
+      activeBrand === "Huawei"
+    );
+
 
     samsungSeriesSection.classList.toggle(
       "show",
@@ -1175,6 +1627,31 @@
     iphoneSeriesSection.classList.toggle(
       "show",
       activeBrand === "iPhone"
+    );
+
+    redmiSeriesSection.classList.toggle(
+      "show",
+      activeBrand === "Redmi"
+    );
+
+    pixelSeriesSection.classList.toggle(
+      "show",
+      activeBrand === "Google Pixel"
+    );
+
+    oneplusSeriesSection.classList.toggle(
+      "show",
+      activeBrand === "OnePlus"
+    );
+
+    motorolaSeriesSection.classList.toggle(
+      "show",
+      activeBrand === "Motorola"
+    );
+
+    huaweiSeriesSection.classList.toggle(
+      "show",
+      activeBrand === "Huawei"
     );
 
 
@@ -1228,6 +1705,108 @@
 
       }
     );
+
+
+    const additionalSeriesButtons = {
+
+      Serie: [
+        "filterRedmiSerie",
+        "filterOnePlusSerie"
+      ],
+
+      Note: [
+        "filterRedmiNote"
+      ],
+
+      Nord: [
+        "filterOnePlusNord"
+      ],
+
+      Fold: [
+        "filterPixelFold",
+        "filterOnePlusFold"
+      ],
+
+      "11": [
+        "filterPixel11"
+      ],
+
+      "10": [
+        "filterPixel10"
+      ],
+
+      "9": [
+        "filterPixel9"
+      ],
+
+      "8": [
+        "filterPixel8"
+      ],
+
+      "7": [
+        "filterPixel7"
+      ],
+
+      "6": [
+        "filterPixel6"
+      ],
+
+      Razr: [
+        "filterMotorolaRazr"
+      ],
+
+      Edge: [
+        "filterMotorolaEdge"
+      ],
+
+      "Moto G": [
+        "filterMotorolaMotoG"
+      ],
+
+      E: [
+        "filterMotorolaE"
+      ],
+
+      Pura: [
+        "filterHuaweiPura"
+      ],
+
+      Mate: [
+        "filterHuaweiMate"
+      ],
+
+      Nova: [
+        "filterHuaweiNova"
+      ]
+
+    };
+
+
+    Object.keys(
+      additionalSeriesButtons
+    ).forEach(function(series) {
+
+      additionalSeriesButtons[series].forEach(
+        function(buttonId) {
+
+          const button =
+            document.getElementById(
+              buttonId
+            );
+
+          if (button) {
+
+            button.classList.toggle(
+              "active",
+              activeAdditionalSeries === series
+            );
+
+          }
+
+        }
+      );
+
+    });
 
   }
 
@@ -1283,6 +1862,20 @@
         if (
           brand !== "iPhone" ||
           series !== activeIphoneSeries
+        ) {
+          visible = false;
+        }
+
+      }
+
+
+      if (
+        visible &&
+        activeAdditionalSeries
+      ) {
+
+        if (
+          series !== activeAdditionalSeries
         ) {
           visible = false;
         }
