@@ -609,5 +609,1118 @@
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3VsXwj3"
+  },
+
+  {
+    "id": "xiaomi-17t",
+    "name": "Xiaomi 17T",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hlIIKs"
+  },
+  {
+    "id": "xiaomi-17t-pro",
+    "name": "Xiaomi 17T Pro",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AFwjtN"
+  },
+  {
+    "id": "xiaomi-15",
+    "name": "Xiaomi 15",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AzczI6"
+  },
+  {
+    "id": "xiaomi-15t",
+    "name": "Xiaomi 15T",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hyTU6K"
+  },
+  {
+    "id": "xiaomi-15t-pro",
+    "name": "Xiaomi 15T Pro",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iPBW1T"
+  },
+  {
+    "id": "xiaomi-14t",
+    "name": "Xiaomi 14T",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3VQkxwp"
+  },
+  {
+    "id": "xiaomi-14t-pro",
+    "name": "Xiaomi 14T Pro",
+    "brand": "Xiaomi",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3TMF9Fn"
+  },
+
+  {
+    "id": "redmi-note-15",
+    "name": "Redmi Note 15",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hcSyQ3"
+  },
+  {
+    "id": "redmi-note-15-5g",
+    "name": "Redmi Note 15 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3Vf9yMX"
+  },
+  {
+    "id": "redmi-note-15-pro-5g",
+    "name": "Redmi Note 15 Pro 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4xHEsef"
+  },
+  {
+    "id": "redmi-note-15-pro-plus-5g",
+    "name": "Redmi Note 15 Pro+ 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iKiuUl"
+  },
+  {
+    "id": "redmi-note-14",
+    "name": "Redmi Note 14",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yVSN83"
+  },
+  {
+    "id": "redmi-note-14-5g",
+    "name": "Redmi Note 14 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/47iIleS"
+  },
+  {
+    "id": "redmi-note-14-pro",
+    "name": "Redmi Note 14 Pro",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4Azdng6"
+  },
+  {
+    "id": "redmi-note-14-pro-5g",
+    "name": "Redmi Note 14 Pro 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/46L5O8p"
+  },
+  {
+    "id": "redmi-note-14-pro-plus-5g",
+    "name": "Redmi Note 14 Pro+ 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yhyW3m"
+  },
+  {
+    "id": "redmi-note-17",
+    "name": "Redmi Note 17",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yivaXt"
+  },
+  {
+    "id": "redmi-note-17-5g",
+    "name": "Redmi Note 17 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AyLW60"
+  },
+  {
+    "id": "redmi-note-17-pro-5g",
+    "name": "Redmi Note 17 Pro 5G",
+    "brand": "Redmi",
+    "series": "Note",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4Av2vjr"
+  },
+
+  {
+    "id": "redmi-17",
+    "name": "Redmi 17",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4dXAqY9"
+  },
+  {
+    "id": "redmi-17-5g",
+    "name": "Redmi 17 5G",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AzT0zn"
+  },
+  {
+    "id": "redmi-15",
+    "name": "Redmi 15",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iPdQnY"
+  },
+  {
+    "id": "redmi-15c",
+    "name": "Redmi 15C",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4rQIq3f"
+  },
+  {
+    "id": "redmi-14c",
+    "name": "Redmi 14C",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iKuwgo"
+  },
+  {
+    "id": "redmi-13",
+    "name": "Redmi 13",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4xM5ZLE"
+  },
+  {
+    "id": "redmi-a5",
+    "name": "Redmi A5",
+    "brand": "Redmi",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4ANyxay"
+  },
+
+  {
+    "id": "poco-f8-ultra",
+    "name": "POCO F8 Ultra",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4z1GabJ"
+  },
+  {
+    "id": "poco-f7-ultra",
+    "name": "POCO F7 Ultra",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4e0aUBB"
+  },
+  {
+    "id": "poco-f7-pro",
+    "name": "POCO F7 Pro",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4d6voZ5"
+  },
+  {
+    "id": "poco-x8-pro-max",
+    "name": "POCO X8 Pro Max",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hNKW6E"
+  },
+  {
+    "id": "poco-x7-pro",
+    "name": "POCO X7 Pro",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4Azwo1O"
+  },
+  {
+    "id": "poco-m8-pro-5g",
+    "name": "POCO M8 Pro 5G",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4heHTo3"
+  },
+  {
+    "id": "poco-m8-5g",
+    "name": "POCO M8 5G",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3T2uRkg"
+  },
+  {
+    "id": "poco-c85",
+    "name": "POCO C85",
+    "brand": "Poco",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4jo6Lei"
+  },
+
+  {
+    "id": "google-pixel-11",
+    "name": "Google Pixel 11",
+    "brand": "Google Pixel",
+    "series": "11",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yXm427"
+  },
+  {
+    "id": "google-pixel-11-pro",
+    "name": "Google Pixel 11 Pro",
+    "brand": "Google Pixel",
+    "series": "11",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yT71GD"
+  },
+  {
+    "id": "google-pixel-11-pro-xl",
+    "name": "Google Pixel 11 Pro XL",
+    "brand": "Google Pixel",
+    "series": "11",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4dp7GYn"
+  },
+
+  {
+    "id": "google-pixel-10",
+    "name": "Google Pixel 10",
+    "brand": "Google Pixel",
+    "series": "10",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hpt9kL"
+  },
+  {
+    "id": "google-pixel-10-pro",
+    "name": "Google Pixel 10 Pro",
+    "brand": "Google Pixel",
+    "series": "10",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iU9zQl"
+  },
+  {
+    "id": "google-pixel-10-pro-xl",
+    "name": "Google Pixel 10 Pro XL",
+    "brand": "Google Pixel",
+    "series": "10",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AtiNtb"
+  },
+  {
+    "id": "google-pixel-10a",
+    "name": "Google Pixel 10a",
+    "brand": "Google Pixel",
+    "series": "10",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4Av440N"
+  },
+
+  {
+    "id": "google-pixel-9",
+    "name": "Google Pixel 9",
+    "brand": "Google Pixel",
+    "series": "9",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4z2U1yy"
+  },
+  {
+    "id": "google-pixel-9a",
+    "name": "Google Pixel 9a",
+    "brand": "Google Pixel",
+    "series": "9",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hPFrU7"
+  },
+  {
+    "id": "google-pixel-9-pro",
+    "name": "Google Pixel 9 Pro",
+    "brand": "Google Pixel",
+    "series": "9",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/46FsLdf"
+  },
+
+  {
+    "id": "google-pixel-8",
+    "name": "Google Pixel 8",
+    "brand": "Google Pixel",
+    "series": "8",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/47jy8yU"
+  },
+  {
+    "id": "google-pixel-8-pro",
+    "name": "Google Pixel 8 Pro",
+    "brand": "Google Pixel",
+    "series": "8",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3TkFSxq"
+  },
+  {
+    "id": "google-pixel-8a",
+    "name": "Google Pixel 8a",
+    "brand": "Google Pixel",
+    "series": "8",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4iU9X1f"
+  },
+
+  {
+    "id": "google-pixel-7",
+    "name": "Google Pixel 7",
+    "brand": "Google Pixel",
+    "series": "7",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4dydwqc"
+  },
+  {
+    "id": "google-pixel-7-pro",
+    "name": "Google Pixel 7 Pro",
+    "brand": "Google Pixel",
+    "series": "7",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hpy7hH"
+  },
+  {
+    "id": "google-pixel-7a",
+    "name": "Google Pixel 7a",
+    "brand": "Google Pixel",
+    "series": "7",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yhtBZC"
+  },
+
+  {
+    "id": "google-pixel-6-pro",
+    "name": "Google Pixel 6 Pro",
+    "brand": "Google Pixel",
+    "series": "6",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4ANzGim"
+  },
+
+  {
+    "id": "google-pixel-fold",
+    "name": "Google Pixel Fold",
+    "brand": "Google Pixel",
+    "series": "Fold",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4rz9nIo"
+  },
+  {
+    "id": "google-pixel-10-pro-fold",
+    "name": "Google Pixel 10 Pro Fold",
+    "brand": "Google Pixel",
+    "series": "Fold",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AsUVpj"
+  },
+  {
+    "id": "google-pixel-11-pro-fold",
+    "name": "Google Pixel 11 Pro Fold",
+    "brand": "Google Pixel",
+    "series": "Fold",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3Vhgklg"
+  },
+
+  {
+    "id": "oneplus-15r",
+    "name": "OnePlus 15R",
+    "brand": "OnePlus",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4z3wNbz"
+  },
+  {
+    "id": "oneplus-13",
+    "name": "OnePlus 13",
+    "brand": "OnePlus",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yQ9t0K"
+  },
+  {
+    "id": "oneplus-13r",
+    "name": "OnePlus 13R",
+    "brand": "OnePlus",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4dZmUmS"
+  },
+  {
+    "id": "oneplus-12",
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3VzwypX"
+  },
+  {
+    "id": "oneplus-10-pro",
+    "name": "OnePlus 10 Pro",
+    "brand": "OnePlus",
+    "series": "Serie",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yf2cYe"
+  },
+
+  {
+    "id": "oneplus-nord-6",
+    "name": "OnePlus Nord 6",
+    "brand": "OnePlus",
+    "series": "Nord",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4jp3gnS"
+  },
+  {
+    "id": "oneplus-nord-5",
+    "name": "OnePlus Nord 5",
+    "brand": "OnePlus",
+    "series": "Nord",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4yVCcRA"
+  },
+  {
+    "id": "oneplus-nord-ce6",
+    "name": "OnePlus Nord CE6",
+    "brand": "OnePlus",
+    "series": "Nord",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/46FYomX"
+  },
+  {
+    "id": "oneplus-nord-ce5",
+    "name": "OnePlus Nord CE5",
+    "brand": "OnePlus",
+    "series": "Nord",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/46PeNWa"
+  },
+
+  {
+    "id": "oneplus-open",
+    "name": "OnePlus Open",
+    "brand": "OnePlus",
+    "series": "Fold",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4rz9Nys"
+  },
+
+  {
+    "id": "nothing-phone-4a",
+    "name": "Nothing Phone (4a)",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4d1W79d"
+  },
+  {
+    "id": "nothing-phone-4a-pro",
+    "name": "Nothing Phone (4a) Pro",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AxNmxL"
+  },
+  {
+    "id": "nothing-phone-4b",
+    "name": "Nothing Phone (4b)",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4rw1kvX"
+  },
+  {
+    "id": "nothing-phone-3",
+    "name": "Nothing Phone (3)",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4dXD8wN"
+  },
+  {
+    "id": "nothing-phone-3a-pro",
+    "name": "Nothing Phone (3a) Pro",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4heH7r6"
+  },
+  {
+    "id": "nothing-phone-2a",
+    "name": "Nothing Phone (2a)",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4xPR82J"
+  },
+  {
+    "id": "nothing-phone-2a-plus",
+    "name": "Nothing Phone (2a) Plus",
+    "brand": "Nothing",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4ANB3O2"
+  },
+
+  {
+    "id": "cmf-phone-1",
+    "name": "CMF Phone 1",
+    "brand": "CMF",
+    "series": "",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4y5oZ8l"
+  },
+
+  {
+    "id": "motorola-razr-70-plus",
+    "name": "Motorola Razr 70 Plus",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4xPi3Mq"
+  },
+  {
+    "id": "motorola-razr-70",
+    "name": "Motorola Razr 70",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4ADtxVS"
+  },
+  {
+    "id": "motorola-razr-60",
+    "name": "Motorola Razr 60",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3Tp4AN6"
+  },
+  {
+    "id": "motorola-razr-50-ultra",
+    "name": "Motorola Razr 50 Ultra",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4rthZA8"
+  },
+  {
+    "id": "motorola-razr-50",
+    "name": "Motorola Razr 50",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/3TRENgD"
+  },
+  {
+    "id": "motorola-razr-40-ultra",
+    "name": "Motorola Razr 40 Ultra",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4AxOj9j"
+  },
+  {
+    "id": "motorola-razr-40",
+    "name": "Motorola Razr 40",
+    "brand": "Motorola",
+    "series": "Razr",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/47lmCmA"
+  },
+
+  {
+    "id": "motorola-edge-70-pro",
+    "name": "Motorola Edge 70 Pro",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0c6iWxAx"
+  },
+  {
+    "id": "motorola-edge-70",
+    "name": "Motorola Edge 70",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0bjc5XI5"
+  },
+  {
+    "id": "motorola-edge-60-pro",
+    "name": "Motorola Edge 60 Pro",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0fZAwM8w"
+  },
+  {
+    "id": "motorola-edge-60",
+    "name": "Motorola Edge 60",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B024rUB7d"
+  },
+  {
+    "id": "motorola-edge-60-fusion",
+    "name": "Motorola Edge 60 Fusion",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0jeffZIN"
+  },
+  {
+    "id": "motorola-edge-50-pro",
+    "name": "Motorola Edge 50 Pro",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0fPluzmA"
+  },
+  {
+    "id": "motorola-edge-50-fusion",
+    "name": "Motorola Edge 50 Fusion",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B06ZYcYbH"
+  },
+  {
+    "id": "motorola-edge-40-pro",
+    "name": "Motorola Edge 40 Pro",
+    "brand": "Motorola",
+    "series": "Edge",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0bd4VB7E"
+  },
+
+  {
+    "id": "motorola-moto-g86-5g",
+    "name": "Motorola Moto G86 5G",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B02Ldv9kD"
+  },
+  {
+    "id": "motorola-moto-g85-5g",
+    "name": "Motorola Moto G85 5G",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B07IBieBC"
+  },
+  {
+    "id": "motorola-moto-g75-5g",
+    "name": "Motorola Moto G75 5G",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0f7geWN1"
+  },
+  {
+    "id": "motorola-moto-g55-5g",
+    "name": "Motorola Moto G55 5G",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B03zE3SE3"
+  },
+  {
+    "id": "motorola-moto-g35-5g",
+    "name": "Motorola Moto G35 5G",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B02oKzPNj"
+  },
+  {
+    "id": "motorola-moto-g24",
+    "name": "Motorola Moto G24",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B06HH7w8U"
+  },
+  {
+    "id": "motorola-moto-g15",
+    "name": "Motorola Moto G15",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0grxFApE"
+  },
+  {
+    "id": "motorola-moto-g15-power",
+    "name": "Motorola Moto G15 Power",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0iWUjNRV"
+  },
+  {
+    "id": "motorola-moto-g05",
+    "name": "Motorola Moto G05",
+    "brand": "Motorola",
+    "series": "Moto G",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0cxwEuhz"
+  },
+
+  {
+    "id": "motorola-moto-e15",
+    "name": "Motorola Moto E15",
+    "brand": "Motorola",
+    "series": "E",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B02ku6TRB"
+  },
+
+  {
+    "id": "huawei-pura-80-ultra",
+    "name": "Huawei Pura 80 Ultra",
+    "brand": "Huawei",
+    "series": "Pura",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B002HPN59"
+  },
+  {
+    "id": "huawei-pura-80-pro",
+    "name": "Huawei Pura 80 Pro",
+    "brand": "Huawei",
+    "series": "Pura",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B03KxUsfa"
+  },
+  {
+    "id": "huawei-pura-70-ultra",
+    "name": "Huawei Pura 70 Ultra",
+    "brand": "Huawei",
+    "series": "Pura",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B03bzPDak"
+  },
+  {
+    "id": "huawei-pura-70-pro",
+    "name": "Huawei Pura 70 Pro",
+    "brand": "Huawei",
+    "series": "Pura",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B08wO2eFV"
+  },
+  {
+    "id": "huawei-pura-70",
+    "name": "Huawei Pura 70",
+    "brand": "Huawei",
+    "series": "Pura",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0fsTufpW"
+  },
+
+  {
+    "id": "huawei-mate-x7",
+    "name": "Huawei Mate X7",
+    "brand": "Huawei",
+    "series": "Mate",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0cv7taMl"
+  },
+  {
+    "id": "huawei-mate-x6",
+    "name": "Huawei Mate X6",
+    "brand": "Huawei",
+    "series": "Mate",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0cyt3spg"
+  },
+
+  {
+    "id": "huawei-nova-14-pro",
+    "name": "Huawei nova 14 Pro",
+    "brand": "Huawei",
+    "series": "Nova",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0aUih3bI"
+  },
+  {
+    "id": "huawei-nova-13-pro",
+    "name": "Huawei nova 13 Pro",
+    "brand": "Huawei",
+    "series": "Nova",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B04qqTLSb"
+  },
+  {
+    "id": "huawei-nova-12s",
+    "name": "Huawei nova 12s",
+    "brand": "Huawei",
+    "series": "Nova",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0cg4Bzvk"
+  },
+  {
+    "id": "huawei-nova-12i",
+    "name": "Huawei nova 12i",
+    "brand": "Huawei",
+    "series": "Nova",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B0eJzvdq2"
+  },
+  {
+    "id": "huawei-nova-12-se",
+    "name": "Huawei nova 12 SE",
+    "brand": "Huawei",
+    "series": "Nova",
+    "image": "",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://link.amazon/B085RETDF"
   }
-]
+    ]
