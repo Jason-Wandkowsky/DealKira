@@ -7,6 +7,7 @@
   <title>Telefone – DealKira</title>
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -235,13 +236,11 @@
       color: #111;
     }
 
-    .samsung-series-section,
-    .iphone-series-section {
+    .samsung-series-section {
       display: none;
     }
 
-    .samsung-series-section.show,
-    .iphone-series-section.show {
+    .samsung-series-section.show {
       display: block;
     }
 
@@ -360,6 +359,7 @@
     }
 
     @media (max-width: 800px) {
+
       .logo {
         width: 225px;
       }
@@ -367,9 +367,11 @@
       .logo img {
         height: 275px;
       }
+
     }
 
     @media (max-width: 550px) {
+
       header {
         padding: 0 5%;
       }
@@ -462,9 +464,11 @@
         right: 8px;
         font-size: 21px;
       }
+
     }
 
     @media (max-width: 380px) {
+
       .logo {
         width: 170px;
       }
@@ -477,13 +481,16 @@
         width: 45px;
         height: 45px;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
+
   <a href="index.html" class="logo">
     <img src="20879_nobg (1).png" alt="DealKira">
   </a>
@@ -501,6 +508,7 @@
   </button>
 
   <div class="menu-panel" id="menuPanel">
+
     <a href="konto.html">
       <span class="menu-icon">👤</span>
       Konto / Anmelden
@@ -527,28 +535,48 @@
       <span class="menu-icon">⚙️</span>
       Einstellungen
     </a>
+
   </div>
+
 </header>
 
 
 <section class="hero">
+
   <h1>Telefone</h1>
-  <p>Smartphones verschiedener Marken, Preisklassen und Ausstattungen entdecken</p>
+
+  <p>
+    Smartphones verschiedener Marken, Preisklassen und Ausstattungen entdecken
+  </p>
+
 </section>
 
 
 <main class="products-section">
 
   <div class="products-top">
-    <button class="filter-button" onclick="toggleFilter()">⚙️ Filter</button>
+
+    <button
+      class="filter-button"
+      onclick="toggleFilter()"
+    >
+      ⚙️ Filter
+    </button>
+
   </div>
 
 
-  <div class="filter-message" id="filterMessage">
+  <div
+    class="filter-message"
+    id="filterMessage"
+  >
 
-    <div class="filter-title">Hersteller</div>
+    <div class="filter-title">
+      Hersteller
+    </div>
 
     <div class="filter-group">
+
       <button
         class="filter-option"
         id="filterSamsung"
@@ -566,12 +594,18 @@
       >
         iPhone
       </button>
+
     </div>
 
 
-    <div class="samsung-series-section" id="samsungSeriesSection">
+    <div
+      class="samsung-series-section"
+      id="samsungSeriesSection"
+    >
 
-      <div class="filter-title">Samsung Serien</div>
+      <div class="filter-title">
+        Samsung Serien
+      </div>
 
       <div class="filter-group">
 
@@ -612,79 +646,7 @@
         </button>
 
       </div>
-    </div>
 
-
-    <div class="iphone-series-section" id="iphoneSeriesSection">
-
-      <div class="filter-title">iPhone Serien</div>
-
-      <div class="filter-group">
-
-        <button
-          class="filter-option"
-          id="filterIphone17"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('17')"
-        >
-          iPhone 17
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone16"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('16')"
-        >
-          iPhone 16
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone15"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('15')"
-        >
-          iPhone 15
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone14"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('14')"
-        >
-          iPhone 14
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone13"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('13')"
-        >
-          iPhone 13
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone12"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('12')"
-        >
-          iPhone 12
-        </button>
-
-        <button
-          class="filter-option"
-          id="filterIphone11"
-          type="button"
-          onclick="toggleIphoneSeriesFilter('11')"
-        >
-          iPhone 11
-        </button>
-
-      </div>
     </div>
 
   </div>
@@ -693,1135 +655,1593 @@
   <div class="products">
 
 
-    <!-- ======================================================
-         SAMSUNG S-SERIES
-    ======================================================= -->
+    <!-- =========================
+         SAMSUNG GALAXY S23+
+    ========================= -->
 
-    <div
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s23-plus"
       data-product-name="Samsung Galaxy S23+"
       data-product-image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530814_sd.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4yihWKi"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S23+ zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530814_sd.jpg"
           alt="Samsung Galaxy S23+"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S23+</h2>
-        <a class="product-button" href="https://amzn.to/4yihWKi" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4yihWKi"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S23 ULTRA
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s23-ultra"
       data-product-name="Samsung Galaxy S23 Ultra"
       data-product-image="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_142470444?align=center&cdx=1800&cdy=1800&cox=0&coy=0&ex=1800&ey=1800&format=jpg&quality=80&resizesource=&sp=yes&strip=yes&trim=&unsharp=1.5x1+0.7+0.02&x=1800&y=1800"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/3Vc58Xd"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S23 Ultra zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_142470444?align=center&cdx=1800&cdy=1800&cox=0&coy=0&ex=1800&ey=1800&format=jpg&quality=80&resizesource=&sp=yes&strip=yes&trim=&unsharp=1.5x1+0.7+0.02&x=1800&y=1800"
           alt="Samsung Galaxy S23 Ultra"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S23 Ultra</h2>
-        <a class="product-button" href="https://amzn.to/3Vc58Xd" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/3Vc58Xd"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S24 ULTRA
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s24-ultra"
       data-product-name="Samsung Galaxy S24 Ultra"
       data-product-image="https://www.mozillion.com/storage/product_model_images/1747003494_samsung-galaxy-s24-ultra-titanium-violet-front.png"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4z08Cuz"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S24 Ultra zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://www.mozillion.com/storage/product_model_images/1747003494_samsung-galaxy-s24-ultra-titanium-violet-front.png"
           alt="Samsung Galaxy S24 Ultra"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S24 Ultra</h2>
-        <a class="product-button" href="https://amzn.to/4z08Cuz" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4z08Cuz"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S25
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s25"
       data-product-name="Samsung Galaxy S25"
       data-product-image="https://canalpc.es/1703248-large_default/samsung-galaxy-s25-12gb-256gb-62-5g-verde-menta.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/46J9eso"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S25 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://canalpc.es/1703248-large_default/samsung-galaxy-s25-12gb-256gb-62-5g-verde-menta.jpg"
           alt="Samsung Galaxy S25"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S25</h2>
-        <a class="product-button" href="https://amzn.to/46J9eso" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/46J9eso"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S25+
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s25-plus"
       data-product-name="Samsung Galaxy S25+"
       data-product-image="https://elhodatell.com/wp-content/uploads/2025/09/Samsung-Galaxy-S25-Plus-256GB-12GB.png"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4hmM3ca"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S25+ zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://elhodatell.com/wp-content/uploads/2025/09/Samsung-Galaxy-S25-Plus-256GB-12GB.png"
           alt="Samsung Galaxy S25+"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S25+</h2>
-        <a class="product-button" href="https://amzn.to/4hmM3ca" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4hmM3ca"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S25 ULTRA
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s25-ultra"
       data-product-name="Samsung Galaxy S25 Ultra"
       data-product-image="https://www.sferis.pl/img/480/284489/O5J7X4h00000a1S794t432n7v3P220n1.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4yWYrqC"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S25 Ultra zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://www.sferis.pl/img/480/284489/O5J7X4h00000a1S794t432n7v3P220n1.jpg"
           alt="Samsung Galaxy S25 Ultra"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S25 Ultra</h2>
-        <a class="product-button" href="https://amzn.to/4yWYrqC" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4yWYrqC"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S25 EDGE
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s25-edge"
       data-product-name="Samsung Galaxy S25 Edge"
       data-product-image="https://api.samsungmobilepress.com/file/45620DA5F6886EEAD98BB82786DCB3154A817FB7154A249D281DA06E4E5F5EF42D7149DB122DE1D18A551E7FE350A6B250346BA90DC44FD5B24FE1E15335408EB612FB33ED6D039BA1A46BD548C604C4476731AAC416D9CEC5A21863B3FBA6CE16D707F52F314A54C811C760245BEC05BF12FBDCCA1FDCA1B617A80C2DE5FB977A1E32D71A389F1960A6BF7CB58E9BC9"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4yOzVI6"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S25 Edge zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://api.samsungmobilepress.com/file/45620DA5F6886EEAD98BB82786DCB3154A817FB7154A249D281DA06E4E5F5EF42D7149DB122DE1D18A551E7FE350A6B250346BA90DC44FD5B24FE1E15335408EB612FB33ED6D039BA1A46BD548C604C4476731AAC416D9CEC5A21863B3FBA6CE16D707F52F314A54C811C760245BEC05BF12FBDCCA1FDCA1B617A80C2DE5FB977A1E32D71A389F1960A6BF7CB58E9BC9"
           alt="Samsung Galaxy S25 Edge"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S25 Edge</h2>
-        <a class="product-button" href="https://amzn.to/4yOzVI6" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4yOzVI6"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S26
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s26"
       data-product-name="Samsung Galaxy S26"
       data-product-image="https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/197/19720/19720232.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/3TNAoLK"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S26 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/197/19720/19720232.jpg"
           alt="Samsung Galaxy S26"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S26</h2>
-        <a class="product-button" href="https://amzn.to/3TNAoLK" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/3TNAoLK"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S26+
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
       data-product-id="samsung-galaxy-s26-plus"
       data-product-name="Samsung Galaxy S26+"
       data-product-image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/15da9eb2-5007-4f14-9df6-a67af3667b99.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4xHIgfC"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S26+ zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/15da9eb2-5007-4f14-9df6-a67af3667b99.jpg"
           alt="Samsung Galaxy S26+"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S26+</h2>
-        <a class="product-button" href="https://amzn.to/4xHIgfC" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
+
+        <a
+          href="https://amzn.to/4xHIgfC"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div
+    <!-- =========================
+         SAMSUNG GALAXY S26 ULTRA
+    ========================= -->
+
+    <article
       class="product-card"
       data-brand="Samsung"
       data-series="S"
-      data-product-id="samsung-galaxy-s26-ultra"
+      data-product-id="samsung-galaxy-s26-ultra-b0g58wv7x4"
       data-product-name="Samsung Galaxy S26 Ultra"
       data-product-image="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
+      data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4yL6uGH"
     >
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy S26 Ultra zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
       <div class="product-image">
         <img
           src="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
           alt="Samsung Galaxy S26 Ultra"
-          loading="lazy"
         >
       </div>
 
       <div class="product-content">
+
         <h2>Samsung Galaxy S26 Ultra</h2>
-        <a class="product-button" href="https://amzn.to/4yL6uGH" target="_blank" rel="noopener noreferrer">
-          Bei Amazon ansehen
-        </a>
-      </div>
-    </div>
 
-
-    <!-- ======================================================
-         SAMSUNG A-SERIES
-    ======================================================= -->
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a57-5g"
-      data-product-name="Samsung Galaxy A57 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/18E681C10C0D702BFCF01E6E15E56D96295054140B1A83DBE3A053A74B7BBF21C0577DA7062B15BEC2443EC001ACF1B38B331348644D2AE97CBD8A1900008CC38841FFB964D571401C7E8A8C317289C5776F2FD53E88BD7EFE5FA83B7C674323EADA5AB03045BB2ADFAA0CC35CBB836D7F3F6EC0190F511F5D2C67E4A279DB94"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4y9KQfn">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/18E681C10C0D702BFCF01E6E15E56D96295054140B1A83DBE3A053A74B7BBF21C0577DA7062B15BEC2443EC001ACF1B38B331348644D2AE97CBD8A1900008CC38841FFB964D571401C7E8A8C317289C5776F2FD53E88BD7EFE5FA83B7C674323EADA5AB03045BB2ADFAA0CC35CBB836D7F3F6EC0190F511F5D2C67E4A279DB94" alt="Samsung Galaxy A57 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A57 5G</h2>
-        <a class="product-button" href="https://amzn.to/4y9KQfn" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a56-5g"
-      data-product-name="Samsung Galaxy A56 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/40C8A8320E66A4CAC1D4C645A46F70A08A6D3C1507FC8C4E8B5824624F49D488520B61EDFFEB06BFCA15F1EBBCAE7E12A54C4F5DEA14FB8E988573124D9F9D5CE6FEA7132429C5C5BA97F28D0AD1D02ACF46167294946C7BFF3383555E03789FB445E76A0C97032FAB04199698385B4326A14D6D82F1172D6DE91F72028D4AFC6022AF43EBD8CBAC88561FE5A8DEC663"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4d2BhGP">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/40C8A8320E66A4CAC1D4C645A46F70A08A6D3C1507FC8C4E8B5824624F49D488520B61EDFFEB06BFCA15F1EBBCAE7E12A54C4F5DEA14FB8E988573124D9F9D5CE6FEA7132429C5C5BA97F28D0AD1D02ACF46167294946C7BFF3383555E03789FB445E76A0C97032FAB04199698385B4326A14D6D82F1172D6DE91F72028D4AFC6022AF43EBD8CBAC88561FE5A8DEC663" alt="Samsung Galaxy A56 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A56 5G</h2>
-        <a class="product-button" href="https://amzn.to/4d2BhGP" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a55-5g"
-      data-product-name="Samsung Galaxy A55 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/FBE41F600B7917C199C01E3D15C17AFB3F1FD1C32B128A7A5EA9F2899425A7083AD1FBD7973313C9381AC2B68AEF04CB0898EBFEFA9E3B0E2ACC07FFD66B49CC05E613A5C397A05D30A0437BF30C314AE486D6C6C58B7F543331E18A09F97BA2D6E7B60474D759A8FB2711094C6D38714969BE4822A2642309065E24FB31E338"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4yg1b2o">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/FBE41F600B7917C199C01E3D15C17AFB3F1FD1C32B128A7A5EA9F2899425A7083AD1FBD7973313C9381AC2B68AEF04CB0898EBFEFA9E3B0E2ACC07FFD66B49CC05E613A5C397A05D30A0437BF30C314AE486D6C6C58B7F543331E18A09F97BA2D6E7B60474D759A8FB2711094C6D38714969BE4822A2642309065E24FB31E338" alt="Samsung Galaxy A55 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A55 5G</h2>
-        <a class="product-button" href="https://amzn.to/4yg1b2o" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a36-5g"
-      data-product-name="Samsung Galaxy A36 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/E6E2205D573E1C5065C8035B83D136994B125017B73A8B04FCFE2DFC0917D74E66D9B6FB8742ACA31B3D8E61C4E2E5B28EC875AB3DBC7DE0C1018E55DAD5208C5D4AD55E568C7D46939D39E279A73640AA4C17D5A5486F8712A4CEB03AB8DEDDD4F8B23B7402F5467F52D76137945DFC8B3BB5913D9D6820BDC329E69DBA23257B19065CE666CE0C56A52008866FC361"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4AtQZVm">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/E6E2205D573E1C5065C8035B83D136994B125017B73A8B04FCFE2DFC0917D74E66D9B6FB8742ACA31B3D8E61C4E2E5B28EC875AB3DBC7DE0C1018E55DAD5208C5D4AD55E568C7D46939D39E279A73640AA4C17D5A5486F8712A4CEB03AB8DEDDD4F8B23B7402F5467F52D76137945DFC8B3BB5913D9D6820BDC329E69DBA23257B19065CE666CE0C56A52008866FC361" alt="Samsung Galaxy A36 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A36 5G</h2>
-        <a class="product-button" href="https://amzn.to/4AtQZVm" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a35-5g"
-      data-product-name="Samsung Galaxy A35 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/898EFB6591C797282773FB49C314D8167C5A983378F0FF39BABB915EC34122475C7C4CE657C0350B8AB37FF8D211F291AFB8D737709019F7D1DD5DEA8581FA9C190094334202145B1034F42DE3682222245F57CC9B97708D7EA381DF3CD8072CA4AF2645B4EAD073F5713AD32AA7CA25A9E193A1B40029EEC4BFF6A9EDFC9EBE"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/46JzLWp">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/898EFB6591C797282773FB49C314D8167C5A983378F0FF39BABB915EC34122475C7C4CE657C0350B8AB37FF8D211F291AFB8D737709019F7D1DD5DEA8581FA9C190094334202145B1034F42DE3682222245F57CC9B97708D7EA381DF3CD8072CA4AF2645B4EAD073F5713AD32AA7CA25A9E193A1B40029EEC4BFF6A9EDFC9EBE" alt="Samsung Galaxy A35 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A35 5G</h2>
-        <a class="product-button" href="https://amzn.to/46JzLWp" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a27-5g"
-      data-product-name="Samsung Galaxy A27 5G"
-      data-product-image="https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Galaxy_A27_5G_front_panel.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4AxY07s">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Galaxy_A27_5G_front_panel.jpg" alt="Samsung Galaxy A27 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A27 5G</h2>
-        <a class="product-button" href="https://amzn.to/4AxY07s" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a26-5g"
-      data-product-name="Samsung Galaxy A26 5G"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/55AA522CE52107988D3F3C8EC50C107B4FF8C79E1FACA7F8B71B15055FF9547BB7A7C75295ED2CE99A5552D61FA49044F6A36A56EA1651602ED85A7FE4989EDBE4A63ABCB24B6C8DF87564D5596A0BAC889CA4FEA3D99F6B079F65480DF25D8DF90FC33AC45294EC8D546BD3542F44FD3DF9D06B8E6E7421B7E5FCD7AABADBB1DBD349815B66ABB2CAD4EB056C6C08FB"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4heKE8U">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/55AA522CE52107988D3F3C8EC50C107B4FF8C79E1FACA7F8B71B15055FF9547BB7A7C75295ED2CE99A5552D61FA49044F6A36A56EA1651602ED85A7FE4989EDBE4A63ABCB24B6C8DF87564D5596A0BAC889CA4FEA3D99F6B079F65480DF25D8DF90FC33AC45294EC8D546BD3542F44FD3DF9D06B8E6E7421B7E5FCD7AABADBB1DBD349815B66ABB2CAD4EB056C6C08FB" alt="Samsung Galaxy A26 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A26 5G</h2>
-        <a class="product-button" href="https://amzn.to/4heKE8U" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a17-5g"
-      data-product-name="Samsung Galaxy A17 5G"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A17_5G_2026.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4rsE1Dc">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A17_5G_2026.jpg" alt="Samsung Galaxy A17 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A17 5G</h2>
-        <a class="product-button" href="https://amzn.to/4rsE1Dc" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a16-5g"
-      data-product-name="Samsung Galaxy A16 5G"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A16_5G_2025.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4yYjUzn">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A16_5G_2025.jpg" alt="Samsung Galaxy A16 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A16 5G</h2>
-        <a class="product-button" href="https://amzn.to/4yYjUzn" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="A"
-      data-product-id="samsung-galaxy-a15-5g"
-      data-product-name="Samsung Galaxy A15 5G"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A15_5G_2024.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4rsE7e2">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A15_5G_2024.jpg" alt="Samsung Galaxy A15 5G" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy A15 5G</h2>
-        <a class="product-button" href="https://amzn.to/4rsE7e2" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         SAMSUNG Z-SERIES
-    ======================================================= -->
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-fold8"
-      data-product-name="Samsung Galaxy Z Fold8"
-      data-product-image="https://images.samsung.com/hk_en/smartphones/galaxy-z-fold8/buy/H8_Global_KV_Video_PC_944x510.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4jnBVCs">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://images.samsung.com/hk_en/smartphones/galaxy-z-fold8/buy/H8_Global_KV_Video_PC_944x510.jpg" alt="Samsung Galaxy Z Fold8" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Fold8</h2>
-        <a class="product-button" href="https://amzn.to/4jnBVCs" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-flip8"
-      data-product-name="Samsung Galaxy Z Flip8"
-      data-product-image="https://images.samsung.com/hk_en/smartphones/galaxy-z-flip8/buy/B8_Global_KV_Video_PC_944x510.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/46HKSzi">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://images.samsung.com/hk_en/smartphones/galaxy-z-flip8/buy/B8_Global_KV_Video_PC_944x510.jpg" alt="Samsung Galaxy Z Flip8" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Flip8</h2>
-        <a class="product-button" href="https://amzn.to/46HKSzi" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-flip7"
-      data-product-name="Samsung Galaxy Z Flip7"
-      data-product-image="https://images.samsung.com/sg/smartphones/galaxy-z-flip7/images/galaxy-z-flip7-share-image.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4hMuOSQ">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://images.samsung.com/sg/smartphones/galaxy-z-flip7/images/galaxy-z-flip7-share-image.jpg" alt="Samsung Galaxy Z Flip7" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Flip7</h2>
-        <a class="product-button" href="https://amzn.to/4hMuOSQ" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-fold6"
-      data-product-name="Samsung Galaxy Z Fold6"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Z_Fold6.png"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/47hFPpd">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Z_Fold6.png" alt="Samsung Galaxy Z Fold6" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Fold6</h2>
-        <a class="product-button" href="https://amzn.to/47hFPpd" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-flip6"
-      data-product-name="Samsung Galaxy Z Flip6"
-      data-product-image="https://images.samsung.com/ca/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4hqNbvg">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://images.samsung.com/ca/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true" alt="Samsung Galaxy Z Flip6" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Flip6</h2>
-        <a class="product-button" href="https://amzn.to/4hqNbvg" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-fold5"
-      data-product-name="Samsung Galaxy Z Fold5"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Fold-5_vnutorny-displej.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4d7ueN4">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Fold-5_vnutorny-displej.jpg" alt="Samsung Galaxy Z Fold5" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Fold5</h2>
-        <a class="product-button" href="https://amzn.to/4d7ueN4" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="Z"
-      data-product-id="samsung-galaxy-z-flip5"
-      data-product-name="Samsung Galaxy Z Flip5"
-      data-product-image="https://images.samsung.com/is/image/samsung/p6pim/de/sm-f731blgdeub/gallery/de-galaxy-z-flip5-f731-471133-sm-f731blgdeub-thumb-537350789"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4d2IiY2">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://images.samsung.com/is/image/samsung/p6pim/de/sm-f731blgdeub/gallery/de-galaxy-z-flip5-f731-471133-sm-f731blgdeub-thumb-537350789" alt="Samsung Galaxy Z Flip5" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy Z Flip5</h2>
-        <a class="product-button" href="https://amzn.to/4d2IiY2" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         SAMSUNG XCOVER
-    ======================================================= -->
-
-    <div class="product-card" data-brand="Samsung" data-series="XCover"
-      data-product-id="samsung-galaxy-xcover7-pro"
-      data-product-name="Samsung Galaxy XCover7 Pro"
-      data-product-image="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4joroqF">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253" alt="Samsung Galaxy XCover7 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy XCover7 Pro</h2>
-        <a class="product-button" href="https://amzn.to/4joroqF" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="XCover"
-      data-product-id="samsung-galaxy-xcover7"
-      data-product-name="Samsung Galaxy XCover7"
-      data-product-image="https://api.samsungmobilepress.com/file/D85597BAEC35F0703966A1033803F9145D35FB5A4D945D3A418234154250A0218ECC1F379B861FF347075AF5EE2ECA7F603B444C47B1FAF5AEF55B0838FF1229043B26BFFADC550B0D47489418273C5CF36E98AF1C66283F9652A13A265CD066E9C077C0CEB4ECE999B50211A8FF9444DB3CDF809AF10A7ED2CAC655235C280C"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4hm2xmh">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/file/D85597BAEC35F0703966A1033803F9145D35FB5A4D945D3A418234154250A0218ECC1F379B861FF347075AF5EE2ECA7F603B444C47B1FAF5AEF55B0838FF1229043B26BFFADC550B0D47489418273C5CF36E98AF1C66283F9652A13A265CD066E9C077C0CEB4ECE999B50211A8FF9444DB3CDF809AF10A7ED2CAC655235C280C" alt="Samsung Galaxy XCover7" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy XCover7</h2>
-        <a class="product-button" href="https://amzn.to/4hm2xmh" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="Samsung" data-series="XCover"
-      data-product-id="samsung-galaxy-xcover6-pro"
-      data-product-name="Samsung Galaxy XCover6 Pro"
-      data-product-image="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/4rzLAZ0">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10" alt="Samsung Galaxy XCover6 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Samsung Galaxy XCover6 Pro</h2>
-        <a class="product-button" href="https://amzn.to/4rzLAZ0" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 11
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="11"
-      data-product-id="iphone-11"
-      data-product-name="Apple iPhone 11"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11.jpg" alt="Apple iPhone 11" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 11</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+11" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="11"
-      data-product-id="iphone-11-pro"
-      data-product-name="Apple iPhone 11 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11_Pro.jpg" alt="Apple iPhone 11 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 11 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+11+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="11"
-      data-product-id="iphone-11-pro-max"
-      data-product-name="Apple iPhone 11 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11_Pro_Max.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_11_Pro_Max.jpg" alt="Apple iPhone 11 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 11 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+11+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 12
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="12"
-      data-product-id="iphone-12"
-      data-product-name="Apple iPhone 12"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12.jpg" alt="Apple iPhone 12" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 12</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+12" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="12"
-      data-product-id="iphone-12-mini"
-      data-product-name="Apple iPhone 12 mini"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_mini.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_mini.jpg" alt="Apple iPhone 12 mini" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 12 mini</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+12+mini" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="12"
-      data-product-id="iphone-12-pro"
-      data-product-name="Apple iPhone 12 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro.jpg" alt="Apple iPhone 12 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 12 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+12+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="12"
-      data-product-id="iphone-12-pro-max"
-      data-product-name="Apple iPhone 12 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro_Max.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro_Max.jpg" alt="Apple iPhone 12 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 12 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+12+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 13
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="13"
-      data-product-id="iphone-13"
-      data-product-name="Apple iPhone 13"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13.jpg" alt="Apple iPhone 13" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 13</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+13" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="13"
-      data-product-id="iphone-13-mini"
-      data-product-name="Apple iPhone 13 mini"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_mini.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_mini.jpg" alt="Apple iPhone 13 mini" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 13 mini</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+13+mini" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="13"
-      data-product-id="iphone-13-pro"
-      data-product-name="Apple iPhone 13 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Pro.jpg" alt="Apple iPhone 13 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 13 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+13+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="13"
-      data-product-id="iphone-13-pro-max"
-      data-product-name="Apple iPhone 13 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Pro_Max.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Pro_Max.jpg" alt="Apple iPhone 13 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 13 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+13+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 14
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="14"
-      data-product-id="iphone-14"
-      data-product-name="Apple iPhone 14"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14.jpg" alt="Apple iPhone 14" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 14</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+14" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="14"
-      data-product-id="iphone-14-plus"
-      data-product-name="Apple iPhone 14 Plus"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Plus.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Plus.jpg" alt="Apple iPhone 14 Plus" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 14 Plus</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+14+Plus" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="14"
-      data-product-id="iphone-14-pro"
-      data-product-name="Apple iPhone 14 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro.jpg" alt="Apple iPhone 14 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 14 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+14+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="14"
-      data-product-id="iphone-14-pro-max"
-      data-product-name="Apple iPhone 14 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro_Max.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro_Max.jpg" alt="Apple iPhone 14 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 14 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+14+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 15
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="15"
-      data-product-id="iphone-15"
-      data-product-name="Apple iPhone 15"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15.jpg" alt="Apple iPhone 15" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 15</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+15" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="15"
-      data-product-id="iphone-15-plus"
-      data-product-name="Apple iPhone 15 Plus"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Plus.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Plus.jpg" alt="Apple iPhone 15 Plus" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 15 Plus</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+15+Plus" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="15"
-      data-product-id="iphone-15-pro"
-      data-product-name="Apple iPhone 15 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro.jpg" alt="Apple iPhone 15 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 15 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+15+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="15"
-      data-product-id="iphone-15-pro-max"
-      data-product-name="Apple iPhone 15 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro_Max.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro_Max.jpg" alt="Apple iPhone 15 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 15 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+15+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 16
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="16"
-      data-product-id="iphone-16e"
-      data-product-name="Apple iPhone 16e"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16e.png"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16e.png" alt="Apple iPhone 16e" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 16e</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+16e" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="16"
-      data-product-id="iphone-16-plus"
-      data-product-name="Apple iPhone 16 Plus"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Plus.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Plus.jpg" alt="Apple iPhone 16 Plus" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 16 Plus</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+16+Plus" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="16"
-      data-product-id="iphone-16-pro"
-      data-product-name="Apple iPhone 16 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro.jpg" alt="Apple iPhone 16 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 16 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+16+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="16"
-      data-product-id="iphone-16-pro-max"
-      data-product-name="Apple iPhone 16 Pro Max"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_Max_%2854252176444%29.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_Max_%2854252176444%29.jpg" alt="Apple iPhone 16 Pro Max" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 16 Pro Max</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+16+Pro+Max" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- ======================================================
-         IPHONE 17
-    ======================================================= -->
-
-    <div class="product-card" data-brand="iPhone" data-series="17"
-      data-product-id="iphone-17"
-      data-product-name="Apple iPhone 17"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_2026_%281%29.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_2026_%281%29.jpg" alt="Apple iPhone 17" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 17</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+17" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="17"
-      data-product-id="iphone-air"
-      data-product-name="Apple iPhone Air"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_Air.png"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_Air.png" alt="Apple iPhone Air" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone Air</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+Air" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <div class="product-card" data-brand="iPhone" data-series="17"
-      data-product-id="iphone-17-pro"
-      data-product-name="Apple iPhone 17 Pro"
-      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Pro.jpg"
-      data-product-shop="Amazon">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-      <div class="product-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Pro.jpg" alt="Apple iPhone 17 Pro" loading="lazy">
-      </div>
-      <div class="product-content">
-        <h2>Apple iPhone 17 Pro</h2>
-        <a class="product-button" href="https://www.amazon.de/s?k=iPhone+17+Pro" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a>
-      </div>
-    </div>
-
-
-    <!-- Bestehendes iPhone 17 Pro Max -->
-
-    <div class="product-card" data-brand="iPhone" data-series="17"
-      data-product-id="iphone-17-pro-max"
-      data-product-name="Apple iPhone 17 Pro Max"
-      data-product-image="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
-      data-product-shop="Amazon"
-      data-product-link="https://amzn.to/3VsXwj3">
-      <button class="favorite-button" onclick="toggleFavorite(this)">♡</button>
-
-      <div class="product-image">
-        <img
-          src="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
-          alt="Apple iPhone 17 Pro Max"
-          loading="lazy"
-        >
-      </div>
-
-      <div class="product-content">
-        <h2>Apple iPhone 17 Pro Max</h2>
         <a
+          href="https://amzn.to/4yL6uGH"
           class="product-button"
-          href="https://amzn.to/3VsXwj3"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Bei Amazon ansehen
+          Zum Deal
         </a>
+
       </div>
-    </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A57 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a57-5g"
+      data-product-name="Samsung Galaxy A57 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/18E681C10C0D702BFCF01E6E15E56D96295054140B1A83DBE3A053A74B7BBF21C0577DA7062B15BEC2443EC001ACF1B38B331348644D2AE97CBD8A1900008CC38841FFB964D571401C7E8A8C317289C5776F2FD53E88BD7EFE5FA83B7C674323EADA5AB03045BB2ADFAA0CC35CBB836D7F3F6EC0190F511F5D2C67E4A279DB94"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4y9KQfn"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A57 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/18E681C10C0D702BFCF01E6E15E56D96295054140B1A83DBE3A053A74B7BBF21C0577DA7062B15BEC2443EC001ACF1B38B331348644D2AE97CBD8A1900008CC38841FFB964D571401C7E8A8C317289C5776F2FD53E88BD7EFE5FA83B7C674323EADA5AB03045BB2ADFAA0CC35CBB836D7F3F6EC0190F511F5D2C67E4A279DB94"
+          alt="Samsung Galaxy A57 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A57 5G</h2>
+
+        <a
+          href="https://amzn.to/4y9KQfn"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A56 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a56-5g"
+      data-product-name="Samsung Galaxy A56 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/40C8A8320E66A4CAC1D4C645A46F70A08A6D3C1507FC8C4E8B5824624F49D488520B61EDFFEB06BFCA15F1EBBCAE7E12A54C4F5DEA14FB8E988573124D9F9D5CE6FEA7132429C5C5BA97F28D0AD1D02ACF46167294946C7BFF3383555E03789FB445E76A0C97032FAB04199698385B4326A14D6D82F1172D6DE91F72028D4AFC6022AF43EBD8CBAC88561FE5A8DEC663"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4d2BhGP"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A56 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/40C8A8320E66A4CAC1D4C645A46F70A08A6D3C1507FC8C4E8B5824624F49D488520B61EDFFEB06BFCA15F1EBBCAE7E12A54C4F5DEA14FB8E988573124D9F9D5CE6FEA7132429C5C5BA97F28D0AD1D02ACF46167294946C7BFF3383555E03789FB445E76A0C97032FAB04199698385B4326A14D6D82F1172D6DE91F72028D4AFC6022AF43EBD8CBAC88561FE5A8DEC663"
+          alt="Samsung Galaxy A56 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A56 5G</h2>
+
+        <a
+          href="https://amzn.to/4d2BhGP"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A55 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a55-5g"
+      data-product-name="Samsung Galaxy A55 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/FBE41F600B7917C199C01E3D15C17AFB3F1FD1C32B128A7A5EA9F2899425A7083AD1FBD7973313C9381AC2B68AEF04CB0898EBFEFA9E3B0E2ACC07FFD66B49CC05E613A5C397A05D30A0437BF30C314AE486D6C6C58B7F543331E18A09F97BA2D6E7B60474D759A8FB2711094C6D38714969BE4822A2642309065E24FB31E338"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4yg1b2o"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A55 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/FBE41F600B7917C199C01E3D15C17AFB3F1FD1C32B128A7A5EA9F2899425A7083AD1FBD7973313C9381AC2B68AEF04CB0898EBFEFA9E3B0E2ACC07FFD66B49CC05E613A5C397A05D30A0437BF30C314AE486D6C6C58B7F543331E18A09F97BA2D6E7B60474D759A8FB2711094C6D38714969BE4822A2642309065E24FB31E338"
+          alt="Samsung Galaxy A55 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A55 5G</h2>
+
+        <a
+          href="https://amzn.to/4yg1b2o"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A36 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a36-5g"
+      data-product-name="Samsung Galaxy A36 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/E6E2205D573E1C5065C8035B83D136994B125017B73A8B04FCFE2DFC0917D74E66D9B6FB8742ACA31B3D8E61C4E2E5B28EC875AB3DBC7DE0C1018E55DAD5208C5D4AD55E568C7D46939D39E279A73640AA4C17D5A5486F8712A4CEB03AB8DEDDD4F8B23B7402F5467F52D76137945DFC8B3BB5913D9D6820BDC329E69DBA23257B19065CE666CE0C56A52008866FC361"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4AtQZVm"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A36 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/E6E2205D573E1C5065C8035B83D136994B125017B73A8B04FCFE2DFC0917D74E66D9B6FB8742ACA31B3D8E61C4E2E5B28EC875AB3DBC7DE0C1018E55DAD5208C5D4AD55E568C7D46939D39E279A73640AA4C17D5A5486F8712A4CEB03AB8DEDDD4F8B23B7402F5467F52D76137945DFC8B3BB5913D9D6820BDC329E69DBA23257B19065CE666CE0C56A52008866FC361"
+          alt="Samsung Galaxy A36 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A36 5G</h2>
+
+        <a
+          href="https://amzn.to/4AtQZVm"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A35 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a35-5g"
+      data-product-name="Samsung Galaxy A35 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/898EFB6591C797282773FB49C314D8167C5A983378F0FF39BABB915EC34122475C7C4CE657C0350B8AB37FF8D211F291AFB8D737709019F7D1DD5DEA8581FA9C190094334202145B1034F42DE3682222245F57CC9B97708D7EA381DF3CD8072CA4AF2645B4EAD073F5713AD32AA7CA25A9E193A1B40029EEC4BFF6A9EDFC9EBE"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/46JzLWp"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A35 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/898EFB6591C797282773FB49C314D8167C5A983378F0FF39BABB915EC34122475C7C4CE657C0350B8AB37FF8D211F291AFB8D737709019F7D1DD5DEA8581FA9C190094334202145B1034F42DE3682222245F57CC9B97708D7EA381DF3CD8072CA4AF2645B4EAD073F5713AD32AA7CA25A9E193A1B40029EEC4BFF6A9EDFC9EBE"
+          alt="Samsung Galaxy A35 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A35 5G</h2>
+
+        <a
+          href="https://amzn.to/46JzLWp"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A27 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a27-5g"
+      data-product-name="Samsung Galaxy A27 5G"
+      data-product-image="https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Galaxy_A27_5G_front_panel.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4AxY07s"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A27 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Galaxy_A27_5G_front_panel.jpg"
+          alt="Samsung Galaxy A27 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A27 5G</h2>
+
+        <a
+          href="https://amzn.to/4AxY07s"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A26 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a26-5g"
+      data-product-name="Samsung Galaxy A26 5G"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/55AA522CE52107988D3F3C8EC50C107B4FF8C79E1FACA7F8B71B15055FF9547BB7A7C75295ED2CE99A5552D61FA49044F6A36A56EA1651602ED85A7FE4989EDBE4A63ABCB24B6C8DF87564D5596A0BAC889CA4FEA3D99F6B079F65480DF25D8DF90FC33AC45294EC8D546BD3542F44FD3DF9D06B8E6E7421B7E5FCD7AABADBB1DBD349815B66ABB2CAD4EB056C6C08FB"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4heKE8U"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A26 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/55AA522CE52107988D3F3C8EC50C107B4FF8C79E1FACA7F8B71B15055FF9547BB7A7C75295ED2CE99A5552D61FA49044F6A36A56EA1651602ED85A7FE4989EDBE4A63ABCB24B6C8DF87564D5596A0BAC889CA4FEA3D99F6B079F65480DF25D8DF90FC33AC45294EC8D546BD3542F44FD3DF9D06B8E6E7421B7E5FCD7AABADBB1DBD349815B66ABB2CAD4EB056C6C08FB"
+          alt="Samsung Galaxy A26 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A26 5G</h2>
+
+        <a
+          href="https://amzn.to/4heKE8U"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A17 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a17-5g"
+      data-product-name="Samsung Galaxy A17 5G"
+      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A17_5G_2026.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4rsE1Dc"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A17 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A17_5G_2026.jpg"
+          alt="Samsung Galaxy A17 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A17 5G</h2>
+
+        <a
+          href="https://amzn.to/4rsE1Dc"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A16 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a16-5g"
+      data-product-name="Samsung Galaxy A16 5G"
+      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A16_5G_2025.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4yYjUzn"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A16 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A16_5G_2025.jpg"
+          alt="Samsung Galaxy A16 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A16 5G</h2>
+
+        <a
+          href="https://amzn.to/4yYjUzn"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY A15 5G
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="A"
+      data-product-id="samsung-galaxy-a15-5g"
+      data-product-name="Samsung Galaxy A15 5G"
+      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A15_5G_2024.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4rsE7e2"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy A15 5G zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A15_5G_2024.jpg"
+          alt="Samsung Galaxy A15 5G"
+        >
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy A15 5G</h2>
+
+        <a
+          href="https://amzn.to/4rsE7e2"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FOLD8
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-fold8"
+      data-product-name="Samsung Galaxy Z Fold8"
+      data-product-image="https://images.samsung.com/hk_en/smartphones/galaxy-z-fold8/buy/H8_Global_KV_Video_PC_944x510.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4jnBVCs"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Fold8 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://images.samsung.com/hk_en/smartphones/galaxy-z-fold8/buy/H8_Global_KV_Video_PC_944x510.jpg"
+          alt="Samsung Galaxy Z Fold8"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Fold8</h2>
+
+        <a
+          href="https://amzn.to/4jnBVCs"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FLIP8
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-flip8"
+      data-product-name="Samsung Galaxy Z Flip8"
+      data-product-image="https://images.samsung.com/hk_en/smartphones/galaxy-z-flip8/buy/B8_Global_KV_Video_PC_944x510.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/46HKSzi"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Flip8 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://images.samsung.com/hk_en/smartphones/galaxy-z-flip8/buy/B8_Global_KV_Video_PC_944x510.jpg"
+          alt="Samsung Galaxy Z Flip8"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Flip8</h2>
+
+        <a
+          href="https://amzn.to/46HKSzi"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FLIP7
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-flip7"
+      data-product-name="Samsung Galaxy Z Flip7"
+      data-product-image="https://images.samsung.com/sg/smartphones/galaxy-z-flip7/images/galaxy-z-flip7-share-image.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4hMuOSQ"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Flip7 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://images.samsung.com/sg/smartphones/galaxy-z-flip7/images/galaxy-z-flip7-share-image.jpg"
+          alt="Samsung Galaxy Z Flip7"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Flip7</h2>
+
+        <a
+          href="https://amzn.to/4hMuOSQ"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FOLD6
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-fold6"
+      data-product-name="Samsung Galaxy Z Fold6"
+      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Z_Fold6.png"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/47hFPpd"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Fold6 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Z_Fold6.png"
+          alt="Samsung Galaxy Z Fold6"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Fold6</h2>
+
+        <a
+          href="https://amzn.to/47hFPpd"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FLIP6
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-flip6"
+      data-product-name="Samsung Galaxy Z Flip6"
+      data-product-image="https://images.samsung.com/ca/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4hqNbvg"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Flip6 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://images.samsung.com/ca/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true"
+          alt="Samsung Galaxy Z Flip6"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Flip6</h2>
+
+        <a
+          href="https://amzn.to/4hqNbvg"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FOLD5
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-fold5"
+      data-product-name="Samsung Galaxy Z Fold5"
+      data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Fold-5_vnutorny-displej.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4d7ueN4"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Fold5 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Fold-5_vnutorny-displej.jpg"
+          alt="Samsung Galaxy Z Fold5"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Fold5</h2>
+
+        <a
+          href="https://amzn.to/4d7ueN4"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY Z FLIP5
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="Z"
+      data-product-id="samsung-galaxy-z-flip5"
+      data-product-name="Samsung Galaxy Z Flip5"
+      data-product-image="https://images.samsung.com/is/image/samsung/p6pim/de/sm-f731blgdeub/gallery/de-galaxy-z-flip5-f731-471133-sm-f731blgdeub-thumb-537350789"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4d2IiY2"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy Z Flip5 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://images.samsung.com/is/image/samsung/p6pim/de/sm-f731blgdeub/gallery/de-galaxy-z-flip5-f731-471133-sm-f731blgdeub-thumb-537350789"
+          alt="Samsung Galaxy Z Flip5"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy Z Flip5</h2>
+
+        <a
+          href="https://amzn.to/4d2IiY2"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY XCOVER7 PRO
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="XCover"
+      data-product-id="samsung-galaxy-xcover7-pro"
+      data-product-name="Samsung Galaxy XCover7 Pro"
+      data-product-image="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4joroqF"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy XCover7 Pro zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253"
+          alt="Samsung Galaxy XCover7 Pro"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy XCover7 Pro</h2>
+
+        <a
+          href="https://amzn.to/4joroqF"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY XCOVER7
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="XCover"
+      data-product-id="samsung-galaxy-xcover7"
+      data-product-name="Samsung Galaxy XCover7"
+      data-product-image="https://api.samsungmobilepress.com/file/D85597BAEC35F0703966A1033803F9145D35FB5A4D945D3A418234154250A0218ECC1F379B861FF347075AF5EE2ECA7F603B444C47B1FAF5AEF55B0838FF1229043B26BFFADC550B0D47489418273C5CF36E98AF1C66283F9652A13A265CD066E9C077C0CEB4ECE999B50211A8FF9444DB3CDF809AF10A7ED2CAC655235C280C"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4hm2xmh"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy XCover7 zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://api.samsungmobilepress.com/file/D85597BAEC35F0703966A1033803F9145D35FB5A4D945D3A418234154250A0218ECC1F379B861FF347075AF5EE2ECA7F603B444C47B1FAF5AEF55B0838FF1229043B26BFFADC550B0D47489418273C5CF36E98AF1C66283F9652A13A265CD066E9C077C0CEB4ECE999B50211A8FF9444DB3CDF809AF10A7ED2CAC655235C280C"
+          alt="Samsung Galaxy XCover7"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy XCover7</h2>
+
+        <a
+          href="https://amzn.to/4hm2xmh"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         SAMSUNG GALAXY XCOVER6 PRO
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="Samsung"
+      data-series="XCover"
+      data-product-id="samsung-galaxy-xcover6-pro"
+      data-product-name="Samsung Galaxy XCover6 Pro"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/4rzLAZ0"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Samsung Galaxy XCover6 Pro zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10"
+          alt="Samsung Galaxy XCover6 Pro"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Samsung Galaxy XCover6 Pro</h2>
+
+        <a
+          href="https://amzn.to/4rzLAZ0"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ==================================================
+         APPLE IPHONE 17 PRO MAX
+    ================================================== -->
+
+    <article
+      class="product-card"
+      data-brand="iPhone"
+      data-series=""
+      data-product-id="iphone-17-pro-max-b0fqg1tsy1"
+      data-product-name="Apple iPhone 17 Pro Max"
+      data-product-image="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
+      data-product-price=""
+      data-product-shop="Amazon"
+      data-product-link="https://amzn.to/3VsXwj3"
+    >
+
+      <button
+        class="favorite-button"
+        type="button"
+        aria-label="Apple iPhone 17 Pro Max zu Favoriten hinzufügen"
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
+
+      <div class="product-image">
+
+        <img
+          src="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
+          alt="Apple iPhone 17 Pro Max"
+        >
+
+      </div>
+
+      <div class="product-content">
+
+        <h2>Apple iPhone 17 Pro Max</h2>
+
+        <a
+          href="https://amzn.to/3VsXwj3"
+          class="product-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
+    </article>
+
 
   </div>
+
 </main>
 
 
 <footer>
+
   © 2026 DealKira – Bessere Deals finden
+
 </footer>
 
+
+<!-- =========================
+     SUPABASE
+========================= -->
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
@@ -1840,6 +2260,10 @@
     );
 
 
+  /* =========================
+     MENÜ
+  ========================= */
+
   function toggleMenu() {
 
     const menu =
@@ -1857,6 +2281,7 @@
       "aria-expanded",
       isOpen
     );
+
   }
 
 
@@ -1876,6 +2301,7 @@
       "aria-expanded",
       "false"
     );
+
   }
 
 
@@ -1893,7 +2319,9 @@
         !menu.contains(event.target) &&
         !button.contains(event.target)
       ) {
+
         closeMenu();
+
       }
 
     }
@@ -1905,14 +2333,21 @@
     function(event) {
 
       if (event.key === "Escape") {
+
         closeMenu();
+
       }
 
     }
   );
 
 
+  /* =========================
+     FILTER
+  ========================= */
+
   let activeBrand = null;
+
   let activeSeries = null;
 
 
@@ -1922,52 +2357,65 @@
       document.getElementById("filterMessage");
 
     message.classList.toggle("show");
+
   }
 
 
   function toggleBrandFilter(brand) {
 
     if (activeBrand === brand) {
+
       activeBrand = null;
-    } else {
-      activeBrand = brand;
+
     }
 
-    activeSeries = null;
+    else {
+
+      activeBrand = brand;
+
+    }
+
+
+    if (activeBrand !== "Samsung") {
+
+      activeSeries = null;
+
+    }
+
 
     updateFilterButtons();
+
     applyFilters();
+
   }
 
 
   function toggleSeriesFilter(series) {
 
     if (activeSeries === series) {
+
       activeSeries = null;
-    } else {
-      activeSeries = series;
+
     }
+
+    else {
+
+      activeSeries = series;
+
+    }
+
 
     if (activeSeries) {
+
       activeBrand = "Samsung";
+
     }
 
-    updateFilterButtons();
-    applyFilters();
-  }
-
-
-  function toggleIphoneSeriesFilter(series) {
-
-    if (activeSeries === series && activeBrand === "iPhone") {
-      activeSeries = null;
-    } else {
-      activeBrand = "iPhone";
-      activeSeries = series;
-    }
 
     updateFilterButtons();
+
     applyFilters();
+
   }
 
 
@@ -1994,14 +2442,12 @@
     const samsungSeriesSection =
       document.getElementById("samsungSeriesSection");
 
-    const iphoneSeriesSection =
-      document.getElementById("iphoneSeriesSection");
-
 
     samsungButton.classList.toggle(
       "active",
       activeBrand === "Samsung"
     );
+
 
     iphoneButton.classList.toggle(
       "active",
@@ -2014,65 +2460,29 @@
       activeBrand === "Samsung"
     );
 
-    iphoneSeriesSection.classList.toggle(
-      "show",
-      activeBrand === "iPhone"
-    );
-
 
     sButton.classList.toggle(
       "active",
-      activeBrand === "Samsung" &&
       activeSeries === "S"
     );
 
+
     aButton.classList.toggle(
       "active",
-      activeBrand === "Samsung" &&
       activeSeries === "A"
     );
 
+
     zButton.classList.toggle(
       "active",
-      activeBrand === "Samsung" &&
       activeSeries === "Z"
     );
 
+
     xcoverButton.classList.toggle(
       "active",
-      activeBrand === "Samsung" &&
       activeSeries === "XCover"
     );
-
-
-    const iphoneSeries = [
-      "17",
-      "16",
-      "15",
-      "14",
-      "13",
-      "12",
-      "11"
-    ];
-
-    iphoneSeries.forEach(function(series) {
-
-      const button =
-        document.getElementById(
-          "filterIphone" + series
-        );
-
-      if (button) {
-
-        button.classList.toggle(
-          "active",
-          activeBrand === "iPhone" &&
-          activeSeries === series
-        );
-
-      }
-
-    });
 
   }
 
@@ -2085,55 +2495,64 @@
       );
 
 
-    cards.forEach(function(card) {
+    cards.forEach(
+      function(card) {
 
-      const brand =
-        card.dataset.brand;
+        const brand =
+          card.dataset.brand;
 
-      const series =
-        card.dataset.series;
-
-      let visible = true;
+        const series =
+          card.dataset.series;
 
 
-      if (
-        activeBrand &&
-        brand !== activeBrand
-      ) {
-        visible = false;
+        let visible = true;
+
+
+        if (
+          activeBrand &&
+          brand !== activeBrand
+        ) {
+
+          visible = false;
+
+        }
+
+
+        if (
+          visible &&
+          activeSeries &&
+          (
+            brand !== "Samsung" ||
+            series !== activeSeries
+          )
+        ) {
+
+          visible = false;
+
+        }
+
+
+        card.classList.toggle(
+          "hidden",
+          !visible
+        );
+
       }
-
-
-      if (
-        visible &&
-        activeSeries &&
-        (
-          brand !== activeBrand ||
-          series !== activeSeries
-        )
-      ) {
-        visible = false;
-      }
-
-
-      card.classList.toggle(
-        "hidden",
-        !visible
-      );
-
-    });
+    );
 
   }
 
+
+  /* =========================
+     BENUTZER
+  ========================= */
 
   async function getCurrentUser() {
 
     const {
       data,
       error
-    } =
-      await supabaseClient.auth.getUser();
-
+    } = await supabaseClient.auth.getUser();
 
     if (error) {
 
@@ -2143,12 +2562,17 @@
       );
 
       return null;
+
     }
 
-
     return data.user;
+
   }
 
+
+  /* =========================
+     FAVORIT UMSCHALTEN
+  ========================= */
 
   async function toggleFavorite(button) {
 
@@ -2156,19 +2580,15 @@
       return;
     }
 
-
     const card =
       button.closest(".product-card");
-
 
     if (!card) {
       return;
     }
 
-
     const user =
       await getCurrentUser();
-
 
     if (!user) {
 
@@ -2180,6 +2600,7 @@
         "konto.html";
 
       return;
+
     }
 
 
@@ -2210,13 +2631,12 @@
       const {
         data: existingFavorite,
         error: selectError
-      } =
-        await supabaseClient
-          .from("favoriten")
-          .select("id")
-          .eq("user_id", user.id)
-          .eq("produkt_id", productId)
-          .maybeSingle();
+      } = await supabaseClient
+        .from("favoriten")
+        .select("id")
+        .eq("user_id", user.id)
+        .eq("produkt_id", productId)
+        .maybeSingle();
 
 
       if (selectError) {
@@ -2228,12 +2648,11 @@
 
         const {
           error: deleteError
-        } =
-          await supabaseClient
-            .from("favoriten")
-            .delete()
-            .eq("id", existingFavorite.id)
-            .eq("user_id", user.id);
+        } = await supabaseClient
+          .from("favoriten")
+          .delete()
+          .eq("id", existingFavorite.id)
+          .eq("user_id", user.id);
 
 
         if (deleteError) {
@@ -2251,22 +2670,32 @@
           " zu Favoriten hinzufügen"
         );
 
-      } else {
+      }
+
+
+      else {
 
         const {
           error: insertError
-        } =
-          await supabaseClient
-            .from("favoriten")
-            .insert({
-              user_id: user.id,
-              produkt_id: productId,
-              produkt_name: productName,
-              produkt_bild: productImage,
-              produkt_preis: productPrice,
-              produkt_shop: productShop,
-              produkt_link: productLink
-            });
+        } = await supabaseClient
+          .from("favoriten")
+          .insert({
+
+            user_id: user.id,
+
+            produkt_id: productId,
+
+            produkt_name: productName,
+
+            produkt_bild: productImage,
+
+            produkt_preis: productPrice,
+
+            produkt_shop: productShop,
+
+            produkt_link: productLink
+
+          });
 
 
         if (insertError) {
@@ -2286,7 +2715,10 @@
 
       }
 
-    } catch (error) {
+    }
+
+
+    catch (error) {
 
       console.error(
         "Fehler beim Ändern des Favoriten:",
@@ -2297,7 +2729,10 @@
         "Der Favorit konnte momentan nicht gespeichert werden."
       );
 
-    } finally {
+    }
+
+
+    finally {
 
       button.disabled = false;
 
@@ -2306,11 +2741,14 @@
   }
 
 
+  /* =========================
+     FAVORITEN LADEN
+  ========================= */
+
   async function loadFavorites() {
 
     const user =
       await getCurrentUser();
-
 
     if (!user) {
       return;
@@ -2320,11 +2758,10 @@
     const {
       data: favorites,
       error
-    } =
-      await supabaseClient
-        .from("favoriten")
-        .select("produkt_id")
-        .eq("user_id", user.id);
+    } = await supabaseClient
+      .from("favoriten")
+      .select("produkt_id")
+      .eq("user_id", user.id);
 
 
     if (error) {
@@ -2335,6 +2772,7 @@
       );
 
       return;
+
     }
 
 
@@ -2350,44 +2788,49 @@
 
     document
       .querySelectorAll(".product-card")
-      .forEach(function(card) {
+      .forEach(
+        function(card) {
 
-        const productId =
-          card.dataset.productId;
+          const productId =
+            card.dataset.productId;
 
-        const button =
-          card.querySelector(
-            ".favorite-button"
-          );
+          const button =
+            card.querySelector(
+              ".favorite-button"
+            );
+
+          if (!button) {
+            return;
+          }
 
 
-        if (!button) {
-          return;
+          if (
+            favoriteIds.has(productId)
+          ) {
+
+            button.classList.add(
+              "active"
+            );
+
+            button.textContent = "♥";
+
+            button.setAttribute(
+              "aria-label",
+              card.dataset.productName +
+              " aus Favoriten entfernen"
+            );
+
+          }
+
         }
-
-
-        if (
-          favoriteIds.has(productId)
-        ) {
-
-          button.classList.add(
-            "active"
-          );
-
-          button.textContent = "♥";
-
-          button.setAttribute(
-            "aria-label",
-            card.dataset.productName +
-            " aus Favoriten entfernen"
-          );
-
-        }
-
-      });
+      );
 
   }
 
+
+  /* =========================
+     AUTH STATUS
+  ========================= */
 
   supabaseClient.auth.onAuthStateChange(
     function(event, session) {
@@ -2396,7 +2839,9 @@
 
         loadFavorites();
 
-      } else {
+      }
+
+      else {
 
         document
           .querySelectorAll(
@@ -2419,6 +2864,10 @@
     }
   );
 
+
+  /* =========================
+     START
+  ========================= */
 
   document.addEventListener(
     "DOMContentLoaded",
