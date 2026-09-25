@@ -236,10 +236,6 @@
       color: #111;
     }
 
-    /* =========================================
-       SAMSUNG SERIEN ZUNÄCHST VERSTECKT
-    ========================================= */
-
     .samsung-series-section {
       display: none;
     }
@@ -601,11 +597,6 @@
 
     </div>
 
-
-    <!-- =========================================
-         SAMSUNG SERIEN
-         NUR SICHTBAR, WENN SAMSUNG AKTIV IST
-    ========================================= -->
 
     <div
       class="samsung-series-section"
@@ -2142,7 +2133,7 @@
       data-series="XCover"
       data-product-id="samsung-galaxy-xcover6-pro"
       data-product-name="Samsung Galaxy XCover6 Pro"
-      data-product-image="https://images.samsung.com/is/image/samsung/p6pim/de/sm-g736bzkdeub/gallery/de-galaxy-xcover6-pro-g736-sm-g736bzkdeub-thumb-532105693"
+      data-product-image="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-link="https://amzn.to/4rzLAZ0"
@@ -2160,7 +2151,7 @@
       <div class="product-image">
 
         <img
-          src="https://images.samsung.com/is/image/samsung/p6pim/de/sm-g736bzkdeub/gallery/de-galaxy-xcover6-pro-g736-sm-g736bzkdeub-thumb-532105693"
+          src="https://api.samsungmobilepress.com/api/v1/file/868CFE7CBFABAF7E40A7D967FFE621014D27D2BFC72A1DC5D75F20EFFE356AE98786372E5E2E771E94A03A3B8BF2D962B4A82D73B39874CCA48C46340D42CC2AFA5D86F8ED3142ACD11C1F3E226F03AF603D546AC0535F6CD3A8BE11841896E679FF40E5368167F7B2CBD35F975D99172171C81CD721E3377F9D4DF9CF572070AEB69181B8D45AC5609A8C1B697CDF3C20499A947C97635A6C57B97B0EE8D0ACCDE4743575906C77D547CC75BF60FD1FA5ECB48EA66F08EDF520E76AAC8E575EBA1452E0EA0609B5B2F4D8E64B214F10"
           alt="Samsung Galaxy XCover6 Pro"
         >
 
@@ -2385,12 +2376,6 @@
     }
 
 
-    /*
-     * Wenn Samsung deaktiviert wird,
-     * werden auch die Samsung-Serien
-     * zurückgesetzt.
-     */
-
     if (activeBrand !== "Samsung") {
 
       activeSeries = null;
@@ -2407,10 +2392,6 @@
 
   function toggleSeriesFilter(series) {
 
-    /*
-     * Serien gehören ausschließlich zu Samsung.
-     */
-
     if (activeSeries === series) {
 
       activeSeries = null;
@@ -2423,11 +2404,6 @@
 
     }
 
-
-    /*
-     * Beim Anklicken einer Serie
-     * wird Samsung automatisch aktiviert.
-     */
 
     if (activeSeries) {
 
@@ -2467,10 +2443,6 @@
       document.getElementById("samsungSeriesSection");
 
 
-    /*
-     * Herstellerbuttons
-     */
-
     samsungButton.classList.toggle(
       "active",
       activeBrand === "Samsung"
@@ -2483,20 +2455,11 @@
     );
 
 
-    /*
-     * Samsung-Serien nur anzeigen,
-     * wenn Samsung ausgewählt ist.
-     */
-
     samsungSeriesSection.classList.toggle(
       "show",
       activeBrand === "Samsung"
     );
 
-
-    /*
-     * Serienbuttons
-     */
 
     sButton.classList.toggle(
       "active",
@@ -2545,10 +2508,6 @@
         let visible = true;
 
 
-        /*
-         * Herstellerfilter
-         */
-
         if (
           activeBrand &&
           brand !== activeBrand
@@ -2558,10 +2517,6 @@
 
         }
 
-
-        /*
-         * Serienfilter
-         */
 
         if (
           visible &&
@@ -2930,4 +2885,4 @@
 </script>
 
 </body>
-        </html>
+</html>
