@@ -204,28 +204,108 @@
       gap: 22px;
     }
 
-    .empty-state {
-      grid-column: 1 / -1;
-      background: white;
+    /* =========================
+       PRODUKTKARTEN
+    ========================= */
+
+    .product-card {
+      background: #fff;
       border-radius: 16px;
-      padding: 55px 30px;
-      text-align: center;
+      overflow: hidden;
       box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: 0.2s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
 
-    .empty-icon {
-      font-size: 65px;
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,.14);
+    }
+
+    .product-image {
+      height: 190px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .product-content {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-content h2 {
+      font-size: 23px;
       margin-bottom: 20px;
     }
 
-    .empty-state h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
+    .product-button {
+      margin-top: auto;
+      display: inline-block;
+      text-align: center;
+      padding: 13px 18px;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.2s;
     }
 
-    .empty-state p {
-      color: #666;
-      font-size: 16px;
+    .product-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    /* =========================
+       FAVORIT BUTTON
+    ========================= */
+
+    .favorite-button {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 5;
+      transition: 0.2s;
+    }
+
+    .favorite-button:hover {
+      transform: scale(1.08);
+      background: #fff;
+    }
+
+    .favorite-button.active {
+      color: #e60023;
+    }
+
+    .favorite-button:disabled {
+      cursor: wait;
+      opacity: 0.7;
     }
 
     footer {
@@ -299,21 +379,31 @@
         gap: 12px;
       }
 
-      .empty-state {
-        padding: 45px 15px;
-        border-radius: 13px;
+      .product-image {
+        height: 130px;
+        padding: 8px;
       }
 
-      .empty-icon {
-        font-size: 50px;
+      .product-content {
+        padding: 14px;
       }
 
-      .empty-state h2 {
-        font-size: 20px;
+      .product-content h2 {
+        font-size: 17px;
+        margin-bottom: 15px;
       }
 
-      .empty-state p {
-        font-size: 14px;
+      .product-button {
+        padding: 10px 8px;
+        font-size: 13px;
+      }
+
+      .favorite-button {
+        width: 38px;
+        height: 38px;
+        top: 8px;
+        right: 8px;
+        font-size: 21px;
       }
 
     }
@@ -427,21 +517,110 @@
 
     <div class="products">
 
-      <div class="empty-state">
 
-        <div class="empty-icon">
-          📱
+      <!-- =========================
+           SAMSUNG GALAXY S26 ULTRA
+      ========================= -->
+
+      <article
+        class="product-card"
+        data-product-id="samsung-galaxy-s26-ultra-b0g58wv7x4"
+        data-product-name="Samsung Galaxy S26 Ultra"
+        data-product-image="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
+        data-product-price=""
+        data-product-shop="Amazon"
+        data-product-link="https://amzn.to/4yL6uGH"
+      >
+
+        <button
+          class="favorite-button"
+          type="button"
+          aria-label="Samsung Galaxy S26 Ultra zu Favoriten hinzufügen"
+          onclick="toggleFavorite(this)"
+        >
+          ♡
+        </button>
+
+        <div class="product-image">
+
+          <img
+            src="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
+            alt="Samsung Galaxy S26 Ultra"
+          >
+
         </div>
 
-        <h2>
-          Noch keine Produkte vorhanden
-        </h2>
+        <div class="product-content">
 
-        <p>
-          Hier werden bald passende Telefone und Angebote angezeigt.
-        </p>
+          <h2>
+            Samsung Galaxy S26 Ultra
+          </h2>
 
-      </div>
+          <a
+            href="https://amzn.to/4yL6uGH"
+            class="product-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Zum Deal
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- =========================
+           APPLE IPHONE 17 PRO MAX
+      ========================= -->
+
+      <article
+        class="product-card"
+        data-product-id="iphone-17-pro-max-b0fqg1tsy1"
+        data-product-name="Apple iPhone 17 Pro Max"
+        data-product-image="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
+        data-product-price=""
+        data-product-shop="Amazon"
+        data-product-link="https://amzn.to/3VsXwj3"
+      >
+
+        <button
+          class="favorite-button"
+          type="button"
+          aria-label="Apple iPhone 17 Pro Max zu Favoriten hinzufügen"
+          onclick="toggleFavorite(this)"
+        >
+          ♡
+        </button>
+
+        <div class="product-image">
+
+          <img
+            src="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
+            alt="Apple iPhone 17 Pro Max"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h2>
+            Apple iPhone 17 Pro Max
+          </h2>
+
+          <a
+            href="https://amzn.to/3VsXwj3"
+            class="product-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Zum Deal
+          </a>
+
+        </div>
+
+      </article>
+
 
     </div>
 
@@ -455,7 +634,30 @@
   </footer>
 
 
+  <!-- =========================
+       SUPABASE
+  ========================= -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <script>
+
+    const SUPABASE_URL =
+      "https://zniknbouugmgvqkkoamo.supabase.co";
+
+    const SUPABASE_KEY =
+      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
+
+    const supabaseClient =
+      window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+      );
+
+
+    /* =========================
+       MENÜ
+    ========================= */
 
     function toggleMenu() {
 
@@ -535,6 +737,10 @@
     );
 
 
+    /* =========================
+       FILTER
+    ========================= */
+
     function toggleFilter() {
 
       const message =
@@ -543,6 +749,343 @@
       message.classList.toggle("show");
 
     }
+
+
+    /* =========================
+       BENUTZER
+    ========================= */
+
+    async function getCurrentUser() {
+
+      const {
+        data,
+        error
+      } = await supabaseClient.auth.getUser();
+
+      if (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
+        );
+
+        return null;
+
+      }
+
+      return data.user;
+
+    }
+
+
+    /* =========================
+       FAVORIT UMSCHALTEN
+    ========================= */
+
+    async function toggleFavorite(button) {
+
+      if (button.disabled) {
+        return;
+      }
+
+      const card =
+        button.closest(".product-card");
+
+      if (!card) {
+        return;
+      }
+
+      const user =
+        await getCurrentUser();
+
+      if (!user) {
+
+        alert(
+          "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
+        );
+
+        window.location.href =
+          "konto.html";
+
+        return;
+
+      }
+
+
+      const productId =
+        card.dataset.productId;
+
+      const productName =
+        card.dataset.productName;
+
+      const productImage =
+        card.dataset.productImage;
+
+      const productPrice =
+        card.dataset.productPrice || null;
+
+      const productShop =
+        card.dataset.productShop || null;
+
+      const productLink =
+        card.dataset.productLink || null;
+
+
+      button.disabled = true;
+
+
+      try {
+
+        const {
+          data: existingFavorite,
+          error: selectError
+        } = await supabaseClient
+          .from("favoriten")
+          .select("id")
+          .eq("user_id", user.id)
+          .eq("produkt_id", productId)
+          .maybeSingle();
+
+
+        if (selectError) {
+          throw selectError;
+        }
+
+
+        /* FAVORIT ENTFERNEN */
+
+        if (existingFavorite) {
+
+          const {
+            error: deleteError
+          } = await supabaseClient
+            .from("favoriten")
+            .delete()
+            .eq("id", existingFavorite.id)
+            .eq("user_id", user.id);
+
+
+          if (deleteError) {
+            throw deleteError;
+          }
+
+
+          button.classList.remove("active");
+
+          button.textContent = "♡";
+
+          button.setAttribute(
+            "aria-label",
+            productName +
+            " zu Favoriten hinzufügen"
+          );
+
+        }
+
+
+        /* FAVORIT HINZUFÜGEN */
+
+        else {
+
+          const {
+            error: insertError
+          } = await supabaseClient
+            .from("favoriten")
+            .insert({
+
+              user_id: user.id,
+
+              produkt_id: productId,
+
+              produkt_name: productName,
+
+              produkt_bild: productImage,
+
+              produkt_preis: productPrice,
+
+              produkt_shop: productShop,
+
+              produkt_link: productLink
+
+            });
+
+
+          if (insertError) {
+            throw insertError;
+          }
+
+
+          button.classList.add("active");
+
+          button.textContent = "♥";
+
+          button.setAttribute(
+            "aria-label",
+            productName +
+            " aus Favoriten entfernen"
+          );
+
+        }
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Fehler beim Ändern des Favoriten:",
+          error
+        );
+
+        alert(
+          "Der Favorit konnte momentan nicht gespeichert werden."
+        );
+
+      }
+
+      finally {
+
+        button.disabled = false;
+
+      }
+
+    }
+
+
+    /* =========================
+       FAVORITEN LADEN
+    ========================= */
+
+    async function loadFavorites() {
+
+      const user =
+        await getCurrentUser();
+
+      if (!user) {
+        return;
+      }
+
+
+      const {
+        data: favorites,
+        error
+      } = await supabaseClient
+        .from("favoriten")
+        .select("produkt_id")
+        .eq("user_id", user.id);
+
+
+      if (error) {
+
+        console.error(
+          "Favoriten konnten nicht geladen werden:",
+          error
+        );
+
+        return;
+
+      }
+
+
+      const favoriteIds =
+        new Set(
+          favorites.map(
+            function(favorite) {
+              return favorite.produkt_id;
+            }
+          )
+        );
+
+
+      document
+        .querySelectorAll(".product-card")
+        .forEach(
+          function(card) {
+
+            const productId =
+              card.dataset.productId;
+
+            const button =
+              card.querySelector(
+                ".favorite-button"
+              );
+
+            if (!button) {
+              return;
+            }
+
+
+            if (
+              favoriteIds.has(productId)
+            ) {
+
+              button.classList.add(
+                "active"
+              );
+
+              button.textContent = "♥";
+
+              button.setAttribute(
+                "aria-label",
+                card.dataset.productName +
+                " aus Favoriten entfernen"
+              );
+
+            }
+
+          }
+        );
+
+    }
+
+
+    /* =========================
+       AUTH STATUS
+    ========================= */
+
+    supabaseClient.auth.onAuthStateChange(
+      function(event, session) {
+
+        if (session) {
+
+          loadFavorites();
+
+        }
+        else {
+
+          document
+            .querySelectorAll(
+              ".favorite-button"
+            )
+            .forEach(
+              function(button) {
+
+                button.classList.remove(
+                  "active"
+                );
+
+                button.textContent = "♡";
+
+              }
+            );
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       START
+    ========================= */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function() {
+
+        loadFavorites();
+
+      }
+    );
 
   </script>
 
