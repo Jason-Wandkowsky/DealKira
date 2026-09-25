@@ -4,7 +4,7 @@
     "name": "Samsung Galaxy S23+",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s916bzadeub/gallery/de-galaxy-s23-plus-s916-sm-s916bzadeub-534827377?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s23-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yihWKi"
@@ -14,7 +14,7 @@
     "name": "Samsung Galaxy S23 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/2302_sm-s918bztdeub/gallery/de-galaxy-s23-ultra-s918-sm-s918bztdeub-535087823?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s23-ultra.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3Vc58Xd"
@@ -24,7 +24,7 @@
     "name": "Samsung Galaxy S24 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s928bztdeub/gallery/de-galaxy-s24-ultra-s928-sm-s928bztdeub-539805638?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s24-ultra.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4z08Cuz"
@@ -34,7 +34,7 @@
     "name": "Samsung Galaxy S25",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s931bzydeub/gallery/de-galaxy-s25-s931-sm-s931bzydeub-544763571?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s25.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46J9eso"
@@ -44,7 +44,7 @@
     "name": "Samsung Galaxy S25+",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s936bzydeub/gallery/de-galaxy-s25-plus-s936-sm-s936bzydeub-544764003?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s25-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hmM3ca"
@@ -54,7 +54,7 @@
     "name": "Samsung Galaxy S25 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s938bztdeub/gallery/de-galaxy-s25-ultra-s938-sm-s938bztdeub-544765205?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s25-ultra.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yWYrqC"
@@ -64,7 +64,7 @@
     "name": "Samsung Galaxy S25 Edge",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s937bzydeub/gallery/de-galaxy-s25-edge-s937-sm-s937bzydeub-546050181?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s25-edge.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yOzVI6"
@@ -74,7 +74,7 @@
     "name": "Samsung Galaxy S26",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s942bzydeub/gallery/de-galaxy-s26-s942-sm-s942bzydeub-550000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s26.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3TNAoLK"
@@ -84,7 +84,7 @@
     "name": "Samsung Galaxy S26+",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s947bzydeub/gallery/de-galaxy-s26-plus-s947-sm-s947bzydeub-550000001?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s26-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4xHIgfC"
@@ -94,7 +94,7 @@
     "name": "Samsung Galaxy S26 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-s948bzydeub/gallery/de-galaxy-s26-ultra-s948-sm-s948bzydeub-550000002?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-s26-ultra.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yL6uGH"
@@ -105,7 +105,7 @@
     "name": "Samsung Galaxy A57 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a576bzadeub/gallery/de-galaxy-a57-5g-a576-sm-a576bzadeub-550000010?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a57-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4y9KQfn"
@@ -115,7 +115,7 @@
     "name": "Samsung Galaxy A56 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a566bzadeub/gallery/de-galaxy-a56-5g-a566-sm-a566bzadeub-544000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a56-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4d2BhGP"
@@ -125,7 +125,7 @@
     "name": "Samsung Galaxy A55 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a556bzadeub/gallery/de-galaxy-a55-5g-a556-sm-a556bzadeub-539000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a55-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yg1b2o"
@@ -135,7 +135,7 @@
     "name": "Samsung Galaxy A36 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a366bzadeub/gallery/de-galaxy-a36-5g-a366-sm-a366bzadeub-545000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a36-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4AtQZVm"
@@ -145,7 +145,7 @@
     "name": "Samsung Galaxy A35 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a356bzadeub/gallery/de-galaxy-a35-5g-a356-sm-a356bzadeub-539000001?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a35-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46JzLWp"
@@ -155,7 +155,7 @@
     "name": "Samsung Galaxy A27 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a276bzadeub/gallery/de-galaxy-a27-5g-a276-sm-a276bzadeub-550000020?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a27-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4AxY07s"
@@ -165,7 +165,7 @@
     "name": "Samsung Galaxy A26 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a266bzadeub/gallery/de-galaxy-a26-5g-a266-sm-a266bzadeub-544000001?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a26-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4heKE8U"
@@ -175,7 +175,7 @@
     "name": "Samsung Galaxy A17 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a176bzadeub/gallery/de-galaxy-a17-5g-a176-sm-a176bzadeub-550000021?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a17-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4rsE1Dc"
@@ -185,7 +185,7 @@
     "name": "Samsung Galaxy A16 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a166bzadeub/gallery/de-galaxy-a16-5g-a166-sm-a166bzadeub-542000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a16-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yYjUzn"
@@ -195,7 +195,7 @@
     "name": "Samsung Galaxy A15 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-a156bzadeub/gallery/de-galaxy-a15-5g-a156-sm-a156bzadeub-539000002?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-a15-5g.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4rsE7e2"
@@ -206,7 +206,7 @@
     "name": "Samsung Galaxy Z Fold8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f968bzydeub/gallery/de-galaxy-z-fold8-f968-sm-f968bzydeub-550000030?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-fold8.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4jnBVCs"
@@ -216,7 +216,7 @@
     "name": "Samsung Galaxy Z Flip8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f968bzydeub/gallery/de-galaxy-z-flip8-f968-sm-f968bzydeub-550000031?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-flip8.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46HKSzi"
@@ -226,7 +226,7 @@
     "name": "Samsung Galaxy Z Flip7",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f766bzydeub/gallery/de-galaxy-z-flip7-f766-sm-f766bzydeub-548000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-flip7.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hMuOSQ"
@@ -236,7 +236,7 @@
     "name": "Samsung Galaxy Z Fold6",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f956bzadeub/gallery/de-galaxy-z-fold6-f956-sm-f956bzadeub-542000010?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-fold6.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/47hFPpd"
@@ -246,7 +246,7 @@
     "name": "Samsung Galaxy Z Flip6",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f741bzadeub/gallery/de-galaxy-z-flip6-f741-sm-f741bzadeub-542000011?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-flip6.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hqNbvg"
@@ -256,7 +256,7 @@
     "name": "Samsung Galaxy Z Fold5",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-f946bzadeub/gallery/de-galaxy-z-fold5-f946-sm-f946bzadeub-536000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-z-fold5.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4d7ueN4"
@@ -266,7 +266,7 @@
     "name": "Samsung Galaxy Z Flip5",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Flip_5.jpg",
+    "image": "images/telefone/samsung-galaxy-z-flip5.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4d2IiY2"
@@ -277,7 +277,7 @@
     "name": "Samsung Galaxy XCover7 Pro",
     "brand": "Samsung",
     "series": "XCover",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-g766bzadeub/gallery/de-galaxy-xcover7-pro-g766-sm-g766bzadeub-550000040?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-xcover7-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4joroqF"
@@ -287,7 +287,7 @@
     "name": "Samsung Galaxy XCover7",
     "brand": "Samsung",
     "series": "XCover",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-g556bzkaeub/gallery/de-galaxy-xcover7-g556-sm-g556bzkaeub-539000010?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-xcover7.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hm2xmh"
@@ -297,7 +297,7 @@
     "name": "Samsung Galaxy XCover6 Pro",
     "brand": "Samsung",
     "series": "XCover",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/de/sm-g736bzkaeub/gallery/de-galaxy-xcover6-pro-g736-sm-g736bzkaeub-533000000?$650_519_PNG$",
+    "image": "images/telefone/samsung-galaxy-xcover6-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4rzLAZ0"
@@ -308,7 +308,7 @@
     "name": "Apple iPhone SE 2",
     "brand": "iPhone",
     "series": "SE",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_SE_(2020)_Product_Red.jpg",
+    "image": "images/telefone/iphone-se-2.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4h80bao"
@@ -318,21 +318,41 @@
     "name": "Apple iPhone SE 3",
     "brand": "iPhone",
     "series": "SE",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_SE_3rd_Gen.jpg",
+    "image": "images/telefone/iphone-se-3.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hdbCxC"
   },
 
   {
+    "id": "iphone-11",
+    "name": "Apple iPhone 11",
+    "brand": "iPhone",
+    "series": "11",
+    "image": "images/telefone/iphone-11.jpg",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hphvq3"
+  },
+  {
     "id": "iphone-11-pro",
     "name": "Apple iPhone 11 Pro",
     "brand": "iPhone",
     "series": "11",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/20191227_iPhone_11_Pro_3.jpg",
+    "image": "images/telefone/iphone-11-pro.jpg",
     "price": "",
     "shop": "Amazon",
-    "link": ""
+    "link": "https://amzn.to/46KVjlv"
+  },
+  {
+    "id": "iphone-11-pro-max",
+    "name": "Apple iPhone 11 Pro Max",
+    "brand": "iPhone",
+    "series": "11",
+    "image": "images/telefone/iphone-11-pro-max.jpg",
+    "price": "",
+    "shop": "Amazon",
+    "link": "https://amzn.to/4hMYQWI"
   },
 
   {
@@ -340,7 +360,7 @@
     "name": "Apple iPhone 12",
     "brand": "iPhone",
     "series": "12",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iphone-12-product--red.png",
+    "image": "images/telefone/iphone-12.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3Vy06nT"
@@ -350,7 +370,7 @@
     "name": "Apple iPhone 12 mini",
     "brand": "iPhone",
     "series": "12",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Mini_-_4.jpg",
+    "image": "images/telefone/iphone-12-mini.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3T5mXXn"
@@ -360,7 +380,7 @@
     "name": "Apple iPhone 12 Pro",
     "brand": "iPhone",
     "series": "12",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro_-_3.jpg",
+    "image": "images/telefone/iphone-12-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4ArNSNT"
@@ -370,7 +390,7 @@
     "name": "Apple iPhone 12 Pro Max",
     "brand": "iPhone",
     "series": "12",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_12_Pro_Max_-_3.jpg",
+    "image": "images/telefone/iphone-12-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hp1TCW"
@@ -381,7 +401,7 @@
     "name": "Apple iPhone 13",
     "brand": "iPhone",
     "series": "13",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13.jpg",
+    "image": "images/telefone/iphone-13.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3VbqqUS"
@@ -391,7 +411,7 @@
     "name": "Apple iPhone 13 mini",
     "brand": "iPhone",
     "series": "13",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Mini.jpg",
+    "image": "images/telefone/iphone-13-mini.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4dnEukv"
@@ -401,7 +421,7 @@
     "name": "Apple iPhone 13 Pro",
     "brand": "iPhone",
     "series": "13",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_13_Pro.jpg",
+    "image": "images/telefone/iphone-13-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4xKbjzm"
@@ -411,7 +431,7 @@
     "name": "Apple iPhone 13 Pro Max",
     "brand": "iPhone",
     "series": "13",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iphone_13_pro_max.jpg",
+    "image": "images/telefone/iphone-13-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3VzhCYZ"
@@ -422,7 +442,7 @@
     "name": "Apple iPhone 14",
     "brand": "iPhone",
     "series": "14",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Product_Red.jpg",
+    "image": "images/telefone/iphone-14.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4jnzTCo"
@@ -432,7 +452,7 @@
     "name": "Apple iPhone 14 Plus",
     "brand": "iPhone",
     "series": "14",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Plus_20240225.jpg",
+    "image": "images/telefone/iphone-14-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46NCePF"
@@ -442,7 +462,7 @@
     "name": "Apple iPhone 14 Pro",
     "brand": "iPhone",
     "series": "14",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro_-_black_(3).jpg",
+    "image": "images/telefone/iphone-14-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/47eb2d0"
@@ -452,7 +472,7 @@
     "name": "Apple iPhone 14 Pro Max",
     "brand": "iPhone",
     "series": "14",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_14_Pro_Max_20240225.jpg",
+    "image": "images/telefone/iphone-14-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4rtltCK"
@@ -463,7 +483,7 @@
     "name": "Apple iPhone 15",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_20240225.jpg",
+    "image": "images/telefone/iphone-15.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46Fb0uD"
@@ -473,7 +493,7 @@
     "name": "Apple iPhone 15 Plus",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_%26_iPhone_15_Plus.jpg",
+    "image": "images/telefone/iphone-15-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46EnfHN"
@@ -483,7 +503,7 @@
     "name": "Apple iPhone 15 Pro",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro.jpg",
+    "image": "images/telefone/iphone-15-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4hkeeZi"
@@ -493,7 +513,7 @@
     "name": "Apple iPhone 15 Pro Max",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro_Max.jpg",
+    "image": "images/telefone/iphone-15-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4j6B6hB"
@@ -504,7 +524,7 @@
     "name": "Apple iPhone 16e",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16e.jpg",
+    "image": "images/telefone/iphone-16e.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4yaCQe7"
@@ -514,7 +534,7 @@
     "name": "Apple iPhone 16",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Ultramarine_Rear.png",
+    "image": "images/telefone/iphone-16.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4ykzndg"
@@ -524,7 +544,7 @@
     "name": "Apple iPhone 16 Plus",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Plus_Vector.svg",
+    "image": "images/telefone/iphone-16-plus.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4AxMwRA"
@@ -534,7 +554,7 @@
     "name": "Apple iPhone 16 Pro",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_-_black.jpg",
+    "image": "images/telefone/iphone-16-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4xNK474"
@@ -544,7 +564,7 @@
     "name": "Apple iPhone 16 Pro Max",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_Max_Vector.svg",
+    "image": "images/telefone/iphone-16-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3Thnrtr"
@@ -555,7 +575,7 @@
     "name": "Apple iPhone 17",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Vector.svg",
+    "image": "images/telefone/iphone-17.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4z21L3P"
@@ -565,7 +585,7 @@
     "name": "Apple iPhone Air",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Air_2026.jpg",
+    "image": "images/telefone/iphone-air.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/46EyQXk"
@@ -575,7 +595,7 @@
     "name": "Apple iPhone 17 Pro",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Pro.png",
+    "image": "images/telefone/iphone-17-pro.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/4heHNww"
@@ -585,7 +605,7 @@
     "name": "Apple iPhone 17 Pro Max",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Pro.png",
+    "image": "images/telefone/iphone-17-pro-max.jpg",
     "price": "",
     "shop": "Amazon",
     "link": "https://amzn.to/3VsXwj3"
