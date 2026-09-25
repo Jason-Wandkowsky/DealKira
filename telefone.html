@@ -187,15 +187,53 @@
       display: none;
       background: #fff;
       border-radius: 12px;
-      padding: 15px 18px;
+      padding: 18px;
       margin-bottom: 22px;
-      text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,.08);
-      color: #555;
     }
 
     .filter-message.show {
       display: block;
+    }
+
+    .filter-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-option {
+      border: 2px solid #ddd;
+      background: #fff;
+      color: #111;
+      border-radius: 9px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-option:hover {
+      border-color: #ffd400;
+      transform: translateY(-1px);
+    }
+
+    .filter-option.active {
+      background: #ffd400;
+      border-color: #ffd400;
+      color: #111;
     }
 
     .products {
@@ -218,6 +256,10 @@
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0,0,0,.14);
+    }
+
+    .product-card.hidden {
+      display: none;
     }
 
     .product-image {
@@ -366,6 +408,23 @@
         font-size: 14px;
       }
 
+      .filter-message {
+        padding: 14px;
+      }
+
+      .filter-title {
+        font-size: 14px;
+      }
+
+      .filter-group {
+        gap: 7px;
+      }
+
+      .filter-option {
+        padding: 8px 11px;
+        font-size: 12px;
+      }
+
       .products {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
@@ -503,7 +562,78 @@
       class="filter-message"
       id="filterMessage"
     >
-      Der Filter befindet sich noch in Bearbeitung.
+
+      <div class="filter-title">
+        Hersteller
+      </div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterSamsung"
+          type="button"
+          onclick="toggleBrandFilter('Samsung')"
+        >
+          Samsung
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterIphone"
+          type="button"
+          onclick="toggleBrandFilter('iPhone')"
+        >
+          iPhone
+        </button>
+
+      </div>
+
+
+      <div class="filter-title">
+        Samsung Serien
+      </div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterS"
+          type="button"
+          onclick="toggleSeriesFilter('S')"
+        >
+          S-Series
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterA"
+          type="button"
+          onclick="toggleSeriesFilter('A')"
+        >
+          A-Series
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterZ"
+          type="button"
+          onclick="toggleSeriesFilter('Z')"
+        >
+          Z-Series
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterXCover"
+          type="button"
+          onclick="toggleSeriesFilter('XCover')"
+        >
+          XCover-Series
+        </button>
+
+      </div>
+
     </div>
 
 
@@ -516,6 +646,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s23-plus"
         data-product-name="Samsung Galaxy S23+"
         data-product-image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530814_sd.jpg"
@@ -534,12 +666,10 @@
         </button>
 
         <div class="product-image">
-
           <img
             src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530814_sd.jpg"
             alt="Samsung Galaxy S23+"
           >
-
         </div>
 
         <div class="product-content">
@@ -566,6 +696,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s23-ultra"
         data-product-name="Samsung Galaxy S23 Ultra"
         data-product-image="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_142470444?align=center&cdx=1800&cdy=1800&cox=0&coy=0&ex=1800&ey=1800&format=jpg&quality=80&resizesource=&sp=yes&strip=yes&trim=&unsharp=1.5x1+0.7+0.02&x=1800&y=1800"
@@ -616,6 +748,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s24-ultra"
         data-product-name="Samsung Galaxy S24 Ultra"
         data-product-image="https://www.mozillion.com/storage/product_model_images/1747003494_samsung-galaxy-s24-ultra-titanium-violet-front.png"
@@ -666,6 +800,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s25"
         data-product-name="Samsung Galaxy S25"
         data-product-image="https://canalpc.es/1703248-large_default/samsung-galaxy-s25-12gb-256gb-62-5g-verde-menta.jpg"
@@ -716,6 +852,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s25-plus"
         data-product-name="Samsung Galaxy S25+"
         data-product-image="https://elhodatell.com/wp-content/uploads/2025/09/Samsung-Galaxy-S25-Plus-256GB-12GB.png"
@@ -766,6 +904,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s25-ultra"
         data-product-name="Samsung Galaxy S25 Ultra"
         data-product-image="https://www.sferis.pl/img/480/284489/O5J7X4h00000a1S794t432n7v3P220n1.jpg"
@@ -816,6 +956,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s25-edge"
         data-product-name="Samsung Galaxy S25 Edge"
         data-product-image="https://api.samsungmobilepress.com/file/45620DA5F6886EEAD98BB82786DCB3154A817FB7154A249D281DA06E4E5F5EF42D7149DB122DE1D18A551E7FE350A6B250346BA90DC44FD5B24FE1E15335408EB612FB33ED6D039BA1A46BD548C604C4476731AAC416D9CEC5A21863B3FBA6CE16D707F52F314A54C811C760245BEC05BF12FBDCCA1FDCA1B617A80C2DE5FB977A1E32D71A389F1960A6BF7CB58E9BC9"
@@ -866,6 +1008,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s26"
         data-product-name="Samsung Galaxy S26"
         data-product-image="https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/197/19720/19720232.jpg"
@@ -916,6 +1060,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s26-plus"
         data-product-name="Samsung Galaxy S26+"
         data-product-image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/15da9eb2-5007-4f14-9df6-a67af3667b99.jpg"
@@ -966,6 +1112,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="S"
         data-product-id="samsung-galaxy-s26-ultra-b0g58wv7x4"
         data-product-name="Samsung Galaxy S26 Ultra"
         data-product-image="https://m.media-amazon.com/images/I/61tasfHFmCL._AC_SL1500_.jpg"
@@ -1016,6 +1164,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a57-5g"
         data-product-name="Samsung Galaxy A57 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/18E681C10C0D702BFCF01E6E15E56D96295054140B1A83DBE3A053A74B7BBF21C0577DA7062B15BEC2443EC001ACF1B38B331348644D2AE97CBD8A1900008CC38841FFB964D571401C7E8A8C317289C5776F2FD53E88BD7EFE5FA83B7C674323EADA5AB03045BB2ADFAA0CC35CBB836D7F3F6EC0190F511F5D2C67E4A279DB94"
@@ -1066,6 +1216,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a56-5g"
         data-product-name="Samsung Galaxy A56 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/40C8A8320E66A4CAC1D4C645A46F70A08A6D3C1507FC8C4E8B5824624F49D488520B61EDFFEB06BFCA15F1EBBCAE7E12A54C4F5DEA14FB8E988573124D9F9D5CE6FEA7132429C5C5BA97F28D0AD1D02ACF46167294946C7BFF3383555E03789FB445E76A0C97032FAB04199698385B4326A14D6D82F1172D6DE91F72028D4AFC6022AF43EBD8CBAC88561FE5A8DEC663"
@@ -1116,6 +1268,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a55-5g"
         data-product-name="Samsung Galaxy A55 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/FBE41F600B7917C199C01E3D15C17AFB3F1FD1C32B128A7A5EA9F2899425A7083AD1FBD7973313C9381AC2B68AEF04CB0898EBFEFA9E3B0E2ACC07FFD66B49CC05E613A5C397A05D30A0437BF30C314AE486D6C6C58B7F543331E18A09F97BA2D6E7B60474D759A8FB2711094C6D38714969BE4822A2642309065E24FB31E338"
@@ -1166,6 +1320,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a36-5g"
         data-product-name="Samsung Galaxy A36 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/E6E2205D573E1C5065C8035B83D136994B125017B73A8B04FCFE2DFC0917D74E66D9B6FB8742ACA31B3D8E61C4E2E5B28EC875AB3DBC7DE0C1018E55DAD5208C5D4AD55E568C7D46939D39E279A73640AA4C17D5A5486F8712A4CEB03AB8DEDDD4F8B23B7402F5467F52D76137945DFC8B3BB5913D9D6820BDC329E69DBA23257B19065CE666CE0C56A52008866FC361"
@@ -1216,6 +1372,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a35-5g"
         data-product-name="Samsung Galaxy A35 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/898EFB6591C797282773FB49C314D8167C5A983378F0FF39BABB915EC34122475C7C4CE657C0350B8AB37FF8D211F291AFB8D737709019F7D1DD5DEA8581FA9C190094334202145B1034F42DE3682222245F57CC9B97708D7EA381DF3CD8072CA4AF2645B4EAD073F5713AD32AA7CA25A9E193A1B40029EEC4BFF6A9EDFC9EBE"
@@ -1266,6 +1424,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a27-5g"
         data-product-name="Samsung Galaxy A27 5G"
         data-product-image="https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Galaxy_A27_5G_front_panel.jpg"
@@ -1316,6 +1476,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a26-5g"
         data-product-name="Samsung Galaxy A26 5G"
         data-product-image="https://api.samsungmobilepress.com/api/v1/file/55AA522CE52107988D3F3C8EC50C107B4FF8C79E1FACA7F8B71B15055FF9547BB7A7C75295ED2CE99A5552D61FA49044F6A36A56EA1651602ED85A7FE4989EDBE4A63ABCB24B6C8DF87564D5596A0BAC889CA4FEA3D99F6B079F65480DF25D8DF90FC33AC45294EC8D546BD3542F44FD3DF9D06B8E6E7421B7E5FCD7AABADBB1DBD349815B66ABB2CAD4EB056C6C08FB"
@@ -1366,6 +1528,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a17-5g"
         data-product-name="Samsung Galaxy A17 5G"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A17_5G_2026.jpg"
@@ -1416,6 +1580,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a16-5g"
         data-product-name="Samsung Galaxy A16 5G"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A16_5G_2025.jpg"
@@ -1466,6 +1632,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="A"
         data-product-id="samsung-galaxy-a15-5g"
         data-product-name="Samsung Galaxy A15 5G"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_A15_5G_2024.jpg"
@@ -1516,6 +1684,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-fold8"
         data-product-name="Samsung Galaxy Z Fold8"
         data-product-image="https://www.samsungmobilepress.com/file/8C7C5E5C5C1F4E8D2A9C9F1C5A5B5B9B"
@@ -1566,6 +1736,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-flip8"
         data-product-name="Samsung Galaxy Z Flip8"
         data-product-image="https://www.samsungmobilepress.com/file/9A7A9F4D7A0B1B0D7C9E7F7C5A4D3E2F"
@@ -1616,6 +1788,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-flip7"
         data-product-name="Samsung Galaxy Z Flip7"
         data-product-image="https://images.samsung.com/sg/smartphones/galaxy-z-flip7/images/galaxy-z-flip7-share-image.jpg"
@@ -1666,6 +1840,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-fold6"
         data-product-name="Samsung Galaxy Z Fold6"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung_Galaxy_Z_Fold6.png"
@@ -1716,6 +1892,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-flip6"
         data-product-name="Samsung Galaxy Z Flip6"
         data-product-image="https://www.galaxus.de/en/s1/product/samsung-galaxy-z-flip6-256-gb-blue-670-sim-esim-5g-smartphones-46980671"
@@ -1766,6 +1944,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-fold5"
         data-product-name="Samsung Galaxy Z Fold5"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Fold-5_vnutorny-displej.jpg"
@@ -1816,6 +1996,8 @@
 
       <article
         class="product-card"
+        data-brand="Samsung"
+        data-series="Z"
         data-product-id="samsung-galaxy-z-flip5"
         data-product-name="Samsung Galaxy Z Flip5"
         data-product-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samsung-Galaxy-Z-Flip5.jpg"
@@ -1861,11 +2043,169 @@
 
 
       <!-- ==================================================
+           SAMSUNG GALAXY XCOVER7 PRO
+      ================================================== -->
+
+      <article
+        class="product-card"
+        data-brand="Samsung"
+        data-series="XCover"
+        data-product-id="samsung-galaxy-xcover7-pro"
+        data-product-name="Samsung Galaxy XCover7 Pro"
+        data-product-image="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253"
+        data-product-price=""
+        data-product-shop="Amazon"
+        data-product-link="https://amzn.to/4joroqF"
+      >
+
+        <button
+          class="favorite-button"
+          type="button"
+          aria-label="Samsung Galaxy XCover7 Pro zu Favoriten hinzufügen"
+          onclick="toggleFavorite(this)"
+        >
+          ♡
+        </button>
+
+        <div class="product-image">
+
+          <img
+            src="https://handingo.de/cdn/shop/files/55454-samsung-galaxy-xcover7-pro.jpg?v=1776081253"
+            alt="Samsung Galaxy XCover7 Pro"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h2>Samsung Galaxy XCover7 Pro</h2>
+
+          <a
+            href="https://amzn.to/4joroqF"
+            class="product-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Zum Deal
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- ==================================================
+           SAMSUNG GALAXY XCOVER7
+      ================================================== -->
+
+      <article
+        class="product-card"
+        data-brand="Samsung"
+        data-series="XCover"
+        data-product-id="samsung-galaxy-xcover7"
+        data-product-name="Samsung Galaxy XCover7"
+        data-product-image="https://upload.wikimedia.org/wikipedia/commons/f/f2/Samsung_Galaxy_Xcover_7.jpg"
+        data-product-price=""
+        data-product-shop="Amazon"
+        data-product-link="https://amzn.to/4hm2xmh"
+      >
+
+        <button
+          class="favorite-button"
+          type="button"
+          aria-label="Samsung Galaxy XCover7 zu Favoriten hinzufügen"
+          onclick="toggleFavorite(this)"
+        >
+          ♡
+        </button>
+
+        <div class="product-image">
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Samsung_Galaxy_Xcover_7.jpg"
+            alt="Samsung Galaxy XCover7"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h2>Samsung Galaxy XCover7</h2>
+
+          <a
+            href="https://amzn.to/4hm2xmh"
+            class="product-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Zum Deal
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- ==================================================
+           SAMSUNG GALAXY XCOVER6 PRO
+      ================================================== -->
+
+      <article
+        class="product-card"
+        data-brand="Samsung"
+        data-series="XCover"
+        data-product-id="samsung-galaxy-xcover6-pro"
+        data-product-name="Samsung Galaxy XCover6 Pro"
+        data-product-image="https://upload.wikimedia.org/wikipedia/commons/6/6e/Samsung_Galaxy_XCover_6_pro.jpg"
+        data-product-price=""
+        data-product-shop="Amazon"
+        data-product-link="https://amzn.to/4rzLAZ0"
+      >
+
+        <button
+          class="favorite-button"
+          type="button"
+          aria-label="Samsung Galaxy XCover6 Pro zu Favoriten hinzufügen"
+          onclick="toggleFavorite(this)"
+        >
+          ♡
+        </button>
+
+        <div class="product-image">
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Samsung_Galaxy_XCover_6_pro.jpg"
+            alt="Samsung Galaxy XCover6 Pro"
+          >
+
+        </div>
+
+        <div class="product-content">
+
+          <h2>Samsung Galaxy XCover6 Pro</h2>
+
+          <a
+            href="https://amzn.to/4rzLAZ0"
+            class="product-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Zum Deal
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- ==================================================
            APPLE IPHONE 17 PRO MAX
       ================================================== -->
 
       <article
         class="product-card"
+        data-brand="iPhone"
+        data-series=""
         data-product-id="iphone-17-pro-max-b0fqg1tsy1"
         data-product-name="Apple iPhone 17 Pro Max"
         data-product-image="https://media.ldlc.com/r1600/ld/products/00/06/27/53/LD0006275305.jpg"
@@ -2029,12 +2369,218 @@
        FILTER
     ========================= */
 
+    let activeBrand = null;
+
+    let activeSeries = null;
+
+
     function toggleFilter() {
 
       const message =
         document.getElementById("filterMessage");
 
       message.classList.toggle("show");
+
+    }
+
+
+    function toggleBrandFilter(brand) {
+
+      if (activeBrand === brand) {
+
+        activeBrand = null;
+
+      }
+
+      else {
+
+        activeBrand = brand;
+
+      }
+
+
+      /*
+       * Wenn iPhone ausgewählt wird,
+       * werden Samsung-Serienfilter automatisch
+       * zurückgesetzt.
+       */
+
+      if (activeBrand === "iPhone") {
+
+        activeSeries = null;
+
+      }
+
+
+      /*
+       * Wenn Samsung ausgewählt wird,
+       * darf die zuletzt gewählte Serie bestehen bleiben.
+       */
+
+      updateFilterButtons();
+
+      applyFilters();
+
+    }
+
+
+    function toggleSeriesFilter(series) {
+
+      /*
+       * Serien gehören ausschließlich zu Samsung.
+       * Beim Anklicken einer Serie wird Samsung
+       * automatisch aktiviert.
+       */
+
+      if (activeSeries === series) {
+
+        activeSeries = null;
+
+      }
+
+      else {
+
+        activeSeries = series;
+
+      }
+
+
+      if (activeSeries) {
+
+        activeBrand = "Samsung";
+
+      }
+
+
+      updateFilterButtons();
+
+      applyFilters();
+
+    }
+
+
+    function updateFilterButtons() {
+
+      const samsungButton =
+        document.getElementById("filterSamsung");
+
+      const iphoneButton =
+        document.getElementById("filterIphone");
+
+      const sButton =
+        document.getElementById("filterS");
+
+      const aButton =
+        document.getElementById("filterA");
+
+      const zButton =
+        document.getElementById("filterZ");
+
+      const xcoverButton =
+        document.getElementById("filterXCover");
+
+
+      samsungButton.classList.toggle(
+        "active",
+        activeBrand === "Samsung"
+      );
+
+
+      iphoneButton.classList.toggle(
+        "active",
+        activeBrand === "iPhone"
+      );
+
+
+      sButton.classList.toggle(
+        "active",
+        activeSeries === "S"
+      );
+
+
+      aButton.classList.toggle(
+        "active",
+        activeSeries === "A"
+      );
+
+
+      zButton.classList.toggle(
+        "active",
+        activeSeries === "Z"
+      );
+
+
+      xcoverButton.classList.toggle(
+        "active",
+        activeSeries === "XCover"
+      );
+
+    }
+
+
+    function applyFilters() {
+
+      const cards =
+        document.querySelectorAll(
+          ".product-card"
+        );
+
+
+      cards.forEach(
+        function(card) {
+
+          const brand =
+            card.dataset.brand;
+
+          const series =
+            card.dataset.series;
+
+
+          let visible = true;
+
+
+          /*
+           * Herstellerfilter
+           */
+
+          if (
+            activeBrand &&
+            brand !== activeBrand
+          ) {
+
+            visible = false;
+
+          }
+
+
+          /*
+           * Serienfilter
+           *
+           * Eine Serie kann nur bei Samsung
+           * gefunden werden.
+           */
+
+          if (
+            visible &&
+            activeSeries &&
+            (
+              brand !== "Samsung" ||
+              series !== activeSeries
+            )
+          ) {
+
+            visible = false;
+
+          }
+
+
+          card.classList.toggle(
+            "hidden",
+            !visible
+          );
+
+        }
+      );
 
     }
 
@@ -2367,6 +2913,10 @@
       function() {
 
         loadFavorites();
+
+        updateFilterButtons();
+
+        applyFilters();
 
       }
     );
