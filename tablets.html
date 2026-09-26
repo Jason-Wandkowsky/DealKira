@@ -257,6 +257,14 @@
       border-color: #222;
     }
 
+    #seriesButtons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+    }
+
     .products {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -357,29 +365,40 @@
       transform: translateY(-2px);
     }
 
+    /*
+      FAVORITEN
+      Exakt wie bei deals.html
+    */
+
     .favorite-button {
-      width: 43px;
-      height: 43px;
-      flex: 0 0 43px;
-      border: 1px solid #ddd;
-      background: #fff;
-      border-radius: 9px;
-      font-size: 20px;
-      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 5;
       transition: 0.2s;
     }
 
     .favorite-button:hover {
-      border-color: #ffd400;
-      background: #fff8c7;
+      transform: scale(1.08);
+      background: #fff;
     }
 
     .favorite-button.active {
-      background: #ffd400;
-      border-color: #ffd400;
+      color: #e60023;
+    }
+
+    .favorite-button:disabled {
+      cursor: wait;
+      opacity: 0.7;
     }
 
     .loading-state,
@@ -537,10 +556,10 @@
       }
 
       .favorite-button {
-        width: 36px;
-        height: 36px;
-        flex-basis: 36px;
-        font-size: 17px;
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+        font-size: 21px;
       }
 
       .loading-state,
@@ -1131,17 +1150,24 @@
         const button =
           document.createElement("button");
 
-        button.className = "filter-choice";
+        button.className =
+          "filter-choice";
 
-        button.textContent = series.label;
+        button.textContent =
+          series.label;
 
-        button.onclick = function() {
+        button.onclick =
+          function() {
 
-          toggleSeriesFilter(series.value);
+            toggleSeriesFilter(
+              series.value
+            );
 
-        };
+          };
 
-        if (activeSeries === series.value) {
+        if (
+          activeSeries === series.value
+        ) {
 
           button.classList.add("active");
 
@@ -1166,7 +1192,9 @@
         const brand =
           button.dataset.brand;
 
-        if (activeBrand === brand) {
+        if (
+          activeBrand === brand
+        ) {
 
           button.classList.add("active");
 
@@ -1182,7 +1210,9 @@
       const allButton =
         document.getElementById("filterAll");
 
-      if (activeBrand === null) {
+      if (
+        activeBrand === null
+      ) {
 
         allButton.classList.add("active");
 
@@ -1198,7 +1228,9 @@
     function applyFilters() {
 
       const cards =
-        document.querySelectorAll(".product-card");
+        document.querySelectorAll(
+          ".product-card"
+        );
 
       let visibleCount = 0;
 
@@ -1247,15 +1279,21 @@
       });
 
 
-      updateNoResultsState(visibleCount);
+      updateNoResultsState(
+        visibleCount
+      );
 
     }
 
 
-    function updateNoResultsState(visibleCount) {
+    function updateNoResultsState(
+      visibleCount
+    ) {
 
       const existing =
-        document.getElementById("noResultsState");
+        document.getElementById(
+          "noResultsState"
+        );
 
       if (existing) {
 
@@ -1268,14 +1306,18 @@
       }
 
       const products =
-        document.getElementById("products");
+        document.getElementById(
+          "products"
+        );
 
       const state =
         document.createElement("div");
 
-      state.id = "noResultsState";
+      state.id =
+        "noResultsState";
 
-      state.className = "no-results-state";
+      state.className =
+        "no-results-state";
 
       state.innerHTML = `
         <div class="state-icon">🔎</div>
@@ -1300,7 +1342,9 @@
     async function loadProducts() {
 
       const products =
-        document.getElementById("products");
+        document.getElementById(
+          "products"
+        );
 
       try {
 
@@ -1377,7 +1421,9 @@
     function renderProducts() {
 
       const products =
-        document.getElementById("products");
+        document.getElementById(
+          "products"
+        );
 
       products.innerHTML = "";
 
@@ -1475,12 +1521,15 @@
         image.onerror =
           function() {
 
-            this.style.display = "none";
+            this.style.display =
+              "none";
 
           };
 
 
-        imageWrap.appendChild(image);
+        imageWrap.appendChild(
+          image
+        );
 
 
         /*
@@ -1514,8 +1563,13 @@
           product.name || "Tablet";
 
 
-        info.appendChild(brand);
-        info.appendChild(name);
+        info.appendChild(
+          brand
+        );
+
+        info.appendChild(
+          name
+        );
 
 
         /*
@@ -1536,7 +1590,9 @@
           price.textContent =
             product.price;
 
-          info.appendChild(price);
+          info.appendChild(
+            price
+          );
 
         }
 
@@ -1559,7 +1615,9 @@
           shop.textContent =
             "Shop: " + product.shop;
 
-          info.appendChild(shop);
+          info.appendChild(
+            shop
+          );
 
         }
 
@@ -1628,7 +1686,8 @@
 
         favoriteButton.setAttribute(
           "aria-label",
-          "Zu Favoriten hinzufügen"
+          product.name +
+          " zu Favoriten hinzufügen"
         );
 
 
@@ -1636,24 +1695,37 @@
           function() {
 
             toggleFavorite(
-              product,
               favoriteButton
             );
 
           };
 
 
-        actions.appendChild(dealButton);
-        actions.appendChild(favoriteButton);
+        actions.appendChild(
+          dealButton
+        );
+
+        actions.appendChild(
+          favoriteButton
+        );
 
 
-        info.appendChild(actions);
+        info.appendChild(
+          actions
+        );
 
 
-        card.appendChild(imageWrap);
-        card.appendChild(info);
+        card.appendChild(
+          imageWrap
+        );
 
-        products.appendChild(card);
+        card.appendChild(
+          info
+        );
+
+        products.appendChild(
+          card
+        );
 
       });
 
@@ -1662,7 +1734,7 @@
       updateSeriesButtons();
       applyFilters();
 
-      loadFavoriteStates();
+      loadFavorites();
 
     }
 
@@ -1670,6 +1742,7 @@
     /*
       ==========================================
       SUPABASE FAVORITEN
+      EXAKT WIE BEI deals.html
       ==========================================
     */
 
@@ -1677,11 +1750,10 @@
       "https://zniknbouugmgvqkkoamo.supabase.co";
 
     const SUPABASE_KEY =
-      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw-B_htFgzI";
+      "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
 
 
-    let supabaseClient =
-      null;
+    let supabaseClient = null;
 
 
     function initSupabase() {
@@ -1691,6 +1763,13 @@
       ) {
 
         return false;
+
+      }
+
+
+      if (supabaseClient) {
+
+        return true;
 
       }
 
@@ -1728,45 +1807,37 @@
       }
 
 
-      try {
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.getUser();
 
-        const result =
-          await supabaseClient.auth.getUser();
 
-
-        if (
-          result &&
-          result.data &&
-          result.data.user
-        ) {
-
-          return result.data.user;
-
-        }
-
-      } catch (error) {
+      if (error) {
 
         console.error(
           "Benutzer konnte nicht geladen werden:",
           error
         );
 
+        return null;
+
       }
 
 
-      return null;
+      return data.user;
 
     }
 
 
     async function toggleFavorite(
-      product,
       button
     ) {
 
-      if (!supabaseClient) {
+      if (!initSupabase()) {
 
-        initSupabase();
+        return;
 
       }
 
@@ -1785,28 +1856,66 @@
       }
 
 
+      const card =
+        button.closest(
+          ".product-card"
+        );
+
+
+      if (!card) {
+
+        return;
+
+      }
+
+
+      button.disabled = true;
+
+
       try {
 
         const productId =
-          product.id || "";
+          card.dataset.productId || "";
+
+        const productName =
+          card.dataset.productName || "";
+
+        const productImage =
+          card.dataset.productImage || "";
+
+        const productPrice =
+          card.dataset.productPrice || "";
+
+        const productShop =
+          card.dataset.productShop || "";
+
+        const productLink =
+          card.dataset.productLink || "";
 
 
-        const existing =
+        const {
+          data: existingFavorite,
+          error: selectError
+        } =
           await supabaseClient
-            .from("favorites")
+            .from("favoriten")
             .select("id")
-            .eq("user_id", user.id)
-            .eq("product_id", productId)
-            .limit(1);
+            .eq(
+              "user_id",
+              user.id
+            )
+            .eq(
+              "produkt_id",
+              productId
+            )
+            .maybeSingle();
 
 
-        if (
-          existing.error
-        ) {
+        if (selectError) {
 
           console.error(
             "Favorit konnte nicht geprüft werden:",
-            existing.error
+            selectError
           );
 
           return;
@@ -1814,29 +1923,29 @@
         }
 
 
-        if (
-          existing.data &&
-          existing.data.length > 0
-        ) {
+        if (existingFavorite) {
 
-          const favoriteId =
-            existing.data[0].id;
-
-
-          const removeResult =
+          const {
+            error: deleteError
+          } =
             await supabaseClient
-              .from("favorites")
+              .from("favoriten")
               .delete()
-              .eq("id", favoriteId);
+              .eq(
+                "id",
+                existingFavorite.id
+              )
+              .eq(
+                "user_id",
+                user.id
+              );
 
 
-          if (
-            removeResult.error
-          ) {
+          if (deleteError) {
 
             console.error(
               "Favorit konnte nicht entfernt werden:",
-              removeResult.error
+              deleteError
             );
 
             return;
@@ -1848,52 +1957,53 @@
             "active"
           );
 
-          button.innerHTML =
+          button.textContent =
             "♡";
 
           button.setAttribute(
             "aria-label",
-            "Zu Favoriten hinzufügen"
+            productName +
+            " zu Favoriten hinzufügen"
           );
 
         } else {
 
-          const insertResult =
+          const {
+            error: insertError
+          } =
             await supabaseClient
-              .from("favorites")
+              .from("favoriten")
               .insert({
 
                 user_id:
                   user.id,
 
-                product_id:
+                produkt_id:
                   productId,
 
-                product_name:
-                  product.name || "",
+                produkt_name:
+                  productName,
 
-                product_image:
-                  product.image || "",
+                produkt_bild:
+                  productImage,
 
-                product_price:
-                  product.price || "",
+                produkt_preis:
+                  productPrice,
 
-                product_shop:
-                  product.shop || "",
+                produkt_shop:
+                  productShop,
 
-                product_link:
-                  product.link || ""
+                produkt_link:
+                  productLink
 
               });
 
 
-          if (
-            insertResult.error
-          ) {
+          if (insertError) {
 
             console.error(
               "Favorit konnte nicht gespeichert werden:",
-              insertResult.error
+              insertError
             );
 
             return;
@@ -1905,12 +2015,13 @@
             "active"
           );
 
-          button.innerHTML =
+          button.textContent =
             "♥";
 
           button.setAttribute(
             "aria-label",
-            "Aus Favoriten entfernen"
+            productName +
+            " aus Favoriten entfernen"
           );
 
         }
@@ -1922,16 +2033,20 @@
           error
         );
 
+      } finally {
+
+        button.disabled = false;
+
       }
 
     }
 
 
-    async function loadFavoriteStates() {
+    async function loadFavorites() {
 
-      if (!supabaseClient) {
+      if (!initSupabase()) {
 
-        initSupabase();
+        return;
 
       }
 
@@ -1947,53 +2062,52 @@
       }
 
 
-      try {
-
-        const result =
-          await supabaseClient
-            .from("favorites")
-            .select("product_id")
-            .eq("user_id", user.id);
-
-
-        if (
-          result.error
-        ) {
-
-          console.error(
-            "Favoriten konnten nicht geladen werden:",
-            result.error
-          );
-
-          return;
-
-        }
-
-
-        const favoriteIds =
-          new Set(
-            (result.data || []).map(
-              function(item) {
-
-                return item.product_id;
-
-              }
-            )
+      const {
+        data: favorites,
+        error
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .select("produkt_id")
+          .eq(
+            "user_id",
+            user.id
           );
 
 
-        const cards =
-          document.querySelectorAll(
-            ".product-card"
-          );
+      if (error) {
+
+        console.error(
+          "Favoriten konnten nicht geladen werden:",
+          error
+        );
+
+        return;
+
+      }
 
 
-        cards.forEach(
+      const favoriteIds =
+        new Set(
+          favorites.map(
+            function(favorite) {
+
+              return favorite.produkt_id;
+
+            }
+          )
+        );
+
+
+      document
+        .querySelectorAll(
+          ".product-card"
+        )
+        .forEach(
           function(card) {
 
             const productId =
-              card.dataset.productId || "";
-
+              card.dataset.productId;
 
             const button =
               card.querySelector(
@@ -2001,9 +2115,7 @@
               );
 
 
-            if (
-              !button
-            ) {
+            if (!button) {
 
               return;
 
@@ -2018,12 +2130,13 @@
                 "active"
               );
 
-              button.innerHTML =
+              button.textContent =
                 "♥";
 
               button.setAttribute(
                 "aria-label",
-                "Aus Favoriten entfernen"
+                card.dataset.productName +
+                " aus Favoriten entfernen"
               );
 
             } else {
@@ -2032,12 +2145,13 @@
                 "active"
               );
 
-              button.innerHTML =
+              button.textContent =
                 "♡";
 
               button.setAttribute(
                 "aria-label",
-                "Zu Favoriten hinzufügen"
+                card.dataset.productName +
+                " zu Favoriten hinzufügen"
               );
 
             }
@@ -2045,14 +2159,54 @@
           }
         );
 
-      } catch (error) {
+    }
 
-        console.error(
-          "Fehler beim Laden der Favoriten:",
-          error
-        );
+
+    /*
+      ==========================================
+      AUTH-STATUS
+      ==========================================
+    */
+
+    function setupAuthListener() {
+
+      if (!supabaseClient) {
+
+        return;
 
       }
+
+
+      supabaseClient.auth.onAuthStateChange(
+        function(event, session) {
+
+          if (session) {
+
+            loadFavorites();
+
+          } else {
+
+            document
+              .querySelectorAll(
+                ".favorite-button"
+              )
+              .forEach(
+                function(button) {
+
+                  button.classList.remove(
+                    "active"
+                  );
+
+                  button.textContent =
+                    "♡";
+
+                }
+              );
+
+          }
+
+        }
+      );
 
     }
 
@@ -2077,7 +2231,9 @@
 
 
       const script =
-        document.createElement("script");
+        document.createElement(
+          "script"
+        );
 
       script.id =
         "supabaseScript";
@@ -2085,12 +2241,16 @@
       script.src =
         "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
 
+
       script.onload =
         function() {
 
-          initSupabase();
+          if (initSupabase()) {
 
-          loadFavoriteStates();
+            setupAuthListener();
+            loadFavorites();
+
+          }
 
         };
 
@@ -2105,7 +2265,9 @@
         };
 
 
-      document.head.appendChild(script);
+      document.head.appendChild(
+        script
+      );
 
     }
 
