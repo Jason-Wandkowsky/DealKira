@@ -2053,17 +2053,24 @@
 
       }
 
-    catch (error) {
-  console.error("Favoriten-Fehler:", error);
+    } catch (error) {
 
-  alert(
-    "Favorit konnte nicht gespeichert werden.\n\n" +
-    "Fehler: " + (error?.message || "Unbekannter Fehler") +
-    "\nCode: " + (error?.code || "unbekannt") +
-    "\nDetails: " + (error?.details || "keine") +
-    "\nHinweis: " + (error?.hint || "keiner")
-  );
-    }
+      console.error(
+        "Favoriten-Fehler:",
+        error
+      );
+
+      alert(
+        "Favorit konnte nicht gespeichert werden.\n\n" +
+        "Fehler: " +
+        (error?.message || "Unbekannter Fehler") +
+        "\nCode: " +
+        (error?.code || "unbekannt") +
+        "\nDetails: " +
+        (error?.details || "keine") +
+        "\nHinweis: " +
+        (error?.hint || "keiner")
+      );
 
     } finally {
 
