@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Tablets – DealKira</title>
+
   <meta
     name="description"
-    content="Tablets vergleichen und günstige Deals finden – Samsung, Apple, Lenovo, Xiaomi, Huawei, OnePlus, Microsoft Surface, HONOR und Amazon Fire."
+    content="Tablets vergleichen und bessere Deals finden – Samsung, Apple, Lenovo, Xiaomi, Huawei, OnePlus, Microsoft Surface, HONOR und Amazon Fire."
   >
 
   <style>
@@ -23,69 +24,129 @@
       color: #111;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
-      height: 72px;
-      background: #000;
-      color: #fff;
+      height: 82px;
+      background: #111;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 25px;
-      position: sticky;
-      top: 0;
+      padding: 0 6%;
+      position: relative;
       z-index: 1000;
     }
 
     .logo {
-      width: 220px;
-      height: 55px;
+      width: 280px;
+      height: 65px;
       display: flex;
       align-items: center;
       overflow: visible;
+      position: relative;
     }
 
     .logo img {
-      height: 120px;
+      height: 320px;
       width: auto;
+      max-width: none;
       display: block;
-      object-fit: contain;
     }
 
-    .nav {
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: .2s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: .2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
       display: flex;
       align-items: center;
-      gap: 25px;
-    }
-
-    .nav a {
+      gap: 12px;
       color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      transition: 0.2s;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
     }
 
-    .nav a:hover {
+    .menu-panel a:hover {
+      background: #222;
       color: #ffd400;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
 
     .hero {
       background: #111;
       color: #fff;
-      padding: 55px 20px 50px;
       text-align: center;
+      padding: 55px 20px 60px;
     }
 
     .hero h1 {
@@ -98,142 +159,134 @@
       color: #ccc;
     }
 
-    /* =========================
-       FILTER
-    ========================= */
-
-    .filter-section {
-      max-width: 1400px;
-      margin: 30px auto 10px;
+    .products-section {
+      max-width: 1100px;
+      margin: 45px auto 70px;
       padding: 0 20px;
     }
 
-    .filter-title {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    .filters {
+    .products-top {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      justify-content: flex-end;
+      margin-bottom: 25px;
     }
 
     .filter-button {
+      background: #ffd400;
+      color: #111;
       border: none;
-      background: #fff;
-      padding: 11px 18px;
-      border-radius: 25px;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 16px;
+      font-weight: 700;
       cursor: pointer;
-      font-size: 15px;
-      font-weight: 600;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: 0.2s;
+      transition: .2s;
     }
 
     .filter-button:hover {
-      background: #ffd400;
+      transform: translateY(-2px);
     }
 
-    .filter-button.active {
-      background: #ffd400;
-      color: #000;
-    }
-
-    /* =========================
-       SUBFILTER
-    ========================= */
-
-    .subfilter-wrapper {
-      max-width: 1400px;
-      margin: 15px auto 0;
-      padding: 0 20px;
+    .filter-message {
       display: none;
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
     }
 
-    .subfilter-wrapper.show {
+    .filter-message.show {
       display: block;
     }
 
-    .subfilters {
+    .filter-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .filter-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
+      margin-bottom: 16px;
     }
 
-    .subfilter-button {
-      border: 1px solid #ddd;
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-option {
+      border: 2px solid #ddd;
       background: #fff;
-      padding: 9px 15px;
-      border-radius: 20px;
-      cursor: pointer;
+      color: #111;
+      border-radius: 9px;
+      padding: 10px 16px;
       font-size: 14px;
-      transition: 0.2s;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
     }
 
-    .subfilter-button:hover {
+    .filter-option:hover {
+      border-color: #ffd400;
+      transform: translateY(-1px);
+    }
+
+    .filter-option.active {
       background: #ffd400;
       border-color: #ffd400;
+      color: #111;
     }
 
-    .subfilter-button.active {
-      background: #ffd400;
-      border-color: #ffd400;
-      font-weight: 600;
+    .series-section {
+      display: none;
     }
 
-    /* =========================
-       PRODUCTS
-    ========================= */
-
-    .products-section {
-      max-width: 1400px;
-      margin: 30px auto 60px;
-      padding: 0 20px;
+    .series-section.show {
+      display: block;
     }
 
-    .products-grid {
+    .products {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(2,minmax(0,1fr));
       gap: 22px;
     }
 
-    .deal-card {
+    .product-card {
       background: #fff;
       border-radius: 16px;
-      padding: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: 0.2s;
-      position: relative;
       overflow: hidden;
-    }
-
-    .deal-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-    }
-
-    /* =========================
-       PRODUCT IMAGE
-    ========================= */
-
-    .product-image-wrap {
-      width: 100%;
-      height: 230px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: .2s;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
-      background: #fafafa;
-      border-radius: 12px;
-      overflow: hidden;
+      flex-direction: column;
       position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,.14);
+    }
+
+    .product-card.hidden {
+      display: none;
     }
 
     .product-image {
-      max-width: 100%;
-      max-height: 210px;
+      height: 190px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
       object-fit: contain;
       display: block;
     }
@@ -244,9 +297,55 @@
       text-align: center;
     }
 
-    /* =========================
-       FAVORITE BUTTON
-    ========================= */
+    .product-content {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: #777;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+    }
+
+    .product-content h2 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .product-price {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .product-shop {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .product-button {
+      margin-top: auto;
+      display: inline-block;
+      text-align: center;
+      padding: 13px 18px;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .product-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
 
     .favorite-button {
       position: absolute;
@@ -281,161 +380,63 @@
       opacity: 0.7;
     }
 
-    /* =========================
-       PRODUCT INFO
-    ========================= */
-
-    .product-brand {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      color: #777;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-    }
-
-    .product-name {
-      font-size: 18px;
-      line-height: 1.35;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .product-price {
-      font-size: 22px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .product-shop {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 15px;
-    }
-
-    /* =========================
-       ACTIONS
-    ========================= */
-
-    .product-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .deal-button {
-      flex: 1;
-      border: none;
-      background: #ffd400;
-      color: #000;
-      padding: 12px 15px;
-      border-radius: 10px;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      text-align: center;
-      transition: 0.2s;
-    }
-
-    .deal-button:hover {
-      background: #f2c800;
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       EMPTY / LOADING
-    ========================= */
-
-    .loading,
-    .empty {
+    .loading-message,
+    .error-message,
+    .empty-message {
       grid-column: 1 / -1;
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
       text-align: center;
-      padding: 50px 20px;
-      color: #777;
-      font-size: 18px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    .error-message {
+      color: #b00020;
+    }
 
     footer {
-      background: #000;
-      color: #fff;
+      background: #111;
+      color: #aaa;
       text-align: center;
       padding: 30px 20px;
-      margin-top: 50px;
-    }
-
-    footer p {
-      color: #aaa;
       font-size: 14px;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 1100px) {
-      .products-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 800px) {
-      header {
-        padding: 0 15px;
-      }
+    @media(max-width:800px) {
 
       .logo {
-        width: 160px;
+        width: 225px;
       }
 
       .logo img {
-        height: 105px;
+        height: 275px;
       }
 
-      .nav {
-        gap: 12px;
-      }
-
-      .nav a {
-        font-size: 14px;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .products-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
     }
 
-    @media (max-width: 550px) {
+    @media(max-width:550px) {
+
       header {
-        height: 65px;
+        padding: 0 5%;
       }
 
       .logo {
-        width: 140px;
+        width: 190px;
         height: 50px;
       }
 
       .logo img {
-        height: 92px;
+        height: 235px;
       }
 
-      .nav {
-        gap: 8px;
-      }
-
-      .nav a {
-        font-size: 13px;
+      .menu-panel {
+        right: 5%;
+        width: 270px;
       }
 
       .hero {
-        padding: 40px 15px;
+        padding: 42px 15px 48px;
       }
 
       .hero h1 {
@@ -443,15 +444,76 @@
       }
 
       .hero p {
-        font-size: 16px;
+        font-size: 15px;
       }
 
-      .products-grid {
-        grid-template-columns: 1fr;
+      .products-section {
+        margin: 35px auto 50px;
+        padding: 0 12px;
       }
 
-      .product-image-wrap {
-        height: 250px;
+      .products-top {
+        margin-bottom: 18px;
+      }
+
+      .filter-button {
+        padding: 10px 17px;
+        font-size: 14px;
+      }
+
+      .filter-message {
+        padding: 14px;
+      }
+
+      .filter-title {
+        font-size: 14px;
+      }
+
+      .filter-group {
+        gap: 7px;
+      }
+
+      .filter-option {
+        padding: 8px 11px;
+        font-size: 12px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 12px;
+      }
+
+      .product-image {
+        height: 130px;
+        padding: 8px;
+      }
+
+      .product-content {
+        padding: 14px;
+      }
+
+      .product-brand {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+
+      .product-content h2 {
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+
+      .product-price {
+        font-size: 18px;
+      }
+
+      .product-shop {
+        font-size: 11px;
+        margin-bottom: 12px;
+      }
+
+      .product-button {
+        padding: 10px 8px;
+        font-size: 13px;
       }
 
       .favorite-button {
@@ -462,423 +524,1611 @@
         font-size: 21px;
       }
 
-      .filter-section,
-      .subfilter-wrapper,
-      .products-section {
-        padding-left: 12px;
-        padding-right: 12px;
+    }
+
+    @media(max-width:380px) {
+
+      .logo {
+        width: 170px;
       }
+
+      .logo img {
+        height: 215px;
+      }
+
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
     }
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+<header>
 
-  <header>
-    <a href="index.html" class="logo">
-      <img src="20879_nobg (1).png" alt="DealKira">
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
+
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-panel" id="menuPanel">
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto
     </a>
 
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="deals.html">Deals</a>
-      <a href="konto.html">Konto</a>
-    </nav>
-  </header>
+    <a href="suche.html">
+      <span class="menu-icon">🔎</span>
+      Suche
+    </a>
 
-  <!-- =========================
-       HERO
-  ========================= -->
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
 
-  <section class="hero">
-    <h1>Tablets</h1>
-    <p>Tablets vergleichen und bessere Deals finden.</p>
-  </section>
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
 
-  <!-- =========================
-       FILTER
-  ========================= -->
+    <div class="menu-divider"></div>
 
-  <section class="filter-section">
-    <div class="filter-title">Marke</div>
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
+    </a>
 
-    <div class="filters">
+  </div>
+
+</header>
+
+
+<section class="hero">
+  <h1>Tablets</h1>
+  <p>Tablets verschiedener Marken, Preisklassen und Ausstattungen entdecken</p>
+</section>
+
+
+<main class="products-section">
+
+  <div class="products-top">
+    <button
+      class="filter-button"
+      type="button"
+      onclick="toggleFilter()"
+    >
+      ⚙️ Filter
+    </button>
+  </div>
+
+
+  <div class="filter-message" id="filterMessage">
+
+    <div class="filter-title">Hersteller</div>
+
+    <div class="filter-group">
+
       <button
-        class="filter-button active"
-        data-brand="Alle"
-      >
-        Alle
-      </button>
-
-      <button
-        class="filter-button"
-        data-brand="Samsung"
+        class="filter-option"
+        id="filterSamsung"
+        type="button"
+        onclick="toggleBrandFilter('Samsung')"
       >
         Samsung
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Apple"
+        class="filter-option"
+        id="filterApple"
+        type="button"
+        onclick="toggleBrandFilter('Apple')"
       >
         Apple
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Lenovo"
+        class="filter-option"
+        id="filterLenovo"
+        type="button"
+        onclick="toggleBrandFilter('Lenovo')"
       >
         Lenovo
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Xiaomi"
+        class="filter-option"
+        id="filterXiaomi"
+        type="button"
+        onclick="toggleBrandFilter('Xiaomi')"
       >
         Xiaomi
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Huawei"
+        class="filter-option"
+        id="filterHuawei"
+        type="button"
+        onclick="toggleBrandFilter('Huawei')"
       >
         Huawei
       </button>
 
       <button
-        class="filter-button"
-        data-brand="OnePlus"
+        class="filter-option"
+        id="filterOnePlus"
+        type="button"
+        onclick="toggleBrandFilter('OnePlus')"
       >
         OnePlus
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Microsoft Surface"
+        class="filter-option"
+        id="filterMicrosoftSurface"
+        type="button"
+        onclick="toggleBrandFilter('Microsoft Surface')"
       >
         Microsoft Surface
       </button>
 
       <button
-        class="filter-button"
-        data-brand="HONOR"
+        class="filter-option"
+        id="filterHonor"
+        type="button"
+        onclick="toggleBrandFilter('HONOR')"
       >
         HONOR
       </button>
 
       <button
-        class="filter-button"
-        data-brand="Amazon Fire"
+        class="filter-option"
+        id="filterAmazonFire"
+        type="button"
+        onclick="toggleBrandFilter('Amazon Fire')"
       >
         Amazon Fire
       </button>
+
     </div>
-  </section>
 
-  <!-- =========================
-       SUBFILTER
-  ========================= -->
 
-  <div
-    class="subfilter-wrapper"
-    id="subfilterWrapper"
-  >
     <div
-      class="subfilters"
-      id="subfilters"
-    ></div>
+      class="series-section"
+      id="samsungSeriesSection"
+    >
+
+      <div class="filter-title">Samsung Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterSamsungS"
+          type="button"
+          onclick="toggleSeriesFilter('S')"
+        >
+          S-Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterSamsungA"
+          type="button"
+          onclick="toggleSeriesFilter('A')"
+        >
+          A-Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterSamsungActive"
+          type="button"
+          onclick="toggleSeriesFilter('Active')"
+        >
+          Tab Active
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="appleSeriesSection"
+    >
+
+      <div class="filter-title">Apple Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterAppleSerie"
+          type="button"
+          onclick="toggleSeriesFilter('Serie')"
+        >
+          Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterAppleMini"
+          type="button"
+          onclick="toggleSeriesFilter('mini')"
+        >
+          mini
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterAppleAir"
+          type="button"
+          onclick="toggleSeriesFilter('Air')"
+        >
+          Air
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterApplePro"
+          type="button"
+          onclick="toggleSeriesFilter('Pro')"
+        >
+          Pro
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="lenovoSeriesSection"
+    >
+
+      <div class="filter-title">Lenovo Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterLenovoTab"
+          type="button"
+          onclick="toggleSeriesFilter('Tab')"
+        >
+          Tab
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterLenovoIdeaTab"
+          type="button"
+          onclick="toggleSeriesFilter('Idea Tab')"
+        >
+          Idea Tab
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterLenovoYoga"
+          type="button"
+          onclick="toggleSeriesFilter('Yoga')"
+        >
+          Yoga
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterLenovoLegion"
+          type="button"
+          onclick="toggleSeriesFilter('Legion')"
+        >
+          Legion
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="xiaomiSeriesSection"
+    >
+
+      <div class="filter-title">Xiaomi Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterXiaomiPad"
+          type="button"
+          onclick="toggleSeriesFilter('Xiaomi Pad')"
+        >
+          Xiaomi Pad
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterRedmiPad"
+          type="button"
+          onclick="toggleSeriesFilter('Redmi Pad')"
+        >
+          Redmi Pad
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="huaweiSeriesSection"
+    >
+
+      <div class="filter-title">Huawei Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterHuaweiMatePad"
+          type="button"
+          onclick="toggleSeriesFilter('MatePad')"
+        >
+          MatePad-Serie
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterHuaweiMatePadSE"
+          type="button"
+          onclick="toggleSeriesFilter('MatePad SE')"
+        >
+          MatePad SE
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="microsoftSeriesSection"
+    >
+
+      <div class="filter-title">Microsoft Surface Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterSurfacePro"
+          type="button"
+          onclick="toggleSeriesFilter('Pro')"
+        >
+          Pro
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterSurfaceGo"
+          type="button"
+          onclick="toggleSeriesFilter('Go')"
+        >
+          Go
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="honorSeriesSection"
+    >
+
+      <div class="filter-title">HONOR Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterHonorMagicPad"
+          type="button"
+          onclick="toggleSeriesFilter('MagicPad')"
+        >
+          MagicPad
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterHonorPad"
+          type="button"
+          onclick="toggleSeriesFilter('Pad')"
+        >
+          Pad
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="series-section"
+      id="amazonFireSeriesSection"
+    >
+
+      <div class="filter-title">Amazon Fire Serien</div>
+
+      <div class="filter-group">
+
+        <button
+          class="filter-option"
+          id="filterAmazonFireHD"
+          type="button"
+          onclick="toggleSeriesFilter('HD')"
+        >
+          HD
+        </button>
+
+        <button
+          class="filter-option"
+          id="filterAmazonFireMax"
+          type="button"
+          onclick="toggleSeriesFilter('Max')"
+        >
+          Max
+        </button>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- =========================
-       PRODUCTS
-  ========================= -->
 
-  <section class="products-section">
-    <div
-      class="products-grid"
-      id="productsGrid"
-    >
-      <div class="loading">
-        Tablets werden geladen...
-      </div>
+  <div class="products" id="products">
+
+    <div class="loading-message">
+      Tablets werden geladen...
     </div>
-  </section>
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  </div>
 
-  <footer>
-    <p>
-      © 2026 DealKira – Deals & Preise vergleichen
-    </p>
-  </footer>
+</main>
 
-  <!-- =========================
-       SUPABASE
-  ========================= -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<footer>
+  © 2026 DealKira – Deals & Preise vergleichen
+</footer>
 
-  <script>
-    const SUPABASE_URL =
-      "https://zniknbouugmgvqkkoamo.supabase.co";
 
-    const SUPABASE_KEY =
-      "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-    const supabaseClient =
-      window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_KEY
-      );
+<script>
 
-    let allProducts = [];
-    let currentBrand = "Alle";
-    let currentSeries = "Alle";
+  /* ========================= */
+  /* SUPABASE */
+  /* ========================= */
 
-    /* =========================
-       AUTH
-    ========================= */
+  const SUPABASE_URL =
+    "https://zniknbouugmgvqkkoamo.supabase.co";
 
-    async function getCurrentUser() {
-      if (!supabaseClient) {
-        return null;
-      }
+  const SUPABASE_KEY =
+    "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
 
-      try {
-        const {
-          data: sessionData,
-          error: sessionError
-        } = await supabaseClient.auth.getSession();
+  const supabaseClient =
+    window.supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_KEY
+    );
 
-        if (
-          !sessionError &&
-          sessionData &&
-          sessionData.session &&
-          sessionData.session.user
-        ) {
-          return sessionData.session.user;
-        }
 
-        const {
-          data: userData,
-          error: userError
-        } = await supabaseClient.auth.getUser();
+  /* ========================= */
+  /* PRODUKTE */
+  /* ========================= */
 
-        if (
-          !userError &&
-          userData &&
-          userData.user
-        ) {
-          return userData.user;
-        }
-      } catch (error) {
-        console.error(
-          "Benutzer/Session konnte nicht geladen werden:",
-          error
+  let productsData = [];
+
+
+  async function loadProducts() {
+
+    const productsContainer =
+      document.getElementById("products");
+
+    try {
+
+      const response =
+        await fetch("tablets.json", {
+          cache: "no-cache"
+        });
+
+
+      if (!response.ok) {
+        throw new Error(
+          "tablets.json konnte nicht geladen werden."
         );
       }
 
-      return null;
+
+      productsData =
+        await response.json();
+
+
+      renderProducts();
+
+    } catch (error) {
+
+      console.error(
+        "Fehler beim Laden der Tablets:",
+        error
+      );
+
+      productsContainer.innerHTML = `
+        <div class="error-message">
+          Die Tablets konnten nicht geladen werden.
+          <br><br>
+          Bitte prüfe, ob <strong>tablets.json</strong>
+          im gleichen Ordner wie <strong>tablets.html</strong>
+          liegt.
+        </div>
+      `;
+
     }
 
-    /* =========================
-       FAVORITE TOGGLE
-    ========================= */
+  }
 
-    async function toggleFavorite(button) {
-      const card = button.closest(".deal-card");
 
-      if (!card) {
-        return;
+  function renderProducts() {
+
+    const productsContainer =
+      document.getElementById("products");
+
+
+    productsContainer.innerHTML = "";
+
+
+    let filteredProducts =
+      productsData.filter(function(product) {
+
+        const brandMatches =
+          !activeBrand ||
+          product.brand === activeBrand;
+
+
+        const seriesMatches =
+          !activeSeries ||
+          product.series === activeSeries;
+
+
+        return (
+          brandMatches &&
+          seriesMatches
+        );
+
+      });
+
+
+    if (!filteredProducts.length) {
+
+      productsContainer.innerHTML = `
+        <div class="empty-message">
+          Keine Tablets gefunden.
+        </div>
+      `;
+
+      return;
+
+    }
+
+
+    filteredProducts.forEach(function(product) {
+
+      const card =
+        document.createElement("article");
+
+      card.className =
+        "product-card";
+
+
+      card.dataset.brand =
+        product.brand || "";
+
+      card.dataset.series =
+        product.series || "";
+
+      card.dataset.productId =
+        product.id || "";
+
+      card.dataset.productName =
+        product.name || "";
+
+      card.dataset.productImage =
+        product.image || "";
+
+      card.dataset.productPrice =
+        product.price || "";
+
+      card.dataset.productShop =
+        product.shop || "";
+
+      card.dataset.productLink =
+        product.link || "";
+
+
+      /* ========================= */
+      /* FAVORIT */
+      /* ========================= */
+
+      const favoriteButton =
+        document.createElement("button");
+
+      favoriteButton.className =
+        "favorite-button";
+
+      favoriteButton.type =
+        "button";
+
+      favoriteButton.textContent =
+        "♡";
+
+      favoriteButton.setAttribute(
+        "aria-label",
+        (product.name || "Tablet") +
+        " zu Favoriten hinzufügen"
+      );
+
+      favoriteButton.addEventListener(
+        "click",
+        function(event) {
+
+          event.preventDefault();
+          event.stopPropagation();
+
+          toggleFavorite(
+            favoriteButton
+          );
+
+        }
+      );
+
+
+      /* ========================= */
+      /* BILD */
+      /* ========================= */
+
+      const imageContainer =
+        document.createElement("div");
+
+      imageContainer.className =
+        "product-image";
+
+
+      if (product.image) {
+
+        const image =
+          document.createElement("img");
+
+        image.src =
+          product.image;
+
+        image.alt =
+          product.name || "Tablet";
+
+        image.loading =
+          "lazy";
+
+
+        image.onerror =
+          function() {
+
+            this.style.display =
+              "none";
+
+          };
+
+
+        imageContainer.appendChild(
+          image
+        );
+
+      } else {
+
+        const noImage =
+          document.createElement("div");
+
+        noImage.className =
+          "no-image";
+
+        noImage.textContent =
+          "Kein Produktbild";
+
+        imageContainer.appendChild(
+          noImage
+        );
+
       }
 
-      const user = await getCurrentUser();
+
+      /* ========================= */
+      /* INHALT */
+      /* ========================= */
+
+      const content =
+        document.createElement("div");
+
+      content.className =
+        "product-content";
+
+
+      const brand =
+        document.createElement("div");
+
+      brand.className =
+        "product-brand";
+
+      brand.textContent =
+        product.brand || "";
+
+      content.appendChild(
+        brand
+      );
+
+
+      const title =
+        document.createElement("h2");
+
+      title.textContent =
+        product.name || "Tablet";
+
+      content.appendChild(
+        title
+      );
+
+
+      if (product.price) {
+
+        const price =
+          document.createElement("div");
+
+        price.className =
+          "product-price";
+
+        price.textContent =
+          product.price;
+
+        content.appendChild(
+          price
+        );
+
+      }
+
+
+      if (product.shop) {
+
+        const shop =
+          document.createElement("div");
+
+        shop.className =
+          "product-shop";
+
+        shop.textContent =
+          "Shop: " +
+          product.shop;
+
+        content.appendChild(
+          shop
+        );
+
+      }
+
+
+      const dealButton =
+        document.createElement("a");
+
+      dealButton.className =
+        "product-button";
+
+      dealButton.textContent =
+        "Zum Deal";
+
+
+      if (product.link) {
+
+        dealButton.href =
+          product.link;
+
+        dealButton.target =
+          "_blank";
+
+        dealButton.rel =
+          "nofollow sponsored noopener";
+
+      } else {
+
+        dealButton.href =
+          "#";
+
+        dealButton.addEventListener(
+          "click",
+          function(event) {
+            event.preventDefault();
+          }
+        );
+
+      }
+
+
+      content.appendChild(
+        dealButton
+      );
+
+
+      /* ========================= */
+      /* CARD */
+      /* ========================= */
+
+      card.appendChild(
+        favoriteButton
+      );
+
+      card.appendChild(
+        imageContainer
+      );
+
+      card.appendChild(
+        content
+      );
+
+
+      productsContainer.appendChild(
+        card
+      );
+
+    });
+
+
+    updateFilterButtons();
+    loadFavorites();
+
+  }
+
+
+  /* ========================= */
+  /* MENÜ */
+  /* ========================= */
+
+  function toggleMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.toggle("open");
+    button.classList.toggle("active");
+
+  }
+
+
+  function closeMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+  }
+
+
+  document.addEventListener(
+    "click",
+    function(event) {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+
+        closeMenu();
+
+      }
+
+    }
+  );
+
+
+  /* ========================= */
+  /* FILTER */
+  /* ========================= */
+
+  let activeBrand = null;
+  let activeSeries = null;
+
+
+  function toggleFilter() {
+
+    const filter =
+      document.getElementById(
+        "filterMessage"
+      );
+
+    filter.classList.toggle(
+      "show"
+    );
+
+  }
+
+
+  function toggleBrandFilter(brand) {
+
+    if (
+      activeBrand === brand
+    ) {
+
+      activeBrand = null;
+      activeSeries = null;
+
+    } else {
+
+      activeBrand = brand;
+      activeSeries = null;
+
+    }
+
+
+    updateFilterButtons();
+    applyFilters();
+
+  }
+
+
+  function toggleSeriesFilter(series) {
+
+    if (
+      activeSeries === series
+    ) {
+
+      activeSeries = null;
+
+    } else {
+
+      activeSeries = series;
+
+    }
+
+
+    updateFilterButtons();
+    applyFilters();
+
+  }
+
+
+  function updateFilterButtons() {
+
+    const brandButtons = {
+
+      Samsung:
+        "filterSamsung",
+
+      Apple:
+        "filterApple",
+
+      Lenovo:
+        "filterLenovo",
+
+      Xiaomi:
+        "filterXiaomi",
+
+      Huawei:
+        "filterHuawei",
+
+      OnePlus:
+        "filterOnePlus",
+
+      "Microsoft Surface":
+        "filterMicrosoftSurface",
+
+      HONOR:
+        "filterHonor",
+
+      "Amazon Fire":
+        "filterAmazonFire"
+
+    };
+
+
+    Object.keys(
+      brandButtons
+    ).forEach(function(brand) {
+
+      const button =
+        document.getElementById(
+          brandButtons[brand]
+        );
+
+      if (button) {
+
+        button.classList.toggle(
+          "active",
+          activeBrand === brand
+        );
+
+      }
+
+    });
+
+
+    const sections = {
+
+      Samsung:
+        "samsungSeriesSection",
+
+      Apple:
+        "appleSeriesSection",
+
+      Lenovo:
+        "lenovoSeriesSection",
+
+      Xiaomi:
+        "xiaomiSeriesSection",
+
+      Huawei:
+        "huaweiSeriesSection",
+
+      "Microsoft Surface":
+        "microsoftSeriesSection",
+
+      HONOR:
+        "honorSeriesSection",
+
+      "Amazon Fire":
+        "amazonFireSeriesSection"
+
+    };
+
+
+    Object.keys(
+      sections
+    ).forEach(function(brand) {
+
+      const section =
+        document.getElementById(
+          sections[brand]
+        );
+
+      if (section) {
+
+        section.classList.toggle(
+          "show",
+          activeBrand === brand
+        );
+
+      }
+
+    });
+
+
+    const seriesButtons = {
+
+      S:
+        "filterSamsungS",
+
+      A:
+        "filterSamsungA",
+
+      Active:
+        "filterSamsungActive",
+
+      Serie:
+        [
+          "filterAppleSerie"
+        ],
+
+      mini:
+        "filterAppleMini",
+
+      Air:
+        "filterAppleAir",
+
+      Pro:
+        [
+          "filterApplePro",
+          "filterSurfacePro"
+        ],
+
+      Tab:
+        "filterLenovoTab",
+
+      "Idea Tab":
+        "filterLenovoIdeaTab",
+
+      Yoga:
+        "filterLenovoYoga",
+
+      Legion:
+        "filterLenovoLegion",
+
+      "Xiaomi Pad":
+        "filterXiaomiPad",
+
+      "Redmi Pad":
+        "filterRedmiPad",
+
+      MatePad:
+        "filterHuaweiMatePad",
+
+      "MatePad SE":
+        "filterHuaweiMatePadSE",
+
+      Go:
+        "filterSurfaceGo",
+
+      MagicPad:
+        "filterHonorMagicPad",
+
+      Pad:
+        "filterHonorPad",
+
+      HD:
+        "filterAmazonFireHD",
+
+      Max:
+        "filterAmazonFireMax"
+
+    };
+
+
+    Object.keys(
+      seriesButtons
+    ).forEach(function(series) {
+
+      const value =
+        seriesButtons[series];
+
+
+      if (Array.isArray(value)) {
+
+        value.forEach(
+          function(buttonId) {
+
+            const button =
+              document.getElementById(
+                buttonId
+              );
+
+            if (button) {
+
+              button.classList.toggle(
+                "active",
+                activeSeries === series
+              );
+
+            }
+
+          }
+        );
+
+      } else {
+
+        const button =
+          document.getElementById(
+            value
+          );
+
+        if (button) {
+
+          button.classList.toggle(
+            "active",
+            activeSeries === series
+          );
+
+        }
+
+      }
+
+    });
+
+  }
+
+
+  function applyFilters() {
+
+    const cards =
+      document.querySelectorAll(
+        ".product-card"
+      );
+
+
+    cards.forEach(function(card) {
+
+      const brand =
+        card.dataset.brand;
+
+      const series =
+        card.dataset.series;
+
+
+      let visible = true;
+
+
+      if (
+        activeBrand &&
+        brand !== activeBrand
+      ) {
+
+        visible = false;
+
+      }
+
+
+      if (
+        visible &&
+        activeSeries &&
+        series !== activeSeries
+      ) {
+
+        visible = false;
+
+      }
+
+
+      card.classList.toggle(
+        "hidden",
+        !visible
+      );
+
+    });
+
+  }
+
+
+  /* ========================= */
+  /* USER */
+  /* ========================= */
+
+  async function getCurrentUser() {
+
+    try {
+
+      const {
+        data: sessionData,
+        error: sessionError
+      } =
+        await supabaseClient.auth.getSession();
+
+
+      if (
+        !sessionError &&
+        sessionData &&
+        sessionData.session &&
+        sessionData.session.user
+      ) {
+
+        return sessionData.session.user;
+
+      }
+
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.getUser();
+
+
+      if (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
+        );
+
+        return null;
+
+      }
+
+
+      return data.user;
+
+    } catch (error) {
+
+      console.error(
+        "Session konnte nicht geladen werden:",
+        error
+      );
+
+      return null;
+
+    }
+
+  }
+
+
+  /* ========================= */
+  /* FAVORITEN */
+  /* ========================= */
+
+  async function toggleFavorite(button) {
+
+    button.disabled = true;
+
+
+    try {
+
+      const user =
+        await getCurrentUser();
+
 
       if (!user) {
+
         alert(
           "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
         );
 
-        window.location.href = "konto.html";
+        window.location.href =
+          "konto.html";
+
         return;
+
       }
+
+
+      const card =
+        button.closest(
+          ".product-card"
+        );
+
 
       const productId =
         card.dataset.productId;
 
       const productName =
-        card.dataset.productName || "";
+        card.dataset.productName;
 
       const productImage =
-        card.dataset.productImage || "";
+        card.dataset.productImage;
 
       const productPrice =
-        card.dataset.productPrice || "";
+        card.dataset.productPrice;
 
       const productShop =
-        card.dataset.productShop || "";
+        card.dataset.productShop;
 
       const productLink =
-        card.dataset.productLink || "";
+        card.dataset.productLink;
 
-      button.disabled = true;
-
-      try {
-        const {
-          data: existingFavorite,
-          error: selectError
-        } = await supabaseClient
-          .from("favoriten")
-          .select("id")
-          .eq("user_id", user.id)
-          .eq("produkt_id", productId)
-          .maybeSingle();
-
-        if (selectError) {
-          console.error(
-            "Favorit konnte nicht geprüft werden:",
-            selectError
-          );
-
-          alert(
-            "Der Favorit konnte nicht geprüft werden."
-          );
-
-          button.disabled = false;
-          return;
-        }
-
-        if (existingFavorite) {
-
-          const {
-            error: deleteError
-          } = await supabaseClient
-            .from("favoriten")
-            .delete()
-            .eq("id", existingFavorite.id)
-            .eq("user_id", user.id);
-
-          if (deleteError) {
-            console.error(
-              "Favorit konnte nicht entfernt werden:",
-              deleteError
-            );
-
-            alert(
-              "Der Favorit konnte nicht entfernt werden."
-            );
-
-            button.disabled = false;
-            return;
-          }
-
-          button.classList.remove("active");
-          button.textContent = "♡";
-
-          button.setAttribute(
-            "aria-label",
-            productName +
-            " zu Favoriten hinzufügen"
-          );
-
-        } else {
-
-          const {
-            error: insertError
-          } = await supabaseClient
-            .from("favoriten")
-            .insert({
-              user_id: user.id,
-              produkt_id: productId,
-              produkt_name: productName,
-              produkt_bild: productImage,
-              produkt_preis: productPrice,
-              produkt_shop: productShop,
-              produkt_link: productLink
-            });
-
-          if (insertError) {
-            console.error(
-              "Favorit konnte nicht gespeichert werden:",
-              insertError
-            );
-
-            alert(
-              "Der Favorit konnte nicht gespeichert werden."
-            );
-
-            button.disabled = false;
-            return;
-          }
-
-          button.classList.add("active");
-          button.textContent = "♥";
-
-          button.setAttribute(
-            "aria-label",
-            productName +
-            " aus Favoriten entfernen"
-          );
-        }
-
-      } catch (error) {
-
-        console.error(
-          "Fehler beim Favoriten:",
-          error
-        );
-
-        alert(
-          "Es ist ein Fehler beim Favoriten aufgetreten."
-        );
-      }
-
-      button.disabled = false;
-    }
-
-    /* =========================
-       FAVORITES LADEN
-    ========================= */
-
-    async function loadFavorites() {
-      const user = await getCurrentUser();
-
-      if (!user) {
-        return;
-      }
 
       const {
-        data: favorites,
-        error
-      } = await supabaseClient
-        .from("favoriten")
-        .select("produkt_id")
-        .eq("user_id", user.id);
+        data: existingFavorite,
+        error: selectError
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .select("id")
+          .eq(
+            "user_id",
+            user.id
+          )
+          .eq(
+            "produkt_id",
+            productId
+          )
+          .maybeSingle();
 
-      if (error) {
-        console.error(
-          "Favoriten konnten nicht geladen werden:",
-          error
-        );
 
-        return;
+      if (selectError) {
+
+        throw selectError;
+
       }
 
-      const favoriteIds = new Set(
-        favorites.map(function(favorite) {
-          return favorite.produkt_id;
-        })
+
+      if (existingFavorite) {
+
+        const {
+          error
+        } =
+          await supabaseClient
+            .from("favoriten")
+            .delete()
+            .eq(
+              "id",
+              existingFavorite.id
+            )
+            .eq(
+              "user_id",
+              user.id
+            );
+
+
+        if (error) {
+
+          throw error;
+
+        }
+
+
+        button.classList.remove(
+          "active"
+        );
+
+        button.textContent =
+          "♡";
+
+        button.setAttribute(
+          "aria-label",
+          productName +
+          " zu Favoriten hinzufügen"
+        );
+
+      } else {
+
+        const {
+          error
+        } =
+          await supabaseClient
+            .from("favoriten")
+            .insert({
+
+              user_id:
+                user.id,
+
+              produkt_id:
+                productId,
+
+              produkt_name:
+                productName,
+
+              produkt_bild:
+                productImage,
+
+              produkt_preis:
+                productPrice,
+
+              produkt_shop:
+                productShop,
+
+              produkt_link:
+                productLink
+
+            });
+
+
+        if (error) {
+
+          throw error;
+
+        }
+
+
+        button.classList.add(
+          "active"
+        );
+
+        button.textContent =
+          "♥";
+
+        button.setAttribute(
+          "aria-label",
+          productName +
+          " aus Favoriten entfernen"
+        );
+
+      }
+
+    } catch (error) {
+
+      console.error(
+        "Favoriten-Fehler:",
+        error
       );
 
-      document
-        .querySelectorAll(".deal-card")
-        .forEach(function(card) {
+      alert(
+        "Der Favorit konnte nicht gespeichert werden."
+      );
+
+    } finally {
+
+      button.disabled = false;
+
+    }
+
+  }
+
+
+  async function loadFavorites() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      return;
+
+    }
+
+
+    const {
+      data: favorites,
+      error
+    } =
+      await supabaseClient
+        .from("favoriten")
+        .select("produkt_id")
+        .eq(
+          "user_id",
+          user.id
+        );
+
+
+    if (error) {
+
+      console.error(
+        "Favoriten konnten nicht geladen werden:",
+        error
+      );
+
+      return;
+
+    }
+
+
+    const favoriteIds =
+      new Set(
+        favorites.map(
+          function(favorite) {
+
+            return favorite.produkt_id;
+
+          }
+        )
+      );
+
+
+    document
+      .querySelectorAll(
+        ".product-card"
+      )
+      .forEach(
+        function(card) {
 
           const productId =
             card.dataset.productId;
@@ -888,14 +2138,26 @@
               ".favorite-button"
             );
 
+
           if (!button) {
+
             return;
+
           }
 
-          if (favoriteIds.has(productId)) {
 
-            button.classList.add("active");
-            button.textContent = "♥";
+          if (
+            favoriteIds.has(
+              productId
+            )
+          ) {
+
+            button.classList.add(
+              "active"
+            );
+
+            button.textContent =
+              "♥";
 
             button.setAttribute(
               "aria-label",
@@ -905,556 +2167,84 @@
 
           } else {
 
-            button.classList.remove("active");
-            button.textContent = "♡";
+            button.classList.remove(
+              "active"
+            );
+
+            button.textContent =
+              "♡";
 
             button.setAttribute(
               "aria-label",
               card.dataset.productName +
               " zu Favoriten hinzufügen"
             );
+
           }
-        });
-    }
 
-    /* =========================
-       AUTH LISTENER
-    ========================= */
+        }
+      );
 
-    supabaseClient.auth.onAuthStateChange(
-      function(event, session) {
+  }
 
-        if (session) {
 
-          setTimeout(function() {
+  /* ========================= */
+  /* AUTH STATUS */
+  /* ========================= */
+
+  supabaseClient.auth.onAuthStateChange(
+    function(event, session) {
+
+      if (session) {
+
+        setTimeout(
+          function() {
+
             loadFavorites();
-          }, 0);
 
-        } else {
-
-          document
-            .querySelectorAll(".favorite-button")
-            .forEach(function(button) {
-
-              button.classList.remove("active");
-              button.textContent = "♡";
-            });
-        }
-      }
-    );
-
-    /* =========================
-       PRODUCTS LOAD
-    ========================= */
-
-    async function loadProducts() {
-
-      const grid =
-        document.getElementById(
-          "productsGrid"
+          },
+          0
         );
 
-      try {
+      } else {
 
-        const response =
-          await fetch("tablets.json");
+        document
+          .querySelectorAll(
+            ".favorite-button"
+          )
+          .forEach(
+            function(button) {
 
-        if (!response.ok) {
-          throw new Error(
-            "tablets.json konnte nicht geladen werden."
-          );
-        }
-
-        allProducts =
-          await response.json();
-
-        renderProducts();
-
-      } catch (error) {
-
-        console.error(
-          "Fehler beim Laden der Tablets:",
-          error
-        );
-
-        grid.innerHTML = `
-          <div class="empty">
-            Die Tablets konnten nicht geladen werden.
-          </div>
-        `;
-      }
-    }
-
-    /* =========================
-       SUBFILTER ERSTELLEN
-    ========================= */
-
-    function createSubfilters() {
-
-      const wrapper =
-        document.getElementById(
-          "subfilterWrapper"
-        );
-
-      const container =
-        document.getElementById(
-          "subfilters"
-        );
-
-      container.innerHTML = "";
-
-      if (
-        currentBrand === "Alle"
-      ) {
-        wrapper.classList.remove("show");
-        return;
-      }
-
-      const brandProducts =
-        allProducts.filter(function(product) {
-          return product.brand === currentBrand;
-        });
-
-      const seriesList = [];
-
-      brandProducts.forEach(function(product) {
-
-        const series =
-          product.series || "";
-
-        if (
-          series &&
-          !seriesList.includes(series)
-        ) {
-          seriesList.push(series);
-        }
-      });
-
-      if (seriesList.length === 0) {
-        wrapper.classList.remove("show");
-        return;
-      }
-
-      wrapper.classList.add("show");
-
-      const allButton =
-        document.createElement("button");
-
-      allButton.className =
-        "subfilter-button active";
-
-      allButton.textContent = "Alle";
-
-      allButton.onclick =
-        function() {
-
-          currentSeries = "Alle";
-
-          document
-            .querySelectorAll(
-              ".subfilter-button"
-            )
-            .forEach(function(button) {
               button.classList.remove(
                 "active"
               );
-            });
 
-          allButton.classList.add(
-            "active"
+              button.textContent =
+                "♡";
+
+            }
           );
 
-          renderProducts();
-        };
-
-      container.appendChild(
-        allButton
-      );
-
-      seriesList.forEach(function(series) {
-
-        const button =
-          document.createElement("button");
-
-        button.className =
-          "subfilter-button";
-
-        button.textContent =
-          series;
-
-        button.onclick =
-          function() {
-
-            currentSeries =
-              series;
-
-            document
-              .querySelectorAll(
-                ".subfilter-button"
-              )
-              .forEach(function(button) {
-                button.classList.remove(
-                  "active"
-                );
-              });
-
-            button.classList.add(
-              "active"
-            );
-
-            renderProducts();
-          };
-
-        container.appendChild(
-          button
-        );
-      });
-    }
-
-    /* =========================
-       PRODUCTS RENDER
-    ========================= */
-
-    function renderProducts() {
-
-      const grid =
-        document.getElementById(
-          "productsGrid"
-        );
-
-      let products =
-        allProducts.filter(function(product) {
-
-          const brandMatches =
-            currentBrand === "Alle" ||
-            product.brand === currentBrand;
-
-          const seriesMatches =
-            currentSeries === "Alle" ||
-            product.series === currentSeries;
-
-          return (
-            brandMatches &&
-            seriesMatches
-          );
-        });
-
-      grid.innerHTML = "";
-
-      if (products.length === 0) {
-
-        grid.innerHTML = `
-          <div class="empty">
-            Keine Tablets gefunden.
-          </div>
-        `;
-
-        return;
       }
 
-      products.forEach(function(product) {
-
-        const card =
-          document.createElement("article");
-
-        card.className =
-          "deal-card";
-
-        card.dataset.productId =
-          product.id || "";
-
-        card.dataset.productName =
-          product.name || "";
-
-        card.dataset.productImage =
-          product.image || "";
-
-        card.dataset.productPrice =
-          product.price || "";
-
-        card.dataset.productShop =
-          product.shop || "";
-
-        card.dataset.productLink =
-          product.link || "";
-
-        /* =========================
-           IMAGE WRAP
-        ========================= */
-
-        const imageWrap =
-          document.createElement("div");
-
-        imageWrap.className =
-          "product-image-wrap";
-
-        /* =========================
-           IMAGE
-        ========================= */
-
-        if (product.image) {
-
-          const image =
-            document.createElement("img");
-
-          image.className =
-            "product-image";
-
-          image.src =
-            product.image;
-
-          image.alt =
-            product.name || "Tablet";
-
-          image.loading = "lazy";
-
-          image.onerror =
-            function() {
-
-              image.remove();
-
-              const noImage =
-                document.createElement("div");
-
-              noImage.className =
-                "no-image";
-
-              noImage.textContent =
-                "Kein Produktbild";
-
-              imageWrap.insertBefore(
-                noImage,
-                imageWrap.firstChild
-              );
-            };
-
-          imageWrap.appendChild(
-            image
-          );
-
-        } else {
-
-          const noImage =
-            document.createElement("div");
-
-          noImage.className =
-            "no-image";
-
-          noImage.textContent =
-            "Kein Produktbild";
-
-          imageWrap.appendChild(
-            noImage
-          );
-        }
-
-        /* =========================
-           FAVORITE BUTTON
-        ========================= */
-
-        const favoriteButton =
-          document.createElement("button");
-
-        favoriteButton.type =
-          "button";
-
-        favoriteButton.className =
-          "favorite-button";
-
-        favoriteButton.textContent =
-          "♡";
-
-        favoriteButton.setAttribute(
-          "aria-label",
-          (product.name || "Produkt") +
-          " zu Favoriten hinzufügen"
-        );
-
-        favoriteButton.onclick =
-          function(event) {
-
-            event.preventDefault();
-            event.stopPropagation();
-
-            toggleFavorite(
-              favoriteButton
-            );
-          };
-
-        imageWrap.appendChild(
-          favoriteButton
-        );
-
-        /* =========================
-           PRODUCT INFO
-        ========================= */
-
-        const info =
-          document.createElement("div");
-
-        const brand =
-          document.createElement("div");
-
-        brand.className =
-          "product-brand";
-
-        brand.textContent =
-          product.brand || "";
-
-        info.appendChild(
-          brand
-        );
-
-        const name =
-          document.createElement("div");
-
-        name.className =
-          "product-name";
-
-        name.textContent =
-          product.name || "";
-
-        info.appendChild(
-          name
-        );
-
-        if (product.price) {
-
-          const price =
-            document.createElement("div");
-
-          price.className =
-            "product-price";
-
-          price.textContent =
-            product.price;
-
-          info.appendChild(
-            price
-          );
-        }
-
-        if (product.shop) {
-
-          const shop =
-            document.createElement("div");
-
-          shop.className =
-            "product-shop";
-
-          shop.textContent =
-            "Shop: " +
-            product.shop;
-
-          info.appendChild(
-            shop
-          );
-        }
-
-        /* =========================
-           DEAL BUTTON
-        ========================= */
-
-        const actions =
-          document.createElement("div");
-
-        actions.className =
-          "product-actions";
-
-        const dealButton =
-          document.createElement("a");
-
-        dealButton.className =
-          "deal-button";
-
-        dealButton.textContent =
-          "Zum Deal";
-
-        dealButton.href =
-          product.link || "#";
-
-        dealButton.target =
-          "_blank";
-
-        dealButton.rel =
-          "nofollow sponsored noopener";
-
-        actions.appendChild(
-          dealButton
-        );
-
-        info.appendChild(
-          actions
-        );
-
-        /* =========================
-           CARD ZUSAMMENBAUEN
-        ========================= */
-
-        card.appendChild(
-          imageWrap
-        );
-
-        card.appendChild(
-          info
-        );
-
-        grid.appendChild(
-          card
-        );
-      });
-
-      loadFavorites();
     }
+  );
 
-    /* =========================
-       BRAND FILTER
-    ========================= */
 
-    document
-      .querySelectorAll(
-        ".filter-button"
-      )
-      .forEach(function(button) {
+  /* ========================= */
+  /* START */
+  /* ========================= */
 
-        button.addEventListener(
-          "click",
-          function() {
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
 
-            document
-              .querySelectorAll(
-                ".filter-button"
-              )
-              .forEach(function(button) {
-                button.classList.remove(
-                  "active"
-                );
-              });
+      loadProducts();
 
-            this.classList.add(
-              "active"
-            );
+    }
+  );
 
-            currentBrand =
-              this.dataset.brand;
-
-            currentSeries =
-              "Alle";
-
-            createSubfilters();
-
-            renderProducts();
-          }
-        );
-      });
-
-    /* =========================
-       START
-    ========================= */
-
-    loadProducts();
-
-  </script>
+</script>
 
 </body>
 </html>
