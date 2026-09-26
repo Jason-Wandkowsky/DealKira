@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Konto / Anmelden – DealKira</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <style>
     * {
@@ -17,118 +20,93 @@
       background: #f5f5f5;
       color: #111;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     header {
-      height: 82px;
-      background: #111;
+      height: 72px;
+      background: #000;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 6%;
-      position: relative;
+      padding: 0 25px;
+      position: sticky;
+      top: 0;
       z-index: 1000;
     }
 
     .logo {
-      width: 280px;
-      height: 65px;
       display: flex;
       align-items: center;
+      text-decoration: none;
+      height: 72px;
       overflow: visible;
-      position: relative;
     }
 
     .logo img {
-      height: 320px;
-      width: auto;
-      max-width: none;
+      width: 220px;
+      height: 120px;
+      object-fit: contain;
       display: block;
     }
 
     .menu-button {
-      width: 48px;
-      height: 48px;
-      background: #1c1c1c;
-      border: 1px solid #333;
+      width: 46px;
+      height: 46px;
+      border: none;
       border-radius: 10px;
+      background: #ffd400;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 5px;
-      cursor: pointer;
-      transition: 0.2s;
+      z-index: 1002;
     }
 
     .menu-button span {
       width: 23px;
       height: 3px;
-      background: #ffd400;
+      background: #000;
       border-radius: 3px;
       transition: 0.2s;
     }
 
-    .menu-button:hover {
-      background: #252525;
-      border-color: #ffd400;
-    }
-
-    .menu-button.active span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-button.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-button.active span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
     .menu-panel {
-      position: absolute;
-      top: 82px;
-      right: 6%;
-      width: 270px;
+      position: fixed;
+      top: 72px;
+      right: 20px;
+      width: 250px;
       background: #111;
-      border: 1px solid #333;
       border-radius: 14px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.3);
       padding: 10px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: 0.2s;
+      display: none;
+      z-index: 1001;
     }
 
-    .menu-panel.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
+    .menu-panel.active {
+      display: block;
     }
 
     .menu-panel a {
       display: flex;
       align-items: center;
       gap: 12px;
-      color: #fff;
+      color: white;
       text-decoration: none;
-      padding: 14px 15px;
+      padding: 14px 13px;
       border-radius: 9px;
-      font-weight: 700;
+      font-size: 15px;
       transition: 0.2s;
     }
 
     .menu-panel a:hover {
       background: #222;
-      color: #ffd400;
     }
 
     .menu-icon {
-      width: 25px;
+      width: 28px;
       text-align: center;
       font-size: 19px;
     }
@@ -136,42 +114,44 @@
     .menu-divider {
       height: 1px;
       background: #333;
-      margin: 8px 5px;
+      margin: 6px 5px;
     }
 
-    .hero {
-      background: #111;
-      color: #fff;
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 45px 20px 70px;
+    }
+
+    .page-heading {
       text-align: center;
-      padding: 55px 20px 60px;
+      margin-bottom: 30px;
     }
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
+    h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
-    .hero h1 span {
+    h1 span {
       color: #ffd400;
+      background: #000;
+      padding: 2px 8px;
+      border-radius: 7px;
     }
 
-    .hero p {
-      font-size: 18px;
-      color: #ccc;
-    }
-
-    .account-section {
-      max-width: 650px;
-      width: 100%;
-      margin: 55px auto 70px;
-      padding: 0 20px;
+    .page-heading p {
+      color: #666;
+      font-size: 16px;
     }
 
     .account-card {
-      background: #fff;
-      border-radius: 16px;
+      max-width: 650px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 18px;
       padding: 35px;
-      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
     }
 
     .account-view {
@@ -182,17 +162,15 @@
       display: block;
     }
 
-    .account-card h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
-      text-align: center;
+    .account-view h2 {
+      font-size: 27px;
+      margin-bottom: 8px;
     }
 
-    .account-card > p {
+    .account-view > p {
       color: #666;
-      text-align: center;
-      margin-bottom: 28px;
-      line-height: 1.5;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
     .form-group {
@@ -201,322 +179,236 @@
 
     .form-group label {
       display: block;
-      font-weight: 700;
-      margin-bottom: 7px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      font-size: 14px;
     }
 
-    .form-group input {
+    input {
       width: 100%;
-      padding: 13px 14px;
-      border: 1px solid #ccc;
-      border-radius: 9px;
+      border: 1px solid #d7d7d7;
+      border-radius: 10px;
+      padding: 14px 15px;
       font-size: 16px;
       outline: none;
+      background: #fff;
       transition: 0.2s;
     }
 
-    .form-group input:focus {
+    input:focus {
       border-color: #ffd400;
-      box-shadow: 0 0 0 3px rgba(255,212,0,.2);
+      box-shadow: 0 0 0 3px rgba(255,212,0,0.18);
     }
-
-    /* =========================
-       PASSWORT-FELD
-    ========================= */
 
     .password-field {
       position: relative;
-      width: 100%;
     }
 
     .password-field input {
-      width: 100%;
-      padding-right: 54px !important;
+      padding-right: 52px;
     }
 
     .password-toggle {
       position: absolute;
-      right: 8px;
+      right: 7px;
       top: 50%;
       transform: translateY(-50%);
       width: 40px;
       height: 40px;
       border: none;
       background: transparent;
-      color: #666;
-      border-radius: 8px;
+      cursor: pointer;
+      color: #555;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      padding: 0;
-      transition: 0.2s;
-    }
-
-    .password-toggle:hover {
-      background: #f0f0f0;
-      color: #111;
-    }
-
-    .password-toggle:focus {
-      outline: none;
-      background: #f0f0f0;
-      color: #111;
     }
 
     .password-toggle svg {
-      width: 21px;
-      height: 21px;
-      display: block;
-      stroke: currentColor;
+      width: 22px;
+      height: 22px;
     }
 
-    /* =========================
-       BUTTONS
-    ========================= */
+    .forgot-link {
+      display: block;
+      color: #555;
+      font-size: 14px;
+      text-decoration: underline;
+      margin: 3px 0 18px;
+    }
+
+    .main-button,
+    .secondary-button,
+    .switch-link {
+      width: 100%;
+      min-height: 48px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
 
     .main-button {
-      width: 100%;
-      background: #ffd400;
-      color: #111;
       border: none;
-      border-radius: 10px;
-      padding: 13px 20px;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top: 5px;
+      background: #ffd400;
+      color: #000;
     }
 
     .main-button:hover {
-      transform: translateY(-2px);
-    }
-
-    .main-button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-      transform: none;
+      background: #f0c800;
     }
 
     .secondary-button {
-      display: block;
-      width: 100%;
-      margin-top: 12px;
-      background: #111;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-      border-radius: 10px;
-      padding: 13px 20px;
-      font-size: 16px;
-      font-weight: 700;
-      transition: 0.2s;
+      background: #000;
+      color: white;
       border: none;
-      cursor: pointer;
     }
 
     .secondary-button:hover {
       background: #222;
-      color: #ffd400;
+    }
+
+    .switch-link {
+      color: #111;
+      text-decoration: underline;
+      min-height: auto;
+      font-weight: normal;
     }
 
     .account-divider {
       height: 1px;
-      background: #ddd;
-      margin: 28px 0;
+      background: #e5e5e5;
+      margin: 28px 0 20px;
     }
 
     .switch-text {
       text-align: center;
       color: #666;
-      font-size: 15px;
-      line-height: 1.5;
-    }
-
-    .switch-link {
-      display: block;
-      margin-top: 12px;
-      color: #111;
-      text-align: center;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .switch-link:hover {
-      color: #d4ad00;
-    }
-
-    .forgot-link {
-      display: block;
-      text-align: right;
-      margin-top: -8px;
-      margin-bottom: 18px;
-      color: #555;
+      margin-bottom: 12px;
       font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .forgot-link:hover {
-      color: #111;
     }
 
     .account-message {
-      display: none;
-      background: #fffbea;
-      border: 1px solid #ffd400;
-      border-radius: 10px;
-      padding: 13px 15px;
-      margin-top: 18px;
-      text-align: center;
-      color: #555;
+      margin-top: 15px;
+      padding: 0;
       font-size: 14px;
       line-height: 1.5;
     }
 
-    .account-message.show {
-      display: block;
+    .account-message.success {
+      color: #16803c;
     }
 
     .account-message.error {
-      background: #fff5f5;
-      border-color: #d9534f;
-      color: #9f2925;
+      color: #d00000;
     }
 
-    .account-message.success {
-      background: #f5fff5;
-      border-color: #65b865;
-      color: #286b28;
-    }
-
-    .password-hint {
+    .password-hint,
+    .settings-note {
       color: #777;
       font-size: 13px;
-      margin-top: -10px;
+      line-height: 1.5;
+      margin-top: -8px;
       margin-bottom: 18px;
-      line-height: 1.4;
     }
 
-    /* =========================
-       ANGEMELDETES KONTO
-    ========================= */
-
     .account-name {
-      text-align: center;
-      font-size: 38px;
-      font-weight: 800;
-      margin-bottom: 35px;
-      word-break: break-word;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 25px;
     }
 
     .account-menu {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .account-menu-button {
       width: 100%;
-      background: #f7f7f7;
-      color: #111;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e3e3e3;
+      background: #fff;
       border-radius: 12px;
-      padding: 17px 18px;
+      padding: 16px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 15px;
+      align-items: center;
       cursor: pointer;
-      text-align: left;
       font-size: 16px;
-      font-weight: 700;
-      transition: 0.2s;
+      text-align: left;
     }
 
     .account-menu-button:hover {
-      background: #fff;
+      background: #fafafa;
       border-color: #ffd400;
-      transform: translateY(-2px);
     }
 
     .account-menu-left {
       display: flex;
       align-items: center;
       gap: 13px;
+      font-weight: bold;
     }
 
     .account-menu-icon {
-      width: 28px;
+      width: 30px;
       text-align: center;
-      font-size: 21px;
+      font-size: 20px;
     }
 
     .account-arrow {
-      font-size: 22px;
+      font-size: 27px;
       color: #777;
     }
 
     .logout-account-button {
       width: 100%;
-      background: #111;
-      color: #fff;
       border: none;
+      background: #111;
+      color: white;
       border-radius: 12px;
-      padding: 17px 18px;
+      padding: 15px;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: bold;
       cursor: pointer;
-      transition: 0.2s;
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     .logout-account-button:hover {
-      background: #222;
-      color: #ffd400;
+      background: #333;
     }
-
-    /* =========================
-       KONTOEINSTELLUNGEN
-    ========================= */
 
     .settings-header {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
+    }
+
+    .settings-header h2 {
+      margin: 0;
     }
 
     .back-button {
       width: 42px;
       height: 42px;
-      border: 1px solid #ddd;
-      background: #f7f7f7;
-      border-radius: 9px;
-      font-size: 22px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .back-button:hover {
+      border: none;
+      border-radius: 10px;
       background: #ffd400;
-      border-color: #ffd400;
-    }
-
-    .settings-header h2 {
-      flex: 1;
-      text-align: left;
-      margin: 0;
+      font-size: 23px;
+      cursor: pointer;
+      flex-shrink: 0;
     }
 
     .settings-item {
-      background: #f7f7f7;
-      border: 1px solid #e2e2e2;
-      border-radius: 12px;
+      border: 1px solid #e4e4e4;
+      border-radius: 13px;
       padding: 17px;
-      margin-bottom: 12px;
+      margin-bottom: 13px;
     }
 
     .settings-item-top {
@@ -527,247 +419,104 @@
     }
 
     .settings-item-label {
-      color: #777;
       font-size: 13px;
-      font-weight: 700;
+      color: #777;
       margin-bottom: 5px;
     }
 
     .settings-item-value {
       font-size: 16px;
-      font-weight: 700;
+      font-weight: bold;
       word-break: break-word;
     }
 
     .edit-button {
-      width: 42px;
-      height: 42px;
-      min-width: 42px;
+      width: 40px;
+      height: 40px;
       border: none;
-      background: #ffd400;
-      color: #111;
       border-radius: 9px;
-      font-size: 18px;
+      background: #f1f1f1;
       cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .edit-button:hover {
-      transform: scale(1.05);
+      flex-shrink: 0;
     }
 
     .edit-area {
       display: none;
-      margin-top: 15px;
+      margin-top: 17px;
     }
 
-    .edit-area.show {
+    .edit-area.active {
       display: block;
-    }
-
-    .edit-area input {
-      width: 100%;
-      padding: 12px 13px;
-      border: 1px solid #ccc;
-      border-radius: 9px;
-      font-size: 15px;
-      outline: none;
-    }
-
-    .edit-area input:focus {
-      border-color: #ffd400;
-      box-shadow: 0 0 0 3px rgba(255,212,0,.2);
     }
 
     .edit-buttons {
       display: flex;
       gap: 10px;
-      margin-top: 10px;
+      margin-top: 12px;
     }
 
     .small-save-button,
     .small-cancel-button {
-      flex: 1;
       border: none;
       border-radius: 9px;
-      padding: 11px;
-      font-weight: 700;
+      padding: 11px 16px;
       cursor: pointer;
+      font-weight: bold;
     }
 
     .small-save-button {
       background: #ffd400;
-      color: #111;
+      color: #000;
     }
 
     .small-cancel-button {
-      background: #ddd;
+      background: #eee;
       color: #111;
     }
 
-    .settings-note {
-      color: #777;
-      font-size: 13px;
-      line-height: 1.5;
-      margin-top: 8px;
-    }
-
-    /* =========================
-       FAVORITEN / BENACHRICHTIGUNGEN
-    ========================= */
-
     .empty-account-section {
       text-align: center;
-      padding: 25px 10px 10px;
+      padding: 45px 15px;
+      color: #666;
     }
 
     .empty-account-icon {
-      font-size: 60px;
-      margin-bottom: 15px;
+      font-size: 50px;
+      margin-bottom: 12px;
     }
 
     .empty-account-section h2 {
+      color: #111;
       margin-bottom: 10px;
     }
 
-    .empty-account-section p {
-      color: #666;
-      line-height: 1.5;
-    }
-
-    /* =========================
-       BENACHRICHTIGUNGSEINSTELLUNGEN
-    ========================= */
-
-    .notifications-intro {
-      color: #666;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .notification-setting {
-      background: #f7f7f7;
+    .favorite-item {
       border: 1px solid #e2e2e2;
-      border-radius: 12px;
-      padding: 17px;
-      margin-bottom: 12px;
+      border-radius: 13px;
+      padding: 14px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       gap: 15px;
-    }
-
-    .notification-setting-text {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .notification-setting-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 5px;
-    }
-
-    .notification-setting-description {
-      color: #777;
-      font-size: 13px;
-      line-height: 1.45;
-    }
-
-    /* Schalter */
-
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 52px;
-      height: 30px;
-      min-width: 52px;
-      cursor: pointer;
-    }
-
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      position: absolute;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      inset: 0;
-      background: #ccc;
-      border-radius: 30px;
-      transition: 0.2s;
-    }
-
-    .slider::before {
-      content: "";
-      position: absolute;
-      width: 22px;
-      height: 22px;
-      left: 4px;
-      top: 4px;
-      background: #fff;
-      border-radius: 50%;
-      transition: 0.2s;
-      box-shadow: 0 1px 4px rgba(0,0,0,.2);
-    }
-
-    .switch input:checked + .slider {
-      background: #ffd400;
-    }
-
-    .switch input:checked + .slider::before {
-      transform: translateX(22px);
-    }
-
-    .switch input:focus-visible + .slider {
-      box-shadow: 0 0 0 3px rgba(255,212,0,.3);
-    }
-
-    .switch input:disabled + .slider {
-      opacity: 0.55;
-      cursor: not-allowed;
-    }
-
-    .notifications-loading {
-      text-align: center;
-      color: #777;
-      padding: 25px 10px;
-    }
-
-    .notifications-loading-icon {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    /* =========================
-       FAVORITEN-LISTE
-    ========================= */
-
-    .favorite-card {
-      background: #f7f7f7;
-      border: 1px solid #e2e2e2;
-      border-radius: 12px;
-      padding: 15px;
+      align-items: center;
       margin-bottom: 12px;
-    }
-
-    .favorite-card-content {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      background: white;
     }
 
     .favorite-image {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      background: #fff;
-      border-radius: 9px;
-      padding: 5px;
+      width: 90px;
+      height: 90px;
+      border-radius: 10px;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
       flex-shrink: 0;
+    }
+
+    .favorite-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .favorite-info {
@@ -776,16 +525,14 @@
     }
 
     .favorite-name {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 7px;
-      word-break: break-word;
+      font-weight: bold;
+      margin-bottom: 6px;
+      line-height: 1.35;
     }
 
     .favorite-price {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 4px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
     .favorite-shop {
@@ -795,242 +542,235 @@
 
     .favorite-actions {
       display: flex;
-      gap: 8px;
-      margin-top: 12px;
+      flex-direction: column;
+      gap: 7px;
     }
 
-    .favorite-open-button,
-    .favorite-remove-button {
-      flex: 1;
+    .favorite-open,
+    .favorite-delete {
       border: none;
-      border-radius: 9px;
-      padding: 10px;
-      font-weight: 700;
+      border-radius: 8px;
+      padding: 9px 12px;
       cursor: pointer;
-      text-decoration: none;
-      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      white-space: nowrap;
     }
 
-    .favorite-open-button {
+    .favorite-open {
       background: #ffd400;
+      color: #000;
+    }
+
+    .favorite-delete {
+      background: #eee;
       color: #111;
     }
 
-    .favorite-remove-button {
-      background: #ddd;
-      color: #111;
+    .notifications-intro {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
-    .favorite-open-button:hover {
-      background: #e6bf00;
+    .notifications-loading {
+      text-align: center;
+      padding: 35px 10px;
+      color: #666;
     }
 
-    .favorite-remove-button:hover {
+    .notifications-loading-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .notification-setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #e4e4e4;
+      border-radius: 13px;
+      padding: 17px;
+      margin-bottom: 12px;
+    }
+
+    .notification-setting-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .notification-setting-description {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .switch {
+      position: relative;
+      width: 52px;
+      height: 30px;
+      flex-shrink: 0;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
       background: #ccc;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .slider:before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 4px;
+      top: 4px;
+      background: white;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .switch input:checked + .slider {
+      background: #ffd400;
+    }
+
+    .switch input:checked + .slider:before {
+      transform: translateX(22px);
     }
 
     footer {
-      background: #111;
-      color: #aaa;
       text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      margin-top: auto;
+      padding: 25px 20px;
+      color: #777;
+      font-size: 13px;
     }
 
-    @media (max-width: 800px) {
-
-      .logo {
-        width: 225px;
-      }
-
-      .logo img {
-        height: 275px;
-      }
-
-    }
-
-    @media (max-width: 550px) {
-
+    @media (max-width: 600px) {
       header {
-        padding: 0 5%;
-      }
-
-      .logo {
-        width: 190px;
-        height: 50px;
+        padding: 0 14px;
       }
 
       .logo img {
-        height: 235px;
+        width: 180px;
+        height: 105px;
       }
 
       .menu-panel {
-        right: 5%;
-        width: 270px;
+        right: 12px;
+        left: 12px;
+        width: auto;
       }
 
-      .hero {
-        padding: 42px 15px 48px;
+      main {
+        padding: 30px 12px 50px;
       }
 
-      .hero h1 {
+      h1 {
         font-size: 30px;
       }
 
-      .hero p {
-        font-size: 15px;
-      }
-
-      .account-section {
-        margin: 35px auto 50px;
-        padding: 0 12px;
-      }
-
-      .account-card {
-        padding: 25px 18px;
-        border-radius: 13px;
-      }
-
-      .account-card h2 {
-        font-size: 21px;
-      }
-
-      .account-card > p {
+      .page-heading p {
         font-size: 14px;
       }
 
-      .form-group input {
-        font-size: 15px;
+      .account-card {
+        padding: 23px 17px;
+        border-radius: 14px;
       }
 
-      .main-button,
-      .secondary-button {
-        font-size: 15px;
-      }
-
-      .account-name {
-        font-size: 30px;
-        margin-bottom: 28px;
-      }
-
-      .account-menu-button {
-        padding: 15px;
-        font-size: 15px;
-      }
-
-      .settings-item {
-        padding: 14px;
-      }
-
-      .notification-setting {
-        padding: 14px;
-      }
-
-      .notification-setting-title {
-        font-size: 15px;
-      }
-
-      .notification-setting-description {
-        font-size: 12px;
-      }
-
-      .favorite-card-content {
+      .favorite-item {
         align-items: flex-start;
       }
 
       .favorite-image {
-        width: 65px;
-        height: 65px;
-      }
-
-      .favorite-name {
-        font-size: 14px;
+        width: 72px;
+        height: 72px;
       }
 
       .favorite-actions {
-        flex-direction: column;
+        width: 100%;
       }
 
-    }
-
-    @media (max-width: 380px) {
-
-      .logo {
-        width: 170px;
+      .favorite-open,
+      .favorite-delete {
+        width: 100%;
       }
 
-      .logo img {
-        height: 215px;
+      .notification-setting {
+        align-items: flex-start;
       }
-
-      .menu-button {
-        width: 45px;
-        height: 45px;
-      }
-
-      .account-name {
-        font-size: 27px;
-      }
-
     }
   </style>
 </head>
 
 <body>
 
-  <header>
+<header>
 
-    <a href="index.html" class="logo">
-      <img src="20879_nobg (1).png" alt="DealKira">
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
+
+  <button
+    class="menu-button"
+    id="menuButton"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-panel" id="menuPanel">
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto / Anmelden
     </a>
 
-    <button
-      class="menu-button"
-      id="menuButton"
-      onclick="toggleMenu()"
-      aria-label="Menü öffnen"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="menu-divider"></div>
 
-    <div class="menu-panel" id="menuPanel">
+    <a href="suche.html">
+      <span class="menu-icon">🔍</span>
+      Suche
+    </a>
 
-      <a href="konto.html">
-        <span class="menu-icon">👤</span>
-        Konto / Anmelden
-      </a>
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
 
-      <div class="menu-divider"></div>
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
 
-      <a href="suche.html">
-        <span class="menu-icon">🔍</span>
-        Suche
-      </a>
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
+    </a>
 
-      <a href="kategorien.html">
-        <span class="menu-icon">📂</span>
-        Kategorien
-      </a>
+  </div>
 
-      <a href="deals.html">
-        <span class="menu-icon">🔥</span>
-        Deals
-      </a>
+</header>
 
-      <a href="einstellungen.html">
-        <span class="menu-icon">⚙️</span>
-        Einstellungen
-      </a>
 
-    </div>
+<main>
 
-  </header>
-
-  <section class="hero">
+  <div class="page-heading">
 
     <h1>
       Konto / <span>Anmelden</span>
@@ -1040,2827 +780,2655 @@
       Verwalte dein DealKira-Konto und deine persönlichen Einstellungen
     </p>
 
-  </section>
+  </div>
 
-  <main class="account-section">
 
-    <div class="account-card">
+  <div class="account-card">
 
-      <!-- =========================
-           ANMELDEN
-      ========================== -->
 
-      <div
-        class="account-view active"
-        id="loginView"
-      >
+    <!-- =========================
+         ANMELDEN
+    ========================== -->
 
-        <h2>Anmelden</h2>
+    <div
+      class="account-view active"
+      id="loginView"
+    >
 
-        <p>
-          Melde dich an, um dein DealKira-Konto zu verwenden.
-        </p>
+      <h2>Anmelden</h2>
 
-        <form onsubmit="login(event)">
+      <p>
+        Melde dich an, um dein DealKira-Konto zu verwenden.
+      </p>
 
-          <div class="form-group">
+      <form onsubmit="login(event)">
 
-            <label for="loginEmail">
-              E-Mail-Adresse
-            </label>
+        <div class="form-group">
+
+          <label for="loginEmail">
+            E-Mail-Adresse
+          </label>
+
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="deine@email.de"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="loginPassword">
+            Passwort
+          </label>
+
+          <div class="password-field">
 
             <input
-              type="email"
-              id="loginEmail"
-              placeholder="deine@email.de"
-              autocomplete="email"
+              type="password"
+              id="loginPassword"
+              placeholder="Passwort"
+              autocomplete="current-password"
               required
             >
 
-          </div>
+            <button
+              type="button"
+              class="password-toggle"
+              onclick="togglePassword('loginPassword', this)"
+              aria-label="Passwort anzeigen"
+              title="Passwort anzeigen"
+            >
 
-          <div class="form-group">
-
-            <label for="loginPassword">
-              Passwort
-            </label>
-
-            <div class="password-field">
-
-              <input
-                type="password"
-                id="loginPassword"
-                placeholder="Passwort"
-                autocomplete="current-password"
-                required
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
               >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
 
-              <button
-                type="button"
-                class="password-toggle"
-                onclick="togglePassword('loginPassword', this)"
-                aria-label="Passwort anzeigen"
-                title="Passwort anzeigen"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </button>
-
-            </div>
+            </button>
 
           </div>
 
-          <a
-            href="#"
-            class="forgot-link"
-            onclick="showView('forgotView'); return false;"
-          >
-            Passwort vergessen?
-          </a>
-
-          <button
-            type="submit"
-            class="main-button"
-            id="loginButton"
-          >
-            Anmelden
-          </button>
-
-        </form>
-
-        <div
-          class="account-message"
-          id="loginMessage"
-        ></div>
-
-        <div class="account-divider"></div>
-
-        <div class="switch-text">
-          Noch kein Konto?
         </div>
+
 
         <a
           href="#"
-          class="secondary-button"
-          onclick="showView('registerView'); return false;"
+          class="forgot-link"
+          onclick="showView('forgotView'); return false;"
+        >
+          Passwort vergessen?
+        </a>
+
+
+        <button
+          type="submit"
+          class="main-button"
+          id="loginButton"
+        >
+          Anmelden
+        </button>
+
+      </form>
+
+
+      <div
+        class="account-message"
+        id="loginMessage"
+      ></div>
+
+
+      <div class="account-divider"></div>
+
+
+      <div class="switch-text">
+        Noch kein Konto?
+      </div>
+
+
+      <a
+        href="#"
+        class="secondary-button"
+        onclick="showView('registerView'); return false;"
+      >
+        Konto erstellen
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         REGISTRIEREN
+    ========================== -->
+
+    <div
+      class="account-view"
+      id="registerView"
+    >
+
+      <h2>Konto erstellen</h2>
+
+      <p>
+        Erstelle dein kostenloses DealKira-Konto.
+      </p>
+
+      <form onsubmit="register(event)">
+
+        <div class="form-group">
+
+          <label for="registerName">
+            Name
+          </label>
+
+          <input
+            type="text"
+            id="registerName"
+            placeholder="Dein Name"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="registerEmail">
+            E-Mail-Adresse
+          </label>
+
+          <input
+            type="email"
+            id="registerEmail"
+            placeholder="deine@email.de"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="registerPassword">
+            Passwort
+          </label>
+
+          <div class="password-field">
+
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Passwort"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+
+            <button
+              type="button"
+              class="password-toggle"
+              onclick="togglePassword('registerPassword', this)"
+              aria-label="Passwort anzeigen"
+              title="Passwort anzeigen"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="password-hint">
+          Das Passwort muss mindestens 8 Zeichen enthalten.
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="registerPasswordConfirm">
+            Passwort bestätigen
+          </label>
+
+          <div class="password-field">
+
+            <input
+              type="password"
+              id="registerPasswordConfirm"
+              placeholder="Passwort erneut eingeben"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+
+            <button
+              type="button"
+              class="password-toggle"
+              onclick="togglePassword('registerPasswordConfirm', this)"
+              aria-label="Passwort anzeigen"
+              title="Passwort anzeigen"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="main-button"
+          id="registerButton"
         >
           Konto erstellen
-        </a>
+        </button>
+
+      </form>
+
+
+      <div
+        class="account-message"
+        id="registerMessage"
+      ></div>
+
+
+      <div class="account-divider"></div>
+
+
+      <div class="switch-text">
+        Du hast bereits ein Konto?
+      </div>
+
+
+      <a
+        href="#"
+        class="switch-link"
+        onclick="showView('loginView'); return false;"
+      >
+        Zur Anmeldung
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         PASSWORT VERGESSEN
+    ========================== -->
+
+    <div
+      class="account-view"
+      id="forgotView"
+    >
+
+      <h2>Passwort vergessen</h2>
+
+      <p>
+        Gib deine E-Mail-Adresse ein, um einen Link zum Zurücksetzen
+        deines Passworts anzufordern.
+      </p>
+
+      <form onsubmit="forgotPassword(event)">
+
+        <div class="form-group">
+
+          <label for="forgotEmail">
+            E-Mail-Adresse
+          </label>
+
+          <input
+            type="email"
+            id="forgotEmail"
+            placeholder="deine@email.de"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="main-button"
+          id="forgotButton"
+        >
+          Link anfordern
+        </button>
+
+      </form>
+
+
+      <div
+        class="account-message"
+        id="forgotMessage"
+      ></div>
+
+
+      <div class="account-divider"></div>
+
+
+      <a
+        href="#"
+        class="switch-link"
+        onclick="showView('loginView'); return false;"
+      >
+        Zurück zur Anmeldung
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         ANGEMELDETES KONTO
+    ========================== -->
+
+    <div
+      class="account-view"
+      id="loggedInView"
+    >
+
+      <div
+        class="account-name"
+        id="loggedInName"
+      >
+      </div>
+
+
+      <div class="account-menu">
+
+        <button
+          class="account-menu-button"
+          onclick="showView('settingsView')"
+        >
+
+          <span class="account-menu-left">
+
+            <span class="account-menu-icon">
+              ⚙️
+            </span>
+
+            <span>
+              Kontoeinstellungen
+            </span>
+
+          </span>
+
+          <span class="account-arrow">
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="account-menu-button"
+          onclick="showView('favoritesView')"
+        >
+
+          <span class="account-menu-left">
+
+            <span class="account-menu-icon">
+              ❤️
+            </span>
+
+            <span>
+              Favoriten
+            </span>
+
+          </span>
+
+          <span class="account-arrow">
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="account-menu-button"
+          onclick="showView('notificationsView')"
+        >
+
+          <span class="account-menu-left">
+
+            <span class="account-menu-icon">
+              🔔
+            </span>
+
+            <span>
+              Benachrichtigungen
+            </span>
+
+          </span>
+
+          <span class="account-arrow">
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="logout-account-button"
+          onclick="logout()"
+        >
+          🚪 Abmelden
+        </button>
 
       </div>
 
 
-      <!-- =========================
-           REGISTRIEREN
-      ========================== -->
-
       <div
-        class="account-view"
-        id="registerView"
-      >
+        class="account-message"
+        id="logoutMessage"
+      ></div>
 
-        <h2>Konto erstellen</h2>
+    </div>
 
-        <p>
-          Erstelle dein kostenloses DealKira-Konto.
-        </p>
 
-        <form onsubmit="register(event)">
+    <!-- =========================
+         KONTOEINSTELLUNGEN
+    ========================== -->
 
-          <div class="form-group">
+    <div
+      class="account-view"
+      id="settingsView"
+    >
 
-            <label for="registerName">
+      <div class="settings-header">
+
+        <button
+          class="back-button"
+          onclick="showView('loggedInView')"
+          aria-label="Zurück"
+        >
+          ←
+        </button>
+
+        <h2>
+          Kontoeinstellungen
+        </h2>
+
+      </div>
+
+
+      <div class="settings-item">
+
+        <div class="settings-item-top">
+
+          <div>
+
+            <div class="settings-item-label">
               Name
-            </label>
+            </div>
 
-            <input
-              type="text"
-              id="registerName"
-              placeholder="Dein Name"
-              autocomplete="name"
-              required
+            <div
+              class="settings-item-value"
+              id="settingsName"
             >
-
-          </div>
-
-          <div class="form-group">
-
-            <label for="registerEmail">
-              E-Mail-Adresse
-            </label>
-
-            <input
-              type="email"
-              id="registerEmail"
-              placeholder="deine@email.de"
-              autocomplete="email"
-              required
-            >
-
-          </div>
-
-          <div class="form-group">
-
-            <label for="registerPassword">
-              Passwort
-            </label>
-
-            <div class="password-field">
-
-              <input
-                type="password"
-                id="registerPassword"
-                placeholder="Passwort"
-                autocomplete="new-password"
-                minlength="8"
-                required
-              >
-
-              <button
-                type="button"
-                class="password-toggle"
-                onclick="togglePassword('registerPassword', this)"
-                aria-label="Passwort anzeigen"
-                title="Passwort anzeigen"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </button>
-
             </div>
 
           </div>
 
-          <div class="password-hint">
+          <button
+            class="edit-button"
+            onclick="toggleEdit('nameEdit')"
+            aria-label="Name bearbeiten"
+          >
+            ✏️
+          </button>
+
+        </div>
+
+
+        <div
+          class="edit-area"
+          id="nameEdit"
+        >
+
+          <input
+            type="text"
+            id="newName"
+            placeholder="Neuer Name"
+            maxlength="80"
+          >
+
+          <div class="edit-buttons">
+
+            <button
+              class="small-save-button"
+              onclick="saveName()"
+            >
+              Speichern
+            </button>
+
+            <button
+              class="small-cancel-button"
+              onclick="cancelEdit('nameEdit')"
+            >
+              Abbrechen
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="settings-item">
+
+        <div class="settings-item-top">
+
+          <div>
+
+            <div class="settings-item-label">
+              E-Mail-Adresse
+            </div>
+
+            <div
+              class="settings-item-value"
+              id="settingsEmail"
+            >
+            </div>
+
+          </div>
+
+          <button
+            class="edit-button"
+            onclick="toggleEdit('emailEdit')"
+            aria-label="E-Mail bearbeiten"
+          >
+            ✏️
+          </button>
+
+        </div>
+
+
+        <div
+          class="edit-area"
+          id="emailEdit"
+        >
+
+          <input
+            type="email"
+            id="newEmail"
+            placeholder="Neue E-Mail-Adresse"
+            autocomplete="email"
+          >
+
+          <div class="settings-note">
+            Nach der Änderung erhältst du von Supabase eine
+            Bestätigungs-E-Mail. Die neue Adresse wird erst nach
+            der Bestätigung übernommen.
+          </div>
+
+          <div class="edit-buttons">
+
+            <button
+              class="small-save-button"
+              onclick="saveEmail()"
+            >
+              Ändern
+            </button>
+
+            <button
+              class="small-cancel-button"
+              onclick="cancelEdit('emailEdit')"
+            >
+              Abbrechen
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="settings-item">
+
+        <div class="settings-item-top">
+
+          <div>
+
+            <div class="settings-item-label">
+              Passwort
+            </div>
+
+            <div class="settings-item-value">
+              ••••••••••••
+            </div>
+
+          </div>
+
+          <button
+            class="edit-button"
+            onclick="toggleEdit('passwordEdit')"
+            aria-label="Passwort bearbeiten"
+          >
+            ✏️
+          </button>
+
+        </div>
+
+
+        <div
+          class="edit-area"
+          id="passwordEdit"
+        >
+
+          <div class="password-field">
+
+            <input
+              type="password"
+              id="newPassword"
+              placeholder="Neues Passwort"
+              minlength="8"
+              autocomplete="new-password"
+            >
+
+            <button
+              type="button"
+              class="password-toggle"
+              onclick="togglePassword('newPassword', this)"
+              aria-label="Passwort anzeigen"
+              title="Passwort anzeigen"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+          <br><br>
+
+          <div class="password-field">
+
+            <input
+              type="password"
+              id="newPasswordConfirm"
+              placeholder="Neues Passwort bestätigen"
+              minlength="8"
+              autocomplete="new-password"
+            >
+
+            <button
+              type="button"
+              class="password-toggle"
+              onclick="togglePassword('newPasswordConfirm', this)"
+              aria-label="Passwort anzeigen"
+              title="Passwort anzeigen"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+          <div class="settings-note">
             Das Passwort muss mindestens 8 Zeichen enthalten.
           </div>
 
-          <div class="form-group">
+          <div class="edit-buttons">
 
-            <label for="registerPasswordConfirm">
-              Passwort bestätigen
-            </label>
+            <button
+              class="small-save-button"
+              onclick="savePassword()"
+            >
+              Speichern
+            </button>
 
-            <div class="password-field">
-
-              <input
-                type="password"
-                id="registerPasswordConfirm"
-                placeholder="Passwort erneut eingeben"
-                autocomplete="new-password"
-                minlength="8"
-                required
-              >
-
-              <button
-                type="button"
-                class="password-toggle"
-                onclick="togglePassword('registerPasswordConfirm', this)"
-                aria-label="Passwort anzeigen"
-                title="Passwort anzeigen"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </button>
-
-            </div>
+            <button
+              class="small-cancel-button"
+              onclick="cancelEdit('passwordEdit')"
+            >
+              Abbrechen
+            </button>
 
           </div>
 
-          <button
-            type="submit"
-            class="main-button"
-            id="registerButton"
-          >
-            Konto erstellen
-          </button>
-
-        </form>
-
-        <div
-          class="account-message"
-          id="registerMessage"
-        ></div>
-
-        <div class="account-divider"></div>
-
-        <div class="switch-text">
-          Du hast bereits ein Konto?
         </div>
-
-        <a
-          href="#"
-          class="switch-link"
-          onclick="showView('loginView'); return false;"
-        >
-          Zur Anmeldung
-        </a>
 
       </div>
 
 
-      <!-- =========================
-           PASSWORT VERGESSEN
-      ========================== -->
+      <div
+        class="account-message"
+        id="settingsMessage"
+      ></div>
+
+    </div>
+
+
+    <!-- =========================
+         FAVORITEN
+    ========================== -->
+
+    <div
+      class="account-view"
+      id="favoritesView"
+    >
+
+      <div class="settings-header">
+
+        <button
+          class="back-button"
+          onclick="showView('loggedInView')"
+          aria-label="Zurück"
+        >
+          ←
+        </button>
+
+        <h2>
+          Favoriten
+        </h2>
+
+      </div>
+
 
       <div
-        class="account-view"
-        id="forgotView"
+        id="favoritesLoading"
+        class="empty-account-section"
       >
 
-        <h2>Passwort vergessen</h2>
+        <div class="empty-account-icon">
+          ⏳
+        </div>
+
+        <h2>
+          Favoriten werden geladen...
+        </h2>
+
+      </div>
+
+
+      <div
+        id="favoritesEmpty"
+        class="empty-account-section"
+        style="display:none;"
+      >
+
+        <div class="empty-account-icon">
+          ❤️
+        </div>
+
+        <h2>
+          Noch keine Favoriten
+        </h2>
 
         <p>
-          Gib deine E-Mail-Adresse ein, um einen Link zum Zurücksetzen
-          deines Passworts anzufordern.
+          Hier werden deine gespeicherten Produkte und Deals angezeigt.
         </p>
 
-        <form onsubmit="forgotPassword(event)">
-
-          <div class="form-group">
-
-            <label for="forgotEmail">
-              E-Mail-Adresse
-            </label>
-
-            <input
-              type="email"
-              id="forgotEmail"
-              placeholder="deine@email.de"
-              autocomplete="email"
-              required
-            >
-
-          </div>
-
-          <button
-            type="submit"
-            class="main-button"
-            id="forgotButton"
-          >
-            Link anfordern
-          </button>
-
-        </form>
-
-        <div
-          class="account-message"
-          id="forgotMessage"
-        ></div>
-
-        <div class="account-divider"></div>
-
-        <a
-          href="#"
-          class="switch-link"
-          onclick="showView('loginView'); return false;"
-        >
-          Zurück zur Anmeldung
-        </a>
-
       </div>
 
 
-      <!-- =========================
-           ANGEMELDETES KONTO
-      ========================== -->
-
       <div
-        class="account-view"
-        id="loggedInView"
+        id="favoritesList"
+        style="display:none;"
       >
-
-        <div
-          class="account-name"
-          id="loggedInName"
-        >
-        </div>
-
-        <div class="account-menu">
-
-          <button
-            class="account-menu-button"
-            onclick="showView('settingsView')"
-          >
-
-            <span class="account-menu-left">
-
-              <span class="account-menu-icon">
-                ⚙️
-              </span>
-
-              <span>
-                Kontoeinstellungen
-              </span>
-
-            </span>
-
-            <span class="account-arrow">
-              ›
-            </span>
-
-          </button>
-
-          <button
-            class="account-menu-button"
-            onclick="showView('favoritesView')"
-          >
-
-            <span class="account-menu-left">
-
-              <span class="account-menu-icon">
-                ❤️
-              </span>
-
-              <span>
-                Favoriten
-              </span>
-
-            </span>
-
-            <span class="account-arrow">
-              ›
-            </span>
-
-          </button>
-
-          <button
-            class="account-menu-button"
-            onclick="showView('notificationsView')"
-          >
-
-            <span class="account-menu-left">
-
-              <span class="account-menu-icon">
-                🔔
-              </span>
-
-              <span>
-                Benachrichtigungen
-              </span>
-
-            </span>
-
-            <span class="account-arrow">
-              ›
-            </span>
-
-          </button>
-
-          <button
-            class="logout-account-button"
-            onclick="logout()"
-          >
-            🚪 Abmelden
-          </button>
-
-        </div>
-
-        <div
-          class="account-message"
-          id="logoutMessage"
-        ></div>
-
-      </div>
-
-
-      <!-- =========================
-           KONTOEINSTELLUNGEN
-      ========================== -->
-
-      <div
-        class="account-view"
-        id="settingsView"
-      >
-
-        <div class="settings-header">
-
-          <button
-            class="back-button"
-            onclick="showView('loggedInView')"
-            aria-label="Zurück"
-          >
-            ←
-          </button>
-
-          <h2>
-            Kontoeinstellungen
-          </h2>
-
-        </div>
-
-
-        <!-- NAME -->
-
-        <div class="settings-item">
-
-          <div class="settings-item-top">
-
-            <div>
-
-              <div class="settings-item-label">
-                Name
-              </div>
-
-              <div
-                class="settings-item-value"
-                id="settingsName"
-              >
-              </div>
-
-            </div>
-
-            <button
-              class="edit-button"
-              onclick="toggleEdit('nameEdit')"
-              aria-label="Name bearbeiten"
-            >
-              ✏️
-            </button>
-
-          </div>
-
-          <div
-            class="edit-area"
-            id="nameEdit"
-          >
-
-            <input
-              type="text"
-              id="newName"
-              placeholder="Neuer Name"
-              maxlength="80"
-            >
-
-            <div class="edit-buttons">
-
-              <button
-                class="small-save-button"
-                onclick="saveName()"
-              >
-                Speichern
-              </button>
-
-              <button
-                class="small-cancel-button"
-                onclick="cancelEdit('nameEdit')"
-              >
-                Abbrechen
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- E-MAIL -->
-
-        <div class="settings-item">
-
-          <div class="settings-item-top">
-
-            <div>
-
-              <div class="settings-item-label">
-                E-Mail-Adresse
-              </div>
-
-              <div
-                class="settings-item-value"
-                id="settingsEmail"
-              >
-              </div>
-
-            </div>
-
-            <button
-              class="edit-button"
-              onclick="toggleEdit('emailEdit')"
-              aria-label="E-Mail bearbeiten"
-            >
-              ✏️
-            </button>
-
-          </div>
-
-          <div
-            class="edit-area"
-            id="emailEdit"
-          >
-
-            <input
-              type="email"
-              id="newEmail"
-              placeholder="Neue E-Mail-Adresse"
-              autocomplete="email"
-            >
-
-            <div class="settings-note">
-              Nach der Änderung erhältst du von Supabase eine
-              Bestätigungs-E-Mail. Die neue Adresse wird erst nach
-              der Bestätigung übernommen.
-            </div>
-
-            <div class="edit-buttons">
-
-              <button
-                class="small-save-button"
-                onclick="saveEmail()"
-              >
-                Ändern
-              </button>
-
-              <button
-                class="small-cancel-button"
-                onclick="cancelEdit('emailEdit')"
-              >
-                Abbrechen
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- PASSWORT -->
-
-        <div class="settings-item">
-
-          <div class="settings-item-top">
-
-            <div>
-
-              <div class="settings-item-label">
-                Passwort
-              </div>
-
-              <div class="settings-item-value">
-                ••••••••••••
-              </div>
-
-            </div>
-
-            <button
-              class="edit-button"
-              onclick="toggleEdit('passwordEdit')"
-              aria-label="Passwort bearbeiten"
-            >
-              ✏️
-            </button>
-
-          </div>
-
-          <div
-            class="edit-area"
-            id="passwordEdit"
-          >
-
-            <div class="password-field">
-
-              <input
-                type="password"
-                id="newPassword"
-                placeholder="Neues Passwort"
-                minlength="8"
-                autocomplete="new-password"
-              >
-
-              <button
-                type="button"
-                class="password-toggle"
-                onclick="togglePassword('newPassword', this)"
-                aria-label="Passwort anzeigen"
-                title="Passwort anzeigen"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </button>
-
-            </div>
-
-            <br><br>
-
-            <div class="password-field">
-
-              <input
-                type="password"
-                id="newPasswordConfirm"
-                placeholder="Neues Passwort bestätigen"
-                minlength="8"
-                autocomplete="new-password"
-              >
-
-              <button
-                type="button"
-                class="password-toggle"
-                onclick="togglePassword('newPasswordConfirm', this)"
-                aria-label="Passwort anzeigen"
-                title="Passwort anzeigen"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </button>
-
-            </div>
-
-            <div class="settings-note">
-              Das Passwort muss mindestens 8 Zeichen enthalten.
-            </div>
-
-            <div class="edit-buttons">
-
-              <button
-                class="small-save-button"
-                onclick="savePassword()"
-              >
-                Speichern
-              </button>
-
-              <button
-                class="small-cancel-button"
-                onclick="cancelEdit('passwordEdit')"
-              >
-                Abbrechen
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div
-          class="account-message"
-          id="settingsMessage"
-        ></div>
-
-      </div>
-
-
-      <!-- =========================
-           FAVORITEN
-      ========================== -->
-
-      <div
-        class="account-view"
-        id="favoritesView"
-      >
-
-        <div class="settings-header">
-
-          <button
-            class="back-button"
-            onclick="showView('loggedInView')"
-            aria-label="Zurück"
-          >
-            ←
-          </button>
-
-          <h2>
-            Favoriten
-          </h2>
-
-        </div>
-
-        <div
-          id="favoritesLoading"
-          class="empty-account-section"
-        >
-
-          <div class="empty-account-icon">
-            ⏳
-          </div>
-
-          <h2>
-            Favoriten werden geladen...
-          </h2>
-
-        </div>
-
-        <div
-          id="favoritesEmpty"
-          class="empty-account-section"
-          style="display:none;"
-        >
-
-          <div class="empty-account-icon">
-            ❤️
-          </div>
-
-          <h2>
-            Noch keine Favoriten
-          </h2>
-
-          <p>
-            Hier werden deine gespeicherten Produkte und Deals angezeigt.
-          </p>
-
-        </div>
-
-        <div
-          id="favoritesList"
-          style="display:none;"
-        >
-        </div>
-
-      </div>
-
-
-      <!-- =========================
-           BENACHRICHTIGUNGEN
-      ========================== -->
-
-      <div
-        class="account-view"
-        id="notificationsView"
-      >
-
-        <div class="settings-header">
-
-          <button
-            class="back-button"
-            onclick="showView('loggedInView')"
-            aria-label="Zurück"
-          >
-            ←
-          </button>
-
-          <h2>
-            Benachrichtigungen
-          </h2>
-
-        </div>
-
-        <p class="notifications-intro">
-          Verwalte hier, welche Benachrichtigungen du von DealKira
-          erhalten möchtest.
-        </p>
-
-        <div
-          id="notificationsLoading"
-          class="notifications-loading"
-        >
-
-          <div class="notifications-loading-icon">
-            ⏳
-          </div>
-
-          <div>
-            Benachrichtigungseinstellungen werden geladen...
-          </div>
-
-        </div>
-
-        <div
-          id="notificationsSettings"
-          style="display:none;"
-        >
-
-          <!-- NEUE DEALS -->
-
-          <div class="notification-setting">
-
-            <div class="notification-setting-text">
-
-              <div class="notification-setting-title">
-                🔥 Neue Deals
-              </div>
-
-              <div class="notification-setting-description">
-                Erhalte Benachrichtigungen über neue interessante
-                Deals und Angebote.
-              </div>
-
-            </div>
-
-            <label class="switch">
-
-              <input
-                type="checkbox"
-                id="dealNotifications"
-                onchange="saveNotificationSettings()"
-              >
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
-
-          <!-- PREISALARME -->
-
-          <div class="notification-setting">
-
-            <div class="notification-setting-text">
-
-              <div class="notification-setting-title">
-                💰 Preisalarme
-              </div>
-
-              <div class="notification-setting-description">
-                Erhalte Hinweise, wenn sich bei gespeicherten
-                Produkten der Preis verändert.
-              </div>
-
-            </div>
-
-            <label class="switch">
-
-              <input
-                type="checkbox"
-                id="priceAlerts"
-                onchange="saveNotificationSettings()"
-              >
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
-
-          <!-- KONTO -->
-
-          <div class="notification-setting">
-
-            <div class="notification-setting-text">
-
-              <div class="notification-setting-title">
-                👤 Konto-Benachrichtigungen
-              </div>
-
-              <div class="notification-setting-description">
-                Erhalte wichtige Hinweise zu deinem DealKira-Konto
-                und deinen Einstellungen.
-              </div>
-
-            </div>
-
-            <label class="switch">
-
-              <input
-                type="checkbox"
-                id="accountNotifications"
-                onchange="saveNotificationSettings()"
-              >
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
-        </div>
-
-        <div
-          class="account-message"
-          id="notificationsMessage"
-        ></div>
-
       </div>
 
     </div>
 
-  </main>
 
-  <footer>
-    © 2026 DealKira – Bessere Deals finden
-  </footer>
+    <!-- =========================
+         BENACHRICHTIGUNGEN
+    ========================== -->
 
+    <div
+      class="account-view"
+      id="notificationsView"
+    >
 
-  <!-- SUPABASE -->
+      <div class="settings-header">
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <button
+          class="back-button"
+          onclick="showView('loggedInView')"
+          aria-label="Zurück"
+        >
+          ←
+        </button>
 
-  <script>
+        <h2>
+          Benachrichtigungen
+        </h2>
 
-    const SUPABASE_URL =
-      "https://zniknbouugmgvqkkoamo.supabase.co";
-
-    const SUPABASE_PUBLISHABLE_KEY =
-      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
-
-    const supabaseClient =
-      window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_PUBLISHABLE_KEY
-      );
-
-    const REDIRECT_URL =
-      "https://dealkira.com/konto.html";
-
-    let currentUser = null;
-
-    let notificationSaveTimer = null;
+      </div>
 
 
-    /* =========================
-       MENÜ
-    ========================= */
+      <p class="notifications-intro">
+        Verwalte hier, welche Benachrichtigungen du von DealKira
+        erhalten möchtest.
+      </p>
 
-    function toggleMenu() {
 
-      const menu =
+      <div
+        id="notificationsLoading"
+        class="notifications-loading"
+      >
+
+        <div class="notifications-loading-icon">
+          ⏳
+        </div>
+
+        <div>
+          Benachrichtigungseinstellungen werden geladen...
+        </div>
+
+      </div>
+
+
+      <div
+        id="notificationsSettings"
+        style="display:none;"
+      >
+
+        <div class="notification-setting">
+
+          <div class="notification-setting-text">
+
+            <div class="notification-setting-title">
+              🔥 Neue Deals
+            </div>
+
+            <div class="notification-setting-description">
+              Erhalte Benachrichtigungen über neue interessante
+              Deals und Angebote.
+            </div>
+
+          </div>
+
+          <label class="switch">
+
+            <input
+              type="checkbox"
+              id="dealNotifications"
+              onchange="saveNotificationSettings()"
+            >
+
+            <span class="slider"></span>
+
+          </label>
+
+        </div>
+
+
+        <div class="notification-setting">
+
+          <div class="notification-setting-text">
+
+            <div class="notification-setting-title">
+              💰 Preisalarme
+            </div>
+
+            <div class="notification-setting-description">
+              Erhalte Hinweise, wenn sich bei gespeicherten
+              Produkten der Preis verändert.
+            </div>
+
+          </div>
+
+          <label class="switch">
+
+            <input
+              type="checkbox"
+              id="priceAlerts"
+              onchange="saveNotificationSettings()"
+            >
+
+            <span class="slider"></span>
+
+          </label>
+
+        </div>
+
+
+        <div class="notification-setting">
+
+          <div class="notification-setting-text">
+
+            <div class="notification-setting-title">
+              👤 Konto-Benachrichtigungen
+            </div>
+
+            <div class="notification-setting-description">
+              Erhalte wichtige Hinweise zu deinem DealKira-Konto
+              und deinen Einstellungen.
+            </div>
+
+          </div>
+
+          <label class="switch">
+
+            <input
+              type="checkbox"
+              id="accountNotifications"
+              onchange="saveNotificationSettings()"
+            >
+
+            <span class="slider"></span>
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="account-message"
+        id="notificationsMessage"
+      ></div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  © 2026 DealKira – Bessere Deals finden
+</footer>
+
+
+<script>
+  /* =========================================================
+     SUPABASE
+  ========================================================= */
+
+  const SUPABASE_URL =
+    "https://zniknbouugmgvqkkoamo.supabase.co";
+
+  const SUPABASE_PUBLISHABLE_KEY =
+    "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
+
+  const supabaseClient =
+    window.supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_PUBLISHABLE_KEY
+    );
+
+
+  const REDIRECT_URL =
+    "https://dealkira.com/konto.html";
+
+
+  let currentUser = null;
+
+
+  /* =========================================================
+     MENÜ
+  ========================================================= */
+
+  function toggleMenu() {
+
+    const panel =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    const isOpen =
+      panel.classList.toggle("active");
+
+    button.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+  }
+
+
+  document.addEventListener(
+    "click",
+    function(event) {
+
+      const panel =
         document.getElementById("menuPanel");
 
       const button =
         document.getElementById("menuButton");
 
-      const isOpen =
-        menu.classList.toggle("open");
+      if (
+        panel.classList.contains("active") &&
+        !panel.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
 
-      button.classList.toggle("active");
+        panel.classList.remove("active");
 
-      button.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
-    }
-
-
-    function closeMenu() {
-
-      const menu =
-        document.getElementById("menuPanel");
-
-      const button =
-        document.getElementById("menuButton");
-
-      menu.classList.remove("open");
-
-      button.classList.remove("active");
-
-      button.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-    }
-
-
-    document.addEventListener(
-      "click",
-      function(event) {
-
-        const menu =
-          document.getElementById("menuPanel");
-
-        const button =
-          document.getElementById("menuButton");
-
-        if (
-          !menu.contains(event.target) &&
-          !button.contains(event.target)
-        ) {
-          closeMenu();
-        }
-
+        button.setAttribute(
+          "aria-expanded",
+          "false"
+        );
       }
+    }
+  );
+
+
+  /* =========================================================
+     PASSWORT ANZEIGEN
+  ========================================================= */
+
+  function togglePassword(inputId, button) {
+
+    const input =
+      document.getElementById(inputId);
+
+    if (!input) {
+      return;
+    }
+
+    if (input.type === "password") {
+
+      input.type = "text";
+
+      button.setAttribute(
+        "aria-label",
+        "Passwort ausblenden"
+      );
+
+      button.setAttribute(
+        "title",
+        "Passwort ausblenden"
+      );
+
+    } else {
+
+      input.type = "password";
+
+      button.setAttribute(
+        "aria-label",
+        "Passwort anzeigen"
+      );
+
+      button.setAttribute(
+        "title",
+        "Passwort anzeigen"
+      );
+    }
+  }
+
+
+  /* =========================================================
+     VIEWS
+  ========================================================= */
+
+  function showView(viewId) {
+
+    document
+      .querySelectorAll(".account-view")
+      .forEach(function(view) {
+
+        view.classList.remove("active");
+
+      });
+
+
+    const view =
+      document.getElementById(viewId);
+
+    if (!view) {
+      return;
+    }
+
+    view.classList.add("active");
+
+
+    if (viewId === "favoritesView") {
+      loadFavorites();
+    }
+
+
+    if (viewId === "notificationsView") {
+      loadNotificationSettings();
+    }
+
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
+  /* =========================================================
+     NACHRICHTEN
+  ========================================================= */
+
+  function showMessage(
+    elementId,
+    message,
+    type
+  ) {
+
+    const element =
+      document.getElementById(elementId);
+
+    if (!element) {
+      return;
+    }
+
+    element.textContent = message;
+
+    element.className =
+      "account-message " +
+      (type || "");
+  }
+
+
+  /* =========================================================
+     AKTUELLEN BENUTZER LADEN
+  ========================================================= */
+
+  async function getCurrentUser() {
+
+    try {
+
+      const sessionResult =
+        await supabaseClient.auth.getSession();
+
+      if (
+        sessionResult.data &&
+        sessionResult.data.session &&
+        sessionResult.data.session.user
+      ) {
+
+        currentUser =
+          sessionResult.data.session.user;
+
+        return currentUser;
+      }
+
+
+      const userResult =
+        await supabaseClient.auth.getUser();
+
+      if (
+        userResult.data &&
+        userResult.data.user
+      ) {
+
+        currentUser =
+          userResult.data.user;
+
+        return currentUser;
+      }
+
+
+      currentUser = null;
+
+      return null;
+
+    } catch (error) {
+
+      console.error(
+        "Benutzer konnte nicht geladen werden:",
+        error
+      );
+
+      currentUser = null;
+
+      return null;
+    }
+  }
+
+
+  /* =========================================================
+     LOGIN
+  ========================================================= */
+
+  async function login(event) {
+
+    event.preventDefault();
+
+
+    const email =
+      document
+        .getElementById("loginEmail")
+        .value
+        .trim();
+
+    const password =
+      document
+        .getElementById("loginPassword")
+        .value;
+
+
+    const button =
+      document.getElementById("loginButton");
+
+
+    button.disabled = true;
+    button.textContent = "Anmelden...";
+
+
+    showMessage(
+      "loginMessage",
+      "",
+      ""
     );
 
 
-    document.addEventListener(
-      "keydown",
-      function(event) {
+    try {
 
-        if (event.key === "Escape") {
-          closeMenu();
-        }
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.signInWithPassword({
+          email: email,
+          password: password
+        });
 
-      }
-    );
 
-
-    /* =========================
-       PASSWORT ANZEIGEN / VERBERGEN
-    ========================= */
-
-    function togglePassword(
-      inputId,
-      button
-    ) {
-
-      const input =
-        document.getElementById(inputId);
-
-      if (!input || !button) {
-        return;
+      if (error) {
+        throw error;
       }
 
 
-      const showing =
-        input.type === "password";
+      if (
+        !data ||
+        !data.user
+      ) {
 
-
-      if (showing) {
-
-        input.type = "text";
-
-        button.setAttribute(
-          "aria-label",
-          "Passwort verbergen"
+        throw new Error(
+          "Anmeldung konnte nicht abgeschlossen werden."
         );
-
-        button.setAttribute(
-          "title",
-          "Passwort verbergen"
-        );
-
-        button.innerHTML = `
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M3 3l18 18"/>
-            <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/>
-            <path d="M9.9 5.2A10.9 10.9 0 0 1 12 5c6.5 0 10 7 10 7a18.5 18.5 0 0 1-3.1 3.9"/>
-            <path d="M6.1 6.1C3.5 7.8 2 12 2 12s3.5 7 10 7c1.5 0 2.8-.3 4-.8"/>
-          </svg>
-        `;
-
-      } else {
-
-        input.type = "password";
-
-        button.setAttribute(
-          "aria-label",
-          "Passwort anzeigen"
-        );
-
-        button.setAttribute(
-          "title",
-          "Passwort anzeigen"
-        );
-
-        button.innerHTML = `
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-        `;
-
-      }
-
-    }
-
-
-    /* =========================
-       ANSICHTEN
-    ========================= */
-
-    function showView(viewId) {
-
-      clearMessages();
-
-      const views =
-        document.querySelectorAll(".account-view");
-
-      views.forEach(
-        function(view) {
-          view.classList.remove("active");
-        }
-      );
-
-      const selectedView =
-        document.getElementById(viewId);
-
-      if (selectedView) {
-        selectedView.classList.add("active");
       }
 
 
-      if (viewId === "favoritesView") {
-        loadFavorites();
-      }
+      currentUser =
+        data.user;
 
 
-      if (viewId === "notificationsView") {
-        loadNotificationSettings();
-      }
-
-    }
-
-
-    function clearMessages() {
-
-      const messages =
-        document.querySelectorAll(".account-message");
-
-      messages.forEach(
-        function(message) {
-
-          message.classList.remove("show");
-          message.classList.remove("error");
-          message.classList.remove("success");
-          message.textContent = "";
-
-        }
-      );
-
-    }
-
-
-    function showMessage(
-      elementId,
-      text,
-      type = "normal"
-    ) {
-
-      const message =
-        document.getElementById(elementId);
-
-      if (!message) {
-        return;
-      }
-
-      message.textContent = text;
-
-      message.classList.remove(
-        "error",
+      showMessage(
+        "loginMessage",
+        "Erfolgreich angemeldet.",
         "success"
       );
 
-      if (type === "error") {
-        message.classList.add("error");
-      }
 
-      if (type === "success") {
-        message.classList.add("success");
-      }
-
-      message.classList.add("show");
-
-    }
-
-
-    function setButtonLoading(
-      buttonId,
-      loading
-    ) {
-
-      const button =
-        document.getElementById(buttonId);
-
-      if (!button) {
-        return;
-      }
-
-      button.disabled = loading;
-
-      if (buttonId === "loginButton") {
-        button.textContent =
-          loading ? "Anmeldung..." : "Anmelden";
-      }
-
-      if (buttonId === "registerButton") {
-        button.textContent =
-          loading
-            ? "Konto wird erstellt..."
-            : "Konto erstellen";
-      }
-
-      if (buttonId === "forgotButton") {
-        button.textContent =
-          loading
-            ? "Wird gesendet..."
-            : "Link anfordern";
-      }
-
-    }
-
-
-    /* =========================
-       FEHLERMELDUNGEN
-    ========================= */
-
-    function translateAuthError(error) {
-
-      if (!error) {
-        return "Es ist ein unbekannter Fehler aufgetreten.";
-      }
-
-      const message =
-        error.message || "";
-
-      const lower =
-        message.toLowerCase();
-
-
-      if (
-        lower.includes("invalid login credentials")
-      ) {
-        return "E-Mail-Adresse oder Passwort ist falsch.";
-      }
-
-
-      if (
-        lower.includes("email not confirmed")
-      ) {
-        return "Bitte bestätige zuerst deine E-Mail-Adresse.";
-      }
-
-
-      if (
-        lower.includes("user already registered")
-      ) {
-        return "Für diese E-Mail-Adresse existiert bereits ein Konto.";
-      }
-
-
-      if (
-        lower.includes("password should be at least")
-      ) {
-        return "Das Passwort ist zu kurz.";
-      }
-
-
-      if (
-        lower.includes("rate limit")
-      ) {
-        return "Zu viele Versuche. Bitte warte kurz und versuche es erneut.";
-      }
-
-
-      if (
-        lower.includes("invalid email")
-      ) {
-        return "Bitte gib eine gültige E-Mail-Adresse ein.";
-      }
-
-
-      return "Es ist ein Fehler aufgetreten. Bitte versuche es erneut.";
-
-    }
-
-
-    /* =========================
-       REGISTRIEREN
-    ========================= */
-
-    async function register(event) {
-
-      event.preventDefault();
-
-      clearMessages();
-
-      const name =
-        document.getElementById(
-          "registerName"
-        ).value.trim();
-
-      const email =
-        document.getElementById(
-          "registerEmail"
-        ).value.trim();
-
-      const password =
-        document.getElementById(
-          "registerPassword"
-        ).value;
-
-      const passwordConfirm =
-        document.getElementById(
-          "registerPasswordConfirm"
-        ).value;
-
-
-      if (password !== passwordConfirm) {
-
-        showMessage(
-          "registerMessage",
-          "Die beiden Passwörter stimmen nicht überein.",
-          "error"
-        );
-
-        return;
-      }
-
-
-      if (password.length < 8) {
-
-        showMessage(
-          "registerMessage",
-          "Das Passwort muss mindestens 8 Zeichen enthalten.",
-          "error"
-        );
-
-        return;
-      }
-
-
-      setButtonLoading(
-        "registerButton",
-        true
+      updateLoggedInView(
+        currentUser
       );
 
 
-      try {
-
-        const {
-          data,
-          error
-        } =
-          await supabaseClient.auth.signUp({
-
-            email: email,
-
-            password: password,
-
-            options: {
-
-              data: {
-                name: name
-              },
-
-              emailRedirectTo:
-                REDIRECT_URL
-
-            }
-
-          });
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        if (
-          data.user &&
-          data.session
-        ) {
-
-          showMessage(
-            "registerMessage",
-            "Dein Konto wurde erstellt und du bist bereits angemeldet.",
-            "success"
-          );
-
-          setTimeout(
-            function() {
-
-              updateLoggedInView(
-                data.user
-              );
-
-            },
-            800
-          );
-
-        } else {
-
-          showMessage(
-            "registerMessage",
-            "Konto erstellt. Bitte prüfe deine E-Mails und bestätige deine E-Mail-Adresse.",
-            "success"
-          );
-
-        }
-
-      } catch (error) {
-
-        showMessage(
-          "registerMessage",
-          translateAuthError(error),
-          "error"
-        );
-
-      } finally {
-
-        setButtonLoading(
-          "registerButton",
-          false
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       ANMELDEN
-    ========================= */
-
-    async function login(event) {
-
-      event.preventDefault();
-
-      clearMessages();
-
-      const email =
-        document.getElementById(
-          "loginEmail"
-        ).value.trim();
-
-      const password =
-        document.getElementById(
-          "loginPassword"
-        ).value;
-
-
-      setButtonLoading(
-        "loginButton",
-        true
+      setTimeout(
+        function() {
+          showView("loggedInView");
+        },
+        300
       );
 
 
-      try {
+    } catch (error) {
 
-        const {
-          data,
-          error
-        } =
-          await supabaseClient.auth.signInWithPassword({
-
-            email: email,
-
-            password: password
-
-          });
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        if (data.user) {
-
-          updateLoggedInView(
-            data.user
-          );
-
-        }
-
-      } catch (error) {
-
-        showMessage(
-          "loginMessage",
-          translateAuthError(error),
-          "error"
-        );
-
-      } finally {
-
-        setButtonLoading(
-          "loginButton",
-          false
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       PASSWORT VERGESSEN
-    ========================= */
-
-    async function forgotPassword(event) {
-
-      event.preventDefault();
-
-      clearMessages();
-
-      const email =
-        document.getElementById(
-          "forgotEmail"
-        ).value.trim();
-
-
-      setButtonLoading(
-        "forgotButton",
-        true
+      console.error(
+        "Login-Fehler:",
+        error
       );
 
 
-      try {
-
-        const {
-          error
-        } =
-          await supabaseClient.auth.resetPasswordForEmail(
-            email,
-            {
-              redirectTo:
-                REDIRECT_URL
-            }
-          );
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        showMessage(
-          "forgotMessage",
-          "Wenn für diese E-Mail-Adresse ein Konto existiert, wurde ein Link zum Zurücksetzen des Passworts versendet.",
-          "success"
-        );
-
-      } catch (error) {
-
-        showMessage(
-          "forgotMessage",
-          translateAuthError(error),
-          "error"
-        );
-
-      } finally {
-
-        setButtonLoading(
-          "forgotButton",
-          false
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       ANGEMELDETEN BENUTZER
-       LADEN
-    ========================= */
-
-    function getUserName(user) {
-
-      if (!user) {
-        return "Mein Konto";
-      }
-
-      return (
-        user.user_metadata?.name ||
-        user.user_metadata?.full_name ||
-        "Mein Konto"
+      showMessage(
+        "loginMessage",
+        error.message ||
+        "Anmeldung fehlgeschlagen.",
+        "error"
       );
 
+    } finally {
+
+      button.disabled = false;
+      button.textContent = "Anmelden";
     }
+  }
 
 
-    function updateLoggedInView(user) {
+  /* =========================================================
+     REGISTRIEREN
+  ========================================================= */
 
-      currentUser = user;
+  async function register(event) {
 
-      const name =
-        getUserName(user);
-
-      const loggedInName =
-        document.getElementById(
-          "loggedInName"
-        );
-
-      const settingsName =
-        document.getElementById(
-          "settingsName"
-        );
-
-      const settingsEmail =
-        document.getElementById(
-          "settingsEmail"
-        );
+    event.preventDefault();
 
 
-      if (loggedInName) {
-        loggedInName.textContent = name;
-      }
+    const name =
+      document
+        .getElementById("registerName")
+        .value
+        .trim();
 
-      if (settingsName) {
-        settingsName.textContent = name;
-      }
+    const email =
+      document
+        .getElementById("registerEmail")
+        .value
+        .trim();
 
-      if (settingsEmail) {
-        settingsEmail.textContent =
-          user.email || "";
-      }
+    const password =
+      document
+        .getElementById("registerPassword")
+        .value;
+
+    const confirmPassword =
+      document
+        .getElementById("registerPasswordConfirm")
+        .value;
 
 
-      showView(
-        "loggedInView"
+    if (password !== confirmPassword) {
+
+      showMessage(
+        "registerMessage",
+        "Die Passwörter stimmen nicht überein.",
+        "error"
       );
 
+      return;
     }
 
 
-    /* =========================
-       KONTENEINSTELLUNGEN
-    ========================= */
+    if (password.length < 8) {
 
-    function toggleEdit(editId) {
+      showMessage(
+        "registerMessage",
+        "Das Passwort muss mindestens 8 Zeichen enthalten.",
+        "error"
+      );
 
-      const area =
-        document.getElementById(editId);
-
-      if (!area) {
-        return;
-      }
-
-      area.classList.toggle("show");
-
-      if (
-        editId === "nameEdit" &&
-        area.classList.contains("show")
-      ) {
-
-        document.getElementById(
-          "newName"
-        ).value =
-          getUserName(currentUser);
-
-      }
-
-      if (
-        editId === "emailEdit" &&
-        area.classList.contains("show")
-      ) {
-
-        document.getElementById(
-          "newEmail"
-        ).value =
-          currentUser?.email || "";
-
-      }
-
+      return;
     }
 
 
-    function cancelEdit(editId) {
-
-      const area =
-        document.getElementById(editId);
-
-      if (area) {
-        area.classList.remove("show");
-      }
-
-    }
+    const button =
+      document.getElementById("registerButton");
 
 
-    /* =========================
-       NAME ÄNDERN
-    ========================= */
-
-    async function saveName() {
-
-      if (!currentUser) {
-        return;
-      }
-
-      const input =
-        document.getElementById(
-          "newName"
-        );
-
-      const newName =
-        input.value.trim();
+    button.disabled = true;
+    button.textContent = "Konto wird erstellt...";
 
 
-      if (!newName) {
+    try {
 
-        showMessage(
-          "settingsMessage",
-          "Bitte gib einen Namen ein.",
-          "error"
-        );
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.signUp({
 
-        return;
-      }
+          email: email,
 
+          password: password,
 
-      try {
-
-        const {
-          data,
-          error
-        } =
-          await supabaseClient.auth.updateUser({
+          options: {
 
             data: {
-              name: newName
-            }
+              name: name
+            },
 
-          });
+            emailRedirectTo:
+              REDIRECT_URL
+          }
+
+        });
 
 
-        if (error) {
-          throw error;
-        }
+      if (error) {
+        throw error;
+      }
 
+
+      if (
+        data &&
+        data.session &&
+        data.user
+      ) {
 
         currentUser =
-          data.user || currentUser;
+          data.user;
+
+
+        showMessage(
+          "registerMessage",
+          "Konto erfolgreich erstellt.",
+          "success"
+        );
 
 
         updateLoggedInView(
           currentUser
         );
 
-        document.getElementById(
-          "settingsName"
-        ).textContent =
-          newName;
 
-        document.getElementById(
-          "loggedInName"
-        ).textContent =
-          newName;
-
-        document.getElementById(
-          "nameEdit"
-        ).classList.remove("show");
-
-
-        showView(
-          "settingsView"
+        setTimeout(
+          function() {
+            showView("loggedInView");
+          },
+          500
         );
 
+      } else {
+
         showMessage(
-          "settingsMessage",
-          "Dein Name wurde erfolgreich geändert.",
+          "registerMessage",
+          "Konto erstellt. Bitte bestätige deine E-Mail-Adresse, falls eine Bestätigungs-E-Mail versendet wurde.",
           "success"
         );
-
-      } catch (error) {
-
-        showMessage(
-          "settingsMessage",
-          translateAuthError(error),
-          "error"
-        );
-
       }
 
+
+    } catch (error) {
+
+      console.error(
+        "Registrierungsfehler:",
+        error
+      );
+
+
+      showMessage(
+        "registerMessage",
+        error.message ||
+        "Konto konnte nicht erstellt werden.",
+        "error"
+      );
+
+    } finally {
+
+      button.disabled = false;
+      button.textContent = "Konto erstellen";
     }
+  }
 
 
-    /* =========================
-       E-MAIL ÄNDERN
-    ========================= */
+  /* =========================================================
+     PASSWORT VERGESSEN
+  ========================================================= */
 
-    async function saveEmail() {
+  async function forgotPassword(event) {
 
-      if (!currentUser) {
-        return;
-      }
+    event.preventDefault();
 
-      const input =
-        document.getElementById(
-          "newEmail"
-        );
 
-      const newEmail =
-        input.value.trim();
+    const email =
+      document
+        .getElementById("forgotEmail")
+        .value
+        .trim();
 
 
-      if (!newEmail) {
+    const button =
+      document.getElementById("forgotButton");
 
-        showMessage(
-          "settingsMessage",
-          "Bitte gib eine neue E-Mail-Adresse ein.",
-          "error"
-        );
 
-        return;
-      }
+    button.disabled = true;
+    button.textContent = "Wird gesendet...";
 
 
-      if (
-        newEmail.toLowerCase() ===
-        (currentUser.email || "").toLowerCase()
-      ) {
+    try {
 
-        showMessage(
-          "settingsMessage",
-          "Das ist bereits deine aktuelle E-Mail-Adresse.",
-          "error"
-        );
-
-        return;
-      }
-
-
-      try {
-
-        const {
-          error
-        } =
-          await supabaseClient.auth.updateUser({
-
-            email: newEmail
-
-          });
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        document.getElementById(
-          "emailEdit"
-        ).classList.remove("show");
-
-
-        showMessage(
-          "settingsMessage",
-          "Eine Bestätigungs-E-Mail wurde an die neue Adresse gesendet. Bitte bestätige die Änderung über den Link in der E-Mail.",
-          "success"
-        );
-
-      } catch (error) {
-
-        showMessage(
-          "settingsMessage",
-          translateAuthError(error),
-          "error"
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       PASSWORT ÄNDERN
-    ========================= */
-
-    async function savePassword() {
-
-      if (!currentUser) {
-        return;
-      }
-
-      const password =
-        document.getElementById(
-          "newPassword"
-        ).value;
-
-      const passwordConfirm =
-        document.getElementById(
-          "newPasswordConfirm"
-        ).value;
-
-
-      if (password.length < 8) {
-
-        showMessage(
-          "settingsMessage",
-          "Das neue Passwort muss mindestens 8 Zeichen enthalten.",
-          "error"
-        );
-
-        return;
-      }
-
-
-      if (
-        password !== passwordConfirm
-      ) {
-
-        showMessage(
-          "settingsMessage",
-          "Die beiden Passwörter stimmen nicht überein.",
-          "error"
-        );
-
-        return;
-      }
-
-
-      try {
-
-        const {
-          error
-        } =
-          await supabaseClient.auth.updateUser({
-
-            password: password
-
-          });
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        document.getElementById(
-          "newPassword"
-        ).value = "";
-
-        document.getElementById(
-          "newPasswordConfirm"
-        ).value = "";
-
-        document.getElementById(
-          "passwordEdit"
-        ).classList.remove("show");
-
-
-        showMessage(
-          "settingsMessage",
-          "Dein Passwort wurde erfolgreich geändert.",
-          "success"
-        );
-
-      } catch (error) {
-
-        showMessage(
-          "settingsMessage",
-          translateAuthError(error),
-          "error"
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       FAVORITEN LADEN
-    ========================= */
-
-    async function loadFavorites() {
-
-      if (!currentUser) {
-        return;
-      }
-
-      const loading =
-        document.getElementById(
-          "favoritesLoading"
-        );
-
-      const empty =
-        document.getElementById(
-          "favoritesEmpty"
-        );
-
-      const list =
-        document.getElementById(
-          "favoritesList"
-        );
-
-
-      if (
-        !loading ||
-        !empty ||
-        !list
-      ) {
-        return;
-      }
-
-
-      loading.style.display =
-        "block";
-
-      empty.style.display =
-        "none";
-
-      list.style.display =
-        "none";
-
-
-      try {
-
-        const {
-          data,
-          error
-        } =
-          await supabaseClient
-            .from("favoriten")
-            .select("*")
-            .eq(
-              "user_id",
-              currentUser.id
-            )
-            .order(
-              "created_at",
-              {
-                ascending: false
-              }
-            );
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        loading.style.display =
-          "none";
-
-
-        if (
-          !data ||
-          data.length === 0
-        ) {
-
-          empty.style.display =
-            "block";
-
-          return;
-
-        }
-
-
-        list.innerHTML = "";
-
-
-        data.forEach(
-          function(favorite) {
-
-            const card =
-              document.createElement(
-                "div"
-              );
-
-            card.className =
-              "favorite-card";
-
-
-            const imageHTML =
-              favorite.produkt_bild
-                ? `
-                  <img
-                    class="favorite-image"
-                    src="${escapeHtml(favorite.produkt_bild)}"
-                    alt="${escapeHtml(favorite.produkt_name)}"
-                  >
-                `
-                : `
-                  <div
-                    class="favorite-image"
-                    style="
-                      display:flex;
-                      align-items:center;
-                      justify-content:center;
-                      font-size:32px;
-                    "
-                  >
-                    📦
-                  </div>
-                `;
-
-
-            const priceHTML =
-              favorite.produkt_preis
-                ? `
-                  <div class="favorite-price">
-                    ${escapeHtml(
-                      favorite.produkt_preis
-                    )}
-                  </div>
-                `
-                : "";
-
-
-            const shopHTML =
-              favorite.produkt_shop
-                ? `
-                  <div class="favorite-shop">
-                    ${escapeHtml(
-                      favorite.produkt_shop
-                    )}
-                  </div>
-                `
-                : "";
-
-
-            const openButtonHTML =
-              favorite.produkt_link
-                ? `
-                  <a
-                    href="${escapeHtml(favorite.produkt_link)}"
-                    class="favorite-open-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Zum Produkt
-                  </a>
-                `
-                : "";
-
-
-            card.innerHTML = `
-
-              <div class="favorite-card-content">
-
-                ${imageHTML}
-
-                <div class="favorite-info">
-
-                  <div class="favorite-name">
-                    ${escapeHtml(
-                      favorite.produkt_name
-                    )}
-                  </div>
-
-                  ${priceHTML}
-
-                  ${shopHTML}
-
-                </div>
-
-              </div>
-
-              <div class="favorite-actions">
-
-                ${openButtonHTML}
-
-                <button
-                  class="favorite-remove-button"
-                  onclick="removeFavorite('${escapeHtml(favorite.id)}')"
-                >
-                  ❤️ Entfernen
-                </button>
-
-              </div>
-
-            `;
-
-
-            list.appendChild(
-              card
-            );
-
+      const {
+        error
+      } =
+        await supabaseClient.auth.resetPasswordForEmail(
+          email,
+          {
+            redirectTo: REDIRECT_URL
           }
         );
 
 
-        list.style.display =
-          "block";
+      if (error) {
+        throw error;
+      }
 
 
-      } catch (error) {
+      showMessage(
+        "forgotMessage",
+        "Falls ein Konto mit dieser E-Mail-Adresse existiert, wurde ein Link zum Zurücksetzen versendet.",
+        "success"
+      );
 
-        console.error(
-          "Favoriten konnten nicht geladen werden:",
-          error
+
+    } catch (error) {
+
+      console.error(
+        "Passwort-Reset-Fehler:",
+        error
+      );
+
+
+      showMessage(
+        "forgotMessage",
+        error.message ||
+        "Der Link konnte nicht angefordert werden.",
+        "error"
+      );
+
+    } finally {
+
+      button.disabled = false;
+      button.textContent = "Link anfordern";
+    }
+  }
+
+
+  /* =========================================================
+     ANGEMELDETES KONTO
+  ========================================================= */
+
+  function updateLoggedInView(user) {
+
+    if (!user) {
+      return;
+    }
+
+
+    const name =
+      user.user_metadata &&
+      user.user_metadata.name
+        ? user.user_metadata.name
+        : "";
+
+
+    const displayName =
+      name ||
+      user.email ||
+      "Mein Konto";
+
+
+    const loggedInName =
+      document.getElementById(
+        "loggedInName"
+      );
+
+    const settingsName =
+      document.getElementById(
+        "settingsName"
+      );
+
+    const settingsEmail =
+      document.getElementById(
+        "settingsEmail"
+      );
+
+
+    if (loggedInName) {
+      loggedInName.textContent =
+        "Hallo, " + displayName;
+    }
+
+
+    if (settingsName) {
+      settingsName.textContent =
+        name || "Kein Name hinterlegt";
+    }
+
+
+    if (settingsEmail) {
+      settingsEmail.textContent =
+        user.email || "";
+    }
+
+
+    const newName =
+      document.getElementById("newName");
+
+    if (newName) {
+      newName.value =
+        name || "";
+    }
+
+
+    const newEmail =
+      document.getElementById("newEmail");
+
+    if (newEmail) {
+      newEmail.value =
+        user.email || "";
+    }
+  }
+
+
+  /* =========================================================
+     AUTH STATUS
+  ========================================================= */
+
+  async function checkCurrentUser() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (user) {
+
+      updateLoggedInView(user);
+
+      showView("loggedInView");
+
+    } else {
+
+      currentUser = null;
+
+      showView("loginView");
+    }
+  }
+
+
+  supabaseClient.auth.onAuthStateChange(
+    function(event, session) {
+
+      if (
+        session &&
+        session.user
+      ) {
+
+        currentUser =
+          session.user;
+
+        updateLoggedInView(
+          currentUser
         );
 
+      } else {
 
-        loading.style.display =
-          "none";
+        currentUser = null;
+
+      }
+    }
+  );
 
 
-        empty.style.display =
-          "block";
+  /* =========================================================
+     LOGOUT
+  ========================================================= */
+
+  async function logout() {
+
+    try {
+
+      const {
+        error
+      } =
+        await supabaseClient.auth.signOut();
 
 
-        empty.innerHTML = `
+      if (error) {
+        throw error;
+      }
 
-          <div class="empty-account-icon">
-            ⚠️
+
+      currentUser = null;
+
+
+      document
+        .getElementById("loginEmail")
+        .value = "";
+
+
+      document
+        .getElementById("loginPassword")
+        .value = "";
+
+
+      showView("loginView");
+
+
+      showMessage(
+        "loginMessage",
+        "Du wurdest erfolgreich abgemeldet.",
+        "success"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "Logout-Fehler:",
+        error
+      );
+
+
+      showMessage(
+        "logoutMessage",
+        error.message ||
+        "Abmelden fehlgeschlagen.",
+        "error"
+      );
+    }
+  }
+
+
+  /* =========================================================
+     EINSTELLUNGEN
+  ========================================================= */
+
+  function toggleEdit(id) {
+
+    const element =
+      document.getElementById(id);
+
+    if (!element) {
+      return;
+    }
+
+    element.classList.toggle("active");
+  }
+
+
+  function cancelEdit(id) {
+
+    const element =
+      document.getElementById(id);
+
+    if (!element) {
+      return;
+    }
+
+    element.classList.remove("active");
+
+
+    if (currentUser) {
+      updateLoggedInView(currentUser);
+    }
+  }
+
+
+  async function saveName() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
+    }
+
+
+    const name =
+      document
+        .getElementById("newName")
+        .value
+        .trim();
+
+
+    if (!name) {
+
+      showMessage(
+        "settingsMessage",
+        "Bitte gib einen Namen ein.",
+        "error"
+      );
+
+      return;
+    }
+
+
+    try {
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.updateUser({
+
+          data: {
+            name: name
+          }
+
+        });
+
+
+      if (error) {
+        throw error;
+      }
+
+
+      currentUser =
+        data.user;
+
+
+      updateLoggedInView(
+        currentUser
+      );
+
+
+      document
+        .getElementById("nameEdit")
+        .classList.remove("active");
+
+
+      showMessage(
+        "settingsMessage",
+        "Name erfolgreich geändert.",
+        "success"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "Name-Fehler:",
+        error
+      );
+
+
+      showMessage(
+        "settingsMessage",
+        error.message ||
+        "Name konnte nicht geändert werden.",
+        "error"
+      );
+    }
+  }
+
+
+  async function saveEmail() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
+    }
+
+
+    const email =
+      document
+        .getElementById("newEmail")
+        .value
+        .trim();
+
+
+    if (!email) {
+      return;
+    }
+
+
+    try {
+
+      const {
+        error
+      } =
+        await supabaseClient.auth.updateUser({
+          email: email
+        });
+
+
+      if (error) {
+        throw error;
+      }
+
+
+      document
+        .getElementById("emailEdit")
+        .classList.remove("active");
+
+
+      showMessage(
+        "settingsMessage",
+        "Die Änderung wurde angefordert. Bitte prüfe deine E-Mail-Adresse.",
+        "success"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "E-Mail-Fehler:",
+        error
+      );
+
+
+      showMessage(
+        "settingsMessage",
+        error.message ||
+        "E-Mail-Adresse konnte nicht geändert werden.",
+        "error"
+      );
+    }
+  }
+
+
+  async function savePassword() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
+    }
+
+
+    const password =
+      document
+        .getElementById("newPassword")
+        .value;
+
+    const confirm =
+      document
+        .getElementById("newPasswordConfirm")
+        .value;
+
+
+    if (password.length < 8) {
+
+      showMessage(
+        "settingsMessage",
+        "Das Passwort muss mindestens 8 Zeichen enthalten.",
+        "error"
+      );
+
+      return;
+    }
+
+
+    if (password !== confirm) {
+
+      showMessage(
+        "settingsMessage",
+        "Die Passwörter stimmen nicht überein.",
+        "error"
+      );
+
+      return;
+    }
+
+
+    try {
+
+      const {
+        error
+      } =
+        await supabaseClient.auth.updateUser({
+          password: password
+        });
+
+
+      if (error) {
+        throw error;
+      }
+
+
+      document
+        .getElementById("newPassword")
+        .value = "";
+
+      document
+        .getElementById("newPasswordConfirm")
+        .value = "";
+
+
+      document
+        .getElementById("passwordEdit")
+        .classList.remove("active");
+
+
+      showMessage(
+        "settingsMessage",
+        "Passwort erfolgreich geändert.",
+        "success"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "Passwort-Fehler:",
+        error
+      );
+
+
+      showMessage(
+        "settingsMessage",
+        error.message ||
+        "Passwort konnte nicht geändert werden.",
+        "error"
+      );
+    }
+  }
+
+
+  /* =========================================================
+     FAVORITEN LADEN
+  ========================================================= */
+
+  async function loadFavorites() {
+
+    const loading =
+      document.getElementById(
+        "favoritesLoading"
+      );
+
+    const empty =
+      document.getElementById(
+        "favoritesEmpty"
+      );
+
+    const list =
+      document.getElementById(
+        "favoritesList"
+      );
+
+
+    loading.style.display = "block";
+    empty.style.display = "none";
+    list.style.display = "none";
+
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      loading.style.display = "none";
+
+      showView("loginView");
+
+      return;
+    }
+
+
+    try {
+
+      /*
+       * WICHTIG:
+       * Kein .order("created_at"),
+       * weil die bekannte Tabelle "favoriten"
+       * diese Spalte nicht benötigt.
+       */
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .select("*")
+          .eq(
+            "user_id",
+            user.id
+          );
+
+
+      if (error) {
+        throw error;
+      }
+
+
+      loading.style.display = "none";
+
+
+      if (
+        !data ||
+        data.length === 0
+      ) {
+
+        empty.style.display = "block";
+
+        return;
+      }
+
+
+      list.innerHTML = "";
+
+
+      data.forEach(function(favorite) {
+
+        const item =
+          document.createElement("div");
+
+        item.className =
+          "favorite-item";
+
+
+        const image =
+          favorite.produkt_bild || "";
+
+
+        const name =
+          favorite.produkt_name ||
+          "Produkt";
+
+
+        const price =
+          favorite.produkt_preis ||
+          "";
+
+
+        const shop =
+          favorite.produkt_shop ||
+          "";
+
+
+        const link =
+          favorite.produkt_link ||
+          "#";
+
+
+        item.innerHTML = `
+
+          <div class="favorite-image">
+
+            ${
+              image
+                ? `<img
+                    src="${escapeHtml(image)}"
+                    alt="${escapeHtml(name)}"
+                    loading="lazy"
+                  >`
+                : `❤️`
+            }
+
           </div>
 
-          <h2>
-            Favoriten konnten nicht geladen werden
-          </h2>
 
-          <p>
-            Bitte versuche es später erneut.
-          </p>
+          <div class="favorite-info">
+
+            <div class="favorite-name">
+              ${escapeHtml(name)}
+            </div>
+
+            ${
+              price
+                ? `<div class="favorite-price">
+                    ${escapeHtml(price)}
+                   </div>`
+                : ""
+            }
+
+            ${
+              shop
+                ? `<div class="favorite-shop">
+                    ${escapeHtml(shop)}
+                   </div>`
+                : ""
+            }
+
+          </div>
+
+
+          <div class="favorite-actions">
+
+            ${
+              link !== "#"
+                ? `<button
+                    class="favorite-open"
+                    onclick="openFavorite('${escapeJs(link)}')"
+                  >
+                    Öffnen
+                   </button>`
+                : ""
+            }
+
+            <button
+              class="favorite-delete"
+              onclick="deleteFavorite('${escapeJs(favorite.id)}')"
+            >
+              Entfernen
+            </button>
+
+          </div>
 
         `;
 
-      }
 
+        list.appendChild(item);
+
+      });
+
+
+      list.style.display = "block";
+
+
+    } catch (error) {
+
+      console.error(
+        "Favoriten konnten nicht geladen werden:",
+        error
+      );
+
+
+      loading.style.display = "none";
+
+
+      empty.style.display = "block";
+
+
+      empty.innerHTML = `
+
+        <div class="empty-account-icon">
+          ⚠️
+        </div>
+
+        <h2>
+          Favoriten konnten nicht geladen werden
+        </h2>
+
+        <p>
+          ${escapeHtml(
+            error.message ||
+            "Unbekannter Fehler"
+          )}
+        </p>
+
+      `;
+    }
+  }
+
+
+  /* =========================================================
+     FAVORIT LÖSCHEN
+  ========================================================= */
+
+  async function deleteFavorite(
+    favoriteId
+  ) {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
     }
 
 
-    /* =========================
-       FAVORIT ENTFERNEN
-    ========================= */
+    try {
 
-    async function removeFavorite(
-      favoriteId
+      const {
+        error
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .delete()
+          .eq(
+            "id",
+            favoriteId
+          )
+          .eq(
+            "user_id",
+            user.id
+          );
+
+
+      if (error) {
+        throw error;
+      }
+
+
+      loadFavorites();
+
+
+    } catch (error) {
+
+      console.error(
+        "Favorit konnte nicht gelöscht werden:",
+        error
+      );
+
+
+      alert(
+        error.message ||
+        "Favorit konnte nicht gelöscht werden."
+      );
+    }
+  }
+
+
+  function openFavorite(link) {
+
+    if (
+      !link ||
+      link === "#"
     ) {
+      return;
+    }
 
-      if (!currentUser) {
-        return;
-      }
-
-
-      try {
-
-        const {
-          error
-        } =
-          await supabaseClient
-            .from("favoriten")
-            .delete()
-            .eq(
-              "id",
-              favoriteId
-            )
-            .eq(
-              "user_id",
-              currentUser.id
-            );
+    window.open(
+      link,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }
 
 
-        if (error) {
-          throw error;
-        }
+  /* =========================================================
+     SICHERES HTML
+  ========================================================= */
+
+  function escapeHtml(value) {
+
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
 
 
-        loadFavorites();
+  function escapeJs(value) {
+
+    return String(value ?? "")
+      .replace(/\\/g, "\\\\")
+      .replace(/'/g, "\\'")
+      .replace(/"/g, '\\"')
+      .replace(/\n/g, "\\n")
+      .replace(/\r/g, "\\r");
+  }
 
 
-      } catch (error) {
+  /* =========================================================
+     BENACHRICHTIGUNGEN
+  ========================================================= */
 
-        console.error(
-          "Favorit konnte nicht gelöscht werden:",
-          error
-        );
+  async function loadNotificationSettings() {
+
+    const loading =
+      document.getElementById(
+        "notificationsLoading"
+      );
+
+    const settings =
+      document.getElementById(
+        "notificationsSettings"
+      );
 
 
-        alert(
-          "Der Favorit konnte nicht entfernt werden."
-        );
+    loading.style.display = "block";
+    settings.style.display = "none";
 
-      }
 
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
     }
 
 
-    /* =========================
-       BENACHRICHTIGUNGEN LADEN
-    ========================= */
+    try {
 
-    async function loadNotificationSettings() {
-
-      if (!currentUser) {
-        return;
-      }
-
-
-      const loading =
-        document.getElementById(
-          "notificationsLoading"
-        );
-
-      const settings =
-        document.getElementById(
-          "notificationsSettings"
-        );
+      const {
+        data,
+        error
+      } =
+        await supabaseClient
+          .from(
+            "benachrichtigungseinstellungen"
+          )
+          .select("*")
+          .eq(
+            "user_id",
+            user.id
+          )
+          .maybeSingle();
 
 
-      if (!loading || !settings) {
-        return;
-      }
-
-
-      loading.style.display =
-        "block";
-
-      settings.style.display =
-        "none";
-
-
-      try {
-
-        const {
-          data,
-          error
-        } =
-          await supabaseClient
-            .from("benachrichtigungseinstellungen")
-            .select("*")
-            .eq(
-              "user_id",
-              currentUser.id
-            )
-            .maybeSingle();
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        let notificationSettings =
-          data;
-
-
-        /*
-          Falls für diesen Benutzer noch keine
-          Einstellungen existieren, werden die
-          Standardwerte automatisch angelegt.
-        */
-
-        if (!notificationSettings) {
-
-          const {
-            data: created,
-            error: createError
-          } =
-            await supabaseClient
-              .from("benachrichtigungseinstellungen")
-              .insert({
-
-                user_id:
-                  currentUser.id,
-
-                deal_benachrichtigungen:
-                  true,
-
-                preisalarme:
-                  true,
-
-                konto_benachrichtigungen:
-                  true
-
-              })
-              .select()
-              .single();
-
-
-          if (createError) {
-            throw createError;
-          }
-
-
-          notificationSettings =
-            created;
-
-        }
-
-
-        applyNotificationSettings(
-          notificationSettings
-        );
-
-
-        loading.style.display =
-          "none";
-
-        settings.style.display =
-          "block";
-
-
-      } catch (error) {
+      if (error) {
 
         console.error(
           "Benachrichtigungseinstellungen konnten nicht geladen werden:",
           error
         );
 
-
-        loading.style.display =
-          "none";
-
-        settings.style.display =
-          "none";
-
-
-        showMessage(
-          "notificationsMessage",
-          "Die Benachrichtigungseinstellungen konnten nicht geladen werden. Bitte versuche es erneut.",
-          "error"
-        );
+        /*
+         * Die Einstellungen werden trotzdem angezeigt,
+         * damit die Seite nicht blockiert wird.
+         */
 
       }
 
+
+      if (data) {
+
+        const deal =
+          document.getElementById(
+            "dealNotifications"
+          );
+
+        const price =
+          document.getElementById(
+            "priceAlerts"
+          );
+
+        const account =
+          document.getElementById(
+            "accountNotifications"
+          );
+
+
+        if (deal) {
+          deal.checked =
+            Boolean(
+              data.deal_notifications ??
+              data.neue_deals ??
+              false
+            );
+        }
+
+
+        if (price) {
+          price.checked =
+            Boolean(
+              data.price_alerts ??
+              data.preisalarme ??
+              false
+            );
+        }
+
+
+        if (account) {
+          account.checked =
+            Boolean(
+              data.account_notifications ??
+              data.konto_benachrichtigungen ??
+              false
+            );
+        }
+
+      }
+
+
+      loading.style.display = "none";
+      settings.style.display = "block";
+
+
+    } catch (error) {
+
+      console.error(
+        "Benachrichtigungen:",
+        error
+      );
+
+
+      loading.style.display = "none";
+      settings.style.display = "block";
+    }
+  }
+
+
+  async function saveNotificationSettings() {
+
+    const user =
+      await getCurrentUser();
+
+
+    if (!user) {
+
+      showView("loginView");
+
+      return;
     }
 
 
-    /* =========================
-       BENACHRICHTIGUNGSEINSTELLUNGEN
-       ANWENDEN
-    ========================= */
+    const deal =
+      document.getElementById(
+        "dealNotifications"
+      ).checked;
 
-    function applyNotificationSettings(
-      settings
-    ) {
+    const price =
+      document.getElementById(
+        "priceAlerts"
+      ).checked;
 
-      const deal =
-        document.getElementById(
-          "dealNotifications"
-        );
-
-      const price =
-        document.getElementById(
-          "priceAlerts"
-        );
-
-      const account =
-        document.getElementById(
-          "accountNotifications"
-        );
+    const account =
+      document.getElementById(
+        "accountNotifications"
+      ).checked;
 
 
-      if (deal) {
+    try {
 
-        deal.checked =
-          !!settings.deal_benachrichtigungen;
-
-      }
-
-
-      if (price) {
-
-        price.checked =
-          !!settings.preisalarme;
-
-      }
-
-
-      if (account) {
-
-        account.checked =
-          !!settings.konto_benachrichtigungen;
-
-      }
-
-    }
-
-
-    /* =========================
-       BENACHRICHTIGUNGEN SPEICHERN
-    ========================= */
-
-    function saveNotificationSettings() {
-
-      if (!currentUser) {
-        return;
-      }
-
-
-      const deal =
-        document.getElementById(
-          "dealNotifications"
-        );
-
-      const price =
-        document.getElementById(
-          "priceAlerts"
-        );
-
-      const account =
-        document.getElementById(
-          "accountNotifications"
-        );
-
-
-      if (
-        !deal ||
-        !price ||
-        !account
-      ) {
-        return;
-      }
-
-
-      if (notificationSaveTimer) {
-
-        clearTimeout(
-          notificationSaveTimer
-        );
-
-      }
-
-
-      notificationSaveTimer =
-        setTimeout(
-          async function() {
-
-            try {
-
-              const {
-                error
-              } =
-                await supabaseClient
-                  .from(
-                    "benachrichtigungseinstellungen"
-                  )
-                  .upsert(
-
-                    {
-
-                      user_id:
-                        currentUser.id,
-
-                      deal_benachrichtigungen:
-                        deal.checked,
-
-                      preisalarme:
-                        price.checked,
-
-                      konto_benachrichtigungen:
-                        account.checked,
-
-                      updated_at:
-                        new Date().toISOString()
-
-                    },
-
-                    {
-                      onConflict:
-                        "user_id"
-                    }
-
-                  );
-
-
-              if (error) {
-                throw error;
-              }
-
-
-              showMessage(
-                "notificationsMessage",
-                "Deine Benachrichtigungseinstellungen wurden gespeichert.",
-                "success"
-              );
-
-
-            } catch (error) {
-
-              console.error(
-                "Benachrichtigungseinstellungen konnten nicht gespeichert werden:",
-                error
-              );
-
-
-              showMessage(
-                "notificationsMessage",
-                "Die Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.",
-                "error"
-              );
-
+      const {
+        error
+      } =
+        await supabaseClient
+          .from(
+            "benachrichtigungseinstellungen"
+          )
+          .upsert(
+            {
+              user_id: user.id,
+              deal_notifications: deal,
+              price_alerts: price,
+              account_notifications: account
+            },
+            {
+              onConflict: "user_id"
             }
-
-          },
-          150
-        );
-
-    }
-
-
-    /* =========================
-       HTML ABSICHERN
-    ========================= */
-
-    function escapeHtml(value) {
-
-      if (
-        value === null ||
-        value === undefined
-      ) {
-        return "";
-      }
-
-      return String(value)
-        .replace(
-          /&/g,
-          "&amp;"
-        )
-        .replace(
-          /</g,
-          "&lt;"
-        )
-        .replace(
-          />/g,
-          "&gt;"
-        )
-        .replace(
-          /"/g,
-          "&quot;"
-        )
-        .replace(
-          /'/g,
-          "&#039;"
-        );
-
-    }
-
-
-    /* =========================
-       ABMELDEN
-    ========================= */
-
-    async function logout() {
-
-      try {
-
-        const {
-          error
-        } =
-          await supabaseClient.auth.signOut();
-
-
-        if (error) {
-          throw error;
-        }
-
-
-        currentUser = null;
-
-
-        showView(
-          "loginView"
-        );
-
-
-        document.getElementById(
-          "loginEmail"
-        ).value = "";
-
-
-        document.getElementById(
-          "loginPassword"
-        ).value = "";
-
-
-      } catch (error) {
-
-        showMessage(
-          "logoutMessage",
-          "Das Abmelden ist fehlgeschlagen. Bitte versuche es erneut.",
-          "error"
-        );
-
-      }
-
-    }
-
-
-    /* =========================
-       AKTUELLEN LOGIN PRÜFEN
-    ========================= */
-
-    async function checkCurrentUser() {
-
-      try {
-
-        const {
-          data
-        } =
-          await supabaseClient.auth.getUser();
-
-
-        if (data.user) {
-
-          updateLoggedInView(
-            data.user
           );
 
-        }
 
-      } catch (error) {
-
-        console.error(
-          "Benutzer konnte nicht geladen werden:",
-          error
-        );
-
+      if (error) {
+        throw error;
       }
+
+
+      showMessage(
+        "notificationsMessage",
+        "Einstellungen gespeichert.",
+        "success"
+      );
+
+
+    } catch (error) {
+
+      console.error(
+        "Benachrichtigungseinstellungen konnten nicht gespeichert werden:",
+        error
+      );
+
+
+      showMessage(
+        "notificationsMessage",
+        error.message ||
+        "Einstellungen konnten nicht gespeichert werden.",
+        "error"
+      );
+    }
+  }
+
+
+  /* =========================================================
+     START
+  ========================================================= */
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+      checkCurrentUser();
 
     }
-
-
-    /* =========================
-       AUTH STATUS
-    ========================= */
-
-    supabaseClient.auth.onAuthStateChange(
-      function(
-        event,
-        session
-      ) {
-
-        if (
-          session &&
-          session.user
-        ) {
-
-          updateLoggedInView(
-            session.user
-          );
-
-        }
-
-      }
-    );
-
-
-    /* =========================
-       START
-    ========================= */
-
-    checkCurrentUser();
-
-  </script>
+  );
+</script>
 
 </body>
 </html>
