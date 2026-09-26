@@ -187,15 +187,74 @@
       display: none;
       background: #fff;
       border-radius: 12px;
-      padding: 15px 18px;
+      padding: 18px;
       margin-bottom: 22px;
       text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,.08);
-      color: #555;
     }
 
     .filter-message.show {
       display: block;
+    }
+
+    .filter-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-label {
+      width: 100%;
+      font-size: 13px;
+      color: #777;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .filter-choice {
+      background: #f1f1f1;
+      color: #111;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-choice:hover {
+      border-color: #ffd400;
+      background: #fff8c7;
+    }
+
+    .filter-choice.active {
+      background: #ffd400;
+      border-color: #ffd400;
+      color: #111;
+    }
+
+    .filter-choice.reset {
+      background: #111;
+      border-color: #111;
+      color: #fff;
+    }
+
+    .filter-choice.reset:hover {
+      background: #222;
+      border-color: #222;
     }
 
     .products {
@@ -204,26 +263,151 @@
       gap: 22px;
     }
 
-    .empty-state {
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      position: relative;
+      transition: 0.2s;
+      min-width: 0;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+
+    .product-card.hidden {
+      display: none;
+    }
+
+    .product-image-wrap {
+      width: 100%;
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      background: #fafafa;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-brand {
+      color: #777;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .product-name {
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .product-shop {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    .product-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .deal-button {
+      flex: 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 11px 12px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .deal-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .favorite-button {
+      width: 43px;
+      height: 43px;
+      flex: 0 0 43px;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 9px;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+    }
+
+    .favorite-button:hover {
+      border-color: #ffd400;
+      background: #fff8c7;
+    }
+
+    .favorite-button.active {
+      background: #ffd400;
+      border-color: #ffd400;
+    }
+
+    .loading-state,
+    .error-state,
+    .no-results-state {
       grid-column: 1 / -1;
-      background: white;
+      background: #fff;
       border-radius: 16px;
       padding: 55px 30px;
       text-align: center;
       box-shadow: 0 4px 18px rgba(0,0,0,.08);
     }
 
-    .empty-icon {
-      font-size: 65px;
-      margin-bottom: 20px;
+    .state-icon {
+      font-size: 60px;
+      margin-bottom: 18px;
     }
 
-    .empty-state h2 {
-      font-size: 26px;
+    .loading-state h2,
+    .error-state h2,
+    .no-results-state h2 {
+      font-size: 25px;
       margin-bottom: 10px;
     }
 
-    .empty-state p {
+    .loading-state p,
+    .error-state p,
+    .no-results-state p {
       color: #666;
       font-size: 16px;
     }
@@ -244,6 +428,10 @@
 
       .logo img {
         height: 275px;
+      }
+
+      .product-image-wrap {
+        height: 200px;
       }
 
     }
@@ -294,25 +482,87 @@
         font-size: 14px;
       }
 
+      .filter-message {
+        padding: 14px 10px;
+      }
+
+      .filter-choice {
+        padding: 7px 9px;
+        font-size: 12px;
+      }
+
       .products {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
       }
 
-      .empty-state {
+      .product-card {
+        padding: 10px;
+        border-radius: 13px;
+      }
+
+      .product-image-wrap {
+        height: 145px;
+        margin-bottom: 10px;
+        border-radius: 9px;
+      }
+
+      .product-brand {
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
+
+      .product-name {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        margin-bottom: 9px;
+      }
+
+      .product-shop {
+        font-size: 10px;
+        margin-bottom: 9px;
+      }
+
+      .product-actions {
+        gap: 6px;
+      }
+
+      .deal-button {
+        padding: 9px 6px;
+        font-size: 11px;
+      }
+
+      .favorite-button {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+        font-size: 17px;
+      }
+
+      .loading-state,
+      .error-state,
+      .no-results-state {
         padding: 45px 15px;
         border-radius: 13px;
       }
 
-      .empty-icon {
+      .state-icon {
         font-size: 50px;
       }
 
-      .empty-state h2 {
+      .loading-state h2,
+      .error-state h2,
+      .no-results-state h2 {
         font-size: 20px;
       }
 
-      .empty-state p {
+      .loading-state p,
+      .error-state p,
+      .no-results-state p {
         font-size: 14px;
       }
 
@@ -331,6 +581,18 @@
       .menu-button {
         width: 45px;
         height: 45px;
+      }
+
+      .product-image-wrap {
+        height: 130px;
+      }
+
+      .product-name {
+        font-size: 13px;
+      }
+
+      .product-price {
+        font-size: 15px;
       }
 
     }
@@ -421,24 +683,134 @@
       class="filter-message"
       id="filterMessage"
     >
-      Der Filter befindet sich noch in Bearbeitung.
+
+      <div class="filter-title">
+        Tablets filtern
+      </div>
+
+      <div class="filter-group">
+
+        <div class="filter-label">
+          Hersteller
+        </div>
+
+        <button
+          class="filter-choice reset"
+          id="filterAll"
+          onclick="resetFilters()"
+        >
+          Alle
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Samsung"
+          onclick="toggleBrandFilter('Samsung')"
+        >
+          Samsung
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Apple"
+          onclick="toggleBrandFilter('Apple')"
+        >
+          Apple
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Lenovo"
+          onclick="toggleBrandFilter('Lenovo')"
+        >
+          Lenovo
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Xiaomi"
+          onclick="toggleBrandFilter('Xiaomi')"
+        >
+          Xiaomi
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Huawei"
+          onclick="toggleBrandFilter('Huawei')"
+        >
+          Huawei
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="OnePlus"
+          onclick="toggleBrandFilter('OnePlus')"
+        >
+          OnePlus
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Microsoft Surface"
+          onclick="toggleBrandFilter('Microsoft Surface')"
+        >
+          Microsoft Surface
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="HONOR"
+          onclick="toggleBrandFilter('HONOR')"
+        >
+          HONOR
+        </button>
+
+        <button
+          class="filter-choice"
+          data-brand="Amazon Fire"
+          onclick="toggleBrandFilter('Amazon Fire')"
+        >
+          Amazon Fire
+        </button>
+
+      </div>
+
+
+      <div
+        class="filter-group"
+        id="seriesFilterGroup"
+        style="display:none;"
+      >
+
+        <div class="filter-label">
+          Serie
+        </div>
+
+        <div id="seriesButtons"></div>
+
+      </div>
+
     </div>
 
 
-    <div class="products">
+    <div
+      class="products"
+      id="products"
+    >
 
-      <div class="empty-state">
+      <div class="loading-state">
 
-        <div class="empty-icon">
+        <div class="state-icon">
           📲
         </div>
 
         <h2>
-          Noch keine Produkte vorhanden
+          Tablets werden geladen …
         </h2>
 
         <p>
-          Hier werden bald passende Tablets und Angebote angezeigt.
+          Bitte einen Moment warten.
         </p>
 
       </div>
@@ -456,6 +828,12 @@
 
 
   <script>
+
+    /*
+      ==========================================
+      MENÜ
+      ==========================================
+    */
 
     function toggleMenu() {
 
@@ -535,6 +913,130 @@
     );
 
 
+    /*
+      ==========================================
+      FILTER
+      ==========================================
+    */
+
+    let activeBrand = null;
+    let activeSeries = null;
+
+    const seriesMap = {
+
+      "Samsung": [
+        {
+          value: "S",
+          label: "S-Serie"
+        },
+        {
+          value: "A",
+          label: "A-Serie"
+        },
+        {
+          value: "Active",
+          label: "Tab Active"
+        }
+      ],
+
+      "Apple": [
+        {
+          value: "Serie",
+          label: "Serie"
+        },
+        {
+          value: "mini",
+          label: "mini"
+        },
+        {
+          value: "Air",
+          label: "Air"
+        },
+        {
+          value: "Pro",
+          label: "Pro"
+        }
+      ],
+
+      "Lenovo": [
+        {
+          value: "Tab",
+          label: "Tab"
+        },
+        {
+          value: "Idea Tab",
+          label: "Idea Tab"
+        },
+        {
+          value: "Yoga",
+          label: "Yoga"
+        },
+        {
+          value: "Legion",
+          label: "Legion"
+        }
+      ],
+
+      "Xiaomi": [
+        {
+          value: "Xiaomi Pad",
+          label: "Xiaomi Pad"
+        },
+        {
+          value: "Redmi Pad",
+          label: "Redmi Pad"
+        }
+      ],
+
+      "Huawei": [
+        {
+          value: "MatePad",
+          label: "MatePad-Serie"
+        },
+        {
+          value: "MatePad SE",
+          label: "MatePad SE"
+        }
+      ],
+
+      "OnePlus": [],
+
+      "Microsoft Surface": [
+        {
+          value: "Pro",
+          label: "Pro"
+        },
+        {
+          value: "Go",
+          label: "Go"
+        }
+      ],
+
+      "HONOR": [
+        {
+          value: "MagicPad",
+          label: "MagicPad"
+        },
+        {
+          value: "Pad",
+          label: "Pad"
+        }
+      ],
+
+      "Amazon Fire": [
+        {
+          value: "HD",
+          label: "HD"
+        },
+        {
+          value: "Max",
+          label: "Max"
+        }
+      ]
+
+    };
+
+
     function toggleFilter() {
 
       const message =
@@ -543,6 +1045,1087 @@
       message.classList.toggle("show");
 
     }
+
+
+    function toggleBrandFilter(brand) {
+
+      if (activeBrand === brand) {
+
+        activeBrand = null;
+        activeSeries = null;
+
+      } else {
+
+        activeBrand = brand;
+        activeSeries = null;
+
+      }
+
+      updateSeriesButtons();
+      updateFilterButtons();
+      applyFilters();
+
+    }
+
+
+    function toggleSeriesFilter(series) {
+
+      if (!activeBrand) {
+        return;
+      }
+
+      if (activeSeries === series) {
+
+        activeSeries = null;
+
+      } else {
+
+        activeSeries = series;
+
+      }
+
+      updateSeriesButtons();
+      updateFilterButtons();
+      applyFilters();
+
+    }
+
+
+    function resetFilters() {
+
+      activeBrand = null;
+      activeSeries = null;
+
+      updateSeriesButtons();
+      updateFilterButtons();
+      applyFilters();
+
+    }
+
+
+    function updateSeriesButtons() {
+
+      const group =
+        document.getElementById("seriesFilterGroup");
+
+      const container =
+        document.getElementById("seriesButtons");
+
+      container.innerHTML = "";
+
+      if (
+        !activeBrand ||
+        !seriesMap[activeBrand] ||
+        seriesMap[activeBrand].length === 0
+      ) {
+
+        group.style.display = "none";
+        return;
+
+      }
+
+      group.style.display = "flex";
+
+      seriesMap[activeBrand].forEach(function(series) {
+
+        const button =
+          document.createElement("button");
+
+        button.className = "filter-choice";
+
+        button.textContent = series.label;
+
+        button.onclick = function() {
+
+          toggleSeriesFilter(series.value);
+
+        };
+
+        if (activeSeries === series.value) {
+
+          button.classList.add("active");
+
+        }
+
+        container.appendChild(button);
+
+      });
+
+    }
+
+
+    function updateFilterButtons() {
+
+      const buttons =
+        document.querySelectorAll(
+          ".filter-choice[data-brand]"
+        );
+
+      buttons.forEach(function(button) {
+
+        const brand =
+          button.dataset.brand;
+
+        if (activeBrand === brand) {
+
+          button.classList.add("active");
+
+        } else {
+
+          button.classList.remove("active");
+
+        }
+
+      });
+
+
+      const allButton =
+        document.getElementById("filterAll");
+
+      if (activeBrand === null) {
+
+        allButton.classList.add("active");
+
+      } else {
+
+        allButton.classList.remove("active");
+
+      }
+
+    }
+
+
+    function applyFilters() {
+
+      const cards =
+        document.querySelectorAll(".product-card");
+
+      let visibleCount = 0;
+
+      cards.forEach(function(card) {
+
+        const cardBrand =
+          card.dataset.brand || "";
+
+        const cardSeries =
+          card.dataset.series || "";
+
+        let visible = true;
+
+
+        if (
+          activeBrand !== null &&
+          cardBrand !== activeBrand
+        ) {
+
+          visible = false;
+
+        }
+
+
+        if (
+          activeSeries !== null &&
+          cardSeries !== activeSeries
+        ) {
+
+          visible = false;
+
+        }
+
+
+        if (visible) {
+
+          card.classList.remove("hidden");
+          visibleCount++;
+
+        } else {
+
+          card.classList.add("hidden");
+
+        }
+
+      });
+
+
+      updateNoResultsState(visibleCount);
+
+    }
+
+
+    function updateNoResultsState(visibleCount) {
+
+      const existing =
+        document.getElementById("noResultsState");
+
+      if (existing) {
+
+        existing.remove();
+
+      }
+
+      if (visibleCount > 0) {
+        return;
+      }
+
+      const products =
+        document.getElementById("products");
+
+      const state =
+        document.createElement("div");
+
+      state.id = "noResultsState";
+
+      state.className = "no-results-state";
+
+      state.innerHTML = `
+        <div class="state-icon">🔎</div>
+        <h2>Keine Tablets gefunden</h2>
+        <p>Für den ausgewählten Filter sind keine passenden Produkte vorhanden.</p>
+      `;
+
+      products.appendChild(state);
+
+    }
+
+
+    /*
+      ==========================================
+      PRODUKTE AUS tablets.json LADEN
+      ==========================================
+    */
+
+    let productsData = [];
+
+
+    async function loadProducts() {
+
+      const products =
+        document.getElementById("products");
+
+      try {
+
+        const response =
+          await fetch(
+            "tablets.json",
+            {
+              cache: "no-cache"
+            }
+          );
+
+
+        if (!response.ok) {
+
+          throw new Error(
+            "tablets.json konnte nicht geladen werden."
+          );
+
+        }
+
+
+        productsData =
+          await response.json();
+
+
+        if (
+          !Array.isArray(productsData)
+        ) {
+
+          throw new Error(
+            "Die tablets.json enthält kein gültiges Produkt-Array."
+          );
+
+        }
+
+
+        renderProducts();
+
+      } catch (error) {
+
+        console.error(
+          "Fehler beim Laden der Tablets:",
+          error
+        );
+
+
+        products.innerHTML = `
+
+          <div class="error-state">
+
+            <div class="state-icon">
+              ⚠️
+            </div>
+
+            <h2>
+              Tablets konnten nicht geladen werden
+            </h2>
+
+            <p>
+              Bitte überprüfe, ob die Datei
+              <strong>tablets.json</strong>
+              korrekt neben dieser HTML-Datei liegt.
+            </p>
+
+          </div>
+
+        `;
+
+      }
+
+    }
+
+
+    function renderProducts() {
+
+      const products =
+        document.getElementById("products");
+
+      products.innerHTML = "";
+
+
+      if (
+        productsData.length === 0
+      ) {
+
+        products.innerHTML = `
+
+          <div class="no-results-state">
+
+            <div class="state-icon">
+              📲
+            </div>
+
+            <h2>
+              Noch keine Produkte vorhanden
+            </h2>
+
+            <p>
+              Hier werden bald passende Tablets und Angebote angezeigt.
+            </p>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      productsData.forEach(function(product) {
+
+        const card =
+          document.createElement("article");
+
+        card.className =
+          "product-card";
+
+
+        card.dataset.brand =
+          product.brand || "";
+
+        card.dataset.series =
+          product.series || "";
+
+        card.dataset.productId =
+          product.id || "";
+
+        card.dataset.productName =
+          product.name || "";
+
+        card.dataset.productImage =
+          product.image || "";
+
+        card.dataset.productPrice =
+          product.price || "";
+
+        card.dataset.productShop =
+          product.shop || "";
+
+        card.dataset.productLink =
+          product.link || "";
+
+
+        /*
+          Produktbild
+        */
+
+        const imageWrap =
+          document.createElement("div");
+
+        imageWrap.className =
+          "product-image-wrap";
+
+
+        const image =
+          document.createElement("img");
+
+        image.className =
+          "product-image";
+
+        image.src =
+          product.image || "";
+
+        image.alt =
+          product.name || "Tablet";
+
+        image.loading =
+          "lazy";
+
+
+        image.onerror =
+          function() {
+
+            this.style.display = "none";
+
+          };
+
+
+        imageWrap.appendChild(image);
+
+
+        /*
+          Produktinformationen
+        */
+
+        const info =
+          document.createElement("div");
+
+        info.className =
+          "product-info";
+
+
+        const brand =
+          document.createElement("div");
+
+        brand.className =
+          "product-brand";
+
+        brand.textContent =
+          product.brand || "";
+
+
+        const name =
+          document.createElement("div");
+
+        name.className =
+          "product-name";
+
+        name.textContent =
+          product.name || "Tablet";
+
+
+        info.appendChild(brand);
+        info.appendChild(name);
+
+
+        /*
+          Preis
+        */
+
+        if (
+          product.price &&
+          product.price.trim() !== ""
+        ) {
+
+          const price =
+            document.createElement("div");
+
+          price.className =
+            "product-price";
+
+          price.textContent =
+            product.price;
+
+          info.appendChild(price);
+
+        }
+
+
+        /*
+          Shop
+        */
+
+        if (
+          product.shop &&
+          product.shop.trim() !== ""
+        ) {
+
+          const shop =
+            document.createElement("div");
+
+          shop.className =
+            "product-shop";
+
+          shop.textContent =
+            "Shop: " + product.shop;
+
+          info.appendChild(shop);
+
+        }
+
+
+        /*
+          Buttons
+        */
+
+        const actions =
+          document.createElement("div");
+
+        actions.className =
+          "product-actions";
+
+
+        const dealButton =
+          document.createElement("a");
+
+        dealButton.className =
+          "deal-button";
+
+        dealButton.textContent =
+          "Zum Deal";
+
+
+        if (
+          product.link &&
+          product.link.trim() !== ""
+        ) {
+
+          dealButton.href =
+            product.link;
+
+          dealButton.target =
+            "_blank";
+
+          dealButton.rel =
+            "nofollow sponsored noopener";
+
+        } else {
+
+          dealButton.href =
+            "#";
+
+          dealButton.onclick =
+            function(event) {
+
+              event.preventDefault();
+
+            };
+
+        }
+
+
+        const favoriteButton =
+          document.createElement("button");
+
+        favoriteButton.className =
+          "favorite-button";
+
+        favoriteButton.type =
+          "button";
+
+        favoriteButton.innerHTML =
+          "♡";
+
+        favoriteButton.setAttribute(
+          "aria-label",
+          "Zu Favoriten hinzufügen"
+        );
+
+
+        favoriteButton.onclick =
+          function() {
+
+            toggleFavorite(
+              product,
+              favoriteButton
+            );
+
+          };
+
+
+        actions.appendChild(dealButton);
+        actions.appendChild(favoriteButton);
+
+
+        info.appendChild(actions);
+
+
+        card.appendChild(imageWrap);
+        card.appendChild(info);
+
+        products.appendChild(card);
+
+      });
+
+
+      updateFilterButtons();
+      updateSeriesButtons();
+      applyFilters();
+
+      loadFavoriteStates();
+
+    }
+
+
+    /*
+      ==========================================
+      SUPABASE FAVORITEN
+      ==========================================
+    */
+
+    const SUPABASE_URL =
+      "https://zniknbouugmgvqkkoamo.supabase.co";
+
+    const SUPABASE_KEY =
+      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw-B_htFgzI";
+
+
+    let supabaseClient =
+      null;
+
+
+    function initSupabase() {
+
+      if (
+        typeof window.supabase === "undefined"
+      ) {
+
+        return false;
+
+      }
+
+
+      try {
+
+        supabaseClient =
+          window.supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_KEY
+          );
+
+        return true;
+
+      } catch (error) {
+
+        console.error(
+          "Supabase konnte nicht initialisiert werden:",
+          error
+        );
+
+        return false;
+
+      }
+
+    }
+
+
+    async function getCurrentUser() {
+
+      if (!supabaseClient) {
+
+        return null;
+
+      }
+
+
+      try {
+
+        const result =
+          await supabaseClient.auth.getUser();
+
+
+        if (
+          result &&
+          result.data &&
+          result.data.user
+        ) {
+
+          return result.data.user;
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
+        );
+
+      }
+
+
+      return null;
+
+    }
+
+
+    async function toggleFavorite(
+      product,
+      button
+    ) {
+
+      if (!supabaseClient) {
+
+        initSupabase();
+
+      }
+
+
+      const user =
+        await getCurrentUser();
+
+
+      if (!user) {
+
+        window.location.href =
+          "konto.html";
+
+        return;
+
+      }
+
+
+      try {
+
+        const productId =
+          product.id || "";
+
+
+        const existing =
+          await supabaseClient
+            .from("favorites")
+            .select("id")
+            .eq("user_id", user.id)
+            .eq("product_id", productId)
+            .limit(1);
+
+
+        if (
+          existing.error
+        ) {
+
+          console.error(
+            "Favorit konnte nicht geprüft werden:",
+            existing.error
+          );
+
+          return;
+
+        }
+
+
+        if (
+          existing.data &&
+          existing.data.length > 0
+        ) {
+
+          const favoriteId =
+            existing.data[0].id;
+
+
+          const removeResult =
+            await supabaseClient
+              .from("favorites")
+              .delete()
+              .eq("id", favoriteId);
+
+
+          if (
+            removeResult.error
+          ) {
+
+            console.error(
+              "Favorit konnte nicht entfernt werden:",
+              removeResult.error
+            );
+
+            return;
+
+          }
+
+
+          button.classList.remove(
+            "active"
+          );
+
+          button.innerHTML =
+            "♡";
+
+          button.setAttribute(
+            "aria-label",
+            "Zu Favoriten hinzufügen"
+          );
+
+        } else {
+
+          const insertResult =
+            await supabaseClient
+              .from("favorites")
+              .insert({
+
+                user_id:
+                  user.id,
+
+                product_id:
+                  productId,
+
+                product_name:
+                  product.name || "",
+
+                product_image:
+                  product.image || "",
+
+                product_price:
+                  product.price || "",
+
+                product_shop:
+                  product.shop || "",
+
+                product_link:
+                  product.link || ""
+
+              });
+
+
+          if (
+            insertResult.error
+          ) {
+
+            console.error(
+              "Favorit konnte nicht gespeichert werden:",
+              insertResult.error
+            );
+
+            return;
+
+          }
+
+
+          button.classList.add(
+            "active"
+          );
+
+          button.innerHTML =
+            "♥";
+
+          button.setAttribute(
+            "aria-label",
+            "Aus Favoriten entfernen"
+          );
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Fehler bei den Favoriten:",
+          error
+        );
+
+      }
+
+    }
+
+
+    async function loadFavoriteStates() {
+
+      if (!supabaseClient) {
+
+        initSupabase();
+
+      }
+
+
+      const user =
+        await getCurrentUser();
+
+
+      if (!user) {
+
+        return;
+
+      }
+
+
+      try {
+
+        const result =
+          await supabaseClient
+            .from("favorites")
+            .select("product_id")
+            .eq("user_id", user.id);
+
+
+        if (
+          result.error
+        ) {
+
+          console.error(
+            "Favoriten konnten nicht geladen werden:",
+            result.error
+          );
+
+          return;
+
+        }
+
+
+        const favoriteIds =
+          new Set(
+            (result.data || []).map(
+              function(item) {
+
+                return item.product_id;
+
+              }
+            )
+          );
+
+
+        const cards =
+          document.querySelectorAll(
+            ".product-card"
+          );
+
+
+        cards.forEach(
+          function(card) {
+
+            const productId =
+              card.dataset.productId || "";
+
+
+            const button =
+              card.querySelector(
+                ".favorite-button"
+              );
+
+
+            if (
+              !button
+            ) {
+
+              return;
+
+            }
+
+
+            if (
+              favoriteIds.has(productId)
+            ) {
+
+              button.classList.add(
+                "active"
+              );
+
+              button.innerHTML =
+                "♥";
+
+              button.setAttribute(
+                "aria-label",
+                "Aus Favoriten entfernen"
+              );
+
+            } else {
+
+              button.classList.remove(
+                "active"
+              );
+
+              button.innerHTML =
+                "♡";
+
+              button.setAttribute(
+                "aria-label",
+                "Zu Favoriten hinzufügen"
+              );
+
+            }
+
+          }
+        );
+
+      } catch (error) {
+
+        console.error(
+          "Fehler beim Laden der Favoriten:",
+          error
+        );
+
+      }
+
+    }
+
+
+    /*
+      ==========================================
+      SUPABASE SCRIPT LADEN
+      ==========================================
+    */
+
+    function loadSupabaseScript() {
+
+      if (
+        document.getElementById(
+          "supabaseScript"
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      const script =
+        document.createElement("script");
+
+      script.id =
+        "supabaseScript";
+
+      script.src =
+        "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
+
+      script.onload =
+        function() {
+
+          initSupabase();
+
+          loadFavoriteStates();
+
+        };
+
+
+      script.onerror =
+        function() {
+
+          console.error(
+            "Supabase-Script konnte nicht geladen werden."
+          );
+
+        };
+
+
+      document.head.appendChild(script);
+
+    }
+
+
+    /*
+      ==========================================
+      START
+      ==========================================
+    */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function() {
+
+        loadProducts();
+
+        loadSupabaseScript();
+
+      }
+    );
 
   </script>
 
