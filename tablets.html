@@ -2053,16 +2053,17 @@
 
       }
 
-    } catch (error) {
+    catch (error) {
+  console.error("Favoriten-Fehler:", error);
 
-      console.error(
-        "Favoriten-Fehler:",
-        error
-      );
-
-      alert(
-        "Der Favorit konnte nicht gespeichert werden."
-      );
+  alert(
+    "Favorit konnte nicht gespeichert werden.\n\n" +
+    "Fehler: " + (error?.message || "Unbekannter Fehler") +
+    "\nCode: " + (error?.code || "unbekannt") +
+    "\nDetails: " + (error?.details || "keine") +
+    "\nHinweis: " + (error?.hint || "keiner")
+  );
+    }
 
     } finally {
 
