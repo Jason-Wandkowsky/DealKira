@@ -336,15 +336,15 @@
       height: 44px;
       border: none;
       border-radius: 50%;
-      background: rgba(255,255,255,.95);
-      box-shadow: 0 3px 12px rgba(0,0,0,.18);
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 24px;
       cursor: pointer;
       z-index: 5;
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .favorite-button:hover {
@@ -358,7 +358,7 @@
 
     .favorite-button:disabled {
       cursor: wait;
-      opacity: .7;
+      opacity: 0.7;
     }
 
     .loading-message,
@@ -1094,7 +1094,7 @@
     "https://zniknbouugmgvqkkoamo.supabase.co";
 
   const SUPABASE_KEY =
-    "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
+    "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
 
   const supabaseClient =
     window.supabase.createClient(
@@ -1228,7 +1228,8 @@
 
       favoriteButton.setAttribute(
         "aria-label",
-        "Zu Favoriten hinzufügen"
+        product.name +
+        " zu Favoriten hinzufügen"
       );
 
       favoriteButton.addEventListener(
@@ -1907,7 +1908,14 @@
 
 
     if (error) {
+
+      console.error(
+        "Benutzer konnte nicht geladen werden:",
+        error
+      );
+
       return null;
+
     }
 
 
@@ -1966,23 +1974,44 @@
         card.dataset.productLink;
 
 
-      if (
-        button.classList.contains("active")
-      ) {
+      const {
+        data: existingFavorite,
+        error: selectError
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .select("id")
+          .eq(
+            "user_id",
+            user.id
+          )
+          .eq(
+            "produkt_id",
+            productId
+          )
+          .maybeSingle();
+
+
+      if (selectError) {
+        throw selectError;
+      }
+
+
+      if (existingFavorite) {
 
         const {
           error
         } =
           await supabaseClient
-            .from("favorites")
+            .from("favoriten")
             .delete()
+            .eq(
+              "id",
+              existingFavorite.id
+            )
             .eq(
               "user_id",
               user.id
-            )
-            .eq(
-              "product_id",
-              productId
             );
 
 
@@ -2000,7 +2029,8 @@
 
         button.setAttribute(
           "aria-label",
-          "Zu Favoriten hinzufügen"
+          productName +
+          " zu Favoriten hinzufügen"
         );
 
       } else {
@@ -2009,28 +2039,28 @@
           error
         } =
           await supabaseClient
-            .from("favorites")
+            .from("favoriten")
             .insert({
 
               user_id:
                 user.id,
 
-              product_id:
+              produkt_id:
                 productId,
 
-              product_name:
+              produkt_name:
                 productName,
 
-              product_image:
+              produkt_bild:
                 productImage,
 
-              product_price:
+              produkt_preis:
                 productPrice,
 
-              product_shop:
+              produkt_shop:
                 productShop,
 
-              product_link:
+              produkt_link:
                 productLink
 
             });
@@ -2050,7 +2080,8 @@
 
         button.setAttribute(
           "aria-label",
-          "Aus Favoriten entfernen"
+          productName +
+          " aus Favoriten entfernen"
         );
 
       }
@@ -2083,12 +2114,12 @@
 
 
     const {
-      data,
+      data: favorites,
       error
     } =
       await supabaseClient
-        .from("favorites")
-        .select("product_id")
+        .from("favoriten")
+        .select("produkt_id")
         .eq(
           "user_id",
           user.id
@@ -2098,7 +2129,7 @@
     if (error) {
 
       console.error(
-        "Fehler beim Laden der Favoriten:",
+        "Favoriten konnten nicht geladen werden:",
         error
       );
 
@@ -2109,9 +2140,10 @@
 
     const favoriteIds =
       new Set(
-        data.map(
-          item =>
-            item.product_id
+        favorites.map(
+          function(favorite) {
+            return favorite.produkt_id;
+          }
         )
       );
 
@@ -2132,6 +2164,11 @@
             );
 
 
+          if (!button) {
+            return;
+          }
+
+
           if (
             favoriteIds.has(
               productId
@@ -2147,7 +2184,23 @@
 
             button.setAttribute(
               "aria-label",
-              "Aus Favoriten entfernen"
+              card.dataset.productName +
+              " aus Favoriten entfernen"
+            );
+
+          } else {
+
+            button.classList.remove(
+              "active"
+            );
+
+            button.textContent =
+              "♡";
+
+            button.setAttribute(
+              "aria-label",
+              card.dataset.productName +
+              " zu Favoriten hinzufügen"
             );
 
           }
@@ -2158,15 +2211,42 @@
   }
 
 
-  supabaseClient.auth.onAuthStateChange(
-    function() {
+  /* ========================= */
+  /* AUTH STATUS */
+  /* ========================= */
 
-      setTimeout(
-        function() {
-          loadFavorites();
-        },
-        0
-      );
+  supabaseClient.auth.onAuthStateChange(
+    function(event, session) {
+
+      if (session) {
+
+        setTimeout(
+          function() {
+            loadFavorites();
+          },
+          0
+        );
+
+      } else {
+
+        document
+          .querySelectorAll(
+            ".favorite-button"
+          )
+          .forEach(
+            function(button) {
+
+              button.classList.remove(
+                "active"
+              );
+
+              button.textContent =
+                "♡";
+
+            }
+          );
+
+      }
 
     }
   );
