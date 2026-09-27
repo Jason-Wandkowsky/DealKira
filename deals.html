@@ -491,12 +491,6 @@
 
   <section class="deals" id="dealsContainer">
 
-    <!--
-      S26 ULTRA + IPHONE 17 PRO MAX
-      werden automatisch aus telefone.json
-      an dieser Stelle eingefügt.
-    -->
-
 
     <!-- =========================
          1
@@ -1194,21 +1188,250 @@
 
 
     /* =========================
+       AUTH STATUS
+    ========================= */
+
+    let authSession = null;
+    let authReady = false;
+    let authReadyResolve;
+
+    const authInitialized =
+      new Promise(function(resolve) {
+        authReadyResolve = resolve;
+      });
+
+
+    /*
+     * Supabase meldet hier den aktuellen
+     * Login-Zustand.
+     */
+
+    supabaseClient.auth.onAuthStateChange(
+      function(event, session) {
+
+        console.log(
+          "DealKira Auth:",
+          event,
+          session ? "eingeloggt" : "nicht eingeloggt"
+        );
+
+        authSession =
+          session;
+
+        if (!authReady) {
+
+          authReady = true;
+
+          authReadyResolve(
+            session
+          );
+
+        }
+
+        if (session) {
+
+          setTimeout(function() {
+            loadFavorites();
+          }, 0);
+
+        }
+
+        else {
+
+          document
+            .querySelectorAll(
+              ".favorite-button"
+            )
+            .forEach(
+              function(button) {
+
+                button.classList.remove(
+                  "active"
+                );
+
+                button.textContent =
+                  "♡";
+
+              }
+            );
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       BENUTZER LADEN
+    ========================= */
+
+    async function getCurrentUser() {
+
+      /*
+       * Zuerst auf die Auth-
+       * Initialisierung warten.
+       */
+
+      await authInitialized;
+
+
+      /*
+       * Zuerst die aktuell vorhandene
+       * Session direkt abfragen.
+       */
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.getSession();
+
+
+        if (
+          !error &&
+          data &&
+          data.session &&
+          data.session.user
+        ) {
+
+          authSession =
+            data.session;
+
+          console.log(
+            "DealKira User über Session:",
+            data.session.user.id
+          );
+
+          return data.session.user;
+
+        }
+
+        if (error) {
+
+          console.error(
+            "getSession Fehler:",
+            error
+          );
+
+        }
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Session konnte nicht geladen werden:",
+          error
+        );
+
+      }
+
+
+      /*
+       * Falls die Session-Abfrage nichts
+       * ergibt, zusätzlich getUser().
+       */
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.getUser();
+
+
+        if (
+          !error &&
+          data &&
+          data.user
+        ) {
+
+          console.log(
+            "DealKira User über getUser:",
+            data.user.id
+          );
+
+          return data.user;
+
+        }
+
+        if (error) {
+
+          console.error(
+            "getUser Fehler:",
+            error
+          );
+
+        }
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "getUser konnte nicht ausgeführt werden:",
+          error
+        );
+
+      }
+
+
+      /*
+       * Noch einmal den bereits bekannten
+       * Auth-Zustand prüfen.
+       */
+
+      if (
+        authSession &&
+        authSession.user
+      ) {
+
+        console.log(
+          "DealKira User über gespeicherte Auth-Session:",
+          authSession.user.id
+        );
+
+        return authSession.user;
+
+      }
+
+
+      console.log(
+        "DealKira: Kein Benutzer erkannt."
+      );
+
+      return null;
+
+    }
+
+
+    /* =========================
        BURGER MENU
     ========================= */
 
     function toggleMenu() {
 
       const menu =
-        document.getElementById("menuPanel");
+        document.getElementById(
+          "menuPanel"
+        );
 
       const button =
-        document.getElementById("menuButton");
+        document.getElementById(
+          "menuButton"
+        );
 
       const isOpen =
-        menu.classList.toggle("open");
+        menu.classList.toggle(
+          "open"
+        );
 
-      button.classList.toggle("active");
+      button.classList.toggle(
+        "active"
+      );
 
       button.setAttribute(
         "aria-expanded",
@@ -1221,14 +1444,22 @@
     function closeMenu() {
 
       const menu =
-        document.getElementById("menuPanel");
+        document.getElementById(
+          "menuPanel"
+        );
 
       const button =
-        document.getElementById("menuButton");
+        document.getElementById(
+          "menuButton"
+        );
 
-      menu.classList.remove("open");
+      menu.classList.remove(
+        "open"
+      );
 
-      button.classList.remove("active");
+      button.classList.remove(
+        "active"
+      );
 
       button.setAttribute(
         "aria-expanded",
@@ -1243,10 +1474,14 @@
       function(event) {
 
         const menu =
-          document.getElementById("menuPanel");
+          document.getElementById(
+            "menuPanel"
+          );
 
         const button =
-          document.getElementById("menuButton");
+          document.getElementById(
+            "menuButton"
+          );
 
         if (
           !menu.contains(event.target) &&
@@ -1276,37 +1511,6 @@
 
 
     /* =========================
-       BENUTZER LADEN
-       GLEICHE LOGIK WIE
-       BEI DER FUNKTIONIERENDEN
-       TELEFON-/TABLET-SEITE
-    ========================= */
-
-    async function getCurrentUser() {
-
-      const {
-        data,
-        error
-      } =
-        await supabaseClient.auth.getUser();
-
-      if (error) {
-
-        console.error(
-          "Benutzer konnte nicht geladen werden:",
-          error
-        );
-
-        return null;
-
-      }
-
-      return data.user;
-
-    }
-
-
-    /* =========================
        FAVORIT UMSCHALTEN
     ========================= */
 
@@ -1318,20 +1522,26 @@
 
       button.disabled = true;
 
+
       try {
 
         const user =
           await getCurrentUser();
 
 
+        /*
+         * Nur wenn wirklich keine Session
+         * vorhanden ist.
+         *
+         * KEINE automatische Weiterleitung
+         * mehr zu konto.html.
+         */
+
         if (!user) {
 
           alert(
-            "Du musst eingeloggt sein, um Produkte zu speichern."
+            "Du bist aktuell nicht als angemeldet erkannt worden. Bitte lade die Seite einmal neu und versuche es erneut."
           );
-
-          window.location.href =
-            "konto.html";
 
           return;
 
@@ -1339,7 +1549,9 @@
 
 
         const card =
-          button.closest(".deal-card");
+          button.closest(
+            ".deal-card"
+          );
 
 
         if (!card) {
@@ -1363,13 +1575,16 @@
           card.dataset.productImage;
 
         const productPrice =
-          card.dataset.productPrice || null;
+          card.dataset.productPrice ||
+          null;
 
         const productShop =
-          card.dataset.productShop || null;
+          card.dataset.productShop ||
+          null;
 
         const productLink =
-          card.dataset.productLink || null;
+          card.dataset.productLink ||
+          null;
 
 
         if (!productId) {
@@ -1384,11 +1599,11 @@
 
 
         /* =========================
-           PRÜFEN OB FAVORIT EXISTIERT
+           FAVORIT PRÜFEN
         ========================= */
 
         const {
-          data: existingFavorites,
+          data: existingFavorite,
           error: selectError
         } =
           await supabaseClient
@@ -1401,7 +1616,8 @@
             .eq(
               "produkt_id",
               productId
-            );
+            )
+            .maybeSingle();
 
 
         if (selectError) {
@@ -1416,24 +1632,11 @@
         }
 
 
-        const hasFavorite =
-          existingFavorites &&
-          existingFavorites.length > 0;
-
-
         /* =========================
            FAVORIT ENTFERNEN
         ========================= */
 
-        if (hasFavorite) {
-
-          const favoriteIds =
-            existingFavorites.map(
-              function(favorite) {
-                return favorite.id;
-              }
-            );
-
+        if (existingFavorite) {
 
           const {
             error: deleteError
@@ -1441,9 +1644,9 @@
             await supabaseClient
               .from("favoriten")
               .delete()
-              .in(
+              .eq(
                 "id",
-                favoriteIds
+                existingFavorite.id
               )
               .eq(
                 "user_id",
@@ -1556,7 +1759,10 @@
         alert(
           "Der Favorit konnte momentan nicht gespeichert werden.\n\n" +
           "Fehler: " +
-          (error?.message || "Unbekannter Fehler")
+          (
+            error?.message ||
+            "Unbekannter Fehler"
+          )
         );
 
       }
@@ -1612,21 +1818,30 @@
 
       const favoriteIds =
         new Set(
-          favorites.map(
+          (favorites || []).map(
             function(favorite) {
-              return favorite.produkt_id;
+
+              return String(
+                favorite.produkt_id
+              );
+
             }
           )
         );
 
 
       document
-        .querySelectorAll(".deal-card")
+        .querySelectorAll(
+          ".deal-card"
+        )
         .forEach(
           function(card) {
 
             const productId =
-              card.dataset.productId;
+              String(
+                card.dataset.productId ||
+                ""
+              );
 
             const button =
               card.querySelector(
@@ -1659,6 +1874,7 @@
               );
 
             }
+
             else {
 
               button.classList.remove(
@@ -1716,10 +1932,6 @@
           await response.json();
 
 
-        /* =========================
-           EXAKT DIESE IDS
-        ========================= */
-
         const wantedIds = [
 
           "samsung-galaxy-s26-ultra",
@@ -1728,10 +1940,6 @@
 
         ];
 
-
-        /* =========================
-           PRODUKTE AUS JSON HOLEN
-        ========================= */
 
         const phoneDeals =
           wantedIds
@@ -1750,10 +1958,6 @@
             )
             .filter(Boolean);
 
-
-        /* =========================
-           VOR PS5 EINFÜGEN
-        ========================= */
 
         const firstNormalDeal =
           container.querySelector(
@@ -1780,9 +1984,8 @@
 
 
         /*
-         * Nachdem die beiden
-         * Smartphone-Karten existieren,
-         * Favoriten laden.
+         * Nachdem die beiden Smartphone-
+         * Karten existieren, Favoriten laden.
          */
 
         await loadFavorites();
@@ -1816,11 +2019,6 @@
       article.className =
         "deal-card";
 
-
-      /* =========================
-         WICHTIG:
-         ID DIREKT AUS telefone.json
-      ========================= */
 
       article.dataset.productId =
         product.id || "";
@@ -2004,45 +2202,6 @@
 
 
     /* =========================
-       AUTH STATUS
-       WIE AUF DER FUNKTIONIERENDEN
-       TABLET-/TELEFON-SEITE
-    ========================= */
-
-    supabaseClient.auth.onAuthStateChange(
-      function(event, session) {
-
-        if (session) {
-
-          loadFavorites();
-
-        }
-        else {
-
-          document
-            .querySelectorAll(
-              ".favorite-button"
-            )
-            .forEach(
-              function(button) {
-
-                button.classList.remove(
-                  "active"
-                );
-
-                button.textContent =
-                  "♡";
-
-              }
-            );
-
-        }
-
-      }
-    );
-
-
-    /* =========================
        START
     ========================= */
 
@@ -2051,8 +2210,7 @@
       async function() {
 
         /*
-         * Erst die Smartphones aus
-         * telefone.json einfügen.
+         * Smartphones zuerst laden.
          */
 
         await loadPhoneDeals();
