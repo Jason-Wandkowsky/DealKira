@@ -323,12 +323,6 @@
       margin-bottom: 8px;
     }
 
-    .product-shop {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 15px;
-    }
-
     .product-button {
       margin-top: auto;
       display: inline-block;
@@ -504,11 +498,6 @@
 
       .product-price {
         font-size: 18px;
-      }
-
-      .product-shop {
-        font-size: 11px;
-        margin-bottom: 12px;
       }
 
       .product-button {
@@ -1132,24 +1121,9 @@
       }
 
 
-      if (product.shop) {
-
-        const shop =
-          document.createElement("div");
-
-        shop.className =
-          "product-shop";
-
-        shop.textContent =
-          "Shop: " +
-          product.shop;
-
-        content.appendChild(
-          shop
-        );
-
-      }
-
+      /* ========================= */
+      /* SHOP-ANZEIGE ENTFERNT */
+      /* ========================= */
 
       const dealButton =
         document.createElement("a");
@@ -2052,3 +2026,6 @@
 
 </body>
 </html>
+
+
+
