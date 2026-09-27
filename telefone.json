@@ -5,9 +5,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s23-plus.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yihWKi"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yihWKi"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s23-ultra",
@@ -15,9 +19,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s23-ultra.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Vc58Xd"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Vc58Xd"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s24-ultra",
@@ -25,9 +33,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s24-ultra.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4z08Cuz"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4z08Cuz"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s25",
@@ -35,9 +47,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s25.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46J9eso"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46J9eso"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s25-plus",
@@ -45,9 +61,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s25-plus.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hmM3ca"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hmM3ca"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s25-ultra",
@@ -55,9 +75,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s25-ultra.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yWYrqC"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yWYrqC"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s25-edge",
@@ -65,9 +89,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s25-edge.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yOzVI6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yOzVI6"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s26",
@@ -75,9 +103,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s26.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3TNAoLK"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3TNAoLK"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s26-plus",
@@ -85,9 +117,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s26-plus.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xHIgfC"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xHIgfC"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-s26-ultra",
@@ -95,9 +131,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "images/telefone/samsung-galaxy-s26-ultra.webp",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yL6uGH"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yL6uGH"
+      }
+    ]
   },
 
   {
@@ -106,9 +146,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a57-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4y9KQfn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4y9KQfn"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a56-5g",
@@ -116,9 +160,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a56-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4d2BhGP"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4d2BhGP"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a55-5g",
@@ -126,9 +174,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a55-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yg1b2o"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yg1b2o"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a36-5g",
@@ -136,9 +188,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a36-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AtQZVm"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AtQZVm"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a35-5g",
@@ -146,9 +202,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a35-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46JzLWp"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46JzLWp"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a27-5g",
@@ -156,9 +216,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a27-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AxY07s"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AxY07s"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a26-5g",
@@ -166,9 +230,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a26-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4heKE8U"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4heKE8U"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a17-5g",
@@ -176,9 +244,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a17-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rsE1Dc"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rsE1Dc"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a16-5g",
@@ -186,9 +258,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a16-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yYjUzn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yYjUzn"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-a15-5g",
@@ -196,9 +272,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "images/telefone/samsung-galaxy-a15-5g.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rsE7e2"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rsE7e2"
+      }
+    ]
   },
 
   {
@@ -207,9 +287,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-fold8.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4jnBVCs"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4jnBVCs"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-flip8",
@@ -217,9 +301,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-flip8.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46HKSzi"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46HKSzi"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-flip7",
@@ -227,9 +315,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-flip7.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hMuOSQ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hMuOSQ"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-fold6",
@@ -237,9 +329,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-fold6.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/47hFPpd"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/47hFPpd"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-flip6",
@@ -247,9 +343,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-flip6.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hqNbvg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hqNbvg"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-fold5",
@@ -257,9 +357,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-fold5.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4d7ueN4"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4d7ueN4"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-z-flip5",
@@ -267,9 +371,13 @@
     "brand": "Samsung",
     "series": "Z",
     "image": "images/telefone/samsung-galaxy-z-flip5.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4d2IiY2"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4d2IiY2"
+      }
+    ]
   },
 
   {
@@ -278,9 +386,13 @@
     "brand": "Samsung",
     "series": "XCover",
     "image": "images/telefone/samsung-galaxy-xcover7-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4joroqF"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4joroqF"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-xcover7",
@@ -288,9 +400,13 @@
     "brand": "Samsung",
     "series": "XCover",
     "image": "images/telefone/samsung-galaxy-xcover7.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hm2xmh"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hm2xmh"
+      }
+    ]
   },
   {
     "id": "samsung-galaxy-xcover6-pro",
@@ -298,9 +414,13 @@
     "brand": "Samsung",
     "series": "XCover",
     "image": "images/telefone/samsung-galaxy-xcover6-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rzLAZ0"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rzLAZ0"
+      }
+    ]
   },
 
   {
@@ -309,9 +429,13 @@
     "brand": "iPhone",
     "series": "SE",
     "image": "images/telefone/iphone-se-2.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4h80bao"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4h80bao"
+      }
+    ]
   },
   {
     "id": "iphone-se-3",
@@ -319,9 +443,13 @@
     "brand": "iPhone",
     "series": "SE",
     "image": "images/telefone/iphone-se-3.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hdbCxC"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hdbCxC"
+      }
+    ]
   },
 
   {
@@ -330,9 +458,13 @@
     "brand": "iPhone",
     "series": "11",
     "image": "images/telefone/iphone-11.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hphvq3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hphvq3"
+      }
+    ]
   },
   {
     "id": "iphone-11-pro",
@@ -340,9 +472,13 @@
     "brand": "iPhone",
     "series": "11",
     "image": "images/telefone/iphone-11-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46KVjlv"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46KVjlv"
+      }
+    ]
   },
   {
     "id": "iphone-11-pro-max",
@@ -350,9 +486,13 @@
     "brand": "iPhone",
     "series": "11",
     "image": "images/telefone/iphone-11-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hMYQWI"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hMYQWI"
+      }
+    ]
   },
 
   {
@@ -361,9 +501,13 @@
     "brand": "iPhone",
     "series": "12",
     "image": "images/telefone/iphone-12.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Vy06nT"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Vy06nT"
+      }
+    ]
   },
   {
     "id": "iphone-12-mini",
@@ -371,9 +515,13 @@
     "brand": "iPhone",
     "series": "12",
     "image": "images/telefone/iphone-12-mini.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3T5mXXn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3T5mXXn"
+      }
+    ]
   },
   {
     "id": "iphone-12-pro",
@@ -381,9 +529,13 @@
     "brand": "iPhone",
     "series": "12",
     "image": "images/telefone/iphone-12-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ArNSNT"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ArNSNT"
+      }
+    ]
   },
   {
     "id": "iphone-12-pro-max",
@@ -391,9 +543,13 @@
     "brand": "iPhone",
     "series": "12",
     "image": "images/telefone/iphone-12-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hp1TCW"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hp1TCW"
+      }
+    ]
   },
 
   {
@@ -402,9 +558,13 @@
     "brand": "iPhone",
     "series": "13",
     "image": "images/telefone/iphone-13.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3VbqqUS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3VbqqUS"
+      }
+    ]
   },
   {
     "id": "iphone-13-mini",
@@ -412,9 +572,13 @@
     "brand": "iPhone",
     "series": "13",
     "image": "images/telefone/iphone-13-mini.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dnEukv"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dnEukv"
+      }
+    ]
   },
   {
     "id": "iphone-13-pro",
@@ -422,9 +586,13 @@
     "brand": "iPhone",
     "series": "13",
     "image": "images/telefone/iphone-13-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xKbjzm"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xKbjzm"
+      }
+    ]
   },
   {
     "id": "iphone-13-pro-max",
@@ -432,9 +600,13 @@
     "brand": "iPhone",
     "series": "13",
     "image": "images/telefone/iphone-13-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3VzhCYZ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3VzhCYZ"
+      }
+    ]
   },
 
   {
@@ -443,9 +615,13 @@
     "brand": "iPhone",
     "series": "14",
     "image": "images/telefone/iphone-14.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4jnzTCo"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4jnzTCo"
+      }
+    ]
   },
   {
     "id": "iphone-14-plus",
@@ -453,9 +629,13 @@
     "brand": "iPhone",
     "series": "14",
     "image": "images/telefone/iphone-14-plus.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46NCePF"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46NCePF"
+      }
+    ]
   },
   {
     "id": "iphone-14-pro",
@@ -463,9 +643,13 @@
     "brand": "iPhone",
     "series": "14",
     "image": "images/telefone/iphone-14-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/47eb2d0"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/47eb2d0"
+      }
+    ]
   },
   {
     "id": "iphone-14-pro-max",
@@ -473,9 +657,13 @@
     "brand": "iPhone",
     "series": "14",
     "image": "images/telefone/iphone-14-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rtltCK"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rtltCK"
+      }
+    ]
   },
 
   {
@@ -484,9 +672,13 @@
     "brand": "iPhone",
     "series": "15",
     "image": "images/telefone/iphone-15.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46Fb0uD"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46Fb0uD"
+      }
+    ]
   },
   {
     "id": "iphone-15-plus",
@@ -494,9 +686,13 @@
     "brand": "iPhone",
     "series": "15",
     "image": "images/telefone/iphone-15-plus.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46EnfHN"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46EnfHN"
+      }
+    ]
   },
   {
     "id": "iphone-15-pro",
@@ -504,9 +700,13 @@
     "brand": "iPhone",
     "series": "15",
     "image": "images/telefone/iphone-15-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hkeeZi"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hkeeZi"
+      }
+    ]
   },
   {
     "id": "iphone-15-pro-max",
@@ -514,9 +714,13 @@
     "brand": "iPhone",
     "series": "15",
     "image": "images/telefone/iphone-15-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4j6B6hB"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4j6B6hB"
+      }
+    ]
   },
 
   {
@@ -525,9 +729,13 @@
     "brand": "iPhone",
     "series": "16",
     "image": "images/telefone/iphone-16e.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yaCQe7"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yaCQe7"
+      }
+    ]
   },
   {
     "id": "iphone-16",
@@ -535,9 +743,13 @@
     "brand": "iPhone",
     "series": "16",
     "image": "images/telefone/iphone-16.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ykzndg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ykzndg"
+      }
+    ]
   },
   {
     "id": "iphone-16-plus",
@@ -545,9 +757,13 @@
     "brand": "iPhone",
     "series": "16",
     "image": "images/telefone/iphone-16-plus.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AxMwRA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AxMwRA"
+      }
+    ]
   },
   {
     "id": "iphone-16-pro",
@@ -555,9 +771,13 @@
     "brand": "iPhone",
     "series": "16",
     "image": "images/telefone/iphone-16-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xNK474"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xNK474"
+      }
+    ]
   },
   {
     "id": "iphone-16-pro-max",
@@ -565,9 +785,13 @@
     "brand": "iPhone",
     "series": "16",
     "image": "images/telefone/iphone-16-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Thnrtr"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Thnrtr"
+      }
+    ]
   },
 
   {
@@ -576,9 +800,13 @@
     "brand": "iPhone",
     "series": "17",
     "image": "images/telefone/iphone-17.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4z21L3P"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4z21L3P"
+      }
+    ]
   },
   {
     "id": "iphone-air",
@@ -586,9 +814,13 @@
     "brand": "iPhone",
     "series": "17",
     "image": "images/telefone/iphone-air.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46EyQXk"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46EyQXk"
+      }
+    ]
   },
   {
     "id": "iphone-17-pro",
@@ -596,9 +828,13 @@
     "brand": "iPhone",
     "series": "17",
     "image": "images/telefone/iphone-17-pro.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4heHNww"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4heHNww"
+      }
+    ]
   },
   {
     "id": "iphone-17-pro-max",
@@ -606,9 +842,13 @@
     "brand": "iPhone",
     "series": "17",
     "image": "images/telefone/iphone-17-pro-max.jpg",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3VsXwj3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3VsXwj3"
+      }
+    ]
   },
 
   {
@@ -617,9 +857,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hlIIKs"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hlIIKs"
+      }
+    ]
   },
   {
     "id": "xiaomi-17t-pro",
@@ -627,9 +871,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AFwjtN"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AFwjtN"
+      }
+    ]
   },
   {
     "id": "xiaomi-15",
@@ -637,9 +885,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AzczI6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AzczI6"
+      }
+    ]
   },
   {
     "id": "xiaomi-15t",
@@ -647,9 +899,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hyTU6K"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hyTU6K"
+      }
+    ]
   },
   {
     "id": "xiaomi-15t-pro",
@@ -657,9 +913,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iPBW1T"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iPBW1T"
+      }
+    ]
   },
   {
     "id": "xiaomi-14t",
@@ -667,9 +927,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3VQkxwp"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3VQkxwp"
+      }
+    ]
   },
   {
     "id": "xiaomi-14t-pro",
@@ -677,9 +941,13 @@
     "brand": "Xiaomi",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3TMF9Fn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3TMF9Fn"
+      }
+    ]
   },
 
   {
@@ -688,9 +956,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hcSyQ3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hcSyQ3"
+      }
+    ]
   },
   {
     "id": "redmi-note-15-5g",
@@ -698,9 +970,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Vf9yMX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Vf9yMX"
+      }
+    ]
   },
   {
     "id": "redmi-note-15-pro-5g",
@@ -708,9 +984,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xHEsef"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xHEsef"
+      }
+    ]
   },
   {
     "id": "redmi-note-15-pro-plus-5g",
@@ -718,9 +998,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iKiuUl"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iKiuUl"
+      }
+    ]
   },
   {
     "id": "redmi-note-14",
@@ -728,9 +1012,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yVSN83"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yVSN83"
+      }
+    ]
   },
   {
     "id": "redmi-note-14-5g",
@@ -738,9 +1026,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/47iIleS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/47iIleS"
+      }
+    ]
   },
   {
     "id": "redmi-note-14-pro",
@@ -748,9 +1040,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4Azdng6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4Azdng6"
+      }
+    ]
   },
   {
     "id": "redmi-note-14-pro-5g",
@@ -758,9 +1054,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46L5O8p"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46L5O8p"
+      }
+    ]
   },
   {
     "id": "redmi-note-14-pro-plus-5g",
@@ -768,9 +1068,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yhyW3m"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yhyW3m"
+      }
+    ]
   },
   {
     "id": "redmi-note-17",
@@ -778,9 +1082,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yivaXt"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yivaXt"
+      }
+    ]
   },
   {
     "id": "redmi-note-17-5g",
@@ -788,9 +1096,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AyLW60"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AyLW60"
+      }
+    ]
   },
   {
     "id": "redmi-note-17-pro-5g",
@@ -798,9 +1110,13 @@
     "brand": "Redmi",
     "series": "Note",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4Av2vjr"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4Av2vjr"
+      }
+    ]
   },
 
   {
@@ -809,9 +1125,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dXAqY9"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dXAqY9"
+      }
+    ]
   },
   {
     "id": "redmi-17-5g",
@@ -819,9 +1139,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AzT0zn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AzT0zn"
+      }
+    ]
   },
   {
     "id": "redmi-15",
@@ -829,9 +1153,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iPdQnY"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iPdQnY"
+      }
+    ]
   },
   {
     "id": "redmi-15c",
@@ -839,9 +1167,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rQIq3f"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rQIq3f"
+      }
+    ]
   },
   {
     "id": "redmi-14c",
@@ -849,9 +1181,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iKuwgo"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iKuwgo"
+      }
+    ]
   },
   {
     "id": "redmi-13",
@@ -859,9 +1195,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xM5ZLE"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xM5ZLE"
+      }
+    ]
   },
   {
     "id": "redmi-a5",
@@ -869,9 +1209,13 @@
     "brand": "Redmi",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ANyxay"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ANyxay"
+      }
+    ]
   },
 
   {
@@ -880,9 +1224,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4z1GabJ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4z1GabJ"
+      }
+    ]
   },
   {
     "id": "poco-f7-ultra",
@@ -890,9 +1238,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4e0aUBB"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4e0aUBB"
+      }
+    ]
   },
   {
     "id": "poco-f7-pro",
@@ -900,9 +1252,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4d6voZ5"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4d6voZ5"
+      }
+    ]
   },
   {
     "id": "poco-x8-pro-max",
@@ -910,9 +1266,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hNKW6E"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hNKW6E"
+      }
+    ]
   },
   {
     "id": "poco-x7-pro",
@@ -920,9 +1280,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4Azwo1O"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4Azwo1O"
+      }
+    ]
   },
   {
     "id": "poco-m8-pro-5g",
@@ -930,9 +1294,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4heHTo3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4heHTo3"
+      }
+    ]
   },
   {
     "id": "poco-m8-5g",
@@ -940,9 +1308,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3T2uRkg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3T2uRkg"
+      }
+    ]
   },
   {
     "id": "poco-c85",
@@ -950,9 +1322,13 @@
     "brand": "POCO",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4jo6Lei"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4jo6Lei"
+      }
+    ]
   },
 
   {
@@ -961,9 +1337,13 @@
     "brand": "Google Pixel",
     "series": "11",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yXm427"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yXm427"
+      }
+    ]
   },
   {
     "id": "google-pixel-11-pro",
@@ -971,9 +1351,13 @@
     "brand": "Google Pixel",
     "series": "11",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yT71GD"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yT71GD"
+      }
+    ]
   },
   {
     "id": "google-pixel-11-pro-xl",
@@ -981,9 +1365,13 @@
     "brand": "Google Pixel",
     "series": "11",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dp7GYn"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dp7GYn"
+      }
+    ]
   },
 
   {
@@ -992,9 +1380,13 @@
     "brand": "Google Pixel",
     "series": "10",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hpt9kL"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hpt9kL"
+      }
+    ]
   },
   {
     "id": "google-pixel-10-pro",
@@ -1002,9 +1394,13 @@
     "brand": "Google Pixel",
     "series": "10",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iU9zQl"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iU9zQl"
+      }
+    ]
   },
   {
     "id": "google-pixel-10-pro-xl",
@@ -1012,9 +1408,13 @@
     "brand": "Google Pixel",
     "series": "10",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AtiNtb"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AtiNtb"
+      }
+    ]
   },
   {
     "id": "google-pixel-10a",
@@ -1022,9 +1422,13 @@
     "brand": "Google Pixel",
     "series": "10",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4Av440N"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4Av440N"
+      }
+    ]
   },
 
   {
@@ -1033,9 +1437,13 @@
     "brand": "Google Pixel",
     "series": "9",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4z2U1yy"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4z2U1yy"
+      }
+    ]
   },
   {
     "id": "google-pixel-9a",
@@ -1043,9 +1451,13 @@
     "brand": "Google Pixel",
     "series": "9",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hPFrU7"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hPFrU7"
+      }
+    ]
   },
   {
     "id": "google-pixel-9-pro",
@@ -1053,9 +1465,13 @@
     "brand": "Google Pixel",
     "series": "9",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46FsLdf"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46FsLdf"
+      }
+    ]
   },
 
   {
@@ -1064,9 +1480,13 @@
     "brand": "Google Pixel",
     "series": "8",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/47jy8yU"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/47jy8yU"
+      }
+    ]
   },
   {
     "id": "google-pixel-8-pro",
@@ -1074,9 +1494,13 @@
     "brand": "Google Pixel",
     "series": "8",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3TkFSxq"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3TkFSxq"
+      }
+    ]
   },
   {
     "id": "google-pixel-8a",
@@ -1084,9 +1508,13 @@
     "brand": "Google Pixel",
     "series": "8",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4iU9X1f"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4iU9X1f"
+      }
+    ]
   },
 
   {
@@ -1095,9 +1523,13 @@
     "brand": "Google Pixel",
     "series": "7",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dydwqc"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dydwqc"
+      }
+    ]
   },
   {
     "id": "google-pixel-7-pro",
@@ -1105,9 +1537,13 @@
     "brand": "Google Pixel",
     "series": "7",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4hpy7hH"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hpy7hH"
+      }
+    ]
   },
   {
     "id": "google-pixel-7a",
@@ -1115,9 +1551,13 @@
     "brand": "Google Pixel",
     "series": "7",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yhtBZC"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yhtBZC"
+      }
+    ]
   },
 
   {
@@ -1126,9 +1566,13 @@
     "brand": "Google Pixel",
     "series": "6",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ANzGim"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ANzGim"
+      }
+    ]
   },
 
   {
@@ -1137,9 +1581,13 @@
     "brand": "Google Pixel",
     "series": "Fold",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rz9nIo"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rz9nIo"
+      }
+    ]
   },
   {
     "id": "google-pixel-10-pro-fold",
@@ -1147,9 +1595,13 @@
     "brand": "Google Pixel",
     "series": "Fold",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AsUVpj"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AsUVpj"
+      }
+    ]
   },
   {
     "id": "google-pixel-11-pro-fold",
@@ -1157,9 +1609,13 @@
     "brand": "Google Pixel",
     "series": "Fold",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Vhgklg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Vhgklg"
+      }
+    ]
   },
 
   {
@@ -1168,9 +1624,13 @@
     "brand": "OnePlus",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4z3wNbz"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4z3wNbz"
+      }
+    ]
   },
   {
     "id": "oneplus-13",
@@ -1178,9 +1638,13 @@
     "brand": "OnePlus",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yQ9t0K"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yQ9t0K"
+      }
+    ]
   },
   {
     "id": "oneplus-13r",
@@ -1188,9 +1652,13 @@
     "brand": "OnePlus",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dZmUmS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dZmUmS"
+      }
+    ]
   },
   {
     "id": "oneplus-12",
@@ -1198,9 +1666,13 @@
     "brand": "OnePlus",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3VzwypX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3VzwypX"
+      }
+    ]
   },
   {
     "id": "oneplus-10-pro",
@@ -1208,9 +1680,13 @@
     "brand": "OnePlus",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yf2cYe"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yf2cYe"
+      }
+    ]
   },
 
   {
@@ -1219,9 +1695,13 @@
     "brand": "OnePlus",
     "series": "Nord",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4jp3gnS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4jp3gnS"
+      }
+    ]
   },
   {
     "id": "oneplus-nord-5",
@@ -1229,9 +1709,13 @@
     "brand": "OnePlus",
     "series": "Nord",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4yVCcRA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4yVCcRA"
+      }
+    ]
   },
   {
     "id": "oneplus-nord-ce6",
@@ -1239,9 +1723,13 @@
     "brand": "OnePlus",
     "series": "Nord",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46FYomX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46FYomX"
+      }
+    ]
   },
   {
     "id": "oneplus-nord-ce5",
@@ -1249,9 +1737,13 @@
     "brand": "OnePlus",
     "series": "Nord",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/46PeNWa"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/46PeNWa"
+      }
+    ]
   },
 
   {
@@ -1260,9 +1752,13 @@
     "brand": "OnePlus",
     "series": "Fold",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rz9Nys"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rz9Nys"
+      }
+    ]
   },
 
   {
@@ -1271,9 +1767,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4d1W79d"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4d1W79d"
+      }
+    ]
   },
   {
     "id": "nothing-phone-4a-pro",
@@ -1281,9 +1781,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AxNmxL"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AxNmxL"
+      }
+    ]
   },
   {
     "id": "nothing-phone-4b",
@@ -1291,9 +1795,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rw1kvX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rw1kvX"
+      }
+    ]
   },
   {
     "id": "nothing-phone-3",
@@ -1301,9 +1809,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4dXD8wN"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4dXD8wN"
+      }
+    ]
   },
   {
     "id": "nothing-phone-3a-pro",
@@ -1311,9 +1823,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4heH7r6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4heH7r6"
+      }
+    ]
   },
   {
     "id": "nothing-phone-2a",
@@ -1321,9 +1837,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xPR82J"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xPR82J"
+      }
+    ]
   },
   {
     "id": "nothing-phone-2a-plus",
@@ -1331,9 +1851,13 @@
     "brand": "Nothing",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ANB3O2"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ANB3O2"
+      }
+    ]
   },
 
   {
@@ -1342,9 +1866,13 @@
     "brand": "CMF",
     "series": "",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4y5oZ8l"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4y5oZ8l"
+      }
+    ]
   },
 
   {
@@ -1353,9 +1881,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4xPi3Mq"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xPi3Mq"
+      }
+    ]
   },
   {
     "id": "motorola-razr-70",
@@ -1363,9 +1895,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4ADtxVS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ADtxVS"
+      }
+    ]
   },
   {
     "id": "motorola-razr-60",
@@ -1373,9 +1909,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3Tp4AN6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3Tp4AN6"
+      }
+    ]
   },
   {
     "id": "motorola-razr-50-ultra",
@@ -1383,9 +1923,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4rthZA8"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rthZA8"
+      }
+    ]
   },
   {
     "id": "motorola-razr-50",
@@ -1393,9 +1937,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/3TRENgD"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3TRENgD"
+      }
+    ]
   },
   {
     "id": "motorola-razr-40-ultra",
@@ -1403,9 +1951,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/4AxOj9j"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4AxOj9j"
+      }
+    ]
   },
   {
     "id": "motorola-razr-40",
@@ -1413,9 +1965,13 @@
     "brand": "Motorola",
     "series": "Razr",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://amzn.to/47lmCmA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/47lmCmA"
+      }
+    ]
   },
 
   {
@@ -1424,9 +1980,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0c6iWxAx"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c6iWxAx"
+      }
+    ]
   },
   {
     "id": "motorola-edge-70",
@@ -1434,9 +1994,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0bjc5XI5"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bjc5XI5"
+      }
+    ]
   },
   {
     "id": "motorola-edge-60-pro",
@@ -1444,9 +2008,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fZAwM8w"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fZAwM8w"
+      }
+    ]
   },
   {
     "id": "motorola-edge-60",
@@ -1454,9 +2022,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B024rUB7d"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B024rUB7d"
+      }
+    ]
   },
   {
     "id": "motorola-edge-60-fusion",
@@ -1464,9 +2036,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0jeffZIN"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0jeffZIN"
+      }
+    ]
   },
   {
     "id": "motorola-edge-50-pro",
@@ -1474,9 +2050,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fPluzmA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fPluzmA"
+      }
+    ]
   },
   {
     "id": "motorola-edge-50-fusion",
@@ -1484,9 +2064,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B06ZYcYbH"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06ZYcYbH"
+      }
+    ]
   },
   {
     "id": "motorola-edge-40-pro",
@@ -1494,9 +2078,13 @@
     "brand": "Motorola",
     "series": "Edge",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0bd4VB7E"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bd4VB7E"
+      }
+    ]
   },
 
   {
@@ -1505,9 +2093,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02Ldv9kD"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02Ldv9kD"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g85-5g",
@@ -1515,9 +2107,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B07IBieBC"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07IBieBC"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g75-5g",
@@ -1525,9 +2121,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0f7geWN1"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f7geWN1"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g55-5g",
@@ -1535,9 +2135,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03zE3SE3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03zE3SE3"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g35-5g",
@@ -1545,9 +2149,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02oKzPNj"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02oKzPNj"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g24",
@@ -1555,9 +2163,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B06HH7w8U"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06HH7w8U"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g15",
@@ -1565,9 +2177,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0grxFApE"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0grxFApE"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g15-power",
@@ -1575,9 +2191,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0iWUjNRV"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iWUjNRV"
+      }
+    ]
   },
   {
     "id": "motorola-moto-g05",
@@ -1585,9 +2205,13 @@
     "brand": "Motorola",
     "series": "Moto G",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cxwEuhz"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cxwEuhz"
+      }
+    ]
   },
 
   {
@@ -1596,9 +2220,13 @@
     "brand": "Motorola",
     "series": "E",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02ku6TRB"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02ku6TRB"
+      }
+    ]
   },
 
   {
@@ -1607,9 +2235,13 @@
     "brand": "Huawei",
     "series": "Pura",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B002HPN59"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B002HPN59"
+      }
+    ]
   },
   {
     "id": "huawei-pura-80-pro",
@@ -1617,9 +2249,13 @@
     "brand": "Huawei",
     "series": "Pura",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03KxUsfa"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03KxUsfa"
+      }
+    ]
   },
   {
     "id": "huawei-pura-70-ultra",
@@ -1627,9 +2263,13 @@
     "brand": "Huawei",
     "series": "Pura",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03bzPDak"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03bzPDak"
+      }
+    ]
   },
   {
     "id": "huawei-pura-70-pro",
@@ -1637,9 +2277,13 @@
     "brand": "Huawei",
     "series": "Pura",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B08wO2eFV"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08wO2eFV"
+      }
+    ]
   },
   {
     "id": "huawei-pura-70",
@@ -1647,9 +2291,13 @@
     "brand": "Huawei",
     "series": "Pura",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fsTufpW"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fsTufpW"
+      }
+    ]
   },
 
   {
@@ -1658,9 +2306,13 @@
     "brand": "Huawei",
     "series": "Mate",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cv7taMl"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cv7taMl"
+      }
+    ]
   },
   {
     "id": "huawei-mate-x6",
@@ -1668,9 +2320,13 @@
     "brand": "Huawei",
     "series": "Mate",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cyt3spg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cyt3spg"
+      }
+    ]
   },
 
   {
@@ -1679,9 +2335,13 @@
     "brand": "Huawei",
     "series": "Nova",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0aUih3bI"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aUih3bI"
+      }
+    ]
   },
   {
     "id": "huawei-nova-13-pro",
@@ -1689,9 +2349,13 @@
     "brand": "Huawei",
     "series": "Nova",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04qqTLSb"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04qqTLSb"
+      }
+    ]
   },
   {
     "id": "huawei-nova-12s",
@@ -1699,9 +2363,13 @@
     "brand": "Huawei",
     "series": "Nova",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cg4Bzvk"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cg4Bzvk"
+      }
+    ]
   },
   {
     "id": "huawei-nova-12i",
@@ -1709,9 +2377,13 @@
     "brand": "Huawei",
     "series": "Nova",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0eJzvdq2"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eJzvdq2"
+      }
+    ]
   },
   {
     "id": "huawei-nova-12-se",
@@ -1719,8 +2391,12 @@
     "brand": "Huawei",
     "series": "Nova",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B085RETDF"
-  }
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B085RETDF"
+      }
     ]
+  }
+]
