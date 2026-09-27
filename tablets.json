@@ -5,9 +5,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0b20xMkI"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0b20xMkI"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s11",
@@ -15,9 +19,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0c0DHvFA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c0DHvFA"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s10-ultra",
@@ -25,9 +33,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01baP2O4"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01baP2O4"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s10-plus",
@@ -35,9 +47,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0hYM5ith"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hYM5ith"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s10-fe-plus",
@@ -45,9 +61,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B00KZhLEJ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00KZhLEJ"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s10-fe",
@@ -55,9 +75,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01Vf8LBN"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01Vf8LBN"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s9-ultra",
@@ -65,9 +89,13 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0c9mB4eB"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c9mB4eB"
+      }
+    ]
   },
   {
     "id": "samsung-tab-s9",
@@ -75,20 +103,27 @@
     "brand": "Samsung",
     "series": "S",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0dm24ZK7"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dm24ZK7"
+      }
+    ]
   },
-
   {
     "id": "samsung-tab-a11-plus",
     "name": "Galaxy Tab A11+",
     "brand": "Samsung",
     "series": "A",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01wON75z"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01wON75z"
+      }
+    ]
   },
   {
     "id": "samsung-tab-a11",
@@ -96,9 +131,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0eFzPW7n"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eFzPW7n"
+      }
+    ]
   },
   {
     "id": "samsung-tab-a9-plus",
@@ -106,9 +145,13 @@
     "brand": "Samsung",
     "series": "A",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B084OOHXa"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B084OOHXa"
+      }
+    ]
   },
   {
     "id": "samsung-tab-a9",
@@ -116,20 +159,27 @@
     "brand": "Samsung",
     "series": "A",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02fHdBdV"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02fHdBdV"
+      }
+    ]
   },
-
   {
     "id": "samsung-tab-active5",
     "name": "Galaxy Tab Active5",
     "brand": "Samsung",
     "series": "Active",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B08ZadQQr"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08ZadQQr"
+      }
+    ]
   },
   {
     "id": "samsung-tab-active5-pro",
@@ -137,20 +187,27 @@
     "brand": "Samsung",
     "series": "Active",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0b0Fwdd3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0b0Fwdd3"
+      }
+    ]
   },
-
   {
     "id": "ipad-11-generation",
     "name": "iPad (11. Generation)",
     "brand": "Apple",
     "series": "Serie",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03iggIMb"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03iggIMb"
+      }
+    ]
   },
   {
     "id": "ipad-mini-6",
@@ -158,9 +215,13 @@
     "brand": "Apple",
     "series": "mini",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B00pTRrNE"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00pTRrNE"
+      }
+    ]
   },
   {
     "id": "ipad-mini-7",
@@ -168,9 +229,13 @@
     "brand": "Apple",
     "series": "mini",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fGWnfbL"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fGWnfbL"
+      }
+    ]
   },
   {
     "id": "ipad-air-5",
@@ -178,9 +243,13 @@
     "brand": "Apple",
     "series": "Air",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cLs88a3"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cLs88a3"
+      }
+    ]
   },
   {
     "id": "ipad-air-11-m2",
@@ -188,9 +257,13 @@
     "brand": "Apple",
     "series": "Air",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B074Zovc6"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B074Zovc6"
+      }
+    ]
   },
   {
     "id": "ipad-air-13-m2",
@@ -198,9 +271,13 @@
     "brand": "Apple",
     "series": "Air",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fruB34s"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fruB34s"
+      }
+    ]
   },
   {
     "id": "ipad-pro-11-m5",
@@ -208,9 +285,13 @@
     "brand": "Apple",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0fPtNcOe"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fPtNcOe"
+      }
+    ]
   },
   {
     "id": "ipad-pro-13-m5",
@@ -218,20 +299,27 @@
     "brand": "Apple",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0aNIT1bz"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aNIT1bz"
+      }
+    ]
   },
-
   {
     "id": "lenovo-tab-m9",
     "name": "Lenovo Tab M9",
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cz5GmvH"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cz5GmvH"
+      }
+    ]
   },
   {
     "id": "lenovo-tab-m10",
@@ -239,9 +327,13 @@
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0eHMFQ7I"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eHMFQ7I"
+      }
+    ]
   },
   {
     "id": "lenovo-tab-m11",
@@ -249,9 +341,13 @@
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0gu0diXJ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gu0diXJ"
+      }
+    ]
   },
   {
     "id": "lenovo-tab-plus",
@@ -259,9 +355,13 @@
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0f3zWp2l"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f3zWp2l"
+      }
+    ]
   },
   {
     "id": "lenovo-tab-p11",
@@ -269,9 +369,13 @@
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04KtnzLA"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04KtnzLA"
+      }
+    ]
   },
   {
     "id": "lenovo-tab-p12",
@@ -279,9 +383,13 @@
     "brand": "Lenovo",
     "series": "Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B09qYBuGG"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09qYBuGG"
+      }
+    ]
   },
   {
     "id": "lenovo-idea-tab",
@@ -289,9 +397,13 @@
     "brand": "Lenovo",
     "series": "Idea Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0i0Fb9Ve"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0i0Fb9Ve"
+      }
+    ]
   },
   {
     "id": "lenovo-idea-tab-pro",
@@ -299,9 +411,13 @@
     "brand": "Lenovo",
     "series": "Idea Tab",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0gPh2Kkt"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gPh2Kkt"
+      }
+    ]
   },
   {
     "id": "lenovo-yoga-tab-plus",
@@ -309,9 +425,13 @@
     "brand": "Lenovo",
     "series": "Yoga",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0go2zZyP"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0go2zZyP"
+      }
+    ]
   },
   {
     "id": "lenovo-legion-tab",
@@ -319,20 +439,27 @@
     "brand": "Lenovo",
     "series": "Legion",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B07dZNiks"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07dZNiks"
+      }
+    ]
   },
-
   {
     "id": "xiaomi-pad-8",
     "name": "Xiaomi Pad 8",
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02trOgB1"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02trOgB1"
+      }
+    ]
   },
   {
     "id": "xiaomi-pad-7-pro",
@@ -340,9 +467,13 @@
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B05DJRYvX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05DJRYvX"
+      }
+    ]
   },
   {
     "id": "xiaomi-pad-7",
@@ -350,9 +481,13 @@
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0gmkfNja"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gmkfNja"
+      }
+    ]
   },
   {
     "id": "xiaomi-pad-6s-pro-12-4",
@@ -360,9 +495,13 @@
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0e4aOGPL"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e4aOGPL"
+      }
+    ]
   },
   {
     "id": "xiaomi-pad-6",
@@ -370,9 +509,13 @@
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03o4c9Ss"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03o4c9Ss"
+      }
+    ]
   },
   {
     "id": "redmi-pad-2-pro",
@@ -380,9 +523,13 @@
     "brand": "Xiaomi",
     "series": "Redmi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0b8mScYp"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0b8mScYp"
+      }
+    ]
   },
   {
     "id": "redmi-pad-2",
@@ -390,9 +537,13 @@
     "brand": "Xiaomi",
     "series": "Redmi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0aNrScuY"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aNrScuY"
+      }
+    ]
   },
   {
     "id": "redmi-pad-se-8-7",
@@ -400,20 +551,27 @@
     "brand": "Xiaomi",
     "series": "Redmi Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0bOv0Wky"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bOv0Wky"
+      }
+    ]
   },
-
   {
     "id": "huawei-matepad-12-x",
     "name": "Huawei MatePad 12 X",
     "brand": "Huawei",
     "series": "MatePad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B08L50mPO"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08L50mPO"
+      }
+    ]
   },
   {
     "id": "huawei-matepad-11-5-s",
@@ -421,9 +579,13 @@
     "brand": "Huawei",
     "series": "MatePad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cjIsc1c"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cjIsc1c"
+      }
+    ]
   },
   {
     "id": "huawei-matepad-pro-12-2",
@@ -431,9 +593,13 @@
     "brand": "Huawei",
     "series": "MatePad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03UI59Nx"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03UI59Nx"
+      }
+    ]
   },
   {
     "id": "huawei-matepad-pro-13-2",
@@ -441,9 +607,13 @@
     "brand": "Huawei",
     "series": "MatePad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B06RUbC0q"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06RUbC0q"
+      }
+    ]
   },
   {
     "id": "huawei-matepad-se-10-4",
@@ -451,20 +621,27 @@
     "brand": "Huawei",
     "series": "MatePad SE",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B07Pa8SVq"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07Pa8SVq"
+      }
+    ]
   },
-
   {
     "id": "oneplus-pad-4",
     "name": "OnePlus Pad 4",
     "brand": "OnePlus",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B09KkbdBt"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09KkbdBt"
+      }
+    ]
   },
   {
     "id": "oneplus-pad-3",
@@ -472,9 +649,13 @@
     "brand": "OnePlus",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B09Ipqs8t"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09Ipqs8t"
+      }
+    ]
   },
   {
     "id": "oneplus-pad-go-2",
@@ -482,9 +663,13 @@
     "brand": "OnePlus",
     "series": "Pad Go",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04Yq6jRq"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04Yq6jRq"
+      }
+    ]
   },
   {
     "id": "oneplus-pad-go",
@@ -492,20 +677,27 @@
     "brand": "OnePlus",
     "series": "Pad Go",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0d8c9c06"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0d8c9c06"
+      }
+    ]
   },
-
   {
     "id": "surface-pro-12",
     "name": "Surface Pro 12\"",
     "brand": "Microsoft Surface",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01w6N0Ev"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01w6N0Ev"
+      }
+    ]
   },
   {
     "id": "surface-pro-10",
@@ -513,9 +705,13 @@
     "brand": "Microsoft Surface",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B05WU9JVI"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05WU9JVI"
+      }
+    ]
   },
   {
     "id": "surface-pro-9",
@@ -523,9 +719,13 @@
     "brand": "Microsoft Surface",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0dcB1jUe"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dcB1jUe"
+      }
+    ]
   },
   {
     "id": "surface-pro-8",
@@ -533,9 +733,13 @@
     "brand": "Microsoft Surface",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cHdHUsu"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cHdHUsu"
+      }
+    ]
   },
   {
     "id": "surface-pro-7-plus",
@@ -543,9 +747,13 @@
     "brand": "Microsoft Surface",
     "series": "Pro",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cNo5Ahb"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cNo5Ahb"
+      }
+    ]
   },
   {
     "id": "surface-go-4",
@@ -553,9 +761,13 @@
     "brand": "Microsoft Surface",
     "series": "Go",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B02FP3yt2"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02FP3yt2"
+      }
+    ]
   },
   {
     "id": "surface-go-3",
@@ -563,20 +775,27 @@
     "brand": "Microsoft Surface",
     "series": "Go",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04qIXhvH"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04qIXhvH"
+      }
+    ]
   },
-
   {
     "id": "honor-magicpad-4",
     "name": "HONOR MagicPad 4",
     "brand": "HONOR",
     "series": "MagicPad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0iktKQfd"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iktKQfd"
+      }
+    ]
   },
   {
     "id": "honor-magicpad-3",
@@ -584,9 +803,13 @@
     "brand": "HONOR",
     "series": "MagicPad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B03tkenxX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03tkenxX"
+      }
+    ]
   },
   {
     "id": "honor-magicpad-13",
@@ -594,9 +817,13 @@
     "brand": "HONOR",
     "series": "MagicPad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0cRJg9ap"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cRJg9ap"
+      }
+    ]
   },
   {
     "id": "honor-pad-10",
@@ -604,9 +831,13 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0h6kL3kt"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0h6kL3kt"
+      }
+    ]
   },
   {
     "id": "honor-pad-9",
@@ -614,9 +845,13 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B060sVZKh"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B060sVZKh"
+      }
+    ]
   },
   {
     "id": "honor-pad-8",
@@ -624,9 +859,13 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B09lWGb85"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09lWGb85"
+      }
+    ]
   },
   {
     "id": "honor-pad-x9a",
@@ -634,9 +873,13 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B08ZBVZjb"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08ZBVZjb"
+      }
+    ]
   },
   {
     "id": "honor-pad-x9",
@@ -644,9 +887,13 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01w2XfaX"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01w2XfaX"
+      }
+    ]
   },
   {
     "id": "honor-pad-x8a",
@@ -654,20 +901,27 @@
     "brand": "HONOR",
     "series": "Pad",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04ct4sLf"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04ct4sLf"
+      }
+    ]
   },
-
   {
     "id": "amazon-fire-hd-10",
     "name": "Amazon Fire HD 10",
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0dRsXLgg"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dRsXLgg"
+      }
+    ]
   },
   {
     "id": "amazon-fire-hd-10-kids",
@@ -675,9 +929,13 @@
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B059kGNQS"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B059kGNQS"
+      }
+    ]
   },
   {
     "id": "amazon-fire-hd-10-kids-pro",
@@ -685,9 +943,13 @@
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B06GssEuk"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06GssEuk"
+      }
+    ]
   },
   {
     "id": "amazon-fire-hd-8",
@@ -695,9 +957,13 @@
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B04gg68iZ"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04gg68iZ"
+      }
+    ]
   },
   {
     "id": "amazon-fire-hd-8-kids",
@@ -705,9 +971,13 @@
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B0as16SbR"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0as16SbR"
+      }
+    ]
   },
   {
     "id": "amazon-fire-hd-8-kids-pro",
@@ -715,9 +985,13 @@
     "brand": "Amazon Fire",
     "series": "HD",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B09HiOF1p"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09HiOF1p"
+      }
+    ]
   },
   {
     "id": "amazon-fire-max-11",
@@ -725,8 +999,12 @@
     "brand": "Amazon Fire",
     "series": "Max",
     "image": "",
-    "price": "",
-    "shop": "Amazon",
-    "link": "https://link.amazon/B01BAhQ6i"
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01BAhQ6i"
+      }
+    ]
   }
 ]
