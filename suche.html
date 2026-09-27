@@ -293,15 +293,20 @@
       display: grid;
     }
 
+    /* PRODUKTKARTE */
+
     .result-card {
+      position: relative;
       background: #fff;
       border-radius: 16px;
-      padding: 25px;
+      padding: 20px;
       text-decoration: none;
       color: #111;
-      text-align: center;
       box-shadow: 0 4px 18px rgba(0,0,0,.08);
       transition: 0.2s;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     .result-card:hover {
@@ -309,19 +314,90 @@
       box-shadow: 0 8px 24px rgba(0,0,0,.12);
     }
 
-    .result-icon {
+    .result-image-box {
+      width: 100%;
+      height: 240px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+
+    .result-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .result-no-image {
       font-size: 55px;
-      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .result-brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: #777;
+      margin-bottom: 7px;
+      text-transform: uppercase;
     }
 
     .result-card h2 {
       font-size: 20px;
-      margin-bottom: 8px;
+      margin-bottom: 15px;
+      line-height: 1.25;
     }
 
-    .result-card p {
+    .result-category {
       color: #666;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .result-bottom {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .result-price {
+      font-size: 19px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .result-price.empty {
       font-size: 14px;
+      font-weight: 400;
+      color: #777;
+    }
+
+    .deal-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 10px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: 0.2s;
+    }
+
+    .deal-button:hover {
+      background: #e6bf00;
     }
 
     /* KEINE ERGEBNISSE */
@@ -452,21 +528,52 @@
       }
 
       .result-card {
-        padding: 18px 10px;
+        padding: 12px 10px;
         border-radius: 13px;
       }
 
-      .result-icon {
+      .result-image-box {
+        height: 145px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+      }
+
+      .result-no-image {
         font-size: 43px;
-        margin-bottom: 10px;
+      }
+
+      .result-brand {
+        font-size: 10px;
+        margin-bottom: 5px;
       }
 
       .result-card h2 {
         font-size: 16px;
+        margin-bottom: 10px;
       }
 
-      .result-card p {
-        font-size: 12px;
+      .result-category {
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+
+      .result-bottom {
+        gap: 5px;
+        align-items: flex-end;
+      }
+
+      .result-price {
+        font-size: 14px;
+      }
+
+      .result-price.empty {
+        font-size: 10px;
+      }
+
+      .deal-button {
+        padding: 8px 9px;
+        font-size: 11px;
+        border-radius: 7px;
       }
 
       .no-results {
@@ -626,137 +733,7 @@
     id="results"
   >
 
-    <!-- PLAYSTATION 5 -->
-
-    <a
-      class="result-card"
-      data-name="PlayStation 5"
-      data-category="Gaming"
-      href="https://amzn.to/4yW9vEp"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-
-      <div class="result-icon">
-        🎮
-      </div>
-
-      <h2>
-        PlayStation 5
-      </h2>
-
-      <p>
-        Gaming
-      </p>
-
-    </a>
-
-
-    <!-- SAMSUNG GALAXY S26 ULTRA -->
-
-    <a
-      class="result-card"
-      data-name="Samsung Galaxy S26 Ultra"
-      data-category="Elektronik"
-      href="https://amzn.to/4yL6uGH"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-
-      <div class="result-icon">
-        📱
-      </div>
-
-      <h2>
-        Samsung Galaxy S26 Ultra
-      </h2>
-
-      <p>
-        Elektronik
-      </p>
-
-    </a>
-
-
-    <!-- IPHONE 17 -->
-
-    <a
-      class="result-card"
-      data-name="Apple iPhone 17"
-      data-category="Elektronik"
-      href="https://amzn.to/3VsXwj3"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-
-      <div class="result-icon">
-        📱
-      </div>
-
-      <h2>
-        Apple iPhone 17
-      </h2>
-
-      <p>
-        Elektronik
-      </p>
-
-    </a>
-
-
-    <!-- POWERBANK -->
-
-    <a
-      class="result-card"
-      data-name="Powerbank"
-      data-category="Elektronik"
-      href="https://amzn.to/4yJVCJc"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-
-      <div class="result-icon">
-        🔋
-      </div>
-
-      <h2>
-        Powerbank
-      </h2>
-
-      <p>
-        Elektronik
-      </p>
-
-    </a>
-
-
-    <!-- MONITOR -->
-
-    <a
-      class="result-card"
-      data-name="27-Zoll Monitor"
-      data-category="Computer"
-      href="https://amzn.to/4rq0uRq"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-
-      <div class="result-icon">
-        🖥️
-      </div>
-
-      <h2>
-        27-Zoll Monitor
-      </h2>
-
-      <p>
-        Computer
-      </p>
-
-    </a>
-
-
-    <!-- KEINE ERGEBNISSE -->
+    <!-- PRODUKTE WERDEN HIER AUTOMATISCH AUS DEN JSON-DATEIEN GELADEN -->
 
     <div
       class="no-results"
@@ -874,37 +851,414 @@
   }
 
 
-  /* SUCHE LÖSCHEN */
+  /* ALLE PRODUKTE */
 
-  function clearSearch() {
+  let allProducts = [];
 
-    const input =
-      document.getElementById("searchInput");
+
+  /*
+    Hier können später ganz einfach weitere
+    JSON-Dateien ergänzt werden.
+
+    category:
+    interne Bezeichnung der Kategorie
+
+    detailPage:
+    jeweilige Produktdetailseite
+  */
+
+  const productSources = [
+
+    {
+      file: "telefone.json",
+      category: "Telefone",
+      detailPage: "produkt.html"
+    },
+
+    {
+      file: "tablets.json",
+      category: "Tablets",
+      detailPage: "tablet-produkt.html"
+    }
+
+  ];
+
+
+  /* PRODUKTE AUS JSON LADEN */
+
+  async function loadProducts() {
+
+    try {
+
+      const loadedProducts = [];
+
+      for (
+        const source of productSources
+      ) {
+
+        try {
+
+          const response =
+            await fetch(source.file);
+
+          if (!response.ok) {
+
+            console.warn(
+              "JSON konnte nicht geladen werden:",
+              source.file
+            );
+
+            continue;
+
+          }
+
+          const products =
+            await response.json();
+
+
+          if (!Array.isArray(products)) {
+
+            console.warn(
+              "JSON ist kein Array:",
+              source.file
+            );
+
+            continue;
+
+          }
+
+
+          products.forEach(
+            function(product) {
+
+              loadedProducts.push({
+
+                ...product,
+
+                searchCategory:
+                  source.category,
+
+                detailPage:
+                  source.detailPage
+
+              });
+
+            }
+          );
+
+        } catch (error) {
+
+          console.error(
+            "Fehler beim Laden von",
+            source.file,
+            error
+          );
+
+        }
+
+      }
+
+
+      allProducts =
+        loadedProducts;
+
+
+      console.log(
+        "Produkte für Suche geladen:",
+        allProducts.length
+      );
+
+    } catch (error) {
+
+      console.error(
+        "Fehler beim Laden der Produkte:",
+        error
+      );
+
+    }
+
+  }
+
+
+  /* HILFSFUNKTION FÜR HTML */
+
+  function escapeHTML(value) {
+
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  }
+
+
+  /* PREIS AUS SHOPS HOLEN */
+
+  function getPrimaryShop(product) {
+
+    if (
+      Array.isArray(product.shops) &&
+      product.shops.length > 0
+    ) {
+
+      return product.shops[0];
+
+    }
+
+    return null;
+
+  }
+
+
+  /* PREIS FORMATIEREN */
+
+  function formatPrice(price) {
+
+    if (
+      price === null ||
+      price === undefined ||
+      price === ""
+    ) {
+
+      return "";
+
+    }
+
+
+    const value =
+      String(price).trim();
+
+
+    if (
+      value.includes("€")
+    ) {
+
+      return value;
+
+    }
+
+
+    return value + " €";
+
+  }
+
+
+  /* BILD ERMITTELN */
+
+  function getProductImage(product) {
+
+    return (
+      product.image ||
+      product.bild ||
+      product.img ||
+      product.imageUrl ||
+      ""
+    );
+
+  }
+
+
+  /* PRODUKTKARTE ERSTELLEN */
+
+  function createProductCard(product) {
+
+    const card =
+      document.createElement("a");
+
+    card.className =
+      "result-card";
+
+
+    const productId =
+      product.id || "";
+
+
+    const detailPage =
+      product.detailPage ||
+      "produkt.html";
+
+
+    card.href =
+      detailPage +
+      "?id=" +
+      encodeURIComponent(productId);
+
+
+    const image =
+      getProductImage(product);
+
+
+    const shop =
+      getPrimaryShop(product);
+
+
+    const price =
+      shop?.price || "";
+
+
+    const brand =
+      product.brand || "";
+
+
+    const name =
+      product.name ||
+      "Produkt";
+
+
+    const category =
+      product.searchCategory ||
+      "";
+
+
+    let imageHTML;
+
+
+    if (image) {
+
+      imageHTML = `
+        <img
+          class="result-image"
+          src="${escapeHTML(image)}"
+          alt="${escapeHTML(name)}"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+
+        <div
+          class="result-no-image"
+          style="display:none;"
+        >
+          📦
+        </div>
+      `;
+
+    } else {
+
+      imageHTML = `
+        <div class="result-no-image">
+          📦
+        </div>
+      `;
+
+    }
+
+
+    const priceHTML =
+      price
+        ? `<div class="result-price">${escapeHTML(formatPrice(price))}</div>`
+        : `<div class="result-price empty">Preis ansehen</div>`;
+
+
+    card.innerHTML = `
+
+      <div class="result-image-box">
+
+        ${imageHTML}
+
+      </div>
+
+
+      <div class="result-brand">
+
+        ${escapeHTML(brand)}
+
+      </div>
+
+
+      <h2>
+
+        ${escapeHTML(name)}
+
+      </h2>
+
+
+      <div class="result-category">
+
+        ${escapeHTML(category)}
+
+      </div>
+
+
+      <div class="result-bottom">
+
+        ${priceHTML}
+
+        <span class="deal-button">
+
+          Zum Deal
+
+        </span>
+
+      </div>
+
+    `;
+
+
+    return card;
+
+  }
+
+
+  /* ERGEBNISSE RENDERN */
+
+  function renderResults(products) {
 
     const results =
       document.getElementById("results");
 
-    const cards =
-      document.querySelectorAll(".result-card");
-
     const noResults =
       document.getElementById("noResults");
 
-    input.value = "";
 
-    results.classList.remove("show");
+    /*
+      Alle bisherigen dynamischen Karten
+      entfernen, aber noResults behalten.
+    */
 
-    cards.forEach(
-      function(card) {
+    results
+      .querySelectorAll(".result-card")
+      .forEach(
+        function(card) {
 
-        card.style.display = "none";
+          card.remove();
 
-      }
-    );
+        }
+      );
+
+
+    if (products.length === 0) {
+
+      noResults.classList.add("show");
+
+      return;
+
+    }
+
 
     noResults.classList.remove("show");
 
-    input.focus();
+
+    /*
+      noResults liegt im DOM an der Stelle,
+      an der die neuen Karten vorbeigefügt
+      werden sollen.
+    */
+
+    products.forEach(
+      function(product) {
+
+        const card =
+          createProductCard(product);
+
+        results.insertBefore(
+          card,
+          noResults
+        );
+
+      }
+    );
 
   }
 
@@ -970,6 +1324,13 @@
 
     text =
       text.toLowerCase().trim();
+
+
+    if (!searchTerm || !text) {
+
+      return false;
+
+    }
 
 
     /* Exakter Treffer */
@@ -1094,98 +1455,88 @@
     const results =
       document.getElementById("results");
 
-    const cards =
-      document.querySelectorAll(".result-card");
 
-    const noResults =
-      document.getElementById("noResults");
-
-
-    /* Keine Eingabe */
+    /*
+      Keine Eingabe:
+      Ergebnisse wieder verstecken.
+    */
 
     if (searchTerm === "") {
 
       results.classList.remove("show");
 
-
-      cards.forEach(
-        function(card) {
-
-          card.style.display = "none";
-
-        }
-      );
-
-
-      noResults.classList.remove("show");
+      renderResults([]);
 
       return;
 
     }
 
 
-    /* Ergebnisse sichtbar machen */
-
     results.classList.add("show");
 
 
-    let found = false;
+    /*
+      Name + Marke + Kategorie durchsuchen.
+    */
+
+    const foundProducts =
+      allProducts.filter(
+        function(product) {
+
+          const name =
+            product.name || "";
+
+          const brand =
+            product.brand || "";
+
+          const category =
+            product.searchCategory || "";
+
+          const series =
+            product.series || "";
+
+          const combinedText =
+            name +
+            " " +
+            brand +
+            " " +
+            category +
+            " " +
+            series;
 
 
-    cards.forEach(
-      function(card) {
-
-        const name =
-          card.dataset.name;
-
-        const category =
-          card.dataset.category;
-
-
-        const nameMatch =
-          fuzzyMatch(
+          return fuzzyMatch(
             searchTerm,
-            name
+            combinedText
           );
-
-
-        const categoryMatch =
-          fuzzyMatch(
-            searchTerm,
-            category
-          );
-
-
-        if (
-          nameMatch ||
-          categoryMatch
-        ) {
-
-          card.style.display = "block";
-
-          found = true;
-
-        } else {
-
-          card.style.display = "none";
 
         }
-
-      }
-    );
+      );
 
 
-    /* Keine Treffer */
+    renderResults(foundProducts);
 
-    if (found) {
+  }
 
-      noResults.classList.remove("show");
 
-    } else {
+  /* SUCHE LÖSCHEN */
 
-      noResults.classList.add("show");
+  function clearSearch() {
 
-    }
+    const input =
+      document.getElementById("searchInput");
+
+    const results =
+      document.getElementById("results");
+
+
+    input.value = "";
+
+    results.classList.remove("show");
+
+    renderResults([]);
+
+    input.focus();
 
   }
 
@@ -1208,17 +1559,9 @@
     );
 
 
-  /* PRODUKTE BEIM START AUSBLENDEN */
+  /* PRODUKTE BEIM START LADEN */
 
-  document
-    .querySelectorAll(".result-card")
-    .forEach(
-      function(card) {
-
-        card.style.display = "none";
-
-      }
-    );
+  loadProducts();
 
 </script>
 
