@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produkt – DealKira</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      height: 82px;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 280px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      position: relative;
+    }
+
+    .logo img {
+      height: 320px;
+      width: auto;
+      max-width: none;
+      display: block;
+    }
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: .2s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: .2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .menu-panel a:hover {
+      background: #222;
+      color: #ffd400;
+    }
+
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
+
+    .hero {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 45px 20px 50px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: #ccc;
+    }
+
+    .product-section {
+      max-width: 1000px;
+      margin: 45px auto 70px;
+      padding: 0 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link:hover {
+      color: #777;
+    }
+
+    .product-detail {
+      background: #fff;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+
+    .product-brand {
+      font-size: 14px;
+      font-weight: 700;
+      color: #777;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .product-name {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .product-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .product-image {
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .shops-title {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .shops {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .shop-row {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      background: #fff;
+    }
+
+    .shop-info {
+      min-width: 0;
+    }
+
+    .shop-name {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .shop-price {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .shop-price.empty {
+      font-size: 14px;
+      color: #777;
+      font-weight: 400;
+    }
+
+    .shop-button {
+      flex-shrink: 0;
+      display: inline-block;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .shop-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    .error-message {
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      color: #b00020;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media(max-width:800px) {
+
+      .logo {
+        width: 225px;
+      }
+
+      .logo img {
+        height: 275px;
+      }
+
+      .product-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .product-image {
+        height: 350px;
+      }
+
+    }
+
+    @media(max-width:550px) {
+
+      header {
+        padding: 0 5%;
+      }
+
+      .logo {
+        width: 190px;
+        height: 50px;
+      }
+
+      .logo img {
+        height: 235px;
+      }
+
+      .menu-panel {
+        right: 5%;
+        width: 270px;
+      }
+
+      .hero {
+        padding: 40px 15px 45px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .product-section {
+        margin: 30px auto 50px;
+        padding: 0 12px;
+      }
+
+      .product-detail {
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .product-brand {
+        font-size: 11px;
+      }
+
+      .product-name {
+        font-size: 25px;
+        margin-bottom: 25px;
+      }
+
+      .product-image {
+        height: 280px;
+        padding: 10px;
+      }
+
+      .shops-title {
+        font-size: 21px;
+      }
+
+      .shop-row {
+        padding: 13px;
+      }
+
+      .shop-name {
+        font-size: 15px;
+      }
+
+      .shop-price {
+        font-size: 17px;
+      }
+
+      .shop-button {
+        padding: 9px 11px;
+        font-size: 12px;
+      }
+
+    }
+
+    @media(max-width:380px) {
+
+      .logo {
+        width: 170px;
+      }
+
+      .logo img {
+        height: 215px;
+      }
+
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
+      .product-detail {
+        padding: 16px;
+      }
+
+      .product-name {
+        font-size: 22px;
+      }
+
+      .shop-row {
+        gap: 8px;
+      }
+
+      .shop-button {
+        padding: 8px 9px;
+        font-size: 11px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
+
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-panel" id="menuPanel">
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto
+    </a>
+
+    <a href="suche.html">
+      <span class="menu-icon">🔎</span>
+      Suche
+    </a>
+
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
+
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
+
+    <div class="menu-divider"></div>
+
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+  <h1>Produktvergleich</h1>
+  <p>Preise verschiedener Shops vergleichen</p>
+</section>
+
+
+<main class="product-section">
+
+  <a href="telefon.html" class="back-link">
+    ← Zurück zu den Telefonen
+  </a>
+
+  <div id="productContainer">
+
+    <div class="error-message">
+      Produkt wird geladen...
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  © 2026 DealKira – Deals & Preise vergleichen
+</footer>
+
+
+<script>
+
+  /* ========================= */
+  /* MENÜ */
+  /* ========================= */
+
+  function toggleMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.toggle("open");
+    button.classList.toggle("active");
+
+  }
+
+
+  function closeMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+  }
+
+
+  document.addEventListener(
+    "click",
+    function(event) {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+
+        closeMenu();
+
+      }
+
+    }
+  );
+
+
+  /* ========================= */
+  /* PRODUKT LADEN */
+  /* ========================= */
+
+  async function loadProduct() {
+
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
+
+
+    try {
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+
+      const productId =
+        params.get("id");
+
+
+      if (!productId) {
+
+        throw new Error(
+          "Keine Produkt-ID angegeben."
+        );
+
+      }
+
+
+      const response =
+        await fetch(
+          "telefone.json",
+          {
+            cache: "no-cache"
+          }
+        );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          "telefone.json konnte nicht geladen werden."
+        );
+
+      }
+
+
+      const products =
+        await response.json();
+
+
+      const product =
+        products.find(
+          function(item) {
+
+            return item.id === productId;
+
+          }
+        );
+
+
+      if (!product) {
+
+        throw new Error(
+          "Das angeforderte Produkt wurde nicht gefunden."
+        );
+
+      }
+
+
+      renderProduct(product);
+
+
+    } catch (error) {
+
+      console.error(
+        "Fehler beim Laden des Produkts:",
+        error
+      );
+
+
+      container.innerHTML = `
+        <div class="error-message">
+
+          Das Produkt konnte nicht gefunden werden.
+
+          <br><br>
+
+          <a
+            href="telefon.html"
+            style="
+              display:inline-block;
+              background:#ffd400;
+              color:#111;
+              text-decoration:none;
+              padding:12px 18px;
+              border-radius:9px;
+              font-weight:700;
+            "
+          >
+            Zurück zu den Telefonen
+          </a>
+
+        </div>
+      `;
+
+    }
+
+  }
+
+
+  /* ========================= */
+  /* PRODUKT ANZEIGEN */
+  /* ========================= */
+
+  function renderProduct(product) {
+
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
+
+
+    const shops =
+      Array.isArray(product.shops)
+        ? product.shops
+        : [];
+
+
+    let shopRows = "";
+
+
+    if (!shops.length) {
+
+      shopRows = `
+        <div class="shop-row">
+
+          <div class="shop-info">
+
+            <div class="shop-name">
+              Noch keine Shops vorhanden
+            </div>
+
+            <div class="shop-price empty">
+              Derzeit sind keine Angebote hinterlegt.
+            </div>
+
+          </div>
+
+        </div>
+      `;
+
+    } else {
+
+      shops.forEach(
+        function(shop) {
+
+          const shopName =
+            shop.name || "Shop";
+
+
+          const price =
+            shop.price || "";
+
+
+          const link =
+            shop.link || "";
+
+
+          let priceHTML;
+
+
+          if (price.trim()) {
+
+            priceHTML = `
+              <div class="shop-price">
+                ${escapeHTML(price)}
+              </div>
+            `;
+
+          } else {
+
+            priceHTML = `
+              <div class="shop-price empty">
+                Preis ansehen
+              </div>
+            `;
+
+          }
+
+
+          let buttonHTML;
+
+
+          if (link.trim()) {
+
+            buttonHTML = `
+              <a
+                class="shop-button"
+                href="${escapeAttribute(link)}"
+                target="_blank"
+                rel="nofollow sponsored noopener noreferrer"
+              >
+                Gehe zu →
+              </a>
+            `;
+
+          } else {
+
+            buttonHTML = `
+              <span
+                class="shop-button"
+                style="
+                  opacity:.5;
+                  cursor:not-allowed;
+                "
+              >
+                Kein Link
+              </span>
+            `;
+
+          }
+
+
+          shopRows += `
+
+            <div class="shop-row">
+
+              <div class="shop-info">
+
+                <div class="shop-name">
+                  ${escapeHTML(shopName)}
+                </div>
+
+                ${priceHTML}
+
+              </div>
+
+              ${buttonHTML}
+
+            </div>
+
+          `;
+
+        }
+      );
+
+    }
+
+
+    document.title =
+      (product.name || "Produkt") +
+      " – DealKira";
+
+
+    container.innerHTML = `
+
+      <div class="product-detail">
+
+        ${
+          product.brand
+            ? `
+              <div class="product-brand">
+                ${escapeHTML(product.brand)}
+              </div>
+            `
+            : ""
+        }
+
+        <h1 class="product-name">
+          ${escapeHTML(product.name || "Produkt")}
+        </h1>
+
+
+        <div class="product-main">
+
+          <div class="product-image">
+
+            <img
+              src="${escapeAttribute(product.image || "")}"
+              alt="${escapeAttribute(product.name || "Produkt")}"
+              onerror="this.style.display='none';"
+            >
+
+          </div>
+
+
+          <div>
+
+            <h2 class="shops-title">
+              Angebote vergleichen
+            </h2>
+
+            <div class="shops">
+              ${shopRows}
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+
+  /* ========================= */
+  /* SICHERES HTML */
+  /* ========================= */
+
+  function escapeHTML(value) {
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  }
+
+
+  function escapeAttribute(value) {
+
+    return escapeHTML(value);
+
+  }
+
+
+  /* ========================= */
+  /* START */
+  /* ========================= */
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+      loadProduct();
+
+    }
+  );
+
+</script>
+
+</body>
+</html>
