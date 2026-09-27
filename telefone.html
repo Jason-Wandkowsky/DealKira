@@ -1094,7 +1094,7 @@
     "https://zniknbouugmgvqkkoamo.supabase.co";
 
   const SUPABASE_KEY =
-    "sb_publishable_Jr7OScG8lgIja_Hav5-mw_B_htFgzI";
+    "sb_publishable_Jr7OQSc8lgIja_Hav5-mw_B_htFgzI";
 
   const supabaseClient =
     window.supabase.createClient(
@@ -1900,26 +1900,58 @@
 
   async function getCurrentUser() {
 
-    const {
-      data,
-      error
-    } =
-      await supabaseClient.auth.getUser();
+    try {
+
+      const {
+        data: sessionData,
+        error: sessionError
+      } =
+        await supabaseClient.auth.getSession();
 
 
-    if (error) {
+      if (
+        !sessionError &&
+        sessionData &&
+        sessionData.session &&
+        sessionData.session.user
+      ) {
+
+        return sessionData.session.user;
+
+      }
+
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.getUser();
+
+
+      if (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
+        );
+
+        return null;
+
+      }
+
+
+      return data.user;
+
+    } catch (error) {
 
       console.error(
-        "Benutzer konnte nicht geladen werden:",
+        "Session konnte nicht geladen werden:",
         error
       );
 
       return null;
 
     }
-
-
-    return data.user;
 
   }
 
