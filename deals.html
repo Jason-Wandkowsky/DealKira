@@ -1172,6 +1172,78 @@
 
 
     /* =========================
+       AUTH STATUS
+    ========================= */
+
+    let currentUser = null;
+
+    let authReadyResolve;
+
+    const authReady =
+      new Promise(function(resolve) {
+
+        authReadyResolve = resolve;
+
+      });
+
+
+    /*
+     * Session direkt beim Laden holen.
+     * Dadurch wird verhindert, dass die
+     * dynamischen Telefon-Karten zu früh
+     * "nicht angemeldet" melden.
+     */
+
+    async function initializeAuth() {
+
+      try {
+
+        const {
+          data,
+          error
+        } =
+          await supabaseClient.auth.getSession();
+
+
+        if (error) {
+
+          console.error(
+            "Session konnte nicht geladen werden:",
+            error
+          );
+
+        }
+
+
+        currentUser =
+          data?.session?.user || null;
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Fehler beim Laden der Session:",
+          error
+        );
+
+        currentUser = null;
+
+      }
+
+      finally {
+
+        authReadyResolve();
+
+      }
+
+    }
+
+
+    initializeAuth();
+
+
+    /* =========================
        BURGER MENU
     ========================= */
 
@@ -1292,7 +1364,7 @@
 
 
         /*
-         * Reihenfolge festlegen:
+         * Reihenfolge:
          * S26 Ultra zuerst,
          * iPhone 17 Pro Max danach.
          */
@@ -1340,8 +1412,8 @@
 
 
         /*
-         * Nachdem die Karten vorhanden sind,
-         * Favoriten laden.
+         * Favoriten erst laden,
+         * nachdem die Telefonkarten existieren.
          */
 
         await loadFavorites();
@@ -1369,7 +1441,8 @@
       const article =
         document.createElement("article");
 
-      article.className = "deal-card";
+      article.className =
+        "deal-card";
 
 
       /*
@@ -1405,9 +1478,11 @@
       favoriteButton.className =
         "favorite-button";
 
-      favoriteButton.type = "button";
+      favoriteButton.type =
+        "button";
 
-      favoriteButton.textContent = "♡";
+      favoriteButton.textContent =
+        "♡";
 
       favoriteButton.setAttribute(
         "aria-label",
@@ -1415,14 +1490,18 @@
         " zu Favoriten hinzufügen"
       );
 
-      favoriteButton.addEventListener(
-        "click",
+
+      /*
+       * Gleiche Funktion wie bei
+       * den normalen Deal-Karten.
+       */
+
+      favoriteButton.onclick =
         function() {
 
           toggleFavorite(favoriteButton);
 
-        }
-      );
+        };
 
 
       const imageContainer =
@@ -1442,7 +1521,9 @@
         product.name || "";
 
 
-      imageContainer.appendChild(image);
+      imageContainer.appendChild(
+        image
+      );
 
 
       const content =
@@ -1478,9 +1559,13 @@
         "Zum Deal";
 
 
-      content.appendChild(title);
+      content.appendChild(
+        title
+      );
 
-      content.appendChild(dealButton);
+      content.appendChild(
+        dealButton
+      );
 
 
       article.appendChild(
@@ -1502,19 +1587,102 @@
 
 
     /* =========================
-       FAVORITEN
+       AKTUELLEN BENUTZER HOLEN
     ========================= */
 
     async function getCurrentUser() {
 
-      const {
-        data,
-        error
-      } =
-        await supabaseClient.auth.getUser();
+      /*
+       * Zuerst auf die Initialisierung
+       * der Authentifizierung warten.
+       */
+
+      await authReady;
 
 
-      if (error) {
+      /*
+       * Wenn bereits eine Session
+       * bekannt ist, direkt verwenden.
+       */
+
+      if (currentUser) {
+
+        return currentUser;
+
+      }
+
+
+      /*
+       * Sicherheitshalber Session erneut prüfen.
+       */
+
+      try {
+
+        const {
+          data: sessionData,
+          error: sessionError
+        } =
+          await supabaseClient.auth.getSession();
+
+
+        if (
+          !sessionError &&
+          sessionData?.session?.user
+        ) {
+
+          currentUser =
+            sessionData.session.user;
+
+          return currentUser;
+
+        }
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Session-Prüfung fehlgeschlagen:",
+          error
+        );
+
+      }
+
+
+      /*
+       * Als letzten Fallback getUser().
+       */
+
+      try {
+
+        const {
+          data: userData,
+          error: userError
+        } =
+          await supabaseClient.auth.getUser();
+
+
+        if (userError) {
+
+          console.error(
+            "Benutzer konnte nicht geladen werden:",
+            userError
+          );
+
+          return null;
+
+        }
+
+
+        currentUser =
+          userData?.user || null;
+
+
+        return currentUser;
+
+      }
+
+      catch (error) {
 
         console.error(
           "Benutzer konnte nicht geladen werden:",
@@ -1525,11 +1693,12 @@
 
       }
 
-
-      return data.user;
-
     }
 
+
+    /* =========================
+       FAVORIT UMSCHALTEN
+    ========================= */
 
     async function toggleFavorite(button) {
 
@@ -1551,47 +1720,68 @@
       }
 
 
-      const user =
-        await getCurrentUser();
-
-
-      if (!user) {
-
-        alert(
-          "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
-        );
-
-        window.location.href =
-          "konto.html";
-
-        return;
-
-      }
-
-
-      const productId =
-        card.dataset.productId;
-
-      const productName =
-        card.dataset.productName;
-
-      const productImage =
-        card.dataset.productImage;
-
-      const productPrice =
-        card.dataset.productPrice || null;
-
-      const productShop =
-        card.dataset.productShop || null;
-
-      const productLink =
-        card.dataset.productLink || null;
-
+      /*
+       * Button erst sperren,
+       * damit nicht doppelt geklickt wird.
+       */
 
       button.disabled = true;
 
 
       try {
+
+        const user =
+          await getCurrentUser();
+
+
+        if (!user) {
+
+          alert(
+            "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
+          );
+
+          window.location.href =
+            "konto.html";
+
+          return;
+
+        }
+
+
+        const productId =
+          card.dataset.productId;
+
+        const productName =
+          card.dataset.productName;
+
+        const productImage =
+          card.dataset.productImage;
+
+        const productPrice =
+          card.dataset.productPrice || null;
+
+        const productShop =
+          card.dataset.productShop || null;
+
+        const productLink =
+          card.dataset.productLink || null;
+
+
+        /*
+         * Sicherheitsprüfung:
+         * Ohne Produkt-ID kein Favorit.
+         */
+
+        if (!productId) {
+
+          console.error(
+            "Produkt besitzt keine produkt_id."
+          );
+
+          return;
+
+        }
+
 
         const {
           data: existingFavorite,
@@ -1600,8 +1790,14 @@
           await supabaseClient
             .from("favoriten")
             .select("id")
-            .eq("user_id", user.id)
-            .eq("produkt_id", productId)
+            .eq(
+              "user_id",
+              user.id
+            )
+            .eq(
+              "produkt_id",
+              productId
+            )
             .maybeSingle();
 
 
@@ -1784,7 +1980,7 @@
 
       const favoriteIds =
         new Set(
-          favorites.map(
+          (favorites || []).map(
             function(favorite) {
 
               return favorite.produkt_id;
@@ -1865,9 +2061,27 @@
     supabaseClient.auth.onAuthStateChange(
       function(event, session) {
 
-        if (session) {
+        currentUser =
+          session?.user || null;
 
-          loadFavorites();
+
+        if (currentUser) {
+
+          /*
+           * Kleine Verzögerung verhindert,
+           * dass ein Auth-Event gleichzeitig
+           * mit dem Rendern der Telefonkarten
+           * läuft.
+           */
+
+          setTimeout(
+            function() {
+
+              loadFavorites();
+
+            },
+            0
+          );
 
         }
         else {
@@ -1901,9 +2115,16 @@
 
     document.addEventListener(
       "DOMContentLoaded",
-      function() {
+      async function() {
 
-        loadPhoneDeals();
+        /*
+         * Erst Authentifizierung abwarten,
+         * danach telefone.json laden.
+         */
+
+        await authReady;
+
+        await loadPhoneDeals();
 
       }
     );
