@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tablet – DealKira</title>
-  <meta name="description" content="Tablet-Preise verschiedener Shops vergleichen – DealKira">
+  <title>Produkt – DealKira</title>
 
   <style>
     * {
@@ -20,24 +19,14 @@
       color: #111;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
-      height: 72px;
-      background: #000;
+      height: 82px;
+      background: #111;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 30px;
-      position: sticky;
-      top: 0;
+      padding: 0 6%;
+      position: relative;
       z-index: 1000;
     }
 
@@ -57,125 +46,137 @@
       display: block;
     }
 
-    nav {
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: .2s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: .2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
     }
 
-    nav a {
-      color: white;
-      font-size: 16px;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
+    .menu-panel a:hover {
+      background: #222;
       color: #ffd400;
     }
 
-    .menu-button {
-      display: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      background: none;
-      border: none;
+    .menu-icon {
+      width: 25px;
+      text-align: center;
+      font-size: 19px;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
+    }
 
     .hero {
       background: #111;
-      color: white;
-      padding: 55px 20px 50px;
+      color: #fff;
       text-align: center;
+      padding: 45px 20px 50px;
     }
 
     .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 18px;
-      color: #ddd;
+      font-size: 17px;
+      color: #ccc;
     }
 
-    /* =========================
-       MAIN
-    ========================= */
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 35px 20px 70px;
+    .product-section {
+      max-width: 1000px;
+      margin: 45px auto 70px;
+      padding: 0 20px;
     }
 
     .back-link {
       display: inline-block;
       margin-bottom: 25px;
-      font-size: 15px;
-      font-weight: 700;
       color: #111;
+      text-decoration: none;
+      font-weight: 700;
     }
 
     .back-link:hover {
-      color: #d4af00;
+      color: #777;
     }
 
-    .product-box {
-      background: white;
+    .product-detail {
+      background: #fff;
       border-radius: 18px;
       padding: 35px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
-
-    .product-top {
-      display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 45px;
-      align-items: start;
-    }
-
-    /* =========================
-       PRODUCT IMAGE
-    ========================= */
-
-    .product-image-area {
-      width: 100%;
-      min-height: 330px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fafafa;
-      border-radius: 16px;
-      padding: 25px;
-    }
-
-    .product-image {
-      max-width: 100%;
-      max-height: 330px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      display: block;
-    }
-
-    .no-image {
-      color: #888;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    /* =========================
-       PRODUCT INFO
-    ========================= */
-
-    .product-info {
-      padding-top: 5px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
     }
 
     .product-brand {
@@ -184,49 +185,39 @@
       color: #777;
       text-transform: uppercase;
       margin-bottom: 8px;
-      letter-spacing: 0.5px;
     }
 
-    .product-info h1 {
+    .product-name {
       font-size: 36px;
-      line-height: 1.15;
+      margin-bottom: 30px;
+    }
+
+    .product-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .product-image {
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .shops-title {
+      font-size: 24px;
       margin-bottom: 18px;
-    }
-
-    .product-series {
-      display: inline-block;
-      background: #ffd400;
-      color: #111;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 8px 13px;
-      border-radius: 8px;
-      margin-bottom: 25px;
-    }
-
-    .product-description {
-      color: #555;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    /* =========================
-       SHOP COMPARISON
-    ========================= */
-
-    .comparison {
-      margin-top: 45px;
-    }
-
-    .comparison h2 {
-      font-size: 27px;
-      margin-bottom: 18px;
-    }
-
-    .comparison-intro {
-      color: #666;
-      font-size: 15px;
-      margin-bottom: 20px;
     }
 
     .shops {
@@ -236,121 +227,72 @@
     }
 
     .shop-row {
-      display: grid;
-      grid-template-columns: 1fr 180px 150px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
       align-items: center;
-      gap: 20px;
-      border: 1px solid #e4e4e4;
-      border-radius: 13px;
-      padding: 17px 18px;
+      justify-content: space-between;
+      gap: 15px;
       background: #fff;
+    }
+
+    .shop-info {
+      min-width: 0;
     }
 
     .shop-name {
       font-size: 17px;
       font-weight: 700;
+      margin-bottom: 5px;
     }
 
     .shop-price {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
-      text-align: right;
+    }
+
+    .shop-price.empty {
+      font-size: 14px;
+      color: #777;
+      font-weight: 400;
     }
 
     .shop-button {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background: #ffd400;
-      color: #111;
-      padding: 11px 15px;
-      border-radius: 9px;
-      font-size: 14px;
-      font-weight: 700;
-      transition: transform 0.15s, background 0.15s;
-    }
-
-    .shop-button:hover {
-      background: #e8c000;
-      transform: translateY(-1px);
-    }
-
-    .no-link {
-      text-align: center;
-      color: #999;
-      font-size: 13px;
-    }
-
-    .no-shops {
-      padding: 25px;
-      background: #f7f7f7;
-      border-radius: 12px;
-      color: #777;
-      text-align: center;
-    }
-
-    /* =========================
-       ERROR
-    ========================= */
-
-    .error-box {
-      background: white;
-      border-radius: 18px;
-      padding: 45px 25px;
-      text-align: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
-
-    .error-box h1 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .error-box p {
-      color: #666;
-      margin-bottom: 25px;
-      line-height: 1.5;
-    }
-
-    .error-button {
+      flex-shrink: 0;
       display: inline-block;
       background: #ffd400;
       color: #111;
-      padding: 12px 20px;
+      text-decoration: none;
+      padding: 11px 17px;
       border-radius: 9px;
       font-weight: 700;
+      transition: .2s;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    .shop-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    .error-message {
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      color: #b00020;
+    }
 
     footer {
-      background: #000;
+      background: #111;
       color: #aaa;
       text-align: center;
       padding: 30px 20px;
       font-size: 14px;
     }
 
-    footer a {
-      color: #aaa;
-      margin: 0 8px;
-    }
-
-    footer a:hover {
-      color: #ffd400;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
-
-    @media(max-width: 800px) {
-
-      header {
-        padding: 0 15px;
-      }
+    @media(max-width:800px) {
 
       .logo {
         width: 225px;
@@ -360,62 +302,22 @@
         height: 275px;
       }
 
-      nav {
-        display: none;
-      }
-
-      .menu-button {
-        display: block;
-      }
-
-      .hero {
-        padding: 45px 18px 40px;
-      }
-
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      main {
-        padding: 25px 12px 50px;
-      }
-
-      .product-box {
-        padding: 20px;
-      }
-
-      .product-top {
+      .product-main {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 30px;
       }
 
-      .product-image-area {
-        min-height: 280px;
+      .product-image {
+        height: 350px;
       }
 
-      .product-info h1 {
-        font-size: 29px;
-      }
-
-      .shop-row {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      .shop-price {
-        text-align: left;
-      }
-
-      .shop-button {
-        width: 100%;
-      }
     }
 
-    @media(max-width: 550px) {
+    @media(max-width:550px) {
+
+      header {
+        padding: 0 5%;
+      }
 
       .logo {
         width: 190px;
@@ -426,42 +328,71 @@
         height: 235px;
       }
 
-      .menu-button {
-        font-size: 27px;
+      .menu-panel {
+        right: 5%;
+        width: 270px;
+      }
+
+      .hero {
+        padding: 40px 15px 45px;
       }
 
       .hero h1 {
-        font-size: 27px;
+        font-size: 28px;
       }
 
       .hero p {
-        font-size: 15px;
+        font-size: 14px;
       }
 
-      .product-box {
-        padding: 15px;
-        border-radius: 14px;
+      .product-section {
+        margin: 30px auto 50px;
+        padding: 0 12px;
       }
 
-      .product-image-area {
-        min-height: 240px;
-        padding: 18px;
+      .product-detail {
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .product-brand {
+        font-size: 11px;
+      }
+
+      .product-name {
+        font-size: 25px;
+        margin-bottom: 25px;
       }
 
       .product-image {
-        max-height: 240px;
+        height: 280px;
+        padding: 10px;
       }
 
-      .product-info h1 {
-        font-size: 25px;
+      .shops-title {
+        font-size: 21px;
       }
 
-      .comparison h2 {
-        font-size: 23px;
+      .shop-row {
+        padding: 13px;
       }
+
+      .shop-name {
+        font-size: 15px;
+      }
+
+      .shop-price {
+        font-size: 17px;
+      }
+
+      .shop-button {
+        padding: 9px 11px;
+        font-size: 12px;
+      }
+
     }
 
-    @media(max-width: 380px) {
+    @media(max-width:380px) {
 
       .logo {
         width: 170px;
@@ -471,167 +402,191 @@
         height: 215px;
       }
 
-      .product-info h1 {
-        font-size: 23px;
+      .menu-button {
+        width: 45px;
+        height: 45px;
       }
+
+      .product-detail {
+        padding: 16px;
+      }
+
+      .product-name {
+        font-size: 22px;
+      }
+
+      .shop-row {
+        gap: 8px;
+      }
+
+      .shop-button {
+        padding: 8px 9px;
+        font-size: 11px;
+      }
+
     }
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+<header>
 
-  <header>
+  <a href="index.html" class="logo">
+    <img src="20879_nobg (1).png" alt="DealKira">
+  </a>
 
-    <a href="index.html" class="logo">
-      <img src="20879_nobg (1).png" alt="DealKira">
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    onclick="toggleMenu()"
+    aria-label="Menü öffnen"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-panel" id="menuPanel">
+
+    <a href="konto.html">
+      <span class="menu-icon">👤</span>
+      Konto
     </a>
 
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="deals.html">Deals</a>
-      <a href="telefon.html">Telefone</a>
-      <a href="tablets.html">Tablets</a>
-      <a href="konto.html">Konto</a>
-    </nav>
-
-    <button class="menu-button" onclick="toggleMenu()" aria-label="Menü">
-      ☰
-    </button>
-
-  </header>
-
-  <!-- =========================
-       HERO
-  ========================= -->
-
-  <section class="hero">
-    <h1>Produktvergleich</h1>
-    <p>Tablet-Preise verschiedener Shops vergleichen</p>
-  </section>
-
-  <!-- =========================
-       MAIN
-  ========================= -->
-
-  <main>
-
-    <a href="tablets.html" class="back-link">
-      ← Zurück zu den Tablets
+    <a href="suche.html">
+      <span class="menu-icon">🔎</span>
+      Suche
     </a>
 
-    <div id="product-container">
-      <div class="error-box">
-        <h1>Produkt wird geladen …</h1>
-        <p>Bitte einen Moment warten.</p>
-      </div>
+    <a href="kategorien.html">
+      <span class="menu-icon">📂</span>
+      Kategorien
+    </a>
+
+    <a href="deals.html">
+      <span class="menu-icon">🔥</span>
+      Deals
+    </a>
+
+    <div class="menu-divider"></div>
+
+    <a href="einstellungen.html">
+      <span class="menu-icon">⚙️</span>
+      Einstellungen
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+  <h1>Produktvergleich</h1>
+  <p>Preise verschiedener Shops vergleichen</p>
+</section>
+
+
+<main class="product-section">
+
+  <a href="tablets.html" class="back-link">
+    ← Zurück zu den Tablets
+  </a>
+
+  <div id="productContainer">
+
+    <div class="error-message">
+      Produkt wird geladen...
     </div>
 
-  </main>
+  </div>
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
-    <div>
-      © 2026 DealKira
-    </div>
-
-    <div style="margin-top:10px;">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
-  </footer>
+</main>
 
 
-  <script>
+<footer>
+  © 2026 DealKira – Deals & Preise vergleichen
+</footer>
 
-    /* =========================
-       MOBILES MENÜ
-    ========================= */
 
-    function toggleMenu() {
-      const nav = document.querySelector("nav");
+<script>
 
-      if (nav.style.display === "flex") {
-        nav.style.display = "none";
-      } else {
-        nav.style.display = "flex";
-        nav.style.position = "absolute";
-        nav.style.top = "72px";
-        nav.style.left = "0";
-        nav.style.right = "0";
-        nav.style.background = "#000";
-        nav.style.flexDirection = "column";
-        nav.style.padding = "20px";
-        nav.style.gap = "18px";
+  /* ========================= */
+  /* MENÜ */
+  /* ========================= */
+
+  function toggleMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.toggle("open");
+    button.classList.toggle("active");
+
+  }
+
+
+  function closeMenu() {
+
+    const menu =
+      document.getElementById("menuPanel");
+
+    const button =
+      document.getElementById("menuButton");
+
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+  }
+
+
+  document.addEventListener(
+    "click",
+    function(event) {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+
+      if (
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+
+        closeMenu();
+
       }
+
     }
+  );
 
 
-    /* =========================
-       HTML SICHER AUSGEBEN
-    ========================= */
+  /* ========================= */
+  /* PRODUKT LADEN */
+  /* ========================= */
 
-    function escapeHtml(value) {
+  async function loadProduct() {
 
-      if (value === null || value === undefined) {
-        return "";
-      }
-
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
 
 
-    /* =========================
-       URL SICHER AUSGEBEN
-    ========================= */
-
-    function safeUrl(value) {
-
-      if (!value) {
-        return "";
-      }
-
-      try {
-
-        const url = new URL(value, window.location.href);
-
-        if (
-          url.protocol === "http:" ||
-          url.protocol === "https:"
-        ) {
-          return url.href;
-        }
-
-      } catch (error) {
-        return "";
-      }
-
-      return "";
-    }
-
-
-    /* =========================
-       PRODUKT LADEN
-    ========================= */
-
-    async function loadProduct() {
-
-      const container =
-        document.getElementById("product-container");
+    try {
 
       const params =
-        new URLSearchParams(window.location.search);
+        new URLSearchParams(
+          window.location.search
+        );
+
 
       const productId =
         params.get("id");
@@ -639,197 +594,184 @@
 
       if (!productId) {
 
-        container.innerHTML = `
-          <div class="error-box">
-            <h1>Produkt nicht gefunden</h1>
-            <p>
-              Es wurde keine Produkt-ID übergeben.
-            </p>
+        throw new Error(
+          "Keine Produkt-ID angegeben."
+        );
 
-            <a href="tablets.html" class="error-button">
-              Zu den Tablets
-            </a>
-          </div>
-        `;
-
-        return;
       }
 
 
-      try {
-
-        const response =
-          await fetch("tablets.json", {
+      const response =
+        await fetch(
+          "tablets.json",
+          {
             cache: "no-cache"
-          });
-
-
-        if (!response.ok) {
-          throw new Error(
-            "tablets.json konnte nicht geladen werden."
-          );
-        }
-
-
-        const products =
-          await response.json();
-
-
-        const product =
-          products.find(function(item) {
-
-            return String(item.id) === String(productId);
-
-          });
-
-
-        if (!product) {
-
-          container.innerHTML = `
-            <div class="error-box">
-              <h1>Produkt konnte nicht gefunden werden</h1>
-
-              <p>
-                Das Tablet mit der ID
-                <strong>${escapeHtml(productId)}</strong>
-                wurde in tablets.json nicht gefunden.
-              </p>
-
-              <a href="tablets.html" class="error-button">
-                Zu den Tablets
-              </a>
-            </div>
-          `;
-
-          return;
-        }
-
-
-        renderProduct(product);
-
-
-      } catch (error) {
-
-        console.error(
-          "Fehler beim Laden des Tablets:",
-          error
+          }
         );
 
 
-        container.innerHTML = `
-          <div class="error-box">
-            <h1>Fehler beim Laden</h1>
+      if (!response.ok) {
 
-            <p>
-              Die Tablet-Daten konnten nicht geladen werden.
-              Bitte überprüfe, ob <strong>tablets.json</strong>
-              im gleichen Ordner wie diese HTML-Datei liegt.
-            </p>
-
-            <a href="tablets.html" class="error-button">
-              Zurück zu den Tablets
-            </a>
-          </div>
-        `;
+        throw new Error(
+          "tablets.json konnte nicht geladen werden."
+        );
 
       }
+
+
+      const products =
+        await response.json();
+
+
+      const product =
+        products.find(
+          function(item) {
+
+            return String(item.id) === String(productId);
+
+          }
+        );
+
+
+      if (!product) {
+
+        throw new Error(
+          "Das angeforderte Produkt wurde nicht gefunden."
+        );
+
+      }
+
+
+      renderProduct(product);
+
+
+    } catch (error) {
+
+      console.error(
+        "Fehler beim Laden des Produkts:",
+        error
+      );
+
+
+      container.innerHTML = `
+        <div class="error-message">
+
+          Das Produkt konnte nicht gefunden werden.
+
+          <br><br>
+
+          <a
+            href="tablets.html"
+            style="
+              display:inline-block;
+              background:#ffd400;
+              color:#111;
+              text-decoration:none;
+              padding:12px 18px;
+              border-radius:9px;
+              font-weight:700;
+            "
+          >
+            Zurück zu den Tablets
+          </a>
+
+        </div>
+      `;
+
     }
 
-
-    /* =========================
-       PRODUKT DARSTELLEN
-    ========================= */
-
-    function renderProduct(product) {
-
-      const container =
-        document.getElementById("product-container");
+  }
 
 
-      const brand =
-        escapeHtml(product.brand || "");
+  /* ========================= */
+  /* PRODUKT ANZEIGEN */
+  /* ========================= */
+
+  function renderProduct(product) {
+
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
 
 
-      const name =
-        escapeHtml(product.name || "Tablet");
+    const shops =
+      Array.isArray(product.shops)
+        ? product.shops
+        : [];
 
 
-      const series =
-        escapeHtml(product.series || "");
+    let shopRows = "";
 
 
-      const image =
-        safeUrl(product.image || "");
+    if (!shops.length) {
 
+      shopRows = `
+        <div class="shop-row">
 
-      let imageHtml = "";
+          <div class="shop-info">
 
-      if (image) {
+            <div class="shop-name">
+              Noch keine Shops vorhanden
+            </div>
 
-        imageHtml = `
-          <img
-            class="product-image"
-            src="${escapeHtml(image)}"
-            alt="${name}"
-            loading="eager"
-          >
-        `;
+            <div class="shop-price empty">
+              Derzeit sind keine Angebote hinterlegt.
+            </div>
 
-      } else {
-
-        imageHtml = `
-          <div class="no-image">
-            Kein Produktbild verfügbar
           </div>
-        `;
 
-      }
+        </div>
+      `;
 
+    } else {
 
-      /* =========================
-         SHOPS
-      ========================= */
-
-      let shopsHtml = "";
-
-
-      if (
-        Array.isArray(product.shops) &&
-        product.shops.length > 0
-      ) {
-
-        product.shops.forEach(function(shop) {
-
-          if (!shop) {
-            return;
-          }
-
+      shops.forEach(
+        function(shop) {
 
           const shopName =
-            escapeHtml(
-              shop.name || "Shop"
-            );
+            shop.name || "Shop";
 
 
           const price =
-            shop.price
-              ? escapeHtml(shop.price)
-              : "Preis ansehen";
+            shop.price || "";
 
 
           const link =
-            safeUrl(shop.link || "");
+            shop.link || "";
 
 
-          let buttonHtml = "";
+          let priceHTML;
 
 
-          if (link) {
+          if (price.trim()) {
 
-            buttonHtml = `
+            priceHTML = `
+              <div class="shop-price">
+                ${escapeHTML(price)}
+              </div>
+            `;
+
+          } else {
+
+            priceHTML = `
+              <div class="shop-price empty">
+                Preis ansehen
+              </div>
+            `;
+
+          }
+
+
+          let buttonHTML;
+
+
+          if (link.trim()) {
+
+            buttonHTML = `
               <a
                 class="shop-button"
-                href="${escapeHtml(link)}"
+                href="${escapeAttribute(link)}"
                 target="_blank"
                 rel="nofollow sponsored noopener noreferrer"
               >
@@ -839,136 +781,142 @@
 
           } else {
 
-            buttonHtml = `
-              <div class="no-link">
+            buttonHTML = `
+              <span
+                class="shop-button"
+                style="
+                  opacity:.5;
+                  cursor:not-allowed;
+                "
+              >
                 Kein Link
-              </div>
+              </span>
             `;
 
           }
 
 
-          shopsHtml += `
+          shopRows += `
+
             <div class="shop-row">
 
-              <div class="shop-name">
-                ${shopName}
+              <div class="shop-info">
+
+                <div class="shop-name">
+                  ${escapeHTML(shopName)}
+                </div>
+
+                ${priceHTML}
+
               </div>
 
-              <div class="shop-price">
-                ${price}
-              </div>
-
-              <div>
-                ${buttonHtml}
-              </div>
+              ${buttonHTML}
 
             </div>
+
           `;
 
-        });
+        }
+      );
 
-      } else {
-
-        shopsHtml = `
-          <div class="no-shops">
-            Für dieses Tablet sind derzeit keine Shops
-            hinterlegt.
-          </div>
-        `;
-
-      }
+    }
 
 
-      /* =========================
-         GESAMTE PRODUKTSEITE
-      ========================= */
-
-      container.innerHTML = `
-
-        <div class="product-box">
-
-          <div class="product-top">
-
-            <div class="product-image-area">
-              ${imageHtml}
-            </div>
+    document.title =
+      (product.name || "Produkt") +
+      " – DealKira";
 
 
-            <div class="product-info">
+    container.innerHTML = `
 
-              ${
-                brand
-                  ? `
-                    <div class="product-brand">
-                      ${brand}
-                    </div>
-                  `
-                  : ""
-              }
+      <div class="product-detail">
 
-
-              <h1>
-                ${name}
-              </h1>
-
-
-              ${
-                series
-                  ? `
-                    <div class="product-series">
-                      ${series}
-                    </div>
-                  `
-                  : ""
-              }
-
-
-              <div class="product-description">
-                Vergleiche die verfügbaren Angebote
-                für dieses Tablet und finde den passenden
-                Shop.
+        ${
+          product.brand
+            ? `
+              <div class="product-brand">
+                ${escapeHTML(product.brand)}
               </div>
+            `
+            : ""
+        }
 
-            </div>
+        <h1 class="product-name">
+          ${escapeHTML(product.name || "Tablet")}
+        </h1>
+
+
+        <div class="product-main">
+
+          <div class="product-image">
+
+            <img
+              src="${escapeAttribute(product.image || "")}"
+              alt="${escapeAttribute(product.name || "Tablet")}"
+              onerror="this.style.display='none';"
+            >
 
           </div>
 
 
-          <div class="comparison">
+          <div>
 
-            <h2>
-              Preise vergleichen
+            <h2 class="shops-title">
+              Angebote vergleichen
             </h2>
 
-            <p class="comparison-intro">
-              Angebote verschiedener Shops im Überblick:
-            </p>
-
             <div class="shops">
-              ${shopsHtml}
+              ${shopRows}
             </div>
 
           </div>
 
         </div>
 
-      `;
+      </div>
+
+    `;
+
+  }
+
+
+  /* ========================= */
+  /* SICHERES HTML */
+  /* ========================= */
+
+  function escapeHTML(value) {
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  }
+
+
+  function escapeAttribute(value) {
+
+    return escapeHTML(value);
+
+  }
+
+
+  /* ========================= */
+  /* START */
+  /* ========================= */
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+      loadProduct();
+
     }
+  );
 
-
-    /* =========================
-       START
-    ========================= */
-
-    document.addEventListener(
-      "DOMContentLoaded",
-      function() {
-        loadProduct();
-      }
-    );
-
-  </script>
+</script>
 
 </body>
 </html>
