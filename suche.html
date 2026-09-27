@@ -1240,6 +1240,236 @@
   }
 
 
+  /*
+    Prüft, ob ein Suchwort wie eine Modellnummer
+    aussieht.
+
+    Beispiele:
+    S26
+    S26+
+    A56
+    A16
+    ZFOLD7
+    ZFLIP7
+    IPHONE17
+    17PRO
+
+    Solche Begriffe dürfen NICHT durch die
+    normale Rechtschreibkorrektur ersetzt werden.
+  */
+
+  function isModelToken(word) {
+
+    const normalized =
+      word
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+
+    if (!normalized) {
+
+      return false;
+
+    }
+
+
+    /*
+      Buchstaben + Zahl
+      z.B. s26, a56, zfold7
+    */
+
+    if (
+      /^[a-z]+\d+[a-z]*$/i.test(normalized)
+    ) {
+
+      return true;
+
+    }
+
+
+    /*
+      Zahl + Buchstaben
+      z.B. 17pro
+    */
+
+    if (
+      /^\d+[a-z]+$/i.test(normalized)
+    ) {
+
+      return true;
+
+    }
+
+
+    /*
+      Reine Modellnummern mit mindestens
+      zwei Ziffern.
+    */
+
+    if (
+      /^\d{2,}[a-z]*$/i.test(normalized)
+    ) {
+
+      return true;
+
+    }
+
+
+    return false;
+
+  }
+
+
+  /*
+    Suchwort gegen Produkttext prüfen.
+
+    WICHTIG:
+    Modellnummern werden exakt gesucht.
+    Dadurch wird S26 NICHT mehr mit S25,
+    S24, S23 usw. verwechselt.
+  */
+
+  function matchSearchWord(
+    searchWord,
+    textWords
+  ) {
+
+    const normalizedSearchWord =
+      searchWord
+        .toLowerCase()
+        .trim();
+
+
+    if (
+      !normalizedSearchWord
+    ) {
+
+      return false;
+
+    }
+
+
+    /*
+      Modellnummer:
+      Nur exakter Treffer.
+    */
+
+    if (
+      isModelToken(normalizedSearchWord)
+    ) {
+
+      const cleanSearchWord =
+        normalizedSearchWord
+          .replace(/[^a-z0-9]/g, "");
+
+
+      for (
+        const textWord of textWords
+      ) {
+
+        const cleanTextWord =
+          textWord
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "");
+
+
+        /*
+          Exakte Modellnummer oder Modellnummer
+          am Anfang des Produktwortes.
+
+          Dadurch wird:
+          S26 → S26
+          S26 → S26+
+          S26 → S26 Ultra
+
+          aber NICHT:
+          S26 → S25
+          S26 → S24
+        */
+
+        if (
+          cleanTextWord === cleanSearchWord ||
+          cleanTextWord.startsWith(cleanSearchWord)
+        ) {
+
+          return true;
+
+        }
+
+      }
+
+
+      return false;
+
+    }
+
+
+    /*
+      Normale Suchbegriffe:
+      Teiltreffer erlauben.
+    */
+
+    for (
+      const textWord of textWords
+    ) {
+
+      if (
+        textWord.includes(normalizedSearchWord)
+      ) {
+
+        return true;
+
+      }
+
+
+      /*
+        Rechtschreibfehler weiterhin erlauben,
+        aber nicht bei Modellnummern.
+      */
+
+      const distance =
+        levenshteinDistance(
+          normalizedSearchWord,
+          textWord
+        );
+
+
+      let allowedDistance = 1;
+
+
+      if (
+        normalizedSearchWord.length >= 7
+      ) {
+
+        allowedDistance = 2;
+
+      }
+
+
+      if (
+        normalizedSearchWord.length >= 11
+      ) {
+
+        allowedDistance = 3;
+
+      }
+
+
+      if (
+        distance <= allowedDistance
+      ) {
+
+        return true;
+
+      }
+
+    }
+
+
+    return false;
+
+  }
+
+
   function fuzzyMatch(searchTerm, text) {
 
     searchTerm =
@@ -1249,105 +1479,73 @@
       text.toLowerCase().trim();
 
 
-    if (!searchTerm || !text) {
+    if (
+      !searchTerm ||
+      !text
+    ) {
 
       return false;
 
     }
 
 
-    /* Exakter Treffer */
-
-    if (
-      text.includes(searchTerm)
-    ) {
-
-      return true;
-
-    }
-
-
-    /* Suchbegriffe aufteilen */
+    /*
+      Suchbegriffe aufteilen.
+    */
 
     const searchWords =
       searchTerm.split(/\s+/);
 
-    const textWords =
-      text.split(/\s+/);
 
+    /*
+      Produkttext ebenfalls in einzelne
+      Wörter zerlegen.
+    */
+
+    const textWords =
+      text
+        .split(/\s+/)
+        .map(
+          function(word) {
+
+            return word
+              .replace(/[(),/|]/g, "");
+
+          }
+        )
+        .filter(Boolean);
+
+
+    /*
+      JEDES relevante Suchwort muss im
+      Produkt vorhanden sein.
+
+      Dadurch bedeutet:
+
+      Galaxy S26
+
+      → Galaxy muss vorhanden sein
+      → S26 muss vorhanden sein
+    */
 
     for (
       const searchWord of searchWords
     ) {
 
-      if (searchWord.length < 3) {
+      if (
+        searchWord.length < 2
+      ) {
 
         continue;
 
       }
 
 
-      let wordFound = false;
-
-
-      for (
-        const textWord of textWords
-      ) {
-
-        /* Teiltreffer */
-
-        if (
-          textWord.includes(searchWord)
-        ) {
-
-          wordFound = true;
-
-          break;
-
-        }
-
-
-        /* Rechtschreibfehler */
-
-        const distance =
-          levenshteinDistance(
-            searchWord,
-            textWord
-          );
-
-
-        let allowedDistance = 1;
-
-
-        if (
-          searchWord.length >= 7
-        ) {
-
-          allowedDistance = 2;
-
-        }
-
-
-        if (
-          searchWord.length >= 11
-        ) {
-
-          allowedDistance = 3;
-
-        }
-
-
-        if (
-          distance <= allowedDistance
-        ) {
-
-          wordFound = true;
-
-          break;
-
-        }
-
-      }
+      const wordFound =
+        matchSearchWord(
+          searchWord,
+          textWords
+        );
 
 
       if (!wordFound) {
@@ -1397,11 +1595,6 @@
     }
 
 
-    /* Ergebnisse sichtbar machen */
-
-    results.classList.add("show");
-
-
     /*
       Name + Marke + Kategorie + Serie
       durchsuchen.
@@ -1422,6 +1615,7 @@
 
           const series =
             product.series || "";
+
 
           const combinedText =
             name +
@@ -1444,11 +1638,17 @@
 
     /* ERGEBNISANZAHL ANZEIGEN */
 
-    if (foundProducts.length > 0) {
+    if (
+      foundProducts.length > 0
+    ) {
 
       resultCount.textContent =
         foundProducts.length +
-        " Produkte gefunden";
+        (
+          foundProducts.length === 1
+            ? " Produkt gefunden"
+            : " Produkte gefunden"
+        );
 
     } else {
 
@@ -1458,7 +1658,24 @@
     }
 
 
-    renderResults(foundProducts);
+    /* ERGEBNISSE SICHTBAR MACHEN */
+
+    if (
+      foundProducts.length > 0
+    ) {
+
+      results.classList.add("show");
+
+    } else {
+
+      results.classList.remove("show");
+
+    }
+
+
+    renderResults(
+      foundProducts
+    );
 
   }
 
@@ -1516,6 +1733,3 @@
 
 </body>
 </html>
-
-
-
