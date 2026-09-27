@@ -1096,8 +1096,53 @@
       const title =
         document.createElement("h2");
 
-      title.textContent =
+      /*
+       * =========================
+       * PRODUKTNAME
+       * =========================
+       *
+       * Die Marke wird aus dem
+       * angezeigten Produktnamen
+       * entfernt.
+       *
+       * Beispiel:
+       *
+       * Samsung
+       * Samsung Galaxy S26 Ultra
+       *
+       * wird zu:
+       *
+       * Samsung
+       * Galaxy S26 Ultra
+       *
+       * Die JSON-Daten selbst
+       * werden NICHT verändert.
+       */
+
+      let displayName =
         product.name || "Telefon";
+
+      const productBrand =
+        product.brand || "";
+
+      if (
+        productBrand &&
+        displayName
+          .toLowerCase()
+          .startsWith(
+            productBrand.toLowerCase() + " "
+          )
+      ) {
+
+        displayName =
+          displayName.substring(
+            productBrand.length
+          ).trim();
+
+      }
+
+      title.textContent =
+        displayName;
 
 
       const dealButton =
