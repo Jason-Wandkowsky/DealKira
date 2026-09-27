@@ -305,6 +305,14 @@
       flex-direction: column;
     }
 
+    .product-brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: #777;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+    }
+
     .product-content h2 {
       font-size: 23px;
       margin-bottom: 20px;
@@ -468,6 +476,11 @@
 
       .product-content {
         padding: 14px;
+      }
+
+      .product-brand {
+        font-size: 10px;
+        margin-bottom: 5px;
       }
 
       .product-content h2 {
@@ -1283,6 +1296,20 @@
 
       content.className =
         "product-content";
+
+
+      const brand =
+        document.createElement("div");
+
+      brand.className =
+        "product-brand";
+
+      brand.textContent =
+        product.brand || "";
+
+      content.appendChild(
+        brand
+      );
 
 
       const title =
@@ -2408,6 +2435,3 @@
 
 </body>
 </html>
-
-
-
