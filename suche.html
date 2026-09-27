@@ -245,8 +245,16 @@
 
     .filter-area {
       display: flex;
+      align-items: center;
       justify-content: flex-end;
       margin-top: 20px;
+    }
+
+    .result-count {
+      margin-right: auto;
+      color: #555;
+      font-size: 15px;
+      font-weight: 700;
     }
 
     .filter-button {
@@ -400,37 +408,6 @@
       background: #e6bf00;
     }
 
-    /* KEINE ERGEBNISSE */
-
-    .no-results {
-      grid-column: 1 / -1;
-      background: #fff;
-      border-radius: 16px;
-      padding: 50px 25px;
-      text-align: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,.08);
-      display: none;
-    }
-
-    .no-results.show {
-      display: block;
-    }
-
-    .no-results-icon {
-      font-size: 55px;
-      margin-bottom: 15px;
-    }
-
-    .no-results h2 {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    .no-results p {
-      color: #666;
-      font-size: 15px;
-    }
-
     /* FOOTER */
 
     footer {
@@ -516,6 +493,10 @@
         margin-top: 15px;
       }
 
+      .result-count {
+        font-size: 12px;
+      }
+
       .filter-button {
         padding: 10px 17px;
         font-size: 14px;
@@ -576,19 +557,6 @@
         border-radius: 7px;
       }
 
-      .no-results {
-        padding: 40px 15px;
-        border-radius: 13px;
-      }
-
-      .no-results h2 {
-        font-size: 20px;
-      }
-
-      .no-results p {
-        font-size: 14px;
-      }
-
     }
 
     /* SEHR KLEINE HANDYS */
@@ -606,6 +574,10 @@
       .menu-button {
         width: 45px;
         height: 45px;
+      }
+
+      .result-count {
+        font-size: 11px;
       }
 
     }
@@ -710,6 +682,11 @@
 
   <div class="filter-area">
 
+    <div
+      class="result-count"
+      id="resultCount"
+    ></div>
+
     <button
       class="filter-button"
       onclick="toggleFilter()"
@@ -734,25 +711,6 @@
   >
 
     <!-- PRODUKTE WERDEN HIER AUTOMATISCH AUS DEN JSON-DATEIEN GELADEN -->
-
-    <div
-      class="no-results"
-      id="noResults"
-    >
-
-      <div class="no-results-icon">
-        🔍
-      </div>
-
-      <h2>
-        Keine Produkte gefunden
-      </h2>
-
-      <p>
-        Versuche einen anderen Suchbegriff.
-      </p>
-
-    </div>
 
   </div>
 
@@ -859,12 +817,6 @@
   /*
     Hier können später ganz einfach weitere
     JSON-Dateien ergänzt werden.
-
-    category:
-    interne Bezeichnung der Kategorie
-
-    detailPage:
-    jeweilige Produktdetailseite
   */
 
   const productSources = [
@@ -1208,14 +1160,6 @@
     const results =
       document.getElementById("results");
 
-    const noResults =
-      document.getElementById("noResults");
-
-
-    /*
-      Alle bisherigen dynamischen Karten
-      entfernen, aber noResults behalten.
-    */
 
     results
       .querySelectorAll(".result-card")
@@ -1228,34 +1172,13 @@
       );
 
 
-    if (products.length === 0) {
-
-      noResults.classList.add("show");
-
-      return;
-
-    }
-
-
-    noResults.classList.remove("show");
-
-
-    /*
-      noResults liegt im DOM an der Stelle,
-      an der die neuen Karten vorbeigefügt
-      werden sollen.
-    */
-
     products.forEach(
       function(product) {
 
         const card =
           createProductCard(product);
 
-        results.insertBefore(
-          card,
-          noResults
-        );
+        results.appendChild(card);
 
       }
     );
@@ -1455,15 +1378,17 @@
     const results =
       document.getElementById("results");
 
+    const resultCount =
+      document.getElementById("resultCount");
 
-    /*
-      Keine Eingabe:
-      Ergebnisse wieder verstecken.
-    */
+
+    /* Keine Eingabe */
 
     if (searchTerm === "") {
 
       results.classList.remove("show");
+
+      resultCount.textContent = "";
 
       renderResults([]);
 
@@ -1472,11 +1397,14 @@
     }
 
 
+    /* Ergebnisse sichtbar machen */
+
     results.classList.add("show");
 
 
     /*
-      Name + Marke + Kategorie durchsuchen.
+      Name + Marke + Kategorie + Serie
+      durchsuchen.
     */
 
     const foundProducts =
@@ -1514,6 +1442,22 @@
       );
 
 
+    /* ERGEBNISANZAHL ANZEIGEN */
+
+    if (foundProducts.length > 0) {
+
+      resultCount.textContent =
+        foundProducts.length +
+        " Produkte gefunden";
+
+    } else {
+
+      resultCount.textContent =
+        "Keine Produkte gefunden";
+
+    }
+
+
     renderResults(foundProducts);
 
   }
@@ -1529,10 +1473,15 @@
     const results =
       document.getElementById("results");
 
+    const resultCount =
+      document.getElementById("resultCount");
+
 
     input.value = "";
 
     results.classList.remove("show");
+
+    resultCount.textContent = "";
 
     renderResults([]);
 
@@ -1567,3 +1516,6 @@
 
 </body>
 </html>
+
+
+
