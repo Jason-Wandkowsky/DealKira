@@ -1094,7 +1094,7 @@
     "https://zniknbouugmgvqkkoamo.supabase.co";
 
   const SUPABASE_KEY =
-    "sb_publishable_Jr7OQSc8lgIja_Hav5-mw_B_htFgzI";
+    "sb_publishable_Jr7OQSc8G8lgIja_Hav5-mw_B_htFgzI";
 
   const supabaseClient =
     window.supabase.createClient(
@@ -1228,14 +1228,21 @@
 
       favoriteButton.setAttribute(
         "aria-label",
-        product.name +
+        (product.name || "Telefon") +
         " zu Favoriten hinzufügen"
       );
 
       favoriteButton.addEventListener(
         "click",
-        function() {
-          toggleFavorite(favoriteButton);
+        function(event) {
+
+          event.preventDefault();
+          event.stopPropagation();
+
+          toggleFavorite(
+            favoriteButton
+          );
+
         }
       );
 
@@ -1266,7 +1273,9 @@
         };
 
 
-      imageContainer.appendChild(image);
+      imageContainer.appendChild(
+        image
+      );
 
 
       const content =
@@ -1319,16 +1328,31 @@
       }
 
 
-      content.appendChild(title);
-      content.appendChild(dealButton);
+      content.appendChild(
+        title
+      );
+
+      content.appendChild(
+        dealButton
+      );
 
 
-      card.appendChild(favoriteButton);
-      card.appendChild(imageContainer);
-      card.appendChild(content);
+      card.appendChild(
+        favoriteButton
+      );
+
+      card.appendChild(
+        imageContainer
+      );
+
+      card.appendChild(
+        content
+      );
 
 
-      productsContainer.appendChild(card);
+      productsContainer.appendChild(
+        card
+      );
 
     });
 
@@ -1388,7 +1412,9 @@
         !menu.contains(event.target) &&
         !button.contains(event.target)
       ) {
+
         closeMenu();
+
       }
 
     }
@@ -1402,9 +1428,13 @@
   function toggleFilter() {
 
     const filter =
-      document.getElementById("filterMessage");
+      document.getElementById(
+        "filterMessage"
+      );
 
-    filter.classList.toggle("show");
+    filter.classList.toggle(
+      "show"
+    );
 
   }
 
@@ -1417,10 +1447,16 @@
 
   function toggleBrandFilter(brand) {
 
-    if (activeBrand === brand) {
+    if (
+      activeBrand === brand
+    ) {
+
       activeBrand = null;
+
     } else {
+
       activeBrand = brand;
+
     }
 
     activeSeries = null;
@@ -1435,16 +1471,24 @@
 
   function toggleSeriesFilter(series) {
 
-    if (activeSeries === series) {
+    if (
+      activeSeries === series
+    ) {
+
       activeSeries = null;
+
     } else {
+
       activeSeries = series;
+
     }
 
     if (activeSeries) {
+
       activeBrand = "Samsung";
       activeIphoneSeries = null;
       activeAdditionalSeries = null;
+
     }
 
     updateFilterButtons();
@@ -1455,16 +1499,24 @@
 
   function toggleIphoneSeriesFilter(series) {
 
-    if (activeIphoneSeries === series) {
+    if (
+      activeIphoneSeries === series
+    ) {
+
       activeIphoneSeries = null;
+
     } else {
+
       activeIphoneSeries = series;
+
     }
 
     if (activeIphoneSeries) {
+
       activeBrand = "iPhone";
       activeSeries = null;
       activeAdditionalSeries = null;
+
     }
 
     updateFilterButtons();
@@ -1475,15 +1527,23 @@
 
   function toggleAdditionalSeriesFilter(series) {
 
-    if (activeAdditionalSeries === series) {
+    if (
+      activeAdditionalSeries === series
+    ) {
+
       activeAdditionalSeries = null;
+
     } else {
+
       activeAdditionalSeries = series;
+
     }
 
     if (activeAdditionalSeries) {
+
       activeSeries = null;
       activeIphoneSeries = null;
+
     }
 
     updateFilterButtons();
@@ -1657,10 +1717,19 @@
 
 
     const samsungSeriesButtons = {
-      S: "filterS",
-      A: "filterA",
-      Z: "filterZ",
-      XCover: "filterXCover"
+
+      S:
+        "filterS",
+
+      A:
+        "filterA",
+
+      Z:
+        "filterZ",
+
+      XCover:
+        "filterXCover"
+
     };
 
 
@@ -1836,7 +1905,9 @@
         activeBrand &&
         brand !== activeBrand
       ) {
+
         visible = false;
+
       }
 
 
@@ -1849,7 +1920,9 @@
           brand !== "Samsung" ||
           series !== activeSeries
         ) {
+
           visible = false;
+
         }
 
       }
@@ -1864,7 +1937,9 @@
           brand !== "iPhone" ||
           series !== activeIphoneSeries
         ) {
+
           visible = false;
+
         }
 
       }
@@ -1878,7 +1953,9 @@
         if (
           series !== activeAdditionalSeries
         ) {
+
           visible = false;
+
         }
 
       }
@@ -1973,6 +2050,10 @@
 
       if (!user) {
 
+        alert(
+          "Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen."
+        );
+
         window.location.href =
           "konto.html";
 
@@ -2025,7 +2106,9 @@
 
 
       if (selectError) {
+
         throw selectError;
+
       }
 
 
@@ -2048,7 +2131,9 @@
 
 
         if (error) {
+
           throw error;
+
         }
 
 
@@ -2099,7 +2184,9 @@
 
 
         if (error) {
+
           throw error;
+
         }
 
 
@@ -2125,6 +2212,18 @@
         error
       );
 
+      alert(
+        "Favorit konnte nicht gespeichert werden.\n\n" +
+        "Fehler: " +
+        (error?.message || "Unbekannter Fehler") +
+        "\nCode: " +
+        (error?.code || "unbekannt") +
+        "\nDetails: " +
+        (error?.details || "keine") +
+        "\nHinweis: " +
+        (error?.hint || "keiner")
+      );
+
     } finally {
 
       button.disabled = false;
@@ -2141,7 +2240,9 @@
 
 
     if (!user) {
+
       return;
+
     }
 
 
@@ -2174,7 +2275,9 @@
       new Set(
         favorites.map(
           function(favorite) {
+
             return favorite.produkt_id;
+
           }
         )
       );
@@ -2197,7 +2300,9 @@
 
 
           if (!button) {
+
             return;
+
           }
 
 
@@ -2254,7 +2359,9 @@
 
         setTimeout(
           function() {
+
             loadFavorites();
+
           },
           0
         );
@@ -2301,3 +2408,6 @@
 
 </body>
 </html>
+
+
+
