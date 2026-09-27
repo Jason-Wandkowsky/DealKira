@@ -1241,10 +1241,10 @@
 
 
   /*
-    Prüft, ob ein Suchwort wie eine Modellnummer
-    aussieht.
+    ERKENNT MODELLNUMMERN
 
     Beispiele:
+
     S26
     S26+
     A56
@@ -1254,8 +1254,9 @@
     IPHONE17
     17PRO
 
-    Solche Begriffe dürfen NICHT durch die
-    normale Rechtschreibkorrektur ersetzt werden.
+    Solche Begriffe dürfen NICHT durch
+    die normale Rechtschreibkorrektur
+    verändert werden.
   */
 
   function isModelToken(word) {
@@ -1264,6 +1265,7 @@
       word
         .toLowerCase()
         .replace(/[^a-z0-9]/g, "");
+
 
     if (!normalized) {
 
@@ -1274,7 +1276,11 @@
 
     /*
       Buchstaben + Zahl
-      z.B. s26, a56, zfold7
+
+      s26
+      a56
+      zfold7
+      zflip7
     */
 
     if (
@@ -1288,7 +1294,8 @@
 
     /*
       Zahl + Buchstaben
-      z.B. 17pro
+
+      17pro
     */
 
     if (
@@ -1301,8 +1308,11 @@
 
 
     /*
-      Reine Modellnummern mit mindestens
-      zwei Ziffern.
+      Reine Modellnummer
+
+      17
+      26
+      56
     */
 
     if (
@@ -1320,12 +1330,57 @@
 
 
   /*
-    Suchwort gegen Produkttext prüfen.
+    MODELLNUMMERN NORMALISIEREN
 
-    WICHTIG:
-    Modellnummern werden exakt gesucht.
-    Dadurch wird S26 NICHT mehr mit S25,
-    S24, S23 usw. verwechselt.
+    S 26
+    ↓
+    S26
+
+    A 56
+    ↓
+    A56
+
+    Z Fold 7
+    ↓
+    ZFold7
+
+    Z Flip 7
+    ↓
+    ZFlip7
+
+    iPhone 17
+    ↓
+    iPhone17
+  */
+
+  function normalizeModelSpacing(text) {
+
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(
+        /\b([a-z]+)\s+(\d{1,4})([a-z]*)\b/gi,
+        "$1$2$3"
+      );
+
+  }
+
+
+  /*
+    SUCHBEGRIFF NORMALISIEREN
+  */
+
+  function normalizeSearchTerm(searchTerm) {
+
+    return normalizeModelSpacing(
+      searchTerm
+    );
+
+  }
+
+
+  /*
+    SUCHWORT GEGEN PRODUKTWÖRTER PRÜFEN
   */
 
   function matchSearchWord(
@@ -1349,12 +1404,19 @@
 
 
     /*
-      Modellnummer:
-      Nur exakter Treffer.
+      MODELLNUMMER
+
+      Hier gibt es KEINE normale
+      Rechtschreibkorrektur.
+
+      S26 darf also NICHT durch
+      S25 oder S24 ersetzt werden.
     */
 
     if (
-      isModelToken(normalizedSearchWord)
+      isModelToken(
+        normalizedSearchWord
+      )
     ) {
 
       const cleanSearchWord =
@@ -1373,25 +1435,63 @@
 
 
         /*
-          Exakte Modellnummer oder Modellnummer
-          am Anfang des Produktwortes.
+          Exakter Treffer:
 
-          Dadurch wird:
           S26 → S26
-          S26 → S26+
-          S26 → S26 Ultra
-
-          aber NICHT:
-          S26 → S25
-          S26 → S24
         */
 
         if (
-          cleanTextWord === cleanSearchWord ||
-          cleanTextWord.startsWith(cleanSearchWord)
+          cleanTextWord ===
+          cleanSearchWord
         ) {
 
           return true;
+
+        }
+
+
+        /*
+          Variante desselben Modells:
+
+          S26 → S26+
+          S26 → S26Ultra
+          S26 → S26Pro
+
+          aber:
+
+          S26 ≠ S25
+          S26 ≠ S24
+          S26 ≠ S23
+        */
+
+        if (
+          cleanTextWord.startsWith(
+            cleanSearchWord
+          )
+        ) {
+
+          const rest =
+            cleanTextWord.substring(
+              cleanSearchWord.length
+            );
+
+
+          /*
+            Nach der Modellnummer dürfen
+            nur Buchstaben folgen.
+
+            Dadurch wird z.B. S260 nicht
+            versehentlich als S26 erkannt.
+          */
+
+          if (
+            rest === "" ||
+            /^[a-z]+$/i.test(rest)
+          ) {
+
+            return true;
+
+          }
 
         }
 
@@ -1404,7 +1504,8 @@
 
 
     /*
-      Normale Suchbegriffe:
+      NORMALE SUCHBEGRIFFE
+
       Teiltreffer erlauben.
     */
 
@@ -1413,7 +1514,9 @@
     ) {
 
       if (
-        textWord.includes(normalizedSearchWord)
+        textWord.includes(
+          normalizedSearchWord
+        )
       ) {
 
         return true;
@@ -1422,8 +1525,8 @@
 
 
       /*
-        Rechtschreibfehler weiterhin erlauben,
-        aber nicht bei Modellnummern.
+        Rechtschreibkorrektur weiterhin
+        für normale Wörter erlauben.
       */
 
       const distance =
@@ -1470,18 +1573,38 @@
   }
 
 
+  /*
+    HAUPT-SUCHFUNKTION
+
+    WICHTIG:
+
+    "S 26" wird zuerst zu "S26".
+
+    Dadurch sind:
+
+    S26
+    S 26
+
+    dieselbe Suche.
+  */
+
   function fuzzyMatch(searchTerm, text) {
 
-    searchTerm =
-      searchTerm.toLowerCase().trim();
+    const normalizedSearchTerm =
+      normalizeSearchTerm(
+        searchTerm
+      );
 
-    text =
-      text.toLowerCase().trim();
+
+    const normalizedText =
+      normalizeModelSpacing(
+        text
+      );
 
 
     if (
-      !searchTerm ||
-      !text
+      !normalizedSearchTerm ||
+      !normalizedText
     ) {
 
       return false;
@@ -1494,16 +1617,17 @@
     */
 
     const searchWords =
-      searchTerm.split(/\s+/);
+      normalizedSearchTerm
+        .split(/\s+/)
+        .filter(Boolean);
 
 
     /*
-      Produkttext ebenfalls in einzelne
-      Wörter zerlegen.
+      Produkttext aufteilen.
     */
 
     const textWords =
-      text
+      normalizedText
         .split(/\s+/)
         .map(
           function(word) {
@@ -1517,10 +1641,9 @@
 
 
     /*
-      JEDES relevante Suchwort muss im
-      Produkt vorhanden sein.
+      JEDES Suchwort muss gefunden werden.
 
-      Dadurch bedeutet:
+      Beispiel:
 
       Galaxy S26
 
@@ -1570,7 +1693,7 @@
       document.getElementById("searchInput");
 
     const searchTerm =
-      input.value.toLowerCase().trim();
+      input.value.trim();
 
 
     const results =
@@ -1580,9 +1703,11 @@
       document.getElementById("resultCount");
 
 
-    /* Keine Eingabe */
+    /* KEINE EINGABE */
 
-    if (searchTerm === "") {
+    if (
+      searchTerm === ""
+    ) {
 
       results.classList.remove("show");
 
@@ -1636,7 +1761,7 @@
       );
 
 
-    /* ERGEBNISANZAHL ANZEIGEN */
+    /* ERGEBNISANZAHL */
 
     if (
       foundProducts.length > 0
@@ -1658,7 +1783,7 @@
     }
 
 
-    /* ERGEBNISSE SICHTBAR MACHEN */
+    /* ERGEBNISSE ANZEIGEN */
 
     if (
       foundProducts.length > 0
@@ -1715,7 +1840,9 @@
       "keydown",
       function(event) {
 
-        if (event.key === "Enter") {
+        if (
+          event.key === "Enter"
+        ) {
 
           searchProducts();
 
