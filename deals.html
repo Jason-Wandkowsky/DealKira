@@ -19,16 +19,21 @@
       color: #111;
     }
 
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
       height: 72px;
-      background: #000;
+      background: #111;
+      padding: 0 6%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 24px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.25);
     }
 
     .logo {
@@ -36,6 +41,7 @@
       height: 65px;
       display: flex;
       align-items: center;
+      text-decoration: none;
       overflow: visible;
       position: relative;
     }
@@ -47,198 +53,273 @@
       display: block;
     }
 
-    .header-right {
+    /* =========================
+       BURGER BUTTON
+    ========================= */
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .menu-button span {
+      width: 23px;
+      height: 3px;
+      background: #ffd400;
+      border-radius: 3px;
+      transition: 0.25s;
+    }
+
+    .menu-button:hover {
+      background: #252525;
+      border-color: #ffd400;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* =========================
+       BURGER MENU
+    ========================= */
+
+    .menu-panel {
+      position: absolute;
+      top: 82px;
+      right: 6%;
+      width: 270px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.2s;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .menu-panel a {
       display: flex;
       align-items: center;
       gap: 12px;
-    }
-
-    .header-button {
-      background: #ffd400;
-      color: #000;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
+      color: #fff;
       text-decoration: none;
+      padding: 14px 15px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.2s;
     }
 
-    .hero {
-      background: #111;
-      color: white;
-      padding: 45px 20px;
+    .menu-panel a:hover {
+      background: #222;
+      color: #ffd400;
+    }
+
+    .menu-icon {
+      width: 25px;
       text-align: center;
+      font-size: 19px;
     }
 
-    .hero h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
+    .menu-divider {
+      height: 1px;
+      background: #333;
+      margin: 8px 5px;
     }
 
-    .hero p {
-      color: #ccc;
-      font-size: 17px;
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .page-header {
+      background: linear-gradient(135deg, #111, #222);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 30px 20px 50px;
-    }
-
-    .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 25px;
-      flex-wrap: wrap;
-    }
-
-    .top-bar h2 {
-      font-size: 28px;
-    }
-
-    .filter-button {
-      background: #ffd400;
-      color: #000;
-      border: none;
-      padding: 11px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .filter-panel {
-      display: none;
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
-
-    .filter-panel.active {
-      display: block;
-    }
-
-    .filter-panel h3 {
+    .page-header h1 {
+      font-size: 48px;
       margin-bottom: 15px;
     }
 
-    .filter-options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .page-header h1 span {
+      color: #ffd400;
     }
 
-    .filter-option {
-      background: #eee;
-      border: none;
-      padding: 9px 14px;
-      border-radius: 7px;
-      cursor: pointer;
+    .page-header p {
+      color: #bbb;
+      font-size: 18px;
     }
 
-    .filter-option.active {
-      background: #ffd400;
-      color: #000;
-      font-weight: bold;
-    }
+    /* =========================
+       DEALS
+    ========================= */
 
-    .products {
+    .deals {
+      max-width: 1100px;
+      margin: 55px auto;
+      padding: 0 20px;
+
       display: grid;
-      grid-template-columns: repeat(2,minmax(0,1fr));
-      gap: 22px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
     }
 
     .deal-card {
       background: white;
-      border-radius: 14px;
-      padding: 18px;
-      position: relative;
-      box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
       display: flex;
       flex-direction: column;
-      min-width: 0;
+      position: relative;
     }
 
-    .deal-card img {
-      width: 100%;
-      height: 230px;
-      object-fit: contain;
-      margin-bottom: 15px;
+    .deal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.14);
     }
+
+    /* =========================
+       FAVORIT BUTTON
+    ========================= */
 
     .favorite-button {
       position: absolute;
       top: 12px;
       right: 12px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
+      width: 44px;
+      height: 44px;
       border: none;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      font-size: 22px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
       cursor: pointer;
       z-index: 5;
+      transition: 0.2s;
+    }
+
+    .favorite-button:hover {
+      transform: scale(1.08);
+      background: #fff;
     }
 
     .favorite-button.active {
-      background: #ffd400;
-      color: #000;
+      color: #e60023;
     }
 
-    .deal-category {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 7px;
+    .favorite-button:disabled {
+      cursor: wait;
+      opacity: 0.7;
     }
 
-    .deal-card h3 {
-      font-size: 19px;
-      line-height: 1.3;
-      margin-bottom: 10px;
+    .deal-image {
+      height: 190px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      overflow: hidden;
     }
 
-    .deal-price {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .deal-shop {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .deal-link {
-      margin-top: auto;
-      background: #ffd400;
-      color: #000;
-      text-decoration: none;
-      padding: 12px;
-      text-align: center;
-      border-radius: 8px;
-      font-weight: bold;
+    .deal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       display: block;
     }
 
-    .deal-link:hover {
-      background: #e6bf00;
+    .deal-content {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
-    .loading {
-      grid-column: 1 / -1;
+    .deal-content h2 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .deal-button {
+      margin-top: auto;
+      display: inline-block;
       text-align: center;
-      padding: 40px;
-      color: #777;
+      padding: 13px 18px;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.2s;
     }
 
-    @media(max-width:800px) {
+    .deal-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      margin-top: 60px;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      color: #ffd400;
+      font-size: 20px;
+    }
+
+    footer p {
+      margin-top: 8px;
+      color: #888;
+    }
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 800px) {
+
       .logo {
         width: 225px;
       }
@@ -246,43 +327,18 @@
       .logo img {
         height: 275px;
       }
-
-      .container {
-        padding-left: 14px;
-        padding-right: 14px;
-      }
-
-      .products {
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        gap: 12px;
-      }
-
-      .deal-card {
-        padding: 12px;
-      }
-
-      .deal-card img {
-        height: 170px;
-      }
-
-      .deal-card h3 {
-        font-size: 16px;
-      }
-
-      .deal-price {
-        font-size: 20px;
-      }
-
-      .deal-link {
-        padding: 10px 6px;
-        font-size: 14px;
-      }
     }
 
-    @media(max-width:550px) {
+    /* =========================
+       MOBILE
+       Weiterhin 2 nebeneinander
+    ========================= */
+
+    @media (max-width: 550px) {
+
       header {
-        height: 60px;
-        padding: 0 12px;
+        height: 68px;
+        padding: 0 5%;
       }
 
       .logo {
@@ -294,57 +350,61 @@
         height: 235px;
       }
 
-      .header-button {
-        padding: 8px 11px;
+      .menu-button {
+        width: 45px;
+        height: 45px;
+      }
+
+      .menu-panel {
+        top: 78px;
+        right: 5%;
+        width: 260px;
+      }
+
+      .deals {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 12px;
+        margin: 40px auto;
+      }
+
+      .deal-image {
+        height: 130px;
+        padding: 8px;
+      }
+
+      .deal-content {
+        padding: 14px;
+      }
+
+      .deal-content h2 {
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+
+      .deal-button {
+        padding: 10px 8px;
         font-size: 13px;
       }
 
-      .hero {
-        padding: 32px 15px;
+      .favorite-button {
+        width: 38px;
+        height: 38px;
+        top: 8px;
+        right: 8px;
+        font-size: 21px;
       }
 
-      .hero h1 {
-        font-size: 29px;
+      .page-header {
+        padding: 50px 20px;
       }
 
-      .hero p {
-        font-size: 15px;
+      .page-header h1 {
+        font-size: 36px;
       }
 
-      .top-bar h2 {
-        font-size: 23px;
-      }
-
-      .deal-card img {
-        height: 145px;
-      }
-    }
-
-    @media(max-width:380px) {
-      .logo {
-        width: 170px;
-        height: 50px;
-      }
-
-      .logo img {
-        height: 215px;
-      }
-
-      .header-button {
-        padding: 7px 9px;
-        font-size: 12px;
-      }
-
-      .deal-card img {
-        height: 125px;
-      }
-
-      .deal-card h3 {
-        font-size: 14px;
-      }
-
-      .deal-price {
-        font-size: 18px;
+      .page-header p {
+        font-size: 16px;
       }
     }
   </style>
@@ -352,1027 +412,1662 @@
 
 <body>
 
-<header>
-  <a href="index.html" class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira">
-  </a>
+  <!-- =========================
+       HEADER
+  ========================= -->
 
-  <div class="header-right">
-    <a href="konto.html" class="header-button">Konto</a>
-  </div>
-</header>
+  <header>
 
-<section class="hero">
-  <h1>Top Deals</h1>
-  <p>Entdecke aktuelle Angebote und spare beim nächsten Einkauf.</p>
-</section>
+    <a href="index.html" class="logo">
+      <img src="20879_nobg (1).png" alt="DealKira Logo">
+    </a>
 
-<main class="container">
-
-  <div class="top-bar">
-    <h2>Deals</h2>
-
-    <button class="filter-button" onclick="toggleFilter()">
-      Filter
+    <button
+      class="menu-button"
+      id="menuButton"
+      onclick="toggleMenu()"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  </div>
 
-  <div class="filter-panel" id="filterPanel">
-    <h3>Kategorie</h3>
+    <div class="menu-panel" id="menuPanel">
 
-    <div class="filter-options">
-      <button class="filter-option active" data-filter="Alle">
-        Alle
-      </button>
+      <a href="konto.html">
+        <span class="menu-icon">👤</span>
+        Konto / Anmelden
+      </a>
 
-      <button class="filter-option" data-filter="Gaming">
-        Gaming
-      </button>
+      <div class="menu-divider"></div>
 
-      <button class="filter-option" data-filter="Elektronik">
-        Elektronik
-      </button>
+      <a href="suche.html">
+        <span class="menu-icon">🔍</span>
+        Suche
+      </a>
 
-      <button class="filter-option" data-filter="Computer">
-        Computer
-      </button>
+      <a href="kategorien.html">
+        <span class="menu-icon">📂</span>
+        Kategorien
+      </a>
 
-      <button class="filter-option" data-filter="Tablets">
-        Tablets
-      </button>
+      <a href="deals.html">
+        <span class="menu-icon">🔥</span>
+        Deals
+      </a>
 
-      <button class="filter-option" data-filter="Smartphones">
-        Smartphones
-      </button>
+      <a href="einstellungen.html">
+        <span class="menu-icon">⚙️</span>
+        Einstellungen
+      </a>
 
-      <button class="filter-option" data-filter="Audio">
-        Audio
-      </button>
-
-      <button class="filter-option" data-filter="Haushalt">
-        Haushalt
-      </button>
     </div>
-  </div>
 
-  <div class="products" id="products">
+  </header>
 
-    <!-- PS5 -->
+
+  <!-- =========================
+       PAGE HEADER
+  ========================= -->
+
+  <section class="page-header">
+
+    <h1>
+      Aktuelle <span>Deals</span>
+    </h1>
+
+    <p>
+      Entdecke interessante Produkte und prüfe die aktuellen Preise.
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       DEALS
+  ========================= -->
+
+  <section class="deals" id="dealsContainer">
+
+    <!--
+      S26 ULTRA + IPHONE 17 PRO MAX
+      werden automatisch aus telefone.json
+      an dieser Stelle eingefügt.
+    -->
+
+
+    <!-- =========================
+         1
+         PLAYSTATION 5
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="ps5-b0fn7zg39d"
       data-product-name="PlayStation 5"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B0FN7ZG39D.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
-      data-product-link=""
+      data-product-link="https://amzn.to/4yW9vEp"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="PlayStation 5 zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="PlayStation 5">
+      <div class="deal-image">
 
-      <div class="deal-category">Gaming</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B0FN7ZG39D.01.LZZZZZZZ.jpg"
+          alt="PlayStation 5"
+        >
 
-      <h3>PlayStation 5</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          PlayStation 5
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4yW9vEp"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Powerbank -->
+
+    <!-- =========================
+         2
+         JUOVI POWER BANK
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="powerbank-b0cth7l29z"
-      data-product-name="JUOVI Power Bank"
-      data-product-image=""
+      data-product-name="JUOVI Power Bank, Portable Power Bank"
+      data-product-image="https://m.media-amazon.com/images/I/513Ovgywq7L._AC_SL1500_.jpg"
       data-product-price=""
       data-product-shop="Amazon"
-      data-product-category="Elektronik"
-      data-product-link=""
+      data-product-category="Zubehör"
+      data-product-link="https://amzn.to/4yJVCJc"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="JUOVI Power Bank zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="JUOVI Power Bank">
+      <div class="deal-image">
 
-      <div class="deal-category">Elektronik</div>
+        <img
+          src="https://m.media-amazon.com/images/I/513Ovgywq7L._AC_SL1500_.jpg"
+          alt="JUOVI Power Bank, Portable Power Bank"
+        >
 
-      <h3>JUOVI Power Bank</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          JUOVI Power Bank, Portable Power Bank
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4yJVCJc"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Monitor -->
+
+    <!-- =========================
+         3
+         LENOVO LEGION
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="monitor-27-b0fhkxpwks"
       data-product-name="Lenovo Legion 27-10"
-      data-product-image=""
+      data-product-image="https://ecommerce.datablitz.com.ph/cdn/shop/files/viber_image_2025-09-15_11-38-07-338.jpg?v=1757908433&width=950"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
-      data-product-link=""
+      data-product-link="https://amzn.to/4rq0uRq"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="Lenovo Legion 27-10 zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="Lenovo Legion 27-10">
+      <div class="deal-image">
 
-      <div class="deal-category">Computer</div>
+        <img
+          src="https://ecommerce.datablitz.com.ph/cdn/shop/files/viber_image_2025-09-15_11-38-07-338.jpg?v=1757908433&width=950"
+          alt="Lenovo Legion 27-10"
+        >
 
-      <h3>Lenovo Legion 27-10</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          Lenovo Legion 27-10
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4rq0uRq"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Logitech -->
+
+    <!-- =========================
+         4
+         LOGITECH
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="logitech-g502-hero"
       data-product-name="Logitech G502 HERO"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B07GS6ZS8J.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
-      data-product-link=""
+      data-product-link="https://amzn.to/4xEAbZj"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="Logitech G502 HERO zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="Logitech G502 HERO">
+      <div class="deal-image">
 
-      <div class="deal-category">Gaming</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B07GS6ZS8J.01.LZZZZZZZ.jpg"
+          alt="Logitech G502 HERO"
+        >
 
-      <h3>Logitech G502 HERO</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          Logitech G502 HERO
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4xEAbZj"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- SteelSeries -->
+
+    <!-- =========================
+         5
+         STEELSERIES
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="steelseries-apex-3-tkl"
       data-product-name="SteelSeries Apex 3 TKL"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B09FQ98HRT.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Gaming"
-      data-product-link=""
+      data-product-link="https://amzn.to/4ydqvGb"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="SteelSeries Apex 3 TKL zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="SteelSeries Apex 3 TKL">
+      <div class="deal-image">
 
-      <div class="deal-category">Gaming</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B09FQ98HRT.01.LZZZZZZZ.jpg"
+          alt="SteelSeries Apex 3 TKL"
+        >
 
-      <h3>SteelSeries Apex 3 TKL</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          SteelSeries Apex 3 TKL
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4ydqvGb"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- HyperX Cloud III -->
+
+    <!-- =========================
+         6
+         HYPERX CLOUD III
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="hyperx-cloud-iii"
       data-product-name="HyperX Cloud III"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B0C3BV19Q3.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
-      data-product-category="Audio"
-      data-product-link=""
+      data-product-category="Gaming"
+      data-product-link="https://amzn.to/4hk0767"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="HyperX Cloud III zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="HyperX Cloud III">
+      <div class="deal-image">
 
-      <div class="deal-category">Audio</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B0C3BV19Q3.01.LZZZZZZZ.jpg"
+          alt="HyperX Cloud III"
+        >
 
-      <h3>HyperX Cloud III</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          HyperX Cloud III
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4hk0767"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Tablet -->
+
+    <!-- =========================
+         7
+         GALAXY TAB
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="samsung-galaxy-tab-a11-plus"
       data-product-name="Samsung Galaxy Tab A11+"
-      data-product-image=""
+      data-product-image="https://scr.wfcdn.de/30390/Samsung-Galaxy-Tab-A11-1757669787-0-0.jpg?height=263&width=420"
       data-product-price=""
       data-product-shop="Amazon"
-      data-product-category="Tablets"
-      data-product-link=""
+      data-product-category="Elektronik"
+      data-product-link="https://amzn.to/4AugYMv"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="Samsung Galaxy Tab A11+ zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="Samsung Galaxy Tab A11+">
+      <div class="deal-image">
 
-      <div class="deal-category">Tablets</div>
+        <img
+          src="https://scr.wfcdn.de/30390/Samsung-Galaxy-Tab-A11-1757669787-0-0.jpg?height=263&width=420"
+          alt="Samsung Galaxy Tab A11+"
+        >
 
-      <h3>Samsung Galaxy Tab A11+</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          Samsung Galaxy Tab A11+
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4AugYMv"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- ASUS -->
+
+    <!-- =========================
+         8
+         ASUS
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="asus-vivobook-16-x1607qa"
       data-product-name="ASUS Vivobook 16 X1607QA"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B0DX2X31XY.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
-      data-product-link=""
+      data-product-link="https://amzn.to/3T6OwiZ"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="ASUS Vivobook 16 X1607QA zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="ASUS Vivobook 16 X1607QA">
+      <div class="deal-image">
 
-      <div class="deal-category">Computer</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B0DX2X31XY.01.LZZZZZZZ.jpg"
+          alt="ASUS Vivobook 16 X1607QA"
+        >
 
-      <h3>ASUS Vivobook 16 X1607QA</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          ASUS Vivobook 16 X1607QA
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/3T6OwiZ"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Hisense -->
+
+    <!-- =========================
+         9
+         HISENSE
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="hisense-55e7ds"
-      data-product-name="Hisense 55E7DS"
-      data-product-image=""
+      data-product-name="Hisense 55E7DS TV 55 Inches, 4K UHD QLED"
+      data-product-image="https://m.media-amazon.com/images/P/B0GM1TVSMG.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Elektronik"
-      data-product-link=""
+      data-product-link="https://amzn.to/4jrK3lo"
     >
+
       <button
         class="favorite-button"
+        type="button"
+        aria-label="Hisense 55E7DS TV zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
-        aria-label="Hisense 55E7DS zu Favoriten hinzufügen"
-      >♡</button>
+      >
+        ♡
+      </button>
 
-      <img src="" alt="Hisense 55E7DS">
+      <div class="deal-image">
 
-      <div class="deal-category">Elektronik</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B0GM1TVSMG.01.LZZZZZZZ.jpg"
+          alt="Hisense 55E7DS TV 55 Inches, 4K UHD QLED"
+        >
 
-      <h3>Hisense 55E7DS</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          Hisense 55E7DS TV 55 Inches, 4K UHD QLED
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4jrK3lo"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- Lexar -->
+
+    <!-- =========================
+         10
+         LEXAR
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="lexar-es3-1tb"
-      data-product-name="Lexar ES3 1TB"
-      data-product-image=""
+      data-product-name="Lexar ES3 1TB Extreme Portable SSD"
+      data-product-image="https://cdn.shopify.com/s/files/1/0650/9127/2952/files/61l9cdYoKsL._AC_SL1500.jpg?v=1749728079"
       data-product-price=""
       data-product-shop="Amazon"
       data-product-category="Computer"
-      data-product-link=""
+      data-product-link="https://amzn.to/4hkS2Q9"
     >
+
       <button
         class="favorite-button"
+        type="button"
+        aria-label="Lexar ES3 1TB Extreme Portable SSD zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
-        aria-label="Lexar ES3 1TB zu Favoriten hinzufügen"
-      >♡</button>
+      >
+        ♡
+      </button>
 
-      <img src="" alt="Lexar ES3 1TB">
+      <div class="deal-image">
 
-      <div class="deal-category">Computer</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0650/9127/2952/files/61l9cdYoKsL._AC_SL1500.jpg?v=1749728079"
+          alt="Lexar ES3 1TB Extreme Portable SSD"
+        >
 
-      <h3>Lexar ES3 1TB</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          Lexar ES3 1TB Extreme Portable SSD
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4hkS2Q9"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- soundcore -->
+
+    <!-- =========================
+         11
+         SOUNDCORE
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="soundcore-anker-p20i"
-      data-product-name="soundcore P20i"
-      data-product-image=""
+      data-product-name="soundcore by Anker P20i"
+      data-product-image="https://img.drz.lazcdn.com/static/np/p/5926aeb1f307a3e13573e68dbfc57a0e.jpg_720x720q80.jpg_.webp"
       data-product-price=""
       data-product-shop="Amazon"
-      data-product-category="Audio"
-      data-product-link=""
+      data-product-category="Elektronik"
+      data-product-link="https://amzn.to/4hqxWCK"
     >
+
       <button
         class="favorite-button"
+        type="button"
+        aria-label="soundcore by Anker P20i zu Favoriten hinzufügen"
         onclick="toggleFavorite(this)"
-        aria-label="soundcore P20i zu Favoriten hinzufügen"
-      >♡</button>
+      >
+        ♡
+      </button>
 
-      <img src="" alt="soundcore P20i">
+      <div class="deal-image">
 
-      <div class="deal-category">Audio</div>
+        <img
+          src="https://img.drz.lazcdn.com/static/np/p/5926aeb1f307a3e13573e68dbfc57a0e.jpg_720x720q80.jpg_.webp"
+          alt="soundcore by Anker P20i"
+        >
 
-      <h3>soundcore P20i</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          soundcore by Anker P20i
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4hqxWCK"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-    <!-- HyperX QuadCast -->
+
+    <!-- =========================
+         12
+         HYPERX QUADCAST
+    ========================= -->
+
     <article
       class="deal-card"
       data-product-id="hyperx-quadcast-2"
       data-product-name="HyperX QuadCast 2"
-      data-product-image=""
+      data-product-image="https://m.media-amazon.com/images/P/B0D9MCK4R8.01.LZZZZZZZ.jpg"
       data-product-price=""
       data-product-shop="Amazon"
-      data-product-category="Audio"
-      data-product-link=""
+      data-product-category="Gaming"
+      data-product-link="https://amzn.to/4rtn3oh"
     >
+
       <button
         class="favorite-button"
-        onclick="toggleFavorite(this)"
+        type="button"
         aria-label="HyperX QuadCast 2 zu Favoriten hinzufügen"
-      >♡</button>
+        onclick="toggleFavorite(this)"
+      >
+        ♡
+      </button>
 
-      <img src="" alt="HyperX QuadCast 2">
+      <div class="deal-image">
 
-      <div class="deal-category">Audio</div>
+        <img
+          src="https://m.media-amazon.com/images/P/B0D9MCK4R8.01.LZZZZZZZ.jpg"
+          alt="HyperX QuadCast 2"
+        >
 
-      <h3>HyperX QuadCast 2</h3>
+      </div>
 
-      <div class="deal-price"></div>
+      <div class="deal-content">
 
-      <div class="deal-shop">Amazon</div>
+        <h2>
+          HyperX QuadCast 2
+        </h2>
 
-      <a href="" class="deal-link" target="_blank" rel="noopener noreferrer">
-        Zum Deal
-      </a>
+        <a
+          href="https://amzn.to/4rtn3oh"
+          class="deal-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zum Deal
+        </a>
+
+      </div>
+
     </article>
 
-  </div>
-</main>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-<script>
-  const SUPABASE_URL =
-    "https://zniknbouugmgvqkkoamo.supabase.co";
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
-  const SUPABASE_KEY =
-    "sb_publishable_Jr7OQSc8G8lgIja_Hav5-mw_B_htFgzI";
+  <footer>
 
-  const supabaseClient = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-  );
+    <strong>DealKira</strong>
 
-  let currentUser = null;
+    <p>
+      Produkte entdecken. Deals finden. Preise vergleichen.
+    </p>
 
-  async function getCurrentUser() {
-    try {
-      const { data, error } = await supabaseClient.auth.getUser();
+  </footer>
 
-      if (error) {
-        console.error("Benutzer konnte nicht geladen werden:", error);
-        return null;
-      }
 
-      currentUser = data.user;
-      return data.user;
+  <!-- =========================
+       SUPABASE
+  ========================= -->
 
-    } catch (error) {
-      console.error("Fehler beim Laden des Benutzers:", error);
-      return null;
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    /* =========================
+       SUPABASE
+    ========================= */
+
+    const SUPABASE_URL =
+      "https://zniknbouugmgvqkkoamo.supabase.co";
+
+    const SUPABASE_KEY =
+      "sb_publishable_Jr7OQSc8G8lgIja_Hav5-mw_B_htFgzI";
+
+    const supabaseClient =
+      window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+      );
+
+
+    /* =========================
+       BURGER MENU
+    ========================= */
+
+    function toggleMenu() {
+
+      const menu =
+        document.getElementById("menuPanel");
+
+      const button =
+        document.getElementById("menuButton");
+
+      const isOpen =
+        menu.classList.toggle("open");
+
+      button.classList.toggle("active");
+
+      button.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
     }
-  }
 
-  function toggleFilter() {
-    document
-      .getElementById("filterPanel")
-      .classList.toggle("active");
-  }
 
-  document.querySelectorAll(".filter-option").forEach(function(button) {
+    function closeMenu() {
 
-    button.addEventListener("click", function() {
+      const menu =
+        document.getElementById("menuPanel");
 
-      document.querySelectorAll(".filter-option").forEach(function(btn) {
-        btn.classList.remove("active");
-      });
+      const button =
+        document.getElementById("menuButton");
 
-      button.classList.add("active");
+      menu.classList.remove("open");
 
-      const filter = button.dataset.filter;
+      button.classList.remove("active");
 
-      document.querySelectorAll(".deal-card").forEach(function(card) {
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
 
-        const category = card.dataset.productCategory;
+    }
 
-        if (filter === "Alle" || category === filter) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
+
+    document.addEventListener(
+      "click",
+      function(event) {
+
+        const menu =
+          document.getElementById("menuPanel");
+
+        const button =
+          document.getElementById("menuButton");
+
+        if (
+          !menu.contains(event.target) &&
+          !button.contains(event.target)
+        ) {
+
+          closeMenu();
+
         }
 
-      });
+      }
+    );
 
-    });
 
-  });
+    document.addEventListener(
+      "keydown",
+      function(event) {
 
-  async function toggleFavorite(button) {
+        if (event.key === "Escape") {
 
-    if (button.disabled) return;
+          closeMenu();
 
-    button.disabled = true;
+        }
 
-    try {
+      }
+    );
 
-      const user = await getCurrentUser();
 
-      if (!user) {
+    /* =========================
+       BENUTZER LADEN
+       GLEICHE LOGIK WIE
+       BEI DER FUNKTIONIERENDEN
+       TELEFON-/TABLET-SEITE
+    ========================= */
 
-        alert(
-          "Du musst eingeloggt sein, um Produkte zu speichern."
+    async function getCurrentUser() {
+
+      const {
+        data,
+        error
+      } =
+        await supabaseClient.auth.getUser();
+
+      if (error) {
+
+        console.error(
+          "Benutzer konnte nicht geladen werden:",
+          error
         );
 
-        window.location.href = "konto.html";
+        return null;
+
+      }
+
+      return data.user;
+
+    }
+
+
+    /* =========================
+       FAVORIT UMSCHALTEN
+    ========================= */
+
+    async function toggleFavorite(button) {
+
+      if (button.disabled) {
         return;
       }
 
-      const card = button.closest(".deal-card");
+      button.disabled = true;
 
-      if (!card) {
-        throw new Error("Produktkarte wurde nicht gefunden.");
-      }
+      try {
 
-      const productId =
-        card.dataset.productId || "";
+        const user =
+          await getCurrentUser();
 
-      const productName =
-        card.dataset.productName || "";
 
-      const productImage =
-        card.dataset.productImage || null;
+        if (!user) {
 
-      const productPrice =
-        card.dataset.productPrice || null;
-
-      const productShop =
-        card.dataset.productShop || null;
-
-      const productLink =
-        card.dataset.productLink || null;
-
-      console.log("Favorit wird verarbeitet:", {
-        userId: user.id,
-        productId,
-        productName,
-        productImage,
-        productPrice,
-        productShop,
-        productLink
-      });
-
-      if (!productId) {
-        throw new Error(
-          "Die Produkt-ID fehlt."
-        );
-      }
-
-      const {
-        data: existingFavorites,
-        error: selectError
-      } = await supabaseClient
-        .from("favoriten")
-        .select("id")
-        .eq("user_id", user.id)
-        .eq("produkt_id", productId);
-
-      if (selectError) {
-        throw selectError;
-      }
-
-      const hasFavorite =
-        existingFavorites &&
-        existingFavorites.length > 0;
-
-      if (hasFavorite) {
-
-        const favoriteIds =
-          existingFavorites.map(
-            favorite => favorite.id
+          alert(
+            "Du musst eingeloggt sein, um Produkte zu speichern."
           );
 
-        const {
-          error: deleteError
-        } = await supabaseClient
-          .from("favoriten")
-          .delete()
-          .in("id", favoriteIds)
-          .eq("user_id", user.id);
+          window.location.href =
+            "konto.html";
 
-        if (deleteError) {
-          throw deleteError;
+          return;
+
         }
 
-        button.classList.remove("active");
-        button.textContent = "♡";
 
-        button.setAttribute(
-          "aria-label",
-          productName +
-          " zu Favoriten hinzufügen"
-        );
+        const card =
+          button.closest(".deal-card");
 
-      } else {
 
-        const {
-          error: insertError
-        } = await supabaseClient
-          .from("favoriten")
-          .insert({
-            user_id: user.id,
-            produkt_id: productId,
-            produkt_name: productName,
-            produkt_bild: productImage,
-            produkt_preis: productPrice,
-            produkt_shop: productShop,
-            produkt_link: productLink
-          });
+        if (!card) {
 
-        if (insertError) {
-          throw insertError;
+          console.error(
+            "Produktkarte wurde nicht gefunden."
+          );
+
+          return;
+
         }
 
-        button.classList.add("active");
-        button.textContent = "♥";
-
-        button.setAttribute(
-          "aria-label",
-          productName +
-          " aus Favoriten entfernen"
-        );
-      }
-
-    } catch (error) {
-
-      console.error(
-        "SUPABASE FAVORITEN FEHLER:",
-        error
-      );
-
-      alert(
-        "SUPABASE FEHLER\n\n" +
-        "Nachricht: " +
-        (error?.message || "-") +
-        "\n\n" +
-        "Code: " +
-        (error?.code || "-") +
-        "\n\n" +
-        "Details: " +
-        (error?.details || "-") +
-        "\n\n" +
-        "Hinweis: " +
-        (error?.hint || "-")
-      );
-
-    } finally {
-
-      button.disabled = false;
-
-    }
-  }
-
-  async function loadFavorites() {
-
-    const user = await getCurrentUser();
-
-    if (!user) return;
-
-    const {
-      data: favorites,
-      error
-    } = await supabaseClient
-      .from("favoriten")
-      .select("produkt_id")
-      .eq("user_id", user.id);
-
-    if (error) {
-
-      console.error(
-        "Favoriten konnten nicht geladen werden:",
-        error
-      );
-
-      return;
-    }
-
-    const favoriteIds =
-      new Set(
-        favorites.map(
-          favorite => favorite.produkt_id
-        )
-      );
-
-    document
-      .querySelectorAll(".deal-card")
-      .forEach(function(card) {
 
         const productId =
           card.dataset.productId;
 
-        const button =
-          card.querySelector(".favorite-button");
+        const productName =
+          card.dataset.productName;
 
-        if (!button) return;
+        const productImage =
+          card.dataset.productImage;
 
-        if (favoriteIds.has(productId)) {
+        const productPrice =
+          card.dataset.productPrice || null;
 
-          button.classList.add("active");
-          button.textContent = "♥";
+        const productShop =
+          card.dataset.productShop || null;
+
+        const productLink =
+          card.dataset.productLink || null;
+
+
+        if (!productId) {
+
+          console.error(
+            "Produkt-ID fehlt."
+          );
+
+          return;
+
+        }
+
+
+        /* =========================
+           PRÜFEN OB FAVORIT EXISTIERT
+        ========================= */
+
+        const {
+          data: existingFavorites,
+          error: selectError
+        } =
+          await supabaseClient
+            .from("favoriten")
+            .select("id")
+            .eq(
+              "user_id",
+              user.id
+            )
+            .eq(
+              "produkt_id",
+              productId
+            );
+
+
+        if (selectError) {
+
+          console.error(
+            "Favorit konnte nicht geprüft werden:",
+            selectError
+          );
+
+          throw selectError;
+
+        }
+
+
+        const hasFavorite =
+          existingFavorites &&
+          existingFavorites.length > 0;
+
+
+        /* =========================
+           FAVORIT ENTFERNEN
+        ========================= */
+
+        if (hasFavorite) {
+
+          const favoriteIds =
+            existingFavorites.map(
+              function(favorite) {
+                return favorite.id;
+              }
+            );
+
+
+          const {
+            error: deleteError
+          } =
+            await supabaseClient
+              .from("favoriten")
+              .delete()
+              .in(
+                "id",
+                favoriteIds
+              )
+              .eq(
+                "user_id",
+                user.id
+              );
+
+
+          if (deleteError) {
+
+            console.error(
+              "Favorit konnte nicht gelöscht werden:",
+              deleteError
+            );
+
+            throw deleteError;
+
+          }
+
+
+          button.classList.remove(
+            "active"
+          );
+
+          button.textContent =
+            "♡";
 
           button.setAttribute(
             "aria-label",
-            card.dataset.productName +
+            productName +
+            " zu Favoriten hinzufügen"
+          );
+
+        }
+
+
+        /* =========================
+           FAVORIT HINZUFÜGEN
+        ========================= */
+
+        else {
+
+          const {
+            error: insertError
+          } =
+            await supabaseClient
+              .from("favoriten")
+              .insert({
+
+                user_id:
+                  user.id,
+
+                produkt_id:
+                  productId,
+
+                produkt_name:
+                  productName,
+
+                produkt_bild:
+                  productImage,
+
+                produkt_preis:
+                  productPrice,
+
+                produkt_shop:
+                  productShop,
+
+                produkt_link:
+                  productLink
+
+              });
+
+
+          if (insertError) {
+
+            console.error(
+              "Favorit konnte nicht gespeichert werden:",
+              insertError
+            );
+
+            throw insertError;
+
+          }
+
+
+          button.classList.add(
+            "active"
+          );
+
+          button.textContent =
+            "♥";
+
+          button.setAttribute(
+            "aria-label",
+            productName +
             " aus Favoriten entfernen"
           );
 
-        } else {
-
-          button.classList.remove("active");
-          button.textContent = "♡";
-
-          button.setAttribute(
-            "aria-label",
-            card.dataset.productName +
-            " zu Favoriten hinzufügen"
-          );
         }
 
-      });
-  }
+      }
 
-  function fillDealCard(card, product) {
+      catch (error) {
 
-    if (!product) return;
+        console.error(
+          "Favoriten-Fehler:",
+          error
+        );
 
-    card.dataset.productId =
-      product.id || card.dataset.productId || "";
 
-    card.dataset.productName =
-      product.name || "";
+        alert(
+          "Der Favorit konnte momentan nicht gespeichert werden.\n\n" +
+          "Fehler: " +
+          (error?.message || "Unbekannter Fehler")
+        );
 
-    card.dataset.productImage =
-      product.image || "";
+      }
 
-    card.dataset.productPrice =
-      product.price || "";
+      finally {
 
-    card.dataset.productShop =
-      product.shop || "";
+        button.disabled = false;
 
-    card.dataset.productCategory =
-      product.category || "";
+      }
 
-    card.dataset.productLink =
-      product.link || "";
+    }
 
-    const image =
-      card.querySelector("img");
 
-    if (image) {
+    /* =========================
+       FAVORITEN LADEN
+    ========================= */
 
-      image.src =
+    async function loadFavorites() {
+
+      const user =
+        await getCurrentUser();
+
+
+      if (!user) {
+        return;
+      }
+
+
+      const {
+        data: favorites,
+        error
+      } =
+        await supabaseClient
+          .from("favoriten")
+          .select("produkt_id")
+          .eq(
+            "user_id",
+            user.id
+          );
+
+
+      if (error) {
+
+        console.error(
+          "Favoriten konnten nicht geladen werden:",
+          error
+        );
+
+        return;
+
+      }
+
+
+      const favoriteIds =
+        new Set(
+          favorites.map(
+            function(favorite) {
+              return favorite.produkt_id;
+            }
+          )
+        );
+
+
+      document
+        .querySelectorAll(".deal-card")
+        .forEach(
+          function(card) {
+
+            const productId =
+              card.dataset.productId;
+
+            const button =
+              card.querySelector(
+                ".favorite-button"
+              );
+
+
+            if (!button) {
+              return;
+            }
+
+
+            if (
+              favoriteIds.has(
+                productId
+              )
+            ) {
+
+              button.classList.add(
+                "active"
+              );
+
+              button.textContent =
+                "♥";
+
+              button.setAttribute(
+                "aria-label",
+                card.dataset.productName +
+                " aus Favoriten entfernen"
+              );
+
+            }
+            else {
+
+              button.classList.remove(
+                "active"
+              );
+
+              button.textContent =
+                "♡";
+
+              button.setAttribute(
+                "aria-label",
+                card.dataset.productName +
+                " zu Favoriten hinzufügen"
+              );
+
+            }
+
+          }
+        );
+
+    }
+
+
+    /* =========================
+       SMARTPHONES AUS
+       telefone.json LADEN
+    ========================= */
+
+    async function loadPhoneDeals() {
+
+      const container =
+        document.getElementById(
+          "dealsContainer"
+        );
+
+
+      try {
+
+        const response =
+          await fetch(
+            "telefone.json"
+          );
+
+
+        if (!response.ok) {
+
+          throw new Error(
+            "telefone.json konnte nicht geladen werden."
+          );
+
+        }
+
+
+        const phones =
+          await response.json();
+
+
+        /* =========================
+           EXAKT DIESE IDS
+        ========================= */
+
+        const wantedIds = [
+
+          "samsung-galaxy-s26-ultra",
+
+          "iphone-17-pro-max"
+
+        ];
+
+
+        /* =========================
+           PRODUKTE AUS JSON HOLEN
+        ========================= */
+
+        const phoneDeals =
+          wantedIds
+            .map(
+              function(id) {
+
+                return phones.find(
+                  function(product) {
+
+                    return product.id === id;
+
+                  }
+                );
+
+              }
+            )
+            .filter(Boolean);
+
+
+        /* =========================
+           VOR PS5 EINFÜGEN
+        ========================= */
+
+        const firstNormalDeal =
+          container.querySelector(
+            '.deal-card[data-product-id="ps5-b0fn7zg39d"]'
+          );
+
+
+        phoneDeals.forEach(
+          function(product) {
+
+            const card =
+              createPhoneDealCard(
+                product
+              );
+
+
+            container.insertBefore(
+              card,
+              firstNormalDeal
+            );
+
+          }
+        );
+
+
+        /*
+         * Nachdem die beiden
+         * Smartphone-Karten existieren,
+         * Favoriten laden.
+         */
+
+        await loadFavorites();
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Telefon-Deals konnten nicht geladen werden:",
+          error
+        );
+
+      }
+
+    }
+
+
+    /* =========================
+       TELEFON-DEAL KARTE ERSTELLEN
+    ========================= */
+
+    function createPhoneDealCard(product) {
+
+      const article =
+        document.createElement(
+          "article"
+        );
+
+
+      article.className =
+        "deal-card";
+
+
+      /* =========================
+         WICHTIG:
+         ID DIREKT AUS telefone.json
+      ========================= */
+
+      article.dataset.productId =
+        product.id || "";
+
+
+      article.dataset.productName =
+        product.name || "";
+
+
+      article.dataset.productImage =
         product.image || "";
 
-      image.alt =
-        product.name || "";
-    }
 
-    const title =
-      card.querySelector("h3");
+      article.dataset.productPrice =
+        product.price || "";
 
-    if (title) {
-      title.textContent =
-        product.name || "";
-    }
 
-    const price =
-      card.querySelector(".deal-price");
-
-    if (price) {
-
-      price.textContent =
-        product.price
-          ? product.price + " €"
-          : "";
-    }
-
-    const shop =
-      card.querySelector(".deal-shop");
-
-    if (shop) {
-
-      shop.textContent =
+      article.dataset.productShop =
         product.shop || "";
-    }
 
-    const category =
-      card.querySelector(".deal-category");
 
-    if (category) {
+      article.dataset.productCategory =
+        product.category ||
+        "Smartphones";
 
-      category.textContent =
-        product.category || "";
-    }
 
-    const link =
-      card.querySelector(".deal-link");
+      article.dataset.productLink =
+        product.link || "";
 
-    if (link) {
 
-      link.href =
-        product.link || "#";
-    }
+      /* =========================
+         FAVORIT BUTTON
+      ========================= */
 
-    const favoriteButton =
-      card.querySelector(".favorite-button");
+      const favoriteButton =
+        document.createElement(
+          "button"
+        );
 
-    if (favoriteButton) {
+
+      favoriteButton.className =
+        "favorite-button";
+
+
+      favoriteButton.type =
+        "button";
+
+
+      favoriteButton.textContent =
+        "♡";
+
 
       favoriteButton.setAttribute(
         "aria-label",
         (product.name || "Produkt") +
         " zu Favoriten hinzufügen"
       );
-    }
-  }
 
-  async function loadPhoneDeals() {
 
-    const wantedIds = [
-      "samsung-galaxy-s26-ultra",
-      "iphone-17-pro-max"
-    ];
+      favoriteButton.onclick =
+        function() {
 
-    try {
+          toggleFavorite(
+            favoriteButton
+          );
 
-      const response =
-        await fetch("telefone.json");
+        };
 
-      if (!response.ok) {
-        throw new Error(
-          "telefone.json konnte nicht geladen werden."
+
+      /* =========================
+         BILD
+      ========================= */
+
+      const imageContainer =
+        document.createElement(
+          "div"
         );
-      }
 
-      const products =
-        await response.json();
 
-      wantedIds.forEach(function(productId) {
+      imageContainer.className =
+        "deal-image";
 
-        const product =
-          products.find(
-            item => item.id === productId
-          );
 
-        if (!product) return;
+      const image =
+        document.createElement(
+          "img"
+        );
 
-        const existingCard =
-          document.querySelector(
-            '.deal-card[data-product-id="' +
-            productId +
-            '"]'
-          );
 
-        if (existingCard) {
+      image.src =
+        product.image || "";
 
-          fillDealCard(
-            existingCard,
-            product
-          );
 
-          return;
-        }
+      image.alt =
+        product.name || "";
 
-        createPhoneDealCard(product);
 
-      });
-
-      await loadFavorites();
-
-    } catch (error) {
-
-      console.error(
-        "Telefon-Deals konnten nicht geladen werden:",
-        error
+      imageContainer.appendChild(
+        image
       );
 
+
+      /* =========================
+         CONTENT
+      ========================= */
+
+      const content =
+        document.createElement(
+          "div"
+        );
+
+
+      content.className =
+        "deal-content";
+
+
+      const title =
+        document.createElement(
+          "h2"
+        );
+
+
+      title.textContent =
+        product.name || "";
+
+
+      const dealButton =
+        document.createElement(
+          "a"
+        );
+
+
+      dealButton.className =
+        "deal-button";
+
+
+      dealButton.href =
+        product.link || "#";
+
+
+      dealButton.target =
+        "_blank";
+
+
+      dealButton.rel =
+        "noopener noreferrer";
+
+
+      dealButton.textContent =
+        "Zum Deal";
+
+
+      content.appendChild(
+        title
+      );
+
+
+      content.appendChild(
+        dealButton
+      );
+
+
+      article.appendChild(
+        favoriteButton
+      );
+
+
+      article.appendChild(
+        imageContainer
+      );
+
+
+      article.appendChild(
+        content
+      );
+
+
+      return article;
+
     }
-  }
 
-  function createPhoneDealCard(product) {
 
-    const container =
-      document.getElementById("products");
+    /* =========================
+       AUTH STATUS
+       WIE AUF DER FUNKTIONIERENDEN
+       TABLET-/TELEFON-SEITE
+    ========================= */
 
-    const article =
-      document.createElement("article");
+    supabaseClient.auth.onAuthStateChange(
+      function(event, session) {
 
-    article.className =
-      "deal-card";
+        if (session) {
 
-    article.dataset.productId =
-      product.id || "";
+          loadFavorites();
 
-    article.dataset.productName =
-      product.name || "";
-
-    article.dataset.productImage =
-      product.image || "";
-
-    article.dataset.productPrice =
-      product.price || "";
-
-    article.dataset.productShop =
-      product.shop || "";
-
-    article.dataset.productCategory =
-      product.category || "Smartphones";
-
-    article.dataset.productLink =
-      product.link || "";
-
-    article.innerHTML = `
-      <button
-        class="favorite-button"
-        onclick="toggleFavorite(this)"
-        aria-label="${product.name || "Produkt"} zu Favoriten hinzufügen"
-      >♡</button>
-
-      <img
-        src="${product.image || ""}"
-        alt="${product.name || ""}"
-      >
-
-      <div class="deal-category">
-        ${product.category || "Smartphones"}
-      </div>
-
-      <h3>
-        ${product.name || ""}
-      </h3>
-
-      <div class="deal-price">
-        ${
-          product.price
-            ? product.price + " €"
-            : ""
         }
-      </div>
+        else {
 
-      <div class="deal-shop">
-        ${product.shop || ""}
-      </div>
+          document
+            .querySelectorAll(
+              ".favorite-button"
+            )
+            .forEach(
+              function(button) {
 
-      <a
-        href="${product.link || "#"}"
-        class="deal-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Zum Deal
-      </a>
-    `;
+                button.classList.remove(
+                  "active"
+                );
 
-    container.appendChild(article);
-  }
+                button.textContent =
+                  "♡";
 
-  supabaseClient.auth.onAuthStateChange(
-    function(event, session) {
+              }
+            );
 
-      if (session) {
+        }
 
-        loadFavorites();
-
-      } else {
-
-        document
-          .querySelectorAll(".favorite-button")
-          .forEach(function(button) {
-
-            button.classList.remove("active");
-            button.textContent = "♡";
-
-          });
       }
-    }
-  );
+    );
 
-  document.addEventListener(
-    "DOMContentLoaded",
-    async function() {
 
-      await loadPhoneDeals();
+    /* =========================
+       START
+    ========================= */
 
-      await loadFavorites();
+    document.addEventListener(
+      "DOMContentLoaded",
+      async function() {
 
-    }
-  );
-</script>
+        /*
+         * Erst die Smartphones aus
+         * telefone.json einfügen.
+         */
+
+        await loadPhoneDeals();
+
+
+        /*
+         * Danach Favoriten laden.
+         */
+
+        await loadFavorites();
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>
