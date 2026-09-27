@@ -1187,13 +1187,6 @@
       });
 
 
-    /*
-     * Session direkt beim Laden holen.
-     * Dadurch wird verhindert, dass die
-     * dynamischen Telefon-Karten zu früh
-     * "nicht angemeldet" melden.
-     */
-
     async function initializeAuth() {
 
       try {
@@ -1352,22 +1345,11 @@
           await response.json();
 
 
-        /*
-         * Genau diese beiden Produkte
-         * werden aus telefone.json genommen.
-         */
-
         const wantedIds = [
           "samsung-galaxy-s26-ultra",
           "iphone-17-pro-max"
         ];
 
-
-        /*
-         * Reihenfolge:
-         * S26 Ultra zuerst,
-         * iPhone 17 Pro Max danach.
-         */
 
         const phoneDeals =
           wantedIds
@@ -1384,11 +1366,6 @@
             })
             .filter(Boolean);
 
-
-        /*
-         * Die Karten vor dem ersten
-         * normalen Deal einsetzen.
-         */
 
         const firstNormalDeal =
           container.querySelector(
@@ -1410,11 +1387,6 @@
           }
         );
 
-
-        /*
-         * Favoriten erst laden,
-         * nachdem die Telefonkarten existieren.
-         */
 
         await loadFavorites();
 
@@ -1444,11 +1416,6 @@
       article.className =
         "deal-card";
 
-
-      /*
-       * Die Daten kommen direkt
-       * aus telefone.json.
-       */
 
       article.dataset.productId =
         product.id || "";
@@ -1490,11 +1457,6 @@
         " zu Favoriten hinzufügen"
       );
 
-
-      /*
-       * Gleiche Funktion wie bei
-       * den normalen Deal-Karten.
-       */
 
       favoriteButton.onclick =
         function() {
@@ -1592,18 +1554,8 @@
 
     async function getCurrentUser() {
 
-      /*
-       * Zuerst auf die Initialisierung
-       * der Authentifizierung warten.
-       */
-
       await authReady;
 
-
-      /*
-       * Wenn bereits eine Session
-       * bekannt ist, direkt verwenden.
-       */
 
       if (currentUser) {
 
@@ -1611,10 +1563,6 @@
 
       }
 
-
-      /*
-       * Sicherheitshalber Session erneut prüfen.
-       */
 
       try {
 
@@ -1648,10 +1596,6 @@
 
       }
 
-
-      /*
-       * Als letzten Fallback getUser().
-       */
 
       try {
 
@@ -1720,11 +1664,6 @@
       }
 
 
-      /*
-       * Button erst sperren,
-       * damit nicht doppelt geklickt wird.
-       */
-
       button.disabled = true;
 
 
@@ -1767,11 +1706,6 @@
           card.dataset.productLink || null;
 
 
-        /*
-         * Sicherheitsprüfung:
-         * Ohne Produkt-ID kein Favorit.
-         */
-
         if (!productId) {
 
           console.error(
@@ -1783,8 +1717,17 @@
         }
 
 
+        /*
+         * Alle passenden Favoriten laden.
+         *
+         * KEIN maybeSingle():
+         * Dadurch funktioniert die Abfrage auch,
+         * wenn versehentlich mehrere Einträge
+         * desselben Produkts existieren.
+         */
+
         const {
-          data: existingFavorite,
+          data: existingFavorites,
           error: selectError
         } =
           await supabaseClient
@@ -1797,8 +1740,7 @@
             .eq(
               "produkt_id",
               productId
-            )
-            .maybeSingle();
+            );
 
 
         if (selectError) {
@@ -1808,11 +1750,21 @@
         }
 
 
+        const hasFavorite =
+          Array.isArray(existingFavorites) &&
+          existingFavorites.length > 0;
+
+
         /* =========================
            FAVORIT ENTFERNEN
         ========================= */
 
-        if (existingFavorite) {
+        if (hasFavorite) {
+
+          /*
+           * Alle eventuell vorhandenen
+           * doppelten Einträge entfernen.
+           */
 
           const {
             error: deleteError
@@ -1821,12 +1773,12 @@
               .from("favoriten")
               .delete()
               .eq(
-                "id",
-                existingFavorite.id
-              )
-              .eq(
                 "user_id",
                 user.id
+              )
+              .eq(
+                "produkt_id",
+                productId
               );
 
 
@@ -1920,6 +1872,11 @@
           "Fehler beim Ändern des Favoriten:",
           error
         );
+
+        /*
+         * Der genaue Fehler bleibt in der
+         * Browser-Konsole sichtbar.
+         */
 
         alert(
           "Der Favorit konnte momentan nicht gespeichert werden."
@@ -2031,6 +1988,7 @@
               );
 
             }
+
             else {
 
               button.classList.remove(
@@ -2067,13 +2025,6 @@
 
         if (currentUser) {
 
-          /*
-           * Kleine Verzögerung verhindert,
-           * dass ein Auth-Event gleichzeitig
-           * mit dem Rendern der Telefonkarten
-           * läuft.
-           */
-
           setTimeout(
             function() {
 
@@ -2084,6 +2035,7 @@
           );
 
         }
+
         else {
 
           document
@@ -2117,14 +2069,16 @@
       "DOMContentLoaded",
       async function() {
 
-        /*
-         * Erst Authentifizierung abwarten,
-         * danach telefone.json laden.
-         */
-
         await authReady;
 
         await loadPhoneDeals();
+
+        /*
+         * Zusätzlich nach dem Laden
+         * aller Karten Favoriten prüfen.
+         */
+
+        await loadFavorites();
 
       }
     );
