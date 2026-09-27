@@ -854,7 +854,7 @@
     "https://zniknbouugmgvqkkoamo.supabase.co";
 
   const SUPABASE_KEY =
-    "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
+    "sb_publishable_Jr7OQSc8G8lgIja_Hav5-mw_B_htFgzI";
 
   const supabaseClient =
     window.supabase.createClient(
@@ -977,14 +977,26 @@
       card.dataset.productImage =
         product.image || "";
 
+
+      /* ========================= */
+      /* ERSTES SHOP-ANGEBOT */
+      /* ========================= */
+
+      const primaryShop =
+        Array.isArray(product.shops) &&
+        product.shops.length
+          ? product.shops[0]
+          : null;
+
+
       card.dataset.productPrice =
-        product.price || "";
+        primaryShop?.price || "";
 
       card.dataset.productShop =
-        product.shop || "";
+        primaryShop?.name || "";
 
       card.dataset.productLink =
-        product.link || "";
+        primaryShop?.link || "";
 
 
       const favoriteButton =
@@ -1103,7 +1115,7 @@
       );
 
 
-      if (product.price) {
+      if (primaryShop?.price) {
 
         const price =
           document.createElement("div");
@@ -1112,7 +1124,7 @@
           "product-price";
 
         price.textContent =
-          product.price;
+          primaryShop.price;
 
         content.appendChild(
           price
@@ -1122,7 +1134,7 @@
 
 
       /* ========================= */
-      /* SHOP-ANZEIGE ENTFERNT */
+      /* PRODUKTVERGLEICH */
       /* ========================= */
 
       const dealButton =
@@ -1135,16 +1147,13 @@
         "Zum Deal";
 
 
-      if (product.link) {
+      if (product.id) {
 
         dealButton.href =
-          product.link;
-
-        dealButton.target =
-          "_blank";
-
-        dealButton.rel =
-          "nofollow sponsored noopener";
+          "produkt.html?id=" +
+          encodeURIComponent(
+            product.id
+          );
 
       } else {
 
@@ -2026,6 +2035,3 @@
 
 </body>
 </html>
-
-
-
