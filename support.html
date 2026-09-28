@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support – DealKira</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" href="basis.css">
+<script src="basis.js"></script>
+
+<style>
 
     body {
       background: #181818;
@@ -19,27 +17,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-    }
-
-    header {
-      height: 72px;
-      background: #111;
-      padding: 0 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo img {
-      height: 230px;
-      width: auto;
-      display: block;
-    }
-
-    .back {
-      color: #ffd400;
-      text-decoration: none;
-      font-weight: 700;
     }
 
     main {
@@ -76,23 +53,7 @@
       font-weight: 700;
     }
 
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 14px;
-    }
-
     @media(max-width:550px) {
-      header {
-        height: 68px;
-        padding: 0 5%;
-      }
-
-      .logo img {
-        height: 180px;
-      }
 
       .support-box h1 {
         font-size: 38px;
@@ -107,17 +68,7 @@
 
 <body>
 
-  <header>
-    <a href="index.html">
-      <div class="logo">
-        <img src="20879_nobg (1).png" alt="DealKira">
-      </div>
-    </a>
-
-    <a href="index.html" class="back">
-      ← Zur Startseite
-    </a>
-  </header>
+  <site-header></site-header>
 
   <main>
 
@@ -137,11 +88,8 @@
 
   </main>
 
-  <footer>
-    © DealKira 2026
-  </footer>
+  <site-footer></site-footer>
 
 </body>
 </html>
-
 

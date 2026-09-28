@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suche – DealKira</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" href="basis.css">
+<script src="basis.js"></script>
+
+<style>
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -19,128 +17,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-    }
-
-    /* HEADER */
-
-    header {
-      height: 82px;
-      background: #111;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 6%;
-      position: relative;
-      z-index: 1000;
-    }
-
-    .logo {
-      width: 280px;
-      height: 65px;
-      display: flex;
-      align-items: center;
-      overflow: visible;
-      position: relative;
-    }
-
-    .logo img {
-      height: 320px;
-      width: auto;
-      max-width: none;
-      display: block;
-    }
-
-    /* BURGER MENÜ */
-
-    .menu-button {
-      width: 48px;
-      height: 48px;
-      background: #1c1c1c;
-      border: 1px solid #333;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .menu-button span {
-      width: 23px;
-      height: 3px;
-      background: #ffd400;
-      border-radius: 3px;
-      transition: 0.2s;
-    }
-
-    .menu-button:hover {
-      background: #252525;
-      border-color: #ffd400;
-    }
-
-    .menu-button.active span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-button.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-button.active span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .menu-panel {
-      position: absolute;
-      top: 82px;
-      right: 6%;
-      width: 270px;
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 14px;
-      padding: 10px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: 0.2s;
-    }
-
-    .menu-panel.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .menu-panel a {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 15px;
-      border-radius: 9px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    .menu-panel a:hover {
-      background: #222;
-      color: #ffd400;
-    }
-
-    .menu-icon {
-      width: 25px;
-      text-align: center;
-      font-size: 19px;
-    }
-
-    .menu-divider {
-      height: 1px;
-      background: #333;
-      margin: 8px 5px;
     }
 
     /* HERO */
@@ -408,52 +284,9 @@
       background: #e6bf00;
     }
 
-    /* FOOTER */
-
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      margin-top: auto;
-    }
-
-    /* TABLET */
-
-    @media (max-width: 800px) {
-
-      .logo {
-        width: 225px;
-      }
-
-      .logo img {
-        height: 275px;
-      }
-
-    }
-
     /* MOBILE */
 
     @media (max-width: 550px) {
-
-      header {
-        padding: 0 5%;
-      }
-
-      .logo {
-        width: 190px;
-        height: 50px;
-      }
-
-      .logo img {
-        height: 235px;
-      }
-
-      .menu-panel {
-        right: 5%;
-        width: 270px;
-      }
 
       .hero {
         padding: 42px 15px 48px;
@@ -563,19 +396,6 @@
 
     @media (max-width: 380px) {
 
-      .logo {
-        width: 170px;
-      }
-
-      .logo img {
-        height: 215px;
-      }
-
-      .menu-button {
-        width: 45px;
-        height: 45px;
-      }
-
       .result-count {
         font-size: 11px;
       }
@@ -586,57 +406,7 @@
 
 <body>
 
-<header>
-
-  <a href="index.html" class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira">
-  </a>
-
-  <button
-    class="menu-button"
-    id="menuButton"
-    onclick="toggleMenu()"
-    aria-label="Menü öffnen"
-    aria-expanded="false"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <div class="menu-panel" id="menuPanel">
-
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto / Anmelden
-    </a>
-
-    <div class="menu-divider"></div>
-
-    <a href="suche.html">
-      <span class="menu-icon">🔍</span>
-      Suche
-    </a>
-
-    <a href="kategorien.html">
-      <span class="menu-icon">📂</span>
-      Kategorien
-    </a>
-
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
-    </a>
-
-    <a href="einstellungen.html">
-      <span class="menu-icon">⚙️</span>
-      Einstellungen
-    </a>
-
-  </div>
-
-</header>
-
+<site-header></site-header>
 
 <section class="hero">
 
@@ -647,7 +417,6 @@
   </p>
 
 </section>
-
 
 <section class="search-section">
 
@@ -679,7 +448,6 @@
 
   </div>
 
-
   <div class="filter-area">
 
     <div
@@ -696,14 +464,12 @@
 
   </div>
 
-
   <div
     class="filter-message"
     id="filterMessage"
   >
     Der Filter befindet sich noch in Bearbeitung.
   </div>
-
 
   <div
     class="results"
@@ -716,103 +482,13 @@
 
 </section>
 
-
-<footer>
-  © 2026 DealKira – Bessere Deals finden
-</footer>
-
+<site-footer></site-footer>
 
 <script>
-
-  /* BURGER MENÜ */
-
-  function toggleMenu() {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    const isOpen = menu.classList.toggle("open");
-
-    button.classList.toggle("active");
-
-    button.setAttribute(
-      "aria-expanded",
-      isOpen
-    );
-
-  }
-
-
-  function closeMenu() {
-
-    const menu = document.getElementById("menuPanel");
-    const button = document.getElementById("menuButton");
-
-    menu.classList.remove("open");
-
-    button.classList.remove("active");
-
-    button.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-  }
-
-
-  document.addEventListener(
-    "click",
-    function(event) {
-
-      const menu =
-        document.getElementById("menuPanel");
-
-      const button =
-        document.getElementById("menuButton");
-
-      if (
-        !menu.contains(event.target) &&
-        !button.contains(event.target)
-      ) {
-
-        closeMenu();
-
-      }
-
-    }
-  );
-
-
-  document.addEventListener(
-    "keydown",
-    function(event) {
-
-      if (event.key === "Escape") {
-
-        closeMenu();
-
-      }
-
-    }
-  );
-
-
-  /* FILTER */
-
-  function toggleFilter() {
-
-    const message =
-      document.getElementById("filterMessage");
-
-    message.classList.toggle("show");
-
-  }
-
 
   /* ALLE PRODUKTE */
 
   let allProducts = [];
-
 
   /*
     Hier können später ganz einfach weitere
@@ -834,7 +510,6 @@
     }
 
   ];
-
 
   /* PRODUKTE AUS JSON LADEN */
 
@@ -867,7 +542,6 @@
           const products =
             await response.json();
 
-
           if (!Array.isArray(products)) {
 
             console.warn(
@@ -878,7 +552,6 @@
             continue;
 
           }
-
 
           products.forEach(
             function(product) {
@@ -910,10 +583,8 @@
 
       }
 
-
       allProducts =
         loadedProducts;
-
 
       console.log(
         "Produkte für Suche geladen:",
@@ -931,7 +602,6 @@
 
   }
 
-
   /* HILFSFUNKTION FÜR HTML */
 
   function escapeHTML(value) {
@@ -944,7 +614,6 @@
       .replace(/'/g, "&#039;");
 
   }
-
 
   /* PREIS AUS SHOPS HOLEN */
 
@@ -963,7 +632,6 @@
 
   }
 
-
   /* PREIS FORMATIEREN */
 
   function formatPrice(price) {
@@ -978,10 +646,8 @@
 
     }
 
-
     const value =
       String(price).trim();
-
 
     if (
       value.includes("€")
@@ -991,11 +657,9 @@
 
     }
 
-
     return value + " €";
 
   }
-
 
   /* BILD ERMITTELN */
 
@@ -1011,7 +675,6 @@
 
   }
 
-
   /* PRODUKTKARTE ERSTELLEN */
 
   function createProductCard(product) {
@@ -1022,50 +685,39 @@
     card.className =
       "result-card";
 
-
     const productId =
       product.id || "";
-
 
     const detailPage =
       product.detailPage ||
       "produkt.html";
-
 
     card.href =
       detailPage +
       "?id=" +
       encodeURIComponent(productId);
 
-
     const image =
       getProductImage(product);
-
 
     const shop =
       getPrimaryShop(product);
 
-
     const price =
       shop?.price || "";
 
-
     const brand =
       product.brand || "";
-
 
     const name =
       product.name ||
       "Produkt";
 
-
     const category =
       product.searchCategory ||
       "";
 
-
     let imageHTML;
-
 
     if (image) {
 
@@ -1096,12 +748,10 @@
 
     }
 
-
     const priceHTML =
       price
         ? `<div class="result-price">${escapeHTML(formatPrice(price))}</div>`
         : `<div class="result-price empty">Preis ansehen</div>`;
-
 
     card.innerHTML = `
 
@@ -1111,13 +761,11 @@
 
       </div>
 
-
       <div class="result-brand">
 
         ${escapeHTML(brand)}
 
       </div>
-
 
       <h2>
 
@@ -1125,13 +773,11 @@
 
       </h2>
 
-
       <div class="result-category">
 
         ${escapeHTML(category)}
 
       </div>
-
 
       <div class="result-bottom">
 
@@ -1147,11 +793,9 @@
 
     `;
 
-
     return card;
 
   }
-
 
   /* ERGEBNISSE RENDERN */
 
@@ -1159,7 +803,6 @@
 
     const results =
       document.getElementById("results");
-
 
     results
       .querySelectorAll(".result-card")
@@ -1170,7 +813,6 @@
 
         }
       );
-
 
     products.forEach(
       function(product) {
@@ -1184,7 +826,6 @@
     );
 
   }
-
 
   /* FEHLERTOLERANTE SUCHE */
 
@@ -1239,7 +880,6 @@
 
   }
 
-
   /*
     ERKENNT MODELLNUMMERN
 
@@ -1266,13 +906,11 @@
         .toLowerCase()
         .replace(/[^a-z0-9]/g, "");
 
-
     if (!normalized) {
 
       return false;
 
     }
-
 
     /*
       Buchstaben + Zahl
@@ -1291,7 +929,6 @@
 
     }
 
-
     /*
       Zahl + Buchstaben
 
@@ -1305,7 +942,6 @@
       return true;
 
     }
-
 
     /*
       Reine Modellnummer
@@ -1323,11 +959,9 @@
 
     }
 
-
     return false;
 
   }
-
 
   /*
     MODELLNUMMERN NORMALISIEREN
@@ -1365,7 +999,6 @@
 
   }
 
-
   /*
     SUCHBEGRIFF NORMALISIEREN
   */
@@ -1377,7 +1010,6 @@
     );
 
   }
-
 
   /*
     SUCHWORT GEGEN PRODUKTWÖRTER PRÜFEN
@@ -1393,7 +1025,6 @@
         .toLowerCase()
         .trim();
 
-
     if (
       !normalizedSearchWord
     ) {
@@ -1401,7 +1032,6 @@
       return false;
 
     }
-
 
     /*
       MODELLNUMMER
@@ -1423,7 +1053,6 @@
         normalizedSearchWord
           .replace(/[^a-z0-9]/g, "");
 
-
       for (
         const textWord of textWords
       ) {
@@ -1432,7 +1061,6 @@
           textWord
             .toLowerCase()
             .replace(/[^a-z0-9]/g, "");
-
 
         /*
           Exakter Treffer:
@@ -1448,7 +1076,6 @@
           return true;
 
         }
-
 
         /*
           Variante desselben Modells:
@@ -1475,7 +1102,6 @@
               cleanSearchWord.length
             );
 
-
           /*
             Nach der Modellnummer dürfen
             nur Buchstaben folgen.
@@ -1497,11 +1123,9 @@
 
       }
 
-
       return false;
 
     }
-
 
     /*
       NORMALE SUCHBEGRIFFE
@@ -1523,7 +1147,6 @@
 
       }
 
-
       /*
         Rechtschreibkorrektur weiterhin
         für normale Wörter erlauben.
@@ -1535,9 +1158,7 @@
           textWord
         );
 
-
       let allowedDistance = 1;
-
 
       if (
         normalizedSearchWord.length >= 7
@@ -1547,7 +1168,6 @@
 
       }
 
-
       if (
         normalizedSearchWord.length >= 11
       ) {
@@ -1555,7 +1175,6 @@
         allowedDistance = 3;
 
       }
-
 
       if (
         distance <= allowedDistance
@@ -1567,11 +1186,9 @@
 
     }
 
-
     return false;
 
   }
-
 
   /*
     HAUPT-SUCHFUNKTION
@@ -1595,12 +1212,10 @@
         searchTerm
       );
 
-
     const normalizedText =
       normalizeModelSpacing(
         text
       );
-
 
     if (
       !normalizedSearchTerm ||
@@ -1611,7 +1226,6 @@
 
     }
 
-
     /*
       Suchbegriffe aufteilen.
     */
@@ -1620,7 +1234,6 @@
       normalizedSearchTerm
         .split(/\s+/)
         .filter(Boolean);
-
 
     /*
       Produkttext aufteilen.
@@ -1638,7 +1251,6 @@
           }
         )
         .filter(Boolean);
-
 
     /*
       JEDES Suchwort muss gefunden werden.
@@ -1663,13 +1275,11 @@
 
       }
 
-
       const wordFound =
         matchSearchWord(
           searchWord,
           textWords
         );
-
 
       if (!wordFound) {
 
@@ -1679,11 +1289,9 @@
 
     }
 
-
     return true;
 
   }
-
 
   /* PRODUKTSUCHE */
 
@@ -1695,13 +1303,11 @@
     const searchTerm =
       input.value.trim();
 
-
     const results =
       document.getElementById("results");
 
     const resultCount =
       document.getElementById("resultCount");
-
 
     /* KEINE EINGABE */
 
@@ -1718,7 +1324,6 @@
       return;
 
     }
-
 
     /*
       Name + Marke + Kategorie + Serie
@@ -1741,7 +1346,6 @@
           const series =
             product.series || "";
 
-
           const combinedText =
             name +
             " " +
@@ -1751,7 +1355,6 @@
             " " +
             series;
 
-
           return fuzzyMatch(
             searchTerm,
             combinedText
@@ -1759,7 +1362,6 @@
 
         }
       );
-
 
     /* ERGEBNISANZAHL */
 
@@ -1782,7 +1384,6 @@
 
     }
 
-
     /* ERGEBNISSE ANZEIGEN */
 
     if (
@@ -1797,13 +1398,11 @@
 
     }
 
-
     renderResults(
       foundProducts
     );
 
   }
-
 
   /* SUCHE LÖSCHEN */
 
@@ -1818,7 +1417,6 @@
     const resultCount =
       document.getElementById("resultCount");
 
-
     input.value = "";
 
     results.classList.remove("show");
@@ -1830,7 +1428,6 @@
     input.focus();
 
   }
-
 
   /* ENTER-TASTE */
 
@@ -1850,7 +1447,6 @@
 
       }
     );
-
 
   /* PRODUKTE BEIM START LADEN */
 

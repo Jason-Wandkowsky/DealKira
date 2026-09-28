@@ -6,136 +6,10 @@
 
   <title>Telefone – DealKira</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" href="basis.css">
+<script src="basis.js"></script>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-    }
-
-    header {
-      height: 82px;
-      background: #111;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 6%;
-      position: relative;
-      z-index: 1000;
-    }
-
-    .logo {
-      width: 280px;
-      height: 65px;
-      display: flex;
-      align-items: center;
-      overflow: visible;
-      position: relative;
-    }
-
-    .logo img {
-      height: 320px;
-      width: auto;
-      max-width: none;
-      display: block;
-    }
-
-    .menu-button {
-      width: 48px;
-      height: 48px;
-      background: #1c1c1c;
-      border: 1px solid #333;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      cursor: pointer;
-      transition: .2s;
-    }
-
-    .menu-button span {
-      width: 23px;
-      height: 3px;
-      background: #ffd400;
-      border-radius: 3px;
-      transition: .2s;
-    }
-
-    .menu-button:hover {
-      background: #252525;
-      border-color: #ffd400;
-    }
-
-    .menu-button.active span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-button.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-button.active span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .menu-panel {
-      position: absolute;
-      top: 82px;
-      right: 6%;
-      width: 270px;
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 14px;
-      padding: 10px;
-      box-shadow: 0 12px 35px rgba(0,0,0,.5);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: .2s;
-    }
-
-    .menu-panel.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .menu-panel a {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 15px;
-      border-radius: 9px;
-      font-weight: 700;
-      transition: .2s;
-    }
-
-    .menu-panel a:hover {
-      background: #222;
-      color: #ffd400;
-    }
-
-    .menu-icon {
-      width: 25px;
-      text-align: center;
-      font-size: 19px;
-    }
-
-    .menu-divider {
-      height: 1px;
-      background: #333;
-      margin: 8px 5px;
-    }
+<style>
 
     .hero {
       background: #111;
@@ -384,42 +258,7 @@
       color: #b00020;
     }
 
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-    }
-
-    @media(max-width:800px) {
-      .logo {
-        width: 225px;
-      }
-
-      .logo img {
-        height: 275px;
-      }
-    }
-
     @media(max-width:550px) {
-      header {
-        padding: 0 5%;
-      }
-
-      .logo {
-        width: 190px;
-        height: 50px;
-      }
-
-      .logo img {
-        height: 235px;
-      }
-
-      .menu-panel {
-        right: 5%;
-        width: 270px;
-      }
 
       .hero {
         padding: 42px 15px 48px;
@@ -502,82 +341,17 @@
       }
     }
 
-    @media(max-width:380px) {
-      .logo {
-        width: 170px;
-      }
-
-      .logo img {
-        height: 215px;
-      }
-
-      .menu-button {
-        width: 45px;
-        height: 45px;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-<header>
-
-  <a href="index.html" class="logo">
-    <img src="20879_nobg (1).png" alt="DealKira">
-  </a>
-
-  <button
-    class="menu-button"
-    id="menuButton"
-    type="button"
-    onclick="toggleMenu()"
-    aria-label="Menü öffnen"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <div class="menu-panel" id="menuPanel">
-
-    <a href="konto.html">
-      <span class="menu-icon">👤</span>
-      Konto
-    </a>
-
-    <a href="suche.html">
-      <span class="menu-icon">🔎</span>
-      Suche
-    </a>
-
-    <a href="kategorien.html">
-      <span class="menu-icon">📂</span>
-      Kategorien
-    </a>
-
-    <a href="deals.html">
-      <span class="menu-icon">🔥</span>
-      Deals
-    </a>
-
-    <div class="menu-divider"></div>
-
-    <a href="einstellungen.html">
-      <span class="menu-icon">⚙️</span>
-      Einstellungen
-    </a>
-
-  </div>
-
-</header>
-
+<site-header></site-header>
 
 <section class="hero">
   <h1>Telefone</h1>
   <p>Smartphones verschiedener Marken, Preisklassen und Ausstattungen entdecken</p>
 </section>
-
 
 <main class="products-section">
 
@@ -590,7 +364,6 @@
       ⚙️ Filter
     </button>
   </div>
-
 
   <div class="filter-message" id="filterMessage">
 
@@ -644,7 +417,6 @@
 
     </div>
 
-
     <div class="samsung-series-section" id="samsungSeriesSection">
 
       <div class="filter-title">Samsung Serien</div>
@@ -670,7 +442,6 @@
       </div>
 
     </div>
-
 
     <div class="iphone-series-section" id="iphoneSeriesSection">
 
@@ -714,7 +485,6 @@
 
     </div>
 
-
     <div class="redmi-series-section" id="redmiSeriesSection">
 
       <div class="filter-title">Redmi Serien</div>
@@ -732,7 +502,6 @@
       </div>
 
     </div>
-
 
     <div class="pixel-series-section" id="pixelSeriesSection">
 
@@ -772,7 +541,6 @@
 
     </div>
 
-
     <div class="oneplus-series-section" id="oneplusSeriesSection">
 
       <div class="filter-title">OnePlus Serien</div>
@@ -794,7 +562,6 @@
       </div>
 
     </div>
-
 
     <div class="motorola-series-section" id="motorolaSeriesSection">
 
@@ -822,7 +589,6 @@
 
     </div>
 
-
     <div class="huawei-series-section" id="huaweiSeriesSection">
 
       <div class="filter-title">Huawei Serien</div>
@@ -847,7 +613,6 @@
 
   </div>
 
-
   <div class="products" id="products">
 
     <div class="loading-message">
@@ -858,13 +623,10 @@
 
 </main>
 
-
-<footer>
-  © 2026 DealKira – Deals & Preise vergleichen
-</footer>
-
+<site-footer></site-footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
 
 <script>
 
@@ -872,25 +634,11 @@
   /* SUPABASE */
   /* ========================= */
 
-  const SUPABASE_URL =
-    "https://zniknbouugmgvqkkoamo.supabase.co";
-
-  const SUPABASE_KEY =
-    "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";
-
-  const supabaseClient =
-    window.supabase.createClient(
-      SUPABASE_URL,
-      SUPABASE_KEY
-    );
-
-
   /* ========================= */
   /* PRODUKTE */
   /* ========================= */
 
   let productsData = [];
-
 
   async function loadProducts() {
 
@@ -904,17 +652,14 @@
           cache: "no-cache"
         });
 
-
       if (!response.ok) {
         throw new Error(
           "telefone.json konnte nicht geladen werden."
         );
       }
 
-
       productsData =
         await response.json();
-
 
       renderProducts();
 
@@ -939,15 +684,12 @@
 
   }
 
-
   function renderProducts() {
 
     const productsContainer =
       document.getElementById("products");
 
-
     productsContainer.innerHTML = "";
-
 
     if (!productsData.length) {
 
@@ -961,7 +703,6 @@
 
     }
 
-
     productsData.forEach(function(product) {
 
       const card =
@@ -969,7 +710,6 @@
 
       card.className =
         "product-card";
-
 
       card.dataset.brand =
         product.brand || "";
@@ -986,7 +726,6 @@
       card.dataset.productImage =
         product.image || "";
 
-
       /* ========================= */
       /* PRIMÄREN SHOP BESTIMMEN */
       /* ========================= */
@@ -997,7 +736,6 @@
           ? product.shops[0]
           : null;
 
-
       card.dataset.productPrice =
         primaryShop?.price || "";
 
@@ -1006,7 +744,6 @@
 
       card.dataset.productLink =
         primaryShop?.link || "";
-
 
       const favoriteButton =
         document.createElement("button");
@@ -1040,13 +777,11 @@
         }
       );
 
-
       const imageContainer =
         document.createElement("div");
 
       imageContainer.className =
         "product-image";
-
 
       const image =
         document.createElement("img");
@@ -1060,24 +795,20 @@
       image.loading =
         "lazy";
 
-
       image.onerror =
         function() {
           this.style.display = "none";
         };
 
-
       imageContainer.appendChild(
         image
       );
-
 
       const content =
         document.createElement("div");
 
       content.className =
         "product-content";
-
 
       const brand =
         document.createElement("div");
@@ -1091,7 +822,6 @@
       content.appendChild(
         brand
       );
-
 
       const title =
         document.createElement("h2");
@@ -1144,7 +874,6 @@
       title.textContent =
         displayName;
 
-
       const dealButton =
         document.createElement("a");
 
@@ -1153,7 +882,6 @@
 
       dealButton.textContent =
         "Zum Deal";
-
 
       /* ========================= */
       /* NEUE PRODUKTSEITE */
@@ -1179,7 +907,6 @@
 
       }
 
-
       content.appendChild(
         title
       );
@@ -1187,7 +914,6 @@
       content.appendChild(
         dealButton
       );
-
 
       card.appendChild(
         favoriteButton
@@ -1201,13 +927,11 @@
         content
       );
 
-
       productsContainer.appendChild(
         card
       );
 
     });
-
 
     updateFilterButtons();
     applyFilters();
@@ -1216,86 +940,18 @@
 
   }
 
-
   /* ========================= */
   /* MENÜ */
   /* ========================= */
-
-  function toggleMenu() {
-
-    const menu =
-      document.getElementById("menuPanel");
-
-    const button =
-      document.getElementById("menuButton");
-
-    menu.classList.toggle("open");
-    button.classList.toggle("active");
-
-  }
-
-
-  function closeMenu() {
-
-    const menu =
-      document.getElementById("menuPanel");
-
-    const button =
-      document.getElementById("menuButton");
-
-    menu.classList.remove("open");
-    button.classList.remove("active");
-
-  }
-
-
-  document.addEventListener(
-    "click",
-    function(event) {
-
-      const menu =
-        document.getElementById("menuPanel");
-
-      const button =
-        document.getElementById("menuButton");
-
-
-      if (
-        !menu.contains(event.target) &&
-        !button.contains(event.target)
-      ) {
-
-        closeMenu();
-
-      }
-
-    }
-  );
-
 
   /* ========================= */
   /* FILTER */
   /* ========================= */
 
-  function toggleFilter() {
-
-    const filter =
-      document.getElementById(
-        "filterMessage"
-      );
-
-    filter.classList.toggle(
-      "show"
-    );
-
-  }
-
-
   let activeBrand = null;
   let activeSeries = null;
   let activeIphoneSeries = null;
   let activeAdditionalSeries = null;
-
 
   function toggleBrandFilter(brand) {
 
@@ -1319,7 +975,6 @@
     applyFilters();
 
   }
-
 
   function toggleSeriesFilter(series) {
 
@@ -1348,7 +1003,6 @@
 
   }
 
-
   function toggleIphoneSeriesFilter(series) {
 
     if (
@@ -1376,7 +1030,6 @@
 
   }
 
-
   function toggleAdditionalSeriesFilter(series) {
 
     if (
@@ -1402,7 +1055,6 @@
     applyFilters();
 
   }
-
 
   function updateFilterButtons() {
 
@@ -1439,7 +1091,6 @@
     const huaweiButton =
       document.getElementById("filterHuawei");
 
-
     const samsungSeriesSection =
       document.getElementById(
         "samsungSeriesSection"
@@ -1474,7 +1125,6 @@
       document.getElementById(
         "huaweiSeriesSection"
       );
-
 
     samsungButton.classList.toggle(
       "active",
@@ -1531,7 +1181,6 @@
       activeBrand === "Huawei"
     );
 
-
     samsungSeriesSection.classList.toggle(
       "show",
       activeBrand === "Samsung"
@@ -1567,7 +1216,6 @@
       activeBrand === "Huawei"
     );
 
-
     const samsungSeriesButtons = {
 
       S:
@@ -1584,7 +1232,6 @@
 
     };
 
-
     Object.keys(
       samsungSeriesButtons
     ).forEach(function(series) {
@@ -1600,7 +1247,6 @@
 
     });
 
-
     const iphoneSeriesButtons = [
       "SE",
       "11",
@@ -1611,7 +1257,6 @@
       "16",
       "17"
     ];
-
 
     iphoneSeriesButtons.forEach(
       function(series) {
@@ -1627,7 +1272,6 @@
 
       }
     );
-
 
     const additionalSeriesButtons = {
 
@@ -1703,7 +1347,6 @@
 
     };
 
-
     Object.keys(
       additionalSeriesButtons
     ).forEach(function(series) {
@@ -1732,14 +1375,12 @@
 
   }
 
-
   function applyFilters() {
 
     const cards =
       document.querySelectorAll(
         ".product-card"
       );
-
 
     cards.forEach(function(card) {
 
@@ -1749,9 +1390,7 @@
       const series =
         card.dataset.series;
 
-
       let visible = true;
-
 
       if (
         activeBrand &&
@@ -1761,7 +1400,6 @@
         visible = false;
 
       }
-
 
       if (
         visible &&
@@ -1779,7 +1417,6 @@
 
       }
 
-
       if (
         visible &&
         activeIphoneSeries
@@ -1796,7 +1433,6 @@
 
       }
 
-
       if (
         visible &&
         activeAdditionalSeries
@@ -1812,7 +1448,6 @@
 
       }
 
-
       card.classList.toggle(
         "hidden",
         !visible
@@ -1821,7 +1456,6 @@
     });
 
   }
-
 
   /* ========================= */
   /* USER */
@@ -1837,7 +1471,6 @@
       } =
         await supabaseClient.auth.getSession();
 
-
       if (
         !sessionError &&
         sessionData &&
@@ -1849,13 +1482,11 @@
 
       }
 
-
       const {
         data,
         error
       } =
         await supabaseClient.auth.getUser();
-
 
       if (error) {
 
@@ -1867,7 +1498,6 @@
         return null;
 
       }
-
 
       return data.user;
 
@@ -1884,7 +1514,6 @@
 
   }
 
-
   /* ========================= */
   /* FAVORITEN */
   /* ========================= */
@@ -1893,12 +1522,10 @@
 
     button.disabled = true;
 
-
     try {
 
       const user =
         await getCurrentUser();
-
 
       if (!user) {
 
@@ -1913,12 +1540,10 @@
 
       }
 
-
       const card =
         button.closest(
           ".product-card"
         );
-
 
       const productId =
         card.dataset.productId;
@@ -1938,7 +1563,6 @@
       const productLink =
         card.dataset.productLink;
 
-
       const {
         data: existingFavorite,
         error: selectError
@@ -1956,13 +1580,11 @@
           )
           .maybeSingle();
 
-
       if (selectError) {
 
         throw selectError;
 
       }
-
 
       if (existingFavorite) {
 
@@ -1981,13 +1603,11 @@
               user.id
             );
 
-
         if (error) {
 
           throw error;
 
         }
-
 
         button.classList.remove(
           "active"
@@ -2034,13 +1654,11 @@
 
             });
 
-
         if (error) {
 
           throw error;
 
         }
-
 
         button.classList.add(
           "active"
@@ -2084,19 +1702,16 @@
 
   }
 
-
   async function loadFavorites() {
 
     const user =
       await getCurrentUser();
-
 
     if (!user) {
 
       return;
 
     }
-
 
     const {
       data: favorites,
@@ -2110,7 +1725,6 @@
           user.id
         );
 
-
     if (error) {
 
       console.error(
@@ -2122,7 +1736,6 @@
 
     }
 
-
     const favoriteIds =
       new Set(
         favorites.map(
@@ -2133,7 +1746,6 @@
           }
         )
       );
-
 
     document
       .querySelectorAll(
@@ -2150,13 +1762,11 @@
               ".favorite-button"
             );
 
-
           if (!button) {
 
             return;
 
           }
-
 
           if (
             favoriteIds.has(
@@ -2199,7 +1809,6 @@
 
   }
 
-
   /* ========================= */
   /* AUTH STATUS */
   /* ========================= */
@@ -2241,7 +1850,6 @@
 
     }
   );
-
 
   /* ========================= */
   /* START */

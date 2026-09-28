@@ -4,13 +4,11 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Konto / Anmelden – DealKira</title>    <style>  
-    * {  
-      box-sizing: border-box;  
-      margin: 0;  
-      padding: 0;  
-    }  
-  
+  <title>Konto / Anmelden – DealKira</title>    <link rel="stylesheet" href="basis.css">
+<script src="basis.js"></script>
+
+<style>  
+
     body {  
       font-family: Arial, Helvetica, sans-serif;  
       background: #f5f5f5;  
@@ -19,125 +17,7 @@
       display: flex;  
       flex-direction: column;  
     }  
-  
-    header {  
-      height: 82px;  
-      background: #111;  
-      display: flex;  
-      align-items: center;  
-      justify-content: space-between;  
-      padding: 0 6%;  
-      position: relative;  
-      z-index: 1000;  
-    }  
-  
-    .logo {  
-      width: 280px;  
-      height: 65px;  
-      display: flex;  
-      align-items: center;  
-      overflow: visible;  
-      position: relative;  
-    }  
-  
-    .logo img {  
-      height: 320px;  
-      width: auto;  
-      max-width: none;  
-      display: block;  
-    }  
-  
-    .menu-button {  
-      width: 48px;  
-      height: 48px;  
-      background: #1c1c1c;  
-      border: 1px solid #333;  
-      border-radius: 10px;  
-      display: flex;  
-      flex-direction: column;  
-      justify-content: center;  
-      align-items: center;  
-      gap: 5px;  
-      cursor: pointer;  
-      transition: 0.2s;  
-    }  
-  
-    .menu-button span {  
-      width: 23px;  
-      height: 3px;  
-      background: #ffd400;  
-      border-radius: 3px;  
-      transition: 0.2s;  
-    }  
-  
-    .menu-button:hover {  
-      background: #252525;  
-      border-color: #ffd400;  
-    }  
-  
-    .menu-button.active span:nth-child(1) {  
-      transform: translateY(8px) rotate(45deg);  
-    }  
-  
-    .menu-button.active span:nth-child(2) {  
-      opacity: 0;  
-    }  
-  
-    .menu-button.active span:nth-child(3) {  
-      transform: translateY(-8px) rotate(-45deg);  
-    }  
-  
-    .menu-panel {  
-      position: absolute;  
-      top: 82px;  
-      right: 6%;  
-      width: 270px;  
-      background: #111;  
-      border: 1px solid #333;  
-      border-radius: 14px;  
-      padding: 10px;  
-      box-shadow: 0 12px 35px rgba(0,0,0,0.5);  
-      opacity: 0;  
-      visibility: hidden;  
-      transform: translateY(-10px);  
-      transition: 0.2s;  
-    }  
-  
-    .menu-panel.open {  
-      opacity: 1;  
-      visibility: visible;  
-      transform: translateY(0);  
-    }  
-  
-    .menu-panel a {  
-      display: flex;  
-      align-items: center;  
-      gap: 12px;  
-      color: #fff;  
-      text-decoration: none;  
-      padding: 14px 15px;  
-      border-radius: 9px;  
-      font-weight: 700;  
-      transition: 0.2s;  
-    }  
-  
-    .menu-panel a:hover {  
-      background: #222;  
-      color: #ffd400;  
-    }  
-  
-    .menu-icon {  
-      width: 25px;  
-      text-align: center;  
-      font-size: 19px;  
-    }  
-  
-    .menu-divider {  
-      height: 1px;  
-      background: #333;  
-      margin: 8px 5px;  
-    }  
-  
+
     .hero {  
       background: #111;  
       color: #fff;  
@@ -827,48 +707,9 @@
     .favorite-remove-button:hover {  
       background: #ccc;  
     }  
-  
-    footer {  
-      background: #111;  
-      color: #aaa;  
-      text-align: center;  
-      padding: 30px 20px;  
-      font-size: 14px;  
-      margin-top: auto;  
-    }  
-  
-    @media (max-width: 800px) {  
-  
-      .logo {  
-        width: 225px;  
-      }  
-  
-      .logo img {  
-        height: 275px;  
-      }  
-  
-    }  
-  
+
     @media (max-width: 550px) {  
-  
-      header {  
-        padding: 0 5%;  
-      }  
-  
-      .logo {  
-        width: 190px;  
-        height: 50px;  
-      }  
-  
-      .logo img {  
-        height: 235px;  
-      }  
-  
-      .menu-panel {  
-        right: 5%;  
-        width: 270px;  
-      }  
-  
+
       .hero {  
         padding: 42px 15px 48px;  
       }  
@@ -954,73 +795,13 @@
     }  
   
     @media (max-width: 380px) {  
-  
-      .logo {  
-        width: 170px;  
-      }  
-  
-      .logo img {  
-        height: 215px;  
-      }  
-  
-      .menu-button {  
-        width: 45px;  
-        height: 45px;  
-      }  
-  
+
       .account-name {  
         font-size: 27px;  
       }  
   
     }  
-  </style>  </head>  <body>    <header>  <a href="index.html" class="logo">  
-  <img src="20879_nobg (1).png" alt="DealKira">  
-</a>  
-
-<button  
-  class="menu-button"  
-  id="menuButton"  
-  onclick="toggleMenu()"  
-  aria-label="Menü öffnen"  
-  aria-expanded="false"  
->  
-  <span></span>  
-  <span></span>  
-  <span></span>  
-</button>  
-
-<div class="menu-panel" id="menuPanel">  
-
-  <a href="konto.html">  
-    <span class="menu-icon">👤</span>  
-    Konto / Anmelden  
-  </a>  
-
-  <div class="menu-divider"></div>  
-
-  <a href="suche.html">  
-    <span class="menu-icon">🔍</span>  
-    Suche  
-  </a>  
-
-  <a href="kategorien.html">  
-    <span class="menu-icon">📂</span>  
-    Kategorien  
-  </a>  
-
-  <a href="deals.html">  
-    <span class="menu-icon">🔥</span>  
-    Deals  
-  </a>  
-
-  <a href="einstellungen.html">  
-    <span class="menu-icon">⚙️</span>  
-    Einstellungen  
-  </a>  
-
-</div>
-
-  </header>    <section class="hero">  <h1>  
+  </style>  </head>  <body>    <site-header></site-header>    <section class="hero">  <h1>  
   Konto / <span>Anmelden</span>  
 </h1>  
 
@@ -2000,21 +1781,8 @@
 
 </div>
 
-  </main>    <footer>  
-    © 2026 DealKira – Bessere Deals finden  
-  </footer>    <!-- SUPABASE -->    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>    <script>  
-  
-    const SUPABASE_URL =  
-      "https://zniknbouugmgvqkkoamo.supabase.co";  
-  
-    const SUPABASE_PUBLISHABLE_KEY =  
-      "sb_publishable_Jr7OQScG8lgIja_Hav5-mw_B_htFgzI";  
-  
-    const supabaseClient =  
-      window.supabase.createClient(  
-        SUPABASE_URL,  
-        SUPABASE_PUBLISHABLE_KEY  
-      );  
+  </main>    <site-footer></site-footer>    <!-- SUPABASE -->    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>    <script>  
   
     const REDIRECT_URL =  
       "https://dealkira.com/konto.html";  
@@ -2022,84 +1790,11 @@
     let currentUser = null;  
   
     let notificationSaveTimer = null;  
-  
-  
+
     /* =========================  
        MENÜ  
     ========================= */  
-  
-    function toggleMenu() {  
-  
-      const menu =  
-        document.getElementById("menuPanel");  
-  
-      const button =  
-        document.getElementById("menuButton");  
-  
-      const isOpen =  
-        menu.classList.toggle("open");  
-  
-      button.classList.toggle("active");  
-  
-      button.setAttribute(  
-        "aria-expanded",  
-        isOpen  
-      );  
-    }  
-  
-  
-    function closeMenu() {  
-  
-      const menu =  
-        document.getElementById("menuPanel");  
-  
-      const button =  
-        document.getElementById("menuButton");  
-  
-      menu.classList.remove("open");  
-  
-      button.classList.remove("active");  
-  
-      button.setAttribute(  
-        "aria-expanded",  
-        "false"  
-      );  
-    }  
-  
-  
-    document.addEventListener(  
-      "click",  
-      function(event) {  
-  
-        const menu =  
-          document.getElementById("menuPanel");  
-  
-        const button =  
-          document.getElementById("menuButton");  
-  
-        if (  
-          !menu.contains(event.target) &&  
-          !button.contains(event.target)  
-        ) {  
-          closeMenu();  
-        }  
-  
-      }  
-    );  
-  
-  
-    document.addEventListener(  
-      "keydown",  
-      function(event) {  
-  
-        if (event.key === "Escape") {  
-          closeMenu();  
-        }  
-  
-      }  
-    );  
-  
-  
+
     /* =========================  
        PASSWORT ANZEIGEN / VERBERGEN  
     ========================= */  
@@ -2115,12 +1810,10 @@
       if (!input || !button) {  
         return;  
       }  
-  
-  
+
       const showing =  
         input.type === "password";  
-  
-  
+
       if (showing) {  
   
         input.type = "text";  
@@ -2184,8 +1877,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        ANSICHTEN  
     ========================= */  
@@ -2209,20 +1901,17 @@
       if (selectedView) {  
         selectedView.classList.add("active");  
       }  
-  
-  
+
       if (viewId === "favoritesView") {  
         loadFavorites();  
       }  
-  
-  
+
       if (viewId === "notificationsView") {  
         loadNotificationSettings();  
       }  
   
     }  
-  
-  
+
     function clearMessages() {  
   
       const messages =  
@@ -2240,8 +1929,7 @@
       );  
   
     }  
-  
-  
+
     function showMessage(  
       elementId,  
       text,  
@@ -2273,8 +1961,7 @@
       message.classList.add("show");  
   
     }  
-  
-  
+
     function setButtonLoading(  
       buttonId,  
       loading  
@@ -2309,8 +1996,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        FEHLERMELDUNGEN  
     ========================= */  
@@ -2326,55 +2012,47 @@
   
       const lower =  
         message.toLowerCase();  
-  
-  
+
       if (  
         lower.includes("invalid login credentials")  
       ) {  
         return "E-Mail-Adresse oder Passwort ist falsch.";  
       }  
-  
-  
+
       if (  
         lower.includes("email not confirmed")  
       ) {  
         return "Bitte bestätige zuerst deine E-Mail-Adresse.";  
       }  
-  
-  
+
       if (  
         lower.includes("user already registered")  
       ) {  
         return "Für diese E-Mail-Adresse existiert bereits ein Konto.";  
       }  
-  
-  
+
       if (  
         lower.includes("password should be at least")  
       ) {  
         return "Das Passwort ist zu kurz.";  
       }  
-  
-  
+
       if (  
         lower.includes("rate limit")  
       ) {  
         return "Zu viele Versuche. Bitte warte kurz und versuche es erneut.";  
       }  
-  
-  
+
       if (  
         lower.includes("invalid email")  
       ) {  
         return "Bitte gib eine gültige E-Mail-Adresse ein.";  
       }  
-  
-  
+
       return "Es ist ein Fehler aufgetreten. Bitte versuche es erneut.";  
   
     }  
-  
-  
+
     /* =========================  
        REGISTRIEREN  
     ========================= */  
@@ -2404,8 +2082,7 @@
         document.getElementById(  
           "registerPasswordConfirm"  
         ).value;  
-  
-  
+
       if (password !== passwordConfirm) {  
   
         showMessage(  
@@ -2416,8 +2093,7 @@
   
         return;  
       }  
-  
-  
+
       if (password.length < 8) {  
   
         showMessage(  
@@ -2428,14 +2104,12 @@
   
         return;  
       }  
-  
-  
+
       setButtonLoading(  
         "registerButton",  
         true  
       );  
-  
-  
+
       try {  
   
         const {  
@@ -2460,13 +2134,11 @@
             }  
   
           });  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         if (  
           data.user &&  
           data.session  
@@ -2517,8 +2189,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        ANMELDEN  
     ========================= */  
@@ -2538,14 +2209,12 @@
         document.getElementById(  
           "loginPassword"  
         ).value;  
-  
-  
+
       setButtonLoading(  
         "loginButton",  
         true  
       );  
-  
-  
+
       try {  
   
         const {  
@@ -2559,13 +2228,11 @@
             password: password  
   
           });  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         if (data.user) {  
   
           updateLoggedInView(  
@@ -2592,8 +2259,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        PASSWORT VERGESSEN  
     ========================= */  
@@ -2608,14 +2274,12 @@
         document.getElementById(  
           "forgotEmail"  
         ).value.trim();  
-  
-  
+
       setButtonLoading(  
         "forgotButton",  
         true  
       );  
-  
-  
+
       try {  
   
         const {  
@@ -2628,13 +2292,11 @@
                 REDIRECT_URL  
             }  
           );  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         showMessage(  
           "forgotMessage",  
           "Wenn für diese E-Mail-Adresse ein Konto existiert, wurde ein Link zum Zurücksetzen des Passworts versendet.",  
@@ -2659,8 +2321,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        ANGEMELDETEN BENUTZER  
        LADEN  
@@ -2679,8 +2340,7 @@
       );  
   
     }  
-  
-  
+
     function updateLoggedInView(user) {  
   
       currentUser = user;  
@@ -2702,8 +2362,7 @@
         document.getElementById(  
           "settingsEmail"  
         );  
-  
-  
+
       if (loggedInName) {  
         loggedInName.textContent = name;  
       }  
@@ -2716,15 +2375,13 @@
         settingsEmail.textContent =  
           user.email || "";  
       }  
-  
-  
+
       showView(  
         "loggedInView"  
       );  
   
     }  
-  
-  
+
     /* =========================  
        KONTENEINSTELLUNGEN  
     ========================= */  
@@ -2765,8 +2422,7 @@
       }  
   
     }  
-  
-  
+
     function cancelEdit(editId) {  
   
       const area =  
@@ -2777,8 +2433,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        NAME ÄNDERN  
     ========================= */  
@@ -2796,8 +2451,7 @@
   
       const newName =  
         input.value.trim();  
-  
-  
+
       if (!newName) {  
   
         showMessage(  
@@ -2808,8 +2462,7 @@
   
         return;  
       }  
-  
-  
+
       try {  
   
         const {  
@@ -2823,17 +2476,14 @@
             }  
   
           });  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         currentUser =  
           data.user || currentUser;  
-  
-  
+
         updateLoggedInView(  
           currentUser  
         );  
@@ -2851,8 +2501,7 @@
         document.getElementById(  
           "nameEdit"  
         ).classList.remove("show");  
-  
-  
+
         showView(  
           "settingsView"  
         );  
@@ -2874,8 +2523,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        E-MAIL ÄNDERN  
     ========================= */  
@@ -2893,8 +2541,7 @@
   
       const newEmail =  
         input.value.trim();  
-  
-  
+
       if (!newEmail) {  
   
         showMessage(  
@@ -2905,8 +2552,7 @@
   
         return;  
       }  
-  
-  
+
       if (  
         newEmail.toLowerCase() ===  
         (currentUser.email || "").toLowerCase()  
@@ -2920,8 +2566,7 @@
   
         return;  
       }  
-  
-  
+
       try {  
   
         const {  
@@ -2932,18 +2577,15 @@
             email: newEmail  
   
           });  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         document.getElementById(  
           "emailEdit"  
         ).classList.remove("show");  
-  
-  
+
         showMessage(  
           "settingsMessage",  
           "Eine Bestätigungs-E-Mail wurde an die neue Adresse gesendet. Bitte bestätige die Änderung über den Link in der E-Mail.",  
@@ -2961,8 +2603,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        PASSWORT ÄNDERN  
     ========================= */  
@@ -2982,8 +2623,7 @@
         document.getElementById(  
           "newPasswordConfirm"  
         ).value;  
-  
-  
+
       if (password.length < 8) {  
   
         showMessage(  
@@ -2994,8 +2634,7 @@
   
         return;  
       }  
-  
-  
+
       if (  
         password !== passwordConfirm  
       ) {  
@@ -3008,8 +2647,7 @@
   
         return;  
       }  
-  
-  
+
       try {  
   
         const {  
@@ -3020,13 +2658,11 @@
             password: password  
   
           });  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         document.getElementById(  
           "newPassword"  
         ).value = "";  
@@ -3038,8 +2674,7 @@
         document.getElementById(  
           "passwordEdit"  
         ).classList.remove("show");  
-  
-  
+
         showMessage(  
           "settingsMessage",  
           "Dein Passwort wurde erfolgreich geändert.",  
@@ -3057,8 +2692,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        FAVORITEN LADEN  
     ========================= */  
@@ -3083,8 +2717,7 @@
         document.getElementById(  
           "favoritesList"  
         );  
-  
-  
+
       if (  
         !loading ||  
         !empty ||  
@@ -3092,8 +2725,7 @@
       ) {  
         return;  
       }  
-  
-  
+
       loading.style.display =  
         "block";  
   
@@ -3102,8 +2734,7 @@
   
       list.style.display =  
         "none";  
-  
-  
+
       try {  
   
         const {  
@@ -3123,17 +2754,14 @@
                 ascending: false  
               }  
             );  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         loading.style.display =  
           "none";  
-  
-  
+
         if (  
           !data ||  
           data.length === 0  
@@ -3145,11 +2773,9 @@
           return;  
   
         }  
-  
-  
+
         list.innerHTML = "";  
-  
-  
+
         data.forEach(  
           function(favorite) {  
   
@@ -3160,8 +2786,7 @@
   
             card.className =  
               "favorite-card";  
-  
-  
+
             const imageHTML =  
               favorite.produkt_bild  
                 ? `  
@@ -3184,8 +2809,7 @@
                     📦  
                   </div>  
                 `;  
-  
-  
+
             const priceHTML =  
               favorite.produkt_preis  
                 ? `  
@@ -3196,8 +2820,7 @@
                   </div>  
                 `  
                 : "";  
-  
-  
+
             const shopHTML =  
               favorite.produkt_shop  
                 ? `  
@@ -3208,8 +2831,7 @@
                   </div>  
                 `  
                 : "";  
-  
-  
+
             const openButtonHTML =  
               favorite.produkt_link  
                 ? `  
@@ -3223,8 +2845,7 @@
                   </a>  
                 `  
                 : "";  
-  
-  
+
             card.innerHTML = `  
   
               <div class="favorite-card-content">  
@@ -3261,36 +2882,30 @@
               </div>  
   
             `;  
-  
-  
+
             list.appendChild(  
               card  
             );  
   
           }  
         );  
-  
-  
+
         list.style.display =  
           "block";  
-  
-  
+
       } catch (error) {  
   
         console.error(  
           "Favoriten konnten nicht geladen werden:",  
           error  
         );  
-  
-  
+
         loading.style.display =  
           "none";  
-  
-  
+
         empty.style.display =  
           "block";  
-  
-  
+
         empty.innerHTML = `  
   
           <div class="empty-account-icon">  
@@ -3310,8 +2925,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        FAVORIT ENTFERNEN  
     ========================= */  
@@ -3323,8 +2937,7 @@
       if (!currentUser) {  
         return;  
       }  
-  
-  
+
       try {  
   
         const {  
@@ -3341,24 +2954,20 @@
               "user_id",  
               currentUser.id  
             );  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         loadFavorites();  
-  
-  
+
       } catch (error) {  
   
         console.error(  
           "Favorit konnte nicht gelöscht werden:",  
           error  
         );  
-  
-  
+
         alert(  
           "Der Favorit konnte nicht entfernt werden."  
         );  
@@ -3366,8 +2975,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        BENACHRICHTIGUNGEN LADEN  
     ========================= */  
@@ -3377,8 +2985,7 @@
       if (!currentUser) {  
         return;  
       }  
-  
-  
+
       const loading =  
         document.getElementById(  
           "notificationsLoading"  
@@ -3388,20 +2995,17 @@
         document.getElementById(  
           "notificationsSettings"  
         );  
-  
-  
+
       if (!loading || !settings) {  
         return;  
       }  
-  
-  
+
       loading.style.display =  
         "block";  
   
       settings.style.display =  
         "none";  
-  
-  
+
       try {  
   
         const {  
@@ -3416,17 +3020,14 @@
               currentUser.id  
             )  
             .maybeSingle();  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         let notificationSettings =  
           data;  
-  
-  
+
         /*  
           Falls für diesen Benutzer noch keine  
           Einstellungen existieren, werden die  
@@ -3458,46 +3059,39 @@
               })  
               .select()  
               .single();  
-  
-  
+
           if (createError) {  
             throw createError;  
           }  
-  
-  
+
           notificationSettings =  
             created;  
   
         }  
-  
-  
+
         applyNotificationSettings(  
           notificationSettings  
         );  
-  
-  
+
         loading.style.display =  
           "none";  
   
         settings.style.display =  
           "block";  
-  
-  
+
       } catch (error) {  
   
         console.error(  
           "Benachrichtigungseinstellungen konnten nicht geladen werden:",  
           error  
         );  
-  
-  
+
         loading.style.display =  
           "none";  
   
         settings.style.display =  
           "none";  
-  
-  
+
         showMessage(  
           "notificationsMessage",  
           "Die Benachrichtigungseinstellungen konnten nicht geladen werden. Bitte versuche es erneut.",  
@@ -3507,8 +3101,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        BENACHRICHTIGUNGSEINSTELLUNGEN  
        ANWENDEN  
@@ -3532,24 +3125,21 @@
         document.getElementById(  
           "accountNotifications"  
         );  
-  
-  
+
       if (deal) {  
   
         deal.checked =  
           !!settings.deal_benachrichtigungen;  
   
       }  
-  
-  
+
       if (price) {  
   
         price.checked =  
           !!settings.preisalarme;  
   
       }  
-  
-  
+
       if (account) {  
   
         account.checked =  
@@ -3558,8 +3148,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        BENACHRICHTIGUNGEN SPEICHERN  
     ========================= */  
@@ -3569,8 +3158,7 @@
       if (!currentUser) {  
         return;  
       }  
-  
-  
+
       const deal =  
         document.getElementById(  
           "dealNotifications"  
@@ -3585,8 +3173,7 @@
         document.getElementById(  
           "accountNotifications"  
         );  
-  
-  
+
       if (  
         !deal ||  
         !price ||  
@@ -3594,8 +3181,7 @@
       ) {  
         return;  
       }  
-  
-  
+
       if (notificationSaveTimer) {  
   
         clearTimeout(  
@@ -3603,8 +3189,7 @@
         );  
   
       }  
-  
-  
+
       notificationSaveTimer =  
         setTimeout(  
           async function() {  
@@ -3645,28 +3230,24 @@
                     }  
   
                   );  
-  
-  
+
               if (error) {  
                 throw error;  
               }  
-  
-  
+
               showMessage(  
                 "notificationsMessage",  
                 "Deine Benachrichtigungseinstellungen wurden gespeichert.",  
                 "success"  
               );  
-  
-  
+
             } catch (error) {  
   
               console.error(  
                 "Benachrichtigungseinstellungen konnten nicht gespeichert werden:",  
                 error  
               );  
-  
-  
+
               showMessage(  
                 "notificationsMessage",  
                 "Die Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.",  
@@ -3680,8 +3261,7 @@
         );  
   
     }  
-  
-  
+
     /* =========================  
        HTML ABSICHERN  
     ========================= */  
@@ -3718,8 +3298,7 @@
         );  
   
     }  
-  
-  
+
     /* =========================  
        ABMELDEN  
     ========================= */  
@@ -3732,31 +3311,25 @@
           error  
         } =  
           await supabaseClient.auth.signOut();  
-  
-  
+
         if (error) {  
           throw error;  
         }  
-  
-  
+
         currentUser = null;  
-  
-  
+
         showView(  
           "loginView"  
         );  
-  
-  
+
         document.getElementById(  
           "loginEmail"  
         ).value = "";  
-  
-  
+
         document.getElementById(  
           "loginPassword"  
         ).value = "";  
-  
-  
+
       } catch (error) {  
   
         showMessage(  
@@ -3768,8 +3341,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        AKTUELLEN LOGIN PRÜFEN  
     ========================= */  
@@ -3782,8 +3354,7 @@
           data  
         } =  
           await supabaseClient.auth.getUser();  
-  
-  
+
         if (data.user) {  
   
           updateLoggedInView(  
@@ -3802,8 +3373,7 @@
       }  
   
     }  
-  
-  
+
     /* =========================  
        AUTH STATUS  
     ========================= */  
@@ -3827,8 +3397,7 @@
   
       }  
     );  
-  
-  
+
     /* =========================  
        START  
     ========================= */  
