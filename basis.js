@@ -77,7 +77,13 @@ class SiteFooter extends HTMLElement {
       '<footer>' +
         '<strong>DealKira</strong>' +
         '<p>Produkte entdecken. Deals finden. Preise vergleichen.</p>' +
-        '<p>© 2026 DealKira · <a href="support.html">Support</a></p>' +
+        '<p>' +
+          '<a href="impressum.html">Impressum</a> · ' +
+          '<a href="datenschutz.html">Datenschutz</a> · ' +
+          '<a href="support.html">Support</a>' +
+        '</p>' +
+        '<p class="footer-hinweis">Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>' +
+        '<p>© 2026 DealKira</p>' +
       '</footer>';
 
   }

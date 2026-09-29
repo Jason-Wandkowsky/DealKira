@@ -195,3 +195,76 @@
 
 }
 
+
+/* =========================
+   TEXTSEITEN
+   (Impressum, Datenschutz)
+========================= */
+
+.textseite {
+  max-width: 820px;
+  margin: 45px auto 70px;
+  padding: 40px 45px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  line-height: 1.65;
+}
+
+.textseite h2 {
+  font-size: 22px;
+  margin: 34px 0 10px;
+}
+
+.textseite h2:first-child {
+  margin-top: 0;
+}
+
+.textseite h3 {
+  font-size: 17px;
+  margin: 22px 0 6px;
+}
+
+.textseite p,
+.textseite ul {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.textseite ul {
+  padding-left: 22px;
+}
+
+.textseite a {
+  color: #111;
+  text-decoration: underline;
+  text-decoration-color: #ffd400;
+  text-decoration-thickness: 2px;
+}
+
+.textseite .stand {
+  margin-top: 30px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Platzhalter: vor der Veröffentlichung ersetzen! */
+.ausfuellen {
+  background: #ffe866;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+@media (max-width: 550px) {
+
+  .textseite {
+    margin: 25px 12px 45px;
+    padding: 26px 20px;
+  }
+
+  .textseite h2 {
+    font-size: 19px;
+  }
+
+}
