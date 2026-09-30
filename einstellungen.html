@@ -215,6 +215,10 @@
       margin-bottom: 6px;
     }
 
+    .cookie-box a {
+      color: #ffd400;
+    }
+
     .cookie-box p {
       color: #999;
       font-size: 14px;
@@ -392,15 +396,17 @@
 
           <div class="option-group">
 
-            <h3>🍪 Datenschutz & Cookies</h3>
+            <h3>🔒 Datenschutz</h3>
 
             <div class="cookie-box">
 
-              <h3>Notwendige Cookies</h3>
+              <h3>Nur notwendige Speicherung</h3>
 
               <p>
-                Diese Cookies sind erforderlich, damit grundlegende Funktionen
-                von DealKira funktionieren.
+                DealKira verwendet keine Tracking- oder Werbe-Cookies.
+                Gespeichert wird nur, was für deinen Login und deine
+                Einstellungen nötig ist. Mehr dazu in unserer
+                <a href="datenschutz.html">Datenschutzerklärung</a>.
               </p>
 
               <div class="cookie-required">
@@ -408,36 +414,6 @@
               </div>
 
             </div>
-
-            <div class="cookie-box">
-
-              <h3>Optionale Cookies</h3>
-
-              <p>
-                Optionale Cookies können beispielsweise für Analyse- und
-                Komfortfunktionen verwendet werden.
-              </p>
-
-              <label class="switch" style="margin-top:12px;">
-
-                <input
-                  type="checkbox"
-                  id="optionalCookies"
-                  onchange="saveCookiePreference()"
-                >
-
-                <span class="slider"></span>
-
-              </label>
-
-            </div>
-
-            <button
-              class="reset-button"
-              onclick="resetCookieSettings()"
-            >
-              Cookie-Einstellungen zurücksetzen
-            </button>
 
           </div>
 
@@ -511,49 +487,13 @@
     }
 
     /* =========================
-       COOKIES
+       ALTE COOKIE-EINSTELLUNG AUFRÄUMEN
+       (der Schalter "Optionale Cookies" wurde entfernt)
     ========================= */
 
-    function saveCookiePreference() {
-
-      const enabled =
-        document.getElementById("optionalCookies").checked;
-
-      localStorage.setItem(
-        "dealkiraOptionalCookies",
-        enabled ? "true" : "false"
-      );
-
-      showMessage(
-        enabled
-          ? "Optionale Cookies wurden aktiviert."
-          : "Optionale Cookies wurden deaktiviert."
-      );
-    }
-
-    function loadCookiePreference() {
-
-      const saved =
-        localStorage.getItem("dealkiraOptionalCookies");
-
-      document.getElementById("optionalCookies").checked =
-        saved === "true";
-    }
-
-    function resetCookieSettings() {
-
-      localStorage.removeItem(
-        "dealkiraOptionalCookies"
-      );
-
-      document.getElementById(
-        "optionalCookies"
-      ).checked = false;
-
-      showMessage(
-        "Cookie-Einstellungen wurden zurückgesetzt."
-      );
-    }
+    try {
+      localStorage.removeItem("dealkiraOptionalCookies");
+    } catch (e) {}
 
     /* =========================
        MELDUNGEN
@@ -582,7 +522,6 @@
     ========================= */
 
     loadShopPreference();
-    loadCookiePreference();
 
   </script>
 

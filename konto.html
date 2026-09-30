@@ -484,6 +484,41 @@
       color: #111;  
     }  
   
+    .privacy-hint {
+      margin-top: 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #666;
+      text-align: center;
+    }
+
+    .privacy-hint a {
+      color: #111;
+      font-weight: 700;
+    }
+
+    .danger-item .edit-button {
+      background: #fee4e2;
+    }
+
+    .danger-text {
+      color: #b42318;
+    }
+
+    .danger-item .edit-area input {
+      margin-top: 10px;
+    }
+
+    .small-save-button.danger-button {
+      background: #d92d20;
+      color: #fff;
+    }
+
+    .small-save-button.danger-button:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
     .settings-note {  
       color: #777;  
       font-size: 13px;  
@@ -1068,7 +1103,13 @@
         id="registerButton"  
       >  
         Konto erstellen  
-      </button>  
+      </button>
+
+      <p class="privacy-hint">
+        Informationen dazu, wie wir deine Daten verarbeiten, findest du in
+        unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+  
 
     </form>  
 
@@ -1547,6 +1588,72 @@
       </div>  
 
     </div>  
+
+    <!-- KONTO LÖSCHEN -->
+
+    <div class="settings-item danger-item">
+
+      <div class="settings-item-top">
+
+        <div>
+          <div class="settings-item-label">
+            Konto löschen
+          </div>
+          <div class="settings-item-value danger-text">
+            Konto und alle Daten dauerhaft entfernen
+          </div>
+        </div>
+
+        <button
+          class="edit-button"
+          onclick="toggleEdit('deleteEdit')"
+          aria-label="Konto löschen"
+        >
+          🗑️
+        </button>
+
+      </div>
+
+      <div
+        class="edit-area"
+        id="deleteEdit"
+      >
+
+        <div class="settings-note">
+          Dein Konto, deine Favoriten und deine Benachrichtigungseinstellungen
+          werden <strong>sofort und unwiderruflich</strong> gelöscht.
+          Gib zur Bestätigung <strong>LÖSCHEN</strong> ein.
+        </div>
+
+        <input
+          type="text"
+          id="deleteConfirm"
+          placeholder="LÖSCHEN"
+          autocomplete="off"
+        >
+
+        <div class="edit-buttons">
+
+          <button
+            class="small-save-button danger-button"
+            id="deleteAccountButton"
+            onclick="deleteAccount()"
+          >
+            Endgültig löschen
+          </button>
+
+          <button
+            class="small-cancel-button"
+            onclick="cancelEdit('deleteEdit')"
+          >
+            Abbrechen
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
 
     <div  
       class="account-message"  
@@ -3303,6 +3410,79 @@
        ABMELDEN  
     ========================= */  
   
+    /* =========================
+       KONTO LÖSCHEN
+       Braucht die SQL-Funktion "delete_own_account"
+       in Supabase (siehe supabase-konto-loeschen.sql).
+    ========================= */
+
+    async function deleteAccount() {
+
+      if (!currentUser) {
+        return;
+      }
+
+      const confirmInput =
+        document.getElementById("deleteConfirm");
+
+      if (confirmInput.value.trim().toUpperCase() !== "LÖSCHEN") {
+        showMessage(
+          "settingsMessage",
+          "Bitte gib zur Bestätigung LÖSCHEN ein.",
+          "error"
+        );
+        return;
+      }
+
+      const button =
+        document.getElementById("deleteAccountButton");
+
+      button.disabled = true;
+      button.textContent = "Wird gelöscht …";
+
+      try {
+
+        const { error } =
+          await supabaseClient.rpc("delete_own_account");
+
+        if (error) {
+          throw error;
+        }
+
+        await supabaseClient.auth.signOut();
+
+        currentUser = null;
+        confirmInput.value = "";
+        document.getElementById("deleteEdit").classList.remove("show");
+
+        showView("loginView");
+
+        showMessage(
+          "loginMessage",
+          "Dein Konto und alle zugehörigen Daten wurden gelöscht.",
+          "success"
+        );
+
+      } catch (error) {
+
+        console.error("Konto löschen fehlgeschlagen:", error);
+
+        showMessage(
+          "settingsMessage",
+          "Das Konto konnte nicht gelöscht werden. Bitte versuche es später erneut oder schreib uns eine E-Mail.",
+          "error"
+        );
+
+      } finally {
+
+        button.disabled = false;
+        button.textContent = "Endgültig löschen";
+
+      }
+
+    }
+
+
     async function logout() {  
   
       try {  
