@@ -11,6 +11,8 @@ Deals entdecken und Preise vergleichen – https://dealkira.com
 | `bausteine.css` | Gemeinsames Design der Kategorie-Seiten (Hero, Filter-Button, Produkt-Grid, „Noch keine Produkte“) |
 | `supabase-client.js` | Supabase-Verbindung (URL + öffentlicher Schlüssel) für Login und Favoriten |
 | `telefone.json`, `tablets.json` | Produktdaten |
+| `produkte.json` | Produktdaten der Computer-Unterkategorien. Feld `kategorie` = Dateiname der Unterseite (z. B. `maeuse` → maeuse.html) |
+| `kategorie.js` | Zeigt auf jeder Unterkategorie die passenden Produkte aus `produkte.json` an, inkl. Marken-Filter |
 
 Jede Seite enthält nur noch:
 

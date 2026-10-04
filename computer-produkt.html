@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produkt – DealKira</title>
+
+  <link rel="stylesheet" href="basis.css">
+<script src="basis.js"></script>
+
+<style>
+
+    .hero {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 45px 20px 50px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: #ccc;
+    }
+
+    .product-section {
+      max-width: 1000px;
+      margin: 45px auto 70px;
+      padding: 0 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link:hover {
+      color: #777;
+    }
+
+    .product-detail {
+      background: #fff;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+
+    .product-brand {
+      font-size: 14px;
+      font-weight: 700;
+      color: #777;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .product-name {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .product-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .product-image {
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .shops-title {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .shops {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .shop-row {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      background: #fff;
+    }
+
+    .shop-info {
+      min-width: 0;
+    }
+
+    .shop-name {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .shop-price {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .shop-price.empty {
+      font-size: 14px;
+      color: #777;
+      font-weight: 400;
+    }
+
+    .shop-button {
+      flex-shrink: 0;
+      display: inline-block;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .shop-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    .ad-mark {
+      margin-left: 2px;
+      font-weight: 400;
+    }
+
+    .affiliate-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    .error-message {
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      color: #b00020;
+    }
+
+    @media(max-width:800px) {
+
+      .product-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .product-image {
+        height: 350px;
+      }
+
+    }
+
+    @media(max-width:550px) {
+
+      .hero {
+        padding: 40px 15px 45px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .product-section {
+        margin: 30px auto 50px;
+        padding: 0 12px;
+      }
+
+      .product-detail {
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .product-brand {
+        font-size: 11px;
+      }
+
+      .product-name {
+        font-size: 25px;
+        margin-bottom: 25px;
+      }
+
+      .product-image {
+        height: 280px;
+        padding: 10px;
+      }
+
+      .shops-title {
+        font-size: 21px;
+      }
+
+      .shop-row {
+        padding: 13px;
+      }
+
+      .shop-name {
+        font-size: 15px;
+      }
+
+      .shop-price {
+        font-size: 17px;
+      }
+
+      .shop-button {
+        padding: 9px 11px;
+        font-size: 12px;
+      }
+
+    }
+
+    @media(max-width:380px) {
+
+      .product-detail {
+        padding: 16px;
+      }
+
+      .product-name {
+        font-size: 22px;
+      }
+
+      .shop-row {
+        gap: 8px;
+      }
+
+      .shop-button {
+        padding: 8px 9px;
+        font-size: 11px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+<site-header></site-header>
+
+<section class="hero">
+  <h1>Produktvergleich</h1>
+  <p>Preise verschiedener Shops vergleichen</p>
+</section>
+
+<main class="product-section">
+
+  <a href="computer-kategorien.html" class="back-link">
+    ← Zurück zu Computer
+  </a>
+
+  <div id="productContainer">
+
+    <div class="error-message">
+      Produkt wird geladen...
+    </div>
+
+  </div>
+
+</main>
+
+<site-footer></site-footer>
+
+<script>
+
+  /* ========================= */
+  /* MENÜ */
+  /* ========================= */
+
+  /* ========================= */
+  /* PRODUKT LADEN */
+  /* ========================= */
+
+  async function loadProduct() {
+
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
+
+    try {
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+      const productId =
+        params.get("id");
+
+      if (!productId) {
+
+        throw new Error(
+          "Keine Produkt-ID angegeben."
+        );
+
+      }
+
+      const response =
+        await fetch(
+          "produkte.json",
+          {
+            cache: "no-cache"
+          }
+        );
+
+      if (!response.ok) {
+
+        throw new Error(
+          "produkte.json konnte nicht geladen werden."
+        );
+
+      }
+
+      const products =
+        await response.json();
+
+      const product =
+        products.find(
+          function(item) {
+
+            return item.id === productId;
+
+          }
+        );
+
+      if (!product) {
+
+        throw new Error(
+          "Das angeforderte Produkt wurde nicht gefunden."
+        );
+
+      }
+
+      renderProduct(product);
+
+    } catch (error) {
+
+      console.error(
+        "Fehler beim Laden des Produkts:",
+        error
+      );
+
+      container.innerHTML = `
+        <div class="error-message">
+
+          Das Produkt konnte nicht gefunden werden.
+
+          <br><br>
+
+          <a
+            href="telefon.html"
+            style="
+              display:inline-block;
+              background:#ffd400;
+              color:#111;
+              text-decoration:none;
+              padding:12px 18px;
+              border-radius:9px;
+              font-weight:700;
+            "
+          >
+            Zurück zu Computer
+          </a>
+
+        </div>
+      `;
+
+    }
+
+  }
+
+  /* ========================= */
+  /* PRODUKT ANZEIGEN */
+  /* ========================= */
+
+  function renderProduct(product) {
+
+    const container =
+      document.getElementById(
+        "productContainer"
+      );
+
+    const shops =
+      Array.isArray(product.shops)
+        ? product.shops
+        : [];
+
+    let shopRows = "";
+
+    if (!shops.length) {
+
+      shopRows = `
+        <div class="shop-row">
+
+          <div class="shop-info">
+
+            <div class="shop-name">
+              Noch keine Shops vorhanden
+            </div>
+
+            <div class="shop-price empty">
+              Derzeit sind keine Angebote hinterlegt.
+            </div>
+
+          </div>
+
+        </div>
+      `;
+
+    } else {
+
+      shops.forEach(
+        function(shop) {
+
+          const shopName =
+            shop.name || "Shop";
+
+          const price =
+            shop.price || "";
+
+          const link =
+            shop.link || "";
+
+          let priceHTML;
+
+          if (price.trim()) {
+
+            priceHTML = `
+              <div class="shop-price">
+                ${escapeHTML(price)}
+              </div>
+            `;
+
+          } else {
+
+            priceHTML = `
+              <div class="shop-price empty">
+                Preis ansehen
+              </div>
+            `;
+
+          }
+
+          let buttonHTML;
+
+          if (link.trim()) {
+
+            buttonHTML = `
+              <a
+                class="shop-button"
+                href="${escapeAttribute(link)}"
+                target="_blank"
+                rel="nofollow sponsored noopener noreferrer"
+              >
+                Gehe zu →<span class="ad-mark">*</span>
+              </a>
+            `;
+
+          } else {
+
+            buttonHTML = `
+              <span
+                class="shop-button"
+                style="
+                  opacity:.5;
+                  cursor:not-allowed;
+                "
+              >
+                Kein Link
+              </span>
+            `;
+
+          }
+
+          shopRows += `
+
+            <div class="shop-row">
+
+              <div class="shop-info">
+
+                <div class="shop-name">
+                  ${escapeHTML(shopName)}
+                </div>
+
+                ${priceHTML}
+
+              </div>
+
+              ${buttonHTML}
+
+            </div>
+
+          `;
+
+        }
+      );
+
+    }
+
+    document.title =
+      (product.name || "Produkt") +
+      " – DealKira";
+
+    container.innerHTML = `
+
+      <div class="product-detail">
+
+        ${
+          product.brand
+            ? `
+              <div class="product-brand">
+                ${escapeHTML(product.brand)}
+              </div>
+            `
+            : ""
+        }
+
+        <h1 class="product-name">
+          ${escapeHTML(product.name || "Produkt")}
+        </h1>
+
+        <div class="product-main">
+
+          <div class="product-image">
+
+            <img
+              src="${escapeAttribute(product.image || "")}"
+              alt="${escapeAttribute(product.name || "Produkt")}"
+              onerror="this.style.display='none';"
+            >
+
+          </div>
+
+          <div>
+
+            <h2 class="shops-title">
+              Angebote vergleichen
+            </h2>
+
+            <div class="shops">
+              ${shopRows}
+            </div>
+
+            <p class="affiliate-note">
+              * Partnerlink (Anzeige): Kaufst du über einen solchen Link,
+              erhält DealKira eine Provision. Für dich ändert sich am Preis nichts.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+  /* ========================= */
+  /* SICHERES HTML */
+  /* ========================= */
+
+  function escapeHTML(value) {
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  }
+
+  function escapeAttribute(value) {
+
+    return escapeHTML(value);
+
+  }
+
+  /* ========================= */
+  /* START */
+  /* ========================= */
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+      loadProduct();
+
+    }
+  );
+
+</script>
+
+</body>
+</html>

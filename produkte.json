@@ -1,0 +1,72 @@
+[
+  {
+    "id": "asus-vivobook-16-x1607qa",
+    "name": "ASUS Vivobook 16 X1607QA",
+    "brand": "ASUS",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/3T6OwiZ" }
+    ]
+  },
+  {
+    "id": "monitor-27-b0fhkxpwks",
+    "name": "Lenovo Legion 27-10",
+    "brand": "Lenovo",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4rq0uRq" }
+    ]
+  },
+  {
+    "id": "logitech-g502-hero",
+    "name": "Logitech G502 HERO",
+    "brand": "Logitech",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4xEAbZj" }
+    ]
+  },
+  {
+    "id": "steelseries-apex-3-tkl",
+    "name": "SteelSeries Apex 3 TKL",
+    "brand": "SteelSeries",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4ydqvGb" }
+    ]
+  },
+  {
+    "id": "hyperx-cloud-iii",
+    "name": "HyperX Cloud III",
+    "brand": "HyperX",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4hk0767" }
+    ]
+  },
+  {
+    "id": "hyperx-quadcast-2",
+    "name": "HyperX QuadCast 2",
+    "brand": "HyperX",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4rtn3oh" }
+    ]
+  },
+  {
+    "id": "lexar-es3-1tb",
+    "name": "Lexar ES3 1TB Extreme Portable SSD",
+    "brand": "Lexar",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      { "name": "Amazon", "price": "", "link": "https://amzn.to/4hkS2Q9" }
+    ]
+  }
+]
