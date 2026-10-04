@@ -6,7 +6,11 @@
     "kategorie": "laptops",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/3T6OwiZ" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/3T6OwiZ"
+      }
     ]
   },
   {
@@ -16,7 +20,11 @@
     "kategorie": "bildschirme",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4rq0uRq" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rq0uRq"
+      }
     ]
   },
   {
@@ -26,7 +34,11 @@
     "kategorie": "maeuse",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4xEAbZj" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4xEAbZj"
+      }
     ]
   },
   {
@@ -36,7 +48,11 @@
     "kategorie": "tastaturen",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4ydqvGb" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4ydqvGb"
+      }
     ]
   },
   {
@@ -46,7 +62,11 @@
     "kategorie": "headset",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4hk0767" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hk0767"
+      }
     ]
   },
   {
@@ -56,7 +76,11 @@
     "kategorie": "mikrofon",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4rtn3oh" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4rtn3oh"
+      }
     ]
   },
   {
@@ -66,7 +90,739 @@
     "kategorie": "speicherplatten",
     "image": "",
     "shops": [
-      { "name": "Amazon", "price": "", "link": "https://amzn.to/4hkS2Q9" }
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://amzn.to/4hkS2Q9"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5090",
+    "name": "GeForce RTX 5090",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B000DM65B"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5080",
+    "name": "GeForce RTX 5080 (Inspire 3X OC Black)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B007n22GX"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5070-ti",
+    "name": "GeForce RTX 5070 Ti (Ventus 3X OC Gaming)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c6rif5d"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5070",
+    "name": "GeForce RTX 5070 (Prime OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eCJCtJn"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5060-ti-16-gb",
+    "name": "GeForce RTX 5060 Ti 16 GB (Shadow 2X OC Gaming Plus)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hxm3nTa"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5060-ti-8-gb",
+    "name": "GeForce RTX 5060 Ti 8 GB (Trio OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03fBQyq0"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5060",
+    "name": "GeForce RTX 5060 (OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gH9ZzRW"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-5050",
+    "name": "GeForce RTX 5050 (Windforce OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aN7h415"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-9070-xt",
+    "name": "Radeon RX 9070 XT (OC)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iY3EKQT"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-9070",
+    "name": "Radeon RX 9070 (OC White Triple)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00nwp5vk"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-9060-xt-16-gb",
+    "name": "Radeon RX 9060 XT 16 GB",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0g18vZ4E"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-9060-xt-8-gb",
+    "name": "Radeon RX 9060 XT 8 GB",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bePAuUT"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4090",
+    "name": "GeForce RTX 4090 (Gaming OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08xuUYzQ"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4080-super",
+    "name": "GeForce RTX 4080 Super (OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04jlVnac"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4080",
+    "name": "GeForce RTX 4080 (Trinity OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cGM4bFQ"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4070-ti-super",
+    "name": "GeForce RTX 4070 Ti Super (Trinity Black Edition)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gXacjtl"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4070-ti",
+    "name": "GeForce RTX 4070 Ti (iChill)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07frFG1e"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4070-super",
+    "name": "GeForce RTX 4070 Super (Verto OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02UtGYs2"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4070",
+    "name": "GeForce RTX 4070 (Evo OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02G1yK9j"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4060-ti-16-gb",
+    "name": "GeForce RTX 4060 Ti 16 GB",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hq3Y2F1"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4060-ti-8-gb",
+    "name": "GeForce RTX 4060 Ti 8 GB (Twin X2 OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e7DGWDn"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-4060",
+    "name": "GeForce RTX 4060",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hXwmlTK"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-7900-xtx",
+    "name": "Radeon RX 7900 XTX",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iZhNIjd"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-7900-xt",
+    "name": "Radeon RX 7900 XT (Phantom Gaming)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e6IemNV"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-7800-xt",
+    "name": "Radeon RX 7800 XT (Magnetic Air WH)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fb5o3IB"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-7700-xt",
+    "name": "Radeon RX 7700 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0adCT6Lf"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-7600",
+    "name": "Radeon RX 7600",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fN3mCim"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3090-ti",
+    "name": "GeForce RTX 3090 Ti (AMP Extreme Holo)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ebfpSJj"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3090",
+    "name": "GeForce RTX 3090 (OC Edition 24 GB)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0exaSYPf"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3080-ti",
+    "name": "GeForce RTX 3080 Ti (XLR8 Gaming)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00qpaI8f"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3080-12-gb",
+    "name": "GeForce RTX 3080 12 GB (XLR8)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0crW8WE8"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3080-10-gb",
+    "name": "GeForce RTX 3080 10 GB (OC)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09YlmRxV"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3070-ti",
+    "name": "GeForce RTX 3070 Ti (Palit GameRock)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c91LTWe"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3070",
+    "name": "GeForce RTX 3070 (Ventus 3X OC LHR)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02sMQyqe"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3060-ti",
+    "name": "GeForce RTX 3060 Ti (Palit)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07c9mz9D"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3060-8-gb",
+    "name": "GeForce RTX 3060 8 GB",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09XfNf7s"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3050-8-gb",
+    "name": "GeForce RTX 3050 8 GB (OC Edition)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gOWvJrY"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3050-6-gb",
+    "name": "GeForce RTX 3050 6 GB (OC Edition)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fzh2Gh9"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6950-xt",
+    "name": "Radeon RX 6950 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01yhIUtA"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6900-xt",
+    "name": "Radeon RX 6900 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0feNAVHU"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6800-xt",
+    "name": "Radeon RX 6800 XT (Gaming OC)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02X6Maeb"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6750-xt",
+    "name": "Radeon RX 6750 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05vLc9rz"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6700-xt",
+    "name": "Radeon RX 6700 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ia82mnh"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6650-xt",
+    "name": "Radeon RX 6650 XT (Black Gaming)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e9fyWvU"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6600-xt",
+    "name": "Radeon RX 6600 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04CEGqhZ"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6600",
+    "name": "Radeon RX 6600 (Hellhound)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0c5JhUTX"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-6500-xt",
+    "name": "Radeon RX 6500 XT (OC)",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01v7GMU6"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-5700-xt",
+    "name": "Radeon RX 5700 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03BXYUkW"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-5700",
+    "name": "Radeon RX 5700",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gJknhOs"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-5600-xt",
+    "name": "Radeon RX 5600 XT",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09DDBYl2"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-5500-xt-8-gb",
+    "name": "Radeon RX 5500 XT 8 GB",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fazHH2a"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rx-5500-xt-4-gb",
+    "name": "Radeon RX 5500 XT 4 GB",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0jimWuE5"
+      }
     ]
   }
 ]
