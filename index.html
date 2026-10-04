@@ -717,6 +717,14 @@
 
     const HOME_DEAL_ANZAHL = 6;
 
+    const KATEGORIE_ICONS = {
+      "Gaming": "🎮",
+      "Computer": "💻",
+      "Elektronik": "📺",
+      "Zubehör": "🔌",
+      "Smartphones": "📱"
+    };
+
     function createHomeDeal(card) {
 
       const name =
@@ -746,7 +754,9 @@
       function showNoImage() {
 
         imageBox.innerHTML =
-          '<div class="no-image" role="img">📦<span>Kein Produktbild</span></div>';
+          '<div class="no-image" role="img">' +
+          (KATEGORIE_ICONS[category] || "📦") +
+          '<span>Kein Produktbild</span></div>';
 
         imageBox.firstChild.setAttribute(
           "aria-label",
