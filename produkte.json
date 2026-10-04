@@ -434,6 +434,20 @@
     ]
   },
   {
+    "id": "gpu-rx-7900-gre",
+    "name": "Radeon RX 7900 GRE",
+    "brand": "AMD",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iUKVz9N"
+      }
+    ]
+  },
+  {
     "id": "gpu-rx-7800-xt",
     "name": "Radeon RX 7800 XT (Magnetic Air WH)",
     "brand": "AMD",
@@ -584,6 +598,20 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B07c9mz9D"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rtx-3060-12-gb",
+    "name": "GeForce RTX 3060 12 GB (Dual)",
+    "brand": "Nvidia",
+    "kategorie": "grafikkarten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ivG9H04"
       }
     ]
   },
