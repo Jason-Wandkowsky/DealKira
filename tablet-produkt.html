@@ -149,6 +149,18 @@
       color: #ffd400;
     }
 
+    .ad-mark {
+      margin-left: 2px;
+      font-weight: 400;
+    }
+
+    .affiliate-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #777;
+      line-height: 1.5;
+    }
+
     .error-message {
       background: #fff;
       border-radius: 14px;
@@ -474,7 +486,7 @@
                 target="_blank"
                 rel="nofollow sponsored noopener noreferrer"
               >
-                Gehe zu →
+                Gehe zu →<span class="ad-mark">*</span>
               </a>
             `;
 
@@ -562,6 +574,11 @@
             <div class="shops">
               ${shopRows}
             </div>
+
+            <p class="affiliate-note">
+              * Partnerlink (Anzeige): Kaufst du über einen solchen Link,
+              erhält DealKira eine Provision. Für dich ändert sich am Preis nichts.
+            </p>
 
           </div>
 

@@ -64,6 +64,7 @@
   <link rel="stylesheet" href="basis.css">
 <script src="basis.js"></script>
 
+
 <style>
 
     body {
@@ -76,35 +77,29 @@
       flex-direction: column;
     }
 
+    main {
+      flex: 1;
+    }
+
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      flex: 1;
-
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-
       text-align: center;
-
-      padding: 55px 6% 50px;
+      padding: 55px 6% 45px;
     }
 
     .hero-content {
       max-width: 850px;
-      width: 100%;
+      margin: 0 auto;
     }
 
     .hero h1 {
       font-size: 58px;
       line-height: 1.1;
-
       margin-bottom: 14px;
-
       font-weight: 800;
-      color: #fff;
     }
 
     .hero h1 span {
@@ -114,41 +109,27 @@
     .hero p {
       font-size: 21px;
       color: #bdbdbd;
-
       max-width: 650px;
-
       margin: 0 auto 28px;
     }
-
-    /* =========================
-       SHORTCUTS
-    ========================= */
 
     .shortcuts {
       display: flex;
       justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
-
-      margin-top: 5px;
     }
 
     .shortcut {
       min-width: 180px;
-
       padding: 14px 20px;
-
       background: #222;
       border: 1px solid #333;
-
       border-radius: 10px;
-
       color: #fff;
       text-decoration: none;
-
       font-size: 16px;
       font-weight: 700;
-
       transition: 0.2s;
     }
 
@@ -156,11 +137,8 @@
       background: #ffd400;
       color: #111;
       border-color: #ffd400;
-
       transform: translateY(-2px);
     }
-
-    /* Deals entdecken bleibt gelb */
 
     .shortcut.primary {
       background: #ffd400;
@@ -171,11 +149,292 @@
     .shortcut.primary:hover {
       background: #111;
       color: #ffd400;
-      border-color: #ffd400;
     }
 
     .shortcut-icon {
       margin-right: 7px;
+    }
+
+    /* =========================
+       ABSCHNITTE
+    ========================= */
+
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .section h2 span {
+      color: #ffd400;
+    }
+
+    .section-link {
+      color: #ffd400;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .section-link:hover {
+      text-decoration: underline;
+    }
+
+    /* =========================
+       DEAL-VORSCHAU
+    ========================= */
+
+    .deal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .home-deal {
+      background: #222;
+      border: 1px solid #2e2e2e;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: 0.2s;
+    }
+
+    .home-deal:hover {
+      border-color: #ffd400;
+      transform: translateY(-3px);
+    }
+
+    .home-deal-image {
+      height: 170px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+    }
+
+    .home-deal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .home-deal-image .no-image {
+      color: #999;
+      font-size: 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .home-deal-image .no-image span {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .home-deal-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .home-deal-category {
+      font-size: 12px;
+      font-weight: 700;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .home-deal h3 {
+      font-size: 17px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .home-deal-button {
+      margin-top: auto;
+      text-align: center;
+      padding: 11px 14px;
+      background: #ffd400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .home-deal-button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    .ad-mark {
+      margin-left: 2px;
+      font-weight: 400;
+    }
+
+    .deal-loading {
+      grid-column: 1 / -1;
+      color: #999;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .affiliate-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* =========================
+       KATEGORIEN
+    ========================= */
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .category-tile {
+      background: #222;
+      border: 1px solid #2e2e2e;
+      border-radius: 14px;
+      padding: 26px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .category-tile:hover {
+      border-color: #ffd400;
+      transform: translateY(-3px);
+    }
+
+    .category-tile .icon {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .category-tile h3 {
+      font-size: 19px;
+      margin-bottom: 6px;
+    }
+
+    .category-tile p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* =========================
+       SO FUNKTIONIERT'S
+    ========================= */
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .step {
+      background: #1f1f1f;
+      border-radius: 14px;
+      padding: 24px 20px;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ffd400;
+      color: #111;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+
+    .step h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* =========================
+       KONTO + TRANSPARENZ
+    ========================= */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .info-box {
+      background: #222;
+      border: 1px solid #2e2e2e;
+      border-radius: 14px;
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-box h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .info-box p {
+      color: #bbb;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .info-box a.button {
+      margin-top: auto;
+      align-self: flex-start;
+      padding: 11px 18px;
+      border-radius: 9px;
+      background: #ffd400;
+      color: #111;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .info-box a.button:hover {
+      background: #111;
+      color: #ffd400;
+    }
+
+    .info-box a.text-link {
+      margin-top: auto;
+      color: #ffd400;
+      font-weight: 700;
+      text-decoration: none;
     }
 
     /* =========================
@@ -185,7 +444,7 @@
     @media (max-width: 800px) {
 
       .hero {
-        padding: 45px 5% 40px;
+        padding: 45px 5% 35px;
       }
 
       .hero h1 {
@@ -196,9 +455,15 @@
         font-size: 19px;
       }
 
-      .shortcut {
-        min-width: 170px;
+      .deal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .steps,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
 
     /* =========================
@@ -208,7 +473,7 @@
     @media (max-width: 550px) {
 
       .hero {
-        padding: 35px 5% 35px;
+        padding: 35px 5% 25px;
       }
 
       .hero h1 {
@@ -229,66 +494,394 @@
         width: 100%;
       }
 
+      .section {
+        padding: 28px 16px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .deal-grid {
+        gap: 12px;
+      }
+
+      .home-deal-image {
+        height: 120px;
+        padding: 8px;
+      }
+
+      .home-deal-body {
+        padding: 12px;
+      }
+
+      .home-deal h3 {
+        font-size: 15px;
+      }
+
+      .home-deal-button {
+        padding: 10px 6px;
+        font-size: 13px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
-
   <site-header></site-header>
 
-  <!-- =========================
-       STARTSEITE
-  ========================= -->
+  <main>
 
-  <main class="hero">
+    <!-- =========================
+         HERO
+    ========================= -->
 
-    <div class="hero-content">
+    <section class="hero">
 
-      <h1>
-        Finde bessere <span>Deals.</span>
-      </h1>
+      <div class="hero-content">
 
-      <p>
-        DealKira hilft dir dabei, interessante Angebote und gute Preise schneller zu entdecken.
+        <h1>
+          Finde bessere <span>Deals.</span>
+        </h1>
+
+        <p>
+          DealKira sammelt interessante Angebote aus Technik, Gaming und Haushalt –
+          damit du gute Preise schneller findest.
+        </p>
+
+        <div class="shortcuts">
+
+          <a href="deals.html" class="shortcut primary">
+            <span class="shortcut-icon">🔥</span>
+            Deals entdecken
+          </a>
+
+          <a href="suche.html" class="shortcut">
+            <span class="shortcut-icon">🔍</span>
+            Suche
+          </a>
+
+          <a href="kategorien.html" class="shortcut">
+            <span class="shortcut-icon">📂</span>
+            Kategorien
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         AKTUELLE DEALS
+         Die ersten Deals werden automatisch
+         aus deals.html übernommen – neue Deals
+         also nur dort eintragen.
+    ========================= -->
+
+    <section class="section">
+
+      <div class="section-head">
+        <h2>🔥 Aktuelle <span>Deals</span></h2>
+        <a href="deals.html" class="section-link">Alle Deals →</a>
+      </div>
+
+      <div class="deal-grid" id="homeDeals">
+        <div class="deal-loading">Deals werden geladen …</div>
+      </div>
+
+      <p class="affiliate-note">
+        * Partnerlink (Anzeige): Kaufst du über einen solchen Link, erhält DealKira eine Provision.
+        Für dich ändert sich am Preis nichts.
       </p>
 
-      <!-- =========================
-           SHORTCUTS
-      ========================= -->
+    </section>
 
-      <div class="shortcuts">
+    <!-- =========================
+         KATEGORIEN
+    ========================= -->
 
-        <a href="deals.html" class="shortcut primary">
-          <span class="shortcut-icon">🔥</span>
-          Deals entdecken
+    <section class="section">
+
+      <div class="section-head">
+        <h2>📂 Beliebte <span>Kategorien</span></h2>
+        <a href="kategorien.html" class="section-link">Alle Kategorien →</a>
+      </div>
+
+      <div class="category-grid">
+
+        <a href="computer-kategorien.html" class="category-tile">
+          <div class="icon">💻</div>
+          <h3>Computer</h3>
+          <p>Komponenten, Monitore, Mäuse, Tastaturen und Zubehör.</p>
         </a>
 
-        <a href="suche.html" class="shortcut">
-          <span class="shortcut-icon">🔍</span>
-          Suche
+        <a href="telefone-tablets.html" class="category-tile">
+          <div class="icon">📱</div>
+          <h3>Telefone &amp; Tablets</h3>
+          <p>Smartphones, Tablets, Powerbanks, Kabel und Hüllen.</p>
         </a>
 
-        <a href="kategorien.html" class="shortcut">
-          <span class="shortcut-icon">📂</span>
-          Kategorien
+        <a href="haushaltsgeraete.html" class="category-tile">
+          <div class="icon">🏠</div>
+          <h3>Haushaltsgeräte</h3>
+          <p>Küche, Waschen, Kühlen und Klima für dein Zuhause.</p>
         </a>
 
       </div>
 
-    </div>
+    </section>
+
+    <!-- =========================
+         SO FUNKTIONIERT'S
+    ========================= -->
+
+    <section class="section">
+
+      <div class="section-head">
+        <h2>So funktioniert <span>DealKira</span></h2>
+      </div>
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Entdecken</h3>
+          <p>Stöbere durch aktuelle Deals oder such gezielt nach einem Produkt.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Vergleichen</h3>
+          <p>Sieh dir an, bei welchem Shop es das Produkt gibt, und prüf dort den aktuellen Preis.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Sparen</h3>
+          <p>Mit einem Klick landest du direkt beim Shop – ohne Umwege und ohne Aufpreis.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         KONTO + TRANSPARENZ
+    ========================= -->
+
+    <section class="section">
+
+      <div class="info-grid">
+
+        <div class="info-box">
+          <h3>♡ Favoriten speichern</h3>
+          <p>
+            Mit einem kostenlosen Konto merkst du dir interessante Produkte
+            und findest sie jederzeit wieder.
+          </p>
+          <a href="konto.html" class="button">Kostenlos registrieren</a>
+        </div>
+
+        <div class="info-box">
+          <h3>💡 Wie verdient DealKira Geld?</h3>
+          <p>
+            Einige Links auf DealKira sind Partnerlinks und mit einem Sternchen (*) markiert.
+            Kaufst du darüber, bekommen wir vom Shop eine kleine Provision.
+            Für dich bleibt der Preis gleich – so bleibt DealKira kostenlos.
+          </p>
+          <a href="impressum.html" class="text-link">Mehr im Impressum →</a>
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
   <site-footer></site-footer>
+
+  <script>
+
+    /* =========================
+       DEAL-VORSCHAU
+       Holt die ersten Deals aus deals.html,
+       damit es nur eine Stelle zum Pflegen gibt.
+    ========================= */
+
+    const HOME_DEAL_ANZAHL = 6;
+
+    function createHomeDeal(card) {
+
+      const name =
+        card.dataset.productName || "Produkt";
+
+      const image =
+        card.dataset.productImage || "";
+
+      const link =
+        card.dataset.productLink || "deals.html";
+
+      const category =
+        card.dataset.productCategory || "";
+
+      const article =
+        document.createElement("article");
+
+      article.className =
+        "home-deal";
+
+      const imageBox =
+        document.createElement("div");
+
+      imageBox.className =
+        "home-deal-image";
+
+      function showNoImage() {
+
+        imageBox.innerHTML =
+          '<div class="no-image" role="img">📦<span>Kein Produktbild</span></div>';
+
+        imageBox.firstChild.setAttribute(
+          "aria-label",
+          name + ": kein Produktbild"
+        );
+
+      }
+
+      if (image) {
+
+        const img =
+          document.createElement("img");
+
+        img.src = image;
+        img.alt = name;
+        img.loading = "lazy";
+        img.onerror = showNoImage;
+
+        imageBox.appendChild(img);
+
+      } else {
+
+        showNoImage();
+
+      }
+
+      const body =
+        document.createElement("div");
+
+      body.className =
+        "home-deal-body";
+
+      if (category) {
+
+        const cat =
+          document.createElement("div");
+
+        cat.className =
+          "home-deal-category";
+
+        cat.textContent =
+          category;
+
+        body.appendChild(cat);
+
+      }
+
+      const title =
+        document.createElement("h3");
+
+      title.textContent =
+        name;
+
+      body.appendChild(title);
+
+      const button =
+        document.createElement("a");
+
+      button.className =
+        "home-deal-button";
+
+      button.href =
+        link;
+
+      button.target =
+        "_blank";
+
+      button.rel =
+        "nofollow sponsored noopener noreferrer";
+
+      button.innerHTML =
+        'Zum Deal<span class="ad-mark">*</span>';
+
+      body.appendChild(button);
+
+      article.appendChild(imageBox);
+      article.appendChild(body);
+
+      return article;
+
+    }
+
+    async function loadHomeDeals() {
+
+      const container =
+        document.getElementById("homeDeals");
+
+      try {
+
+        const response =
+          await fetch("deals.html");
+
+        if (!response.ok) {
+          throw new Error("deals.html konnte nicht geladen werden.");
+        }
+
+        const html =
+          await response.text();
+
+        const doc =
+          new DOMParser().parseFromString(html, "text/html");
+
+        const cards =
+          Array.from(
+            doc.querySelectorAll(".deal-card[data-product-link]")
+          ).slice(0, HOME_DEAL_ANZAHL);
+
+        if (!cards.length) {
+          throw new Error("Keine Deals gefunden.");
+        }
+
+        container.replaceChildren(
+          ...cards.map(createHomeDeal)
+        );
+
+      }
+
+      catch (error) {
+
+        console.error("Deal-Vorschau:", error);
+
+        container.innerHTML =
+          '<div class="deal-loading">Die Deals konnten gerade nicht geladen werden. ' +
+          '<a href="deals.html" class="section-link">Zu allen Deals →</a></div>';
+
+      }
+
+    }
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      loadHomeDeals
+    );
+
+  </script>
 
 </body>
 </html>
