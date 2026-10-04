@@ -157,40 +157,22 @@
 
     }
 
-    if (shop.link) {
+    /* Wie bei Telefonen und Tablets:
+       "Zum Deal" führt zur Produktseite mit allen Shops */
 
-      const button =
-        document.createElement("a");
+    const button =
+      document.createElement("a");
 
-      button.className =
-        "product-card-button";
+    button.className =
+      "product-card-button";
 
-      button.href =
-        shop.link;
+    button.href =
+      "artikel.html?id=" + encodeURIComponent(product.id || "");
 
-      button.target =
-        "_blank";
+    button.textContent =
+      "Zum Deal";
 
-      button.rel =
-        "nofollow sponsored noopener noreferrer";
-
-      button.textContent =
-        "Zum Deal bei " + (shop.name || "Shop");
-
-      const mark =
-        document.createElement("span");
-
-      mark.className =
-        "ad-mark";
-
-      mark.textContent =
-        "*";
-
-      button.appendChild(mark);
-
-      body.appendChild(button);
-
-    }
+    body.appendChild(button);
 
     card.appendChild(imageBox);
     card.appendChild(body);
@@ -201,9 +183,12 @@
 
   /* =========================
      MARKEN-FILTER
+     Baut die Marken-Buttons ins Filter-Feld.
+     Funktioniert mit allen Elementen, die
+     data-brand haben (Kategorie und Suche).
   ========================= */
 
-  function buildFilter(products, container) {
+  function buildFilter(items, container, cardSelector) {
 
     const message =
       document.getElementById("filterMessage");
@@ -215,7 +200,7 @@
     const brands =
       Array.from(
         new Set(
-          products
+          items
             .map(function(p) { return p.brand; })
             .filter(Boolean)
         )
@@ -226,6 +211,13 @@
     message.innerHTML = "";
 
     message.classList.add("brand-filter");
+
+    if (!brands.length) {
+      message.textContent =
+        message.dataset.emptyText ||
+        "Sobald hier Produkte sind, kannst du nach Marke filtern.";
+      return;
+    }
 
     const label =
       document.createElement("div");
@@ -258,9 +250,6 @@
       chip.textContent =
         text;
 
-      chip.dataset.value =
-        value;
-
       chip.addEventListener("click", function() {
 
         chips
@@ -270,7 +259,7 @@
           });
 
         container
-          .querySelectorAll(".product-card")
+          .querySelectorAll(cardSelector)
           .forEach(function(card) {
             card.hidden =
               value !== "" && card.dataset.brand !== value;
@@ -293,6 +282,10 @@
     message.appendChild(chips);
 
   }
+
+  window.DealKiraFilter = {
+    build: buildFilter
+  };
 
   /* =========================
      START
@@ -335,18 +328,8 @@
         ...products.map(createCard)
       );
 
-      const note =
-        document.createElement("p");
 
-      note.className =
-        "affiliate-note";
-
-      note.textContent =
-        "* Partnerlink (Anzeige): Kaufst du über einen solchen Link, erhält DealKira eine Provision. Für dich ändert sich am Preis nichts.";
-
-      container.after(note);
-
-      buildFilter(products, container);
+      buildFilter(products, container, ".product-card");
 
     }
 

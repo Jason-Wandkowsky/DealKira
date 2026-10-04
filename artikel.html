@@ -299,8 +299,8 @@
 
 <main class="product-section">
 
-  <a href="telefone.html" class="back-link">
-    ← Zurück zu den Telefonen
+  <a href="kategorien.html" class="back-link" id="backLink">
+    ← Zurück zur Übersicht
   </a>
 
   <div id="productContainer">
@@ -352,7 +352,7 @@
 
       const response =
         await fetch(
-          "telefone.json",
+          "produkte.json",
           {
             cache: "no-cache"
           }
@@ -361,7 +361,7 @@
       if (!response.ok) {
 
         throw new Error(
-          "telefone.json konnte nicht geladen werden."
+          "produkte.json konnte nicht geladen werden."
         );
 
       }
@@ -383,6 +383,21 @@
         throw new Error(
           "Das angeforderte Produkt wurde nicht gefunden."
         );
+
+      }
+
+      /* Zurück-Link führt zur Unterkategorie des Produkts */
+
+      if (product.kategorie) {
+
+        const back =
+          document.getElementById("backLink");
+
+        back.href =
+          product.kategorie + ".html";
+
+        back.textContent =
+          "← Zurück zur Kategorie";
 
       }
 
@@ -414,7 +429,7 @@
               font-weight:700;
             "
           >
-            Zurück zu den Telefonen
+            Zurück zur Übersicht
           </a>
 
         </div>

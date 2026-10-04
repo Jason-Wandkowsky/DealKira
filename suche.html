@@ -401,6 +401,14 @@
       }
 
     }
+
+    /* Marken-Filter (wie auf den Kategorie-Seiten) */
+    .brand-filter-label { font-weight: 700; color: #111; margin-bottom: 10px; text-align: center; }
+    .brand-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .brand-chip { border: 1px solid #ddd; background: #fff; color: #111; border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 700; cursor: pointer; }
+    .brand-chip.active { background: #111; border-color: #111; color: #ffd400; }
+    .result-card[hidden] { display: none; }
+
   </style>
 </head>
 
@@ -467,8 +475,9 @@
   <div
     class="filter-message"
     id="filterMessage"
+    data-empty-text="Such zuerst nach einem Produkt, dann kannst du die Treffer nach Marke filtern."
   >
-    Der Filter befindet sich noch in Bearbeitung.
+    Such zuerst nach einem Produkt, dann kannst du die Treffer nach Marke filtern.
   </div>
 
   <div
@@ -512,7 +521,7 @@
     {
       file: "produkte.json",
       category: "Computer",
-      detailPage: "computer-produkt.html"
+      detailPage: "artikel.html"
     }
 
   ];
@@ -691,6 +700,9 @@
     card.className =
       "result-card";
 
+    card.dataset.brand =
+      product.brand || "";
+
     const productId =
       product.id || "";
 
@@ -830,6 +842,14 @@
 
       }
     );
+
+    if (window.DealKiraFilter) {
+      window.DealKiraFilter.build(
+        products,
+        results,
+        ".result-card"
+      );
+    }
 
   }
 
@@ -1459,6 +1479,8 @@
   loadProducts();
 
 </script>
+
+  <script src="kategorie.js"></script>
 
 </body>
 </html>
