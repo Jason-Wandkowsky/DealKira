@@ -1,95 +1,273 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support – DealKira</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="basis.css">
+<title>Support – DealKira</title>
+<meta name="description" content="Hilfe und häufige Fragen zu DealKira: Preise, Partnerlinks, Konto, Favoriten und Kontakt.">
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="basis.css">
+<link rel="stylesheet" href="bausteine.css?v=20261004b">
 <script src="basis.js"></script>
 
 <style>
 
-    body {
-      background: #181818;
-      color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+  .faq {
+    margin-bottom: 8px;
+  }
+
+  .faq details {
+    border-bottom: 1px solid #eee;
+  }
+
+  .faq summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 36px 16px 0;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+  }
+
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-weight: 400;
+    color: #999;
+  }
+
+  .faq details[open] summary::after {
+    content: "–";
+  }
+
+  .faq summary:hover {
+    color: #000;
+  }
+
+  .faq details p {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+  }
+
+  .kontakt-box {
+    margin-top: 34px;
+    padding: 24px 26px;
+    background: #fffbe0;
+    border: 1px solid #ffe866;
+    border-radius: 12px;
+  }
+
+  .kontakt-box h2 {
+    margin-top: 0 !important;
+  }
+
+  .kontakt-button {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 12px 22px;
+    background: #ffd400;
+    color: #111 !important;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none !important;
+  }
+
+  .kontakt-button:hover {
+    background: #ffcc00;
+  }
+
+  @media (max-width: 550px) {
+
+    .kontakt-box {
+      padding: 20px;
     }
 
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
+  }
 
-    .support-box {
-      max-width: 650px;
-    }
-
-    .support-box h1 {
-      font-size: 48px;
-      color: #ffd400;
-      margin-bottom: 20px;
-    }
-
-    .support-box p {
-      font-size: 21px;
-      color: #bbb;
-    }
-
-    .status {
-      margin-top: 25px;
-      padding: 15px 22px;
-      background: #222;
-      border: 1px solid #333;
-      border-radius: 10px;
-      display: inline-block;
-      font-weight: 700;
-    }
-
-    @media(max-width:550px) {
-
-      .support-box h1 {
-        font-size: 38px;
-      }
-
-      .support-box p {
-        font-size: 18px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <site-header></site-header>
+<site-header></site-header>
 
-  <main>
+<section class="hero">
+  <h1>Support</h1>
+  <p>Antworten auf häufige Fragen rund um DealKira</p>
+</section>
 
-    <div class="support-box">
+<main class="textseite">
 
-      <h1>Support</h1>
+  <h2>Allgemein</h2>
 
+  <div class="faq">
+
+    <details>
+      <summary>Was ist DealKira?</summary>
       <p>
-        Der Support-Bereich von DealKira befindet sich derzeit noch in Bearbeitung.
+        DealKira ist ein Preisvergleich für Technik und Haushalt. Du findest hier
+        Produkte aus Bereichen wie Computer, Komponenten, Smartphones, Tablets und
+        Haushaltsgeräte und kommst mit einem Klick zum passenden Angebot im Shop.
       </p>
+    </details>
 
-      <div class="status">
-        🛠️ Noch in Bearbeitung
-      </div>
+    <details>
+      <summary>Kann ich bei DealKira direkt etwas kaufen?</summary>
+      <p>
+        Nein. DealKira ist kein Shop. Über den Button „Zum Deal“ wirst du zum
+        jeweiligen Händler weitergeleitet. Bestellung, Bezahlung, Versand und
+        Rückgabe laufen komplett über diesen Shop.
+      </p>
+    </details>
 
-    </div>
+    <details>
+      <summary>Ist DealKira kostenlos?</summary>
+      <p>
+        Ja. Die Nutzung von DealKira und das Erstellen eines Kontos sind komplett kostenlos.
+      </p>
+    </details>
 
-  </main>
+  </div>
 
-  <site-footer></site-footer>
+  <h2>Preise und Partnerlinks</h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>Warum sehe ich bei manchen Produkten keinen Preis?</summary>
+      <p>
+        Preise ändern sich teilweise mehrmals am Tag. Damit du keine veralteten
+        Preise siehst, zeigen wir sie nur an, wenn wir sie aktuell vom Shop bekommen.
+        Den gültigen Preis siehst du immer direkt beim Händler.
+      </p>
+    </details>
+
+    <details>
+      <summary>Was bedeutet das Sternchen (*) an einem Link?</summary>
+      <p>
+        Mit Sternchen markierte Links sind Partnerlinks (Anzeige). Kaufst du über so
+        einen Link, erhält DealKira vom Shop eine kleine Provision. Für dich ändert
+        sich am Preis nichts. So finanziert sich die Seite.
+      </p>
+    </details>
+
+    <details>
+      <summary>Werden Shops bevorzugt, die mehr Provision zahlen?</summary>
+      <p>
+        Nein. Die Provision hat keinen Einfluss darauf, welche Produkte oder Angebote
+        wir anzeigen.
+      </p>
+    </details>
+
+    <details>
+      <summary>Ich habe einen falschen Link oder ein falsches Produkt gefunden.</summary>
+      <p>
+        Danke fürs Melden! Schreib uns kurz an
+        <a href="mailto:kontakt@dealkira.com?subject=Fehler%20gefunden">kontakt@dealkira.com</a>
+        und nenne am besten den Produktnamen oder den Link zur Seite. Wir korrigieren
+        das so schnell wie möglich.
+      </p>
+    </details>
+
+  </div>
+
+  <h2>Konto und Favoriten</h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>Brauche ich ein Konto?</summary>
+      <p>
+        Nein. Alle Produkte und Deals kannst du auch ohne Konto ansehen. Mit einem
+        Konto kannst du zusätzlich Produkte als Favoriten speichern und sie auf
+        jedem Gerät wiederfinden.
+      </p>
+    </details>
+
+    <details>
+      <summary>Wie speichere ich Favoriten?</summary>
+      <p>
+        Melde dich unter <a href="konto.html">Konto</a> an und tippe bei einem Produkt
+        auf das Favoriten-Symbol. Deine gespeicherten Produkte findest du anschließend
+        in deinem Konto unter „Favoriten“.
+      </p>
+    </details>
+
+    <details>
+      <summary>Ich habe mein Passwort vergessen.</summary>
+      <p>
+        Öffne die <a href="konto.html">Anmeldung</a> und tippe auf „Passwort vergessen“.
+        Du bekommst dann eine E-Mail mit einem Link, über den du ein neues Passwort
+        festlegen kannst. Schau auch im Spam-Ordner nach, falls die E-Mail nicht
+        sofort ankommt.
+      </p>
+    </details>
+
+    <details>
+      <summary>Ich habe keine Bestätigungs-E-Mail bekommen.</summary>
+      <p>
+        Prüfe bitte zuerst deinen Spam- bzw. Werbung-Ordner und ob die E-Mail-Adresse
+        richtig geschrieben war. Kommt nach einigen Minuten immer noch nichts an,
+        schreib uns an <a href="mailto:kontakt@dealkira.com">kontakt@dealkira.com</a>.
+      </p>
+    </details>
+
+    <details>
+      <summary>Wie ändere ich meine E-Mail-Adresse?</summary>
+      <p>
+        In deinem <a href="konto.html">Konto</a> kannst du die E-Mail-Adresse über das
+        Stift-Symbol bearbeiten. Du bekommst danach eine Bestätigungs-E-Mail. Die neue
+        Adresse gilt erst, wenn du sie bestätigt hast.
+      </p>
+    </details>
+
+    <details>
+      <summary>Wie lösche ich mein Konto?</summary>
+      <p>
+        In deinem <a href="konto.html">Konto</a> unter „Konto löschen“. Dabei werden
+        dein Konto und alle gespeicherten Daten wie Favoriten und Einstellungen
+        dauerhaft entfernt. Das lässt sich nicht rückgängig machen.
+      </p>
+    </details>
+
+  </div>
+
+  <h2>Datenschutz</h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>Welche Daten speichert DealKira?</summary>
+      <p>
+        Nur das, was für die Funktionen nötig ist, zum Beispiel deine E-Mail-Adresse
+        für das Konto, deine Favoriten und Einstellungen. Alle Details findest du in der
+        <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+    </details>
+
+  </div>
+
+  <div class="kontakt-box">
+    <h2>Deine Frage war nicht dabei?</h2>
+    <p>
+      Schreib uns einfach. Wir antworten in der Regel innerhalb von 1–2 Werktagen.
+    </p>
+    <a class="kontakt-button" href="mailto:kontakt@dealkira.com">kontakt@dealkira.com</a>
+  </div>
+
+</main>
+
+<site-footer></site-footer>
 
 </body>
 </html>
-

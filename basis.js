@@ -83,7 +83,6 @@ class SiteFooter extends HTMLElement {
           '<a href="support.html">Support</a>' +
         '</p>' +
         '<p class="footer-hinweis">* Mit Sternchen markierte Links sind Partnerlinks (Anzeige). Kaufst du darüber, erhält DealKira eine Provision – für dich ändert sich am Preis nichts.</p>' +
-        '<p class="footer-hinweis">Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>' +
         '<p>© 2026 DealKira</p>' +
       '</footer>';
 
