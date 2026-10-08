@@ -1147,6 +1147,57 @@
 
         }
 
+        /*
+          Reine Zahl als Suchbegriff:
+
+          3060 → RTX3060
+          3060 → RTX3060Ti
+          17   → iPhone17
+
+          Vor der Zahl dürfen nur Buchstaben
+          stehen, danach nur Buchstaben.
+          3060 ≠ 13060, 3060 ≠ 30600
+        */
+
+        if (
+          /^\d/.test(cleanSearchWord)
+        ) {
+
+          const position =
+            cleanTextWord.indexOf(
+              cleanSearchWord
+            );
+
+          if (position > 0) {
+
+            const before =
+              cleanTextWord.substring(
+                0,
+                position
+              );
+
+            const after =
+              cleanTextWord.substring(
+                position +
+                cleanSearchWord.length
+              );
+
+            if (
+              /^[a-z]+$/i.test(before) &&
+              (
+                after === "" ||
+                /^[a-z]+$/i.test(after)
+              )
+            ) {
+
+              return true;
+
+            }
+
+          }
+
+        }
+
       }
 
       return false;
@@ -1372,6 +1423,21 @@
           const series =
             product.series || "";
 
+          /*
+            Unterkategorie mit durchsuchen,
+            z. B. "grafikkarten" → findet
+            auch "Grafikkarte".
+          */
+
+          const subCategory =
+            (product.kategorie || "")
+              .replace(/-/g, " ") +
+            (
+              category === "Telefone"
+                ? " handy smartphone"
+                : ""
+            );
+
           const combinedText =
             name +
             " " +
@@ -1379,7 +1445,9 @@
             " " +
             category +
             " " +
-            series;
+            series +
+            " " +
+            subCategory;
 
           return fuzzyMatch(
             searchTerm,
