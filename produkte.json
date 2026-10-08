@@ -852,5 +852,187 @@
         "link": "https://link.amazon/B0jimWuE5"
       }
     ]
+  },
+  {
+    "id": "cpu-amd-ryzen-7-5700x3d",
+    "name": "AMD Ryzen 7 5700X3D",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B099SePHw"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-5-7500f",
+    "name": "AMD Ryzen 5 7500F",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fn5NrFy"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-5-7600x",
+    "name": "AMD Ryzen 5 7600X",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09vPmMlh"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-7-7800x3d",
+    "name": "AMD Ryzen 7 7800X3D",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bPoLVfa"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-5-9600x",
+    "name": "AMD Ryzen 5 9600X",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B067x1NXY"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-7-9700x",
+    "name": "AMD Ryzen 7 9700X",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B043Zx1GD"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-7-9800x3d",
+    "name": "AMD Ryzen 7 9800X3D",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gGEZwiH"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-7-9850x3d",
+    "name": "AMD Ryzen 7 9850X3D",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03mQ95gE"
+      }
+    ]
+  },
+  {
+    "id": "cpu-amd-ryzen-9-9950x3d",
+    "name": "AMD Ryzen 9 9950X3D",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ceLQBpY"
+      }
+    ]
+  },
+  {
+    "id": "cpu-intel-core-i5-14400f",
+    "name": "Intel Core i5-14400F",
+    "brand": "Intel",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dsXYcIZ"
+      }
+    ]
+  },
+  {
+    "id": "cpu-intel-core-i5-14600kf",
+    "name": "Intel Core i5-14600KF",
+    "brand": "Intel",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0b6rGQdJ"
+      }
+    ]
+  },
+  {
+    "id": "cpu-intel-core-ultra-5-250k-plus",
+    "name": "Intel Core Ultra 5 250K Plus",
+    "brand": "Intel",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cvqAqC3"
+      }
+    ]
+  },
+  {
+    "id": "cpu-intel-core-ultra-7-270k-plus",
+    "name": "Intel Core Ultra 7 270K Plus",
+    "brand": "Intel",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06JKjIJS"
+      }
+    ]
   }
 ]
