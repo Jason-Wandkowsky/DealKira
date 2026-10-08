@@ -854,6 +854,20 @@
     ]
   },
   {
+    "id": "cpu-amd-ryzen-5-5600xt",
+    "name": "AMD Ryzen 5 5600XT",
+    "brand": "AMD",
+    "kategorie": "cpu",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dvGt5xp"
+      }
+    ]
+  },
+  {
     "id": "cpu-amd-ryzen-7-5700x3d",
     "name": "AMD Ryzen 7 5700X3D",
     "brand": "AMD",
