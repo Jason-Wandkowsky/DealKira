@@ -154,6 +154,19 @@
       font-weight: 400;
     }
 
+    .shop-button.disabled,
+    .shop-button.disabled:hover {
+      background: #ccc;
+      color: #777;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .shop-pending {
+      font-size: 13px;
+      color: #777;
+    }
+
     .affiliate-note {
       margin-top: 14px;
       font-size: 13px;
@@ -552,6 +565,34 @@
 
     }
 
+    for (let i = 0; i < 4; i++) {
+
+      shopRows += `
+
+        <div class="shop-row">
+
+          <div class="shop-info">
+
+            <div class="shop-name">
+              Shop
+            </div>
+
+            <div class="shop-pending">
+              * Shop in Bearbeitung
+            </div>
+
+          </div>
+
+          <span class="shop-button disabled" aria-disabled="true">
+            Gehe zu →
+          </span>
+
+        </div>
+
+      `;
+
+    }
+
     document.title =
       (product.name || "Produkt") +
       " – DealKira";
@@ -599,11 +640,6 @@
             <div class="shops">
               ${shopRows}
             </div>
-
-            <p class="affiliate-note">
-              * Partnerlink (Anzeige): Kaufst du über einen solchen Link,
-              erhält DealKira eine Provision. Für dich ändert sich am Preis nichts.
-            </p>
 
           </div>
 
