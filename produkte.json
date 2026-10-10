@@ -1832,5 +1832,257 @@
         "link": "https://link.amazon/B0aFmBdtr"
       }
     ]
+  },
+  {
+    "id": "cpu-kuehler-arctic-freezer-36",
+    "name": "ARCTIC Freezer 36",
+    "brand": "ARCTIC",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aAxZkjL"
+      }
+    ]
+  },
+  {
+    "id": "cpu-kuehler-be-quiet-pure-rock-2",
+    "name": "be quiet! Pure Rock 2",
+    "brand": "be quiet!",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07lI2dmG"
+      }
+    ]
+  },
+  {
+    "id": "cpu-kuehler-thermalright-peerless-assassin-120-se",
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "brand": "Thermalright",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09bEFwYD"
+      }
+    ]
+  },
+  {
+    "id": "cpu-kuehler-thermalright-phantom-spirit-120-se",
+    "name": "Thermalright Phantom Spirit 120 SE",
+    "brand": "Thermalright",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0h60YSxn"
+      }
+    ]
+  },
+  {
+    "id": "cpu-kuehler-be-quiet-dark-rock-pro-5",
+    "name": "be quiet! Dark Rock Pro 5",
+    "brand": "be quiet!",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0a8FjlXp"
+      }
+    ]
+  },
+  {
+    "id": "cpu-kuehler-noctua-nh-d15-g2",
+    "name": "Noctua NH-D15 G2",
+    "brand": "Noctua",
+    "kategorie": "cpu-kuehler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00eMf92J"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-arctic-liquid-freezer-iii-240",
+    "name": "ARCTIC Liquid Freezer III 240",
+    "brand": "ARCTIC",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01ZclyKq"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-arctic-liquid-freezer-iii-360",
+    "name": "ARCTIC Liquid Freezer III 360",
+    "brand": "ARCTIC",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B045Uti0R"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-be-quiet-light-loop-360",
+    "name": "be quiet! Light Loop 360",
+    "brand": "be quiet!",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09buT4JM"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-corsair-nautilus-360-rs",
+    "name": "Corsair Nautilus 360 RS",
+    "brand": "Corsair",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f0vBEdM"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-nzxt-kraken-360",
+    "name": "NZXT Kraken 360",
+    "brand": "NZXT",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fid1k5e"
+      }
+    ]
+  },
+  {
+    "id": "wasserkuehlung-lian-li-galahad-ii-trinity-360",
+    "name": "Lian Li Galahad II Trinity 360",
+    "brand": "Lian Li",
+    "kategorie": "wasserkuehlung",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08o1NWrI"
+      }
+    ]
+  },
+  {
+    "id": "luefter-arctic-p12-pwm-pst-5er-pack",
+    "name": "ARCTIC P12 PWM PST (5er-Pack)",
+    "brand": "ARCTIC",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0a3RlrJQ"
+      }
+    ]
+  },
+  {
+    "id": "luefter-arctic-p14-pwm-pst-5er-pack",
+    "name": "ARCTIC P14 PWM PST (5er-Pack)",
+    "brand": "ARCTIC",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B085bYdCM"
+      }
+    ]
+  },
+  {
+    "id": "luefter-be-quiet-silent-wings-4-120mm-pwm",
+    "name": "be quiet! Silent Wings 4 120mm PWM",
+    "brand": "be quiet!",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09mvWbYe"
+      }
+    ]
+  },
+  {
+    "id": "luefter-noctua-nf-a12x25-pwm",
+    "name": "Noctua NF-A12x25 PWM",
+    "brand": "Noctua",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07TxlIHZ"
+      }
+    ]
+  },
+  {
+    "id": "luefter-lian-li-uni-fan-sl-infinity-120-3er-pack",
+    "name": "Lian Li Uni Fan SL-Infinity 120 (3er-Pack)",
+    "brand": "Lian Li",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f7s8dle"
+      }
+    ]
+  },
+  {
+    "id": "luefter-corsair-icue-link-rx120-rgb-3er-pack",
+    "name": "Corsair iCUE Link RX120 RGB (3er-Pack)",
+    "brand": "Corsair",
+    "kategorie": "luefter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B025fM27A"
+      }
+    ]
   }
 ]
