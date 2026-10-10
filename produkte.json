@@ -1244,5 +1244,187 @@
         "link": "https://link.amazon/B03Bq9ls4"
       }
     ]
+  },
+  {
+    "id": "ram-corsair-vengeance-lpx-16-gb-2x8-ddr4-3200",
+    "name": "Corsair Vengeance LPX 16 GB (2×8) DDR4-3200",
+    "brand": "Corsair",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08xcvIS1"
+      }
+    ]
+  },
+  {
+    "id": "ram-corsair-vengeance-lpx-32-gb-2x16-ddr4-3600",
+    "name": "Corsair Vengeance LPX 32 GB (2×16) DDR4-3600",
+    "brand": "Corsair",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07AHCpM7"
+      }
+    ]
+  },
+  {
+    "id": "ram-kingston-fury-beast-32-gb-2x16-ddr4-3200",
+    "name": "Kingston Fury Beast 32 GB (2×16) DDR4-3200",
+    "brand": "Kingston",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fxRnAQP"
+      }
+    ]
+  },
+  {
+    "id": "ram-g-skill-ripjaws-v-32-gb-2x16-ddr4-3600-cl16",
+    "name": "G.Skill Ripjaws V 32 GB (2×16) DDR4-3600 CL16",
+    "brand": "G.Skill",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00wQMdT1"
+      }
+    ]
+  },
+  {
+    "id": "ram-kingston-fury-beast-32-gb-2x16-ddr5-6000-cl30",
+    "name": "Kingston Fury Beast 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "Kingston",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0byv5OwC"
+      }
+    ]
+  },
+  {
+    "id": "ram-corsair-vengeance-32-gb-2x16-ddr5-6000-cl30",
+    "name": "Corsair Vengeance 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "Corsair",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01d74Yja"
+      }
+    ]
+  },
+  {
+    "id": "ram-g-skill-flare-x5-32-gb-2x16-ddr5-6000-cl30",
+    "name": "G.Skill Flare X5 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "G.Skill",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06hOUGaV"
+      }
+    ]
+  },
+  {
+    "id": "ram-teamgroup-t-force-delta-rgb-32-gb-2x16-ddr5-6000-cl30",
+    "name": "TeamGroup T-Force Delta RGB 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "TeamGroup",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bcMcDaX"
+      }
+    ]
+  },
+  {
+    "id": "ram-corsair-vengeance-rgb-32-gb-2x16-ddr5-6000-cl30",
+    "name": "Corsair Vengeance RGB 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "Corsair",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cZkPqcs"
+      }
+    ]
+  },
+  {
+    "id": "ram-g-skill-trident-z5-neo-rgb-32-gb-2x16-ddr5-6000-cl30",
+    "name": "G.Skill Trident Z5 Neo RGB 32 GB (2×16) DDR5-6000 CL30",
+    "brand": "G.Skill",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B047ay13s"
+      }
+    ]
+  },
+  {
+    "id": "ram-kingston-fury-beast-64-gb-2x32-ddr5-5600",
+    "name": "Kingston Fury Beast 64 GB (2×32) DDR5-5600",
+    "brand": "Kingston",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04f8BSbg"
+      }
+    ]
+  },
+  {
+    "id": "ram-corsair-vengeance-64-gb-2x32-ddr5-6000-cl30",
+    "name": "Corsair Vengeance 64 GB (2×32) DDR5-6000 CL30",
+    "brand": "Corsair",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09e5hg5F"
+      }
+    ]
+  },
+  {
+    "id": "ram-g-skill-trident-z5-neo-rgb-64-gb-2x32-ddr5-6000-cl30",
+    "name": "G.Skill Trident Z5 Neo RGB 64 GB (2×32) DDR5-6000 CL30",
+    "brand": "G.Skill",
+    "kategorie": "ram",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03AJczUj"
+      }
+    ]
   }
 ]
