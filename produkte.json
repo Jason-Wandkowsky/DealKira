@@ -1048,5 +1048,201 @@
         "link": "https://link.amazon/B06JKjIJS"
       }
     ]
+  },
+  {
+    "id": "mb-asus-tuf-gaming-b550-plus-wifi-ii",
+    "name": "ASUS TUF Gaming B550-Plus WiFi II",
+    "brand": "ASUS",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iCVfJ2y"
+      }
+    ]
+  },
+  {
+    "id": "mb-asrock-b650m-pro-rs-wifi",
+    "name": "ASRock B650M Pro RS WiFi",
+    "brand": "ASRock",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ehjCWfM"
+      }
+    ]
+  },
+  {
+    "id": "mb-gigabyte-b650-eagle-ax",
+    "name": "Gigabyte B650 Eagle AX",
+    "brand": "Gigabyte",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00Nwj1R2"
+      }
+    ]
+  },
+  {
+    "id": "mb-msi-mag-b650-tomahawk-wifi",
+    "name": "MSI MAG B650 Tomahawk WiFi",
+    "brand": "MSI",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04cDKbVv"
+      }
+    ]
+  },
+  {
+    "id": "mb-asus-tuf-gaming-b850-plus-wifi",
+    "name": "ASUS TUF Gaming B850-Plus WiFi",
+    "brand": "ASUS",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00y2GLcs"
+      }
+    ]
+  },
+  {
+    "id": "mb-msi-mag-b850-tomahawk-max-wifi",
+    "name": "MSI MAG B850 Tomahawk Max WiFi",
+    "brand": "MSI",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03t4kOJz"
+      }
+    ]
+  },
+  {
+    "id": "mb-gigabyte-b850-aorus-elite-wifi7",
+    "name": "Gigabyte B850 Aorus Elite WiFi7",
+    "brand": "Gigabyte",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bUWfarb"
+      }
+    ]
+  },
+  {
+    "id": "mb-asus-rog-strix-x870-a-gaming-wifi",
+    "name": "ASUS ROG Strix X870-A Gaming WiFi",
+    "brand": "ASUS",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03VYUYmQ"
+      }
+    ]
+  },
+  {
+    "id": "mb-msi-pro-b760m-a-wifi",
+    "name": "MSI PRO B760M-A WiFi",
+    "brand": "MSI",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06rsgTdd"
+      }
+    ]
+  },
+  {
+    "id": "mb-asus-tuf-gaming-b760-plus-wifi",
+    "name": "ASUS TUF Gaming B760-Plus WiFi",
+    "brand": "ASUS",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0itHpmD5"
+      }
+    ]
+  },
+  {
+    "id": "mb-msi-mag-z790-tomahawk-wifi",
+    "name": "MSI MAG Z790 Tomahawk WiFi",
+    "brand": "MSI",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iun7AoX"
+      }
+    ]
+  },
+  {
+    "id": "mb-msi-mag-b860-tomahawk-wifi",
+    "name": "MSI MAG B860 Tomahawk WiFi",
+    "brand": "MSI",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02zpjZo0"
+      }
+    ]
+  },
+  {
+    "id": "mb-asus-tuf-gaming-z890-plus-wifi",
+    "name": "ASUS TUF Gaming Z890-Plus WiFi",
+    "brand": "ASUS",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07ZnY6tu"
+      }
+    ]
+  },
+  {
+    "id": "mb-gigabyte-z890-aorus-elite-wifi7",
+    "name": "Gigabyte Z890 Aorus Elite WiFi7",
+    "brand": "Gigabyte",
+    "kategorie": "mainboards",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03Bq9ls4"
+      }
+    ]
   }
 ]
