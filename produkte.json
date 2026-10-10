@@ -1426,5 +1426,215 @@
         "link": "https://link.amazon/B03AJczUj"
       }
     ]
+  },
+  {
+    "id": "psu-be-quiet-system-power-10-550w",
+    "name": "be quiet! System Power 10 550W",
+    "brand": "be quiet!",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0frSttq9"
+      }
+    ]
+  },
+  {
+    "id": "psu-corsair-cx650",
+    "name": "Corsair CX650",
+    "brand": "Corsair",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07pCukLj"
+      }
+    ]
+  },
+  {
+    "id": "psu-be-quiet-pure-power-12-650w",
+    "name": "be quiet! Pure Power 12 650W",
+    "brand": "be quiet!",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cfd2Tlo"
+      }
+    ]
+  },
+  {
+    "id": "psu-corsair-rm750e",
+    "name": "Corsair RM750e",
+    "brand": "Corsair",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06OKaHYm"
+      }
+    ]
+  },
+  {
+    "id": "psu-msi-mag-a750gl-pcie5",
+    "name": "MSI MAG A750GL PCIE5",
+    "brand": "MSI",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gBEQ1ix"
+      }
+    ]
+  },
+  {
+    "id": "psu-be-quiet-pure-power-12-m-850w",
+    "name": "be quiet! Pure Power 12 M 850W",
+    "brand": "be quiet!",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dT2ACLM"
+      }
+    ]
+  },
+  {
+    "id": "psu-msi-mag-a850gl-pcie5",
+    "name": "MSI MAG A850GL PCIE5",
+    "brand": "MSI",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09GjwLr9"
+      }
+    ]
+  },
+  {
+    "id": "psu-corsair-rm850x",
+    "name": "Corsair RM850x",
+    "brand": "Corsair",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05ZY1kO1"
+      }
+    ]
+  },
+  {
+    "id": "psu-seasonic-focus-gx-850",
+    "name": "Seasonic Focus GX-850",
+    "brand": "Seasonic",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fR9hk0s"
+      }
+    ]
+  },
+  {
+    "id": "psu-nzxt-c850-gold",
+    "name": "NZXT C850 Gold",
+    "brand": "NZXT",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0duzFYBR"
+      }
+    ]
+  },
+  {
+    "id": "psu-cooler-master-mwe-gold-850-v2",
+    "name": "Cooler Master MWE Gold 850 V2",
+    "brand": "Cooler Master",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0erio15r"
+      }
+    ]
+  },
+  {
+    "id": "psu-corsair-rm1000x",
+    "name": "Corsair RM1000x",
+    "brand": "Corsair",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aRq9AKV"
+      }
+    ]
+  },
+  {
+    "id": "psu-be-quiet-straight-power-12-1000w",
+    "name": "be quiet! Straight Power 12 1000W",
+    "brand": "be quiet!",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01hIgBGW"
+      }
+    ]
+  },
+  {
+    "id": "psu-be-quiet-dark-power-13-1000w",
+    "name": "be quiet! Dark Power 13 1000W",
+    "brand": "be quiet!",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dOtaozE"
+      }
+    ]
+  },
+  {
+    "id": "psu-seasonic-vertex-gx-1200",
+    "name": "Seasonic Vertex GX-1200",
+    "brand": "Seasonic",
+    "kategorie": "netzteile",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bthlQ0b"
+      }
+    ]
   }
 ]
