@@ -1636,5 +1636,201 @@
         "link": "https://link.amazon/B0bthlQ0b"
       }
     ]
+  },
+  {
+    "id": "case-montech-air-903-max",
+    "name": "Montech AIR 903 Max",
+    "brand": "Montech",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06tdFulg"
+      }
+    ]
+  },
+  {
+    "id": "case-fractal-design-pop-air",
+    "name": "Fractal Design Pop Air",
+    "brand": "Fractal Design",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08lHyxUi"
+      }
+    ]
+  },
+  {
+    "id": "case-be-quiet-pure-base-500dx",
+    "name": "be quiet! Pure Base 500DX",
+    "brand": "be quiet!",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07hZsrMq"
+      }
+    ]
+  },
+  {
+    "id": "case-corsair-4000d-airflow",
+    "name": "Corsair 4000D Airflow",
+    "brand": "Corsair",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fASsacI"
+      }
+    ]
+  },
+  {
+    "id": "case-nzxt-h5-flow",
+    "name": "NZXT H5 Flow",
+    "brand": "NZXT",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06rtvInE"
+      }
+    ]
+  },
+  {
+    "id": "case-lian-li-lancool-216",
+    "name": "Lian Li Lancool 216",
+    "brand": "Lian Li",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05oxcAd4"
+      }
+    ]
+  },
+  {
+    "id": "case-fractal-design-north",
+    "name": "Fractal Design North",
+    "brand": "Fractal Design",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04QIbxeJ"
+      }
+    ]
+  },
+  {
+    "id": "case-be-quiet-shadow-base-800-fx",
+    "name": "be quiet! Shadow Base 800 FX",
+    "brand": "be quiet!",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04CTI8m1"
+      }
+    ]
+  },
+  {
+    "id": "case-corsair-3500x",
+    "name": "Corsair 3500X",
+    "brand": "Corsair",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cD8MLVi"
+      }
+    ]
+  },
+  {
+    "id": "case-lian-li-o11-dynamic-evo",
+    "name": "Lian Li O11 Dynamic EVO",
+    "brand": "Lian Li",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bH1ncbD"
+      }
+    ]
+  },
+  {
+    "id": "case-lian-li-o11-vision",
+    "name": "Lian Li O11 Vision",
+    "brand": "Lian Li",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cjMP2mC"
+      }
+    ]
+  },
+  {
+    "id": "case-nzxt-h9-flow",
+    "name": "NZXT H9 Flow",
+    "brand": "NZXT",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eCq0M46"
+      }
+    ]
+  },
+  {
+    "id": "case-cooler-master-masterbox-q300l",
+    "name": "Cooler Master MasterBox Q300L",
+    "brand": "Cooler Master",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hsAZA3I"
+      }
+    ]
+  },
+  {
+    "id": "case-fractal-design-terra",
+    "name": "Fractal Design Terra",
+    "brand": "Fractal Design",
+    "kategorie": "gehaeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aFmBdtr"
+      }
+    ]
   }
 ]
