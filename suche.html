@@ -541,7 +541,7 @@
         try {
 
           const response =
-            await fetch(source.file);
+            await fetch(source.file, { cache: "no-cache" });
 
           if (!response.ok) {
 
