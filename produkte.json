@@ -2336,5 +2336,229 @@
         "link": "https://link.amazon/B02E77RIK"
       }
     ]
+  },
+  {
+    "id": "computer-setup-kabel-ugreen-hdmi-2-1-kabel-8k-2-m",
+    "name": "UGREEN HDMI 2.1 Kabel 8K (2 m)",
+    "brand": "UGREEN",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B083a6qPB"
+      }
+    ]
+  },
+  {
+    "id": "computer-setup-kabel-ugreen-displayport-1-4-kabel-2-m",
+    "name": "UGREEN DisplayPort 1.4 Kabel (2 m)",
+    "brand": "UGREEN",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aZ47CSU"
+      }
+    ]
+  },
+  {
+    "id": "computer-setup-kabel-club-3d-displayport-2-1-kabel",
+    "name": "Club 3D DisplayPort 2.1 Kabel",
+    "brand": "Club 3D",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02EVK66J"
+      }
+    ]
+  },
+  {
+    "id": "computer-setup-kabel-ugreen-usb-c-auf-displayport-kabel",
+    "name": "UGREEN USB-C auf DisplayPort Kabel",
+    "brand": "UGREEN",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B045mAI2w"
+      }
+    ]
+  },
+  {
+    "id": "computer-setup-kabel-anker-usb-c-auf-usb-c-kabel-240w",
+    "name": "Anker USB-C auf USB-C Kabel 240W",
+    "brand": "Anker",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01Pqy0Dk"
+      }
+    ]
+  },
+  {
+    "id": "computer-setup-kabel-kabeldirekt-cat-8-lan-kabel",
+    "name": "KabelDirekt Cat 8 LAN-Kabel",
+    "brand": "KabelDirekt",
+    "kategorie": "computer-setup-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aqnqzj3"
+      }
+    ]
+  },
+  {
+    "id": "komponenten-kabel-cablemod-12v-2x6-pcie-kabel",
+    "name": "CableMod 12V-2x6 PCIe-Kabel",
+    "brand": "CableMod",
+    "kategorie": "komponenten-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0a7MJPEn"
+      }
+    ]
+  },
+  {
+    "id": "komponenten-kabel-cablemod-pro-modmesh-kabelverlaengerung-kit",
+    "name": "CableMod PRO ModMesh Kabelverlängerung Kit",
+    "brand": "CableMod",
+    "kategorie": "komponenten-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07KObh7w"
+      }
+    ]
+  },
+  {
+    "id": "komponenten-kabel-lian-li-strimer-plus-v2-24-pin",
+    "name": "Lian Li Strimer Plus V2 24-Pin",
+    "brand": "Lian Li",
+    "kategorie": "komponenten-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B058UIEzO"
+      }
+    ]
+  },
+  {
+    "id": "komponenten-kabel-arctic-case-fan-hub",
+    "name": "ARCTIC Case Fan Hub",
+    "brand": "ARCTIC",
+    "kategorie": "komponenten-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fVxDeu6"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-velcro-one-wrap-klettkabelbinder",
+    "name": "VELCRO ONE-WRAP Klettkabelbinder",
+    "brand": "VELCRO",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cQXyb0V"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-d-line-kabelkanal",
+    "name": "D-Line Kabelkanal",
+    "brand": "D-Line",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gRecwqs"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-kabelwanne-unter-dem-schreibtisch",
+    "name": "Kabelwanne unter dem Schreibtisch",
+    "brand": "",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gQOxj13"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-kabelschlauch-mit-reissverschluss",
+    "name": "Kabelschlauch mit Reißverschluss",
+    "brand": "",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dOBQPWV"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-kabelbox-fuer-steckdosenleiste",
+    "name": "Kabelbox für Steckdosenleiste",
+    "brand": "",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09kOg8vQ"
+      }
+    ]
+  },
+  {
+    "id": "kabel-management-selbstklebende-kabelclips",
+    "name": "Selbstklebende Kabelclips",
+    "brand": "",
+    "kategorie": "kabel-management",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0adDpuIS"
+      }
+    ]
   }
 ]
