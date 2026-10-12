@@ -541,7 +541,7 @@
         try {
 
           const response =
-            await fetch(source.file, { cache: "no-cache" });
+            await fetch(source.file + "?t=" + Date.now(), { cache: "no-store" });
 
           if (!response.ok) {
 
@@ -1548,7 +1548,7 @@
 
 </script>
 
-  <script src="kategorie.js?v=20261004b"></script>
+  <script src="kategorie.js?v=20261013"></script>
 
 </body>
 </html>

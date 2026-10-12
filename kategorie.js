@@ -306,7 +306,7 @@
     try {
 
       const response =
-        await fetch("produkte.json", { cache: "no-cache" });
+        await fetch("produkte.json?t=" + Date.now(), { cache: "no-store" });
 
       if (!response.ok) {
         throw new Error("produkte.json konnte nicht geladen werden.");
