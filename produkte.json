@@ -2560,5 +2560,299 @@
         "link": "https://link.amazon/B0adDpuIS"
       }
     ]
+  },
+  {
+    "id": "maeuse-logitech-g305-lightspeed",
+    "name": "Logitech G305 Lightspeed",
+    "brand": "Logitech",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03GCIaG7"
+      }
+    ]
+  },
+  {
+    "id": "maeuse-steelseries-rival-3",
+    "name": "SteelSeries Rival 3",
+    "brand": "SteelSeries",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00BFg4A5"
+      }
+    ]
+  },
+  {
+    "id": "maeuse-razer-deathadder-v3",
+    "name": "Razer DeathAdder V3",
+    "brand": "Razer",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B049Zsbru"
+      }
+    ]
+  },
+  {
+    "id": "maeuse-razer-basilisk-v3",
+    "name": "Razer Basilisk V3",
+    "brand": "Razer",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05JjPcZ2"
+      }
+    ]
+  },
+  {
+    "id": "maeuse-logitech-g-pro-x-superlight-2",
+    "name": "Logitech G Pro X Superlight 2",
+    "brand": "Logitech",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03EZWhyq"
+      }
+    ]
+  },
+  {
+    "id": "maeuse-logitech-mx-master-3s",
+    "name": "Logitech MX Master 3S",
+    "brand": "Logitech",
+    "kategorie": "maeuse",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fhaZbUH"
+      }
+    ]
+  },
+  {
+    "id": "tastaturen-keychron-k2",
+    "name": "Keychron K2",
+    "brand": "Keychron",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01SNfiSk"
+      }
+    ]
+  },
+  {
+    "id": "tastaturen-corsair-k70-rgb-pro",
+    "name": "Corsair K70 RGB Pro",
+    "brand": "Corsair",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01gMxsID"
+      }
+    ]
+  },
+  {
+    "id": "tastaturen-razer-blackwidow-v4",
+    "name": "Razer BlackWidow V4",
+    "brand": "Razer",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0b2SCD7M"
+      }
+    ]
+  },
+  {
+    "id": "tastaturen-steelseries-apex-pro-tkl",
+    "name": "SteelSeries Apex Pro TKL",
+    "brand": "SteelSeries",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aXttHev"
+      }
+    ]
+  },
+  {
+    "id": "tastaturen-logitech-mx-keys-s",
+    "name": "Logitech MX Keys S",
+    "brand": "Logitech",
+    "kategorie": "tastaturen",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08BDb1eJ"
+      }
+    ]
+  },
+  {
+    "id": "headset-razer-blackshark-v2-x",
+    "name": "Razer BlackShark V2 X",
+    "brand": "Razer",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05tJ8QPT"
+      }
+    ]
+  },
+  {
+    "id": "headset-hyperx-cloud-alpha",
+    "name": "HyperX Cloud Alpha",
+    "brand": "HyperX",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0g3p2Ms4"
+      }
+    ]
+  },
+  {
+    "id": "headset-corsair-hs80-rgb-wireless",
+    "name": "Corsair HS80 RGB Wireless",
+    "brand": "Corsair",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eiRyFHB"
+      }
+    ]
+  },
+  {
+    "id": "headset-steelseries-arctis-nova-7",
+    "name": "SteelSeries Arctis Nova 7",
+    "brand": "SteelSeries",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0a4MUHiQ"
+      }
+    ]
+  },
+  {
+    "id": "headset-logitech-g-pro-x-2-lightspeed",
+    "name": "Logitech G Pro X 2 Lightspeed",
+    "brand": "Logitech",
+    "kategorie": "headset",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ifyUfiQ"
+      }
+    ]
+  },
+  {
+    "id": "mikrofon-razer-seiren-mini",
+    "name": "Razer Seiren Mini",
+    "brand": "Razer",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06ZFWwz6"
+      }
+    ]
+  },
+  {
+    "id": "mikrofon-blue-yeti",
+    "name": "Blue Yeti",
+    "brand": "Blue",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07glnGxE"
+      }
+    ]
+  },
+  {
+    "id": "mikrofon-rode-nt-usb-mini",
+    "name": "Rode NT-USB Mini",
+    "brand": "Rode",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gSpvutw"
+      }
+    ]
+  },
+  {
+    "id": "mikrofon-elgato-wave-3",
+    "name": "Elgato Wave:3",
+    "brand": "Elgato",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dyFafOi"
+      }
+    ]
+  },
+  {
+    "id": "mikrofon-shure-mv7-plus",
+    "name": "Shure MV7+",
+    "brand": "Shure",
+    "kategorie": "mikrofon",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ibea3r1"
+      }
+    ]
   }
 ]
