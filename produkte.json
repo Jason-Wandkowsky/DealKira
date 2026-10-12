@@ -2854,5 +2854,313 @@
         "link": "https://link.amazon/B0ibea3r1"
       }
     ]
+  },
+  {
+    "id": "laptops-lenovo-ideapad-slim-3-15-zoll",
+    "name": "Lenovo IdeaPad Slim 3 15 Zoll",
+    "brand": "Lenovo",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0huNIxYf"
+      }
+    ]
+  },
+  {
+    "id": "laptops-acer-aspire-go-15",
+    "name": "Acer Aspire Go 15",
+    "brand": "Acer",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gW24eL9"
+      }
+    ]
+  },
+  {
+    "id": "laptops-hp-omnibook-5",
+    "name": "HP OmniBook 5",
+    "brand": "HP",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f0StSen"
+      }
+    ]
+  },
+  {
+    "id": "laptops-apple-macbook-air-13-m4",
+    "name": "Apple MacBook Air 13 M4",
+    "brand": "Apple",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dXJR8ku"
+      }
+    ]
+  },
+  {
+    "id": "laptops-lenovo-loq-15",
+    "name": "Lenovo LOQ 15",
+    "brand": "Lenovo",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0eWCXbxl"
+      }
+    ]
+  },
+  {
+    "id": "laptops-acer-nitro-v-15",
+    "name": "Acer Nitro V 15",
+    "brand": "Acer",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dIi2G1n"
+      }
+    ]
+  },
+  {
+    "id": "laptops-asus-tuf-gaming-a15",
+    "name": "ASUS TUF Gaming A15",
+    "brand": "ASUS",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ercQEzc"
+      }
+    ]
+  },
+  {
+    "id": "laptops-msi-katana-15",
+    "name": "MSI Katana 15",
+    "brand": "MSI",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fYZtCnJ"
+      }
+    ]
+  },
+  {
+    "id": "laptops-lenovo-legion-5",
+    "name": "Lenovo Legion 5",
+    "brand": "Lenovo",
+    "kategorie": "laptops",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03EIcjCX"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-dell-s2721hn",
+    "name": "Dell S2721HN",
+    "brand": "Dell",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0d1kPUAO"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-asus-tuf-gaming-vg27aq",
+    "name": "ASUS TUF Gaming VG27AQ",
+    "brand": "ASUS",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hCpWRE4"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-lg-ultragear-27gr75q",
+    "name": "LG UltraGear 27GR75Q",
+    "brand": "LG",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bvyFRaX"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-samsung-odyssey-g5-27",
+    "name": "Samsung Odyssey G5 27",
+    "brand": "Samsung",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08EJKW8U"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-msi-mag-274qrf-qd-e2",
+    "name": "MSI MAG 274QRF QD E2",
+    "brand": "MSI",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e2ze4rb"
+      }
+    ]
+  },
+  {
+    "id": "bildschirme-samsung-odyssey-oled-g6-27",
+    "name": "Samsung Odyssey OLED G6 27",
+    "brand": "Samsung",
+    "kategorie": "bildschirme",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08bcsk8C"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-kingston-nv3-1tb",
+    "name": "Kingston NV3 1TB",
+    "brand": "Kingston",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09MQmSB2"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-samsung-990-evo-plus-1tb",
+    "name": "Samsung 990 EVO Plus 1TB",
+    "brand": "Samsung",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bCSAISj"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-wd-black-sn850x-2tb",
+    "name": "WD_BLACK SN850X 2TB",
+    "brand": "WD",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09dViGob"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-samsung-990-pro-2tb",
+    "name": "Samsung 990 Pro 2TB",
+    "brand": "Samsung",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05bOCu5x"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-kingston-fury-renegade-2tb",
+    "name": "Kingston FURY Renegade 2TB",
+    "brand": "Kingston",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08wI5Nh9"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-samsung-870-evo-1tb",
+    "name": "Samsung 870 EVO 1TB",
+    "brand": "Samsung",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05CD1IaS"
+      }
+    ]
+  },
+  {
+    "id": "speicherplatten-samsung-t7-shield-2tb",
+    "name": "Samsung T7 Shield 2TB",
+    "brand": "Samsung",
+    "kategorie": "speicherplatten",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07MnGlgv"
+      }
+    ]
   }
 ]
