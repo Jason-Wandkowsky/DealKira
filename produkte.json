@@ -2084,5 +2084,257 @@
         "link": "https://link.amazon/B025fM27A"
       }
     ]
+  },
+  {
+    "id": "webcams-logitech-c920-hd-pro",
+    "name": "Logitech C920 HD Pro",
+    "brand": "Logitech",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08DFuM7o"
+      }
+    ]
+  },
+  {
+    "id": "webcams-logitech-c922-pro-stream",
+    "name": "Logitech C922 Pro Stream",
+    "brand": "Logitech",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ft2PNO7"
+      }
+    ]
+  },
+  {
+    "id": "webcams-logitech-brio-500",
+    "name": "Logitech Brio 500",
+    "brand": "Logitech",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0cofRtNy"
+      }
+    ]
+  },
+  {
+    "id": "webcams-anker-powerconf-c200",
+    "name": "Anker PowerConf C200",
+    "brand": "Anker",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05VZAmf8"
+      }
+    ]
+  },
+  {
+    "id": "webcams-razer-kiyo-pro",
+    "name": "Razer Kiyo Pro",
+    "brand": "Razer",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dFvKlNM"
+      }
+    ]
+  },
+  {
+    "id": "webcams-elgato-facecam-mk-2",
+    "name": "Elgato Facecam MK.2",
+    "brand": "Elgato",
+    "kategorie": "webcams",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iHumN0Q"
+      }
+    ]
+  },
+  {
+    "id": "usb-hubs-anker-4-port-usb-3-0-hub-ultra-slim",
+    "name": "Anker 4-Port USB 3.0 Hub (ultra slim)",
+    "brand": "Anker",
+    "kategorie": "usb-hubs",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gQotVRe"
+      }
+    ]
+  },
+  {
+    "id": "usb-hubs-ugreen-4-port-usb-3-0-hub",
+    "name": "UGREEN 4-Port USB 3.0 Hub",
+    "brand": "UGREEN",
+    "kategorie": "usb-hubs",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B08aiL8Z9"
+      }
+    ]
+  },
+  {
+    "id": "usb-hubs-anker-7-in-1-usb-c-hub",
+    "name": "Anker 7-in-1 USB-C Hub",
+    "brand": "Anker",
+    "kategorie": "usb-hubs",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06rFxxur"
+      }
+    ]
+  },
+  {
+    "id": "usb-hubs-ugreen-7-in-1-usb-c-hub",
+    "name": "UGREEN 7-in-1 USB-C Hub",
+    "brand": "UGREEN",
+    "kategorie": "usb-hubs",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04jEPBmr"
+      }
+    ]
+  },
+  {
+    "id": "usb-hubs-caldigit-ts4-thunderbolt-4-dock",
+    "name": "CalDigit TS4 Thunderbolt 4 Dock",
+    "brand": "CalDigit",
+    "kategorie": "usb-hubs",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02nYvMV7"
+      }
+    ]
+  },
+  {
+    "id": "drucker-hp-deskjet-2810e",
+    "name": "HP DeskJet 2810e",
+    "brand": "HP",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05QFVXPP"
+      }
+    ]
+  },
+  {
+    "id": "drucker-canon-pixma-ts5350i",
+    "name": "Canon PIXMA TS5350i",
+    "brand": "Canon",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04qzIggA"
+      }
+    ]
+  },
+  {
+    "id": "drucker-epson-ecotank-et-2860",
+    "name": "Epson EcoTank ET-2860",
+    "brand": "Epson",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B027lVRSc"
+      }
+    ]
+  },
+  {
+    "id": "drucker-epson-ecotank-et-4850",
+    "name": "Epson EcoTank ET-4850",
+    "brand": "Epson",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09oNAv2F"
+      }
+    ]
+  },
+  {
+    "id": "drucker-hp-officejet-pro-9120e",
+    "name": "HP OfficeJet Pro 9120e",
+    "brand": "HP",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03jkeSm7"
+      }
+    ]
+  },
+  {
+    "id": "drucker-brother-hl-l2400dw",
+    "name": "Brother HL-L2400DW",
+    "brand": "Brother",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hSEOHDQ"
+      }
+    ]
+  },
+  {
+    "id": "drucker-brother-mfc-l2800dw",
+    "name": "Brother MFC-L2800DW",
+    "brand": "Brother",
+    "kategorie": "drucker",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02E77RIK"
+      }
+    ]
   }
 ]
