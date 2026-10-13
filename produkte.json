@@ -3162,5 +3162,369 @@
         "link": "https://link.amazon/B07MnGlgv"
       }
     ]
+  },
+  {
+    "id": "telefon-audio-apple-airpods-pro-3",
+    "name": "Apple AirPods Pro 3",
+    "brand": "Apple",
+    "kategorie": "telefon-audio",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ia4wxyA"
+      }
+    ]
+  },
+  {
+    "id": "telefon-audio-soundcore-liberty-4-nc",
+    "name": "soundcore Liberty 4 NC",
+    "brand": "soundcore",
+    "kategorie": "telefon-audio",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iByYMoP"
+      }
+    ]
+  },
+  {
+    "id": "telefon-auto-esr-magsafe-autohalterung",
+    "name": "ESR MagSafe Autohalterung",
+    "brand": "ESR",
+    "kategorie": "telefon-auto",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iRFpBze"
+      }
+    ]
+  },
+  {
+    "id": "telefon-auto-lamicall-handyhalterung-auto",
+    "name": "Lamicall Handyhalterung Auto",
+    "brand": "Lamicall",
+    "kategorie": "telefon-auto",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0diFSqOF"
+      }
+    ]
+  },
+  {
+    "id": "telefon-auto-anker-usb-c-kfz-ladegeraet",
+    "name": "Anker USB-C Kfz-Ladegerät",
+    "brand": "Anker",
+    "kategorie": "telefon-auto",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dPGTMuC"
+      }
+    ]
+  },
+  {
+    "id": "telefon-foto-video-dji-osmo-mobile-7",
+    "name": "DJI Osmo Mobile 7",
+    "brand": "DJI",
+    "kategorie": "telefon-foto-video",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0iFrbbkI"
+      }
+    ]
+  },
+  {
+    "id": "telefon-foto-video-dji-mic-mini",
+    "name": "DJI Mic Mini",
+    "brand": "DJI",
+    "kategorie": "telefon-foto-video",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09NfBCtL"
+      }
+    ]
+  },
+  {
+    "id": "telefon-foto-video-selfie-stick-mit-stativ",
+    "name": "Selfie-Stick mit Stativ",
+    "brand": "",
+    "kategorie": "telefon-foto-video",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07AwMqj5"
+      }
+    ]
+  },
+  {
+    "id": "telefon-gaming-backbone-one",
+    "name": "Backbone One",
+    "brand": "Backbone",
+    "kategorie": "telefon-gaming",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bG41nGa"
+      }
+    ]
+  },
+  {
+    "id": "telefon-gaming-razer-kishi-v2",
+    "name": "Razer Kishi V2",
+    "brand": "Razer",
+    "kategorie": "telefon-gaming",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01TciDUY"
+      }
+    ]
+  },
+  {
+    "id": "telefon-gaming-gamesir-g8-galileo",
+    "name": "GameSir G8 Galileo",
+    "brand": "GameSir",
+    "kategorie": "telefon-gaming",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06yRo0Y0"
+      }
+    ]
+  },
+  {
+    "id": "telefon-kabel-anker-usb-c-auf-usb-c-kabel-2er-pack",
+    "name": "Anker USB-C auf USB-C Kabel (2er-Pack)",
+    "brand": "Anker",
+    "kategorie": "telefon-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04c6OQbt"
+      }
+    ]
+  },
+  {
+    "id": "telefon-kabel-ugreen-usb-c-kabel-100w",
+    "name": "UGREEN USB-C Kabel 100W",
+    "brand": "UGREEN",
+    "kategorie": "telefon-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B02hMOTfP"
+      }
+    ]
+  },
+  {
+    "id": "telefon-kabel-apple-usb-c-auf-lightning-kabel",
+    "name": "Apple USB-C auf Lightning Kabel",
+    "brand": "Apple",
+    "kategorie": "telefon-kabel",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0gAvs40r"
+      }
+    ]
+  },
+  {
+    "id": "telefon-netzteile-adapter-apple-20w-usb-c-netzteil",
+    "name": "Apple 20W USB-C Netzteil",
+    "brand": "Apple",
+    "kategorie": "telefon-netzteile-adapter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ckkeA2R"
+      }
+    ]
+  },
+  {
+    "id": "telefon-netzteile-adapter-samsung-25w-schnellladegeraet",
+    "name": "Samsung 25W Schnellladegerät",
+    "brand": "Samsung",
+    "kategorie": "telefon-netzteile-adapter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B032jwgfs"
+      }
+    ]
+  },
+  {
+    "id": "telefon-netzteile-adapter-anker-nano-30w",
+    "name": "Anker Nano 30W",
+    "brand": "Anker",
+    "kategorie": "telefon-netzteile-adapter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ekTE7kd"
+      }
+    ]
+  },
+  {
+    "id": "telefon-netzteile-adapter-ugreen-nexode-65w",
+    "name": "UGREEN Nexode 65W",
+    "brand": "UGREEN",
+    "kategorie": "telefon-netzteile-adapter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dpuawuA"
+      }
+    ]
+  },
+  {
+    "id": "telefon-powerbanks-anker-nano-power-bank-10000mah",
+    "name": "Anker Nano Power Bank 10000mAh",
+    "brand": "Anker",
+    "kategorie": "telefon-powerbanks",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B06bIG2Jl"
+      }
+    ]
+  },
+  {
+    "id": "telefon-powerbanks-anker-maggo-powerbank-10000",
+    "name": "Anker MagGo Powerbank 10000",
+    "brand": "Anker",
+    "kategorie": "telefon-powerbanks",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B03IRHu1H"
+      }
+    ]
+  },
+  {
+    "id": "telefon-schutz-spigen-ultra-hybrid-huelle-fuer-iphone-17",
+    "name": "Spigen Ultra Hybrid Hülle für iPhone 17",
+    "brand": "Spigen",
+    "kategorie": "telefon-schutz",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dU2XEej"
+      }
+    ]
+  },
+  {
+    "id": "telefon-schutz-esr-panzerglas-fuer-iphone-17",
+    "name": "ESR Panzerglas für iPhone 17",
+    "brand": "ESR",
+    "kategorie": "telefon-schutz",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09XbxyRJ"
+      }
+    ]
+  },
+  {
+    "id": "telefon-schutz-huelle-fuer-samsung-galaxy",
+    "name": "Hülle für Samsung Galaxy",
+    "brand": "",
+    "kategorie": "telefon-schutz",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0aXwACBM"
+      }
+    ]
+  },
+  {
+    "id": "telefon-speicher-sandisk-extreme-microsdxc-256gb",
+    "name": "SanDisk Extreme microSDXC 256GB",
+    "brand": "SanDisk",
+    "kategorie": "telefon-speicher",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0i2MaRu7"
+      }
+    ]
+  },
+  {
+    "id": "telefon-speicher-samsung-evo-plus-microsd-256gb",
+    "name": "Samsung EVO Plus microSD 256GB",
+    "brand": "Samsung",
+    "kategorie": "telefon-speicher",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0dHxEU3f"
+      }
+    ]
+  },
+  {
+    "id": "telefon-speicher-sandisk-ultra-dual-drive-usb-c-128gb",
+    "name": "SanDisk Ultra Dual Drive USB-C 128GB",
+    "brand": "SanDisk",
+    "kategorie": "telefon-speicher",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0alNOXne"
+      }
+    ]
   }
 ]
