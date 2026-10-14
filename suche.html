@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suche – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css">
-<script src="basis.js"></script>
+  <link rel="stylesheet" href="basis.css?v=20261014">
+<script src="basis.js?v=20261014"></script>
 
 <style>
 
@@ -751,17 +751,13 @@
         <div
           class="result-no-image"
           style="display:none;"
-        >
-          📦
-        </div>
+        >${dkPlatzhalterHTML({ name: name, brand: brand, kategorie: product.kategorie || (category === "Telefone" ? "telefon" : category === "Tablets" ? "tablet" : "") })}</div>
       `;
 
     } else {
 
       imageHTML = `
-        <div class="result-no-image">
-          📦
-        </div>
+        <div class="result-no-image">${dkPlatzhalterHTML({ name: name, brand: brand, kategorie: product.kategorie || (category === "Telefone" ? "telefon" : category === "Tablets" ? "tablet" : "") })}</div>
       `;
 
     }
@@ -1548,7 +1544,7 @@
 
 </script>
 
-  <script src="kategorie.js?v=20261013"></script>
+  <script src="kategorie.js?v=20261014"></script>
 
 </body>
 </html>

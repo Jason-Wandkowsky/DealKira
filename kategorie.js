@@ -63,33 +63,9 @@
 
     function showNoImage() {
 
-      imageBox.innerHTML = "";
-
-      const box =
-        document.createElement("div");
-
-      box.className =
-        "no-image";
-
-      box.setAttribute("role", "img");
-
-      box.setAttribute(
-        "aria-label",
-        (product.name || "Produkt") + ": kein Produktbild"
+      imageBox.replaceChildren(
+        dkPlatzhalter(product)
       );
-
-      box.textContent =
-        iconFor(product.kategorie);
-
-      const label =
-        document.createElement("span");
-
-      label.textContent =
-        "Kein Produktbild";
-
-      box.appendChild(label);
-
-      imageBox.appendChild(box);
 
     }
 

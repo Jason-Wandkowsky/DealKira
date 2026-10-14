@@ -61,8 +61,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="basis.css">
-<script src="basis.js"></script>
+  <link rel="stylesheet" href="basis.css?v=20261014">
+<script src="basis.js?v=20261014"></script>
 
 
 <style>
@@ -753,14 +753,11 @@
 
       function showNoImage() {
 
-        imageBox.innerHTML =
-          '<div class="no-image" role="img">' +
-          (KATEGORIE_ICONS[category] || "📦") +
-          '<span>Kein Produktbild</span></div>';
-
-        imageBox.firstChild.setAttribute(
-          "aria-label",
-          name + ": kein Produktbild"
+        imageBox.replaceChildren(
+          dkPlatzhalter({
+            name: name,
+            kategorie: card.dataset.productKat || ""
+          })
         );
 
       }

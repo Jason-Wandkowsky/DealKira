@@ -170,3 +170,98 @@ function toggleFilter() {
   }
 
 }
+
+
+/* =========================
+   PRODUKT-PLATZHALTER
+   Wird angezeigt, wenn ein Produkt (noch) kein Bild hat:
+   Kategorie-Symbol + Markenname statt "Kein Produktbild".
+
+   dkPlatzhalter({ name, brand, kategorie })     → HTML-Element
+   dkPlatzhalterHTML({ name, brand, kategorie }) → HTML-Text
+   <div data-dk-ph data-name=".." data-brand=".." data-kat=".."></div>
+     → wird beim Laden automatisch ersetzt
+========================= */
+
+const DK_ICONS = {
+  chip:     '<rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/>',
+  gpu:      '<rect x="2.5" y="6" width="19" height="11" rx="1.5"/><circle cx="8.5" cy="11.5" r="3"/><circle cx="15.5" cy="11.5" r="3"/><path d="M5 17v2.5M9 17v2.5"/>',
+  board:    '<rect x="3" y="3" width="18" height="18" rx="1.5"/><rect x="7" y="7" width="5" height="5"/><path d="M15 7h3M15 10h3M7 15h11M7 18h6"/>',
+  ram:      '<rect x="2.5" y="7" width="19" height="9" rx="1"/><path d="M6 10v3M9.5 10v3M13 10v3M16.5 10v3M5 16v2.5M19 16v2.5"/>',
+  laptop:   '<rect x="4.5" y="5" width="15" height="10" rx="1"/><path d="M2.5 18.5h19"/>',
+  monitor:  '<rect x="2.5" y="4" width="19" height="12" rx="1"/><path d="M12 16v4M8 20h8"/>',
+  mouse:    '<rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 7v3"/>',
+  keyboard: '<rect x="2.5" y="7" width="19" height="10" rx="1.5"/><path d="M6 10.5h.01M9.5 10.5h.01M13 10.5h.01M16.5 10.5h.01M7.5 14h9"/>',
+  headset:  '<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>',
+  mic:      '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/>',
+  camera:   '<rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8.5 7l1.5-2.5h4L15.5 7"/>',
+  plug:     '<path d="M9 3v4M15 3v4M7 7h10v4a5 5 0 0 1-10 0V7zM12 16v5"/>',
+  printer:  '<path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><rect x="7" y="14" width="10" height="6.5"/>',
+  drive:    '<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 14h.01M10.5 14h6.5"/>',
+  battery:  '<rect x="2.5" y="7" width="17" height="10" rx="2"/><path d="M21.5 10.5v3M6 10v4M9.5 10v4"/>',
+  fan:      '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 10.5C11 7 12.5 5 15 5.5M13.5 12.5c3.5-.5 5 1.5 3.5 3.5M10.5 12.8C8 15.5 6 15 5.5 12.5"/>',
+  tower:    '<rect x="6" y="2.5" width="12" height="19" rx="1.5"/><circle cx="12" cy="14" r="3"/><path d="M9 6h6"/>',
+  phone:    '<rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/>',
+  tablet:   '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M11 18h2"/>',
+  gamepad:  '<path d="M6.5 7h11a4 4 0 0 1 3.9 4.8l-.9 4.4a2.5 2.5 0 0 1-4.3 1.2L14.5 15h-5l-1.7 2.4a2.5 2.5 0 0 1-4.3-1.2l-.9-4.4A4 4 0 0 1 6.5 7z"/><path d="M8 10v3M6.5 11.5h3M15.5 11h.01M17 12.5h.01"/>',
+  fridge:   '<rect x="5.5" y="2.5" width="13" height="19" rx="1.5"/><path d="M5.5 9.5h13M8.5 5.5v2M8.5 12v3"/>',
+  washer:   '<rect x="4" y="2.5" width="16" height="19" rx="1.5"/><circle cx="12" cy="13.5" r="4.5"/><path d="M7 5.5h3"/>',
+  stove:    '<rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="10" r="2.5"/><circle cx="15.5" cy="10" r="2.5"/><path d="M6 16h12"/>',
+  hood:     '<path d="M9 3h6v6l5 6H4l5-6V3zM4 15v2.5h16V15"/>',
+  vacuum:   '<path d="M14 3l-4 13"/><path d="M5 16.5h9a2 2 0 0 1 2 2v1.5H3v-1.5a2 2 0 0 1 2-2z"/>',
+  heater:   '<rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M7 8.5v5M10.5 8.5v5M14 8.5v5M17.5 8.5v5M6 17v2.5M18 17v2.5"/>',
+  snow:     '<path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6M9.5 4l2.5 2.5L14.5 4M9.5 20l2.5-2.5 2.5 2.5"/>',
+  box:      '<path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/>'
+};
+
+const DK_KATEGORIE_ICON = {
+  cpu: "chip", ram: "ram", mainboards: "board", grafikkarten: "gpu",
+  netzteile: "plug", gehaeuse: "tower", "cpu-kuehler": "fan",
+  wasserkuehlung: "fan", luefter: "fan", speicherplatten: "drive",
+  laptops: "laptop", bildschirme: "monitor", maeuse: "mouse",
+  tastaturen: "keyboard", headset: "headset", mikrofon: "mic",
+  webcams: "camera", "usb-hubs": "plug", drucker: "printer",
+  "computer-setup-kabel": "plug", "komponenten-kabel": "plug",
+  "kabel-management": "plug",
+  telefon: "phone", tablet: "tablet",
+  "telefon-audio": "headset", "telefon-auto": "phone",
+  "telefon-foto-video": "camera", "telefon-gaming": "gamepad",
+  "telefon-kabel": "plug", "telefon-netzteile-adapter": "plug",
+  "telefon-powerbanks": "battery", "telefon-schutz": "phone",
+  "telefon-speicher": "drive",
+  kuehlschraenke: "fridge", gefrierschraenke: "fridge",
+  waschmaschinen: "washer", trockner: "washer", waschtrockner: "washer",
+  spuelmaschinen: "washer", staubsauger: "vacuum", ofen: "stove",
+  kochfelder: "stove", abzugshauben: "hood", klimaanlagen: "snow",
+  ventilatoren: "fan", "mobile-heizungen": "heater",
+  konsole: "gamepad", tv: "monitor"
+};
+
+function dkEscape(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function dkPlatzhalterHTML(info) {
+  info = info || {};
+  const icon = DK_ICONS[DK_KATEGORIE_ICON[info.kategorie]] || DK_ICONS.box;
+  const brand = info.brand ? '<span class="dk-ph-brand">' + dkEscape(info.brand) + '</span>' : "";
+  return '<div class="dk-ph" role="img" aria-label="' + dkEscape(info.name || "Produkt") + '">' +
+    '<span class="dk-ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true">' + icon + '</svg></span>' +
+    brand + '</div>';
+}
+
+function dkPlatzhalter(info) {
+  const wrap = document.createElement("div");
+  wrap.innerHTML = dkPlatzhalterHTML(info);
+  return wrap.firstChild;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("[data-dk-ph]").forEach(function(el) {
+    el.replaceWith(dkPlatzhalter({
+      name: el.dataset.name, brand: el.dataset.brand, kategorie: el.dataset.kat
+    }));
+  });
+});

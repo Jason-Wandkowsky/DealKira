@@ -6,8 +6,8 @@
 
   <title>Produkt – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css">
-<script src="basis.js"></script>
+  <link rel="stylesheet" href="basis.css?v=20261014">
+<script src="basis.js?v=20261014"></script>
 
 <style>
 
@@ -624,9 +624,8 @@
                 ? `<img
                     src="${escapeAttribute(product.image)}"
                     alt="${escapeAttribute(product.name || "Produkt")}"
-                    onerror="this.replaceWith(Object.assign(document.createElement('div'), { className: 'no-image', innerHTML: '📦<span>Kein Produktbild</span>' }));"
                   >`
-                : `<div class="no-image" role="img" aria-label="${escapeAttribute(product.name || "Produkt")}: kein Produktbild">📦<span>Kein Produktbild</span></div>`
+                : dkPlatzhalterHTML({ name: product.name, brand: product.brand, kategorie: product.kategorie || "telefon" })
             }
 
           </div>
@@ -648,6 +647,25 @@
       </div>
 
     `;
+
+    const productImage =
+      container.querySelector(".product-image img");
+
+    if (productImage) {
+
+      const showPlaceholder = function() {
+        productImage.replaceWith(
+          dkPlatzhalter({ name: product.name, brand: product.brand, kategorie: product.kategorie || "telefon" })
+        );
+      };
+
+      productImage.addEventListener("error", showPlaceholder);
+
+      if (productImage.complete && !productImage.naturalWidth) {
+        showPlaceholder();
+      }
+
+    }
 
   }
 
