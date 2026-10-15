@@ -4054,5 +4054,271 @@
         "feedId": "51475662700857"
       }
     ]
+  },
+  {
+    "id": "outdoor-kameras-eufy-solocam-s220",
+    "name": "eufy SoloCam S220",
+    "brand": "eufy",
+    "kategorie": "outdoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01sEi7Y3"
+      }
+    ]
+  },
+  {
+    "id": "outdoor-kameras-reolink-argus-3-pro",
+    "name": "Reolink Argus 3 Pro",
+    "brand": "Reolink",
+    "kategorie": "outdoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hG6n2K7"
+      }
+    ]
+  },
+  {
+    "id": "outdoor-kameras-tp-link-tapo-c320ws",
+    "name": "TP-Link Tapo C320WS",
+    "brand": "TP-Link",
+    "kategorie": "outdoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0bPw3Okf"
+      }
+    ]
+  },
+  {
+    "id": "outdoor-kameras-ring-outdoor-camera",
+    "name": "Ring Outdoor Camera",
+    "brand": "Ring",
+    "kategorie": "outdoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0f4Gl0bf"
+      }
+    ]
+  },
+  {
+    "id": "indoor-kameras-tp-link-tapo-c200",
+    "name": "TP-Link Tapo C200",
+    "brand": "TP-Link",
+    "kategorie": "indoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01FieP92"
+      }
+    ]
+  },
+  {
+    "id": "indoor-kameras-eufy-indoor-cam-c220",
+    "name": "eufy Indoor Cam C220",
+    "brand": "eufy",
+    "kategorie": "indoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0g2iT9VF"
+      }
+    ]
+  },
+  {
+    "id": "indoor-kameras-ring-indoor-camera",
+    "name": "Ring Indoor Camera",
+    "brand": "Ring",
+    "kategorie": "indoor-kameras",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hZljAHf"
+      }
+    ]
+  },
+  {
+    "id": "kamera-sets-eufycam-3-set",
+    "name": "eufyCam 3 Set",
+    "brand": "eufy",
+    "kategorie": "kamera-sets",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01RaeDeF"
+      }
+    ]
+  },
+  {
+    "id": "tuerklingeln-ring-battery-video-doorbell",
+    "name": "Ring Battery Video Doorbell",
+    "brand": "Ring",
+    "kategorie": "tuerklingeln",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0ff6A1Ba"
+      }
+    ]
+  },
+  {
+    "id": "tuerklingeln-eufy-video-doorbell-dual",
+    "name": "eufy Video Doorbell Dual",
+    "brand": "eufy",
+    "kategorie": "tuerklingeln",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0fiWsNzG"
+      }
+    ]
+  },
+  {
+    "id": "tuerklingeln-reolink-video-doorbell-wifi",
+    "name": "Reolink Video Doorbell WiFi",
+    "brand": "Reolink",
+    "kategorie": "tuerklingeln",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0arNZAbF"
+      }
+    ]
+  },
+  {
+    "id": "kamera-zubehoer-eufy-solarpanel",
+    "name": "eufy Solarpanel",
+    "brand": "eufy",
+    "kategorie": "kamera-zubehoer",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0e5X9UIE"
+      }
+    ]
+  },
+  {
+    "id": "kamera-zubehoer-reolink-solarpanel-2",
+    "name": "Reolink Solarpanel 2",
+    "brand": "Reolink",
+    "kategorie": "kamera-zubehoer",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B07oZBnKj"
+      }
+    ]
+  },
+  {
+    "id": "kamera-zubehoer-ring-solarpanel",
+    "name": "Ring Solarpanel",
+    "brand": "Ring",
+    "kategorie": "kamera-zubehoer",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B0hMoKXEh"
+      }
+    ]
+  },
+  {
+    "id": "maehroboter-worx-landroid-vision",
+    "name": "Worx Landroid Vision",
+    "brand": "Worx",
+    "kategorie": "maehroboter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B05jTv1my"
+      }
+    ]
+  },
+  {
+    "id": "maehroboter-segway-navimow-i105e",
+    "name": "Segway Navimow i105E",
+    "brand": "Segway",
+    "kategorie": "maehroboter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B09LbjpXp"
+      }
+    ]
+  },
+  {
+    "id": "maehroboter-gardena-sileno-city",
+    "name": "Gardena Sileno City",
+    "brand": "Gardena",
+    "kategorie": "maehroboter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B01Ej9C86"
+      }
+    ]
+  },
+  {
+    "id": "maehroboter-dreame-a1",
+    "name": "Dreame A1",
+    "brand": "Dreame",
+    "kategorie": "maehroboter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04LfrZDA"
+      }
+    ]
+  },
+  {
+    "id": "maehroboter-mammotion-yuka",
+    "name": "Mammotion Yuka",
+    "brand": "Mammotion",
+    "kategorie": "maehroboter",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B04LK8QHT"
+      }
+    ]
   }
 ]
