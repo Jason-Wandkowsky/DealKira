@@ -3910,5 +3910,149 @@
         "feedId": "43489265746019"
       }
     ]
+  },
+  {
+    "id": "anthbot-m5",
+    "name": "Anthbot M5",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/02-RTK.png?v=1766631501",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "629,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fm5-robot-lawn-mower%3Fvariant%3D52055426236729",
+        "feed": "anthbot",
+        "feedId": "52055426236729"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-m9",
+    "name": "Anthbot M9",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/02-RTK_800x800_020e26a4-1fb9-4850-87c1-e6d5c1fb5f0d.png?v=1767585019",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "719,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fm9-robot-lawn-mower%3Fvariant%3D52055418503481",
+        "feed": "anthbot",
+        "feedId": "52055418503481"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-m5-lidar",
+    "name": "Anthbot M5 LiDAR",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/02-LiDar_1.png?v=1766631298",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "869,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fm5-lidar-robot-lawn-mower%3Fvariant%3D51476827111737",
+        "feed": "anthbot",
+        "feedId": "51476827111737"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-genie-600e",
+    "name": "Anthbot Genie 600E (bis 900 m², 4G)",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/f04fbc442a2f0a11aa9fb8efa0a1b314.png?v=1765874122",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "999,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fgenie-mahroboter%3Fvariant%3D52413603283257",
+        "feed": "anthbot",
+        "feedId": "52413603283257"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-m5-pro",
+    "name": "Anthbot M5 PRO",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/6-_-2_42f2b967-bb4e-49e5-8b3c-4b8203490804.jpg?v=1783587879",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "999,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fm5-pro-robot-lawn-mower%3Fvariant%3D54312874737977",
+        "feed": "anthbot",
+        "feedId": "54312874737977"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-genie-800",
+    "name": "Anthbot Genie 800 (bis 1.500 m², 4G)",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/f04fbc442a2f0a11aa9fb8efa0a1b314.png?v=1765874122",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "1099,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fgenie-mahroboter%3Fvariant%3D52091706900793",
+        "feed": "anthbot",
+        "feedId": "52091706900793"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-genie-1000",
+    "name": "Anthbot Genie 1000 (bis 2.000 m², 4G)",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/f04fbc442a2f0a11aa9fb8efa0a1b314.png?v=1765874122",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "1299,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fgenie-mahroboter%3Fvariant%3D50588720988473",
+        "feed": "anthbot",
+        "feedId": "50588720988473"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-m9-pro",
+    "name": "Anthbot M9 PRO",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/6-_-2_6b0b48d9-bdaa-47b1-9d85-be6a705185ac.jpg?v=1783587942",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "1299,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fm9-pro-robot-lawn-mower%3Fvariant%3D54312885158201",
+        "feed": "anthbot",
+        "feedId": "54312885158201"
+      }
+    ]
+  },
+  {
+    "id": "anthbot-n8",
+    "name": "Anthbot N8",
+    "brand": "Anthbot",
+    "kategorie": "maehroboter",
+    "image": "https://cdn.shopify.com/s/files/1/0904/5983/2633/files/N8_1.png?v=1773373009",
+    "shops": [
+      {
+        "name": "Anthbot",
+        "price": "1599,00 €",
+        "link": "https://www.awin1.com/cread.php?awinmid=125144&awinaffid=3110253&ued=https%3A%2F%2Fde.anthbot.com%2Fproducts%2Fn8-robot-lawn-mower%3Fvariant%3D51475662700857",
+        "feed": "anthbot",
+        "feedId": "51475662700857"
+      }
+    ]
   }
 ]
