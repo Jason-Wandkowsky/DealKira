@@ -49,6 +49,7 @@ def feed_laden(url):
 def main():
     produkte = json.load(open(DATEI, encoding="utf-8"))
     geaendert = 0
+    fehler_gesamt = 0
 
     for feed_name, secret in FEEDS.items():
         url = os.environ.get(secret, "").strip()
@@ -59,6 +60,7 @@ def main():
             feed = feed_laden(url)
         except Exception as fehler:
             print(f"{feed_name}: Feed konnte nicht geladen werden ({fehler})")
+            fehler_gesamt += 1
             continue
         print(f"{feed_name}: {len(feed)} Produkte im Feed")
 
@@ -94,6 +96,8 @@ def main():
         with open(DATEI, "w", encoding="utf-8") as datei:
             datei.write(json.dumps(produkte, ensure_ascii=False, indent=2) + "\n")
     print(f"Fertig: {geaendert} Änderungen")
+    # Rotes ✗ bei GitHub, wenn ein hinterlegter Feed nicht geladen werden konnte
+    return 1 if fehler_gesamt else 0
 
 
 if __name__ == "__main__":
