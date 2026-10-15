@@ -211,6 +211,8 @@ const DK_ICONS = {
   vacuum:   '<path d="M14 3l-4 13"/><path d="M5 16.5h9a2 2 0 0 1 2 2v1.5H3v-1.5a2 2 0 0 1 2-2z"/>',
   heater:   '<rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M7 8.5v5M10.5 8.5v5M14 8.5v5M17.5 8.5v5M6 17v2.5M18 17v2.5"/>',
   snow:     '<path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6M9.5 4l2.5 2.5L14.5 4M9.5 20l2.5-2.5 2.5 2.5"/>',
+  bell:     '<rect x="6" y="2.5" width="12" height="19" rx="3"/><circle cx="12" cy="8.5" r="2.5"/><circle cx="12" cy="16" r="1.5"/>',
+  mower:    '<path d="M3 15.5l2-6h11l3 6z"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/><path d="M9 9.5V7h5v2.5M3 20.5h18"/>',
   box:      '<path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/>'
 };
 
@@ -234,7 +236,8 @@ const DK_KATEGORIE_ICON = {
   spuelmaschinen: "washer", staubsauger: "vacuum", ofen: "stove",
   kochfelder: "stove", abzugshauben: "hood", klimaanlagen: "snow",
   ventilatoren: "fan", "mobile-heizungen": "heater",
-  konsole: "gamepad", tv: "monitor"
+  konsole: "gamepad", tv: "monitor",
+  ueberwachungskameras: "camera", tuerklingeln: "bell", maehroboter: "mower"
 };
 
 function dkEscape(value) {
