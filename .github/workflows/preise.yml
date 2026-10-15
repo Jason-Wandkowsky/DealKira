@@ -1,0 +1,38 @@
+name: Preise aktualisieren
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # jeden Tag ca. 6:17 Uhr deutscher Zeit
+  workflow_dispatch:        # zusätzlich per Knopfdruck startbar
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  preise:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preise aus den Awin-Feeds holen
+        env:
+          AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
+          AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
+        run: python3 tools/preise_aktualisieren.py
+
+      - name: Änderungen speichern
+        run: |
+          if git diff --quiet produkte.json; then
+            echo "Keine Preisänderungen."
+            exit 0
+          fi
+          git config user.name "DealKira Preis-Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -am "Preise automatisch aktualisiert"
+          git push
+          # Website neu veröffentlichen
+          curl -s -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages/builds || true
