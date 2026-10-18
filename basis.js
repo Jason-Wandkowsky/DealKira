@@ -15,6 +15,7 @@ const MENU_EINTRAEGE = [
   "trennlinie",
   { link: "suche.html",         icon: "🔍", text: "Suche" },
   { link: "kategorien.html",    icon: "📂", text: "Kategorien" },
+  { link: "ratgeber.html",      icon: "📖", text: "Ratgeber" },
   { link: "deals.html",         icon: "🔥", text: "Deals" },
   { link: "einstellungen.html", icon: "⚙️", text: "Einstellungen" }
 ];
