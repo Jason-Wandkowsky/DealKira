@@ -61,8 +61,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="basis.css?v=20261018">
-<script src="basis.js?v=20261018"></script>
+  <link rel="stylesheet" href="basis.css?v=20261018b">
+<script src="basis.js?v=20261018b"></script>
 
 
 <style>
@@ -872,6 +872,17 @@
 
       article.appendChild(imageBox);
       article.appendChild(body);
+
+      if (window.dkFavButton && card.dataset.productId) {
+        article.appendChild(dkFavButton({
+          id: card.dataset.productId,
+          name: name,
+          image: image,
+          price: card.dataset.productPrice || "",
+          shop: card.dataset.productShop || "",
+          link: link
+        }));
+      }
 
       return article;
 

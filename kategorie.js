@@ -153,6 +153,10 @@
     card.appendChild(imageBox);
     card.appendChild(body);
 
+    if (window.dkFavButton) {
+      card.appendChild(dkFavButton(dkFavInfo(product)));
+    }
+
     return card;
 
   }

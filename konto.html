@@ -4,8 +4,8 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Konto / Anmelden – DealKira</title>    <link rel="stylesheet" href="basis.css?v=20261018">
-<script src="basis.js?v=20261018"></script>
+  <title>Konto / Anmelden – DealKira</title>    <link rel="stylesheet" href="basis.css?v=20261018b">
+<script src="basis.js?v=20261018b"></script>
 
 <style>  
 
@@ -2904,17 +2904,7 @@
                   >  
                 `  
                 : `  
-                  <div  
-                    class="favorite-image"  
-                    style="  
-                      display:flex;  
-                      align-items:center;  
-                      justify-content:center;  
-                      font-size:32px;  
-                    "  
-                  >  
-                    📦  
-                  </div>  
+                  <div class="favorite-image">${dkPlatzhalterHTML({ name: favorite.produkt_name })}</div>  
                 `;  
 
             const priceHTML =  

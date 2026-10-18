@@ -77,6 +77,7 @@
     inhalt.appendChild(knopf);
 
     card.appendChild(inhalt);
+    if (window.dkFavButton) card.appendChild(dkFavButton(dkFavInfo(p)));
     return card;
   }
 

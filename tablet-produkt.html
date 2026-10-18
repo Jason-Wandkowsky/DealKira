@@ -6,8 +6,8 @@
 
   <title>Produkt – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css?v=20261018">
-<script src="basis.js?v=20261018"></script>
+  <link rel="stylesheet" href="basis.css?v=20261018b">
+<script src="basis.js?v=20261018b"></script>
 
 <style>
 
@@ -647,6 +647,15 @@
       </div>
 
     `;
+
+    const titelZeile =
+      container.querySelector(".product-name");
+
+    if (titelZeile && window.dkFavButton) {
+      titelZeile.after(
+        dkFavButton(dkFavInfo(product, "tablet-produkt.html"), "dk-fav-inline")
+      );
+    }
 
     const productImage =
       container.querySelector(".product-image img");

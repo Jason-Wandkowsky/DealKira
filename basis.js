@@ -271,3 +271,142 @@ document.addEventListener("DOMContentLoaded", function() {
     }));
   });
 });
+
+
+/* =====================================================
+   DealKira – Favoriten auf allen Seiten
+   Wird automatisch von basis.js geladen.
+
+   dkFavButton({ id, name, image, price, shop, link })
+     → fertiger ♡-Button, der sich selbst um Login,
+       Speichern und Entfernen kümmert.
+
+   Gespeichert wird in der Supabase-Tabelle "favoriten"
+   (dieselbe wie auf den Telefon-/Tablet-Seiten und im Konto).
+===================================================== */
+
+(function() {
+
+  const SUPABASE_CDN = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
+
+  let client = null;
+  let user = null;
+  let favoriten = new Set();
+
+  function skriptLaden(src) {
+    return new Promise(function(fertig, fehler) {
+      const s = document.createElement("script");
+      s.src = src;
+      s.onload = fertig;
+      s.onerror = fehler;
+      document.head.appendChild(s);
+    });
+  }
+
+  function anzeigen(button) {
+    const aktiv = favoriten.has(button.dataset.favId);
+    button.classList.toggle("active", aktiv);
+    button.textContent = aktiv ? "♥" : "♡";
+    button.setAttribute("aria-label",
+      (button.dataset.favName || "Produkt") + (aktiv ? " aus Favoriten entfernen" : " zu Favoriten hinzufügen"));
+    button.setAttribute("aria-pressed", aktiv ? "true" : "false");
+  }
+
+  function alleAnzeigen() {
+    document.querySelectorAll(".dk-fav").forEach(anzeigen);
+  }
+
+  async function verbinden() {
+    try {
+      if (typeof supabaseClient === "undefined") {
+        if (!window.supabase) await skriptLaden(SUPABASE_CDN);
+        if (typeof supabaseClient === "undefined") await skriptLaden("supabase-client.js");
+      }
+      client = supabaseClient;
+      const { data } = await client.auth.getSession();
+      user = (data && data.session && data.session.user) || null;
+      if (user) {
+        const { data: liste, error } = await client
+          .from("favoriten").select("produkt_id").eq("user_id", user.id);
+        if (!error && liste) favoriten = new Set(liste.map(function(f) { return f.produkt_id; }));
+      }
+      alleAnzeigen();
+    } catch (fehler) {
+      console.error("Favoriten konnten nicht geladen werden:", fehler);
+    }
+  }
+
+  const bereit = new Promise(function(fertig) {
+    function start() { verbinden().then(fertig); }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", start);
+    } else {
+      start();
+    }
+  });
+
+  async function umschalten(button, info) {
+    button.disabled = true;
+    try {
+      await bereit;
+      if (!client || !user) {
+        alert("Bitte melde dich zuerst an, um Produkte zu deinen Favoriten hinzuzufügen.");
+        window.location.href = "konto.html";
+        return;
+      }
+      if (favoriten.has(info.id)) {
+        const { error } = await client.from("favoriten")
+          .delete().eq("user_id", user.id).eq("produkt_id", info.id);
+        if (error) throw error;
+        favoriten.delete(info.id);
+      } else {
+        const { error } = await client.from("favoriten").insert({
+          user_id: user.id,
+          produkt_id: info.id,
+          produkt_name: info.name || "",
+          produkt_bild: info.image || "",
+          produkt_preis: info.price || "",
+          produkt_shop: info.shop || "",
+          produkt_link: info.link || ""
+        });
+        if (error) throw error;
+        favoriten.add(info.id);
+      }
+      alleAnzeigen();
+    } catch (fehler) {
+      console.error("Favoriten-Fehler:", fehler);
+      alert("Favorit konnte nicht gespeichert werden. Bitte versuch es noch einmal.");
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  /* Infos aus einem Produkt aus produkte.json / telefone.json / tablets.json */
+  window.dkFavInfo = function(p, detailSeite) {
+    const shop = (p.shops || []).find(function(s) { return s.price; }) || (p.shops || [])[0] || {};
+    return {
+      id: p.id,
+      name: p.name,
+      image: p.image || "",
+      price: shop.price || "",
+      shop: shop.name || "",
+      link: "https://dealkira.com/" + (detailSeite || "artikel.html") + "?id=" + encodeURIComponent(p.id)
+    };
+  };
+
+  window.dkFavButton = function(info, extraKlasse) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "favorite-button dk-fav" + (extraKlasse ? " " + extraKlasse : "");
+    button.dataset.favId = info.id;
+    button.dataset.favName = info.name || "";
+    anzeigen(button);
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      umschalten(button, info);
+    });
+    return button;
+  };
+
+})();

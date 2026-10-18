@@ -56,6 +56,7 @@
 
     card.appendChild(bild);
     card.appendChild(body);
+    if (window.dkFavButton) card.appendChild(dkFavButton(dkFavInfo(p)));
     return card;
   }
 
