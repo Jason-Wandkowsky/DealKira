@@ -684,6 +684,33 @@
       flex-shrink: 0;  
     }  
   
+    div.favorite-image {  
+      box-sizing: border-box;  
+      overflow: hidden;  
+      padding: 0;  
+    }  
+
+    .favorite-image .dk-ph {  
+      min-height: 0;  
+      padding: 0;  
+      gap: 0;  
+      border-radius: 9px;  
+    }  
+
+    .favorite-image .dk-ph-icon {  
+      width: 44px;  
+      height: 44px;  
+    }  
+
+    .favorite-image .dk-ph-icon svg {  
+      width: 22px;  
+      height: 22px;  
+    }  
+
+    .favorite-image .dk-ph-brand {  
+      display: none;  
+    }  
+
     .favorite-info {  
       flex: 1;  
       min-width: 0;  
@@ -2894,6 +2921,9 @@
             card.className =  
               "favorite-card";  
 
+            card.dataset.produktId =  
+              favorite.produkt_id || "";  
+
             const imageHTML =  
               favorite.produkt_bild  
                 ? `  
@@ -2990,6 +3020,8 @@
         list.style.display =  
           "block";  
 
+        favoritenNachbessern(list);  
+
       } catch (error) {  
   
         console.error(  
@@ -3021,6 +3053,51 @@
   
       }  
   
+    }  
+
+    /* =========================  
+       FAVORITEN NACHBESSERN  
+       - kaputte Bilder → Platzhalter  
+       - fehlender Link → Produktseite auf DealKira  
+    ========================= */  
+
+    async function favoritenNachbessern(list) {  
+
+      list.querySelectorAll("img.favorite-image").forEach(function(img) {  
+        function ersetzen() {  
+          const box = document.createElement("div");  
+          box.className = "favorite-image";  
+          box.innerHTML = dkPlatzhalterHTML({ name: img.alt });  
+          img.replaceWith(box);  
+        }  
+        img.addEventListener("error", ersetzen);  
+        if (img.complete && !img.naturalWidth) ersetzen();  
+      });  
+
+      const ohneLink = Array.from(list.querySelectorAll(".favorite-card"))  
+        .filter(function(card) { return !card.querySelector(".favorite-open-button") && card.dataset.produktId; });  
+      if (!ohneLink.length) return;  
+
+      const seiten = {};  
+      const quellen = [["produkte.json", "artikel.html"], ["telefone.json", "produkt.html"], ["tablets.json", "tablet-produkt.html"]];  
+      await Promise.all(quellen.map(async function(q) {  
+        try {  
+          const antwort = await fetch(q[0] + "?t=" + Date.now(), { cache: "no-store" });  
+          (await antwort.json()).forEach(function(p) { if (!seiten[p.id]) seiten[p.id] = q[1]; });  
+        } catch (e) {}  
+      }));  
+
+      ohneLink.forEach(function(card) {  
+        const seite = seiten[card.dataset.produktId];  
+        if (!seite) return;  
+        const link = document.createElement("a");  
+        link.className = "favorite-open-button";  
+        link.href = seite + "?id=" + encodeURIComponent(card.dataset.produktId);  
+        link.textContent = "Zum Produkt";  
+        const entfernen = card.querySelector(".favorite-remove-button, button");  
+        if (entfernen) entfernen.before(link); else card.appendChild(link);  
+      });  
+
     }  
 
     /* =========================  
