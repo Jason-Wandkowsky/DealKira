@@ -8,6 +8,7 @@ Preis, Bild und Link aller Shops, die ein "feed" + "feedId" haben.
 Feeds werden als GitHub-Secrets hinterlegt (nie im Code!):
   AWIN_FEED_AOSU     → Download-Link des aosu-Feeds
   AWIN_FEED_ANTHBOT  → Download-Link des Anthbot-Feeds
+  AWIN_FEED_IMOU     → Download-Link des Imou-Feeds
 Ein neuer Feed: Secret anlegen und unten in FEEDS eintragen.
 """
 
@@ -22,6 +23,7 @@ import urllib.request
 FEEDS = {
     "aosu": "AWIN_FEED_AOSU",
     "anthbot": "AWIN_FEED_ANTHBOT",
+    "imou": "AWIN_FEED_IMOU",
 }
 
 DATEI = "produkte.json"
@@ -43,7 +45,13 @@ def feed_laden(url):
     if daten[:2] == b"\x1f\x8b":
         daten = gzip.decompress(daten)
     text = daten.decode("utf-8-sig", errors="replace")
-    return {zeile["id"]: zeile for zeile in csv.DictReader(io.StringIO(text))}
+    # Zwei Awin-Formate: Google-Format ("id") und klassisches Format ("aw_product_id")
+    feed = {}
+    for zeile in csv.DictReader(io.StringIO(text)):
+        schluessel = zeile.get("id") or zeile.get("aw_product_id")
+        if schluessel:
+            feed[schluessel] = zeile
+    return feed
 
 
 def main():
@@ -73,8 +81,10 @@ def main():
                     print(f"  nicht mehr im Feed: {produkt['name']}")
                     continue
 
-                verfuegbar = zeile.get("availability") == "in_stock"
-                preis = preis_format(zeile.get("sale_price") or zeile.get("price", ""))
+                verfuegbar = zeile.get("availability", "in_stock") in ("in_stock", "")
+                preis = preis_format(
+                    zeile.get("sale_price") or zeile.get("price") or zeile.get("search_price", "")
+                )
                 neu = {
                     "price": preis if verfuegbar else "",
                     "link": zeile.get("aw_deep_link") or shop.get("link", ""),
@@ -87,7 +97,7 @@ def main():
                         shop[feld] = wert
                         geaendert += 1
 
-                bild = zeile.get("image_link", "")
+                bild = zeile.get("image_link") or zeile.get("merchant_image_url", "")
                 if bild and produkt.get("image") != bild:
                     produkt["image"] = bild
                     geaendert += 1

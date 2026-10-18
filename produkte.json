@@ -4938,5 +4938,389 @@
         "link": "https://link.amazon/B0fbOjqCr"
       }
     ]
+  },
+  {
+    "id": "imou-cue-2c-full-hd",
+    "name": "Imou Cue 2C (Full HD)",
+    "brand": "Imou",
+    "kategorie": "indoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/cue-2c-2mp-236812.jpg?v=1750841006",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "22,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279815&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279815"
+      }
+    ]
+  },
+  {
+    "id": "imou-ranger-2c-3mp-2k",
+    "name": "Imou Ranger 2C (3MP 2K)",
+    "brand": "Imou",
+    "kategorie": "indoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/ranger-2c-3mp4mp5mp-548990.jpg?v=1750841007",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "27,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279802&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279802"
+      }
+    ]
+  },
+  {
+    "id": "imou-ranger-2c-pro-5mp-3k",
+    "name": "Imou Ranger 2C Pro (5MP 3K)",
+    "brand": "Imou",
+    "kategorie": "indoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/ranger-2c-pro-3k-5mp-24ghz-5ghz-dual-band-4965305.jpg?v=1755242509",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "43,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280208&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280208"
+      }
+    ]
+  },
+  {
+    "id": "imou-ranger-dual-pro-2-objektive",
+    "name": "Imou Ranger Dual Pro (2 Objektive)",
+    "brand": "Imou",
+    "kategorie": "indoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/dual-vision-kit-380989.jpg?v=1750840828",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "32,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280042&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280042"
+      }
+    ]
+  },
+  {
+    "id": "imou-rex-3d-5mp-3k",
+    "name": "Imou Rex 3D (5MP 3K)",
+    "brand": "Imou",
+    "kategorie": "indoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/rex-3d-auto-cruise-5mp3mp-934498.jpg?v=1750840904",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "49,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279874&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279874"
+      }
+    ]
+  },
+  {
+    "id": "imou-bullet-2c-5mp-3k",
+    "name": "Imou Bullet 2C (5MP 3K)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/bullet-3-5mp-2c-5mp-6813297.jpg?v=1763423374",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "39,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279846&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279846"
+      }
+    ]
+  },
+  {
+    "id": "imou-talos-3mp-2k",
+    "name": "Imou Talos (3MP 2K)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/talos-3mp5mp-uk-2614229.jpg?v=1783442712",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "36,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280349&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280349"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-se-3mp-2k",
+    "name": "Imou Cruiser SE+ (3MP 2K)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/cruiser-se-5mp3mp-164451.jpg?v=1750840828",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "39,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279821&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279821"
+      }
+    ]
+  },
+  {
+    "id": "imou-cell-3c-mit-solarpanel",
+    "name": "Imou Cell 3C mit Solarpanel",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/cell-3c-100-wireless-3mp-2k-412028.jpg?v=1750840824",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "42,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280111&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280111"
+      }
+    ]
+  },
+  {
+    "id": "imou-cell-go-mit-solarpanel",
+    "name": "Imou Cell Go mit Solarpanel",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/cell-go-100-wireless-3mp-2k-443255.jpg?v=1750840902",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "49,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279904&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279904"
+      }
+    ]
+  },
+  {
+    "id": "imou-cell-pt-3c-mit-solarpanel",
+    "name": "Imou Cell PT 3C mit Solarpanel",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/cell-pt-3c-5mp3mp-245ghz-aov-mode-5482077.jpg?v=1788182297",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "62,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=45842316735&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "45842316735"
+      }
+    ]
+  },
+  {
+    "id": "imou-aov-air-mit-solarpanel",
+    "name": "Imou AOV Air mit Solarpanel",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/aov-air-5mp-3k-4g-lte-245ghz-wi-fi-7176217.jpg?v=1788348015",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "58,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=45864592691&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "45864592691"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-2-5mp-3k",
+    "name": "Imou Cruiser 2 (5MP 3K)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/cruiser-2-5mp3mp-vehicle-detection-555620.jpg?v=1750841005",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "79,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279896&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279896"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-dual-2-objektive",
+    "name": "Imou Cruiser Dual (2 Objektive)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/2-pieces-cruiser-dual-kit-5mp3mp-3mp3mp-999953.jpg?v=1763021511",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "81,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280060&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280060"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-z-12-fach-zoom",
+    "name": "Imou Cruiser Z (12-fach Zoom)",
+    "brand": "Imou",
+    "kategorie": "outdoor-kameras",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/cruiser-z-5mp-3k-dual-lens-with-12x-hybrid-zoom-2940816.jpg?v=1764904305",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "99,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280226&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280226"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-se-2-kameras-5mp",
+    "name": "Imou Cruiser SE+ (2 Kameras, 5MP)",
+    "brand": "Imou",
+    "kategorie": "kamera-sets",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/products/2pcs-cruiser-se-5mp-kit-618877.jpg?v=1750840842",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "111,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279908&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279908"
+      }
+    ]
+  },
+  {
+    "id": "imou-cruiser-2-2-kameras-5mp",
+    "name": "Imou Cruiser 2 (2 Kameras, 5MP)",
+    "brand": "Imou",
+    "kategorie": "kamera-sets",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/2pcs-cruiser-2-kit-5mp3mp-vehicle-detection-786948.jpg?v=1750840900",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "151,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279961&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279961"
+      }
+    ]
+  },
+  {
+    "id": "imou-aov-track-plus-system-2-kameras-hub",
+    "name": "Imou AOV Track Plus System (2 Kameras + Hub)",
+    "brand": "Imou",
+    "kategorie": "kamera-sets",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/aov-track-plus-smart-security-system-with-ai-smart-hub-3499947.jpg?v=1788928034",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "359,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=45954450341&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "45954450341"
+      }
+    ]
+  },
+  {
+    "id": "imou-tuerklingel-2s-kit",
+    "name": "Imou Türklingel 2S Kit",
+    "brand": "Imou",
+    "kategorie": "tuerklingeln",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/doorbell-2s-kit-1800-pan-view-2k-3mp-uk-502057.jpg?v=1750840829",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "79,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280133&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280133"
+      }
+    ]
+  },
+  {
+    "id": "imou-db3-video-tuerklingel",
+    "name": "Imou DB3 Video-Türklingel",
+    "brand": "Imou",
+    "kategorie": "tuerklingeln",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/db3-smart-video-doorbell-4mp-25k-ultra-wide-fisheye-view-uk-398668.jpg?v=1750840828",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "99,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280190&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280190"
+      }
+    ]
+  },
+  {
+    "id": "imou-tuerspion-kamera-vd1",
+    "name": "Imou Türspion-Kamera VD1",
+    "brand": "Imou",
+    "kategorie": "tuerklingeln",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/smart-door-viewers-vd1-5mp-245ghz-6802506.jpg?v=1777476758",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "79,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280277&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280277"
+      }
+    ]
+  },
+  {
+    "id": "imou-vdp7-video-tuersprechanlage",
+    "name": "Imou VDP7 Video-Türsprechanlage",
+    "brand": "Imou",
+    "kategorie": "tuerklingeln",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/vdp7-video-door-phone-5mp-3k-245ghz-support-phone-nfc-3335158.jpg?v=1786177035",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "209,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=45519467259&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "45519467259"
+      }
+    ]
+  },
+  {
+    "id": "imou-solarpanel-3w",
+    "name": "Imou Solarpanel 3W",
+    "brand": "Imou",
+    "kategorie": "kamera-zubehoer",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/solar-panel-for-battery-powered-cameras-551732.jpg?v=1750840836",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "19,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993280036&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993280036"
+      }
+    ]
+  },
+  {
+    "id": "imou-microsd-karte-64-gb",
+    "name": "Imou microSD-Karte 64 GB",
+    "brand": "Imou",
+    "kategorie": "kamera-zubehoer",
+    "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/micro-sd-memory-card-177434.png?v=1750840841",
+    "shops": [
+      {
+        "name": "Imou",
+        "price": "24,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44993279854&a=3110253&m=125816",
+        "feed": "imou",
+        "feedId": "44993279854"
+      }
+    ]
   }
 ]

@@ -19,6 +19,7 @@ jobs:
         env:
           AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
           AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
+          AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
         run: python3 tools/preise_aktualisieren.py
 
       - name: Änderungen speichern
