@@ -13,6 +13,7 @@ Ein neuer Feed: Secret anlegen und unten in FEEDS eintragen.
 """
 
 import csv
+import datetime
 import gzip
 import io
 import json
@@ -27,6 +28,12 @@ FEEDS = {
 }
 
 DATEI = "produkte.json"
+HISTORIE = "preise-historie.json"
+DEALS = "deals-auto.json"
+
+TAGE_BEHALTEN = 120     # so lange werden alte Preise gespeichert
+VERGLEICH_TAGE = 30     # Preisangabenverordnung: niedrigster Preis der letzten 30 Tage
+MIN_RABATT = 5          # erst ab 5 % gilt es als Deal
 
 
 def preis_format(text):
@@ -105,9 +112,75 @@ def main():
     if geaendert:
         with open(DATEI, "w", encoding="utf-8") as datei:
             datei.write(json.dumps(produkte, ensure_ascii=False, indent=2) + "\n")
+
+    historie_und_deals(produkte)
     print(f"Fertig: {geaendert} Änderungen")
     # Rotes ✗ bei GitHub, wenn ein hinterlegter Feed nicht geladen werden konnte
     return 1 if fehler_gesamt else 0
+
+
+def preis_zahl(text):
+    try:
+        return float(text.replace("€", "").replace(".", "").replace(",", ".").strip())
+    except (ValueError, AttributeError):
+        return None
+
+
+def historie_und_deals(produkte):
+    """Speichert die heutigen Preise und erkennt echte Preissenkungen.
+
+    Ein Deal braucht mindestens 30 Tage Preisverlauf. Verglichen wird mit dem
+    niedrigsten Preis der 30 Tage vor heute (§ 11 Preisangabenverordnung)."""
+    heute = datetime.date.today()
+    heute_text = heute.isoformat()
+
+    try:
+        historie = json.load(open(HISTORIE, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        historie = {}
+
+    grenze = (heute - datetime.timedelta(days=TAGE_BEHALTEN)).isoformat()
+    deals = []
+
+    for produkt in produkte:
+        for shop in produkt.get("shops", []):
+            if not shop.get("feed"):
+                continue
+            schluessel = produkt["id"] + "|" + shop["name"]
+            verlauf = [e for e in historie.get(schluessel, []) if e[0] >= grenze and e[0] != heute_text]
+            preis = preis_zahl(shop.get("price", ""))
+            if preis:
+                verlauf.append([heute_text, preis])
+            historie[schluessel] = verlauf
+            if not preis or not verlauf:
+                continue
+
+            start = (heute - datetime.timedelta(days=VERGLEICH_TAGE)).isoformat()
+            if verlauf[0][0] > start:
+                continue  # noch keine 30 Tage Preisverlauf
+            vorher = [p for d, p in verlauf if start <= d < heute_text]
+            if not vorher:
+                continue
+            tiefst = min(vorher)
+            if preis >= tiefst:
+                continue
+            rabatt = round((1 - preis / tiefst) * 100)
+            if rabatt < MIN_RABATT:
+                continue
+            deals.append({
+                "id": produkt["id"],
+                "shop": shop["name"],
+                "preis": shop["price"],
+                "vorher": f"{tiefst:.2f}".replace(".", ",") + " €",
+                "rabatt": rabatt,
+            })
+
+    deals.sort(key=lambda d: -d["rabatt"])
+    with open(HISTORIE, "w", encoding="utf-8") as datei:
+        datei.write(json.dumps(historie, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
+    with open(DEALS, "w", encoding="utf-8") as datei:
+        datei.write(json.dumps({"stand": heute_text, "deals": deals}, ensure_ascii=False, indent=2) + "\n")
+    print(f"Preisverlauf: {len(historie)} Einträge, {len(deals)} automatische Deals")
 
 
 if __name__ == "__main__":

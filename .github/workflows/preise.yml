@@ -24,13 +24,14 @@ jobs:
 
       - name: Änderungen speichern
         run: |
-          if git diff --quiet produkte.json; then
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
             echo "Keine Preisänderungen."
             exit 0
           fi
           git config user.name "DealKira Preis-Bot"
           git config user.email "actions@users.noreply.github.com"
-          git commit -am "Preise automatisch aktualisiert"
+          git add produkte.json preise-historie.json deals-auto.json
+          git commit -m "Preise automatisch aktualisiert"
           git push
           # Website neu veröffentlichen
           curl -s -X POST \

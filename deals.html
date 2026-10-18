@@ -236,7 +236,55 @@
         font-size: 16px;
       }
     }
-  </style>
+      /* =========================
+       PREIS-DEALS (automatisch + manuell)
+    ========================= */
+
+    .deal-bereich h2.deal-ueberschrift {
+      max-width: 1100px;
+      margin: 45px auto -30px;
+      padding: 0 20px;
+      font-size: 28px;
+    }
+
+    .deal-bereich h2.deal-ueberschrift span { color: #b38f00; }
+
+    .deal-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #e60023;
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      z-index: 5;
+    }
+
+    .deal-preis {
+      font-size: 15px;
+      margin: 4px 0 6px;
+      color: #555;
+    }
+
+    .deal-preis strong { font-size: 22px; color: #111; }
+
+    .deal-preis s { color: #999; margin-right: 4px; }
+
+    .deal-notiz {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 550px) {
+      .deal-bereich h2.deal-ueberschrift { font-size: 22px; margin: 32px auto -20px; padding: 0 12px; }
+      .deal-preis strong { font-size: 18px; }
+      .deal-badge { font-size: 13px; padding: 4px 8px; }
+    }
+
+</style>
 </head>
 
 <body>
@@ -267,6 +315,24 @@
     * Partnerlink (Anzeige): Kaufst du über einen solchen Link, erhält DealKira eine Provision.
     Für dich ändert sich am Preis nichts.
   </p>
+
+  <!-- =========================
+       PREIS GESENKT (automatisch) + ANGEBOTE (von Hand)
+  ========================= -->
+
+  <div class="deal-bereich" id="dealsAuto" hidden>
+    <h2 class="deal-ueberschrift">📉 Preis <span>gesenkt</span></h2>
+    <section class="deals"></section>
+  </div>
+
+  <div class="deal-bereich" id="dealsManuell" hidden>
+    <h2 class="deal-ueberschrift">⚡ Aktuelle <span>Angebote</span></h2>
+    <section class="deals"></section>
+  </div>
+
+  <div class="deal-bereich">
+    <h2 class="deal-ueberschrift">⭐ Beliebte <span>Produkte</span></h2>
+  </div>
 
   <!-- =========================
        DEALS
@@ -1825,6 +1891,8 @@
     );
 
   </script>
+
+  <script src="deals-dynamisch.js?v=20261018"></script>
 
 </body>
 </html>
