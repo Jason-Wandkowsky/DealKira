@@ -5432,5 +5432,19 @@
         "link": "https://link.amazon/B0fEZi1Tv"
       }
     ]
+  },
+  {
+    "id": "telefon-powerbanks-iniu-powerbank-20000mah",
+    "name": "INIU Powerbank 20000mAh (22,5 W)",
+    "brand": "INIU",
+    "kategorie": "telefon-powerbanks",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://link.amazon/B00V9lkVj"
+      }
+    ]
   }
 ]
