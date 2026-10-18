@@ -1,7 +1,7 @@
 """
 DealKira – Preise automatisch aktualisieren
 
-Läuft jeden Tag über GitHub Actions (.github/workflows/preise.yml).
+Läuft alle 6 Stunden über GitHub Actions (.github/workflows/preise.yml).
 Lädt die Awin-Produktfeeds und aktualisiert in produkte.json
 Preis, Bild und Link aller Shops, die ein "feed" + "feedId" haben.
 
@@ -10,6 +10,9 @@ Feeds werden als GitHub-Secrets hinterlegt (nie im Code!):
   AWIN_FEED_ANTHBOT  → Download-Link des Anthbot-Feeds
   AWIN_FEED_IMOU     → Download-Link des Imou-Feeds
 Ein neuer Feed: Secret anlegen und unten in FEEDS eintragen.
+
+eBay (ebay_preise.py) braucht die Secrets EBAY_CLIENT_ID und EBAY_CLIENT_SECRET
+und durchsucht zusätzlich telefone.json und tablets.json.
 """
 
 import csv
@@ -21,6 +24,9 @@ import os
 import sys
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ebay_preise  # noqa: E402
+
 FEEDS = {
     "aosu": "AWIN_FEED_AOSU",
     "anthbot": "AWIN_FEED_ANTHBOT",
@@ -28,6 +34,7 @@ FEEDS = {
 }
 
 DATEI = "produkte.json"
+WEITERE_DATEIEN = ["telefone.json", "tablets.json"]   # nur für eBay
 HISTORIE = "preise-historie.json"
 DEALS = "deals-auto.json"
 
@@ -109,9 +116,18 @@ def main():
                     produkt["image"] = bild
                     geaendert += 1
 
-    if geaendert:
-        with open(DATEI, "w", encoding="utf-8") as datei:
-            datei.write(json.dumps(produkte, ensure_ascii=False, indent=2) + "\n")
+    # eBay: alle drei Produktdateien
+    dateien = {DATEI: produkte}
+    for name in WEITERE_DATEIEN:
+        dateien[name] = json.load(open(name, encoding="utf-8"))
+    ebay_aenderungen, ebay_fehler = ebay_preise.aktualisieren(dateien)
+    fehler_gesamt += ebay_fehler
+
+    if geaendert or ebay_aenderungen:
+        for name, liste in dateien.items():
+            with open(name, "w", encoding="utf-8") as datei:
+                datei.write(json.dumps(liste, ensure_ascii=False, indent=2) + "\n")
+    geaendert += ebay_aenderungen
 
     historie_und_deals(produkte)
     print(f"Fertig: {geaendert} Änderungen")
@@ -144,7 +160,9 @@ def historie_und_deals(produkte):
 
     for produkt in produkte:
         for shop in produkt.get("shops", []):
-            if not shop.get("feed"):
+            # eBay zählt nicht: dort wechselt der günstigste Händler ständig,
+            # das ist keine Preissenkung eines Shops im Sinne der PAngV
+            if not shop.get("feed") or shop.get("feed") == "ebay":
                 continue
             schluessel = produkt["id"] + "|" + shop["name"]
             verlauf = [e for e in historie.get(schluessel, []) if e[0] >= grenze and e[0] != heute_text]

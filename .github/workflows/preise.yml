@@ -2,12 +2,16 @@ name: Preise aktualisieren
 
 on:
   schedule:
-    - cron: "17 4 * * *"   # jeden Tag ca. 6:17 Uhr deutscher Zeit
+    - cron: "17 4,10,16,22 * * *"   # alle 6 Stunden (ca. 6:17, 12:17, 18:17, 0:17 Uhr)
   workflow_dispatch:        # zusätzlich per Knopfdruck startbar
 
 permissions:
   contents: write
   pages: write
+
+concurrency:
+  group: preise
+  cancel-in-progress: false
 
 jobs:
   preise:
@@ -15,11 +19,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Preise aus den Awin-Feeds holen
+      - name: Preise aus den Awin-Feeds und von eBay holen
         env:
           AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
           AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
           AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: python3 tools/preise_aktualisieren.py
 
       - name: Änderungen speichern
@@ -30,8 +36,9 @@ jobs:
           fi
           git config user.name "DealKira Preis-Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add produkte.json preise-historie.json deals-auto.json
+          git add produkte.json telefone.json tablets.json preise-historie.json deals-auto.json
           git commit -m "Preise automatisch aktualisiert"
+          git pull --rebase -q
           git push
           # Website neu veröffentlichen
           curl -s -X POST \
