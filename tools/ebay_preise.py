@@ -79,6 +79,7 @@ DATEI_KATEGORIE = {"telefone.json": "telefone", "tablets.json": "tablets"}
 VARIANTEN = {
     "pro", "max", "plus", "ultra", "mini", "lite", "ti", "xt", "xtx", "super",
     "fe", "se", "air", "neo", "edge", "fold", "flip", "note", "redmi", "poco", "kids",
+    "xl", "fusion", "nord", "loq",
 }
 # Wörter, die auf Zubehör, Ersatzteile oder Ware mit Mängeln hindeuten
 ZUBEHOER = {
@@ -86,12 +87,13 @@ ZUBEHOER = {
     "schutzglas", "displayschutz", "tasche", "bumper", "ersatzteil", "ersatz",
     "defekt", "attrappe", "dummy", "halterung", "aufkleber", "skin", "sticker",
     "gebraucht", "refurbished", "generalüberholt", "bware",
-    "leerkarton", "kaputt", "bastler", "ghosting", "reparatur", "repair",
+    "leerkarton", "kaputt", "bastler", "ghosting", "reparatur", "repair", "mod",
 }
 # "Hülle FÜR iPhone 17": steht so ein Wort VOR der Modellnummer, ist es Zubehör.
 # ("Mähroboter M5 für 500 m²" ist dagegen in Ordnung.)
 PASSEND_FUER = {"für", "fuer", "for", "kompatibel", "compatible", "passend"}
-EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "m", "zoll", "l", "v", "a", "kg"}
+EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "m", "zoll", "l", "v", "a", "kg", "k"}
+SPEICHER = {"g", "gb", "tb"}
 # Einheiten, die direkt hinter einer Zahl stehen dürfen (ohne a/m/v/l: das sind oft Modell-Zusätze)
 MASS_EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "kg"}
 FUELLWOERTER = {"und", "mit", "der", "die", "das", "von", "in", "the", "and", "with", "-", "/"}
@@ -118,14 +120,44 @@ def passt(name, titel):
         if wort in VARIANTEN and wort not in name_set:
             return False
 
+    # Varianten aus dem Namen müssen auch im Titel stehen (Phone 3a Pro ≠ Phone 3a)
+    for wort in name_set:
+        if wort in VARIANTEN and wort not in titel_w:
+            return False
+
     zahlen = [w for w in name_w if w.isdigit()]
-    if any(z not in titel_w for z in zahlen):
+
+    modellzahlen = {name_w[k] for k in range(1, len(name_w))
+                    if name_w[k].isdigit() and name_w[k - 1].isalpha()
+                    and name_w[k - 1] not in EINHEITEN}
+
+    def zahl_im_titel(z):
+        # Modellnummer zählt nicht, wenn sie im Titel nur als "16 GB" vorkommt (iPhone 6s Plus 16GB)
+        speicher_im_namen = {name_w[k + 1] for k in range(len(name_w) - 1) if name_w[k] == z} & SPEICHER
+        if speicher_im_namen:
+            # Speichergröße muss als Speichergröße im Titel stehen (2 TB ≠ "M.2")
+            return any(titel_liste[j] == z and j + 1 < len(titel_liste) and titel_liste[j + 1] in SPEICHER
+                       for j in range(len(titel_liste)))
+        if z not in modellzahlen:
+            return z in titel_w
+        einheit_im_namen = {name_w[k + 1] for k in range(len(name_w) - 1) if name_w[k] == z}
+        for j, w in enumerate(titel_liste):
+            if w != z:
+                continue
+            danach = titel_liste[j + 1] if j + 1 < len(titel_liste) else ""
+            if danach not in SPEICHER or einheit_im_namen & SPEICHER:
+                return True
         return False
+
+    if any(not zahl_im_titel(z) for z in zahlen):
+        return False
+
+
 
     # Kurze Zusätze direkt hinter einer Zahl gehören zum Modell (14400F, S23+, 9070 XT)
     for i in range(1, len(name_w)):
         wort = name_w[i]
-        if name_w[i - 1].isdigit() and not wort.isdigit() and wort not in EINHEITEN \
+        if name_w[i - 1].isdigit() and not wort.isdigit() and wort not in MASS_EINHEITEN \
                 and (len(wort) <= 3 or wort in VARIANTEN) and wort not in titel_w:
             return False
 
@@ -135,17 +167,15 @@ def passt(name, titel):
         davor = name_w[i - 1]
         # Kurzes Modell-Kürzel vor der Zahl muss im Titel direkt davor stehen
         # (Flip 6 ≠ Flip 3, Pad 8 ≠ Pad 7, S 25 …)
-        if not davor.isdigit() and len(davor) <= 4 and davor not in FUELLWOERTER \
-                and davor not in EINHEITEN:
+        danach = name_w[i + 1] if i + 1 < len(name_w) else ""
+        if davor.isalpha() and len(davor) <= 4 and davor not in FUELLWOERTER \
+                and davor not in EINHEITEN and danach not in EINHEITEN:
             paare = {(titel_liste[j - 1], titel_liste[j]) for j in range(1, len(titel_liste))}
             if (davor, wort) not in paare:
                 return False
 
     # Buchstaben-Zusatz direkt hinter einer Modellzahl, der im Namen fehlt:
     # iPhone 16 ≠ 16e, Pixel 10 ≠ 10a, B650 ≠ B650M, Xiaomi 15 ≠ 15T
-    modellzahlen = {name_w[k] for k in range(1, len(name_w))
-                    if name_w[k].isdigit() and name_w[k - 1].isalpha()
-                    and name_w[k - 1] not in EINHEITEN}
     for j in range(len(titel_liste) - 1):
         zahl, zusatz = titel_liste[j], titel_liste[j + 1]
         if zahl in modellzahlen and zusatz.isalpha() and len(zusatz) <= 2 \
