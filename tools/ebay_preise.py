@@ -184,7 +184,14 @@ def aktualisieren(dateien):
     try:
         token = token_holen(client_id, client_secret)
     except Exception as fehler:
-        print(f"ebay: Anmeldung fehlgeschlagen ({fehler})")
+        details = ""
+        if hasattr(fehler, "read"):
+            try:
+                details = " – " + fehler.read().decode("utf-8", "replace")[:300]
+            except Exception:
+                pass
+        # "::error::" macht die Meldung bei GitHub direkt in der Übersicht sichtbar
+        print(f"::error::ebay: Anmeldung fehlgeschlagen ({fehler}){details}")
         return 0, 1
 
     aenderungen = 0

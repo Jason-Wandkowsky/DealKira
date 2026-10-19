@@ -81,7 +81,7 @@ def main():
         try:
             feed = feed_laden(url)
         except Exception as fehler:
-            print(f"{feed_name}: Feed konnte nicht geladen werden ({fehler})")
+            print(f"::error::{feed_name}: Feed konnte nicht geladen werden ({fehler})")
             fehler_gesamt += 1
             continue
         print(f"{feed_name}: {len(feed)} Produkte im Feed")
