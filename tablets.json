@@ -36,11 +36,11 @@
       },
       {
         "name": "eBay",
-        "price": "913,90 €",
-        "link": "https://www.ebay.de/itm/286889511721?_skw=Samsung+Galaxy+Tab+S11&hash=item42cbf28b29%3Ag%3AvyYAAeSwCfNo9xr-&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n%2B7lfBVRKSD%2Bc4Akc9YNO9Y8Zz3RIOA0UOdvpZhHdpgLH0m%2F2Glvfe8wwYLrwjjZVhtWLT5hvPIYZO%2F2ChIi1xvGhw6KsDCmVSI1ugxLPCTx1WHb93KxxZECoVuJd929OBzjq4rg5IFir39Xpyniv1dXaFntr7L%2FJHozFlBYe4S5PdK%2BOJonaSMzfiQzFXeH%2FdwfvykVbDjoC%2B2u9dqjgjsfRzPDElCge7ECmS%2B9p%2FOQNUMLCXLh3CwItqZoGSPX471qdI4BHcP7VlQyEfRKkbkMSuA9XyrjOqYPDXu%2BLT%2FSwJUQzQn7i05p1RC7tjWuA%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "889,00 €",
+        "link": "https://www.ebay.de/itm/318763932270?_skw=Samsung+Galaxy+Tab+S11&hash=item4a37cf9a6e%3Ag%3A1q0AAeSweXppWSy6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|286889511721|0",
-        "ebayTitel": "Samsung Galaxy Tab S11 5G 128 GB silber Tablet Android",
+        "ebayItem": "v1|318763932270|617009880084",
+        "ebayTitel": "Samsung Galaxy Tab S11 5G 128GB/256GB/512GB",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -382,7 +382,7 @@
       {
         "name": "eBay",
         "price": "769,00 €",
-        "link": "https://www.ebay.de/itm/205768244121?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item2fe8be3b99%3Ag%3A-ikAAeSwdaVo487W&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lAcZ16W2JViYzoUKqDmkrtux5rznqtuvuj4kAnqtP%2Bkk03FOywJKf3iTUNRneUwozqtwbGzEJpLgT1TjvWo72seXfOy0SpboBiw4YNcfa3CZ%2F365bc8vUnuK7CMpItNNxUrcCXtnfFvCJtgzGB2%2Fz%2FEswx5sPhhuXRgXTGotI1KlQxYO%2BARiQZirFml3MBUsM2HiNIAS4JDazQ0GQon3O42NvGosE7wMf0B4s0Fk2IIFVsYxt9bYnQT1Pynb0IfTijf4f8sPvAm6KodNiKlA6heu16TbvWOuWtdYN1nw3Z6E2ylGHgr3FBEYHiVQod3hs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/205768244121?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item2fe8be3b99%3Ag%3A-ikAAeSwdaVo487W&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lAcZ16W2JViYzoUKqDmkrtux5rznqtuvuj4kAnqtP%2Bkk03FOywJKf3iTUNRneUwozqtwbGzEJpLgT1TjvWo72seXfOy0SpboBiw4YNcfa3CZ%2F365bc8vUnuK7CMpItNNxgkYSYYYiGiiK4VC%2Fbfe7lkhiyZ27jWp1LJH2KSlH8O%2FdTs6KYgTEaUsgaaPKV6lMo6GDowzhkBIK4ZIOksjVc3MDHO1AHptIUwBkOaUl94L9okbIdjEkZmbH2%2BeTNZgPZLgNuVEDS8BWl2I7OYq4%2FAofU41YeYlj%2BpCHAcG0p5cE7UlBwTBi8MwX%2BRQWSbiA%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|205768244121|0",
         "ebayTitel": "Apple iPad Mini 7 Gen 128GB 5G (2024) Space Grey A2995",
@@ -405,7 +405,7 @@
       {
         "name": "eBay",
         "price": "505,19 €",
-        "link": "https://www.ebay.de/itm/187738789088?_skw=Apple+iPad+Air+%285.+Generation%29&hash=item2bb61a94e0%3Ag%3AFbgAAeSwlwBpFjOD&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n%2B%2FCDiGEF%2FOPt0l9v2kvW4OuOSTYYusZUzDEo8WKIgvH2t6A4v4bRNErX5lA9SvjmnADcgB2SgI%2FdMJJV2N7Dz9Wo%2F57tGXOKm3CNhRG8frK1SWBm6ROdD%2Btx5ZL1Ze4YXq01FyAM7q0Qm0O4Qif3odk5KUgQrAOsAl%2BwcJuBrSckzwmthSVoHdhqv62fsBl8VaPIta8jL2PUIrDtZNuMLqBfIyPNLGXzoBH1b1T1EPIknZkCUpcdCfqOK0LfGz11va6gipCSYHHS7YskKfnF%2F6HbpwRnOVTcOs0kmFQznNfUh%2FoonbyKK5hFQaTsk4gI%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/187738789088?_skw=Apple+iPad+Air+%285.+Generation%29&hash=item2bb61a94e0%3Ag%3AFbgAAeSwlwBpFjOD&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n%2B%2FCDiGEF%2FOPt0l9v2kvW4OuOSTYYusZUzDEo8WKIgvH2t6A4v4bRNErX5lA9SvjmnADcgB2SgI%2FdMJJV2N7Dz9Wo%2F57tGXOKm3CNhRG8frK1SWBm6ROdD%2Btx5ZL1Ze4aagCwVFplPF%2B%2Bv7%2F8jAJ4TXXNLgb6oTat76iwgZGukg1FNxm31MHE9nV0l8g%2BjkH7iIxahs9E4iXv6UlcF1nE2ByPm6ZqT%2FnHXJkEY9BKtQtM8bqvW1hGRrsZnM8qH77YILS8qQMKw3CHJwutwkE6mk6slu%2FG3QIsAAAzQqHO2%2BIf6WXd7NmZhbKOi44ehEUc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|187738789088|0",
         "ebayTitel": "Apple iPad Air 5. Gen 64GB, Wi-Fi, 10,9 Zoll - Space Grau",
@@ -1142,7 +1142,7 @@
       {
         "name": "eBay",
         "price": "907,69 €",
-        "link": "https://www.ebay.de/itm/298630361296?_skw=Microsoft+Surface+Surface+Pro+9&hash=item4587c1b0d0%3Ag%3AA8EAAeSwFHNqlJ0T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7liE3GnmuahFmIu2Tv9Zu7GQDOKV7TgnakyTiWgDuuTEkUx8UQvOv%2FE928xgvQGOr1gCtyb%2FzaRCN1mkSKtlOe1%2FofvS6aTj0r2fwYaY%2F3%2FmaTbg2GTLaSYtl5mZOhIpJ4j4ediDTMxOVCrZ8Kkz1bK8shkJ4dSES3rqf4Y0b5l%2FIFQqaj9aZwA7mMSflZpg%2B1hijKGdjDZ1CaGyIL8xeDBch4Cx6pqMDtIPkqJeSXrcUDF6L6q8evpPtRFuo3npbwC%2FzjiTpeHKbS5Fw75JDPtD1Bfj2xc%2FQE74uvwp01N93DhOJM0W%2FOOjwZMpeYHBrM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/298630361296?_skw=Microsoft+Surface+Surface+Pro+9&hash=item4587c1b0d0%3Ag%3AA8EAAeSwFHNqlJ0T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7liE3GnmuahFmIu2Tv9Zu7GQDOKV7TgnakyTiWgDuuTEkUx8UQvOv%2FE928xgvQGOr1gCtyb%2FzaRCN1mkSKtlOe1%2FofvS6aTj0r2fwYaY%2F3%2FmaTbg2GTLaSYtl5mZOhIpJ5geCT7bFcwgXOsiJ2EDvEGZFX4C9kpWU9Anw2Dr6zzMFuWM%2BpJ04oXVUKQOIaOxA%2FuBdv1%2BO4MzLIAb0SQbg8zB3oZfISHy%2B%2B2%2B1sgKs3Jsb1mDf272wR5IgNE0NSkt5t2bWT7ter%2BhxlVDK3zAEqaPg4HQVKY9s463w9zP3cS1%2FziYXSIXbiF7fvzn5F1e30%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|298630361296|0",
         "ebayTitel": "Microsoft Surface Pro 9 13 Zoll Core i5 8GB 256GB Platin Windows 11 Home",
