@@ -228,7 +228,7 @@ def aktualisieren(dateien):
             gefunden += 1
             preis, link, item_id, titel = angebot
             neu = {"name": SHOP_NAME, "price": preis_text(preis), "link": link,
-                   "feed": "ebay", "ebayItem": item_id}
+                   "feed": "ebay", "ebayItem": item_id, "ebayTitel": titel[:120]}
             if alt != neu:
                 if alt:
                     shops[shops.index(alt)] = neu
