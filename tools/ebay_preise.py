@@ -29,10 +29,56 @@ CAMPAIGN_ID = "5339218072"   # eBay Partner Network – steht ohnehin in jedem P
 MARKTPLATZ = "EBAY_DE"
 SHOP_NAME = "eBay"
 
+# Erlaubte eBay-Kategorien je DealKira-Kategorie (IDs aus eBay.de; Oberkategorien zählen mit,
+# weil eBay bei jedem Treffer auch die übergeordneten Kategorien mitliefert).
+# Steht eine Kategorie hier nicht drin (Kabel, Zubehör …), wird nicht nach Kategorie gefiltert.
+EBAY_KATEGORIEN = {
+    "telefone": {"9355"},                       # Handys & Smartphones
+    "tablets": {"171485"},                      # Tablets & eBook-Reader
+    "laptops": {"175672"},                      # Notebooks & Netbooks
+    "bildschirme": {"80053"},                   # Monitore
+    "maeuse": {"23160"},
+    "tastaturen": {"33963"},
+    "headset": {"80183", "171821"},
+    "mikrofon": {"116309", "29946"},
+    "speicherplatten": {"182085"},              # Festplatten (HDD, SSD & NAS)
+    "grafikkarten": {"27386"},
+    "cpu": {"164"},
+    "mainboards": {"1244"},
+    "ram": {"170083"},
+    "netzteile": {"42017"},
+    "gehaeuse": {"42014"},
+    "cpu-kuehler": {"131486"},
+    "wasserkuehlung": {"131503"},
+    "luefter": {"131487"},
+    "webcams": {"4616"},
+    "usb-hubs": {"44932"},
+    "drucker": {"1245"},
+    "outdoor-kameras": {"48638", "185053"},
+    "indoor-kameras": {"48638", "185053"},
+    "kamera-sets": {"48638", "185053"},
+    "tuerklingeln": {"185055", "115975"},
+    "maehroboter": {"260921"},
+    "kuehlschraenke": {"71258"},
+    "gefrierschraenke": {"71258"},
+    "waschmaschinen": {"42231"},
+    "trockner": {"42231"},
+    "waschtrockner": {"42231"},
+    "spuelmaschinen": {"260307"},
+    "staubsauger": {"20614"},
+    "ofen": {"71318"},
+    "kochfelder": {"71246"},
+    "abzugshauben": {"71253"},
+    "klimaanlagen": {"185107"},
+    "mobile-heizungen": {"20613"},
+    "ventilatoren": {"20612"},
+}
+DATEI_KATEGORIE = {"telefone.json": "telefone", "tablets.json": "tablets"}
+
 # Wörter, die auf ein anderes Modell hindeuten, wenn sie nicht im Produktnamen stehen
 VARIANTEN = {
     "pro", "max", "plus", "ultra", "mini", "lite", "ti", "xt", "xtx", "super",
-    "fe", "se", "air", "neo", "edge", "fold", "flip",
+    "fe", "se", "air", "neo", "edge", "fold", "flip", "note", "redmi", "poco", "kids",
 }
 # Wörter, die auf Zubehör, Ersatzteile oder Ware mit Mängeln hindeuten
 ZUBEHOER = {
@@ -40,12 +86,14 @@ ZUBEHOER = {
     "schutzglas", "displayschutz", "tasche", "bumper", "ersatzteil", "ersatz",
     "defekt", "attrappe", "dummy", "halterung", "aufkleber", "skin", "sticker",
     "gebraucht", "refurbished", "generalüberholt", "bware",
-    "leerkarton", "kaputt", "bastler",
+    "leerkarton", "kaputt", "bastler", "ghosting", "reparatur", "repair",
 }
 # "Hülle FÜR iPhone 17": steht so ein Wort VOR der Modellnummer, ist es Zubehör.
 # ("Mähroboter M5 für 500 m²" ist dagegen in Ordnung.)
 PASSEND_FUER = {"für", "fuer", "for", "kompatibel", "compatible", "passend"}
 EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "m", "zoll", "l", "v", "a", "kg"}
+# Einheiten, die direkt hinter einer Zahl stehen dürfen (ohne a/m/v/l: das sind oft Modell-Zusätze)
+MASS_EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "kg"}
 FUELLWOERTER = {"und", "mit", "der", "die", "das", "von", "in", "the", "and", "with", "-", "/"}
 
 
@@ -81,6 +129,31 @@ def passt(name, titel):
                 and (len(wort) <= 3 or wort in VARIANTEN) and wort not in titel_w:
             return False
 
+    for i, wort in enumerate(name_w):
+        if not wort.isdigit() or i == 0:
+            continue
+        davor = name_w[i - 1]
+        # Kurzes Modell-Kürzel vor der Zahl muss im Titel direkt davor stehen
+        # (Flip 6 ≠ Flip 3, Pad 8 ≠ Pad 7, S 25 …)
+        if not davor.isdigit() and len(davor) <= 4 and davor not in FUELLWOERTER \
+                and davor not in EINHEITEN:
+            paare = {(titel_liste[j - 1], titel_liste[j]) for j in range(1, len(titel_liste))}
+            if (davor, wort) not in paare:
+                return False
+
+    # Buchstaben-Zusatz direkt hinter einer Modellzahl, der im Namen fehlt:
+    # iPhone 16 ≠ 16e, Pixel 10 ≠ 10a, B650 ≠ B650M, Xiaomi 15 ≠ 15T
+    modellzahlen = {name_w[k] for k in range(1, len(name_w))
+                    if name_w[k].isdigit() and name_w[k - 1].isalpha()
+                    and name_w[k - 1] not in EINHEITEN}
+    for j in range(len(titel_liste) - 1):
+        zahl, zusatz = titel_liste[j], titel_liste[j + 1]
+        if zahl in modellzahlen and zusatz.isalpha() and len(zusatz) <= 2 \
+                and zusatz not in name_set and zusatz not in MASS_EINHEITEN:
+            nach_name = [name_w[k + 1] for k in range(len(name_w) - 1) if name_w[k] == zahl]
+            if zusatz not in nach_name:
+                return False
+
     if zahlen:
         erste_zahl = min(titel_liste.index(z) for z in zahlen)
         if any(w in PASSEND_FUER and w not in name_set for w in titel_liste[:erste_zahl]):
@@ -114,13 +187,16 @@ def token_holen(client_id, client_secret):
         return json.load(antwort)["access_token"]
 
 
-def suchen(token, suchtext):
-    parameter = urllib.parse.urlencode({
+def suchen(token, suchtext, kategorien=None):
+    werte = {
         "q": suchtext[:100],
         "limit": "50",
         "filter": "buyingOptions:{FIXED_PRICE},conditions:{NEW},"
                   "itemLocationCountry:DE,deliveryCountry:DE,priceCurrency:EUR",
-    })
+    }
+    if kategorien and len(kategorien) == 1:
+        werte["category_ids"] = next(iter(kategorien))
+    parameter = urllib.parse.urlencode(werte)
     anfrage = urllib.request.Request(
         "https://api.ebay.com/buy/browse/v1/item_summary/search?" + parameter,
         headers={
@@ -150,12 +226,16 @@ def gesamtpreis(artikel):
     return preis + versand
 
 
-def bestes_angebot(name, artikel_liste):
+def bestes_angebot(name, artikel_liste, kategorien=None):
     kandidaten = []
     for artikel in artikel_liste:
         titel = artikel.get("title", "")
         if not passt(name, titel):
             continue
+        if kategorien:
+            ids = {str(k.get("categoryId")) for k in artikel.get("categories") or []}
+            if not ids & kategorien:
+                continue
         preis = gesamtpreis(artikel)
         link = artikel.get("itemAffiliateWebUrl") or ""
         if not preis or not link:
@@ -207,8 +287,10 @@ def aktualisieren(dateien):
             marke = produkt.get("brand", "")
             suchtext = name if marke.lower() in name.lower() else f"{marke} {name}".strip()
 
+            kategorien = EBAY_KATEGORIEN.get(
+                DATEI_KATEGORIE.get(dateiname) or produkt.get("kategorie", ""))
             try:
-                angebot = bestes_angebot(name, suchen(token, suchtext))
+                angebot = bestes_angebot(name, suchen(token, suchtext, kategorien), kategorien)
             except Exception as fehler:
                 fehler_anzahl += 1
                 print(f"  ebay-Fehler bei {name}: {fehler}")
