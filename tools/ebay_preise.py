@@ -160,7 +160,8 @@ def bestes_angebot(name, artikel_liste):
         link = artikel.get("itemAffiliateWebUrl") or ""
         if not preis or not link:
             continue
-        kandidaten.append((preis, link, artikel.get("itemId", ""), titel))
+        kat = ",".join(f'{k.get("categoryId")}:{k.get("categoryName","")}' for k in artikel.get("categories") or [])
+        kandidaten.append((preis, link, artikel.get("itemId", ""), titel, kat))
     if not kandidaten:
         return None
     # Ausreißer nach unten (Lockangebote, falsch eingestellte Artikel) aussortieren
@@ -226,9 +227,9 @@ def aktualisieren(dateien):
                 continue
 
             gefunden += 1
-            preis, link, item_id, titel = angebot
+            preis, link, item_id, titel, kat = angebot
             neu = {"name": SHOP_NAME, "price": preis_text(preis), "link": link,
-                   "feed": "ebay", "ebayItem": item_id, "ebayTitel": titel[:120]}
+                   "feed": "ebay", "ebayItem": item_id, "ebayTitel": titel[:120], "ebayKat": kat[:200]}
             if alt != neu:
                 if alt:
                     shops[shops.index(alt)] = neu
