@@ -10,15 +10,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://amzn.to/3T6OwiZ"
-      },
-      {
-        "name": "eBay",
-        "price": "135,70 €",
-        "link": "https://www.ebay.de/itm/177148389959?_skw=ASUS+Vivobook+16+X1607QA&hash=item293eddea47%3Ag%3A1v8AAeSwOc9q1eRT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|177148389959|0",
-        "ebayTitel": "Asus VivoBook 16 X1607QA Original IPS Display (1920x1200) matt slimline",
-        "ebayKat": "31569:Notebook-Displays/LCD-Displays,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,182089:Notebook-Ersatzteile"
       }
     ]
   },
@@ -82,11 +73,11 @@
       },
       {
         "name": "eBay",
-        "price": "36,07 €",
-        "link": "https://www.ebay.de/itm/287589794682?_skw=SteelSeries+Apex+3+TKL&hash=item42f5b0037a%3Ag%3AXS8AAeSwMyBqqldq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "30,00 €",
+        "link": "https://www.ebay.de/itm/860000428808?_skw=SteelSeries+Apex+3+TKL&hash=itemc83c052308%3Ag%3Axk0AAeSwPjFqs9t%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287589794682|0",
-        "ebayTitel": "Steelseries Apex 3 TKL - QWERTZ RGB Gaming Tastatur Whisper Quiet Switches Weiß",
+        "ebayItem": "v1|860000428808|0",
+        "ebayTitel": "SteelSeries Apex 3 TKL Gaming-Tastatur RGB beleuchtet kabelgebundenen",
         "ebayKat": "33963:Tastaturen & Keypads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -105,12 +96,12 @@
       },
       {
         "name": "eBay",
-        "price": "49,65 €",
-        "link": "https://www.ebay.de/itm/137513605336?_skw=HyperX+Cloud+III&hash=item20047318d8%3Ag%3A7TAAAeSwtJFqx7XS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "55,19 €",
+        "link": "https://www.ebay.de/itm/227536769074?_skw=HyperX+Cloud+III&hash=item34fa3f9032%3Ag%3ACGYAAeSwltpqtMak&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|137513605336|0",
-        "ebayTitel": "HyperX Cloud Earbuds III, schwarz",
-        "ebayKat": "80183:Headsets,171821:Headsets,1249:PC- & Videospiele,31530:Notebook- & Desktop-Zubehör,54968:Zubehör,58058:Computer, Tablets & Netzwerk"
+        "ebayItem": "v1|227536769074|0",
+        "ebayTitel": "Hyperx Cloud III wired Gaming-headset Schwarz; kaum getragen -handelbarer Preis",
+        "ebayKat": "80183:Headsets,31530:Notebook- & Desktop-Zubehör,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -152,7 +143,7 @@
       {
         "name": "eBay",
         "price": "212,99 €",
-        "link": "https://www.ebay.de/itm/306755927816?_skw=Lexar+ES3+1TB+Extreme+Portable+SSD&hash=item476c13ff08%3Ag%3AuEQAAeSwmNdph0ky&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nmlGbSHisPtdklRgcg1zYvtWOQkO6sfztLE%2FPlzN%2BnR01WLuTfDwhN1mszUIBpJlCgNxtAEUSzFXf4v4QFbUcSCvri69Y6wo%2BPwxqi0m5eR%2BRX%2Fx%2BgRg8ZVJAo3y8UzdJ61flvBjEBREiC1TZdj6egB2SRK7tuxw11H97%2Bl60K0P7nVXDc27%2FW7ZugO8ossiuk0TI1h7YO3qFdHkS%2BZVTL48w7ZWsnFYWHxOVCjUIfYN2Js6LPd8hriDrZ9o%2B%2BqkqeOVeHDUvApwoi8LcBxvNcvNz3cc4l9jAq5e93%2BBjeNN5CEq9wMFFsPcZSNuAjKd0%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/306755927816?_skw=Lexar+ES3+1TB+Extreme+Portable+SSD&hash=item476c13ff08%3Ag%3AuEQAAeSwmNdph0ky&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nmlGbSHisPtdklRgcg1zYvtWOQkO6sfztLE%2FPlzN%2BnR01WLuTfDwhN1mszUIBpJlCgNxtAEUSzFXf4v4QFbUcSCvri69Y6wo%2BPwxqi0m5eR%2BRX%2Fx%2BgRg8ZVJAo3y8UzdJnLTl%2BQG7%2BKmRnAXgWviQ0cs8hnM%2FUghMGr%2FEcDtNl2y0%2F7SBSekREv7dxljju8CnSGZPIXXqOttNsBb1CDILsCxyhAx%2B6qykVVuBzz36WT5eKJ50yv6II%2BW9AX6vctBmZbudHx%2FkoRldZp77ny7ArYRcqjgYEsP22f0LU29mA00K2NkBNUZkNYafSKmFdo98%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|306755927816|0",
         "ebayTitel": "Lexar ES3 Externe SSD 1TB, USB 3.2 Gen2 Portable, bis zu 1050 MB/s, Festplatte",
@@ -174,12 +165,12 @@
       },
       {
         "name": "eBay",
-        "price": "5206,99 €",
-        "link": "https://www.ebay.de/itm/257574432866?_skw=Nvidia+GeForce+RTX+5090&hash=item3bf8a1f062%3Ag%3AdZcAAeSwJslqMcdo&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "6017,49 €",
+        "link": "https://www.ebay.de/itm/188948735102?_skw=Nvidia+GeForce+RTX+5090&hash=item2bfe38e47e%3Ag%3A5lIAAeSwfuZqra4h&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|257574432866|0",
-        "ebayTitel": "Razer Blade 16 (RZ09-05819GN4-R3G1) 16\" Gaming Notebook RTX 5090 Intel SSD",
-        "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
+        "ebayItem": "v1|188948735102|0",
+        "ebayTitel": "MSI GeForce RTX 5090 32G SUPRIM SOC 32 GB GDDR7 GPU Grafikkarte Gaming",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -254,7 +245,7 @@
       {
         "name": "eBay",
         "price": "596,69 €",
-        "link": "https://www.ebay.de/itm/377556988276?_skw=Nvidia+GeForce+RTX+5060+Ti+8+GB+%28Trio+OC%29&hash=item57e8267174%3Ag%3AURcAAeSwkjNqyO5-&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kjcBxz9N4cOzT52UPZXzsEJlU2shiBUEnReHXSp4ve8i2j63V741VPwc6gmUe9BGK1pLbg699OFBJojse%2FXTSt9%2FrgB%2BUp6YienkO8CFfh0gXAp63iBqzle0HXf1IbMypx%2B7LdaL%2FOT%2BFx5ON768%2BKottov1wRHfDt0zVekPili8%2FZvnNvtQ4jR66aRefDPKWJtOBjL1GLi2c3Tx%2FOxeta3Rsp%2FslQiV1h0e%2FAQBziUabPpBbiYrwWW7zguOptnZ2T8yPDy9JWjY9vYPKea8K6HjOuFiK0voG%2FmerV22KyFVwSQhSZUpJ%2BxBhNVzKXhrnk%2FMS2QDENOVQpxi3bMjju&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/377556988276?_skw=Nvidia+GeForce+RTX+5060+Ti+8+GB+%28Trio+OC%29&hash=item57e8267174%3Ag%3AURcAAeSwkjNqyO5-&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kjcBxz9N4cOzT52UPZXzsEJlU2shiBUEnReHXSp4ve8i2j63V741VPwc6gmUe9BGK1pLbg699OFBJojse%2FXTSt9%2FrgB%2BUp6YienkO8CFfh0gXAp63iBqzle0HXf1IbMyrB5cWXeCklE5Em3DLOyu6nG5EmWhw%2FspfMHUGQ%2FqX0CPj5pMFNZaaRLBq964XNBziMiYe37s9QWqXd1L4RDpMnpCruIDRBVEwCrBBa%2F3Gx7ZCEaKGEdT04ziktIu0pMAWSy0ImajbGIcYsRYjnGpqS6wiXxkqA5ym1wnhTsc3MEbB74rpAJg8F04qXgC0vSwsrDUJ%2F%2BEKMTB%2BdL9eJ4%2F11&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|377556988276|0",
         "ebayTitel": "Manli GeForce RTX 5060 Ti 8GB GDDR7 Polar Fox Weiß ARGB Grafikkarte Neu Garantie",
@@ -300,7 +291,7 @@
       {
         "name": "eBay",
         "price": "387,00 €",
-        "link": "https://www.ebay.de/itm/157781518800?_skw=Nvidia+GeForce+RTX+5050+%28Windforce+OC%29&hash=item24bc82e9d0%3Ag%3AD10AAeSwzJ1qCudk&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lMEWrr2ZF63NoBuRACp74PqSjoysXVkVwo2jwFE5MSk2q6sd8VLMJvU7dxuTS1%2FN0KutgAByqGa%2FZvDe4qrpuz1pTHmDQWAN5pTKGy8VKDiEBnNitfaRkW9xoQrRIABLWl%2BZrhJ8YmAhk5DpWe4YG%2BvzjGeN8J6fc6P94IYhNMlImluKw8ta2NDfaueO%2Bu6luhJ3lA0hIDaZeXZKAUgnntLRpF2qr9n1VpPoZXP65qlJXx9xBQUYdTH5mN9GRB4zdrjiRRrmQeZNlAe5dDdgzY29NVCtMQnKZEa5g4Z18svjiDm77gGAtRWHFIAkoKa2D0Pv20yB3gAE%2BZlByTIEXo&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/157781518800?_skw=Nvidia+GeForce+RTX+5050+%28Windforce+OC%29&hash=item24bc82e9d0%3Ag%3AD10AAeSwzJ1qCudk&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lMEWrr2ZF63NoBuRACp74PqSjoysXVkVwo2jwFE5MSk2q6sd8VLMJvU7dxuTS1%2FN0KutgAByqGa%2FZvDe4qrpuz1pTHmDQWAN5pTKGy8VKDiEBnNitfaRkW9xoQrRIABLVNwyoKg2EBUWpkxSwEjAa0ngUkmviuRm8boXbJhcqnDHrHnyw5tfqJ33oCgi8DKrCxuE8%2BvMwmNkOLi%2FsOGJKo08b0YsGF44azNQhPlYbgJDq2hR8WqlJb%2FLKywznHFYruIe5IR%2BeR1X994587CVgYvv2%2BoQZp9VMCRE6Vpnc7fc1r4IeKvmY2YHSSwq5bA3TeArphhCp23ECH%2BAQnJMKW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|157781518800|0",
         "ebayTitel": "Gainward NVIDIA GeForce RTX 5050 Pegasus | 8GB GDDR6 | HDMI | 3x DP",
@@ -359,11 +350,11 @@
       },
       {
         "name": "eBay",
-        "price": "567,69 €",
-        "link": "https://www.ebay.de/itm/860053979711?_skw=AMD+Radeon+RX+9060+XT+16+GB&hash=itemc83f36423f%3Ag%3A52sAAeSwi9tq02kf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "619,99 €",
+        "link": "https://www.ebay.de/itm/336842484435?_skw=AMD+Radeon+RX+9060+XT+16+GB&hash=item4e6d606ad3%3Ag%3AX6MAAeSwpRNqzk3C&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|860053979711|0",
-        "ebayTitel": "Prime Radeon RX 9060 XT O16G Grafikkarte",
+        "ebayItem": "v1|336842484435|0",
+        "ebayTitel": "Sapphire Pulse Radeon RX 9060 XT, 16GB GDDR6, 2x HDMI, DP,  neu",
         "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -382,12 +373,12 @@
       },
       {
         "name": "eBay",
-        "price": "1111,00 €",
-        "link": "https://www.ebay.de/itm/188938048937?_skw=AMD+Radeon+RX+9060+XT+8+GB&hash=item2bfd95d5a9%3Ag%3At%7EAAAeSwLbVpmCgq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "430,00 €",
+        "link": "https://www.ebay.de/itm/860054273447?_skw=AMD+Radeon+RX+9060+XT+8+GB&hash=itemc83f3abda7%3Ag%3AdNoAAeSw2UNq02Y0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|188938048937|0",
-        "ebayTitel": "Multimedia Gaming PC - AMD Ryzen 9 6900HX | 32GB RAM | 1TB SSD | RX 9060XT 8GB",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|860054273447|0",
+        "ebayTitel": "Gigabyte AMD Radeon RX 9060 XT 8G Gaming OC Grafikkarte",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -402,15 +393,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B08xuUYzQ"
-      },
-      {
-        "name": "eBay",
-        "price": "3970,00 €",
-        "link": "https://www.ebay.de/itm/198692398552?_skw=Nvidia+GeForce+RTX+4090+%28Gaming+OC%29&hash=item2e42fd65d8%3Ag%3AypwAAeSwf-1qxMJS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kfnZmIGhOSMbMScBu%2FgTg7hjmG6aBKWBqUAJW3cgqa4hSIeItqO4OSh1fjtGWB1HXazTrWf9LTLqObuF%2FQCOdtl8RcmFBy6IGjpyzi6dUM%2BZ0AbxmqbPS%2BQvkgnyRV3IC2aeOIeEpHC0aKBT99CA8YZwCN4duKW2BPn9mu%2FTdVtEgpX5L3Et5OwPy5xUGXIXSMK6d4Qli8nSuW22R3gDed9atsEDmXFuAsEqs9ny7qKDur8U9w3lcFCusbBy3VgtXL8WEVpevg8PpQeNXizi9axk6NPDnwZem2kzpSDulMM5ENyzDhkoGXx0gKHTxN2Og%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|198692398552|0",
-        "ebayTitel": "24GB ASUS TUF Gaming Nvidia RTX O24G OG OC Edition GDDR6X 4090 Grafikkarte",
-        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -494,7 +476,7 @@
       {
         "name": "eBay",
         "price": "957,69 €",
-        "link": "https://www.ebay.de/itm/287643829235?_skw=Nvidia+GeForce+RTX+4070+Super+%28Verto+OC%29&hash=item42f8e883f3%3Ag%3AazwAAeSwvQJqzQsl&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mMpurz1xCpOiZ%2BOH%2FjXSIbE3gMTRMdqeZhz8UpMuJH3BlRjHwQ%2BWG%2FUC19coeVl%2BnECM6CFj7b4PXVWqhSNt1zpfDMnnYbFbKvasJhISaT%2BO3IeKpR4e2sOLamZFNfyDKRKn%2FtlyDda4JYl5GBMFnbpvwtc4mmbq5aVEYTiWdgfbJKKVShA3OMtk2JIeU3mCwuLzaWyFPTrNCES%2BkGx85VuYtuHJegfUOjbR1n8J29bmuUAQOx6oQTW7OUYArLFF6jou0mxi4Wm4%2F7bghDssem%2F1FlFFwrxQ5o2O4rO%2FuxpzG9IuvNjbnc38cSp1FKF9jqlpDhONlsWUtpQt%2FsPzYn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/287643829235?_skw=Nvidia+GeForce+RTX+4070+Super+%28Verto+OC%29&hash=item42f8e883f3%3Ag%3AazwAAeSwvQJqzQsl&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mMpurz1xCpOiZ%2BOH%2FjXSIbE3gMTRMdqeZhz8UpMuJH3BlRjHwQ%2BWG%2FUC19coeVl%2BnECM6CFj7b4PXVWqhSNt1zpfDMnnYbFbKvasJhISaT%2BO3IeKpR4e2sOLamZFNfyDLy4itoKm0j0pU7Qny5L%2F38Pgf1gIrH2WQcKgQbG%2BIRwRTJD0srgoGgR6JaBrtRLM5J%2FPqLE1%2BaLXFc723tBSdltftlAXLi2EIjGJoibwsOaefk1UBY5jEhKqC08FaU3aKEwwVUMBMdVjbM5ntEpSoka%2F1yXmEbWHANYAb48IeD0Sh%2BCtrcwLDNsAZ8LQWinkn3p%2Ba2dq4FKPTM4Nu9C3QI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|287643829235|0",
         "ebayTitel": "Unbenutzt GeForce RTX 4070 SUPER 12G GAMING World of Warcraft ",
@@ -517,7 +499,7 @@
       {
         "name": "eBay",
         "price": "727,68 €",
-        "link": "https://www.ebay.de/itm/407242104599?_skw=Nvidia+GeForce+RTX+4070+%28Evo+OC%29&hash=item5ed1855f17%3Ag%3ABAsAAeSwkVVqtVMj&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mqJ8kEvpmm9YTP%2FkWmrzROqnLHmL3mXuvFBVywk6A9EL3ztkof9EpQ%2BUDXB%2BBeOklQmg4ktTyPdQW4cAEjEUIuGH1kRy2LZu%2BWkEeWI9APvn32GAmbptVAGWNIwyKRkpNkpapfYywM0W2oLUz%2BumukrZcPsUUDPliwm6--zs8V0Cp77P93vGIRblFYvkb4akMRL8YOvbcHS5QZaTHyoUR8jV5WW7C4DZZAPSZURuTB6ADvHbDoAsaQsgYLkFaaKaGs7IB9P1eLNNPW1UNCHyLqVjiNY9GEYPIm0KZEgSin3p1H746V%2F5PgB6p%2BcYhHMfw%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407242104599?_skw=Nvidia+GeForce+RTX+4070+%28Evo+OC%29&hash=item5ed1855f17%3Ag%3ABAsAAeSwkVVqtVMj&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mqJ8kEvpmm9YTP%2FkWmrzROqnLHmL3mXuvFBVywk6A9EL3ztkof9EpQ%2BUDXB%2BBeOklQmg4ktTyPdQW4cAEjEUIuGH1kRy2LZu%2BWkEeWI9APvn32GAmbptVAGWNIwyKRkpO3kM95HSKBpDNiB3qt5a15RBdf%2FIwJd4ZGL42xvOZGVqVfwhMx21HNgb03HmDeNzWvqrX29NBud%2BalTuHZ1qg9hkEg2d93FU0dHVbVCSlj4X4DRnk%2B8DpZUCx%2FjmEkIQVyCvYiiKu7JF9DC%2BEdSRogHm3jlnYX8FQcg%2BEyKgc10sGRaDBlW5VlAwZaKBerHR4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407242104599|0",
         "ebayTitel": "ASUS Dual GeForce RTX 4070 EVO OC 12GB GDDR6 Grafikkarte NEU",
@@ -536,15 +518,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0hq3Y2F1"
-      },
-      {
-        "name": "eBay",
-        "price": "1000,00 €",
-        "link": "https://www.ebay.de/itm/168586237893?_skw=Nvidia+GeForce+RTX+4060+Ti+16+GB&hash=item274085d7c5%3Ag%3AyacAAeSwZnFqcN6v&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|168586237893|0",
-        "ebayTitel": "GeForce RTX 4060 Ti GAMING X SLIM 16GB Slim Aktiv PCIe 4.0 x16 (x8) neuwertig",
-        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -576,12 +549,12 @@
       },
       {
         "name": "eBay",
-        "price": "722,99 €",
-        "link": "https://www.ebay.de/itm/405782523964?_skw=Nvidia+GeForce+RTX+4060&hash=item5e7a85f03c%3Ag%3Al3MAAeSwZ7tn8RM3&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mhSXAb9wGyhBIXD1K%2FyoQZn%2BtAB9P9e6kzodzpBAMuv3Vz9qmQckqJdCxkMHpwAFAlVJA%2BaYctudcSczgRLdSmYhjbw6jFBqgs3ZsKJYPPUjlD5JJGYEsxZzA6rEye16R0O6dAyMVEpwCAGIlbb%2BDL8wD0PRc8W52cuZl3Hm59ok7EsfbzBvOlUsVcTICzCGArN1WqASUHLTrcn43hJKzQeUZROeoKp%2BQwGJrMTMSfRR6PoWolKdDLQg9UsUJZCKWYg2WKaNSElHg7IMroRjERrlkjWBBrxRts9QpvNnItww%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "330,00 €",
+        "link": "https://www.ebay.de/itm/187025201040?_skw=Nvidia+GeForce+RTX+4060&hash=item2b8b921790%3Ag%3ARdoAAeSwsB9nywsc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|405782523964|0",
-        "ebayTitel": "Gaming-PC mit i7-9700K, GeForce RTX 4060 8GB & 16GB RAM",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|187025201040|0",
+        "ebayTitel": "Rtx 4060",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -599,12 +572,12 @@
       },
       {
         "name": "eBay",
-        "price": "384,00 €",
-        "link": "https://www.ebay.de/itm/166000409311?_skw=AMD+Radeon+RX+7900+XTX&hash=item26a6653adf%3Ag%3Axr8AAOSwe-BkIKP2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "37,00 €",
+        "link": "https://www.ebay.de/itm/227150200266?_skw=AMD+Radeon+RX+7900+XTX&hash=item34e334fdca%3Ag%3AJKwAAeSwatVpUVNj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|166000409311|0",
-        "ebayTitel": "MSI MEG Ai1300P PCIE5 ATX 3.0 Netzteil 1300W NEU OVP RTX4090 RX7900XTX",
-        "ebayKat": "42017:Netzteile,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|227150200266|0",
+        "ebayTitel": "XFX RADEON RX 7900 XTX GHETTO-MOD",
+        "ebayKat": "27386:Grafik-/Videokarten,80151:Videokarten- & GPU-Kühlung,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -622,11 +595,11 @@
       },
       {
         "name": "eBay",
-        "price": "884,35 €",
-        "link": "https://www.ebay.de/itm/267816901736?_skw=AMD+Radeon+RX+7900+XT+%28Phantom+Gaming%29&hash=item3e5b219c68%3Ag%3ALbUAAeSwE4hq1LwU&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mZsG%2Byo1xC8EeHqP5R81LpPIHvLeAjk%2Fo0xQixPP%2FdESEH2zksxPmaDrGhZKl%2BYFs5jCIi88yNIRrDYmsqQJlO8qS--HtDnIgHSBoNLj0ELG8R0cdv43wfjVE74cgbyW5%2BFMDqSiUriAkz7rHefj3cp3ii%2BpBnZlrwkUvyFRgRFXwtLPuj2XgqREZePYJ7EwWAyB6GHeBNEev8NHxZnVovHT3T6iowyimIeVq6EfIY3%2B%2Fapt5KMYMMgHJ6Ct%2BOw%2FznH6jCtX1lmywvYxOMd9rtIfvmxxigetdhFX3cBECzxcJvaWrHgXK6Y8eQ8LDBYrdkj1PEQAP97m%2B2bqOITzUh&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "796,69 €",
+        "link": "https://www.ebay.de/itm/167358760851?_skw=AMD+Radeon+RX+7900+XT+%28Phantom+Gaming%29&hash=item26f75c0793%3Ag%3AVrIAAeSwquBnxZ4a&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mdgzgdN0LVVIP5P17ZMcrYuY12z49%2BJhB47KZ%2B4zWUYuZbMWaCOa7Lt3JKSL8G8%2B6LKu3TLmLISn5Oun2S20KNvvoY8MPdBjvNEcvfQIFBac%2FeTfOVGjY9MLOhFfqRVjRczRUJAptiwwhAUQl%2BRHJKr5XIfmtm8CIESpOzw3f0A%2F%2BFVF0ysf%2F3TisrrqFX%2F5OpwayUQAptXOxAZ8lTRv21kqaXrn%2BKQCvG%2F4frXAm2Tx6OxpVjIsVIRMD9HCnvn%2FmS02Z%2BO7glOb0ovrq9j1az1vcZZZSYDtioR3hFXu8FHp7Mo5RhELe2xrcB2QermZE%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|267816901736|0",
-        "ebayTitel": "XFX Radeon RX 7900 XT 20 GB GDDR6  mit Rechnung und OVP ",
+        "ebayItem": "v1|167358760851|0",
+        "ebayTitel": "20GB ASRock Radeon RX 7900 XT1709,00709,00Phantom Gaming White",
         "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -682,12 +655,12 @@
       },
       {
         "name": "eBay",
-        "price": "1373,99 €",
-        "link": "https://www.ebay.de/itm/366406766703?_skw=AMD+Radeon+RX+7700+XT&hash=item554f8b906f%3Ag%3AWqcAAeSw9NpqBL8C&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "540,00 €",
+        "link": "https://www.ebay.de/itm/820185419732?_skw=AMD+Radeon+RX+7700+XT&hash=itembef6dc4fd4%3Ag%3AvOAAAeSwNrpqu3Wr&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|366406766703|0",
-        "ebayTitel": "Dubaro PC, MSI MAG B550M Gaming PC Ryzen 7 5700X RX 7700XT 16GB 2TB SSD ARGB",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|820185419732|0",
+        "ebayTitel": "Sapphire PURE Radeon RX 7700 XT, 12GB GDDR6, Gaming Grafikkarte AMD, OVP, weiß",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -827,7 +800,7 @@
       {
         "name": "eBay",
         "price": "411,99 €",
-        "link": "https://www.ebay.de/itm/318693702642?_skw=Nvidia+GeForce+RTX+3060+Ti+%28Palit%29&hash=item4a339ffbf2%3Ag%3A9twAAeSwd8Vqdg81&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32YXBGAbu7ejiZbgAAjLXfOiovjJpGBDftyoEgmSx0eVsDTNxn5KgBqJJIYRh30UsTwMpzdpVUZbL38iaW%2F5AzO3yE63LOWwFoZwTOtKzSAdPReyVSbFo44wCShH3VAwhVfuvY2ynnQvb8XwWYVrQK2kSesSB2sjUBWw9chXAxDvKtAV54C4xoBWtNd5A9i1c2VJj2wAfgV9%2BG4GDlwG5ExippgpU%2B00zIvW%2BMfQclEo%2FnAntdhciq1CutyxNs7MEZRZLwLKSKrrcz1N4%2F0QqkK8iJ540c65xtIZ4UF%2F8O5UUSzH957s0HRD3xdDp38Q%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/318693702642?_skw=Nvidia+GeForce+RTX+3060+Ti+%28Palit%29&hash=item4a339ffbf2%3Ag%3A9twAAeSwd8Vqdg81&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l32YXBGAbu7ejiZbgAAjLXfOiovjJpGBDftyoEgmSx0eVsDTNxn5KgBqJJIYRh30UsTwMpzdpVUZbL38iaW%2F5AzO3yE63LOWwFoZwTOtKzSAdPReyVSbFo44wCShH3VAzEMKrpNJjAETPaYzkfAxGnW9Kepakh3oomMhpKCd5aneDJdPKbevQk46qV36IGxm8nOnNuTpS76WPF5uzbSBH94H2M2ZNoeBY%2FgFuzKfKSEsIijr%2BB5xECpoSWeS%2FDlNeTLKnAeJbpeNiH7zY%2FRdMTo1uPOuVm3JL9j12oiadu4fkU%2F3BJHVrWLA2FsrAtMNM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|318693702642|0",
         "ebayTitel": "GIGABYTE GeForce RTX 3060 Ti VISION OC 8GB",
@@ -850,7 +823,7 @@
       {
         "name": "eBay",
         "price": "344,94 €",
-        "link": "https://www.ebay.de/itm/135060587792?_skw=Nvidia+GeForce+RTX+3060+12+GB+%28Dual%29&hash=item1f723d0510%3Ag%3AuicAAOSw2FtmRRSC&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nO6apWXLZniJ1GAgNyv2y3GYpgTSd0O5J%2BD3jju36bXY8sTqbz9%2Fh9MEyH%2BH7AesWY9YYN2j2RFMPnPCQgq9Os0LQVwDMLaCzM%2BvG5D%2FNWf9IFdIpnwbtAlu5oMnRZnrUj33HUf%2B9CyXBGdT4FH9oCRysfX6%2Fk6d4hVND4L1htZinry3M9O2Jpxg47mD0xVV3WOfUvUgUjQqTtp8EXk07tyLtE9%2FJf%2Bu75WwHTDh5JAalQ8ALwC72Nqxs%2FxOKDQ49ul16MF4XJFsyOaAy2klSQ0W5Y07SPm%2FEQjoqyx7qqzlwup%2FQHD1%2BczfcK1fXXU74%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/135060587792?_skw=Nvidia+GeForce+RTX+3060+12+GB+%28Dual%29&hash=item1f723d0510%3Ag%3AuicAAOSw2FtmRRSC&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nO6apWXLZniJ1GAgNyv2y3GYpgTSd0O5J%2BD3jju36bXY8sTqbz9%2Fh9MEyH%2BH7AesWY9YYN2j2RFMPnPCQgq9Os0LQVwDMLaCzM%2BvG5D%2FNWf9IFdIpnwbtAlu5oMnRZnrXCHvD562BzfSibQi8BKC4ILQT5uDeY2D19yrIkWPMbf0uXe%2FAT6Q55RPgTrc%2F4hWn4gx60A7Wymp0gLdoogc%2BE8%2Fl1hhnrkfPxBdhpyUBh4OnX7%2FN0wmfPLnbWm6FRbibmQrK0iANf%2FNc5Bgm0%2FL4GUwu856ekU8K9Tr2lN4hNxpFZtZaxfX7%2Ba655%2F3geMm4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|135060587792|0",
         "ebayTitel": "RTX 3060 12GB JIESHUO",
@@ -869,15 +842,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B09XfNf7s"
-      },
-      {
-        "name": "eBay",
-        "price": "600,00 €",
-        "link": "https://www.ebay.de/itm/357191514001?_skw=Nvidia+GeForce+RTX+3060+8+GB&hash=item532a45f791%3Ag%3AkrMAAeSwd8VoYCfZ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|357191514001|0",
-        "ebayTitel": "NEUER GAMING COMPUTER | GAMING PC | MSI RTX 3060 8GB |",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
       }
     ]
   },
@@ -892,15 +856,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0gOWvJrY"
-      },
-      {
-        "name": "eBay",
-        "price": "389,95 €",
-        "link": "https://www.ebay.de/itm/188318649162?_skw=Nvidia+GeForce+RTX+3050+8+GB+%28OC+Edition%29&hash=item2bd8aa8b4a%3Ag%3AcvkAAeSwEpNp7dTF&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nzEWY5pAZuStZmWPzH0KF9sfs8W8YkUsVeIowgZuyK6AbDDp3La%2FqZuygxKi8%2B6TRqX04Qqul47KbHq%2B31mrMUZHPZs4WXHDLu%2FBb79TCmfeotXFT16VdJptB0pKZFpsMuN5pRF7sXb7xDZecOSKFg4RoiS9mAmYhJOw974b4uUrIrdw%2B68breJW4EtnQsWwXuXVc0%2B%2FkELdHQyg0rKWzNuQprKJw1hLevxMBvxjswSeDHwDnztGQmGhmMWkgs45YrTglisvP0lHtBOHE1EmFq6FxyK78UN8sH9CIsftoJE1hKHYCB6ibvekth8ti47%2BPQPLRiuBtIzGWmatEYnJnY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|188318649162|0",
-        "ebayTitel": "ASUS Dual GeForce RTX 3050 V2 OC Edition – 8GB GDDR6 Gaming Grafikkarte Neu&OVP",
-        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -918,11 +873,11 @@
       },
       {
         "name": "eBay",
-        "price": "389,95 €",
-        "link": "https://www.ebay.de/itm/188318649162?_skw=Nvidia+GeForce+RTX+3050+6+GB+%28OC+Edition%29&hash=item2bd8aa8b4a%3Ag%3AcvkAAeSwEpNp7dTF&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7nzEWY5pAZuStZmWPzH0KF9sfs8W8YkUsVeIowgZuyK6AbDDp3La%2FqZuygxKi8%2B6TRqX04Qqul47KbHq%2B31mrMUZHPZs4WXHDLu%2FBb79TCmfeotXFT16VdJptB0pKZFpsO4cyoXlY2VNp8OHFX9D61b0niwNXDUcEKciODJ9y3uPJDtUU1PorokzKuNDtAuz43cGgOzeOr%2BjnGiUiFuU1gE3SajmaKkIQtDb53AiNPIEQH9SR3wJ0wiPHAWSW2IQK%2BHSOzfqEnwCOydPmMAJCvSmn7l4QI8YYVc3N4wzaFzE4Sf1vik04zW%2Fyxic6hK%2Ffhz7n5dHNsV%2FLkyksx1uIHP&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "315,14 €",
+        "link": "https://www.ebay.de/itm/298677171140?_skw=Nvidia+GeForce+RTX+3050+6+GB+%28OC+Edition%29&hash=item458a8bf3c4%3Ag%3AGAQAAeSwrElq046W&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lvUWoxr%2Fa2sHG4uQ6heVzSoYwD9AK4kp%2Fs9Xa023Qj%2F7ffisB%2Fnh8OaJz3zJN4dR0VpOhPepxRxVTa%2BEC3%2Fsh4OFfWMGBHo2%2F7MZx7Fj8MaD15zP25uq80c44V4Z%2FZ24m%2FXqoEOqeTQOYq8%2BfDvyVLmHU0OwMXFPlYQYQuX5zVd%2FpLxmyE7yx90z5oD%2FuHMjIGCSctCL8%2Bp3eCO01o9dSQAUB%2BR%2BaeMseHhIGkftoYt0PKow8GgKz20b28C8lGc%2BHlp8u2C1vlUeaY%2FEpdkrdapPAyxmYzMLDDID%2Ba%2Bl6khHEjELo8GGqh6pKE7k9mNxyolTPCLtkKHxw25deChSE9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|188318649162|0",
-        "ebayTitel": "ASUS Dual GeForce RTX 3050 V2 OC Edition – 8GB GDDR6 Gaming Grafikkarte Neu&OVP",
+        "ebayItem": "v1|298677171140|0",
+        "ebayTitel": "Gigabyte Grafikkarte Nvidia GeForce RTX 3050 GeForce RTX 3050 6 GB GDDR6-VRAM",
         "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1001,12 +956,12 @@
       },
       {
         "name": "eBay",
-        "price": "1699,99 €",
-        "link": "https://www.ebay.de/itm/404329246046?_skw=AMD+Radeon+RX+6750+XT&hash=item5e23e6ad5e%3Ag%3A71kAAOSwXI5khgYX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "411,99 €",
+        "link": "https://www.ebay.de/itm/315126862650?_skw=AMD+Radeon+RX+6750+XT&hash=item495f06533a%3Ag%3ADlgAAOSwU%7Eplt%7Elc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|404329246046|0",
-        "ebayTitel": "Gaming PC (I5 13th, rx 6750xt, 2TB SSD, 32GB DDR5 5600MHz, AIO Wasserkühlung)",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|315126862650|0",
+        "ebayTitel": "GIGABYTE Radeon RX 6750 XT GAMING OC 12G 12GB GDDR6 Grafikkarte (GV-R675XTGAMING",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1024,11 +979,11 @@
       },
       {
         "name": "eBay",
-        "price": "697,49 €",
-        "link": "https://www.ebay.de/itm/373976130849?_skw=AMD+Radeon+RX+6700+XT&hash=item5712b6e521%3Ag%3Aff8AAOSw-ZpiL1RB&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "429,00 €",
+        "link": "https://www.ebay.de/itm/267740405142?_skw=AMD+Radeon+RX+6700+XT&hash=item3e56925d96%3Ag%3AWZMAAeSwgxZqZzlV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|373976130849|0",
-        "ebayTitel": "AMD Radeon RX 6700 XT 12GB GDDR6 Grafikkarte [NEU & OVP✔]",
+        "ebayItem": "v1|267740405142|0",
+        "ebayTitel": "XFX Speedster QICK 319 Radeon RX 6700 XT 12GB GDDR6 Gaming Grafikkarte HDMI 3xDP",
         "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1085,7 +1040,7 @@
       {
         "name": "eBay",
         "price": "475,19 €",
-        "link": "https://www.ebay.de/itm/376734406738?_skw=AMD+Radeon+RX+6600+%28Hellhound%29&hash=item57b71ed852%3Ag%3AhnEAAeSwsftpKBLZ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nj12jMLXQHpXw4fUpvD9NvPnllgor88R%2FmAEuQUNx2QR7V45blam0BpIIAjTuWBjTYQmXW8tisGHCZS467WoZvCxqXZbmUt0wozyPUkpLnf4a6WobK5wvlZG8DgO3uJyGxMvtIzcAd1w9gZ0SObgKT%2F%2B0HVi20Diyn8azseh%2FCnhKzPFXVFWgrgmTyWc9jBmdzuhFV6FY8xqY3SuB0yjvS%2Bo2aQDFzpgn6PT7IvgVAjz2TyDydHuBpOlE4HEQpAjGAXJYNaUVA51MNzbcafCP8KzmAZAdiPCaR4RoBPrVJ3rFG3DOrKRgh3tf9YzH9qHc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/376734406738?_skw=AMD+Radeon+RX+6600+%28Hellhound%29&hash=item57b71ed852%3Ag%3AhnEAAeSwsftpKBLZ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nj12jMLXQHpXw4fUpvD9NvPnllgor88R%2FmAEuQUNx2QR7V45blam0BpIIAjTuWBjTYQmXW8tisGHCZS467WoZvCxqXZbmUt0wozyPUkpLnf4a6WobK5wvlZG8DgO3uJyGz7jS2%2Bnhw113DdVJTi1LWuHd72%2BIU1jHJ%2Bp5q4719kTHM7T325Aqv4dT1nguM9lGUezq7rBbIm8FZW5XPczI3LdFcxiCw6fnY6U%2BPdlgOHHiGmtz1lDgspagfuTTS%2BjvpSQQy6XvkOwX4adZHaJbTNOPzbDLGptijLMzhYkiUbzU9IN65FwT8AphhYW8A34I%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|376734406738|0",
         "ebayTitel": "PowerColor Radeon RX 6600 Fighter AXRX 6600 8GBD6-3DH 8GB GDDR6 128-Bit PCIe 4.0",
@@ -1130,12 +1085,12 @@
       },
       {
         "name": "eBay",
-        "price": "1299,00 €",
-        "link": "https://www.ebay.de/itm/267644877234?_skw=AMD+Radeon+RX+5700+XT&hash=item3e50e0b9b2%3Ag%3AO8IAAeSwwatp5WRf&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kkK0yvpPunw%2FqD8tGbU0rXd7hCGJHh0FIwWIQeXP4v5BvJUIVxv%2B678WgA%2BFOaXsywMeXETmWnyFfV5XIRVgKVKjSHl0i5HUnpYgQR76HPXFFicuC4AmJCOB5HTs82skfZ5qtl2ppsekzKoom6VX7RaZ0IG5H7a0Qz08oN8FAvIVPHu1tFihrxziBS7mM583klBUmHOabKNI9oHPUkisAngdcZiXlk2O2EE65cjzkbRvLIi1N5i%2Br2XWoFpa%2FC3FGOInquYxAbwNiEekYRpoDX5hb3Y%2FbLLbqmrQ%2B6K9OPKA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "599,99 €",
+        "link": "https://www.ebay.de/itm/318296368372?_skw=AMD+Radeon+RX+5700+XT&hash=item4a1bf124f4%3Ag%3A51cAAOSwSSVnwmHy&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|267644877234|0",
-        "ebayTitel": "Thermaltake High-End Gaming PC  Ryzen 7 | RX 5700 XT | 32GB RAM | 1TB M.2 | ARGB",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|318296368372|0",
+        "ebayTitel": "SAPPHIRE Radeon RX 5700 XT PULSE 8GB GDDR6 Grafikkarte (11293-01-20G)",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1153,12 +1108,12 @@
       },
       {
         "name": "eBay",
-        "price": "485,87 €",
-        "link": "https://www.ebay.de/itm/194341216430?_skw=AMD+Radeon+RX+5700&hash=item2d3fa3a0ae%3Ag%3ALP0AAOSwGSxjlLIo&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "445,00 €",
+        "link": "https://www.ebay.de/itm/900014724388?_skw=AMD+Radeon+RX+5700&hash=itemd18d0ed524%3Ag%3A2a8AAeSwknFqYzr0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|194341216430|0",
-        "ebayTitel": "AUFRÜST PC AMD Ryzen 7 5700G Radeon RX Vega 8/16GB DDR4 Computer System",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|900014724388|0",
+        "ebayTitel": "XFX AMD Radeon RX 5700 8GB GDDR6 Grafikkarte PCIe 4.0 x16 Lüfter",
+        "ebayKat": "27386:Grafik-/Videokarten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1173,15 +1128,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B09DDBYl2"
-      },
-      {
-        "name": "eBay",
-        "price": "1299,90 €",
-        "link": "https://www.ebay.de/itm/397876268381?_skw=AMD+Radeon+RX+5600+XT&hash=item5ca3460d5d%3Ag%3APQ8AAeSwEdFp6440&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|397876268381|0",
-        "ebayTitel": "Gamer PC•AMD Ryzen 5 5600•AMD Radeon RX 9060 XT 8GB•32GB DDR4•1TB NVMe",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
       }
     ]
   },
@@ -1196,15 +1142,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0fazHH2a"
-      },
-      {
-        "name": "eBay",
-        "price": "1264,90 €",
-        "link": "https://www.ebay.de/itm/267649547068?_skw=AMD+Radeon+RX+5500+XT+8+GB&hash=item3e5127fb3c%3Ag%3A60EAAeSwp31p644s&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|267649547068|0",
-        "ebayTitel": "Gamer PC•AMD Ryzen 5 5500•AMD Radeon RX 9060 XT 8GB•32GB DDR4•1TB NVMe",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
       }
     ]
   },
@@ -1219,15 +1156,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0jimWuE5"
-      },
-      {
-        "name": "eBay",
-        "price": "1164,00 €",
-        "link": "https://www.ebay.de/itm/206038130032?_skw=AMD+Radeon+RX+5500+XT+4+GB&hash=item2ff8d45d70%3Ag%3AekwAAeSwyd5qz7cN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|206038130032|0",
-        "ebayTitel": "Captiva Gaming PC R99-302|R5 5500|16GB DDR4|RX 9060 XT|500 GB|Win11",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
       }
     ]
   },
@@ -1268,12 +1196,12 @@
       },
       {
         "name": "eBay",
-        "price": "1273,99 €",
-        "link": "https://www.ebay.de/itm/396619761230?_skw=AMD+Ryzen+7+5700X3D&hash=item5c5861464e%3Ag%3APh0AAeSwkCdoKIHN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "500,00 €",
+        "link": "https://www.ebay.de/itm/366118703956?_skw=AMD+Ryzen+7+5700X3D&hash=item553e601354%3Ag%3A3Y4AAeSwCABpZKSw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|396619761230|0",
-        "ebayTitel": "High-End Gaming-PC| RTX 4060 | AMD Ryzen 7 5700x3d Weißes RGB-Setup",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|366118703956|0",
+        "ebayTitel": "AMD Ryzen 7 5700X3D Prozessor 8 Kerne/16 Threads 105W TDP AM4 Sockel Neu",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1291,12 +1219,12 @@
       },
       {
         "name": "eBay",
-        "price": "799,51 €",
-        "link": "https://www.ebay.de/itm/196763842797?_skw=AMD+Ryzen+5+7500F&hash=item2dd009f8ed%3Ag%3AHQEAAOSwxc5jlLDn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "139,34 €",
+        "link": "https://www.ebay.de/itm/800812284115?_skw=AMD+Ryzen+5+7500F&hash=itemba7421b8d3%3Ag%3A5eMAAeSwyQBq1c%7EZ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|196763842797|0",
-        "ebayTitel": "AUFRÜST PC AMD Ryzen 5 7500F RTX 3050/RAM 16GB DDR 5/Computer Gaming",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|800812284115|0",
+        "ebayTitel": "AMD Ryzen 5 7500F 3,7 GHz Prozessor AM5",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1314,12 +1242,12 @@
       },
       {
         "name": "eBay",
-        "price": "159,00 €",
-        "link": "https://www.ebay.de/itm/227566908869?_skw=AMD+Ryzen+5+7600X&hash=item34fc0b75c5%3Ag%3AlmoAAeSwFhRqz1Pm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "164,07 €",
+        "link": "https://www.ebay.de/itm/407061465623?_skw=AMD+Ryzen+5+7600X&hash=item5ec6c10a17%3Ag%3Ah-sAAeSwlyRqx1jM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|227566908869|0",
-        "ebayTitel": "AMD Ryzen 5 7600X 6x 4.7GHz Sockel AM5 Gaming Prozessor",
-        "ebayKat": "175668:Mainboard-Komponenten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,182090:Mainboard-Komponenten & Zubehör"
+        "ebayItem": "v1|407061465623|0",
+        "ebayTitel": "AMD Ryzen™ 5 7600X 6-Kern CPU, Sockel AM5, Boxed (ohne Kühler)",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1337,11 +1265,11 @@
       },
       {
         "name": "eBay",
-        "price": "396,45 €",
-        "link": "https://www.ebay.de/itm/137144185603?_skw=AMD+Ryzen+7+7800X3D&hash=item1fee6e3303%3Ag%3Aj44AAeSws7Jq0KVx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "279,99 €",
+        "link": "https://www.ebay.de/itm/117381051892?_skw=AMD+Ryzen+7+7800X3D&hash=item1b5474b5f4%3Ag%3AI%7EAAAeSwOcNqesPG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|137144185603|0",
-        "ebayTitel": "AMD Ryzen 7 7800X3D, 4.20 GHz AM5",
+        "ebayItem": "v1|117381051892|0",
+        "ebayTitel": "AMD Ryzen 7 7800X3D 5,0GHz AM5 104MB Cache -8Kerne-16 Threads, tray ohne Lüfter",
         "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1383,12 +1311,12 @@
       },
       {
         "name": "eBay",
-        "price": "459,00 €",
-        "link": "https://www.ebay.de/itm/307026596886?_skw=AMD+Ryzen+7+9700X&hash=item477c361416%3Ag%3A2a8AAeSw0ZZqbc8%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "236,18 €",
+        "link": "https://www.ebay.de/itm/147639947415?_skw=AMD+Ryzen+7+9700X&hash=item226006d097%3Ag%3A7qAAAeSwoo9q1TtT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|307026596886|606854469573",
-        "ebayTitel": "PC Aufrüstkit Bundle AMD Ryzen 7 9700X bis 64GB DDR5 mit MSI B840 Gaming Wifi",
-        "ebayKat": "131511:Mainboard & CPU-Kombination,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|147639947415|0",
+        "ebayTitel": "AMD Ryzen 7 9700X Box Socket AM5 / 8 Core 16 Threads / 3.8 GHz",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1406,12 +1334,12 @@
       },
       {
         "name": "eBay",
-        "price": "579,00 €",
-        "link": "https://www.ebay.de/itm/306214189257?_skw=AMD+Ryzen+7+9800X3D&hash=item474bc9b8c9%3Ag%3A6ZYAAOSwuPln6%7EqC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "394,99 €",
+        "link": "https://www.ebay.de/itm/117393642942?_skw=AMD+Ryzen+7+9800X3D&hash=item1b5534d5be%3Ag%3ANhUAAeSw99ZqmXa1&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lY6FaBGjJBWe0zsITS%2B%2F2pbNUjpdM8x6fQnpVWYLRwE11hqv4s0sgVcpu7eHSfzNYoT%2FwSf%2BzmafFy9ha9rLEBBCU8m0mkwBnvmjKT%2Fl0tSh6jXjLScy82bJmhtbjyPAij9nJx%2BCXLCNITTVL5GrydQC995j6LhBr6%2B18ZF%2BKaPQHz7Jf73h%2BNQZjwdD6V28Y0fCjHXF9Tj0WgTjy6ZfQxPVsBgrHfamb7xjK%2B8mnBl7cQ2ATmThp67%2FIqOs6XjdHIe3MoYODpKHCIuihCA3fRmDS8ak9PppEZibTkfDX5yg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|306214189257|605795586831",
-        "ebayTitel": "PC Aufrüstkit Bundle AMD Ryzen 7 9800X3D bis 64GB DDR5 mit GIGABYTE A620M H",
-        "ebayKat": "131511:Mainboard & CPU-Kombination,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|117393642942|0",
+        "ebayTitel": "Ryzen 7 9800X3D - 4.7 bis 5.2 GHz - 8 Kerne - 16 Tray",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1452,11 +1380,11 @@
       },
       {
         "name": "eBay",
-        "price": "962,35 €",
-        "link": "https://www.ebay.de/itm/168361812893?_skw=AMD+Ryzen+9+9950X3D&hash=item273325639d%3Ag%3ABXYAAeSwEi9qeoPY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "670,53 €",
+        "link": "https://www.ebay.de/itm/157894873145?_skw=AMD+Ryzen+9+9950X3D&hash=item24c3449039%3Ag%3AnuAAAeSwxkhqeoPV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|168361812893|0",
-        "ebayTitel": "AMD Ryzen 9 9950X3D2 Dual Edition, 4.30GHz, boxed ohne Kühler",
+        "ebayItem": "v1|157894873145|0",
+        "ebayTitel": "AMD Ryzen 9 9950X3D, 4.30GHz, tray",
         "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1475,12 +1403,12 @@
       },
       {
         "name": "eBay",
-        "price": "529,00 €",
-        "link": "https://www.ebay.de/itm/306829600354?_skw=Intel+Core+i5-14400F&hash=item4770782662%3Ag%3Aa6IAAOSw8ktnvdco&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "158,93 €",
+        "link": "https://www.ebay.de/itm/306868676963?_skw=Intel+Core+i5-14400F&hash=item4772cc6963%3Ag%3AUUwAAeSwRvVp1Qm%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|306829600354|606712690483",
-        "ebayTitel": "PC Aufrüstkit Bundle Intel Core i5-14400F bis 64GB DDR4 mit ASRock H610M-HDV",
-        "ebayKat": "131511:Mainboard & CPU-Kombination,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|306868676963|0",
+        "ebayTitel": "Intel Core i5 i5-14400F 2,5 GHz 10 Kerne 16 Threads 20 MB Cache-Speicher",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1499,7 +1427,7 @@
       {
         "name": "eBay",
         "price": "230,00 €",
-        "link": "https://www.ebay.de/itm/366700532152?_skw=Intel+Core+i5-14600KF&hash=item55610e11b8%3Ag%3AXjcAAeSw4j1quUK4&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7llqg4bh5f37YVyZ7xtBXWlzJMCAylfLLssDWATY69dS5rOF55voh3F7kqQPlF4VSGYDrLI9aJYA44o8oXKF87%2FT9WMWWdBKCLAbVFFWAUkXiRJcKyScQgnLd98dbwfwsGgNsnEkwIhBzf8Nev3gn1lYoeJNBG5x08tA%2F1arSKSpVTe5dUuc5uAlEvo41gfQKvXpGXXhdTLu8LXb0BhNPIi2N5dtvnxePVehKKuZ1Tu2hQIXOoOWi55ebMmhFYbC%2FNKiJqfSxBPrda7lpg2xo5i0t9Md8i%2B%2FIOQF6j81fLnsw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/366700532152?_skw=Intel+Core+i5-14600KF&hash=item55610e11b8%3Ag%3AXjcAAeSw4j1quUK4&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7llqg4bh5f37YVyZ7xtBXWlzJMCAylfLLssDWATY69dS5rOF55voh3F7kqQPlF4VSGYDrLI9aJYA44o8oXKF87%2FT9WMWWdBKCLAbVFFWAUkXiRJcKyScQgnLd98dbwfwsG9BfRPnAvayWEYjnWGdhnVWDLhu%2FHdAlVhO0jfR4tK4jPWNsVSoZklyqdJV%2BPGGpw7MlDa182BiuQtvM6nLY2QJNr0Jkr7fASF%2B9JZAy%2FMPJOGWG0T3mkF5oCtQ7d7QZVeKTQEHOMOrhEA6%2BlyGkokGztwxScmQbyOvcoIB2cJlw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|366700532152|0",
         "ebayTitel": "Intel Core i5-14600KF 14. Gen Unlocked Prozessor – dedizierte Grafik nötig",
@@ -1544,12 +1472,12 @@
       },
       {
         "name": "eBay",
-        "price": "1529,00 €",
-        "link": "https://www.ebay.de/itm/307024052220?_skw=Intel+Core+Ultra+7+270K+Plus&hash=item477c0f3ffc%3Ag%3A4BAAAeSwxP5oiNZL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "323,89 €",
+        "link": "https://www.ebay.de/itm/820214640636?_skw=Intel+Core+Ultra+7+270K+Plus&hash=itembef89a2ffc%3Ag%3AR2gAAeSwwRFqxpS8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|307024052220|606852379474",
-        "ebayTitel": "PC Aufrüstkit Intel Ultra 7 270K Plus bis 64GB DDR5 mit GIGABYTE B860M Eagle V2",
-        "ebayKat": "131511:Mainboard & CPU-Kombination,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|820214640636|0",
+        "ebayTitel": "Intel Core™ Ultra 7 270K Plus 24-Kern CPU, Sockel N/A, Boxed (ohne Kühler)",
+        "ebayKat": "164:CPUs/Prozessoren,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1591,7 +1519,7 @@
       {
         "name": "eBay",
         "price": "139,99 €",
-        "link": "https://www.ebay.de/itm/147420137495?_skw=ASRock+B650M+Pro+RS+WiFi&hash=item2252ecc817%3Ag%3A5KcAAeSwvAFqS8TF&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mPCMO5LJ3iIWiVDQ0HEAl6LsxMipEANuANC1nwKuxq5CEsmz%2BuHzpFP1u46j77F8%2BKHE1L7oHgJjCWXr9O7FdGYX1zB04cAwpvgL6ToKa9g4Tu7udyZwIOzLiaxi%2BZqnPAPrpLjO8%2BmeFYYwXdcHl%2F7YA0nu9C5jrq5%2FURfpdbsWiqzVoohCgCU3%2B0j2szRa5KIg4CVhnH%2FBl6hpQG2iPpsFFCQ3D1Eq1yH%2Br%2Bednc6izimcUIqbTfBjszBka74Yacv5lRB8UgxuMKqm%2B5xXXx6ZZUfzD1FDJP27kVL0AJHg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/147420137495?_skw=ASRock+B650M+Pro+RS+WiFi&hash=item2252ecc817%3Ag%3A5KcAAeSwvAFqS8TF&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mPCMO5LJ3iIWiVDQ0HEAl6LsxMipEANuANC1nwKuxq5CEsmz%2BuHzpFP1u46j77F8%2BKHE1L7oHgJjCWXr9O7FdGYX1zB04cAwpvgL6ToKa9g4Tu7udyZwIOzLiaxi%2BZqnPNqBtbt2Sae%2BAEhye0Cns9YmxEmzg6TsyxN8MdGDrAGmDs1eKXru0bdSAgGGP%2BiKLAg8uvAl%2Boj6zq77qjRcVADWowBkzHIdQnguNXGk%2BJzQlyzxjLVtCHWQ0%2BUPwXwVZI41u1nqHNKKOM2DZGaJA4Koqmi1WI8pXvOlwBUOQu6Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|147420137495|0",
         "ebayTitel": "ASRock B650M PRO RS AMD A-Serie  DDR5",
@@ -1636,11 +1564,11 @@
       },
       {
         "name": "eBay",
-        "price": "145,19 €",
-        "link": "https://www.ebay.de/itm/860054153566?_skw=MSI+MAG+B650+Tomahawk+WiFi&hash=itemc83f38e95e%3Ag%3APpwAAeSwvTxqwPNM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kAW58A2eNb0vzwJZ6wFX8JrBm3oQS2LF269lhnYeEn6WDUWzZrOXibXyxEZAHDPs4nr9oMYZoYe4uADQIQ70RQ%2FleQxqeZEiEmtZf1uHB0p2ZQXstgyA3JCDq9k3O2Wd6Vx7LmXw1YOshVBb3NQi%2BzAl9qGMoQpNyvV%2BYtszA3txa5za%2F17wgkYYJ94U9If6XM9LtvZcZAH2j6V1jirPGZpJlAstd4kqNstQ6lCo8xrlX%2FxEL04be1nu1QXpFw62vUqmD4V8tF1KkZRKm%2FELGmH9Pef3tK9zlUraKZUkFdQBstAQuUZe7HfCFkZC9HHPo%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "199,00 €",
+        "link": "https://www.ebay.de/itm/117063619508?_skw=MSI+MAG+B650+Tomahawk+WiFi&hash=item1b418913b4%3Ag%3Ah2QAAeSwzmFppBB2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|860054153566|0",
-        "ebayTitel": "MSI MAG B650M MORTAR WIFI – AM5 – DDR5 – WiFi",
+        "ebayItem": "v1|117063619508|0",
+        "ebayTitel": "MSI MAG B650 Tomahawk WIFI DDR5 Mainboard Sockel AM5 AMD B650 Ryzen 7000/8000er",
         "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1659,12 +1587,12 @@
       },
       {
         "name": "eBay",
-        "price": "192,45 €",
-        "link": "https://www.ebay.de/itm/327254231030?_skw=ASUS+TUF+Gaming+B850-Plus+WiFi&hash=item4c31df47f6%3Ag%3AdI0AAeSww5ZqoSW1&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kYEjj7ZSPJQT944g2RGpkQp9V8ApPFYH8bwhs0DJINDyT7gl0QsvVlGqTPvZE8KrE9MXF7pJx2BlUjqmgqDz%2B7xnNQud8iGfrvpJBlHfyhJ%2BQbCBjLclTroVdVAuwcBdJm1yFbD7rG%2FpwpS9rMvtQboN7bVFJVJ0UFt8ALH8wu4zX2zqdYdeJgkIlZuyKBRDmdqqxH3ZCujJY2QtKa0K3nXMcNiweyNZWqLqsQt2pi%2FwMhC0oSGTIv73g1BBrYiD0wkKdyNx5i5rmlIubVoI16%2FQSotD%2FB7TUhQ8qv1yRNmTrLhGeUsC3toLxhYeeinT4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "196,54 €",
+        "link": "https://www.ebay.de/itm/307052510791?_skw=ASUS+TUF+Gaming+B850-Plus+WiFi&hash=item477dc17e47%3Ag%3AnEgAAeSw%7ECZqqFy9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|327254231030|0",
-        "ebayTitel": "ASUS PRIME B850-PLUS WIFI ATX Mainboard - Sockel AM5",
-        "ebayKat": "175668:Mainboard-Komponenten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,182090:Mainboard-Komponenten & Zubehör"
+        "ebayItem": "v1|307052510791|0",
+        "ebayTitel": "ASUS TUF GAMING B850-PLUS WIFI ATX Mainboard - Sockel AM5",
+        "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1705,12 +1633,12 @@
       },
       {
         "name": "eBay",
-        "price": "191,30 €",
-        "link": "https://www.ebay.de/itm/198486655350?_skw=Gigabyte+B850+Aorus+Elite+WiFi7&hash=item2e36ba0176%3Ag%3AIEIAAeSwL%7ExqzHFl&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kVMpi6DNiU4KNTK13zc%2B6QrwAbzzIvAXkuqdPJmcysyTDl2%2FE%2BnHf6eJB2gt%2B4CJ3ed1m5m9GGKLnw%2F7oqA7peXAKa0HIqAB38vh%2F3JhQnrpcWgLiEdLBobuvF2QHUtwIvrDZWxo151Es6h4xXFtmQHALf0pWGchxlZ1QviRfGywIBlXU6pa%2By%2FSxVHwcU3upeHFJPN8i8DLCAe%2FBSulEhFjyJpYaZi2GqE56hQd7XSga%2FUa2A3yF4Tn0z5Jb4GirVcuGO1aXcRhRRjNeUQbNNeYudhx7l9KsuvEfSr2WJ5olhWC9aAF%2BjKQTaAnhq%2Fjc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "210,64 €",
+        "link": "https://www.ebay.de/itm/206563448579?_skw=Gigabyte+B850+Aorus+Elite+WiFi7&hash=item3018241703%3Ag%3AjrgAAeSwShxqrAUH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198486655350|0",
-        "ebayTitel": "GIGABYTE B850 EAGLE WIFI7 ICE ATX Mainboard - Sockel AM5",
-        "ebayKat": "175668:Mainboard-Komponenten,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,182090:Mainboard-Komponenten & Zubehör"
+        "ebayItem": "v1|206563448579|0",
+        "ebayTitel": "GIGABYTE B850 AORUS ELITE WIFI7 ICE ATX",
+        "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1840,15 +1768,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B07ZnY6tu"
-      },
-      {
-        "name": "eBay",
-        "price": "334,01 €",
-        "link": "https://www.ebay.de/itm/198643040933?_skw=ASUS+TUF+Gaming+Z890-Plus+WiFi&hash=item2e400c42a5%3Ag%3AfG4AAeSwDK9qqRX5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|198643040933|0",
-        "ebayTitel": "ASUS TUF GAMING Z890-PLUS WIFI D5 ATX",
-        "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -1866,11 +1785,11 @@
       },
       {
         "name": "eBay",
-        "price": "200,00 €",
-        "link": "https://www.ebay.de/itm/358612975563?_skw=Gigabyte+Z890+Aorus+Elite+WiFi7&hash=item537effbfcb%3Ag%3AwSEAAeSwCpVqGT%7EO&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kyAQqG5yKztmS5UU6VqeknJOZ5vB1%2FOK4uKPrLwdmx2YMkRbt8sDegmzTOrWK2ilggZsg4ocUThBAwL3Kxszzm4stJ52%2BGwaZPmc%2BM2L1iv3mfJuPofjFVz9MSTsEoc6NRDuqNtudS%2FFmpeLNarZjC7HZUnOs74WYe%2BxDNMyVhfXqZINSootL38XWD93tXm2IZxOAriV%2FAJXncPDcez8oq0bsIjJrhjm7G9s2%2Baf%2FbW%2FoyGNRpDLVFWeAvgGfi3E2fehVhvSHJJZDjtI%2FjpSEqfQg3ctBA4Q%2B9GACUqJj6O5QGidccis%2Fz1h%2FiwEu0v5Q%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "260,88 €",
+        "link": "https://www.ebay.de/itm/206521343687?_skw=Gigabyte+Z890+Aorus+Elite+WiFi7&hash=item3015a19ec7%3Ag%3Aj7sAAeSwiipqkbJz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|358612975563|0",
-        "ebayTitel": "GIGABYTE Z890M A ELITE WIFI7 ICE mATX Mainboard Sockel 1851 DDR5 PCIe 5.0 WIFI7",
+        "ebayItem": "v1|206521343687|0",
+        "ebayTitel": "GIGABYTE Z890 AORUS ELITE WIFI7 ICE D5 ATX",
         "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -1970,15 +1889,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B06hOUGaV"
-      },
-      {
-        "name": "eBay",
-        "price": "529,99 €",
-        "link": "https://www.ebay.de/itm/137744028788?_skw=G.Skill+Flare+X5+32+GB+%282%C3%9716%29+DDR5-6000+CL30&hash=item20122f1474%3Ag%3At-8AAeSwDTZqqq8s&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7mafrLvrAlUN7E8ra1vi297H1w1SxgqldzsfskTNgTOwsojgaQoO48fgWn6bADQ%2BoNEGu%2FSA0qoDs2s0TWvhFlrykWFobGqps%2B31%2Bq%2BeffmJej5bXGW9NCmcSBy8Oj2fM2Eb7pxRZ7nXn9FBjsnKV7A7pSc%2FkL1XsuSlkxPgRLPiyswvAj9GDQpIVjF8NvApDfKBOzbHH%2Bn7%2Fc61cRJymFXWWw%2BriImO4UEFUKf1Mcy6XhIXFlxkzJYPD6SKqtOtePDgN9%2FPTKZXCv55c01UfYMBC9QQrSZ%2B86ZdRvsjb4zlIegQiUo36vIbx7BcQdYf%2FN9KXAi81HZOmjEpqxgR%2BjE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|137744028788|0",
-        "ebayTitel": "Patriot Viper Venom 32GB Kit (2x16GB) DDR5-6000 CL30 PVV532G600C30K NEU OVP RAM",
-        "ebayKat": "170083:Arbeitsspeicher (RAM),58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -2035,6 +1945,15 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B04f8BSbg"
+      },
+      {
+        "name": "eBay",
+        "price": "1500,00 €",
+        "link": "https://www.ebay.de/itm/206621465339?_skw=Kingston+Fury+Beast+64+GB+%282%C3%9732%29+DDR5-5600&hash=item301b995afb%3Ag%3Ak9sAAeSwN-VqzLa0&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7l22NXUnfOPBhWSHnLJHYcToErW%2BBOS46vNGUQf%2BYMSrP%2BzEotoUzfFaupHMbEDA%2FYHLLZF%2BPwhXSAPswYvrrFhSQc7VtOtSDyY2B7VDUx--yNFKMYu3x2hRlqpu6iWr7To7U1C5lzhSZECuGyFBHmmsga7EVA9KPyoEq%2FjzsCXvSlAav38LVt23Z6NHcytOlitysnMq2T2AxydxI8dxKyFpqHCmJok4FTGfIGYrhAqy9qlicb6Txq0%2FcUlI2Gxm1uZd4YVASupPjMYmGgxLsLW5Iub%2FrTagbeLayClpQO5zAIWLLWa7Z2zJi4P5uLJq04u2lG7sGJnJ4pBeEvYiut0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "feed": "ebay",
+        "ebayItem": "v1|206621465339|0",
+        "ebayTitel": "Kingston FURY Beast DDR5 64 GB (2 × 32 GB) 5600 MHz CL36 – KF556C36BBEK2-64",
+        "ebayKat": "170083:Arbeitsspeicher (RAM),58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -2049,15 +1968,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B09e5hg5F"
-      },
-      {
-        "name": "eBay",
-        "price": "1106,19 €",
-        "link": "https://www.ebay.de/itm/800615269790?_skw=Corsair+Vengeance+64+GB+%282%C3%9732%29+DDR5-6000+CL30&hash=itemba6863859e%3Ag%3AuasAAeSwL%7ENqdeKi&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|800615269790|0",
-        "ebayTitel": "Corsair Vengeance Schwarz 64GB Kit (2×32GB) DDR5-6000 CL30 DIMM ARBEITSSPEICHER",
-        "ebayKat": "11210:Server-Speicher (RAM),51240:Server-Komponenten,58058:Computer, Tablets & Netzwerk,175698:Firmennetzwerke & Server"
       }
     ]
   },
@@ -2241,11 +2151,11 @@
       },
       {
         "name": "eBay",
-        "price": "148,99 €",
-        "link": "https://www.ebay.de/itm/960032213212?_skw=Corsair+RM850x&hash=itemdf866108dc%3Ag%3A4u0AAeSw2jBqxnWI&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lo3lpMqYtJi54GGI7rkOmuvZj4kcGkdf8O5xm4Ct9PBJpqFdfelgNY3Cp3lSZlPwZW%2FQfpGuhAXB%2Fmh4W1Tu0ajWGQCiF2%2FpIlnqAZvqtYyCPx84rPy5AYA3ptKPuhEN6tlXbytpZwgxIBBq2hpGqIhQ%2BGoX8mtO5acSLI9yfz1IsTjkqZ5E26d5B4yg3PD4dpDGJjHNBa%2F7sC50%2BUSMYVnB9ikSE%2FV082IJsoT7lCtQp9UpNPWxD2YFNcFxqpldU3Wc6gP42Ac7vCtjrA0Vc85gNUcthk2A3Uuu%2BpeHgHQg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "158,38 €",
+        "link": "https://www.ebay.de/itm/286083076647?_skw=Corsair+RM850x&hash=item429be15227%3Ag%3AjIwAAOSwSh1nqn%7ER&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|960032213212|0",
-        "ebayTitel": "Corsair RM850e 850W Netzteil vollmodular ATX 3.1 PCIe 5.1 12V-2x6 Gold Schwarz",
+        "ebayItem": "v1|286083076647|0",
+        "ebayTitel": "Corsair RM850x (2024), PC-Netzteil, schwarz",
         "ebayKat": "42017:Netzteile,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2264,11 +2174,11 @@
       },
       {
         "name": "eBay",
-        "price": "144,65 €",
-        "link": "https://www.ebay.de/itm/307110648685?_skw=Seasonic+Focus+GX-850&hash=item4781389b6d%3Ag%3AKhgAAeSwmiFqdGKv&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "151,19 €",
+        "link": "https://www.ebay.de/itm/168183494625?_skw=Seasonic+Focus+GX-850&hash=item27288477e1%3Ag%3ANcIAAeSwSJFqegEf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|307110648685|0",
-        "ebayTitel": "Seasonic Focus GX-850 V4 850W ATX3.0 white null Watt",
+        "ebayItem": "v1|168183494625|0",
+        "ebayTitel": "Seasonic FOCUS GX-850 850W ATX3.0 White Edition, PC-Netzteil weiß, 1x 12VHPWR, 3",
         "ebayKat": "42017:Netzteile,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2356,11 +2266,11 @@
       },
       {
         "name": "eBay",
-        "price": "223,90 €",
-        "link": "https://www.ebay.de/itm/198643084866?_skw=be+quiet%21+Straight+Power+12+1000W&hash=item2e400cee42%3Ag%3AbGIAAeSwYUhqbFY8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "186,69 €",
+        "link": "https://www.ebay.de/itm/397800771509?_skw=be+quiet%21+Straight+Power+12+1000W&hash=item5c9ec60fb5%3Ag%3AVUYAAeSw59Bp0OJu&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kT2BzyX3OwbG433MVZQlzDjp5Gy31MDZ%2FkvS9BqgXxrvsoQsqug5vfmdu%2Bpis%2FakO7PsWKlgq5zTnlr0OPF2icCSra436tvsow1wKbmR%2BnxZ9Rxl0P%2B0GYJkqR5WcrObRrkSgzAwJIqNMGr5XTM3nf8Q8zstVMSPPeCJeSnH%2FS56hV2GC9eVNWd9IYUNFAt707pPQZIInYkDIdLrAQP7O0ztucVYaeMx9NpsYESiK1l%2FA6CAfwWf88lkGLjxpJMqeMCMZvp8XEX74sNtGM8pXLNAfBMGimH8lF25x%2FpPbQSTKBfrFbEmrlKrk6QBUEzZ4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198643084866|0",
-        "ebayTitel": "be quiet! BN338 Straight Power 12 1000W ATX 3.0 Netzteil modular",
+        "ebayItem": "v1|397800771509|0",
+        "ebayTitel": "Be quiet! Dark Power 12 1000W Titanium – Neu",
         "ebayKat": "42017:Netzteile,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2379,11 +2289,11 @@
       },
       {
         "name": "eBay",
-        "price": "376,19 €",
-        "link": "https://www.ebay.de/itm/205713960827?_skw=be+quiet%21+Dark+Power+13+1000W&hash=item2fe581ef7b%3Ag%3AdAUAAeSwSGdqhGdz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "179,00 €",
+        "link": "https://www.ebay.de/itm/407156071298?_skw=be+quiet%21+Dark+Power+13+1000W&hash=item5ecc649b82%3Ag%3A3fwAAeSwzMRqhatI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|205713960827|0",
-        "ebayTitel": "PC- Netzteil Be Quiet Dark Power 13 1000W",
+        "ebayItem": "v1|407156071298|0",
+        "ebayTitel": "be quiet! Dark Power 13 1000W, ATX 3.0 - NEU & OVP - Händler",
         "ebayKat": "42017:Netzteile,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2600,11 +2510,11 @@
       },
       {
         "name": "eBay",
-        "price": "97,41 €",
-        "link": "https://www.ebay.de/itm/206403641888?_skw=Corsair+3500X&hash=item300e9da220%3Ag%3AdE8AAeSwZT5qtkHx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "86,28 €",
+        "link": "https://www.ebay.de/itm/266923639839?_skw=Corsair+3500X&hash=item3e25e3841f%3Ag%3ASSwAAOSwpplmpBkj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|206403641888|0",
-        "ebayTitel": "Corsair 3500X Gaming PC Gehäuse Midi-Tower Schwarz Seitenfenster",
+        "ebayItem": "v1|266923639839|0",
+        "ebayTitel": "Corsair 3500X, Tower-Gehäuse, weiß",
         "ebayKat": "42014:Computergehäuse,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,175674:Computergehäuse & Zubehör"
       }
     ]
@@ -2623,12 +2533,12 @@
       },
       {
         "name": "eBay",
-        "price": "255,90 €",
-        "link": "https://www.ebay.de/itm/146495863817?_skw=Lian+Li+O11+Dynamic+EVO&hash=item221bd57c09%3Ag%3AWIoAAeSw2NJntAD4&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "255,93 €",
+        "link": "https://www.ebay.de/itm/198597912717?_skw=Lian+Li+O11+Dynamic+EVO&hash=item2e3d5ba88d%3Ag%3A8SsAAeSwuxVqj8ED&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|146495863817|0",
-        "ebayTitel": "Lian Li O11 Dynamic EVO - XL Big-Tower Gehäuse - RGB Beleuchtung - schwarz",
-        "ebayKat": "51064:Gehäuseteile & Zubehör,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,175674:Computergehäuse & Zubehör"
+        "ebayItem": "v1|198597912717|0",
+        "ebayTitel": "Lian Li O 11 Dynamic EVO XL",
+        "ebayKat": "42014:Computergehäuse,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,175674:Computergehäuse & Zubehör"
       }
     ]
   },
@@ -2646,12 +2556,12 @@
       },
       {
         "name": "eBay",
-        "price": "2149,00 €",
-        "link": "https://www.ebay.de/itm/198706651321?_skw=Lian+Li+O11+Vision&hash=item2e43d6e0b9%3Ag%3ADxMAAeSwxYpqy39l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "82,55 €",
+        "link": "https://www.ebay.de/itm/168485184993?_skw=Lian+Li+O11+Vision&hash=item273a7fe5e1%3Ag%3Ay-8AAeSwCN1qep6-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198706651321|0",
-        "ebayTitel": "Lian Li O11 Vision Gaming PC - Ryzen 5 9600X - RX 9070 16 GB - 16 GB - 1TB",
-        "ebayKat": "179:PC Desktops & All-in-Ones,58058:Computer, Tablets & Netzwerk,171957:Desktops & All-in-One-PCs"
+        "ebayItem": "v1|168485184993|0",
+        "ebayTitel": "Lian Li O11 Vision-M PC-Gehäuse, Micro-ATX, Tempered Glass - schwarz",
+        "ebayKat": "42014:Computergehäuse,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,175674:Computergehäuse & Zubehör"
       }
     ]
   },
@@ -2738,11 +2648,11 @@
       },
       {
         "name": "eBay",
-        "price": "27,88 €",
-        "link": "https://www.ebay.de/itm/940007104857?_skw=ARCTIC+Freezer+36&hash=itemdadcca2159%3Ag%3AzggAAeSw4Yxq05pG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "29,42 €",
+        "link": "https://www.ebay.de/itm/307052588397?_skw=ARCTIC+Freezer+36&hash=item477dc2ad6d%3Ag%3A9cgAAeSw2S9qZK9F&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|940007104857|0",
-        "ebayTitel": "ARCTIC Freezer 36-S Multikompatibler Tower CPU-Kühler",
+        "ebayItem": "v1|307052588397|0",
+        "ebayTitel": "Arctic Freezer 36 Black CPU Kühler für AMD und Intel CPUs",
         "ebayKat": "131486:CPU-Lüfter & Kühlkörper,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2761,11 +2671,11 @@
       },
       {
         "name": "eBay",
-        "price": "19,99 €",
-        "link": "https://www.ebay.de/itm/147283364362?_skw=be+quiet%21+Pure+Rock+2&hash=item224ac5ca0a%3Ag%3AH50AAeSw7F9qi%7EE3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "43,18 €",
+        "link": "https://www.ebay.de/itm/397888398650?_skw=be+quiet%21+Pure+Rock+2&hash=item5ca3ff253a%3Ag%3A0TkAAeSwHQBp8KSd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|147283364362|0",
-        "ebayTitel": "be quiet! Pure Rock Slim 2 PC Prozessorkühler BK030 leise und kompakt CPU-Kühler",
+        "ebayItem": "v1|397888398650|0",
+        "ebayTitel": "be quiet pure rock 2",
         "ebayKat": "131486:CPU-Lüfter & Kühlkörper,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2807,12 +2717,12 @@
       },
       {
         "name": "eBay",
-        "price": "43,99 €",
-        "link": "https://www.ebay.de/itm/820065188004?_skw=Thermalright+Phantom+Spirit+120+SE&var=626905238548&hash=itembeefb1b8a4%3Ag%3ALeoAAeSwRUZqlBUN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "49,99 €",
+        "link": "https://www.ebay.de/itm/366486113451?_skw=Thermalright+Phantom+Spirit+120+SE&hash=item5554464cab%3Ag%3ACJkAAeSwUCdqMvl3&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lKSi%2FD4NS1smt93y8t2uH4Up%2FEQ1Uzq7niOeHkPTuP%2B32hmWmUNUfEa0Ilk4UdTh2u0u7peJhvM7n%2Bfj8DBH484VZz%2FtUhYfKV0r3fohjD0Up%2FoOLxAXIHe%2BRHUo0QXyknv6iUmkp6A9l19I%2BeaRuIOOuJhpf%2B%2FDZh885ldGcOIe%2BZ0EEJBZJf2Nf0dOMnol8%2FjQ48Tr%2BcWSJfaeIfB%2FkQLxFqFKnDLUJyglnby3NiORH5wyuLXueDVt9wOElpNdzUQbl0PXzdRz72pFk%2BqTOrMcD%2BvWjqVFsIJ2o2enOfIo6NOzWSjNOrj6%2B1TX9sGvw%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|820065188004|626905238548",
-        "ebayTitel": "Thermalright Phantom Spirit 120 SE BLACK CPU Luftkühler, 7 Heatpipes Cpu-Kühler,",
-        "ebayKat": "20612:Stand- & Tischventilatoren,20710:Haushaltsgeräte,69197:Klimaanlagen & Heizgeräte,185114:Ventilatoren & Luftbehandlung"
+        "ebayItem": "v1|366486113451|0",
+        "ebayTitel": "CPU-Luftkühler Phantom Spirit 120SE ARGB 7 Heatpipes Dual 120mm Lüfter für PC",
+        "ebayKat": "131486:CPU-Lüfter & Kühlkörper,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -2873,15 +2783,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B01ZclyKq"
-      },
-      {
-        "name": "eBay",
-        "price": "92,64 €",
-        "link": "https://www.ebay.de/itm/116870394661?_skw=ARCTIC+Liquid+Freezer+III+240&hash=item1b3604b325%3Ag%3A8HwAAeSwZAdpEM6b&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|116870394661|0",
-        "ebayTitel": "Arctic ACFRE00186A ARCTIC WAK Liquid Freezer III 240 A-RGB (White)",
-        "ebayKat": "162:Sonstige,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -2913,11 +2814,11 @@
       },
       {
         "name": "eBay",
-        "price": "114,90 €",
-        "link": "https://www.ebay.de/itm/198544931425?_skw=be+quiet%21+Light+Loop+360&hash=item2e3a333a61%3Ag%3A8kAAAeSwF5Bqi%7ECn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "90,00 €",
+        "link": "https://www.ebay.de/itm/257565373653?_skw=be+quiet%21+Light+Loop+360&hash=item3bf817b4d5%3Ag%3ABKgAAeSwSHJqLpbR&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198544931425|0",
-        "ebayTitel": "be quiet! Light Loop 360mm White Wasserkühlung 20mm PWM high-speed ARGB Lüfter",
+        "ebayItem": "v1|257565373653|0",
+        "ebayTitel": "be quiet! Light Loop 360mm White Wasserkühlung PWM ARGB Lüfter",
         "ebayKat": "131503:Wasserkühlung,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -2959,12 +2860,12 @@
       },
       {
         "name": "eBay",
-        "price": "114,83 €",
-        "link": "https://www.ebay.de/itm/198485819316?_skw=NZXT+Kraken+360&hash=item2e36ad3fb4%3Ag%3ASl4AAeSwUXpqlSkA&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "117,80 €",
+        "link": "https://www.ebay.de/itm/398446840061?_skw=NZXT+Kraken+360&hash=item5cc54848fd%3Ag%3AnG4AAeSwUfZqvPAP&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198485819316|0",
-        "ebayTitel": "NZXT Kraken Core RGB 360 (2025) AIO- Wasserkühlung schwarz",
-        "ebayKat": "171898:Lüfter & Kühler,1249:PC- & Videospiele,54968:Zubehör"
+        "ebayItem": "v1|398446840061|0",
+        "ebayTitel": "NZXT Wasserkühlung  Kraken X73 360mm RGB White 2066/AM4 (Neuware)",
+        "ebayKat": "131503:Wasserkühlung,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -3056,11 +2957,11 @@
       },
       {
         "name": "eBay",
-        "price": "31,19 €",
-        "link": "https://www.ebay.de/itm/960037069084?_skw=Noctua+NF-A12x25+PWM&hash=itemdf86ab211c%3Ag%3A%7Ea8AAeSw4tZqx5SY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "28,99 €",
+        "link": "https://www.ebay.de/itm/237125381720?_skw=Noctua+NF-A12x25+PWM&hash=item3735c62e58%3Ag%3Aoa0AAeSwYShq0OmX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|960037069084|0",
-        "ebayTitel": "Noctua NF-A12x25 5V PWM – 120mm Premium-Lüfter – Neuwertig – OVP",
+        "ebayItem": "v1|237125381720|0",
+        "ebayTitel": "Noctua NF-A12x25 PWM Lüfter 120 mm schwarz für PC-Gehäuse Kühler Radiator",
         "ebayKat": "131487:Gehäuselüfter,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
@@ -3099,15 +3000,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B025fM27A"
-      },
-      {
-        "name": "eBay",
-        "price": "69,00 €",
-        "link": "https://www.ebay.de/itm/389710239011?_skw=Corsair+iCUE+Link+RX120+RGB+%283er-Pack%29&hash=item5abc8a5523%3Ag%3AG8sAAeSwGblpXhO-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|389710239011|0",
-        "ebayTitel": "CORSAIR iCUE LINK RX120 RGB schwarz | 3er-Pack 120mm Gehäuselüfter",
-        "ebayKat": "131487:Gehäuselüfter,42000:Lüfter, Kühlkörper & Kühlung,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
       }
     ]
   },
@@ -3195,7 +3087,7 @@
       {
         "name": "eBay",
         "price": "70,99 €",
-        "link": "https://www.ebay.de/itm/267307294152?_skw=Anker+PowerConf+C200&hash=item3e3cc19dc8%3Ag%3AEAwAAeSwfSZoYSTm&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mSL5PQRx%2BhdGB93fAgzlS2FAn%2BFw4KeEgxACv9Na8%2FBcEneWIF8YHZLdwqOiLW7xtjC9yMPiIEM64gWy4Le9mDn%2FdLwo6wHbHep5uUkdeXXgfgYuZAvmc317RU8LXLTXuiPVAHFpcH%2F0KjdqT%2BKi7kd2u7e%2FVUFi4aIg3zpSjKWnWFJz5AE%2BvqHAx5dPA7BkBPcvZZeySIWV7u%2Fum5f%2Fgc1KwuAkC1Kg7wfhf1R7kiyW5487%2Fxnb4MPDHXUffLbojXC8%2B7uLKbGDt8HWVdiV7WMm5qsKkajVIXTA0EkftixA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/267307294152?_skw=Anker+PowerConf+C200&hash=item3e3cc19dc8%3Ag%3AEAwAAeSwfSZoYSTm&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mSL5PQRx%2BhdGB93fAgzlS2FAn%2BFw4KeEgxACv9Na8%2FBcEneWIF8YHZLdwqOiLW7xtjC9yMPiIEM64gWy4Le9mDn%2FdLwo6wHbHep5uUkdeXXgfgYuZAvmc317RU8LXLTXs96FxYoz4MFFc2sJue7V4HEKE3sLU6xD5Tq1w5f0QnTeZ5MSo1sysRBDrHZtl2Yp25MqQ23%2B%2Bp7Hvzo5kXeXjWmLm11sG9f8CUBuBHJ32MafveyOCJsez9MuKVd12%2FcqGI%2BR6W%2FRRU1QvPSLzrgNiPWLa5Cy%2B6uNIXVonjSWvQ8g%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|267307294152|0",
         "ebayTitel": "Anker PowerConf C200 2K USB-Webcam für Laptops Mikrofon Geräuschunterdrückung",
@@ -3286,12 +3178,12 @@
       },
       {
         "name": "eBay",
-        "price": "8,90 €",
-        "link": "https://www.ebay.de/itm/397953232589?_skw=UGREEN+4-Port+USB+3.0+Hub&hash=item5ca7dc6ecd%3Ag%3AWKAAAeSw6YZqB6Vq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "9,49 €",
+        "link": "https://www.ebay.de/itm/800597332860?_skw=UGREEN+4-Port+USB+3.0+Hub&hash=itemba6751d37c%3Ag%3Agt8AAeSw7RNqlwyF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|397953232589|0",
-        "ebayTitel": "Ugreen 4-Port USB 3.0 Hub",
-        "ebayKat": "61395:Sonstige,293:TV, Video & Audio,14961:TV- & Heim-Audio-Zubehör"
+        "ebayItem": "v1|800597332860|0",
+        "ebayTitel": "4-Port USB 3.0 Hub USB Verteiler 5Gbps USB-A Multiport Adapter 15cm UGREEN",
+        "ebayKat": "44932:USB-Kabel, -Hubs & -Adapter,58058:Computer, Tablets & Netzwerk,182094:Kabel & Steckverbinder"
       }
     ]
   },
@@ -3392,12 +3284,12 @@
       },
       {
         "name": "eBay",
-        "price": "49,49 €",
-        "link": "https://www.ebay.de/itm/386919137668?_skw=Canon+PIXMA+TS5350i&hash=item5a162d8184%3Ag%3AVvQAAOSwOBRmFjE8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "307,90 €",
+        "link": "https://www.ebay.de/itm/117452961908?_skw=Canon+PIXMA+TS5350i&hash=item1b58bdf874%3Ag%3A1TkAAeSw2t1qxkPj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|386919137668|654181044356",
-        "ebayTitel": "CANON PG-560 CL-561 SET PIXMA TS5350i TS5351 TS5352a TS5353 TS7450i TS5355a",
-        "ebayKat": "16191:Tintenpatronen,11195:Tinte, Toner & Papier,58058:Computer, Tablets & Netzwerk,171961:Drucker, Scanner & Zubehör"
+        "ebayItem": "v1|117452961908|0",
+        "ebayTitel": "Canon PIXMA TS5350i Multifunktionsdrucker Tintenstrahl WLAN Drucker Schwarz NEU",
+        "ebayKat": "1245:Drucker,58058:Computer, Tablets & Netzwerk,171961:Drucker, Scanner & Zubehör"
       }
     ]
   },
@@ -3416,7 +3308,7 @@
       {
         "name": "eBay",
         "price": "174,90 €",
-        "link": "https://www.ebay.de/itm/136248152281?_skw=Epson+EcoTank+ET-2860&hash=item1fb905d0d9%3Ag%3Aj6gAAeSwioJqtpKu&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7koTSZsBSqSNUan9XuGukC92jaFxXlON7bE3FQi4AEgah7nYK8IH26DfIMtDQa%2FTj6wnBBOXcp9HU9trQblBykDSO6n86%2BmvMZAkHME5a4C%2BAgR%2FEDb3cFmiWx0YuFWGgpETId7g1QdS4%2BbypuLLQvwfJBsEtHW%2FAIxG0P2pcTZH99w77tqAQfucJmpc8vKFMHeeF2a%2FZIjEVclCxGD8xJvsQFtyf1ERpddQqKPLlrMMG2Orvd9SGhSUE2DtPYbVjTBb03VoHimK%2B4oDGiI83JIWjwASwqeNn2hMLcTs%2FySkw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/136248152281?_skw=Epson+EcoTank+ET-2860&hash=item1fb905d0d9%3Ag%3Aj6gAAeSwioJqtpKu&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|136248152281|0",
         "ebayTitel": "Epson EcoTank ET-2860 3in1 Multifunktion Drucken,Scannen,Kopieren,WLAN inkl. far",
@@ -3438,11 +3330,11 @@
       },
       {
         "name": "eBay",
-        "price": "310,49 €",
-        "link": "https://www.ebay.de/itm/237120669353?_skw=Epson+EcoTank+ET-4850&hash=item37357e46a9%3Ag%3AajIAAeSwPcpqzQI5&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kYK9LftJj3idvUusXPdqyqWf4FA8p341gjD1bwVGORx3VXE7HFI6fFKV2WAN4FGi3ov%2FrGtdZV%2Brg5jj37MMlei63DjeWhw7%2FLxrdtCEsyGL704OIEJ%2B0vQl702loY%2BD%2BkvCH7BzYVuEB%2FoQ20%2FoO9YLofNzad0OgkmfGKc2wbigDd8%2BG6ekmD0OsYF9tGwd7iWSsM9Eueiqokf08rT0wQM4ixgy9yncA7dkMLi0cGPhYcwq3rI1EqrFGU7sGL2x68uOaoXvlsNIfNXp%2BpxT6ELRgtTjMFXYqhNAqPHLFMzg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "549,00 €",
+        "link": "https://www.ebay.de/itm/267779400174?_skw=Epson+EcoTank+ET-4850&hash=item3e58e561ee%3Ag%3AEGQAAeSwmBpqn9ec&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|237120669353|0",
-        "ebayTitel": "Epson EcoTank ET-4850 Multifunktionsdrucker (Neu)",
+        "ebayItem": "v1|267779400174|0",
+        "ebayTitel": "Epson EcoTank ET-4850 - Multifunktionsdrucker - Farbe, Kundenretour, 11705648000",
         "ebayKat": "1245:Drucker,58058:Computer, Tablets & Netzwerk,171961:Drucker, Scanner & Zubehör"
       }
     ]
@@ -3484,12 +3376,12 @@
       },
       {
         "name": "eBay",
-        "price": "64,50 €",
-        "link": "https://www.ebay.de/itm/298681072807?_skw=Brother+HL-L2400DW&hash=item458ac77ca7%3Ag%3AIIwAAeSwUyJqz1vX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "134,56 €",
+        "link": "https://www.ebay.de/itm/800437117993?_skw=Brother+HL-L2400DW&hash=itemba5dc52429%3Ag%3APiIAAeSwG3dqyewp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|298681072807|0",
-        "ebayTitel": "Brother TN-2510XL Original Toner Schwarz 3.000 S. HL-L2400DW / HL-L2400DWE",
-        "ebayKat": "16204:Tonerkassetten,11195:Tinte, Toner & Papier,58058:Computer, Tablets & Netzwerk,171961:Drucker, Scanner & Zubehör"
+        "ebayItem": "v1|800437117993|0",
+        "ebayTitel": "Brother HL-L2400DW Laserdrucker s/w",
+        "ebayKat": "1245:Drucker,58058:Computer, Tablets & Netzwerk,171961:Drucker, Scanner & Zubehör"
       }
     ]
   },
@@ -3530,12 +3422,12 @@
       },
       {
         "name": "eBay",
-        "price": "12,15 €",
-        "link": "https://www.ebay.de/itm/407296735507?_skw=UGREEN+HDMI+2.1+Kabel+8K+%282+m%29&hash=item5ed4c6f913%3Ag%3AOcUAAeSwBxNq01zW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "19,95 €",
+        "link": "https://www.ebay.de/itm/406684429797?_skw=UGREEN+HDMI+2.1+Kabel+8K+%282+m%29&hash=item5eb047ede5%3Ag%3AuFwAAeSw9MBpijgz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407296735507|0",
-        "ebayTitel": "UGREEN HDMI 2.1 Kabel, 8K@60Hz, 4K@240Hz, HDMI zertifiziert, 48Gbps, 2M",
-        "ebayKat": "182095:KVM-Kabel,58058:Computer, Tablets & Netzwerk,182094:Kabel & Steckverbinder"
+        "ebayItem": "v1|406684429797|0",
+        "ebayTitel": "UGREEN 8K Flexibles und Schlankes HDMI Kabel, HDMI 2.1 Kabel 10K 8K 60Hz 4K (2M)",
+        "ebayKat": "32834:Videokabel & -stecker,293:TV, Video & Audio,14961:TV- & Heim-Audio-Zubehör"
       }
     ]
   },
@@ -3645,11 +3537,11 @@
       },
       {
         "name": "eBay",
-        "price": "25,95 €",
-        "link": "https://www.ebay.de/itm/147476633263?_skw=KabelDirekt+Cat+8+LAN-Kabel&hash=item22564ad6af%3Ag%3ANPYAAeSwxbxptBKt&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7ksZs%2FeRzhIj5CUFohs58T3ll9s1ZvIl82eXbGniunlWNXXzFiP1KctUIGJ2LeH7A7IUw2F2mDvdisu3na36rf9dz0nGYjJ2fyhOey3zv5HrKCU2TpdCPxQxhrrNv0DhLKaRjK0E0bSUVii%2FE0W2dtUD2QrhMRuaNMW4JwV2EAES6mo0zY33K5vCfGHK56S%2BUEXLr1BAQ%2FnZbxOF6rY1FMsOWzoKSpbfchqy8aSGOtRbAtaCyn6hqsPnu4UpoEk7W4j4SlSGejz3A7FcEvYDaiA6DEDIVfdQJXKd%2B5Q3y2cf4gUaT5xNIQO7lFumPh6Epo%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "29,99 €",
+        "link": "https://www.ebay.de/itm/158378609183?_skw=KabelDirekt+Cat+8+LAN-Kabel&hash=item24e019ca1f%3Ag%3A4DIAAeSwj8RqvxUW&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mGdQ2cVXTlJ8zXFaluZvSYNeg6zuySplTk29PQapr2B4xzfoiYvhyGSZT62ZKXi0p2ii2EvRL9XpV7ervQOXm%2FUhcg53aQlJf8DeHkWmGXprij9MRxLoCk9uFKQzWV2K2TntTNGW4iNrEG3mJHKhr2KmkMbuhRlw8XFKvTESzvuGCYW4YO16tPLtHCoHlfj5Z0MrxUkmBtn9ecz1jV7kEiDVqyQ6FZ5hlx59%2FAamXpD7cSR%2Br8OQrzZDTgtnzJVteTeN%2FpAJBmEYkqTVt%2BeJ9tO71cN7TB%2FIfgValH9AVZHfINuYrXMu8qlIfg6Dj3n6k%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|147476633263|0",
-        "ebayTitel": "Cat 8 LAN Kabel 6m Ethernet Kabel Hochgeschwindigkeit Gigabit 40Gbps",
+        "ebayItem": "v1|158378609183|0",
+        "ebayTitel": "Cat 8 LAN Kabel 9 m Flach 40 Gbps 2000 MHz Netzwerkkabel RJ45 Geschirmt",
         "ebayKat": "64035:Ethernetkabel (RJ-45/8P8C),20311:Netzwerkkabel & Adapter,58058:Computer, Tablets & Netzwerk,182094:Kabel & Steckverbinder"
       }
     ]
@@ -3857,11 +3749,11 @@
       },
       {
         "name": "eBay",
-        "price": "6,99 €",
-        "link": "https://www.ebay.de/itm/800778995463?_skw=Selbstklebende+Kabelclips&hash=itemba7225c707%3Ag%3APe4AAeSwknRqyfZI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "9,80 €",
+        "link": "https://www.ebay.de/itm/227565489691?_skw=Selbstklebende+Kabelclips&hash=item34fbf5ce1b%3Ag%3AUmcAAeSwhqBojHhS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800778995463|657614645179",
-        "ebayTitel": "Selbstklebende Kabelhalter Kabelclips Kabel Organizer für Auto Büro Schreibtisch",
+        "ebayItem": "v1|227565489691|0",
+        "ebayTitel": "UGREEEN 6 Stück Kabelhalter Kabelclips, Magnetische Selbstklebende Kabel ",
         "ebayKat": "67858:Kabelbinder & Kabelmanager,58058:Computer, Tablets & Netzwerk,182094:Kabel & Steckverbinder"
       }
     ]
@@ -3972,12 +3864,12 @@
       },
       {
         "name": "eBay",
-        "price": "65,99 €",
-        "link": "https://www.ebay.de/itm/357870892617?_skw=Logitech+G+Pro+X+Superlight+2&hash=item5352c47649%3Ag%3AlZIAAeSwj%7EZqo%7EQG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "89,95 €",
+        "link": "https://www.ebay.de/itm/800034533658?_skw=Logitech+G+Pro+X+Superlight+2&hash=itemba45c6311a%3Ag%3ArLEAAeSwur5qCrFS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|357870892617|626943582972",
-        "ebayTitel": "Logitech G PROX Superlight M575 G703 G403 Anywhere 2 Gaming Maus Wireless B-Ware",
-        "ebayKat": "303:Sonstige,631:Werkzeuge,3187:Heimwerker,3244:Handwerkzeuge"
+        "ebayItem": "v1|800034533658|0",
+        "ebayTitel": "Logitech G PRO X Superlight 2 Lightspeed Kabellose Gaming-Maus, Lightweight, Rot",
+        "ebayKat": "23160:Mäuse, Trackballs & Touchpads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -3996,7 +3888,7 @@
       {
         "name": "eBay",
         "price": "71,19 €",
-        "link": "https://www.ebay.de/itm/820251492907?_skw=Logitech+MX+Master+3S&hash=itembefacc822b%3Ag%3A4WgAAeSwc81q1KMO&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nGoXSMHtrCzXf2V1J7tZGDiY%2FFWB5XWmHpxB0I1rtWYJUjjWwfOf6cPmsNnlVKPY%2F9%2FbSreMHymhJ%2F9ZM32AEl%2F%2BWztlVW4GjunyOTb9bSKWw4OKWr2a6skG64Tao2LPzSSrIlCO3C4EB8hYzE1%2Bb986LZJzZIk%2BngK1eaqFBrTYuDxRRx0Zktoqfs0Br7vTGLy4%2BhBLMWQJzuiEZaLcI7akYXqX6xrWco8ikkbqHMQKSNh7uWAZg7fHVMt%2BG7qOEEuTnWKs4M69k6z75RLrHvbRlPLxSPSEcp56dW2%2B9eQA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/820251492907?_skw=Logitech+MX+Master+3S&hash=itembefacc822b%3Ag%3A4WgAAeSwc81q1KMO&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nGoXSMHtrCzXf2V1J7tZGDiY%2FFWB5XWmHpxB0I1rtWYJUjjWwfOf6cPmsNnlVKPY%2F9%2FbSreMHymhJ%2F9ZM32AEl%2F%2BWztlVW4GjunyOTb9bSKWw4OKWr2a6skG64Tao2LPwWQT8ZH%2BNLAEg0JyUxvFT%2FelK7trcH8MHl6tDIobyfoUHVCT7MInus4MX7mt4hzL8SZk05jv9sR2q3SlU067WpOFeR0uAvc6FwAtpMxmzKnQSb2qqz3bUv1eUcz%2B1a39%2FB5hZdpzJqNjsfY0FQoJ1tY4dA6bjVYFKsk9VPVafD2w%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|820251492907|0",
         "ebayTitel": "Logitech MX Master 3S Maus für Mac - Space Grau - Praktisch Neu",
@@ -4015,15 +3907,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B01SNfiSk"
-      },
-      {
-        "name": "eBay",
-        "price": "69,99 €",
-        "link": "https://www.ebay.de/itm/137821702538?_skw=Keychron+K2&hash=item2016d0498a%3Ag%3AVH0AAeSw4HNqxiAU&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|137821702538|0",
-        "ebayTitel": "Keychron K5 V2 Kabellose Mechanische QWERTY Tastatur, 100 %, RGB, Hot-Swap, Low",
-        "ebayKat": "33963:Tastaturen & Keypads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -4041,11 +3924,11 @@
       },
       {
         "name": "eBay",
-        "price": "95,20 €",
-        "link": "https://www.ebay.de/itm/128096461296?_skw=Corsair+K70+RGB+Pro&hash=item1dd324e1f0%3Ag%3AcYYAAeSwStVqtS5g&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "93,65 €",
+        "link": "https://www.ebay.de/itm/355991061527?_skw=Corsair+K70+RGB+Pro&hash=item52e2b88417%3Ag%3AVOsAAOSww9dmzqGt&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mhho6HX%2FkBNmvE48U6sLwH%2F0LNjfZUL5veM4JYUcZUemPX6zv7%2B154%2BAF6AA4F0XM1zfhUyw87wtAqeoyqBCNBglYL5TrqWBh3PQnPsOwAWmu1H%2Fu8mEzHKr7N1cR3%2FWx3t3SLZFUWSDCVgJF0cUCqECBJfytcaQk%2BBqkZpscI18iF4OvnXw9qFrTIR%2B8DM%2FfNRNqBcZv9QkgvFLz8%2B95Xiq16eXYnagLT15wVjt9KbSt5i0--6K0%2Fh%2FfdzIjDGY%2FV3bFVAS8Ow0gKRkSMCYZ8SOXd4Z6IOhzw%2FOkZaL%2BhCg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|128096461296|0",
-        "ebayTitel": "Corsair K70 RGB PRO Tastatur Schwarz Beleuchtet Keyboard",
+        "ebayItem": "v1|355991061527|0",
+        "ebayTitel": "Corsair K70 Core RGB Gaming-Tastatur Grau mechanisch Aluminium Drehknopf",
         "ebayKat": "33963:Tastaturen & Keypads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -4064,11 +3947,11 @@
       },
       {
         "name": "eBay",
-        "price": "80,99 €",
-        "link": "https://www.ebay.de/itm/177054560252?_skw=Razer+BlackWidow+V4&hash=item2939462ffc%3Ag%3ARPsAAOSwq9loD9k9&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lomIf2voj1kQhW3cNqtonLFMV5MCzRfc8ko3xsPZMNG6JO8aev06pciZd%2FU0R2fvRlrg%2BR6PHvAc17Om9Feg6lAJGj118UqzouGj55lTDmZuo4AADxT0RZxtWERmy22r9AZONw9lEvIZrOHP97aXN%2Fqyumfxl90raA1yZ7L7J3wQbrED9VuJWO%2BKCo166NdcIx5T9JAZ6fDdXhkutk1eJK%2B63mH9mnusdhyTY%2FsVQ5xRfmqp0q5DZ7IfIleRGGiAhkfelNbacrHn2uAccpXA4pZsyIlqCej%2BW66sF%2Fx%2Fuicg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "71,19 €",
+        "link": "https://www.ebay.de/itm/327339689335?_skw=Razer+BlackWidow+V4&hash=item4c36f74577%3Ag%3AKooAAeSwIK1qmTLb&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|177054560252|0",
-        "ebayTitel": "Razer BlackWidow V4 X Fortnite Edition Mechanische Gaming-Tastatur Yellow Switch",
+        "ebayItem": "v1|327339689335|0",
+        "ebayTitel": "Razer BlackWidow V4 Gaming-Tastatur RGB beleuchtet QWERTY Englisch Schwarz",
         "ebayKat": "33963:Tastaturen & Keypads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -4110,11 +3993,11 @@
       },
       {
         "name": "eBay",
-        "price": "57,40 €",
-        "link": "https://www.ebay.de/itm/407002460371?_skw=Logitech+MX+Keys+S&hash=item5ec33cb0d3%3Ag%3AaJEAAeSwogFqMBqG&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kA7wSOXPoT2IfWJwPveWf9Puhn1KSsZFC3xn2Dqe8JFgTQNpVE%2F687fBH%2F67SHfTeleBs0zsMdVWiYAtdqFkm3pG6hfRzM6dhyM0Og62vE7gn7LxgZrQz%2FqdGrCBXUfjsaV9ydfesIuOmUYyJQIvu26qsVwgQEh7BfQI9pkXCHN1L2ZP%2FjfPpLuJJ9aJpPd0A4HLr9K2smU7Y3f0W5oPKkQ%2BF7QQDI%2F2o0DYKZ62xc%2BkPzb0fU19mxfSXXcAvDhiJJm65q4XBfq%2BRKsyo%2FAwAtxR5nqYqjDB4PPiCKMdFCaw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "54,90 €",
+        "link": "https://www.ebay.de/itm/405076237555?_skw=Logitech+MX+Keys+S&hash=item5e506cdcf3%3Ag%3Amy0AAeSwmsBoeld6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407002460371|0",
-        "ebayTitel": "Logitech MX Keys S -Tastatur- Kabellos 🛜 QWERTZ Tschechisch, Graphite.",
+        "ebayItem": "v1|405076237555|0",
+        "ebayTitel": "Logitech MX Keys S kabellos-Tastatur - Graphit AZERTY Französisch OHNE ZUBEHÖR!",
         "ebayKat": "33963:Tastaturen & Keypads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -4179,12 +4062,12 @@
       },
       {
         "name": "eBay",
-        "price": "84,26 €",
-        "link": "https://www.ebay.de/itm/388345794460?_skw=Corsair+HS80+RGB+Wireless&hash=item5a6b368f9c%3Ag%3A7e8AAOSw40BoEffI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "94,70 €",
+        "link": "https://www.ebay.de/itm/327411046165?_skw=Corsair+HS80+RGB+Wireless&hash=item4c3b381715%3Ag%3AveQAAeSw33Vq1MQE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|388345794460|0",
-        "ebayTitel": "Corsair HS80 RGB WIRELESS Premium-Gaming-Headset mit Dolby Atmos Audio Weiß",
-        "ebayKat": "171821:Headsets,1249:PC- & Videospiele,54968:Zubehör"
+        "ebayItem": "v1|327411046165|0",
+        "ebayTitel": "Corsair HS80 RGB Wireless Gaming Headset PC, Mac, PS5, PS4 Crabon Verp. beschäd",
+        "ebayKat": "80183:Headsets,31530:Notebook- & Desktop-Zubehör,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -4202,12 +4085,12 @@
       },
       {
         "name": "eBay",
-        "price": "89,00 €",
-        "link": "https://www.ebay.de/itm/137215402935?_skw=SteelSeries+Arctis+Nova+7&hash=item1ff2ace3b7%3Ag%3AqKQAAeSwPY9p2Tdd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "129,99 €",
+        "link": "https://www.ebay.de/itm/198624972479?_skw=SteelSeries+Arctis+Nova+7&hash=item2e3ef88ebf%3Ag%3AbTIAAeSwFLNqnrQ1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|137215402935|0",
-        "ebayTitel": "SteelSeries Arctis Nova 7 Wireless Gaming-Headset - Schwarz (61553)",
-        "ebayKat": "171821:Headsets,1249:PC- & Videospiele,54968:Zubehör"
+        "ebayItem": "v1|198624972479|0",
+        "ebayTitel": "SteelSeries Arctis Nova 7 Wireless Gen 2 Weiß PC Gaming-Headset",
+        "ebayKat": "80183:Headsets,31530:Notebook- & Desktop-Zubehör,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -4225,12 +4108,12 @@
       },
       {
         "name": "eBay",
-        "price": "89,95 €",
-        "link": "https://www.ebay.de/itm/800034533658?_skw=Logitech+G+Pro+X+2+Lightspeed&hash=itemba45c6311a%3Ag%3ArLEAAeSwur5qCrFS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "129,99 €",
+        "link": "https://www.ebay.de/itm/137842853136?_skw=Logitech+G+Pro+X+2+Lightspeed&hash=item2018130510%3Ag%3ADhQAAeSwA45qzzI3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800034533658|0",
-        "ebayTitel": "Logitech G PRO X Superlight 2 Lightspeed Kabellose Gaming-Maus, Lightweight, Rot",
-        "ebayKat": "23160:Mäuse, Trackballs & Touchpads,3676:Tastaturen, Mäuse & Pointing,58058:Computer, Tablets & Netzwerk"
+        "ebayItem": "v1|137842853136|0",
+        "ebayTitel": "Logitech G PRO X 2 LIGHTSPEED Headset, Kabellos, Gaming, 20 - 20000 Hz, 345 g,",
+        "ebayKat": "171821:Headsets,1249:PC- & Videospiele,54968:Zubehör"
       }
     ]
   },
@@ -4294,12 +4177,12 @@
       },
       {
         "name": "eBay",
-        "price": "81,19 €",
-        "link": "https://www.ebay.de/itm/336849145621?_skw=Rode+NT-USB+Mini&hash=item4e6dc60f15%3Ag%3AJhEAAeSwa9tq04tE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "92,88 €",
+        "link": "https://www.ebay.de/itm/198718290755?_skw=Rode+NT-USB+Mini&hash=item2e44887b43%3Ag%3A%7EKwAAeSwO%7Exq0ew9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|336849145621|0",
-        "ebayTitel": "Kondensator-Mikrofon, RODE, NT-USB Mini, schwarz, neu",
-        "ebayKat": "162:Sonstige,58058:Computer, Tablets & Netzwerk"
+        "ebayItem": "v1|198718290755|0",
+        "ebayTitel": "Rode NT-USB-Mini",
+        "ebayKat": "29946:Mikrofone,619:Musikinstrumente,180014:Pro-Audio Equipment"
       }
     ]
   },
@@ -4317,12 +4200,12 @@
       },
       {
         "name": "eBay",
-        "price": "144,89 €",
-        "link": "https://www.ebay.de/itm/800786738169?_skw=Elgato+Wave%3A3&hash=itemba729bebf9%3Ag%3AoOsAAeSwUyJqzNcI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "156,29 €",
+        "link": "https://www.ebay.de/itm/354843231504?_skw=Elgato+Wave%3A3&hash=item529e4e0510%3Ag%3AMRAAAOSw8ThkhjMC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800786738169|0",
-        "ebayTitel": "Elgato Wave 3 Weiß USB Kondensatormikrofon Nierenkapsel 24 Bit/96 kHz Audio Anti",
-        "ebayKat": "33575:Batteriezubehör,6030:Autoteile & Zubehör,33572:Autoelektrik,131090:Auto & Motorrad: Teile"
+        "ebayItem": "v1|354843231504|0",
+        "ebayTitel": "Elgato Wave:3 Premium Gaming & Twitch Streaming USB-C Kondensator Mikrofon Weiß",
+        "ebayKat": "116309:Mikrofone,31530:Notebook- & Desktop-Zubehör,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -4410,7 +4293,7 @@
       {
         "name": "eBay",
         "price": "499,00 €",
-        "link": "https://www.ebay.de/itm/257705647647?_skw=HP+OmniBook+5&hash=item3c00741e1f%3Ag%3AUBwAAeSwgsZqd2Fz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kYc5pOsNqnf3Fn%2BEIciUJBqzHfxJzOg9hCHt87kiGtVyxjjxZ3JrOvzcCySgdxTOE%2FG3efoVNdQoCQKKXpI4kf%2BNiDu693aAR4SXP%2Bt9wCY1Z2jeNuY72pvuYzjUyJYeH5%2BjPfx%2FmVJ2ObTQhr%2B0Ec%2FhWLdlm%2BVDwXhmMLc2M%2FyqbqC8J2fFup4PttuswXsaVMAGaVcb7dWJVY%2F8w7Eal4IaBziw71nXOSeQtW7NWyaWiLGo27aP0w035%2BPJtXZIZ5hMGnidT6%2B2QxSohMRWvEaLgjfflQoMAarWjTUwoaCg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/257705647647?_skw=HP+OmniBook+5&hash=item3c00741e1f%3Ag%3AUBwAAeSwgsZqd2Fz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kYc5pOsNqnf3Fn%2BEIciUJBqzHfxJzOg9hCHt87kiGtVyxjjxZ3JrOvzcCySgdxTOE%2FG3efoVNdQoCQKKXpI4kf%2BNiDu693aAR4SXP%2Bt9wCY1Z2jeNuY72pvuYzjUyJYeF5MEJOMCdcpV%2FxvpVUwxhxbDijdz33nuzlDRjxJZsyeyNDrOKfseys9PVmqur7f040zc0Vn27ajYLnzBXm3Oq8ITlWtJeZRKKaa9wsRcZjgSTTmp3BJhdxzkLIpv0qvpf0XazCIozUAr7R9ZDck7%2BPyL4xXSkTcnuUEMhUCVNORw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|257705647647|0",
         "ebayTitel": "HP OmniBook 3 17-dp0256ngx AMD Ryzen5 2.8GHz 17.3 Zoll FHD 8GB 512GB Win11",
@@ -4455,11 +4338,11 @@
       },
       {
         "name": "eBay",
-        "price": "823,24 €",
-        "link": "https://www.ebay.de/itm/318833460611?_skw=Lenovo+LOQ+15&hash=item4a3bf48583%3Ag%3AO8YAAeSwsoRqnTlH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "1094,17 €",
+        "link": "https://www.ebay.de/itm/198535341204?_skw=Lenovo+LOQ+15&hash=item2e39a0e494%3Ag%3AVLQAAeSwXsFqx785&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7maUq35Zi1gHsUDJV13lqxW%2F0hcZJxlkeUS7gMPNES2MlOj4EHthghFlQLYmUCFNQFpBKQPeHc9RlZRz4oA83bn6xShYn6aUTcOXq1HSL3NiIA9NVqpIiKdAFZ3N%2FiGP%2BNACxy8txIzdYkfMjFK%2BKhmkp46STpnriyFhH6UDlCCHbywqBZtOlr%2FOJ4sLHQQuDtGQVYhlsBWOk8ao03krrdeFOH4j5YzGWbMpYF99BbhAcA2iqf6lV7NxYds3EB90DzJz8g1AQG4EI547QjBanqyMvcoQTomBeFQHUvk8ARNow%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|318833460611|0",
-        "ebayTitel": "Lenovo LOQ 15ARP9 Gaming Laptop Ryzen 5 7235HS 16GB RTX 3050 15,6\" ENG, RUS, UKR",
+        "ebayItem": "v1|198535341204|0",
+        "ebayTitel": "Lenovo LOQ 15ARP10E 15.6 Zoll Gaming Laptop AMD Ryzen 5 150 NVIDIA GeForce RT...",
         "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
       }
     ]
@@ -4478,12 +4361,12 @@
       },
       {
         "name": "eBay",
-        "price": "256,99 €",
-        "link": "https://www.ebay.de/itm/197897876739?_skw=Acer+Nitro+V+15&hash=item2e13a1f503%3Ag%3Ab7AAAeSwo9lqawrF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "799,00 €",
+        "link": "https://www.ebay.de/itm/298603749707?_skw=Acer+Nitro+V+15&hash=item45862ba14b%3Ag%3AccgAAeSwVS1qziz5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|197897876739|0",
-        "ebayTitel": "Acer Nitro V15 ANV15-52 Mainboard Laptop Reparatur Repair",
-        "ebayKat": "1244:Mainboards,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile"
+        "ebayItem": "v1|298603749707|0",
+        "ebayTitel": "Einzelstück - Acer Nitro V 15 ANV15 52 77F6 Gaming Notebook i7-13620H, RTX 5050,",
+        "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
       }
     ]
   },
@@ -4501,12 +4384,12 @@
       },
       {
         "name": "eBay",
-        "price": "42,30 €",
-        "link": "https://www.ebay.de/itm/158299707448?_skw=ASUS+TUF+Gaming+A15&hash=item24db65d838%3Ag%3AFMIAAeSwqflqtrkp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "650,00 €",
+        "link": "https://www.ebay.de/itm/336355572322?_skw=ASUS+TUF+Gaming+A15&hash=item4e505aba62%3Ag%3AJ8AAAeSw2VFpSB1Y&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|158299707448|0",
-        "ebayTitel": "Asus TUF Gaming A15 FA507XI original Displayrahmen 39,6cm (15,6 Zoll) grau",
-        "ebayKat": "175676:Notebook-Gehäuse & -Touchpads,58058:Computer, Tablets & Netzwerk,175673:Computer-Komponenten & -Teile,182089:Notebook-Ersatzteile"
+        "ebayItem": "v1|336355572322|0",
+        "ebayTitel": "ASUS TUF Gaming A15 FA506NCR-HN016W 15,6\" FHD | Ryzen 7 | 16GB | 512GB | RTX3050",
+        "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
       }
     ]
   },
@@ -4524,11 +4407,11 @@
       },
       {
         "name": "eBay",
-        "price": "888,68 €",
-        "link": "https://www.ebay.de/itm/800075540971?_skw=MSI+Katana+15&hash=itemba4837e9eb%3Ag%3Ao4kAAeSwBspqEuqz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "905,99 €",
+        "link": "https://www.ebay.de/itm/355654589064?_skw=MSI+Katana+15&hash=item52ceaa5a88%3Ag%3AV5kAAOSwoJ9mJQq5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800075540971|0",
-        "ebayTitel": "MSI Katana 15 B13VFK Gaming Laptop – Neu & OVP – RTX Grafik – 15,6 Zoll",
+        "ebayItem": "v1|355654589064|0",
+        "ebayTitel": "*NEU* 15.6 Zoll Gaming Laptop MSI Katana GF66 12UC-077 mit Nvidia GTX 3050 GPU",
         "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
       }
     ]
@@ -4547,12 +4430,12 @@
       },
       {
         "name": "eBay",
-        "price": "120,00 €",
-        "link": "https://www.ebay.de/itm/398420287260?_skw=Lenovo+Legion+5&hash=item5cc3b31f1c%3Ag%3ALmMAAeSwCHFqz2XS&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nKYWHTUubuMPFcD2JYgy3hJklByECK8AaEyW7wpAmC9wrKNiUd52vn6RumbHG7YsgL2JXv%2F7uo%2FxfrjHJlHiXA0tWuanebHgIPZG7%2FSq8IJ1vvW%2BG7ZEEhM90oVI5RsyaJgD8pSB64DBvdvDXIuQBiMhJI0TpxKdUD0eByDuzcEhViyNcqBO9I%2Fm9CUBIx8TJ%2FzNLnz9bAoDfG29LRLgfpEbsKrvho7xrpXDD4Q0Ff5%2FPf8fP85lctKt4GRsSXeKdVj1oz6e0Y8fWZvLmrnDyH0Aoq8Kzj3x%2Bu3EGvx0EhsA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "1805,99 €",
+        "link": "https://www.ebay.de/itm/198712606025?_skw=Lenovo+Legion+5&hash=item2e4431bd49%3Ag%3AELcAAeSwDNFqzzNa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|398420287260|0",
-        "ebayTitel": "Lenovo Legion 25-10 24,5 Zoll Monitor 1920x1080 FHD IPS 0,5ms Schwarz Bildschirm",
-        "ebayKat": "80053:Monitore,58058:Computer, Tablets & Netzwerk,162497:Monitore, Projektoren & Zubehör"
+        "ebayItem": "v1|198712606025|0",
+        "ebayTitel": "Lenovo Legion 5 15IRX10 15.3 Zoll Gaming Laptop Intel Core i7 13645HX NVIDIA ...",
+        "ebayKat": "177:PC Notebooks & Netbooks,58058:Computer, Tablets & Netzwerk,175672:Notebooks & Netbooks"
       }
     ]
   },
@@ -4630,12 +4513,12 @@
       },
       {
         "name": "eBay",
-        "price": "99,00 €",
-        "link": "https://www.ebay.de/itm/225691024964?_skw=Samsung+Odyssey+G5+27&hash=item348c3bbe44%3Ag%3AoPcAAOSw14Nkv-s5&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nEzHzok21E27FhBXTm7CRllqoibJ8S3jOAzfPutNV7TGRzOsdMu5TOWphpEv0wsqnV2S%2FcNcKpCWFv6RN99crmuk3bxYGaUbWAusCOakjZJhe6k6nul15QWSPXZi%2BszDPIiAdzyqiPT8a9AYYqjOllDtJza6zJPIcYHOzRbVwkWY3P%2Bng73yBkZf%2BaT%2Fikmg4XUJvxOr%2FamwH%2B9CZkn6ObWqml33tdtRHfQd8NkVbiFSr%2BPfrycroIiPQwnPMsNbxmnI2Y%2BRaUYhxuHHvSSQv%2BowgoxKB%2Fnyz2Bb0vY3wkS0WKk6yNq2U7Mfdlm6VncU8%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "125,18 €",
+        "link": "https://www.ebay.de/itm/237115042573?_skw=Samsung+Odyssey+G5+27&hash=item3735286b0d%3Ag%3Ai1UAAeSw5d9qx%7EOz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|225691024964|0",
-        "ebayTitel": "Mainboard-Samsung Odyssey G5 C27G54TQWR Gaming Monitor - QHD",
-        "ebayKat": "168068:Monitor-Ersatzteile,58058:Computer, Tablets & Netzwerk,162497:Monitore, Projektoren & Zubehör"
+        "ebayItem": "v1|237115042573|0",
+        "ebayTitel": "Samsung Odyssey G5 (G50F) 27\" QHD Gaming Monitor, Black",
+        "ebayKat": "80053:Monitore,58058:Computer, Tablets & Netzwerk,162497:Monitore, Projektoren & Zubehör"
       }
     ]
   },
@@ -4699,12 +4582,12 @@
       },
       {
         "name": "eBay",
-        "price": "121,95 €",
-        "link": "https://www.ebay.de/itm/278414063014?_skw=Kingston+NV3+1TB&hash=item40d2c575a6%3Ag%3A0voAAeSwj5pquRjK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lBrc%2B4wvRL6J6wmtrKlb2YiGYdcrEIMcrwuOTwhhrSyix387JPR0Oo2%2BIbpTCTz83IwYt7XoBZtgT1sZ7ralDljtkbLJSs6cZfvZSQPf98ZVuutYsrE2ia2z5CsqVEFWuqssiqDX5vGdojjZZIFgNtjrAaI95WAShwtoLabJFqV2EteQw3bBuapeUvzcmNJBwAMwrt3ABKZW8co1SSrt5ts2B8YXsXxkASquPcZCZUweAyD9Lx18fM3eJGBuZAhGXjXPs13EGNOwkGcL6ljdRwS%2F08OGAIxPISceQYpetJxQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "139,00 €",
+        "link": "https://www.ebay.de/itm/336843122483?_skw=Kingston+NV3+1TB&hash=item4e6d6a2733%3Ag%3ABr4AAeSw0Llqzojk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|278414063014|2561014318026",
-        "ebayTitel": "Kingston NV3 500GB 1TB 2TB 4TB M.2 NVMe SSD PCIe 4.0 x4 2280",
-        "ebayKat": "175669:Solid State Drives (SSD),165:Laufwerke & Speichermedien,58058:Computer, Tablets & Netzwerk,182085:Festplatten (HDD, SSD & NAS)"
+        "ebayItem": "v1|336843122483|0",
+        "ebayTitel": "Kingston NV3 int. PCIe NVMe M.2 2280 SSD 1TB - Neuwertig",
+        "ebayKat": "56083:Interne Festplatten,165:Laufwerke & Speichermedien,58058:Computer, Tablets & Netzwerk,182085:Festplatten (HDD, SSD & NAS)"
       }
     ]
   },
@@ -4745,11 +4628,11 @@
       },
       {
         "name": "eBay",
-        "price": "313,98 €",
-        "link": "https://www.ebay.de/itm/336706595020?_skw=WD_BLACK+SN850X+2TB&hash=item4e6546e8cc%3Ag%3A6VYAAeSw2MxqY8wa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "369,99 €",
+        "link": "https://www.ebay.de/itm/366693674597?_skw=WD_BLACK+SN850X+2TB&hash=item5560a56e65%3Ag%3ADX0AAeSwbZtqt-GB&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|336706595020|0",
-        "ebayTitel": "WD_BLACK SN850X NVMe SSD mit Kühlkörper 2TB – Neu & ungeöffnet – PCIe Gen4 High-",
+        "ebayItem": "v1|366693674597|0",
+        "ebayTitel": "WD_BLACK SN850X 2TB NVMe SSD M.2 2280 7.300 MB/s NEU OVP 19%Mwst",
         "ebayKat": "175669:Solid State Drives (SSD),165:Laufwerke & Speichermedien,58058:Computer, Tablets & Netzwerk,182085:Festplatten (HDD, SSD & NAS)"
       }
     ]
@@ -4768,11 +4651,11 @@
       },
       {
         "name": "eBay",
-        "price": "213,98 €",
-        "link": "https://www.ebay.de/itm/267545620699?_skw=Samsung+990+Pro+2TB&hash=item3e4af630db%3Ag%3AdaYAAeSwa1JpaMdB&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "266,19 €",
+        "link": "https://www.ebay.de/itm/820255670255?_skw=Samsung+990+Pro+2TB&hash=itembefb0c3fef%3Ag%3AOWoAAeSwFK5q1ill&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|267545620699|0",
-        "ebayTitel": "Samsung 990 PRO 1TB SSD M.2 NVMe PCIe 4.0 interne Festplatte PS5 PC NEU OVP",
+        "ebayItem": "v1|820255670255|0",
+        "ebayTitel": "Samsung 990 PRO 2TB M.2 NVMe PCIe 4.0 Interne SSD bis 7450/6900MB/s",
         "ebayKat": "175669:Solid State Drives (SSD),165:Laufwerke & Speichermedien,58058:Computer, Tablets & Netzwerk,182085:Festplatten (HDD, SSD & NAS)"
       }
     ]
@@ -4860,11 +4743,11 @@
       },
       {
         "name": "eBay",
-        "price": "166,19 €",
-        "link": "https://www.ebay.de/itm/168802730058?_skw=Apple+AirPods+Pro+3&hash=item274d6d404a%3Ag%3ACR8AAeSwCGZq1eNV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "188,19 €",
+        "link": "https://www.ebay.de/itm/398264882506?_skw=Apple+AirPods+Pro+3&hash=item5cba6fd54a%3Ag%3AaI4AAeSwmiFqd8QX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|168802730058|0",
-        "ebayTitel": "Apple AirPods Pro 3 In-Ear-Kopfhörer kabellos USB-C Weiß Doppel MFHP4AM/A",
+        "ebayItem": "v1|398264882506|0",
+        "ebayTitel": "Apple AirPods Pro 3",
         "ebayKat": "112529:Kopfhörer,293:TV, Video & Audio,15052:Tragbare Geräte & Kopfhörer"
       }
     ]
@@ -4999,7 +4882,7 @@
       {
         "name": "eBay",
         "price": "29,99 €",
-        "link": "https://www.ebay.de/itm/137692361215?_skw=DJI+Mic+Mini&hash=item200f1ab1ff%3Ag%3ANhoAAeSww-FqmLcs&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kpQQ4TVdH7MgT9E0pf1QzMJvmI3RpzG5nF7BXFETsO2zfgJ5oMPQRoLQ%2Bbx3kpfNPsumxejBN3IfOrbx2NGZkIo87L0MO7S9oJv8LoCnHllzY4fu2VlSqg1sx%2FOJrJhOz6H3CJOmmffdJ8Yp9g%2Fv72c9lUMgOp%2B981Oya3CMTvS20o3qEpAcyRzpimWgtaxsR%2FLP4xZwR4mEjTbJM7RDHA%2F67Fq9Yx7TaZWEe7pvlJzuzwMa%2BXp1J7n2znqvpH17f20RdWX17BCnr%2BD3S6U7zssYtcKuXkc%2FeGal7yviEXeA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/137692361215?_skw=DJI+Mic+Mini&hash=item200f1ab1ff%3Ag%3ANhoAAeSww-FqmLcs&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kpQQ4TVdH7MgT9E0pf1QzMJvmI3RpzG5nF7BXFETsO2zfgJ5oMPQRoLQ%2Bbx3kpfNPsumxejBN3IfOrbx2NGZkIo87L0MO7S9oJv8LoCnHllzY4fu2VlSqg1sx%2FOJrJhOzDzV7ozYaEGxOZ5ohyg0upOlJRLPvDqTPhPtNJE9cypSrWoFYTiG08Y0fbiMiC7blk7Z6rGnFtBFTsXpEVE80%2Fxqq2ICEw9uBaY83IuHqdc7%2F0t75fY6Q8TY9mkHm4Xf0RNZbF6CILnBHe1iAeBJgb2EyxKvPPa2o56nfx2%2BlcHQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|137692361215|0",
         "ebayTitel": "Handmikrofon Adapter für DJI Mic Mini Set - professionelles Audio Zubehör",
@@ -5045,7 +4928,7 @@
       {
         "name": "eBay",
         "price": "52,07 €",
-        "link": "https://www.ebay.de/itm/127648980373?_skw=Backbone+One&hash=item1db878dd95%3Ag%3AVDMAAeSwkp9peNE2&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lt%2FAuHsFWp1GWE1epKCMRwAipdHE0kr5fO3%2B7iwh4ibMkDvTce9XnFn7CQhyaPOVOfCI7PmAg0VlMaFfImuNQsd61wLx%2BWc9rrk%2BqHUXtmIm%2BK9TmzQnfRRQ8HM9szXPsNQPw6%2FqjO9QPuo4RQx%2B4mtHZqjPrtnj4pGl4l8%2F7CHcv7%2Bt7fVfsLvvKQQiV6lRQXt6JGRLBwrdHSxYQzFVvKwLVORqw4QnrueGvornWTtZn8dQB4BWXibzHFWcx9UPLJGhfob3AcGUKSazgByIgz7iItyv%2BEWl0%2B5JJ5zFXHEQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/127648980373?_skw=Backbone+One&hash=item1db878dd95%3Ag%3AVDMAAeSwkp9peNE2&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lt%2FAuHsFWp1GWE1epKCMRwAipdHE0kr5fO3%2B7iwh4ibMkDvTce9XnFn7CQhyaPOVOfCI7PmAg0VlMaFfImuNQsd61wLx%2BWc9rrk%2BqHUXtmIm%2BK9TmzQnfRRQ8HM9szXPtioeLb7XDIMyr6Rx3U3kJHuJg9HVXeHoHVs31%2Bqp8tAl0ZQZNveZqTFAZd8LCBQ%2FcCjaWzzVH33Qj%2BIjGiJPIo%2Bb3x8AATsQXWi9oAZ709KFP%2FfDajYDkP1Ul5MwyVIp6VS0456sbXOVaXKBEegNkXgtrzMKmWDp9Dwxi542inrA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|127648980373|0",
         "ebayTitel": "Backbone One Mobile Gaming Controller für Iphone (BB-02-B_R)_0.28_5",
@@ -5228,11 +5111,11 @@
       },
       {
         "name": "eBay",
-        "price": "19,99 €",
-        "link": "https://www.ebay.de/itm/374369356959?_skw=Anker+Nano+30W&hash=item572a270c9f%3Ag%3AMbwAAOSwYuVjfHqY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "22,89 €",
+        "link": "https://www.ebay.de/itm/206524943391?_skw=Anker+Nano+30W&hash=item3015d88c1f%3Ag%3A%7Ed8AAeSwUkpqlEyO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|374369356959|0",
-        "ebayTitel": "Anker USB C GaN Charger 30W 511 Ladegerät Nano 3 Schnellladegerät mit iPhone 14",
+        "ebayItem": "v1|206524943391|0",
+        "ebayTitel": "ANKER Nano 30W USB-C Ladegerät – PIQ 3.0 & PPS Schnellladung",
         "ebayKat": "123417:Ladegeräte & Dockingstationen,9394:Handy-Zubehör,15032:Handys & Kommunikation"
       }
     ]
@@ -5274,12 +5157,12 @@
       },
       {
         "name": "eBay",
-        "price": "39,95 €",
-        "link": "https://www.ebay.de/itm/137848091878?_skw=Anker+Nano+Power+Bank+10000mAh&hash=item201862f4e6%3Ag%3AmKAAAeSwMyZq0eWu&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mnzfk7Fe0QjqWo0PDvsmVn0zznlm6%2BYeYW0B%2BHlNb6eH6V9qs1Q%2B4tr0DINekZOZk%2BQQcg%2BjBrtZ7%2FNpKbBLLA3ppDPkSF0fhFAjec8ml8cwpnz%2BVMB6UuDoTrzEBMLwreTGNWTGjJlyOIopUq0wja8MfrFZjXN0YPGhe2GD7V2CxoDWVDlEBzIuNAT6MTHhFqKCe0iftgfgDIQh6ZCPVchyEeNBQb8gaqVJzD8C%2FPOBDOqVLN%2BrYWQXW1wci66xFMqvR8S5ilDeHaYu4n1wUXjdwepD5d%2BWSpfHk5IzuVgiwJ%2FJLhBJ9jG0rvyWtbkjI%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "63,90 €",
+        "link": "https://www.ebay.de/itm/287145516430?_skw=Anker+Nano+Power+Bank+10000mAh&hash=item42db34dd8e%3Ai%3A287145516430&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|137848091878|0",
-        "ebayTitel": "Anker Nano A1259031 Powerbank 10000mAh 30W USB-C Kabel Blau_0.3_5",
-        "ebayKat": "123417:Ladegeräte & Dockingstationen,9394:Handy-Zubehör,15032:Handys & Kommunikation"
+        "ebayItem": "v1|287145516430|0",
+        "ebayTitel": "Anker 545 Nano Power Bank 10000mAh PD 30W USB-C USB-A Schwarz",
+        "ebayKat": "171813:Akkus,1249:PC- & Videospiele,54968:Zubehör"
       }
     ]
   },
@@ -5349,7 +5232,7 @@
       {
         "name": "eBay",
         "price": "19,99 €",
-        "link": "https://www.ebay.de/itm/286814480841?_skw=H%C3%BClle+f%C3%BCr+Samsung+Galaxy&hash=item42c779a9c9%3Ag%3AjaIAAeSwnxlowohO&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kHP1z%2BmtWUWRvXYPedyrBLPjLH29hMfvSPr29GjRTB2KKN6y2Vd1jjuZOEOm%2BJEGrFJWgzT5xOXMkVhyK6EE63YgUWqwpM1M%2BPcfwojRnuRpWtEI%2FffyU8Ag%2FJp5PEieb2QESJ5%2FPfk9C5uKtGi0bCiv24ugUqv4Dv82eLCsGyvjdpZqSb0dr8Kebx7lV9shdcmpGvfqB2edkstNHjRwFgR%2F8Lcs9riRffM4gcqER%2FLE29c8s6SH1ZxP9SlKD2AEDeekCY4a3TfevA2cOEcaTVJc7ct9FqEqszHLRsAquIILypEJ234hzZkxgQ4fcULGI%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/286814480841?_skw=H%C3%BClle+f%C3%BCr+Samsung+Galaxy&hash=item42c779a9c9%3Ag%3AjaIAAeSwnxlowohO&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kHP1z%2BmtWUWRvXYPedyrBLPjLH29hMfvSPr29GjRTB2KKN6y2Vd1jjuZOEOm%2BJEGrFJWgzT5xOXMkVhyK6EE63YgUWqwpM1M%2BPcfwojRnuRpWtEI%2FffyU8Ag%2FJp5PEieZlpywSngvHOIHc0EGCQ98OmGrXNasraDKvJD5hKh%2Fq36qckoXKOCfMwX0Sd9TRO%2FMubuEnPFe87C43ODwed7ONksYMqARW9nbUr9SbaSnv%2FZ2ST27IFziqYB0aIlxStTHMs4FgXswRaKup1hST9bxRt8puut6v2QOVWFEd8RqxHJy0ZfvgyBVEwr1d08Pacv8%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|286814480841|0",
         "ebayTitel": "Hülle für Samsung Galaxy Tab Active 5 / Active 3 8 Zoll, Stoßfeste Robuste ",
@@ -5496,15 +5379,6 @@
         "link": "https://www.awin1.com/cread.php?awinmid=128145&awinaffid=3110253&ued=https%3A%2F%2Fde.aosulife.com%2Fproducts%2Fsolarcam-p1-max%3Fvariant%3D43489266040931",
         "feed": "aosu",
         "feedId": "43489266040931"
-      },
-      {
-        "name": "eBay",
-        "price": "289,99 €",
-        "link": "https://www.ebay.de/itm/128138181040?_skw=aosu+SolarCam+P1+Max&hash=item1dd5a179b0%3Ag%3A7wsAAeSwUdBq0a5q&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l7FkeIp1QNYtjaEDse5Six2CQn5vB9iyWvPRV89lMwvTXiC2%2FbeF%2BREElllstlVEPYM8TkMOO2tGB4sjE04Mw3jnWJrIaSCSyXHhbxACz%2BJEnldHbcXdR2syj9Ka048YdQNX8oKZCo9LU9p%2BJa2CJvbtJxHNcl6hwa%2FCCvwIEgwVVwJDg1xdRbowPIWpZZTSR5qnMVXUr8SifHEHvIQu3hYBcYyu0HDRgDMdGwhgWyLmqG5m8oEFkyWD1HxqXHOeny%2FIZoPxwjsNr1Ebztfps6q%2FNligFBzliPtPwaz5kv%2B%2Bw2jxFEH4N500jA8WDR9rE%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|128138181040|0",
-        "ebayTitel": "Aosu D1 MAX 2-Pack 4K 8MP Überwachungskamera Aussen Solar Akku UHD 360°",
-        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -5530,7 +5404,7 @@
       {
         "name": "eBay",
         "price": "289,99 €",
-        "link": "https://www.ebay.de/itm/128138181040?_skw=aosu+SolarCam+D1+Max&hash=item1dd5a179b0%3Ag%3A7wsAAeSwUdBq0a5q&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l7FkeIp1QNYtjaEDse5Six2CQn5vB9iyWvPRV89lMwvTXiC2%2FbeF%2BREElllstlVEPYM8TkMOO2tGB4sjE04Mw3jnWJrIaSCSyXHhbxACz%2BJEnldHbcXdR2syj9Ka048YcrfKP1CI%2B9eWVFcyVYvruMBC2O6Xw9glMobQeKiJSp%2FekR6KDrXKbmzx3%2FcJ4pxmzK3Hp4ZsKaHbUbc7q7K2LSXiRSzTX7xOZSoFQaH3e6EfcOUqDYN9qtZjjGzMw7Sa82wxGQXnUC1zne5%2BfkMuFm0yNlPtZSxktAiwGp7PId39SCG%2FNHsEmqcBeAlkajA2A%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/128138181040?_skw=aosu+SolarCam+D1+Max&hash=item1dd5a179b0%3Ag%3A7wsAAeSwUdBq0a5q&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l7FkeIp1QNYtjaEDse5Six2CQn5vB9iyWvPRV89lMwvTXiC2%2FbeF%2BREElllstlVEPYM8TkMOO2tGB4sjE04Mw3jnWJrIaSCSyXHhbxACz%2BJEnldHbcXdR2syj9Ka048YekuvtuG7DyZwlFZK4Tp8ReblIb%2Bxf%2ByQRs%2F%2BmgPCwgzLGfeBgwA7Wm3R1Mq7GcGTXgXaO73iKIVP8hSrEe%2BIy2BXC30TSs5vLQhmEnJbGCHWkN0e3SqRBtIYxzKVz3GTppgF3oPJpFrAB1jqhym8xuBfwxCrNF2VPe8AbsY%2BztWyPm8b5WhQOhsL64p2PlqNo%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|128138181040|0",
         "ebayTitel": "Aosu D1 MAX 2-Pack 4K 8MP Überwachungskamera Aussen Solar Akku UHD 360°",
@@ -5585,7 +5459,7 @@
       {
         "name": "eBay",
         "price": "307,00 €",
-        "link": "https://www.ebay.de/itm/800672894292?_skw=aosu+SolarCam+T2+Pro&hash=itemba6bd2cd54%3Ag%3AMvwAAeSw2X5qqgmo&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kPeSEOQ5YKgDqy7Cfc7EyQXKM%2BQfoPHveB%2BFaluNxgFwWElTrTeLn8iqSHPPML2iBz1rRyeJggKuJ6VtNFmZ7fcf6WpUj%2Fd1uCmdRdWhu0W6mR8ztIj%2BODplnvrUrbtq3bdjvMtzctaRNIWDgXWpJ06foOHO61XcgRFNc2%2BoKWc3lZ6zanYlHTUtX1sqbcFUO%2Bh%2BE9mWt095UcCxptVQQi5u3d9SEsKknY4uo7uPmv23GPqwFAiSPHSYOwN9msq72ua1A3WyVLeisWexDsNGyY3qg00Wh3D5p%2FrMQy%2FT8cdw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/800672894292?_skw=aosu+SolarCam+T2+Pro&hash=itemba6bd2cd54%3Ag%3AMvwAAeSw2X5qqgmo&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kPeSEOQ5YKgDqy7Cfc7EyQXKM%2BQfoPHveB%2BFaluNxgFwWElTrTeLn8iqSHPPML2iBz1rRyeJggKuJ6VtNFmZ7fcf6WpUj%2Fd1uCmdRdWhu0W6mR8ztIj%2BODplnvrUrbtq1Lgz15J%2BTnf%2B9I2AamQ1ckp5fPdpGnFWTNJJpfGeV5Q4f8sLBzuNJYUHlwjKshBMGaQlCvM02Y24kVlgAXbT1D0FkoVtf88%2FWS8PnkjuThsv7JqxMVfo8EXkMuBAX%2FzbcIARji6kKJK23hXpXKRJDVOszJUdR6G80Zv0wIdSKgmw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|800672894292|0",
         "ebayTitel": "Aosu T2 Pro 3K Überwachungskamera Außen Solar Akku  Dual-Kamera 360° PTZ Nach...",
@@ -5610,7 +5484,7 @@
       {
         "name": "eBay",
         "price": "1203,32 €",
-        "link": "https://www.ebay.de/itm/318856624677?_skw=aosu+SolarCam+T2+Ultra&hash=item4a3d55fa25%3Ag%3APvYAAeSwQR5qo%7EmW&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kryUkNR39sp781XzrhbfQnA0kkcETCWHyN63j8cZpq0H%2BShrcYLZ6TbTFEFnwAZhZ6po%2BNBRn5df73L5XSNUzUykQhA9jLMdWfhj%2BZnZGurdP6mtmBR7IAbt%2B0xU%2Bu1F68FN49qBtznsHjHOtZz1JdYRgLeEPD%2BKAYS4a17ox5c9rO6CRRtd33Kgmpc4XTHNE1Hj6JKhirSRYYBmCd8mxgZuZo%2FAJYOAQsImuF2DWg4fZYlXOuv%2F3Mdaa4dqfTSKfCDQqqw2GPqUldAIyb0qJKnMOPOhMcJYTKFwI4JFEK9jhgks5MiARV98jWoqRueY8%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/318856624677?_skw=aosu+SolarCam+T2+Ultra&hash=item4a3d55fa25%3Ag%3APvYAAeSwQR5qo%7EmW&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kryUkNR39sp781XzrhbfQnA0kkcETCWHyN63j8cZpq0H%2BShrcYLZ6TbTFEFnwAZhZ6po%2BNBRn5df73L5XSNUzUykQhA9jLMdWfhj%2BZnZGurdP6mtmBR7IAbt%2B0xU%2Bu1F7GmQXK8y%2BmmzDSfNTlRsg7wqiPLcU2iTLDRLEb4Scku4GqRi8VUYlL4HAZI9IV5qF4RsTb212J6hF1v3B5sswRY7NNlM6a%2FTgMWTuHHWZC8El8Am2KYbpKRfkgK2ZK%2BEO7o58TV3zv6eeWjg0ZMpUDwlDOjYmbGT5cbyN4fWApgxIPGSB5CN%2BfsmQyZFQ8h%2B4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|318856624677|0",
         "ebayTitel": "aosu T2 Ultra 4K Überwachungskamera Aussen Akku Solar 360° KI & PIR Radar",
@@ -5631,15 +5505,6 @@
         "link": "https://www.awin1.com/cread.php?awinmid=128145&awinaffid=3110253&ued=https%3A%2F%2Fde.aosulife.com%2Fproducts%2Findoorcam-p1%3Fvariant%3D43489256996963",
         "feed": "aosu",
         "feedId": "43489256996963"
-      },
-      {
-        "name": "eBay",
-        "price": "382,48 €",
-        "link": "https://www.ebay.de/itm/318856585850?_skw=aosu+IndoorCam+P1&hash=item4a3d55627a%3Ag%3AtfQAAeSwbHlqo%7EeZ&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lFC0%2Bb%2FUfe4%2FM1MeF8THfF6ym3A3L6R8VCeKEp1lYTb2LbQCtnR5ORA6xhZZK24eskXlnCFxnVjROHss5M3CAqi9E3VpWzc3CNfOsnsHcos%2FhdC96tKLyZ9b6vpFxGSa6kJpYLD2zuGXOVsSBB267TuXK7%2F9sWl5wNy71iJa%2FgGmYx6y942XTvtF3x9nI283zDeSl7KzKvdPYRMtsUBEQ6KVSDpzFRn9uWRumlpiR3cTrBcOqjmSgzmGEjzc6BLOHCPNCwIwTvgjQWbY8nSYS%2BK0j17PZWO0DGLaWgWQ7Dww%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|318856585850|0",
-        "ebayTitel": "aosu D1 2K Überwachungskamera Aussen Akku Solar aosuBase 32 GB Speicher",
-        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -5849,15 +5714,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0iAaASjS"
-      },
-      {
-        "name": "eBay",
-        "price": "75,86 €",
-        "link": "https://www.ebay.de/itm/336808233382?_skw=aosu+Video+Doorbell+SE&hash=item4e6b55c9a6%3Ag%3AHo8AAeSwRvdq0YUT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|336808233382|0",
-        "ebayTitel": "AOSU Smart Security Video Doorbell SE",
-        "ebayKat": "53146:Überwachungskameras,11897:Sicherheit & Gebäudeinstandhaltung,12576:Business & Industrie,53144:Alarmanlagen & -Zubehör,183868:Überwachung"
       }
     ]
   },
@@ -5937,15 +5793,6 @@
         "link": "https://www.awin1.com/cread.php?awinmid=128145&awinaffid=3110253&ued=https%3A%2F%2Fde.aosulife.com%2Fproducts%2Faosu-microsd-card%3Fvariant%3D43489265713251",
         "feed": "aosu",
         "feedId": "43489265713251"
-      },
-      {
-        "name": "eBay",
-        "price": "67,99 €",
-        "link": "https://www.ebay.de/itm/318937604650?_skw=aosu+microSD-Karte+128+GB&hash=item4a4229a22a%3Ag%3Ams0AAeSwG5NqvNz4&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kgTd%2FE1ZUnJ2dQ74syGxlAUBmhGiOg%2FcApqAL28xxO2se1rsBCO1zb8iIAd33ySKCqXu06vpYtW6bKjxPt87oVYZaTs%2F6vVUTWgZ4nDY%2B1NcmedVsRX%2BbD432CB2OituBF8qji0Vh55isMmZIJjmTmE9WdVu5ZvNOoOL2AMHXLhsz%2F6jiokdGcJF86x2YZYQxdtMefqIoaKzdVrmn8As6OPKnBwFmd337UKFWwkSCslC%2Bg%2F7wD%2BTpShAff%2B0XAbnbM1TyX3eyV2dXcabBRzFodLWAPBKvbqC1uznnoAXqmZMvwKD%2F8TePJ%2Fn%2Fw9jn%2BXrU%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|318937604650|0",
-        "ebayTitel": "WONGQOLITE 2er-Pack 128GB MicroSD Speicherkarte UHS-I A1 für Smartphone Kamera",
-        "ebayKat": "18871:Speicherkarten,625:Foto & Camcorder,15200:Kamera, Drohnen & Fotozubehör"
       }
     ]
   },
@@ -5966,7 +5813,7 @@
       {
         "name": "eBay",
         "price": "139,99 €",
-        "link": "https://www.ebay.de/itm/168770838784?_skw=aosu+microSD-Karte+256+GB&hash=item274b86a100%3Ag%3A75oAAeSwk7BqxdGS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lrmQ7kc%2B2gHLx3X5IeZoHCR7qFwvswOPAW7d3KLmF8X8YQaHlGUaA%2BnZkE8%2F3h40TtcPyd1eq3ROFTxTiGzS26ewl0Ds6PzlpMlXckdg0Rc%2BM95nvDLu2YbWdSKbzEb1z3PKE8%2Bwt6OqiMnl9UxXqSWOx8LNLQiHX9XgoEMXYE3ZbCKoC9qrP%2Fwtp4rrtUTrvaSVgsEM3awVmIEk9CZXw5Ik71p7KGDko0jXuPg97C42hgyfJQSL1B35M1PdLXuaQ5IG0MCrMp8aKtp0eEpO0qjSWPRV%2B34BY6EDtJhxJcMmZD6Ua7hVV6%2FCwilXDvt1Y%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/168770838784?_skw=aosu+microSD-Karte+256+GB&hash=item274b86a100%3Ag%3A75oAAeSwk7BqxdGS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lrmQ7kc%2B2gHLx3X5IeZoHCR7qFwvswOPAW7d3KLmF8X8YQaHlGUaA%2BnZkE8%2F3h40TtcPyd1eq3ROFTxTiGzS26ewl0Ds6PzlpMlXckdg0Rc%2BM95nvDLu2YbWdSKbzEb1xYtLCgOfQaX9wGQp3GMajHLpXnO34G5zXxGEnHuhKsPzWS7%2BcFBZnJ5u2%2BY8es9pozGmjHGrVFNiC%2FCktSX2Hm05L281JveIDFgwrstni46E8t8XQYv2WnTUJ9u8ezeJEdp1s5IgkD4ryq4GLNQHNeENUE6k4u1In3y21%2FQQ0vbRk1%2BIz5A1SK%2FV8k7cVSXik%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|168770838784|0",
         "ebayTitel": "MicroSD Karte 256GB UHS-I V30 Class 10 SDXC Speicherkarte für Drohne Kamera",
@@ -6025,12 +5872,12 @@
       },
       {
         "name": "eBay",
-        "price": "4,99 €",
-        "link": "https://www.ebay.de/itm/366728175709?_skw=Anthbot+M9&hash=item5562b3e05d%3Ag%3A01YAAeSwt-hqzGPS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "704,00 €",
+        "link": "https://www.ebay.de/itm/800532036942?_skw=Anthbot+M9&hash=itemba636d7d4e%3Ag%3AQtQAAeSwhVlqgrOC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|366728175709|0",
-        "ebayTitel": "2x Anthbot M9 (NUR Kameraschutz) Displayschutzfolie Transparent",
-        "ebayKat": "260922:Rasenmäher-Zubehör,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
+        "ebayItem": "v1|800532036942|0",
+        "ebayTitel": "ANTHBOT M9 Mähroboter ohne Begrenzungskabel, mit NRTK-Navigation&Dual-Kamera DHL",
+        "ebayKat": "260921:Rasenmäher,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
       }
     ]
   },
@@ -6267,12 +6114,12 @@
       },
       {
         "name": "eBay",
-        "price": "40,90 €",
-        "link": "https://www.ebay.de/itm/147625760876?_skw=TP-Link+Tapo+C320WS&hash=item225f2e586c%3Ag%3AbycAAeSwAUVqx5y9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "48,26 €",
+        "link": "https://www.ebay.de/itm/206531130323?_skw=TP-Link+Tapo+C320WS&hash=item301636f3d3%3Ag%3AdXgAAeSwaclqmBSy&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7leNskOL2PVg8VXHX0flHUU7lWFcmXuhJnh2T6x0p0DPlHhLKZ2sEVBVWUUp%2FR7IEa34nbUOYTXyb10XKOTuWWPlofmyz5wYy91VORhoBC%2FSBQ%2BAoTg3%2BkwuU9HDTkXUH%2BBvm5QsjvVm%2FZUyy3cB3bO2MuRjJJ9kkSJkfdhmLyZ4YfYjwbsLr%2FHC4ayF7FUx2VjXwzXX%2FV30vMFoL9erduZvIyxKhoGzLwJ3UY7jsLv0jmCtpFcy2pjp5c5vGO6pQabc2fY0gDwOBLQfcVu7UkceF1AbTIaYtJ5fL9fPhsL6A%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|147625760876|0",
-        "ebayTitel": "TP-Link Tapo C320WS Outdoor WLAN-Sicherheitskamera für den Außenbereich",
-        "ebayKat": "162:Sonstige,58058:Computer, Tablets & Netzwerk"
+        "ebayItem": "v1|206531130323|0",
+        "ebayTitel": "Tapo TP Link C320WS Überwachungskamera Außen WLAN IP Kamera 4MP Hochauflösung",
+        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -6313,12 +6160,12 @@
       },
       {
         "name": "eBay",
-        "price": "17,90 €",
-        "link": "https://www.ebay.de/itm/198517264136?_skw=TP-Link+Tapo+C200&hash=item2e388d0f08%3Ag%3AQv8AAeSw9KNqjFPg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "19,99 €",
+        "link": "https://www.ebay.de/itm/406265084688?_skw=TP-Link+Tapo+C200&hash=item5e97493b10%3Ag%3AXBYAAeSwdg9o4pCt&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|198517264136|0",
-        "ebayTitel": "TP-Link Tapo T300 Smart Sensor Wasserlecksensor, benötigt Tapo H100 oder H200",
-        "ebayKat": "185060:Smart-Steckdosen,3187:Heimwerker,185058:Smart-Steckdosen, -Wandschalter & -Zwischenstecker,259273:Steckdosen, Schalter & Zubehör,259482:Elektromaterial"
+        "ebayItem": "v1|406265084688|0",
+        "ebayTitel": "TP-Link Tapo C200C 1080P WLAN Überwachungskamera Innenbereich Bewegungssensor Na",
+        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -6379,15 +6226,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B01RaeDeF"
-      },
-      {
-        "name": "eBay",
-        "price": "605,99 €",
-        "link": "https://www.ebay.de/itm/267453061796?_skw=eufyCam+3+Set&hash=item3e4571daa4%3Ag%3Ag7AAAeSw76JpL-t1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|267453061796|0",
-        "ebayTitel": "EUFY eufyCam S330- 3er Set - Überwachungskamera - 4k",
-        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -6451,12 +6289,12 @@
       },
       {
         "name": "eBay",
-        "price": "64,99 €",
-        "link": "https://www.ebay.de/itm/366740071687?_skw=Reolink+Video+Doorbell+WiFi&hash=item5563696507%3Ag%3AjlcAAeSwQMlq00Ok&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "96,18 €",
+        "link": "https://www.ebay.de/itm/297732754162?_skw=Reolink+Video+Doorbell+WiFi&hash=item4552414af2%3Ag%3AKhkAAeSwjjFpCJNn&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kIITh60yG98AJH2WOG2d4HbN67ZoGKdbl0jNbmZOuzoOdhogPbZHacWH1rv6Isj3%2FhgXeV8JNUOO5vlrSR32bGMnSu5kwYLsr86p454XBL9t3o3LndYLx9F2l5hUnUD2jNZdw%2Bm7g7ZzaCBFfJpOD439sCXNaKKDVxEKdP5A%2FQVaB%2BSJfrC%2FRKwprXUskoOqYSMVQkuNwpiR7YLOOx%2BsNOdQNCAD5AqNA1iyq%2BgWbT0yhH0l0GO%2Bice4Hlv93zFPLi0eyCCVxqruO3kXrsqmy5XlOtM42NvGqBjh3F%2B0w3NR1JEJLp4DoPBju632VRaQk%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|366740071687|0",
-        "ebayTitel": "Reolink Video Doorbell WiFi mit Chime, 5MP, 2,4/5GHz WLAN, 180°, 2-Wege-Audio",
-        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
+        "ebayItem": "v1|297732754162|0",
+        "ebayTitel": "Reolink 5MP Video-Türklingel Doorbell - Kabelgebundene WiFi Kamera INKL. Chime",
+        "ebayKat": "185055:Smart-Türklingeln,3187:Heimwerker,41976:Türen & Türbeschläge,180167:Fenster, Türen & Treppen,257925:Smart-Türklingeln & -Türschlösser"
       }
     ]
   },
@@ -6497,12 +6335,12 @@
       },
       {
         "name": "eBay",
-        "price": "36,19 €",
-        "link": "https://www.ebay.de/itm/257778041641?_skw=Reolink+Solarpanel+2&hash=item3c04c4c329%3Ag%3AWZ0AAeSwvmlqv5mx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "28,95 €",
+        "link": "https://www.ebay.de/itm/128106305104?_skw=Reolink+Solarpanel+2&hash=item1dd3bb1650%3Ag%3AKDkAAeSwts9qvLA%7E&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m2kgUoUaxrFsrTLJW5razeL8KR2TYqxSlrkZKi%2Bw4ODyUSFxgGBuQTbPLdA760ha7yI2%2BhJP5xCrLEYV0BJAaCLbbc0Zx5lAxUyZeetjLEKioFHVC%2BFJ5%2F7%2B7sHJKwp%2BPCLNZZ3Qwlm6yWsKWYwWHNMBsxiaPo0hTHtIQD%2B8iZvq4xo9O86HIPN2M8%2Bba%2B1g6KW5WQbzSgdw3cEIXde%2Fc5i0HT4Q55uY23dwWgi3yblmxbOoCH4PHCYMEvLJ4WjtsTaUBYiN2ZLObOlFhdiyrZpw2PX0BrDSWBTeBfAMYtGg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|257778041641|0",
-        "ebayTitel": "Reolink Solar Panel 2 6W Solarpanel USB-C Outdoor wetterfest Schnellladung",
-        "ebayKat": "175725:Sonstige,3187:Heimwerker,48633:Überwachungstechnik,185048:Überwachungstechnik-Teile & -Zubehör"
+        "ebayItem": "v1|128106305104|0",
+        "ebayTitel": "Reolink Solar Panel 6V 3,2W – Neu / unbenutzt mit Kratzern _0,6_5",
+        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -6543,11 +6381,11 @@
       },
       {
         "name": "eBay",
-        "price": "79,90 €",
-        "link": "https://www.ebay.de/itm/267649631779?_skw=Worx+Landroid+Vision&hash=item3e51294623%3Ag%3A3fsAAeSwPZBp661W&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "81,30 €",
+        "link": "https://www.ebay.de/itm/236894391667?_skw=Worx+Landroid+Vision&hash=item3728018d73%3Ag%3AKEUAAeSwFatqOsdV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|267649631779|0",
-        "ebayTitel": "WORX Landroid Vision Cloud Rasenmähroboter WR303E Original Kamera mit Gehäuse",
+        "ebayItem": "v1|236894391667|0",
+        "ebayTitel": "WORX Landroid original Rad Vorderrad für S / M / L und Vision Cloud",
         "ebayKat": "260921:Rasenmäher,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
       }
     ]
@@ -6566,12 +6404,12 @@
       },
       {
         "name": "eBay",
-        "price": "21,74 €",
-        "link": "https://www.ebay.de/itm/287164779447?_skw=Segway+Navimow+i105E&hash=item42dc5acbb7%3Ag%3ArkUAAeSwA8xqvP-P&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "967,26 €",
+        "link": "https://www.ebay.de/itm/358341669394?_skw=Segway+Navimow+i105E&hash=item536ed3f212%3Ag%3ANZwAAeSw-RRpuS8l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287164779447|0",
-        "ebayTitel": "Segway Navimow i105 | i105E Klingen - Messer Edelstahl",
-        "ebayKat": "260922:Rasenmäher-Zubehör,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
+        "ebayItem": "v1|358341669394|0",
+        "ebayTitel": "Segway Navimow » i105e « Mähroboter bis 500 m², Visual SLAM Kamera",
+        "ebayKat": "260921:Rasenmäher,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
       }
     ]
   },
@@ -6589,12 +6427,12 @@
       },
       {
         "name": "eBay",
-        "price": "26,99 €",
-        "link": "https://www.ebay.de/itm/167548931778?_skw=Gardena+Sileno+City&hash=item2702b1cec2%3Ag%3AhbgAAeSwUutq1Y7y&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "318,99 €",
+        "link": "https://www.ebay.de/itm/257798433107?_skw=Gardena+Sileno+City&hash=item3c05fbe953%3Ag%3AbpEAAeSwF3dqz32F&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|167548931778|0",
-        "ebayTitel": "Akku für Gardena Sileno City 250 Sileno - R100LiC 3Ah 18,5V",
-        "ebayKat": "260923:Rasenmäher-Ersatzteile,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
+        "ebayItem": "v1|257798433107|0",
+        "ebayTitel": "gardena mähroboter smart sileno city",
+        "ebayKat": "260921:Rasenmäher,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
       }
     ]
   },
@@ -6612,11 +6450,11 @@
       },
       {
         "name": "eBay",
-        "price": "449,98 €",
-        "link": "https://www.ebay.de/itm/178524102325?_skw=Dreame+A1&hash=item2990dd9eb5%3Ag%3AL04AAeSwcdFqtNai&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "749,99 €",
+        "link": "https://www.ebay.de/itm/137595977961?_skw=Dreame+A1&hash=item20095c00e9%3Ag%3A5XMAAeSw9XJqkSl4&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|178524102325|0",
-        "ebayTitel": "DREAME Intelligenter Mähroboter A1 (MLLA7110), I40997",
+        "ebayItem": "v1|137595977961|0",
+        "ebayTitel": "Dreame Roboticmower A1 - Kabelloser Mähroboter, bis 2000 m², MLLA7110",
         "ebayKat": "260921:Rasenmäher,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
       }
     ]
@@ -6635,12 +6473,12 @@
       },
       {
         "name": "eBay",
-        "price": "36,76 €",
-        "link": "https://www.ebay.de/itm/287298532566?_skw=Mammotion+Yuka&hash=item42e453b4d6%3Ag%3AUBgAAeSwQdhp8FF9&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m42Bu0DqzygmP5QbWYEJ1fglSr45OOYk9bejFP%2FPZ6JvDtU%2Fu6O37xOeo%2Bnt5JpLVhuE5bSCLOhj%2Bd%2FFjHdYYgFx%2FT8QRIYeNMDbo4l%2FACnqc5JdAiuFVrL72mX8CZqy5o9rUxhwXmDvj2bnafLR7fdPSW9WjspeEFsQqgk2qTzbXu3GCHuKUuiBCeefwSdsOdIdgspaEuiZQry%2BHTjAWpn2SXkNMvLzkexIJa8IuFlqW7hvTqhywnNeyzWJpJeeyeZKJFEpaEIzUoBbMf9IsmieKcywK8T1HSeTXW681mBA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "34,43 €",
+        "link": "https://www.ebay.de/itm/236147159796?_skw=Mammotion+Yuka&hash=item36fb77b2f4%3Ag%3A7AcAAeSwkp9phJNc&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nxepGBhuCOVNtfNWbXdjhmrv%2FRjt%2BOat4QwWVzDN7M2wM6KkDQtRVrwJ7aJiabAxeG66QKwdMZQL8QfEkhUzCd6D%2B6nPt6Pcs%2FVf%2F4fOi46tet3t2J3BwW43QsyosDiIe%2FXAbT4%2BUuh%2F5JJKJz5vvfw6xeY9eGOqQ8x2BtbwqffbwQRrRtuTnAa%2BPJVUPfnb2TUNday3VDcH%2FjQMGQpxRlYVfQRK8pXX2ZE262a1m3sfyxznmTAZScAHY1ETI%2BGfUqwreF7SmpR0VfzW30OoosghYKfjdKeYZGLFK%2BmkcQcQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287298532566|0",
-        "ebayTitel": "Messerscheibe 6 Klingen ASA für Mammotion YUKA Mähscheibe Metallgewinde- UV fest",
-        "ebayKat": "260922:Rasenmäher-Zubehör,43560:Rasenmäher, Ersatzteile & Zubehör,159912:Garten & Terrasse"
+        "ebayItem": "v1|236147159796|536695289825",
+        "ebayTitel": "Titan Ersatzmesser für MAMMOTION LUBA YUKA Mähroboter",
+        "ebayKat": "260921:Tosaerba,43560:Tosaerba, accessori e ricambi,159912:Giardino e arredamento esterni"
       }
     ]
   },
@@ -6724,7 +6562,7 @@
       {
         "name": "eBay",
         "price": "359,98 €",
-        "link": "https://www.ebay.de/itm/278416889625?_skw=Bomann+GS+7364&hash=item40d2f09719%3Ag%3A9tgAAeSwaulq1brB&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7l1FZ%2F1gcu8t%2B97%2FQrjoB3i4u9s58KgxJnZW6SxUNrxAt%2F1jSGgniBYLF6pYUPAxpdlflIYdBtKrzFoSMN80NyXtrpnADMVFG4%2BATv3w%2B06r5vJLVabkEznp7IGk5kiPYdD6weCLRyNk1zroJvWSo6FB7ApCenDkNegyMuebpxauHx7sJC1pSRD%2Bk5fiFj2gb4b9IiCxaXIGQqxEffGxH9yF9JAAXumgB8ykgE8flMMd7xMzNydBEUM5qKFeylJe%2F4zxMMVT9uoc5fItpfwD87tGB6D8x4ex253djIGq1b1EQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/278416889625?_skw=Bomann+GS+7364&hash=item40d2f09719%3Ag%3A9tgAAeSwaulq1brB&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7l1FZ%2F1gcu8t%2B97%2FQrjoB3i4u9s58KgxJnZW6SxUNrxAt%2F1jSGgniBYLF6pYUPAxpdlflIYdBtKrzFoSMN80NyXtrpnADMVFG4%2BATv3w%2B06r5vJLVabkEznp7IGk5kiPYcyB3yDjm3pAu9tFlRON24D5hycN92L6FNeFDCNe5w4qWrIgS8cQ77SDe5MXJk2STvloHSwXQ00kUiGe6Y66U7eXm1Onm0SO9Tip6JO30vvwlB%2Fpc3IlNRs6wzvdNJKseTwe0yX3HgIWUu1OnI28dbJ6Y2qZVJTTpOlCH5%2Bv4kjbQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|278416889625|0",
         "ebayTitel": "BOMANN Gefrierschrank GS 7364 - weiß - D",
@@ -7049,15 +6887,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0dKBL7jL"
-      },
-      {
-        "name": "eBay",
-        "price": "22,15 €",
-        "link": "https://www.ebay.de/itm/187752623234?_skw=Severin+TO+2058+Minibackofen&hash=item2bb6edac82%3Ag%3AKpwAAeSwmGNpedOM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|187752623234|0",
-        "ebayTitel": "Severin 5504048 Grillrost TO2058 Minibackofen",
-        "ebayKat": "260136:Backofen- & Herdzubehör,20710:Haushaltsgeräte,43563:Backöfen & Herde"
       }
     ]
   },
@@ -7076,7 +6905,7 @@
       {
         "name": "eBay",
         "price": "513,38 €",
-        "link": "https://www.ebay.de/itm/236814267142?_skw=Bosch+Serie+6+PIF645HB1E&hash=item37233af306%3Ag%3AGH4AAeSwRdNq1hza&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/236814267142?_skw=Bosch+Serie+6+PIF645HB1E&hash=item37233af306%3Ag%3AC5UAAeSwjC1q1k-t&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|236814267142|0",
         "ebayTitel": "Bosch PIF645HB1E Serie 6 Autarkes Induktionskochfeld, 60 cm breit, mit Rahmen au",
@@ -7483,15 +7312,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B01GBmx3t"
-      },
-      {
-        "name": "eBay",
-        "price": "37,90 €",
-        "link": "https://www.ebay.de/itm/147609547928?_skw=Imou+Cell+3C+mit+Solarpanel&hash=item225e36f498%3Ag%3A0iQAAeSw9x1qvMP7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|147609547928|0",
-        "ebayTitel": "Imou Cell 3C All in one 3MP Überwachungskamera mit Solarpanel WLAN Kamera weiß",
-        "ebayKat": "185053:WLAN- & Smart-Überwachungssysteme,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -7685,12 +7505,12 @@
       },
       {
         "name": "eBay",
-        "price": "64,90 €",
-        "link": "https://www.ebay.de/itm/267766568829?_skw=Imou+Cruiser+2+%282+Kameras%2C+5MP%29&hash=item3e5821977d%3Ag%3A-LEAAeSwPXdqjUGe&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "83,67 €",
+        "link": "https://www.ebay.de/itm/407089196819?_skw=Imou+Cruiser+2+%282+Kameras%2C+5MP%29&hash=item5ec8682f13%3Ag%3A-7MAAeSwEU1qhbd3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|267766568829|0",
-        "ebayTitel": "Imou Cruiser 2C 3K 5MP Überwachungskamera Smart Home Outdoor WLAN Kamera weiß",
-        "ebayKat": "185053:WLAN- & Smart-Überwachungssysteme,3187:Heimwerker,48633:Überwachungstechnik"
+        "ebayItem": "v1|407089196819|0",
+        "ebayTitel": "Imou Cruiser 2 5MP WLAN-Überwachungskamera",
+        "ebayKat": "48638:Überwachungskameras,3187:Heimwerker,48633:Überwachungstechnik"
       }
     ]
   },
@@ -7800,15 +7620,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0cpj3j9w"
-      },
-      {
-        "name": "eBay",
-        "price": "289,99 €",
-        "link": "https://www.ebay.de/itm/318888097402?_skw=Imou+VDP7+Video-T%C3%BCrsprechanlage&hash=item4a3f36367a%3Ag%3AdtIAAeSwn35qrZ-L&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kssrkwMV0oWHw4qtp1C0BApmVoptCG8D2r6XTb8NbxCo3Z3RnlHiK3Qmsuu39k8CNz%2FrimjGYh5GZwGr1OV5XJkWmvACJ63XmOJheZNTMKsqnocUHd7dYzjO6ZCCcdxHezAnwe4djUTiBEsM8PmoskVIOyRH%2BPIKEwjfL%2FH2QGRwAMHRGCUqlvBZtwbPmH6RRwURQqJP3DrKGgJAVPI2oQ5g%2F3UZ%2BNMNRTcqaTXhk5xCDTpMJqWDisnxZsjEHfGFKZfsP1MQddzVquNb6lt4Sw3Lme%2FmXuru9wPQvL9oyUEATHD5JLGg6wxRfBD5d40EQ%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|318888097402|0",
-        "ebayTitel": "Video-Türsprechanlage 2x 7 Zoll Monitor 1080P Zwei-Draht  RFID & WLAN APP",
-        "ebayKat": "115975:Türklingelanlagen,3187:Heimwerker,41976:Türen & Türbeschläge,180167:Fenster, Türen & Treppen"
       }
     ]
   },
@@ -7860,6 +7671,15 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0fEZi1Tv"
+      },
+      {
+        "name": "eBay",
+        "price": "73,99 €",
+        "link": "https://www.ebay.de/itm/237127508576?_skw=Imou+microSD-Karte+64+GB&hash=item3735e6a260%3Ag%3AQJUAAeSwdrxq0nPO&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mjo5ihBRcEZdpq8%2BnCNB6ZoSihrXlDsVbh9m54QnrVJ3F1XmS908%2FA5lGMqSGSnQ6CHoohCTs%2Fg8E3Bp%2FUB%2BMfDpwKOWyBJpxxa%2FDZHBZnBrRqAcC3YvRVbmJndlysvJZ2nVaIah9HtVS11zYh5VFvgVtnKtSURhA30lf5lgDPDP55rPJ7XHFRlbNrg6GtjsXqRtuhqRWX5HXRY5zErWOqhwU%2FsC8l5OQ2EyajbqmTrne6kzdaJyI4jrFbBn%2BbY%2F%2B--Snbf9ygs6XG3jrSLsoOVQQT5K8tFqHR55c%2FMhWL8kMuNRDzJg%2FZAs08NCzRZ2g%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "feed": "ebay",
+        "ebayItem": "v1|237127508576|0",
+        "ebayTitel": "64GB MicroSD Speicherkarte 5er Set mit Adapter, Klasse 10, 80 MB s für Kamera",
+        "ebayKat": "18871:Speicherkarten,625:Foto & Camcorder,15200:Kamera, Drohnen & Fotozubehör"
       }
     ]
   },
