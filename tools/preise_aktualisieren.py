@@ -99,12 +99,29 @@ def main():
                 preis = preis_format(
                     zeile.get("sale_price") or zeile.get("price") or zeile.get("search_price", "")
                 )
+                # Streichpreis des Shops: Google-Format "price" (wenn "sale_price" gesetzt),
+                # klassisches Format "product_price_old" bzw. "rrp_price" (UVP)
+                if zeile.get("sale_price"):
+                    statt, statt_art = preis_format(zeile.get("price", "")), "shop"
+                elif preis_format(zeile.get("product_price_old", "")):
+                    statt, statt_art = preis_format(zeile.get("product_price_old", "")), "shop"
+                else:
+                    statt, statt_art = preis_format(zeile.get("rrp_price", "")), "uvp"
+                if not verfuegbar or not statt or (preis_zahl(statt) or 0) <= (preis_zahl(preis) or 0):
+                    statt, statt_art = "", ""
                 neu = {
                     "price": preis if verfuegbar else "",
                     "link": zeile.get("aw_deep_link") or shop.get("link", ""),
+                    "statt": statt,
+                    "stattArt": statt_art,
                 }
                 for feld, wert in neu.items():
                     if feld == "link" and not wert:
+                        continue
+                    if feld in ("statt", "stattArt") and not wert:
+                        if feld in shop:
+                            del shop[feld]
+                            geaendert += 1
                         continue
                     if shop.get(feld) != wert:
                         print(f"  {produkt['name']}: {feld} {shop.get(feld)!r} → {wert!r}")
@@ -194,10 +211,33 @@ def historie_und_deals(produkte):
             })
 
     deals.sort(key=lambda d: -d["rabatt"])
+
+    # Angebote der Shops: aktueller Preis liegt unter dem Streichpreis bzw. der UVP aus dem Feed
+    angebote = []
+    schon_deal = {(d["id"], d["shop"]) for d in deals}
+    for produkt in produkte:
+        for shop in produkt.get("shops", []):
+            if not shop.get("statt") or (produkt["id"], shop["name"]) in schon_deal:
+                continue
+            preis, statt = preis_zahl(shop.get("price", "")), preis_zahl(shop["statt"])
+            if not preis or not statt or preis >= statt:
+                continue
+            rabatt = round((1 - preis / statt) * 100)
+            if rabatt < MIN_RABATT:
+                continue
+            angebote.append({
+                "id": produkt["id"],
+                "shop": shop["name"],
+                "preis": shop["price"],
+                "statt": shop["statt"],
+                "art": shop.get("stattArt", "shop"),
+                "rabatt": rabatt,
+            })
+    angebote.sort(key=lambda d: -d["rabatt"])
     with open(HISTORIE, "w", encoding="utf-8") as datei:
         datei.write(json.dumps(historie, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
     with open(DEALS, "w", encoding="utf-8") as datei:
-        datei.write(json.dumps({"stand": heute_text, "deals": deals}, ensure_ascii=False, indent=2) + "\n")
+        datei.write(json.dumps({"stand": heute_text, "deals": deals, "angebote": angebote}, ensure_ascii=False, indent=2) + "\n")
     print(f"Preisverlauf: {len(historie)} Einträge, {len(deals)} automatische Deals")
 
 

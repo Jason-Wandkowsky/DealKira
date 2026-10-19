@@ -63,6 +63,7 @@
 
   <link rel="stylesheet" href="basis.css?v=20261018b">
 <script src="basis.js?v=20261018b"></script>
+<script src="deals-dynamisch.js?v=20261019"></script>
 
 
 <style>
@@ -529,6 +530,15 @@
       }
 
     }
+    .home-deal-preis { margin: 4px 0 10px; font-size: 15px; color: #bbb; }
+    .home-deal-preis s { color: #888; margin-right: 6px; }
+    .home-deal-preis strong { color: #fff; font-size: 18px; }
+    .home-deal-badge {
+      position: absolute; top: 10px; left: 10px; z-index: 2;
+      background: #e53935; color: #fff; font-weight: 700; font-size: 13px;
+      padding: 4px 8px; border-radius: 8px;
+    }
+
   </style>
 </head>
 
@@ -580,15 +590,14 @@
 
     <!-- =========================
          AKTUELLE DEALS
-         Die ersten Deals werden automatisch
-         aus deals.html übernommen – neue Deals
-         also nur dort eintragen.
+         Kommen automatisch aus deals-auto.json
+         (Preis-Bot) und manuelle-deals.json.
     ========================= -->
 
     <section class="section">
 
       <div class="section-head">
-        <h2>🔥 Aktuelle <span>Deals</span></h2>
+        <h2 id="homeDealsTitel">🔥 Aktuelle <span>Deals</span></h2>
         <a href="deals.html" class="section-link">Alle Deals →</a>
       </div>
 
@@ -752,136 +761,83 @@
 
     /* =========================
        DEAL-VORSCHAU
-       Holt die ersten Deals aus deals.html,
-       damit es nur eine Stelle zum Pflegen gibt.
+       Zeigt die ersten echten Deals (deals-dynamisch.js).
+       Gibt es gerade keine, werden Produkte mit
+       aktuellem Preis als "Beliebte Produkte" gezeigt.
     ========================= */
 
     const HOME_DEAL_ANZAHL = 6;
 
-    const KATEGORIE_ICONS = {
-      "Gaming": "🎮",
-      "Computer": "💻",
-      "Elektronik": "📺",
-      "Zubehör": "🔌",
-      "Smartphones": "📱"
-    };
+    function createHomeDeal(p, info) {
 
-    function createHomeDeal(card) {
+      const article = document.createElement("article");
+      article.className = "home-deal";
+      article.style.position = "relative";
 
-      const name =
-        card.dataset.productName || "Produkt";
+      if (info.badge) {
+        const badge = document.createElement("div");
+        badge.className = "home-deal-badge";
+        badge.textContent = info.badge;
+        article.appendChild(badge);
+      }
 
-      const image =
-        card.dataset.productImage || "";
-
-      const link =
-        card.dataset.productLink || "deals.html";
-
-      const category =
-        card.dataset.productCategory || "";
-
-      const article =
-        document.createElement("article");
-
-      article.className =
-        "home-deal";
-
-      const imageBox =
-        document.createElement("div");
-
-      imageBox.className =
-        "home-deal-image";
+      const imageBox = document.createElement("div");
+      imageBox.className = "home-deal-image";
 
       function showNoImage() {
-
-        imageBox.replaceChildren(
-          dkPlatzhalter({
-            name: name,
-            kategorie: card.dataset.productKat || ""
-          })
-        );
-
+        imageBox.replaceChildren(dkPlatzhalter(p));
       }
 
-      if (image) {
-
-        const img =
-          document.createElement("img");
-
-        img.src = image;
-        img.alt = name;
+      if (p.image) {
+        const img = document.createElement("img");
+        img.src = p.image;
+        img.alt = p.name;
         img.loading = "lazy";
         img.onerror = showNoImage;
-
         imageBox.appendChild(img);
-
       } else {
-
         showNoImage();
-
       }
 
-      const body =
-        document.createElement("div");
+      const body = document.createElement("div");
+      body.className = "home-deal-body";
 
-      body.className =
-        "home-deal-body";
-
-      if (category) {
-
-        const cat =
-          document.createElement("div");
-
-        cat.className =
-          "home-deal-category";
-
-        cat.textContent =
-          category;
-
+      if (info.shop) {
+        const cat = document.createElement("div");
+        cat.className = "home-deal-category";
+        cat.textContent = "bei " + info.shop;
         body.appendChild(cat);
-
       }
 
-      const title =
-        document.createElement("h3");
-
-      title.textContent =
-        name;
-
+      const title = document.createElement("h3");
+      title.textContent = p.name;
       body.appendChild(title);
 
-      const button =
-        document.createElement("a");
+      if (info.preis) {
+        const preis = document.createElement("div");
+        preis.className = "home-deal-preis";
+        if (info.vorher) {
+          const s = document.createElement("s");
+          s.textContent = info.vorher;
+          preis.appendChild(s);
+        }
+        const strong = document.createElement("strong");
+        strong.textContent = info.preis;
+        preis.appendChild(strong);
+        body.appendChild(preis);
+      }
 
-      button.className =
-        "home-deal-button";
-
-      button.href =
-        link;
-
-      button.target =
-        "_blank";
-
-      button.rel =
-        "nofollow sponsored noopener noreferrer";
-
-      button.innerHTML =
-        'Zum Deal<span class="ad-mark">*</span>';
-
+      const button = document.createElement("a");
+      button.className = "home-deal-button";
+      button.href = "artikel.html?id=" + encodeURIComponent(p.id);
+      button.textContent = info.badge ? "Zum Deal" : "Preise ansehen";
       body.appendChild(button);
 
       article.appendChild(imageBox);
       article.appendChild(body);
 
-      if (window.dkFavButton && card.dataset.productId) {
-        article.appendChild(dkFavButton({
-          id: card.dataset.productId,
-          name: name,
-          image: image,
-          price: card.dataset.productPrice || "",
-          shop: card.dataset.productShop || "",
-          link: link
-        }));
+      if (window.dkFavButton) {
+        article.appendChild(dkFavButton(dkFavInfo(p)));
       }
 
       return article;
@@ -890,36 +846,36 @@
 
     async function loadHomeDeals() {
 
-      const container =
-        document.getElementById("homeDeals");
+      const container = document.getElementById("homeDeals");
 
       try {
 
-        const response =
-          await fetch("deals.html");
+        let eintraege = ((await dkDealsLaden()) || [])
+          .slice(0, HOME_DEAL_ANZAHL)
+          .map(function(d) { return createHomeDeal(d.p, d.info); });
 
-        if (!response.ok) {
-          throw new Error("deals.html konnte nicht geladen werden.");
+        if (!eintraege.length) {
+          // Noch keine Deals: Produkte mit Bild und aktuellem Preis zeigen
+          const antwort = await fetch("produkte.json");
+          const produkte = antwort.ok ? await antwort.json() : [];
+          eintraege = produkte
+            .filter(function(p) {
+              return p.image && (p.shops || []).some(function(s) { return s.price; });
+            })
+            .sort(function() { return Math.random() - 0.5; })
+            .slice(0, HOME_DEAL_ANZAHL)
+            .map(function(p) {
+              const shop = p.shops.find(function(s) { return s.price; });
+              return createHomeDeal(p, { preis: shop.price, shop: shop.name });
+            });
+          document.getElementById("homeDealsTitel").innerHTML = "⭐ Beliebte <span>Produkte</span>";
         }
 
-        const html =
-          await response.text();
-
-        const doc =
-          new DOMParser().parseFromString(html, "text/html");
-
-        const cards =
-          Array.from(
-            doc.querySelectorAll(".deal-card[data-product-link]")
-          ).slice(0, HOME_DEAL_ANZAHL);
-
-        if (!cards.length) {
+        if (!eintraege.length) {
           throw new Error("Keine Deals gefunden.");
         }
 
-        container.replaceChildren(
-          ...cards.map(createHomeDeal)
-        );
+        container.replaceChildren(...eintraege);
 
       }
 
