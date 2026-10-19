@@ -17,10 +17,11 @@ jobs:
   preise:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Preise aus den Awin-Feeds und von eBay holen
         env:
+          PYTHONDONTWRITEBYTECODE: "1"
           AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
           AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
           AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
@@ -30,13 +31,14 @@ jobs:
 
       - name: Änderungen speichern
         run: |
-          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json"
+          if [ -z "$(git status --porcelain -- $DATEIEN)" ]; then
             echo "Keine Preisänderungen."
             exit 0
           fi
           git config user.name "DealKira Preis-Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add produkte.json telefone.json tablets.json preise-historie.json deals-auto.json
+          git add $DATEIEN
           git commit -m "Preise automatisch aktualisiert"
           git pull --rebase -q
           git push
