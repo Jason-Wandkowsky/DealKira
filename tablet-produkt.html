@@ -597,6 +597,29 @@
       (product.name || "Produkt") +
       " – DealKira";
 
+    /* Für Google: Beschreibung + eindeutige Adresse der Produktseite */
+    (function() {
+      const mitPreis = (product.shops || []).filter(function(s) { return s.price; });
+      const preise = mitPreis
+        .map(function(s) { return parseFloat(s.price.replace(/[^0-9,]/g, "").replace(",", ".")); })
+        .filter(function(z) { return !isNaN(z); });
+      const shops = Array.from(new Set(mitPreis.map(function(s) { return s.name; })));
+      const text = (product.name || "Produkt") + " – Preise vergleichen" +
+        (preise.length ? ": ab " + Math.min.apply(null, preise).toFixed(2).replace(".", ",") + " €" : "") +
+        (shops.length ? " bei " + shops.join(", ") : "") + ". Aktuelle Preise und Angebote bei DealKira.";
+      function setzen(selektor, erstellen, attr, wert) {
+        let el = document.head.querySelector(selektor);
+        if (!el) { el = erstellen(); document.head.appendChild(el); }
+        el.setAttribute(attr, wert);
+      }
+      setzen('meta[name="description"]', function() {
+        const m = document.createElement("meta"); m.name = "description"; return m;
+      }, "content", text);
+      setzen('link[rel="canonical"]', function() {
+        const l = document.createElement("link"); l.rel = "canonical"; return l;
+      }, "href", "https://dealkira.com/tablet-produkt.html?id=" + encodeURIComponent(product.id));
+    })();
+
     container.innerHTML = `
 
       <div class="product-detail">

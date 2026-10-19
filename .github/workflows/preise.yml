@@ -27,11 +27,13 @@ jobs:
           AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
-        run: python3 tools/preise_aktualisieren.py
+        run: |
+          python3 tools/preise_aktualisieren.py
+          python3 tools/sitemap.py
 
       - name: Änderungen speichern
         run: |
-          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json"
+          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json sitemap.xml"
           if [ -z "$(git status --porcelain -- $DATEIEN)" ]; then
             echo "Keine Preisänderungen."
             exit 0
