@@ -88,14 +88,21 @@ ZUBEHOER = {
     "defekt", "attrappe", "dummy", "halterung", "aufkleber", "skin", "sticker",
     "gebraucht", "refurbished", "generalüberholt", "bware",
     "leerkarton", "kaputt", "bastler", "ghosting", "reparatur", "repair", "mod",
+    "mikrofonarm", "popschutz", "ständer", "staender",
 }
 # "Hülle FÜR iPhone 17": steht so ein Wort VOR der Modellnummer, ist es Zubehör.
 # ("Mähroboter M5 für 500 m²" ist dagegen in Ordnung.)
 PASSEND_FUER = {"für", "fuer", "for", "kompatibel", "compatible", "passend"}
-EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "m", "zoll", "l", "v", "a", "kg", "k"}
+EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "m", "zoll", "l", "v", "a", "kg"}
 SPEICHER = {"g", "gb", "tb"}
 # Einheiten, die direkt hinter einer Zahl stehen dürfen (ohne a/m/v/l: das sind oft Modell-Zusätze)
 MASS_EINHEITEN = {"g", "gb", "tb", "w", "mah", "hz", "mm", "cm", "kg"}
+OHNE_PFLICHT = {
+    "apple", "samsung", "google", "xiaomi", "geforce", "radeon", "nvidia", "intel",
+    "galaxy", "iphone", "generation", "kabel", "kameras", "karte", "speicherkarte",
+    "schnellladegerät", "ladegerät", "netzteil", "powerbank", "power", "bank", "drive",
+    "solarpanel", "microsdxc", "microsd", "extreme", "portable", "mobile", "solarcam",
+}
 FUELLWOERTER = {"und", "mit", "der", "die", "das", "von", "in", "the", "and", "with", "-", "/"}
 
 
@@ -168,8 +175,9 @@ def passt(name, titel):
         # Kurzes Modell-Kürzel vor der Zahl muss im Titel direkt davor stehen
         # (Flip 6 ≠ Flip 3, Pad 8 ≠ Pad 7, S 25 …)
         danach = name_w[i + 1] if i + 1 < len(name_w) else ""
+        davor2 = name_w[i - 2] if i >= 2 else ""
         if davor.isalpha() and len(davor) <= 4 and davor not in FUELLWOERTER \
-                and davor not in EINHEITEN and danach not in EINHEITEN:
+                and davor not in EINHEITEN and danach not in EINHEITEN and not davor2.isdigit():
             paare = {(titel_liste[j - 1], titel_liste[j]) for j in range(1, len(titel_liste))}
             if (davor, wort) not in paare:
                 return False
@@ -184,10 +192,21 @@ def passt(name, titel):
             if zusatz not in nach_name:
                 return False
 
-    if zahlen:
-        erste_zahl = min(titel_liste.index(z) for z in zahlen)
-        if any(w in PASSEND_FUER and w not in name_set for w in titel_liste[:erste_zahl]):
+    # "Hülle FÜR iPhone 17", "Adapter für DJI Mic Mini": steht so ein Wort vor dem
+    # Produkt (erste Modellzahl bzw. erstes Wort des Namens), ist es Zubehör.
+    positionen = [titel_liste.index(z) for z in zahlen if z in titel_liste]
+    if not positionen:
+        positionen = [titel_liste.index(w) for w in name_w if w in titel_liste]
+    if positionen:
+        if any(w in PASSEND_FUER and w not in name_set for w in titel_liste[:min(positionen)]):
             return False
+
+    # Längere Modellwörter müssen alle im Titel stehen (Straight Power ≠ Dark Power).
+    # Ausgenommen: Herstellernamen, Allerweltswörter und Zusätze in Klammern.
+    kern = woerter(re.sub(r"\(.*?\)", " ", name))
+    if any(len(w) >= 5 and w.isalpha() and w not in titel_w and w not in OHNE_PFLICHT
+           for w in kern[1:]):
+        return False
 
     rest = [w for w in name_w if not w.isdigit() and w not in FUELLWOERTER and len(w) > 1]
     if rest:
