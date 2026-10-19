@@ -114,12 +114,23 @@ def woerter(text):
     return [w for w in text.split() if w]
 
 
+def ohne_zusatz(name):
+    """Händler-Zusätze in Klammern weglassen ("RTX 5070 (Prime OC)" → "RTX 5070"),
+    Modellangaben wie "Phone (3a)" oder "(2×32)" aber behalten."""
+    def ersetzen(treffer):
+        inhalt = treffer.group(1).strip()
+        return " " + inhalt + " " if " " not in inhalt and re.search(r"\d", inhalt) else " "
+    return re.sub(r"\(([^)]*)\)", ersetzen, name)
+
+
 def passt(name, titel):
     """Prüft, ob ein eBay-Titel wirklich zum Produktnamen gehört."""
+    voller_name = woerter(name)          # Klammer-Zusätze dürfen im Titel stehen …
+    name = ohne_zusatz(name)             # … müssen es aber nicht
     name_w = woerter(name)
     titel_liste = woerter(titel)
     titel_w = set(titel_liste)
-    name_set = set(name_w)
+    name_set = set(name_w) | set(voller_name)
 
     for wort in titel_w:
         if wort in ZUBEHOER and wort not in name_set:
