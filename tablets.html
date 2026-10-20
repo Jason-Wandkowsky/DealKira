@@ -11,8 +11,8 @@
     content="Tablets vergleichen und bessere Deals finden – Samsung, Apple, Lenovo, Xiaomi, Huawei, OnePlus, Microsoft Surface, HONOR und Amazon Fire."
   >
 
-  <link rel="stylesheet" href="basis.css?v=20261018b">
-<script src="basis.js?v=20261018b"></script>
+  <link rel="stylesheet" href="basis.css?v=20261020">
+<script src="basis.js?v=20261020"></script>
 
 <style>
 
@@ -929,6 +929,10 @@
           }
         );
 
+      }
+
+      if (window.dkPreisElement) {
+        content.appendChild(dkPreisElement(product));
       }
 
       content.appendChild(

@@ -6,8 +6,8 @@
 
   <title>Telefone – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css?v=20261018b">
-<script src="basis.js?v=20261018b"></script>
+  <link rel="stylesheet" href="basis.css?v=20261020">
+<script src="basis.js?v=20261020"></script>
 
 <style>
 
@@ -961,6 +961,10 @@
       content.appendChild(
         title
       );
+
+      if (window.dkPreisElement) {
+        content.appendChild(dkPreisElement(product));
+      }
 
       content.appendChild(
         dealButton

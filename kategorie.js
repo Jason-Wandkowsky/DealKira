@@ -118,19 +118,8 @@
 
     body.appendChild(title);
 
-    if (shop.price) {
-
-      const price =
-        document.createElement("div");
-
-      price.className =
-        "product-card-price";
-
-      price.textContent =
-        shop.price;
-
-      body.appendChild(price);
-
+    if (window.dkPreisElement) {
+      body.appendChild(dkPreisElement(product));
     }
 
     /* Wie bei Telefonen und Tablets:

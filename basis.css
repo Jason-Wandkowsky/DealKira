@@ -398,3 +398,9 @@ footer a:hover {
     width: 38px; height: 38px; top: 8px; right: 8px; font-size: 21px;
   }
 }
+
+/* Bestpreis auf Produktkarten */
+.dk-preis { margin: 2px 0 14px; font-size: 14px; color: #666; line-height: 1.35; }
+.dk-preis strong { font-size: 20px; color: #111; margin-left: 2px; }
+.dk-preis small { display: block; font-size: 13px; color: #888; margin-top: 2px; }
+.dk-preis-leer { font-size: 14px; color: #888; }

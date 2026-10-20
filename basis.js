@@ -410,3 +410,49 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 })();
+
+
+/* =====================================================
+   Bestpreis: günstigster Shop-Preis eines Produkts
+   dkBestpreis(p)     → { preis: 489.13, text: "489,13 €", shop: "eBay", anzahl: 2 } oder null
+   dkPreisElement(p)  → <div class="dk-preis">ab 489,13 € <small>bei eBay · 2 Shops</small></div>
+===================================================== */
+(function() {
+  function zahl(text) {
+    const z = parseFloat(String(text || "").replace(/[^0-9,]/g, "").replace(",", "."));
+    return isNaN(z) || z <= 0 ? null : z;
+  }
+
+  window.dkBestpreis = function(p) {
+    const shops = (p && p.shops) || [];
+    let best = null;
+    shops.forEach(function(s) {
+      const z = zahl(s.price);
+      if (z !== null && (!best || z < best.preis)) best = { preis: z, text: s.price, shop: s.name };
+    });
+    if (best) best.anzahl = new Set(shops.filter(function(s) { return s.link; })
+      .map(function(s) { return s.name; })).size;
+    return best;
+  };
+
+  window.dkPreisElement = function(p) {
+    const best = window.dkBestpreis(p);
+    const el = document.createElement("div");
+    el.className = "dk-preis";
+    if (!best) {
+      const anzahl = new Set(((p && p.shops) || []).filter(function(s) { return s.link; })
+        .map(function(s) { return s.name; })).size;
+      el.classList.add("dk-preis-leer");
+      el.textContent = anzahl > 1 ? anzahl + " Shops vergleichen" : "Preis beim Shop ansehen";
+      return el;
+    }
+    el.append("ab ");
+    const strong = document.createElement("strong");
+    strong.textContent = best.text;
+    el.appendChild(strong);
+    const klein = document.createElement("small");
+    klein.textContent = "bei " + best.shop + (best.anzahl > 1 ? " · " + best.anzahl + " Shops" : "");
+    el.appendChild(klein);
+    return el;
+  };
+})();
