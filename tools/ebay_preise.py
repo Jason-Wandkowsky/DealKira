@@ -203,6 +203,18 @@ def passt(name, titel):
             if zusatz not in nach_name:
                 return False
 
+    # Generationsnummer hinter dem letzten Modellwort, die der Name nicht hat:
+    # "Narwal Flow" ≠ "Flow 2", "OnePlus Pad Go" ≠ "Pad Go 2"
+    letztes = name_w[-1] if name_w else ""
+    if letztes.isalpha() and len(letztes) >= 2 and letztes not in FUELLWOERTER:
+        for j in range(len(titel_liste) - 1):
+            danach = titel_liste[j + 2] if j + 2 < len(titel_liste) else ""
+            if titel_liste[j] == letztes and titel_liste[j + 1].isdigit() \
+                    and len(titel_liste[j + 1]) <= 2 and titel_liste[j + 1] not in zahlen \
+                    and not danach.isdigit() and danach not in EINHEITEN \
+                    and danach not in {"k", "e", "gen", "generation", "pack", "er", "x", "stück", "kern", "core"}:
+                return False
+
     # "Hülle FÜR iPhone 17", "Adapter für DJI Mic Mini": steht so ein Wort vor dem
     # Produkt (erste Modellzahl bzw. erstes Wort des Namens), ist es Zubehör.
     positionen = [titel_liste.index(z) for z in zahlen if z in titel_liste]
