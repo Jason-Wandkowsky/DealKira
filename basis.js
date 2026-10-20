@@ -17,6 +17,7 @@ const MENU_EINTRAEGE = [
   { link: "kategorien.html",    icon: "📂", text: "Kategorien" },
   { link: "ratgeber.html",      icon: "📖", text: "Ratgeber" },
   { link: "deals.html",         icon: "🔥", text: "Deals" },
+  { link: "black-friday.html",  icon: "🛍️", text: "Black Friday 2026" },
   { link: "einstellungen.html", icon: "⚙️", text: "Einstellungen" }
 ];
 

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Friday 2026: Technik-Deals &amp; echte Angebote – DealKira</title>
+  <meta name="description" content="Black Friday 2026 ist am 27. November. Die besten Technik-Deals für Grafikkarten, Smartphones, Tablets, Mähroboter und Smart Home – mit Preisvergleich und Prüfung auf echte Rabatte.">
+  <link rel="canonical" href="https://dealkira.com/black-friday.html">
+
+  <link rel="stylesheet" href="basis.css?v=20261020">
+  <link rel="stylesheet" href="bausteine.css?v=20261004b">
+  <link rel="stylesheet" href="ratgeber.css?v=20261018">
+  <script src="basis.js?v=20261020"></script>
+  <script src="deals-dynamisch.js?v=20261019"></script>
+
+  <style>
+    .bf-countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 420px;
+      margin: 22px auto 0;
+    }
+    .bf-countdown div {
+      background: rgba(255, 255, 255, .08);
+      border-radius: 12px;
+      padding: 10px 4px;
+      text-align: center;
+    }
+    .bf-countdown strong { display: block; font-size: 28px; color: #ffd400; }
+    .bf-countdown span { font-size: 12px; color: #ccc; }
+    .bf-termine { display: grid; gap: 10px; margin: 18px 0 26px; }
+    .bf-termin {
+      display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+      background: #fff; border-radius: 10px; padding: 12px 16px; box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+    .bf-termin strong { font-size: 16px; }
+    .bf-termin span { color: #666; font-size: 14px; text-align: right; }
+    .bf-badge {
+      position: absolute; top: 10px; left: 10px; z-index: 2;
+      background: #e53935; color: #fff; font-weight: 700; font-size: 13px;
+      padding: 4px 8px; border-radius: 8px;
+    }
+    .ratgeber-produkte .product-card { position: relative; }
+    .bf-vorher { color: #999; text-decoration: line-through; margin-right: 4px; font-size: 14px; }
+    .bf-leer {
+      background: #fff8d6; border-radius: 12px; padding: 18px 18px; margin: 16px 0 8px; line-height: 1.5;
+    }
+    .bf-kategorien { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 16px 0 26px; }
+    .bf-kategorien a { overflow-wrap: anywhere;
+      display: block; background: #111; color: #fff; text-decoration: none; border-radius: 12px;
+      padding: 14px 14px; font-weight: 700;
+    }
+    .bf-kategorien a span { display: block; font-weight: 400; font-size: 13px; color: #bbb; margin-top: 3px; }
+    .faq details { border-bottom: 1px solid #e5e5e5; padding: 12px 0; }
+    .faq summary { cursor: pointer; font-weight: 700; }
+    .faq details p { margin-top: 8px; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wann ist Black Friday 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Black Friday 2026 ist am Freitag, 27. November 2026. Viele Shops starten schon mit der Black Week ab Montag, 23. November. Cyber Monday folgt am 30. November 2026." }
+      },
+      {
+        "@type": "Question",
+        "name": "Woran erkenne ich ein echtes Black-Friday-Angebot?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Shops müssen bei einer Preissenkung den niedrigsten Preis der letzten 30 Tage angeben. Vergleiche den Black-Friday-Preis mit diesem Wert und nicht mit der oft deutlich höheren UVP. Ein Preisvergleich über mehrere Shops zeigt, ob das Angebot wirklich günstig ist." }
+      },
+      {
+        "@type": "Question",
+        "name": "Lohnt es sich, bis Black Friday zu warten?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Bei Technik oft ja: Grafikkarten, Smartphones, Saug- und Mähroboter sowie Smart-Home-Geräte sind zur Black Week häufig reduziert. Manche Preise sinken aber schon Anfang November oder rund um Singles Day am 11. November. Wer ein Produkt im Blick hat, sollte die Preise schon vorher beobachten." }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <site-header></site-header>
+
+  <section class="hero">
+    <h1>Black Friday <span>2026</span></h1>
+    <p>Technik-Deals im Preisvergleich – und nur echte Rabatte</p>
+    <div class="bf-countdown" id="bfCountdown" aria-label="Countdown bis Black Friday">
+      <div><strong id="bfTage">–</strong><span>Tage</span></div>
+      <div><strong id="bfStunden">–</strong><span>Stunden</span></div>
+      <div><strong id="bfMinuten">–</strong><span>Minuten</span></div>
+      <div><strong id="bfSekunden">–</strong><span>Sekunden</span></div>
+    </div>
+  </section>
+
+  <main class="ratgeber-main">
+
+    <article class="artikel">
+
+      <div class="ratgeber-meta">
+        <a href="deals.html">← Alle Deals</a> · Stand: Oktober 2026
+      </div>
+
+      <div class="kurzantwort">
+        <strong>Kurz gesagt</strong>
+        <p>
+          <b>Black Friday 2026 ist am 27. November.</b> Die meisten Shops starten schon mit der
+          <b>Black Week ab 23. November</b>, Schluss ist meist mit dem Cyber Monday am 30. November.
+          Auf dieser Seite sammeln wir die Technik-Angebote, deren Preis wirklich gesunken ist.
+        </p>
+      </div>
+
+      <h2>Aktuelle Deals</h2>
+      <div id="bfDealsLeer" class="bf-leer" hidden>
+        <strong>Noch keine Black-Friday-Deals.</strong>
+        Unser Preis-Bot prüft alle 6 Stunden die Preise von über 600 Produkten. Sobald ein Shop
+        einen Preis senkt, erscheint das Angebot automatisch hier – spätestens zur Black Week.
+        Tipp: Speichere dir Produkte als Favoriten, dann behältst du sie im Blick.
+      </div>
+      <div class="ratgeber-produkte" id="bfDeals"></div>
+
+      <h2>Die wichtigsten Termine</h2>
+      <div class="bf-termine">
+        <div class="bf-termin"><strong>Singles Day</strong><span>Mi, 11. November 2026</span></div>
+        <div class="bf-termin"><strong>Black Week</strong><span>Mo, 23. – Mo, 30. November 2026</span></div>
+        <div class="bf-termin"><strong>Black Friday</strong><span>Fr, 27. November 2026</span></div>
+        <div class="bf-termin"><strong>Cyber Monday</strong><span>Mo, 30. November 2026</span></div>
+      </div>
+
+      <h2>Black-Friday-Deals nach Kategorie</h2>
+      <div class="bf-kategorien">
+        <a href="grafikkarten.html">🎮 Grafikkarten<span>RTX 50, Radeon RX 9000</span></a>
+        <a href="telefone.html">📱 Smartphones<span>Galaxy, iPhone, Pixel</span></a>
+        <a href="tablets.html">📲 Tablets<span>Galaxy Tab, iPad</span></a>
+        <a href="maehroboter.html">🌱 Mähroboter<span>mit und ohne Kabel</span></a>
+        <a href="outdoor-kameras.html">📷 Kameras<span>Solar, WLAN, Akku</span></a>
+        <a href="staubsauger.html">🧹 Staubsauger<span>Akku- und Saugroboter</span></a>
+        <a href="bildschirme.html">🖥️ Monitore<span>Gaming &amp; Büro</span></a>
+        <a href="computer-komponenten.html">🔧 PC-Komponenten<span>CPU, RAM, SSD, Netzteil</span></a>
+      </div>
+
+      <h2>So erkennst du einen echten Black-Friday-Deal</h2>
+      <p>
+        Zum Black Friday werben viele Shops mit großen Prozentzahlen. Nicht jeder Rabatt ist aber ein
+        echtes Schnäppchen. Darauf solltest du achten:
+      </p>
+      <h3>1. Der 30-Tage-Tiefstpreis zählt, nicht die UVP</h3>
+      <p>
+        Senkt ein Shop einen Preis, muss er seit 2022 den <strong>niedrigsten Preis der letzten 30 Tage</strong>
+        angeben (Preisangabenverordnung). Nur der Vergleich mit diesem Wert zeigt, ob wirklich etwas
+        günstiger geworden ist. Die UVP des Herstellers liegt dagegen oft weit über dem normalen Marktpreis
+        und lässt Rabatte größer wirken, als sie sind. Unsere Deals unter „Preis gesenkt" vergleichen
+        deshalb immer mit dem 30-Tage-Tiefstpreis.
+      </p>
+      <h3>2. Mehrere Shops vergleichen</h3>
+      <p>
+        Ein Black-Friday-Preis bei einem Shop ist nur dann ein Deal, wenn andere Shops nicht ohnehin
+        günstiger sind. Genau dafür zeigt DealKira bei jedem Produkt die Preise mehrerer Shops nebeneinander.
+      </p>
+      <h3>3. Preise schon vorher beobachten</h3>
+      <p>
+        Manche Händler erhöhen Preise kurz vor Black Friday, um den Rabatt danach größer aussehen zu lassen.
+        Wer ein Produkt schon im Oktober oder Anfang November im Blick hat, erkennt solche Tricks sofort.
+      </p>
+      <h3>4. Bei Marktplätzen genau hinschauen</h3>
+      <p>
+        Auf Marktplätzen wie eBay verkaufen viele verschiedene Händler. Achte auf Zustand (neu, „wie neu",
+        B-Ware), Versandkosten, Herkunft und Bewertungen des Verkäufers.
+      </p>
+
+      <div class="hinweis-box">
+        <strong>Hinweis:</strong> Preise können sich zur Black Week mehrmals am Tag ändern.
+        Maßgeblich ist immer der Preis im Shop zum Zeitpunkt deiner Bestellung.
+      </div>
+
+      <h2>Häufige Fragen</h2>
+      <div class="faq">
+        <details>
+          <summary>Wann ist Black Friday 2026?</summary>
+          <p>Am Freitag, 27. November 2026. Viele Shops starten schon mit der Black Week ab Montag,
+            23. November. Cyber Monday folgt am 30. November.</p>
+        </details>
+        <details>
+          <summary>Woran erkenne ich ein echtes Angebot?</summary>
+          <p>Vergleiche den Preis mit dem niedrigsten Preis der letzten 30 Tage, den der Shop bei einer
+            Preissenkung angeben muss – nicht mit der UVP. Ein Preisvergleich über mehrere Shops zeigt
+            zusätzlich, ob das Angebot wirklich günstig ist.</p>
+        </details>
+        <details>
+          <summary>Lohnt es sich, bis Black Friday zu warten?</summary>
+          <p>Bei Technik oft ja – Grafikkarten, Smartphones, Saug- und Mähroboter sowie Smart-Home-Geräte
+            sind zur Black Week häufig reduziert. Manche Preise sinken aber schon Anfang November oder
+            rund um Singles Day am 11. November.</p>
+        </details>
+        <details>
+          <summary>Gibt es Black-Friday-Angebote auch nach dem 27. November?</summary>
+          <p>Ja, viele Aktionen laufen bis Cyber Monday am 30. November, manche auch bis in die erste
+            Dezemberwoche.</p>
+        </details>
+      </div>
+
+    </article>
+
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+
+  <script>
+    /* Countdown bis Black Friday (27.11.2026, 00:00 Uhr deutscher Zeit) */
+    (function() {
+      const ziel = new Date("2026-11-27T00:00:00+01:00").getTime();
+      const felder = ["bfTage", "bfStunden", "bfMinuten", "bfSekunden"].map(function(id) {
+        return document.getElementById(id);
+      });
+      function zwei(z) { return String(z).padStart(2, "0"); }
+      function tick() {
+        let rest = Math.max(0, Math.floor((ziel - Date.now()) / 1000));
+        if (rest === 0) {
+          document.getElementById("bfCountdown").innerHTML =
+            '<div style="grid-column:1/-1"><strong>🔥 Jetzt ist Black Friday!</strong></div>';
+          return;
+        }
+        const werte = [Math.floor(rest / 86400), Math.floor(rest % 86400 / 3600),
+                       Math.floor(rest % 3600 / 60), rest % 60];
+        felder.forEach(function(f, i) { f.textContent = i === 0 ? werte[i] : zwei(werte[i]); });
+        setTimeout(tick, 1000);
+      }
+      tick();
+    })();
+
+    /* Aktuelle Deals (Preis gesenkt, Shop-Angebote, Aktionen) */
+    document.addEventListener("DOMContentLoaded", async function() {
+      const box = document.getElementById("bfDeals");
+      const leer = document.getElementById("bfDealsLeer");
+      let deals = [];
+      try { deals = (await dkDealsLaden()) || []; } catch (e) { deals = []; }
+
+      if (!deals.length) { leer.hidden = false; return; }
+
+      box.replaceChildren.apply(box, deals.slice(0, 12).map(function(d) {
+        const p = d.p, info = d.info;
+        const card = document.createElement("article");
+        card.className = "product-card";
+
+        if (info.badge) {
+          const badge = document.createElement("div");
+          badge.className = "bf-badge";
+          badge.textContent = info.badge;
+          card.appendChild(badge);
+        }
+
+        const bild = document.createElement("div");
+        bild.className = "product-card-image";
+        if (p.image) {
+          const img = document.createElement("img");
+          img.src = p.image; img.alt = p.name || ""; img.loading = "lazy";
+          img.onerror = function() { bild.replaceChildren(dkPlatzhalter(p)); };
+          bild.appendChild(img);
+        } else {
+          bild.appendChild(dkPlatzhalter(p));
+        }
+
+        const body = document.createElement("div");
+        body.className = "product-card-body";
+        const titel = document.createElement("h2");
+        titel.textContent = p.name || "Produkt";
+        body.appendChild(titel);
+
+        const preis = document.createElement("div");
+        preis.className = "dk-preis";
+        if (info.vorher) {
+          const vorher = document.createElement("span");
+          vorher.className = "bf-vorher";
+          vorher.textContent = info.vorher;
+          preis.appendChild(vorher);
+        }
+        const strong = document.createElement("strong");
+        strong.textContent = info.preis;
+        preis.appendChild(strong);
+        if (info.notiz || info.shop) {
+          const klein = document.createElement("small");
+          klein.textContent = (info.shop ? "bei " + info.shop : "") +
+            (info.notiz ? (info.shop ? " · " : "") + info.notiz : "");
+          preis.appendChild(klein);
+        }
+        body.appendChild(preis);
+
+        const knopf = document.createElement("a");
+        knopf.className = "product-card-button";
+        knopf.href = "artikel.html?id=" + encodeURIComponent(p.id);
+        knopf.textContent = "Zum Deal";
+        body.appendChild(knopf);
+
+        card.appendChild(bild);
+        card.appendChild(body);
+        if (window.dkFavButton) card.appendChild(dkFavButton(dkFavInfo(p)));
+        return card;
+      }));
+    });
+  </script>
+
+</body>
+</html>
