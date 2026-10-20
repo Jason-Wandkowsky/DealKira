@@ -382,7 +382,7 @@
       {
         "name": "eBay",
         "price": "453,99 €",
-        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHvjdA%2B3v7GQNpvrw1eJfZkPuHCGprWnqmqpHQXD2Mx2eDVcUc0Tmu0%2Bg5aXPuedNj7vnif%2BqBGsHKoMQAncHC6EmJe%2F8nNmYRiHwop2BR38Y0LrtxGH6H155aILsbpiFpf7Hx3ELb0OL4b%2FX9SCzvteV9pA01mZKZpruYcFoMdDcgmGT2EIoXAlx3iNYQExh2g%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHtcSSFmM1AnRwCVXEH9i1tFWs7OsswxAe43wx67I%2B3M5jYejnSfUfT2Rk3SXjjYByXc%2FJ6vgbWamIcmDpQHkLOAlNmC5li56jzllr40wwqoXUaQ%2B1BvfOEMTYCQjiE92H%2BK%2F86qbzRP6x9mcvnd1QyZL%2FsmGVzq%2F4VEEAn%2Fxs9b1iYYo3n7CM6GrEao2qbknAY%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|117441862118|0",
         "ebayTitel": "NEU Apple iPad mini 6. Generation Wifi 256 GB pink OVP",
@@ -588,11 +588,11 @@
       },
       {
         "name": "eBay",
-        "price": "155,98 €",
-        "link": "https://www.ebay.de/itm/398447246255?_skw=Lenovo+Tab+Plus&hash=item5cc54e7baf%3Ag%3A0M8AAeSwsQBqvRLa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "224,42 €",
+        "link": "https://www.ebay.de/itm/158290981740?_skw=Lenovo+Tab+Plus&hash=item24dae0b36c%3Ag%3APBIAAeSwpCRqp9ov&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|398447246255|0",
-        "ebayTitel": "WiFi LENOVO Tablet Tab M10 Plus 3.Gen TB125FU 4GB / 128GB Blue 10.6\" 2000 x 1200",
+        "ebayItem": "v1|158290981740|0",
+        "ebayTitel": "Lenovo Tab Plus 11.5 Zoll Tablet Luna Grey 128 GB (2.000 x 1.200 Pixel)",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1060,15 +1060,6 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0d8c9c06"
-      },
-      {
-        "name": "eBay",
-        "price": "219,95 €",
-        "link": "https://www.ebay.de/itm/377575104579?_skw=OnePlus+Pad+Go&hash=item57e93ae043%3Ag%3AwnoAAeSwfQFq0iB2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
-        "feed": "ebay",
-        "ebayItem": "v1|377575104579|0",
-        "ebayTitel": "OnePlus Pad Go 2 Tablet 12,1\" 8GB 128GB WiFi Schwarz Neuwertig MwSt",
-        "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -1133,7 +1124,7 @@
       {
         "name": "eBay",
         "price": "907,69 €",
-        "link": "https://www.ebay.de/itm/298630361296?_skw=Microsoft+Surface+Surface+Pro+9&hash=item4587c1b0d0%3Ag%3AA8EAAeSwFHNqlJ0T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7liE3GnmuahFmIu2Tv9Zu7GQDOKV7TgnakyTiWgDuuTEkUx8UQvOv%2FE928xgvQGOr1gCtyb%2FzaRCN1mkSKtlOe1%2FofvS6aTj0r2fwYaY%2F3%2FmaTbg2GTLaSYtl5mZOhIpJ5vFE4a7Ojn%2FWCRwXXR68QtakHZXE0rPwU7jcGynLkJoqtN7PgUYZQMQ9F8iuMoUJ5Zy1%2FsSuakXR6Cgelx%2FKFVG3bZ4jDnrkJYhBkz6LbTHySQxV4NPOy67Cy5widW4XMRor9obkt084d2GZWepKA7Ys2KTSfMoSTg2Tyyo6U13uuEwyGhHIOeaEC%2BvLDTZ8o%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/298630361296?_skw=Microsoft+Surface+Surface+Pro+9&hash=item4587c1b0d0%3Ag%3AA8EAAeSwFHNqlJ0T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7liE3GnmuahFmIu2Tv9Zu7GQDOKV7TgnakyTiWgDuuTEkUx8UQvOv%2FE928xgvQGOr1gCtyb%2FzaRCN1mkSKtlOe1%2FofvS6aTj0r2fwYaY%2F3%2FmaTbg2GTLaSYtl5mZOhIpJ6sAcb9zw76NL5MqZjXafSdNH71M%2BNd2NO3ri76%2FP0mVrtasb730rx3f7FQ5ujvVl2OUrMNqNoSOS5EirV4uiCIjh6udDJoASvi4sk%2FhvwCtTE3uLECADnrb0MtlJ6vmMG0piSoDH7N%2Ft3HOpUbDzQ3cq3RysuJ%2FOdK7BoFuYDSZKKcTaBKW2%2BqEqjsQG0OiHQ%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|298630361296|0",
         "ebayTitel": "Microsoft Surface Pro 9 13 Zoll Core i5 8GB 256GB Platin Windows 11 Home",
