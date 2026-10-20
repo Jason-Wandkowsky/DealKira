@@ -21,6 +21,7 @@ import gzip
 import io
 import json
 import os
+import re
 import sys
 import urllib.request
 
@@ -31,6 +32,13 @@ FEEDS = {
     "aosu": "AWIN_FEED_AOSU",
     "anthbot": "AWIN_FEED_ANTHBOT",
     "imou": "AWIN_FEED_IMOU",
+    "narwal": "AWIN_FEED_NARWAL",
+}
+
+# Shops, deren Produkte automatisch neu angelegt werden, sobald sie im Feed auftauchen
+# (Zubehör fällt über den Mindestpreis raus)
+AUTO_IMPORT = {
+    "narwal": {"shop": "Narwal", "marke": "Narwal", "kategorie": "staubsauger", "mindestpreis": 150},
 }
 
 DATEI = "produkte.json"
@@ -68,6 +76,65 @@ def feed_laden(url):
     return feed
 
 
+def slug(text):
+    text = text.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss"), ("+", " plus ")):
+        text = text.replace(a, b)
+    return re.sub(r"[^a-z0-9]+", "-", text).strip("-")[:60]
+
+
+def neue_produkte(produkte, feed_name, feed, regel):
+    """Legt Produkte aus dem Feed an, die es noch nicht gibt (eine Karte pro Produktname,
+    bei Farbvarianten die günstigste)."""
+    bekannt_ids = {shop.get("feedId") for p in produkte for shop in p.get("shops", [])
+                   if shop.get("feed") == feed_name}
+    bekannt_namen = {p["name"].lower() for p in produkte}
+    vorhandene_ids = {p["id"] for p in produkte}
+
+    kandidaten = {}
+    for feed_id, zeile in feed.items():
+        if feed_id in bekannt_ids:
+            continue
+        if zeile.get("availability", "in_stock") not in ("in_stock", ""):
+            continue
+        titel = (zeile.get("title") or zeile.get("product_name") or "").strip()
+        preis = preis_format(zeile.get("sale_price") or zeile.get("price") or zeile.get("search_price", ""))
+        if not titel or not preis or (preis_zahl(preis) or 0) < regel["mindestpreis"]:
+            continue
+        # Farb-/Variantenzusätze abschneiden ("Narwal Freo X Ultra - Weiß" → "Narwal Freo X Ultra")
+        name = re.split(r"\s[-–|,(]\s?", titel)[0].strip()
+        if not name.lower().startswith(regel["marke"].lower()):
+            name = regel["marke"] + " " + name
+        if name.lower() in bekannt_namen:
+            continue
+        alt = kandidaten.get(name.lower())
+        if alt and preis_zahl(alt[1]) <= preis_zahl(preis):
+            continue
+        kandidaten[name.lower()] = (name, preis, feed_id, zeile)
+
+    for name, preis, feed_id, zeile in kandidaten.values():
+        pid = slug(name)
+        while pid in vorhandene_ids:
+            pid += "-2"
+        vorhandene_ids.add(pid)
+        produkte.append({
+            "id": pid,
+            "name": name,
+            "brand": regel["marke"],
+            "kategorie": regel["kategorie"],
+            "image": zeile.get("image_link") or zeile.get("merchant_image_url", ""),
+            "shops": [{
+                "name": regel["shop"],
+                "price": preis,
+                "link": zeile.get("aw_deep_link") or zeile.get("link", ""),
+                "feed": feed_name,
+                "feedId": feed_id,
+            }],
+        })
+        print(f"  NEU: {name} ({preis})")
+    return len(kandidaten)
+
+
 def main():
     produkte = json.load(open(DATEI, encoding="utf-8"))
     geaendert = 0
@@ -85,6 +152,8 @@ def main():
             fehler_gesamt += 1
             continue
         print(f"{feed_name}: {len(feed)} Produkte im Feed")
+        if feed_name in AUTO_IMPORT:
+            geaendert += neue_produkte(produkte, feed_name, feed, AUTO_IMPORT[feed_name])
 
         for produkt in produkte:
             for shop in produkt.get("shops", []):
