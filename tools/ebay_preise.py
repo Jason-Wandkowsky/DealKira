@@ -352,11 +352,17 @@ def aktualisieren(dateien):
             try:
                 angebot = bestes_angebot(name, suchen(token, suchtext, kategorien), kategorien)
             except Exception as fehler:
+                if getattr(fehler, "code", None) == 429:
+                    # Tageslimit der eBay-API erreicht: alte eBay-Preise behalten, Lauf nicht abbrechen
+                    print(f"::warning::ebay: Tageslimit erreicht – restliche Produkte behalten ihre alten "
+                          f"eBay-Preise ({gefunden} aktualisiert)")
+                    return aenderungen, 0
                 fehler_anzahl += 1
                 print(f"  ebay-Fehler bei {name}: {fehler}")
                 if fehler_anzahl >= 20:
-                    print("ebay: zu viele Fehler – Abbruch")
-                    return aenderungen, 1
+                    print(f"::warning::ebay: zu viele Fehler ({fehler}) – eBay für diesen Lauf übersprungen, "
+                          f"alte Preise bleiben")
+                    return aenderungen, 0
                 continue
 
             shops = produkt.setdefault("shops", [])
