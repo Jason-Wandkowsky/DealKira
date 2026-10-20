@@ -7750,5 +7750,117 @@
         "ebayKat": "123417:Ladegeräte & Dockingstationen,9394:Handy-Zubehör,15032:Handys & Kommunikation"
       }
     ]
+  },
+  {
+    "id": "narwal-freo-z10-ultra",
+    "name": "Narwal Freo Z10 Ultra",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/narwal-freo-z10-ultra-saugroboter-mit-wischfunktion-1952078.png?v=1781597113",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "466,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=41070265787&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "41070265787"
+      }
+    ]
+  },
+  {
+    "id": "narwal-freo-s",
+    "name": "Narwal Freo S",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/narwal-freo-s-saugroboter-mit-wischfunktion-9521374.jpg?v=1772505621",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "219,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=42122598586&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "42122598586"
+      }
+    ]
+  },
+  {
+    "id": "narwal-flow",
+    "name": "Narwal Flow",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/narwal-flow-saugroboter-mit-wischfunktion-1065488.png?v=1780437067",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "799,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=42318445192&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "42318445192"
+      }
+    ]
+  },
+  {
+    "id": "narwal-flow-2",
+    "name": "Narwal Flow 2",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/narwal-flow-2-saugroboter-mit-selbstreinigung-9224922.png?v=1781597108",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "1179,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=44527665120&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "44527665120"
+      }
+    ]
+  },
+  {
+    "id": "narwal-freo-20",
+    "name": "Narwal Freo 20",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/Frame1321318155.png?v=1787128206",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "899,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=45865306176&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "45865306176"
+      }
+    ]
+  },
+  {
+    "id": "narwal-freo-20-edge",
+    "name": "Narwal Freo 20 Edge",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/Freo20Edge_DE__01.jpg?v=1788157785",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "599,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=45865306179&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "45865306179"
+      }
+    ]
+  },
+  {
+    "id": "narwal-v50",
+    "name": "Narwal V50",
+    "brand": "Narwal",
+    "kategorie": "staubsauger",
+    "image": "https://cdn.shopify.com/s/files/1/0716/5843/8932/files/HX2_f81455bd-dca3-4cc4-b328-7363d5f687ed.png?v=1788348841",
+    "shops": [
+      {
+        "name": "Narwal",
+        "price": "339,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=45865306183&a=3110253&m=80048",
+        "feed": "narwal",
+        "feedId": "45865306183"
+      }
+    ]
   }
 ]

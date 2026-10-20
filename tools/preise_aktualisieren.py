@@ -83,6 +83,26 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "-", text).strip("-")[:60]
 
 
+FARBEN = {"weiß", "weiss", "schwarz", "grau", "silber", "blau", "gold", "rot", "grün", "white", "black", "grey", "gray", "silver"}
+BESCHREIBUNG = {"saugroboter", "wischroboter", "akku-staubsauger", "staubsauger", "mähroboter",
+                "überwachungskamera", "kamera", "grundpaket", "deluxe", "paket"}
+
+
+def modellname(titel, marke):
+    """Macht aus Feed-Titeln einen sauberen Modellnamen:
+    "NARWAL Freo 20 Saugroboter mit Wischfunktion" → "Narwal Freo 20"
+    "Flow 2 mit Basisstation + Zubehörpaket für 1 Jahr" → "Narwal Flow 2"
+    "Freo Z10 Ultra Silber" → "Narwal Freo Z10 Ultra" """
+    rest = re.sub(r"^" + re.escape(marke) + r"\b", "", titel.strip(), flags=re.I).strip()
+    rest = re.split(r"\s*(?::|\+|&|\(|\s[-–|,]\s|\smit\s|\sfür\s|\sinkl\.?\s)", rest)[0]
+    woerter = []
+    for wort in rest.split():
+        if wort.lower() in FARBEN or wort.lower() in BESCHREIBUNG:
+            break
+        woerter.append(wort)
+    return (marke + " " + " ".join(woerter)).strip() if woerter else ""
+
+
 def neue_produkte(produkte, feed_name, feed, regel):
     """Legt Produkte aus dem Feed an, die es noch nicht gibt (eine Karte pro Produktname,
     bei Farbvarianten die günstigste)."""
@@ -101,10 +121,9 @@ def neue_produkte(produkte, feed_name, feed, regel):
         preis = preis_format(zeile.get("sale_price") or zeile.get("price") or zeile.get("search_price", ""))
         if not titel or not preis or (preis_zahl(preis) or 0) < regel["mindestpreis"]:
             continue
-        # Farb-/Variantenzusätze abschneiden ("Narwal Freo X Ultra - Weiß" → "Narwal Freo X Ultra")
-        name = re.split(r"\s[-–|,(]\s?", titel)[0].strip()
-        if not name.lower().startswith(regel["marke"].lower()):
-            name = regel["marke"] + " " + name
+        name = modellname(titel, regel["marke"])
+        if not name:
+            continue
         if name.lower() in bekannt_namen:
             continue
         alt = kandidaten.get(name.lower())
