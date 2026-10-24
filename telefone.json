@@ -59,11 +59,11 @@
       },
       {
         "name": "eBay",
-        "price": "526,19 €",
-        "link": "https://www.ebay.de/itm/147478232994?_skw=Samsung+Galaxy+S24+Ultra&hash=item2256633fa2%3Ag%3AYngAAeSwUIlqb0bj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "525,00 €",
+        "link": "https://www.ebay.de/itm/327421769937?_skw=Samsung+Galaxy+S24+Ultra&hash=item4c3bdbb8d1%3Ag%3A0GgAAeSwZtZq3Pdf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|147478232994|0",
-        "ebayTitel": "Samsung Galaxy S24 Ultra – 256 GB – Grau (Slate) – O2 – SM-S928B/DS",
+        "ebayItem": "v1|327421769937|0",
+        "ebayTitel": "Samsung Galaxy S24 Ultra - 256GB - Titanium Black (Ohne Simlock) (Dual SIM)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -128,11 +128,11 @@
       },
       {
         "name": "eBay",
-        "price": "576,19 €",
-        "link": "https://www.ebay.de/itm/227578211749?_skw=Samsung+Galaxy+S25+Ultra&hash=item34fcb7eda5%3Ag%3AsE0AAeSw0wFq2GOX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "650,00 €",
+        "link": "https://www.ebay.de/itm/377584492254?_skw=Samsung+Galaxy+S25+Ultra&hash=item57e9ca1ede%3Ag%3ABH8AAeSw7I9q1zyD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|227578211749|0",
-        "ebayTitel": "Samsung Galaxy S25 Ultra - 256 GB - Titanium Black (T-Mobile)",
+        "ebayItem": "v1|377584492254|0",
+        "ebayTitel": "Samsung Galaxy S25 Ultra - 256 GB - Titanium Silber wie neu OVP",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -151,7 +151,7 @@
       },
       {
         "name": "eBay",
-        "price": "497,00 €",
+        "price": "496,50 €",
         "link": "https://www.ebay.de/itm/168630990218?_skw=Samsung+Galaxy+S25+Edge&hash=item274330b58a%3Ag%3AOTUAAeSwFgdq2cC8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|168630990218|0",
@@ -290,7 +290,7 @@
       {
         "name": "eBay",
         "price": "218,98 €",
-        "link": "https://www.ebay.de/itm/407300600293?_skw=Samsung+Galaxy+A55+5G&hash=item5ed501f1e5%3Ag%3APuQAAeSwZxpq0KBU&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mrv9ARu60Bl%2FYlFOD%2BB%2FAe9tuHTRlz1g6jYiJOmT4CMuQo3Wu1kf3R1Sl04277wm4lYkExoWZg%2FTo%2F6JlTF2ELlRqAHh5O%2F0eRLu%2B2Ru6raPHAE5aW1WIZK6%2FjWNMM5AxX0%2BRb%2F2BIbSesWMS9s6afku7%2F8WisyPFWR0M6g2ozGtNVub9u8yfcoUTSxmTDxxLsbHErf%2FIO7N32eIc8lGUr9DT%2Fen3hUFsDdrJKiXhuad%2FBhV6fiWJ4vit9uJBavg25KSrb48LnIR5b2WHzKmktI3KLezkgSz9zPGjg%2Fyju9A%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407300600293?_skw=Samsung+Galaxy+A55+5G&hash=item5ed501f1e5%3Ag%3APuQAAeSwZxpq0KBU&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mrv9ARu60Bl%2FYlFOD%2BB%2FAe9tuHTRlz1g6jYiJOmT4CMuQo3Wu1kf3R1Sl04277wm4lYkExoWZg%2FTo%2F6JlTF2ELlRqAHh5O%2F0eRLu%2B2Ru6raPHAE5aW1WIZK6%2FjWNMM5Axm6uWOIplfoOCuf%2BUZmJn53R2WsDMjrwPJryvcuIuOdcL6qTsAAWhlPW7KhCjOsQ12I474l8X02dw6Z0ok0zYPCC9ezT9rWB6ZapScpQcT9bYbXb%2BZIOR767ipPj41O52vKL%2BvM69d5WTRRvopcQ2ctNwnVNPM5me0ZNCtj%2F3bsA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407300600293|0",
         "ebayTitel": "Samsung Galaxy A55 5G Navy 128GB 8GB 6,6\" 50MP Android ohne Simlock",
@@ -404,7 +404,7 @@
       },
       {
         "name": "eBay",
-        "price": "171,09 €",
+        "price": "166,09 €",
         "link": "https://www.ebay.de/itm/880046663887?_skw=Samsung+Galaxy+A17+5G&hash=itemcce6de68cf%3Ag%3AqbUAAeSw0Q9qMXGn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|880046663887|0",
@@ -522,7 +522,7 @@
         "price": "629,00 €",
         "link": "https://www.ebay.de/itm/318921017254?_skw=Samsung+Galaxy+Z+Flip7&hash=item4a412c87a6%3Ag%3ANxIAAeSw1rlqt9QL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|318921017254|617125207393",
+        "ebayItem": "v1|318921017254|617125207395",
         "ebayTitel": "Samsung Galaxy Z Flip7 256GB/512GB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
@@ -589,7 +589,7 @@
       {
         "name": "eBay",
         "price": "500,00 €",
-        "link": "https://www.ebay.de/itm/237137899299?_skw=Samsung+Galaxy+Z+Fold5&hash=item3736852f23%3Ag%3AqiUAAeSwelRq2iMi&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nRyem%2BrpEI6%2B6wSI2SMMkhm8ct%2FxJJzXTHMovBqTYeAGZLaOBVbZYbkLAMGOmWf%2B470mhQ4%2BmBFF7dlKJubICeVBxfiwbC4mIOlrRhApRxeMyhRViq3%2F4SXhVJkdKtiPK0ASJN354oFICMZf%2FRtxHunxIO1CJ7RL93raRMppOgsHHwoBlQ7wlql8Y9KDlVIlH8h1jbUsFUjbQaHlhHhMpk7dKggv1npf98EoKNVfqVk7HNhPE0DGVmBel7fgsl1HD0SvoOjTiPG%2FxUkCWibEuxzUpcWRmCmZ4Xt0xe3ySNVQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/237137899299?_skw=Samsung+Galaxy+Z+Fold5&hash=item3736852f23%3Ag%3AqiUAAeSwelRq2iMi&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nRyem%2BrpEI6%2B6wSI2SMMkhm8ct%2FxJJzXTHMovBqTYeAGZLaOBVbZYbkLAMGOmWf%2B470mhQ4%2BmBFF7dlKJubICeVBxfiwbC4mIOlrRhApRxeMyhRViq3%2F4SXhVJkdKtiPKYzsQWtzgWRaqAQc9ShSlGZHY8h2R4Z%2Bljw2ALvDuOrMfhKH6zobbbCGRHUwfwMPCeyxFwijayV1IeGaCxLne54qnQYsL%2BC0B1lbx7ieCiFAEJUn%2Fb%2FyRKOOplffpv86AtOE4U5fM1xZ6n5BAvAObXe6yHR0ZfLJet4If7MMDdEA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|237137899299|0",
         "ebayTitel": "Samsung Galaxy Z Fold 5 256 GB.",
@@ -657,11 +657,11 @@
       },
       {
         "name": "eBay",
-        "price": "189,98 €",
-        "link": "https://www.ebay.de/itm/168812072727?_skw=Samsung+Galaxy+XCover7&hash=item274dfbcf17%3Ag%3AJOsAAeSwK9Nq24sb&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "180,53 €",
+        "link": "https://www.ebay.de/itm/307247461676?_skw=Samsung+Galaxy+XCover7&hash=item478960352c%3Ag%3ARx0AAeSwDFZq3NqJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|168812072727|0",
-        "ebayTitel": "Samsung Galaxy XCover7 128GB 6GB RAM Schwarz Enterprise Edition SM-G556B",
+        "ebayItem": "v1|307247461676|0",
+        "ebayTitel": "Samsung Galaxy XCover7 Smartphone 128 GB Schwarz, Originalverpackung (OVP)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -750,7 +750,7 @@
       {
         "name": "eBay",
         "price": "150,00 €",
-        "link": "https://www.ebay.de/itm/177523954751?_skw=Apple+iPhone+11&hash=item295540943f%3Ag%3A1mYAAeSwP2Jo%7Ek-L&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mve0%2FSR--Z7FqVu6mZUa4h200SMViJxOQOn%2BUNMYDSTG9%2FvA%2B90udQcav%2Fbcqh7lZyv9TPe4HcDsLxKhVn8IfrE7aUcw5g4kM9LEoN9sWntGFNTPYypuU43NwqFPzESCfeiPlXiQk8a6MzYvgPQmfKzDb26AdS4AOyJywHH9t4WJSGM4eAXHDVtDzPB6hFeF29HKj9%2FlAzux5F736a0xB%2Bi5CD%2BG3JkOc3bk6XQDPmJB6mOA1LrUvtr54AIcpAD3tVTf2M3diwr5nLLAJUgBaPrDR6SkEN%2BYY5V%2FOC8Y7NXA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/177523954751?_skw=Apple+iPhone+11&hash=item295540943f%3Ag%3A1mYAAeSwP2Jo%7Ek-L&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mve0%2FSR--Z7FqVu6mZUa4h200SMViJxOQOn%2BUNMYDSTG9%2FvA%2B90udQcav%2Fbcqh7lZyv9TPe4HcDsLxKhVn8IfrE7aUcw5g4kM9LEoN9sWntGFNTPYypuU43NwqFPzESCeztOts1gAlTpz4vn%2BkMMMsJj6pU5gJr%2Bi0ScFi4n1aMsBVozFapnKv%2FyZXhI4i9oGUmkRWX7tlcJAO6ggiv7sanooUBKiq0fTSZWv0CmBi1G1MY7ZS%2FiARunwe00%2FVTPj5BYiVGCJCr6%2FOc2B9QwHYeulqoglh9w%2B3Pmekc3QZig%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|177523954751|0",
         "ebayTitel": "Apple iPhone 11 Weiß, 128 GB, ohne Simlock Wie Neu",
@@ -796,7 +796,7 @@
       {
         "name": "eBay",
         "price": "286,19 €",
-        "link": "https://www.ebay.de/itm/356901822265?_skw=Apple+iPhone+11+Pro+Max&hash=item5319019f39%3Ag%3AXjAAAOSwDnhjCKFj&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7na2%2FQo7uhkSdROZkVZAwi8HEm8m0MP5zGijJmM4r5hVPKErDvy9oDQ7QWDarhL8vpUlVN%2FvlONJeCCtOQhEMNt6ZgHRiAwagwbKB7sIsjZkoQ5bROA50zH2f%2FK12JtfuyEzsNhEC2ZCSEIDgond4oMBkRRSd3yUL1rLDZrSTqAW%2F%2Bf7OvHuJDwRzB91%2B9wtqV4vtL40LAYTJ7Lel7S3GEJ%2BNXjf20X%2Fngp1%2FDeS3bjb7ipedrmrCOVRVU8GG96lArbcAUqgdg5NKLowwYReNOk9qXgzsroqqj9gGIzHod2Lg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/356901822265?_skw=Apple+iPhone+11+Pro+Max&hash=item5319019f39%3Ag%3AXjAAAOSwDnhjCKFj&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7na2%2FQo7uhkSdROZkVZAwi8HEm8m0MP5zGijJmM4r5hVPKErDvy9oDQ7QWDarhL8vpUlVN%2FvlONJeCCtOQhEMNt6ZgHRiAwagwbKB7sIsjZkoQ5bROA50zH2f%2FK12JtfuwLXUqTA08anA76jKKK48kEUBFdgImgix8hYBkcojpCdaCc86GUTeGbRBA7yrnVCpYVaQXeFV0XDKH%2F4d%2BYP%2FhMhtnbTjapoOvGpIy1ET%2FIJZRYPa%2BpX3qAWwkV%2B%2FPXCeFopx%2B0p%2F%2BGGgSaMpfOU3SsSjwjgc2SC92eF1xPpbhv%2Bg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|356901822265|0",
         "ebayTitel": "iPhone 11pro Max",
@@ -842,7 +842,7 @@
       {
         "name": "eBay",
         "price": "168,72 €",
-        "link": "https://www.ebay.de/itm/227518372970?_skw=Apple+iPhone+12+mini&hash=item34f926dc6a%3Ag%3AlbMAAeSw-OhqpVOR&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n689KNOtiLfvWXIJqAhDtl2a5p8vZ99mF%2BO3WcgGKYo1xTt994N%2B8IkfnQFs4dEZwxPu%2F9ebd5C3tpoeNYhLqZambLils8S0CShpi8rVYLFds5a61pi3o4KctUom4jGctwwN49NLPA5vBlL%2FestSyh25s695K6EYvIkyB2SFnz2Kt5WGdiekYsMAur2VQOz5gF9p47%2BqkpTZjVYvhwrk9ny3LtiyKRfP32meXeA%2FT62t5kA6nQ2fj%2BRG3qgrejj86BHqUE6YQckTlZQiffAuosO2EKIM7OrFcC6YWhhzzdvw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/227518372970?_skw=Apple+iPhone+12+mini&hash=item34f926dc6a%3Ag%3AlbMAAeSw-OhqpVOR&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n689KNOtiLfvWXIJqAhDtl2a5p8vZ99mF%2BO3WcgGKYo1xTt994N%2B8IkfnQFs4dEZwxPu%2F9ebd5C3tpoeNYhLqZambLils8S0CShpi8rVYLFds5a61pi3o4KctUom4jGcvhRYPB5Oj1scQxk0TD60lqD0Y%2BMBeszPG3YxllrtuZnZ%2Bt8wxB3STN54plAfsrlwXB8VQbwT%2FByHRPQ%2B4QvdMtJ0zXWOWAFX4PGDR5uSBICjzfWUtl2mibLitWabW9QMNdK5yXz6niTIiZReQxbpsJjb3XA2Q97wlaCkYm%2F26Ihw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|227518372970|0",
         "ebayTitel": "IPhone 12 Mini 64GB Blau",
@@ -888,7 +888,7 @@
       {
         "name": "eBay",
         "price": "300,00 €",
-        "link": "https://www.ebay.de/itm/389554391083?_skw=Apple+iPhone+12+Pro+Max&hash=item5ab340482b%3Ag%3Au7oAAeSwvcFpe54C&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nr2ycayuQPVamAhDXOoM1LIc7E1aCfvtYNqF9EPRgeOz9Zhl3QLc%2BPG9POsxV7B6WWuMEYh0gNobBvFncbzNi5vuqn0d1BDpBvDncsOUSzm%2BgdRQBF4wxqU03w3MrBtGzZuoeJJui4%2BcPJRmP8Cwgw5yUeyxln%2BciMW8cfV0uAx4b9DeVtIrJMTipLvRmEvPkH%2FrAV9LaqajLFPQAIoYmXybpAAPOoM8oJcy%2BGDkcVLlM4lxQfzvKdNusJBZXCvBQZEY6frNhSMHJtoFeT2qgxmbjzp4HEbNqAavOgZKHiSA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/389554391083?_skw=Apple+iPhone+12+Pro+Max&hash=item5ab340482b%3Ag%3Au7oAAeSwvcFpe54C&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nr2ycayuQPVamAhDXOoM1LIc7E1aCfvtYNqF9EPRgeOz9Zhl3QLc%2BPG9POsxV7B6WWuMEYh0gNobBvFncbzNi5vuqn0d1BDpBvDncsOUSzm%2BgdRQBF4wxqU03w3MrBtGyrk8LFAeOTGJ%2BHObYo79Fh3G%2FBtox3qANyfaIKJV2E80PEDIRPV380zneAgc04UxZkNoWWtRcHELQ7kblwiLy%2BG146xipPWzkhrcm--sQKBxQFwlQ0gE3K7ImtA%2Fm3PjSMan23KS3Jz9mbCKCqgz64jm0wowDecQ5shZwsrjUxkQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|389554391083|0",
         "ebayTitel": "iPhone 12 Pro Max 256GB Graphite - Voll Funktionsfähig,",
@@ -980,9 +980,9 @@
       {
         "name": "eBay",
         "price": "469,99 €",
-        "link": "https://www.ebay.de/itm/167897984051?_skw=Apple+iPhone+13+Pro+Max&hash=item27177fec33%3Ag%3AdGUAAeSwniBqwnpX&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lKVEBO6QQ7JYYdVXelMKT8Vomfqwu0B0qC2ih%2B%2B93%2BwwrKGQ%2BDtxYWhsODNfWLMWiFWqgp1iQp%2B94Je5y3iO0TEgbT53H%2B0KvWQRZSXJE4oIJ%2F4jiB64ytKD%2FRCmrtTjF97%2BRXQeCPxKN1mwetJdYi6Y9bICn17MZze0XsoTVeTYLHsp31tsLje%2FLjYzUlIVW34y0pvNyNOau34T2oDYeMcCeuNFk1drzsuFfgJrGrufDi5hwxb9tPh%2BIW3o6frb7Vmvzcp1z9lO%2BRqeYmAkWtF2vL3YNMXx%2FZBcUhiFirIQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/167897984051?_skw=Apple+iPhone+13+Pro+Max&hash=item27177fec33%3Ag%3AdGUAAeSwniBqwnpX&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lKVEBO6QQ7JYYdVXelMKT8Vomfqwu0B0qC2ih%2B%2B93%2BwwrKGQ%2BDtxYWhsODNfWLMWiFWqgp1iQp%2B94Je5y3iO0TEgbT53H%2B0KvWQRZSXJE4oIJ%2F4jiB64ytKD%2FRCmrtTjGhPGX4yUgQytOK8ZvDWd%2F%2B9AU0z1DPlynkWnxGkDcjzEGo52hP7j%2Bl%2BNiKPhTXpiS9oAQ%2FwiGh1hbckfNo8rueiTSREQrdLjHcPnGEgvpopyH%2BGLOsL3Pp9tDUFSXy4s1Emh3Y9xHJduRyXK8PVle%2FCgD8FduQaa1TIysnOam8Mw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|167897984051|467435488072",
+        "ebayItem": "v1|167897984051|467435488063",
         "ebayTitel": "Apple iPhone 13 Pro Max 128GB 256GB 512GB 1TB Wie neu 100% Batterie mit OVP",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
@@ -1003,7 +1003,7 @@
       {
         "name": "eBay",
         "price": "300,00 €",
-        "link": "https://www.ebay.de/itm/920030362212?_skw=Apple+iPhone+14&hash=itemd636153a64%3Ag%3Aj-EAAeSwWfNqy9my&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mn8KcYtgjy5HBL3pAOhUOhs9sZgHCeqkm4aD0f%2BG%2BlwWPqSqtINo0dmnRy0KtjL%2BwhBBJMIFqY3O2WzC1ceiQPjr%2BW1ZtO2TSJIEEqyhOBemLE9wcHmm3XMY9CDHzYNtLMnUB7RLLGU6il6NJgGz2hn1LuKHaXY1gALeAhtIzoEqxKz--HXriF8bobA5rZWIqpQuKzWZkZzAc8AqMxKXYpySYil2jIaA0UeYjSd7BVkzEkV5EoIOXsTRlsQwbk%2FMOVqGGM6%2F76uUKO51hIPxd1uDcVuuhZRULppxDVYbjOgg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/920030362212?_skw=Apple+iPhone+14&hash=itemd636153a64%3Ag%3Aj-EAAeSwWfNqy9my&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mn8KcYtgjy5HBL3pAOhUOhs9sZgHCeqkm4aD0f%2BG%2BlwWPqSqtINo0dmnRy0KtjL%2BwhBBJMIFqY3O2WzC1ceiQPjr%2BW1ZtO2TSJIEEqyhOBemLE9wcHmm3XMY9CDHzYNtI7es54hzshHsLbPHMEFbhEbK%2FcnakWYOaJQs4wK7HiuJ6gXvAV5eQv04ua9gfmFkPKBui6TLOGi4F7HT6rUHCcT030Haa4dvrbPddlYGmDSAmZdz44tC1acbIO3n0p7nCWUGZtK6VmywzDi4%2FXwtvJ3e4OHFvI78QZAXtaapyDog%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|920030362212|0",
         "ebayTitel": "Apple iPhone 14 128GB Lila ohne Simlock iOS Smartphone Handy Mobiltelefon",
@@ -1026,7 +1026,7 @@
       {
         "name": "eBay",
         "price": "446,19 €",
-        "link": "https://www.ebay.de/itm/168280501696?_skw=Apple+iPhone+14+Plus&hash=item272e4cadc0%3Ag%3AwwYAAeSwvohpzgDg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ndXukXuHox6VuV9e8ypmEMmU8PPFnWJl99D0LGuYZrvBNjz5D5lDB0CREvgr00TFPIBBvFQzbF%2BzsoKFQ3MadxjqKTJPHzVHxaU1xn3gU8LK3Y6J72lmCntkUoLbFfxxHb1lL1UjackgnrkqxYF6BJENlmoLtUWzwbnLsOe1srdLIWsoctxrqBwxXXD%2Bv2moj6ny%2FCwRkoQMPgb4PtlnNXLoZSd%2BlFSGt3S847yYmLN%2B4SipdPlHXiTTgVNzQinF9eU0bEXKJjE0m0r%2F2NKqrZ4SGSbal5gX738FfptUGUIw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/168280501696?_skw=Apple+iPhone+14+Plus&hash=item272e4cadc0%3Ag%3AwwYAAeSwvohpzgDg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ndXukXuHox6VuV9e8ypmEMmU8PPFnWJl99D0LGuYZrvBNjz5D5lDB0CREvgr00TFPIBBvFQzbF%2BzsoKFQ3MadxjqKTJPHzVHxaU1xn3gU8LK3Y6J72lmCntkUoLbFfxxEUCZz05MZ2IJ0Vc0g4v%2FGA4k89wuB1jYSz5TtN8%2BYKf%2Fnj2evhpajygELGQ46OGz%2B%2FD49rWw9MOdkEfIDfG%2BIqwlCCz3aR2x6m3D26wHxnI8U2PN543BVFKda9JA7V%2BfuVj%2F8gkgRJiFjAobdVzC0qKMnq37dFiG0dWUVtaprVcA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|168280501696|0",
         "ebayTitel": "Apple iPhone 14 Plus - Blau, 128 GB, ohne Simlock",
@@ -1048,11 +1048,11 @@
       },
       {
         "name": "eBay",
-        "price": "426,19 €",
-        "link": "https://www.ebay.de/itm/377137204824?_skw=Apple+iPhone+14+Pro&hash=item57cf210e58%3Ag%3AnTAAAeSwm6Zp6ptI&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nWMzHCmqG3U%2FdYPFmCreqrx%2FoMheKB9K3O8otfkDbTx9xsBik1o9nC4ITn7ioaWPkgtLSzH3WKzECRp1TckPGMIVbMwxTvoVb2drXJ7FTmkGgSzqtSXDHKiGfYxpjsmkM3BGSQVcPbbsWwOApd%2B9yyjmX7C0tTXbeEGVyDGwmYg8oa%2Fklkyu27hTbQZWmGK2hGbMDEwyLEwkJwtTfBYxQcsJAiZiNf1EJ%2BvZMtdZHIWYmT9ODziX7XH2zZjYJVP1nf3Z2jSqe4vkYa2KL3BzsEZuQjuScNi4aEtViY9GDwTA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "404,19 €",
+        "link": "https://www.ebay.de/itm/407296759486?_skw=Apple+iPhone+14+Pro&hash=item5ed4c756be%3Ag%3AHc4AAeSwnMVq017I&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|377137204824|0",
-        "ebayTitel": "Apple iPhone 14 Pro 128GB Lila, iOS, Face ID, Dreifachkamera, 6,1 Zoll",
+        "ebayItem": "v1|407296759486|0",
+        "ebayTitel": "Apple iPhone 14 Pro - 128GB - Silber (Ohne Simlock) (Dual-SIM)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -1072,10 +1072,10 @@
       {
         "name": "eBay",
         "price": "550,00 €",
-        "link": "https://www.ebay.de/itm/336774909911?_skw=Apple+iPhone+14+Pro+Max&hash=item4e69594fd7%3Ag%3AhcQAAeSwF5BqmFBg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/147078637276?_skw=Apple+iPhone+14+Pro+Max&hash=item223e91e6dc%3Ag%3AfSgAAeSwhYZpXjkA&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m3O0F8AotWqal6manjWqlYdcuxtYaQeWYufiNsN6ubJRLqMyWBQvhUh7P%2FCLgN3K8rezS9wvrE0HDqNk3md%2F2EmhaYKe0PmrrWh9xtkA1ZMhADDAX6UrdK5U6GR9%2BKqCuqWakZBTgWpNNTv0ARqd5XxkbCj%2BEQjqtgF41qOi9L6W2v2iEmFaYYEtDfMGg9vLbq7A2aIGPzMvC%2BCDBfSJjonD9A1G4n3dIsh8WDp4BVwLQUOq4%2BMMiV%2BmcTLlSW%2F91WmbrH9a0TDqg1Cuv7%2Fy4cRTcS4aaqZJnYfUF5hN9m0Wzxh9C4FJabs5fbzbVe2RU%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|336774909911|0",
-        "ebayTitel": "Apple iPhone 14 Pro Max 128 GB Lila Ohne Simlock LTE MQ9T3ZD/A",
+        "ebayItem": "v1|147078637276|0",
+        "ebayTitel": "iPhone 14 Pro Max in Guten Zustand Deep Purple 128 GB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -1095,7 +1095,7 @@
       {
         "name": "eBay",
         "price": "436,19 €",
-        "link": "https://www.ebay.de/itm/317773720624?_skw=Apple+iPhone+15&hash=item49fcca2c30%3Ag%3AdUgAAeSwJVppa3SH&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lqtBxC0RFPwLAyp4wFwJ1Nt9WpyQWRuKR%2FlN7HNOXevVIMKMLwmcY3148jXt%2FL3qrFHbvLFui0sMN1FyMwqIanXzqmpk%2FS8vPeNQTo5RO07WRbAJu6QtatsBv1Efm%2BaVOcFvC5PWYloqIaxyydUBpIGAHKnzTZkRKgZ%2BTx%2FWy273xbJ447nfcWwZMQ2KO%2Brc0M4kfOyHKnYd4VtTosqtATG4X1eVKqK0oU4s%2FI4y96n5uDwoNmZQRD8lIANCcqHjqH0LSa6I1Fo7TX6lCxjDofni5KTyQRcEhfpG52uqbvaQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/317773720624?_skw=Apple+iPhone+15&hash=item49fcca2c30%3Ag%3AdUgAAeSwJVppa3SH&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lqtBxC0RFPwLAyp4wFwJ1Nt9WpyQWRuKR%2FlN7HNOXevVIMKMLwmcY3148jXt%2FL3qrFHbvLFui0sMN1FyMwqIanXzqmpk%2FS8vPeNQTo5RO07WRbAJu6QtatsBv1Efm%2BaVM0lE9%2BbhZB3jsaileA9aIV5OH98PX%2F4kvQwfKrXY6mWqqeuuyhib3bjECjKMA5VLNMwREH7oBub8V8m6LbLkiHZ%2F8eazpTDilxtM4%2BRFlVj%2B6ckakfDOGeHRCNp1MHhxCZV9fz5kHfMTjfzX8hmhoSGVfdWFFD79tptXNwAXHPsw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|317773720624|0",
         "ebayTitel": "Apple iPhone 15 128GB Schwarz, ohne Simlock, Inkl. Handyhüllen",
@@ -1141,9 +1141,9 @@
       {
         "name": "eBay",
         "price": "495,45 €",
-        "link": "https://www.ebay.de/itm/377594495293?_skw=Apple+iPhone+15+Pro&hash=item57ea62c13d%3Ag%3ACO0AAeSwlr1q3K7B&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/377594504064?_skw=Apple+iPhone+15+Pro&hash=item57ea62e380%3Ag%3ACO0AAeSwlr1q3K7B&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|377594495293|0",
+        "ebayItem": "v1|377594504064|0",
         "ebayTitel": "Apple iPhone 15 Pro 128 GB Schwarz iOS Dreifach-Kamera Face ID",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
@@ -1210,7 +1210,7 @@
       {
         "name": "eBay",
         "price": "621,19 €",
-        "link": "https://www.ebay.de/itm/960096312773?_skw=Apple+iPhone+16&hash=itemdf8a331dc5%3Ag%3AGbEAAeSwM3Fq2LFW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7maZDqBQVwcrQmuuBlZHxr2xUzZNqEkdPggUFlC6JeSS%2FmvNvGVQVKWSJ%2BuJyKYsEt%2FHoD5DI4d5g6DdTJoTYTZH%2F%2B2FE6V8P1iOQiRR5h8hZXKXQ%2Bndjy9idI92kG8f1AlCrcd68cG6qO8zZXmmvB3kITqgnyy5HTwQ6eTBcIllN9Gs8WAdC18rtAXyfY33X81WWxkHoMZxOY%2BTD03U%2FBH%2B0gFdS%2BVWXDElR8rO5xp9EQHj1A0BSNP46r8vSMwsgr%2BQ%2FS3hrat17WJXhKHzK71DPK2EG0L0ViSzYN6i%2BaEGA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/960096312773?_skw=Apple+iPhone+16&hash=itemdf8a331dc5%3Ag%3AGbEAAeSwM3Fq2LFW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7maZDqBQVwcrQmuuBlZHxr2xUzZNqEkdPggUFlC6JeSS%2FmvNvGVQVKWSJ%2BuJyKYsEt%2FHoD5DI4d5g6DdTJoTYTZH%2F%2B2FE6V8P1iOQiRR5h8hZXKXQ%2Bndjy9idI92kG8f1DVSaKbmxmAThX38HpCJfVHSZ8ji1XwxtcpHHG%2Bs6FvXHuOrqtVRaK96LkF6Lg8twfn%2FbiJVNMp3MP1wZnvBjvZJYjUPmBO9LRcX0iRopqjV578hqm4sLt9Ytxo%2FEhoJvTi12Dw9LDr%2FNfw1%2F693zau4tFjIZb%2FJYrXqggVyTFtrQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|960096312773|0",
         "ebayTitel": "Apple iPhone 16 128GB Blaugrün A3287 MYED3ZD/A Ohne Simlock",
@@ -1347,11 +1347,11 @@
       },
       {
         "name": "eBay",
-        "price": "855,50 €",
-        "link": "https://www.ebay.de/itm/287645709370?_skw=Apple+iPhone+17+Pro&hash=item42f905343a%3Ag%3AQJQAAeSwq6ZqzLBL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "977,69 €",
+        "link": "https://www.ebay.de/itm/800833512160?_skw=Apple+iPhone+17+Pro&hash=itemba7565a2e0%3Ag%3AGNwAAeSweHBq3IYq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287645709370|0",
-        "ebayTitel": "*** NEU - ORIGINAL VERPACKT! *** Apple iPhone 17 Pro",
+        "ebayItem": "v1|800833512160|0",
+        "ebayTitel": "iPhone 17 Pro 256GB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -1394,9 +1394,9 @@
       {
         "name": "eBay",
         "price": "476,99 €",
-        "link": "https://www.ebay.de/itm/336859059845?_skw=Xiaomi+17T&hash=item4e6e5d5685%3Ag%3AbJ0AAeSw495q21Pl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/117454897219?_skw=Xiaomi+17T&hash=item1b58db8043%3Ag%3Abi0AAeSwkhlqx53T&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|336859059845|0",
+        "ebayItem": "v1|117454897219|0",
         "ebayTitel": "Xiaomi 17T 256 GB Black Dual SIM Smartphone Handy Mobiltelefon",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
@@ -1890,11 +1890,11 @@
       },
       {
         "name": "eBay",
-        "price": "124,95 €",
-        "link": "https://www.ebay.de/itm/366747163407?_skw=Redmi+15C&hash=item5563d59b0f%3Ag%3AihQAAeSwSgxq10Rm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "128,99 €",
+        "link": "https://www.ebay.de/itm/227498461132?_skw=Redmi+15C&hash=item34f7f707cc%3Ag%3AFCQAAeSwYspqlL-V&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|366747163407|0",
-        "ebayTitel": "Xiaomi Redmi 15C Smartphone, 6,9 Zoll, 128GB, 4GB RAM, Midnight Black",
+        "ebayItem": "v1|227498461132|0",
+        "ebayTitel": "Xiaomi Redmi 15C 5G 128GB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -1982,11 +1982,11 @@
       },
       {
         "name": "eBay",
-        "price": "625,19 €",
-        "link": "https://www.ebay.de/itm/407254762033?_skw=POCO+F8+Ultra&hash=item5ed2468231%3Ag%3AAYAAAeSwGgtqu6u3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "531,19 €",
+        "link": "https://www.ebay.de/itm/147650171293?_skw=POCO+F8+Ultra&hash=item2260a2d19d%3Ag%3AZfQAAeSw9WZq3M-e&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407254762033|0",
-        "ebayTitel": "POCO F8 Ultra Smartphone 12GB RAM 256GB Denim Blue MPN 25102PCBEG",
+        "ebayItem": "v1|147650171293|0",
+        "ebayTitel": "Neuwertiges POCO F8 Ultra 256GB Blau 12GB RAM 6,9 Zoll 50MP Android ohne Simlock",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -2292,7 +2292,7 @@
       {
         "name": "eBay",
         "price": "449,00 €",
-        "link": "https://www.ebay.de/itm/147217615953?_skw=Google+Pixel+9&hash=item2246da8c51%3Ag%3ARWMAAeSwY0hpv9tu&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7k2KMK3T5pez8nhDsC9RHWNDKL4bw3go%2Fjy3BfoIWdTEwOEGSMh7jrC64LUmlXL%2BIjaS5kIpLHjlw%2BoHNhb0vXzlbL%2BKdUgom2TrwYtsAWUfA%2Fan63HBUKDJJe9xA8qwSqqsBraJqmAcKnYlnKpG1fEwSwPZztMaxbmhf3oJ3ItIivmJTc6PPWctSeh9zoJCUI08nH6aVhB%2FodO3fwYg4aCgkro1Xhz0DigLxgS9bBElL%2Bp4EESgksaygFCma19EAXCfRgABFMMUqi71ei0gXBSBGnw8W5T6ud%2BOvZUAZ1OVQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/147217615953?_skw=Google+Pixel+9&hash=item2246da8c51%3Ag%3ARWMAAeSwY0hpv9tu&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7k2KMK3T5pez8nhDsC9RHWNDKL4bw3go%2Fjy3BfoIWdTEwOEGSMh7jrC64LUmlXL%2BIjaS5kIpLHjlw%2BoHNhb0vXzlbL%2BKdUgom2TrwYtsAWUfA%2Fan63HBUKDJJe9xA8qwSoCaw0OVp3NgXgbxuif9M5FLBNbiS9RU7pYAE1DxXn7dy60dGbzUhJGaMGnGMKsZcA5DUfCwHaIBAkStI50cztnJIPkV0wq9zn%2BoqjN2YwQ3Egt7ErwKX5rRP8wt6J5mvKgtoXVB04%2BT0JYtP5Bg%2FcLWDrhJs4SPqjmckTWvfq4iA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|147217615953|0",
         "ebayTitel": "Handy Google Pixel a9 128GB  Android 24 Hours Battery Obsidian Bläck Ai Kamera",
@@ -2407,7 +2407,7 @@
       {
         "name": "eBay",
         "price": "306,19 €",
-        "link": "https://www.ebay.de/itm/407275135303?_skw=Google+Pixel+8a&hash=item5ed37d6147%3Ag%3A3MUAAeSwGPlqx0ML&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nW9HXnKXT4CBiIg%2BAaqSl9Mo934S4sp2wy%2BSrxiPSunKQ97QJJkufEZGQ2SufKxCe4Uy4O9CNVnHqCbDlzPg02ln2CHXijzAm2Ng89oeCWponqK2AXfKiYQ6%2BTf4oxXOAkUfoKBDwUFs78sFgKO0%2FVeyS5cv1KrhuwgfDDjhucEzamdfDdcbh265dxaExGmx%2F6RoE26%2Ff019Jjof7Ld%2BlOFdloLsmbBoqBanCPrsjW5Jt%2Fdwr3X%2FkkteBg5fF82k%2BfM8XqPvPLEzgfNMM3nbOKmagsjdUTY7%2BSlRHwXH1BcQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407275135303?_skw=Google+Pixel+8a&hash=item5ed37d6147%3Ag%3A3MUAAeSwGPlqx0ML&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nW9HXnKXT4CBiIg%2BAaqSl9Mo934S4sp2wy%2BSrxiPSunKQ97QJJkufEZGQ2SufKxCe4Uy4O9CNVnHqCbDlzPg02ln2CHXijzAm2Ng89oeCWponqK2AXfKiYQ6%2BTf4oxXOC9C6mNVpw26DDIUmTl9IKvsLoWT0EzOM0TOHZffnXdQX3WVy2jv7UBHOWCp5Edvw%2Fu8KOdkhoS2KKjAJy8u8GDRa7700ABDwxrWH1cC69Ke%2B0e2Ru%2FwNt3rHdk3zB1h8IeIe%2Fvbp8CnytiJwj3xIU%2FNplh%2F9po6y4u465lLKn5ag%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407275135303|0",
         "ebayTitel": "Google Pixel 8a Smartphone - 128 GB - Blau - Android Betriebssystem",
@@ -2453,7 +2453,7 @@
       {
         "name": "eBay",
         "price": "266,19 €",
-        "link": "https://www.ebay.de/itm/317471215064?_skw=Google+Pixel+7+Pro&hash=item49eac24dd8%3Ag%3AEwMAAeSw%7Eelo%7E4G0&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kvLflkaqzZaMSrdtjKULJibKQyizUAPexPVw%2BXk6QeMOgJ%2FrKhqxfas%2BMhRgJoihf2D3RBn3pVgqVP7imJuVyC0a%2F48bOhVnLbHPj42q7cz2Wc8H7%2FgTLia%2FqiGhmkLiQ8WV4dIB6AiUjG2aTtrHbcgUbAY3pcPmMx2yP2ZJTxZHYjNnv0CU4Tzw3cNMgKVB2fl4hzG7kwF9saC7xk50HAhgk7i54V7nu2MS45gGxhh4PdUAqS4ceRqs3HnRuogBCdUXjSpuoulWQtNIRw8ZX97pGYpp2Wn5AIsu3UwIiVrg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/317471215064?_skw=Google+Pixel+7+Pro&hash=item49eac24dd8%3Ag%3AEwMAAeSw%7Eelo%7E4G0&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kvLflkaqzZaMSrdtjKULJibKQyizUAPexPVw%2BXk6QeMOgJ%2FrKhqxfas%2BMhRgJoihf2D3RBn3pVgqVP7imJuVyC0a%2F48bOhVnLbHPj42q7cz2Wc8H7%2FgTLia%2FqiGhmkLiRnH5RGCgbs4J0%2F3VA%2FKxzcHwmjciBuk08oAaPEcB3%2Fc36IFl%2F1nubbPb9XIhd93AZiHdedDoNDwEwY6agDt%2Fo8mYAesMnKJMf3u4TXQFkaF01w8TuvpzUcjfnsvkGxQhwmrs8nF983FyX4%2FYv6RKfd7Hl6IuawNVpsZ5KYzKXQXA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|317471215064|0",
         "ebayTitel": "Google Pixel 7 Pro 128GB",
@@ -2590,7 +2590,7 @@
       },
       {
         "name": "eBay",
-        "price": "796,60 €",
+        "price": "795,80 €",
         "link": "https://www.ebay.de/itm/168276374372?_skw=OnePlus+15R&hash=item272e0db364%3Ag%3AjS4AAeSwtLtpy-Ft&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|168276374372|0",
@@ -2774,11 +2774,11 @@
       },
       {
         "name": "eBay",
-        "price": "368,90 €",
-        "link": "https://www.ebay.de/itm/147077570650?_skw=OnePlus+Nord+CE5&hash=item223e81a05a%3Ag%3AdTcAAeSw6lZo19UH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "270,44 €",
+        "link": "https://www.ebay.de/itm/287675388235?_skw=OnePlus+Nord+CE5&hash=item42faca114b%3Ag%3ARkwAAeSwUdlq3NPN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|147077570650|0",
-        "ebayTitel": "OnePlus Nord CE5 5G/LTE Smartphone 256GB 8GB RAM marble mist Dual-Kamera 5200mAh",
+        "ebayItem": "v1|287675388235|0",
+        "ebayTitel": "OnePlus Nord CE5 5G Dual SIM 8GB RAM 128GB Marmornebel (EU)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -2880,11 +2880,11 @@
       },
       {
         "name": "eBay",
-        "price": "519,00 €",
-        "link": "https://www.ebay.de/itm/365560004676?_skw=Nothing+Phone+%283%29&hash=item551d130044%3Ag%3AwGAAAOSwmJJoCmwG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "469,69 €",
+        "link": "https://www.ebay.de/itm/327421738306?_skw=Nothing+Phone+%283%29&hash=item4c3bdb3d42%3Ag%3Ak0cAAeSwpdZq3PA6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|365560004676|0",
-        "ebayTitel": "NOTHING Phone 2 6,7Zoll 512GB Bluetooth 5.3 NFC WLAN Android 13 weiß Smartphone",
+        "ebayItem": "v1|327421738306|0",
+        "ebayTitel": "Nothing Phone (3) Dual SIM 512GB weiß",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -3032,7 +3032,7 @@
       },
       {
         "name": "eBay",
-        "price": "495,50 €",
+        "price": "495,01 €",
         "link": "https://www.ebay.de/itm/167913732323?_skw=Motorola+Razr+60&hash=item27187038e3%3Ag%3A4q0AAeSw4tVpDz3d&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|167913732323|0",
@@ -3193,7 +3193,7 @@
       },
       {
         "name": "eBay",
-        "price": "464,64 €",
+        "price": "560,98 €",
         "link": "https://www.ebay.de/itm/237123570787?_skw=Motorola+Edge+60+Pro&hash=item3735aa8c63%3Ag%3AdncAAeSw-%7Exqz21i&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|237123570787|0",
@@ -3217,7 +3217,7 @@
       {
         "name": "eBay",
         "price": "306,19 €",
-        "link": "https://www.ebay.de/itm/840051634289?_skw=Motorola+Edge+60&hash=itemc396fab071%3Ag%3AVe8AAeSw%7E7pqhqgT&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m0t42zrLOZw1DuwMkFT1h4mw22K7DpXqEsBJMekXS4FVwX13FxC3y08C9jbujPIRLnk43fvdgW2KGsaHM47MRhGGolQ1y%2FapVqNzqNro7qPRTFwxToLIzP0oSTyBmmf3u6CCtts4HW1eL3uE7KW2t0RPwNWRwXaCrnF%2FRf51O3jdPD3uuWeGuBmK7UHDkSPzngNtHUxai4CSdcpvurNoE1RvMgdWCN6aknqX0eKdjmSs%2BGbOaNDBzlSRxm33tKpYpiGsOL4RGxhfx6yctR42OQkQs2ovyGFBJZg7843tjVGw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/840051634289?_skw=Motorola+Edge+60&hash=itemc396fab071%3Ag%3AVe8AAeSw%7E7pqhqgT&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m0t42zrLOZw1DuwMkFT1h4mw22K7DpXqEsBJMekXS4FVwX13FxC3y08C9jbujPIRLnk43fvdgW2KGsaHM47MRhGGolQ1y%2FapVqNzqNro7qPRTFwxToLIzP0oSTyBmmf3uzDhbR1%2FM11KddSweiHV%2BYt8URuiN%2FysVKOUVC7kC2s0JrZYu5pOUXLalibX5kISKoIeV3wpHZMpj4%2BaJE9MRsE%2FUt%2F6OlqtRkBf9j4CZuj3rUEUsslH%2FdKMwsmmMJg3XU4ptgunqQ6BFu%2BlTWivmJqr45Xs%2FvqAvidXKxxI73WQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|840051634289|0",
         "ebayTitel": "Motorola Edge 60 ",
@@ -3485,6 +3485,15 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B0cxwEuhz"
+      },
+      {
+        "name": "eBay",
+        "price": "120,00 €",
+        "link": "https://www.ebay.de/itm/227581688383?_skw=Motorola+Moto+G05&hash=item34fcecfa3f%3Ag%3A2AsAAeSwGV1q3Kbe&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "feed": "ebay",
+        "ebayItem": "v1|227581688383|0",
+        "ebayTitel": "Motorola moto g05",
+        "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
   },
