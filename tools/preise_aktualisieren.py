@@ -52,11 +52,14 @@ AUTO_IMPORT = {
 # Wörter, die bei Händler-Feeds auf Zubehör oder etwas anderes als das Gerät hindeuten
 # (zusätzlich zu den eBay-Regeln). Steht so ein Wort im Produktnamen selbst, ist es erlaubt.
 HAENDLER_ZUBEHOER = {
-    "glas", "glass", "camglass", "glasschutzfolie", "schutzfolie", "displayschutzfolie",
-    "pen", "stylus", "stift", "earbuds", "in-ear", "kopfhörerkissen", "ohrpolster",
+    # Fremdzubehör fällt schon über die Marken-Regel raus; hier nur, was auch die Marke selbst
+    # als Zubehör verkauft. Nicht "netzteil"/"glass"/"pen": stehen oft in Handy-Titeln
+    # ("ohne Netzteil", "Gorilla Glass", "mit S Pen").
+    "camglass", "glasschutzfolie", "schutzfolie", "displayschutzfolie", "displayschutz",
+    "protector", "stylus", "earbuds", "kopfhörerkissen", "ohrpolster",
     "pc", "komplettsystem", "workstation", "barebone", "keyboard-case", "tastaturhülle",
-    "ladegerät", "netzteil", "kabel", "adapter", "dockingstation", "halter", "rucksack",
-    "sleeve", "wallet", "flip-case", "bookcover", "schutzhülle", "lens", "linsenschutz",
+    "dockingstation", "rucksack", "sleeve", "wallet", "flip-case", "bookcover", "schutzhülle",
+    "linsenschutz",
 }
 # Preis muss zum Preis der anderen Shops passen (z. B. eBay), sonst ist es ein falscher Treffer
 PREIS_SPANNE = (0.5, 2.0)
@@ -220,6 +223,81 @@ def streichpreis(zeile, preis):
     return statt, art
 
 
+# Wörter, die eine andere Ausführung bedeuten – müssen in Name UND Titel stehen oder in keinem
+HAENDLER_AUSFUEHRUNG = {"wifi", "ax", "rgb", "gre", "wireless"}
+
+
+def haendler_passt(name, titel):
+    """Zusätzliche Prüfungen für Händler-Feeds (strenger als eBay, weil dort
+    jede Variante als eigenes Produkt im Feed steht)."""
+    w = ebay_preise.woerter
+    titel_l = w(titel)
+    titel_s = set(titel_l)
+    paare = set(zip(titel_l, titel_l[1:]))
+
+    # Generation in Klammern: "iPad mini (6. Generation)" ≠ "7.Gen"
+    gen = re.search(r"\((\d+)\.\s*gen", name, re.I)
+    if gen:
+        nr = gen.group(1)
+        gefunden = set(re.findall(r"(\d+)\s*\.\s*gen", titel, re.I))
+        if nr not in gefunden:
+            return False
+    name_l = w(ebay_preise.ohne_zusatz(name))
+    name_s = set(w(name))
+
+    # Steht es im Namen, muss es im Titel stehen. Steht es nur im Titel, zählt es erst,
+    # wenn es vorne beim Modellnamen steht ("Vengeance RGB …", nicht "… 8-Zonen-RGB")
+    for wort in HAENDLER_AUSFUEHRUNG:
+        if wort in name_s and wort not in titel_s:
+            return False
+        if wort not in name_s and wort in titel_l[:6]:
+            return False
+
+    # "Gen 2" im Titel, aber nicht im Namen (außer "PCIe Gen4") → Nachfolgemodell
+    for j in range(1, len(titel_l)):
+        if titel_l[j - 1] == "gen" and titel_l[j].isdigit() and len(titel_l[j]) <= 2 \
+                and "pcie" not in titel_l[max(0, j - 5):j] and "gen" not in name_s and not gen:
+            return False
+
+    for i, wort in enumerate(name_l):
+        if not wort.isdigit() or i == 0:
+            continue
+        davor = name_l[i - 1]
+        danach = name_l[i + 1] if i + 1 < len(name_l) else ""
+        # Buchstaben-Zusatz hinter "Modell+Zahl" im Titel: V3 ≠ V3X, V4 ≠ V4 X
+        if davor.isalpha():
+            for j in range(1, len(titel_l) - 1):
+                if (titel_l[j - 1], titel_l[j]) == (davor, wort):
+                    zusatz = titel_l[j + 1]
+                    if zusatz.isalpha() and len(zusatz) <= 2 and zusatz not in name_s \
+                            and zusatz not in ebay_preise.MASS_EINHEITEN:
+                        return False
+
+        # Mengenangaben (2 TB, 65 W, 32 GB) und Marke + Zahl ("Samsung 990") zählen hier nicht
+        if i == 1 or davor in ebay_preise.EINHEITEN or danach in ebay_preise.EINHEITEN:
+            continue
+        # "OmniBook 5" ≠ "OmniBook 3 … Ryzen 5": steht das Modellwort im Titel mit einer
+        # ANDEREN Zahl dahinter, ist es ein anderes Modell
+        if davor.isalpha() and davor not in ebay_preise.FUELLWOERTER and (davor, wort) not in paare \
+                and any(a == davor and b.isdigit() and b != wort for a, b in paare):
+            return False
+    # Einzelbuchstaben hinter einer Modellnummer: B760M-A ≠ B760M-P
+    for i, wort in enumerate(name_l):
+        if len(wort) == 1 and wort.isalpha() and i >= 1 and (
+                name_l[i - 1].isdigit()
+                or (len(name_l[i - 1]) == 1 and i >= 2 and name_l[i - 2].isdigit())):
+            if wort not in titel_s:
+                return False
+
+    # Modellwörter ab 4 Buchstaben müssen im Titel stehen (Dual Drive ≠ Typ-A)
+    for wort in name_l[1:]:
+        if len(wort) >= 4 and wort.isalpha() and wort not in ebay_preise.FUELLWOERTER \
+                and wort not in titel_s and wort + "s" not in titel_s \
+                and wort not in {"generation", "gaming", "edition"}:
+            return False
+    return True
+
+
 def haendler_abgleich(dateien, feed_name, feed, shop_name):
     """Ordnet die Produkte aller Dateien einem Händler-Feed zu (über den Namen).
     Pro Produkt gewinnt das günstigste passende, lieferbare Neuware-Angebot."""
@@ -282,7 +360,7 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
                 if referenz and not (PREIS_SPANNE[0] * referenz <= preis_zahl(preis)
                                      <= PREIS_SPANNE[1] * referenz):
                     continue
-                if not ebay_preise.passt(name, titel):
+                if not ebay_preise.passt(name, titel) or not haendler_passt(name, titel):
                     continue
                 if bestes is None or preis_zahl(preis) < preis_zahl(bestes[3]):
                     bestes = zeilen[nr]
