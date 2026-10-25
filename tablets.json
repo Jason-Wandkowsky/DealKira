@@ -4,7 +4,7 @@
     "name": "Galaxy Tab S11 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/DISPLEX_Tablet_Glass_Samsung_Galaxy_Tab_S10_Ultra_1_e96e.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -19,6 +19,14 @@
         "ebayItem": "v1|147617290572|0",
         "ebayTitel": "Samsung Galaxy Tab S11 Ultra 5G - 256GB Grey - Neuwertig v.Händler",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=40220717252&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "40220717252",
+        "feedTitel": "DISPLEX Tablet Glasschutzfolie f. Galaxy Tab S10 Ultra/S11 Ultra"
       }
     ]
   },
@@ -50,7 +58,7 @@
     "name": "Galaxy Tab S10 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/DISPLEX_Tablet_Glass_Samsung_Galaxy_Tab_S10_Ultra_1_e96e.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -65,6 +73,14 @@
         "ebayItem": "v1|198554328323|0",
         "ebayTitel": "Galaxy Tab S10 Ultra WiFi SM-X920N 12RAM 256GB Moonstone Grey, NEU Sonstige",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=40220717252&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "40220717252",
+        "feedTitel": "DISPLEX Tablet Glasschutzfolie f. Galaxy Tab S10 Ultra/S11 Ultra"
       }
     ]
   },
@@ -96,7 +112,7 @@
     "name": "Galaxy Tab S10 FE+",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Samsung-S-Pen-EJ-PX510BWEGEU-01_ab92.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -111,6 +127,14 @@
         "ebayItem": "v1|237142327290|0",
         "ebayTitel": "Samsung Galaxy Tablet S10 FE +5G /128GB Ram/silber/ neuwertig+Rechnung",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "34,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44803320221&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44803320221",
+        "feedTitel": "Samsung S Pen fürGalaxy Tab S9 FE/+ S10 FE/+, White"
       }
     ]
   },
@@ -188,7 +212,7 @@
     "name": "Galaxy Tab A11+",
     "brand": "Samsung",
     "series": "A",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Samsung_Galaxy_Tab_A11Plus_SM-X230_Gray_45_Logoscreen_RGB_0564.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -203,6 +227,14 @@
         "ebayItem": "v1|307237837662|0",
         "ebayTitel": "Samsung Galaxy Tab A11 8,7 Zoll 64GB 4GB Wi-Fi+4G Grau USB-C (SM-X115)",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "235,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=43709993030&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "43709993030",
+        "feedTitel": "Samsung Galaxy Tab A11+ Wi-Fi Grey 11\" WUXGADisplay/ Octa-Core/ 6 GB RAM / 128 GB Speicher"
       }
     ]
   },
@@ -211,7 +243,7 @@
     "name": "Galaxy Tab A11",
     "brand": "Samsung",
     "series": "A",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-a11-a11-21m-wp-vapor-silver-11-custom_351a.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -220,12 +252,20 @@
       },
       {
         "name": "eBay",
-        "price": "125,19 €",
-        "link": "https://www.ebay.de/itm/227581609332?_skw=Samsung+Galaxy+Tab+A11&hash=item34fcebc574%3Ag%3AteMAAeSwBK9q3Kck&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "130,00 €",
+        "link": "https://www.ebay.de/itm/860079310342?_skw=Samsung+Galaxy+Tab+A11&hash=itemc840b8c606%3Ag%3AmUEAAeSw3h9qkFLP&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|227581609332|0",
-        "ebayTitel": "Samsung Galaxy Tab A11 8,7\" 64GB 4GB RAM Grau Wi‑Fi USB‑C SM‑X130",
+        "ebayItem": "v1|860079310342|0",
+        "ebayTitel": "Samsung Galaxy Tab A11 8,7 Zoll gray LTE 4GB 64GB Grau Tablet SM-X135F ",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "149,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=43369524190&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "43369524190",
+        "feedTitel": "Acer Iconia Tab A11 (A11-21M-A3BM) 11\" WUXGA, IPS Touch, Allwinner A523, 4GB RAM, 128GB eMMc, Android 15"
       }
     ]
   },
@@ -382,7 +422,7 @@
       {
         "name": "eBay",
         "price": "453,99 €",
-        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHve2T3AIYvpo13LFpP8ACcPFDVYWvZCL5dKEQLZXiFZa50HqZqyreRIz%2BMf7Zac8rAEaB6U3fjfZksODW4KRKZbzCJmk7DFOeM3pxgBN%2BSSj%2FtbBQTsnWHmlJLk7QmDNrvaFYmr1LZEeGNPa8exAog2qbr3oBWb53f3h7Z8UPRK2gS60%2FeowLtTH013M7rJczI%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHvuz1Z%2Fz%2BRCjNkzkiQ8TR6pEm%2FejqCI7LDC22WGyQ6QBQQ0SJhIqQ7iX1gS8pSPhOcSzv1PQ%2FDiPsb1np0X73dmExjvE3qnGaSEIT%2BiXd7mazGFGfY4Sy6hbG1OphiIOxNX6JQef73tIjXrefRZQq6cCwFuyqXLmTYbUIaTDRHmh2PWqwVTD08K5dMiCXz1SZ4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|117441862118|0",
         "ebayTitel": "NEU Apple iPad mini 6. Generation Wifi 256 GB pink OVP",
@@ -464,7 +504,7 @@
     "name": "iPad Pro 11\" (M5)",
     "brand": "Apple",
     "series": "Pro",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/iPad_Pro_11_M4_WiFi_Silver_PDP_Image_Position_1a__DEDE_1d8c.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -479,6 +519,14 @@
         "ebayItem": "v1|358872461313|0",
         "ebayTitel": "Apple iPad Pro 11 2025 256GB WiFi Space Schwarz,  M5 -  Neu Versiegelt",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "1449,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=45113078094&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "45113078094",
+        "feedTitel": "Apple iPad Pro 11 Cellular 256GB Silber M5"
       }
     ]
   },
@@ -487,7 +535,7 @@
     "name": "iPad Pro 13\" (M5)",
     "brand": "Apple",
     "series": "Pro",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/iPad_Pro_13_M4_WiFi_Space_Black_PDP_Image_Position_1a__DEDE_cc48.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -496,12 +544,20 @@
       },
       {
         "name": "eBay",
-        "price": "1305,19 €",
-        "link": "https://www.ebay.de/itm/287677649808?_skw=Apple+iPad+Pro+13%22+%28M5%29&hash=item42faec9390%3Ag%3AkhEAAeSw08Zq3btN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "1256,19 €",
+        "link": "https://www.ebay.de/itm/257816697580?_skw=Apple+iPad+Pro+13%22+%28M5%29&hash=item3c07129aec%3Ag%3AjycAAeSwvlZq3O2R&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287677649808|0",
-        "ebayTitel": "Apple iPad Pro 13 Zoll M5 Wi‑Fi 256 GB Schwarz iPadOS MVX23NF/A",
+        "ebayItem": "v1|257816697580|0",
+        "ebayTitel": "Apple iPad Pro 13 Zoll M5 Wi‑Fi 256 GB Space Black (MDYJ4TY/A)",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "1776,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=42831789539&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "42831789539",
+        "feedTitel": "Apple iPad Pro 13 Cellular 256GB Silber M5"
       }
     ]
   },
@@ -533,7 +589,7 @@
     "name": "Lenovo Tab M10",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1127999/Lenovo-Tab-ZAEJ0043DE-01.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -548,6 +604,14 @@
         "ebayItem": "v1|398441060643|0",
         "ebayTitel": "WIFI version Lenovo Tab M10 HD (2. Gen) TB-X306F 10,1\" HD IPS Display 2GB / 32GB",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "219,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46306791971&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46306791971",
+        "feedTitel": "Lenovo Tab TB311XU ZAEJ0043DE - 10.1\", Mediatek Helio G85, 4GB RAM, 64GB, LTE, Android"
       }
     ]
   },
@@ -556,7 +620,7 @@
     "name": "Lenovo Tab M11",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-a11-a11-21m-wp-vapor-silver-11-custom_351a.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -571,6 +635,14 @@
         "ebayItem": "v1|128136404240|0",
         "ebayTitel": "Lenovo Tab M11 11 Zoll 128GB 4GB Wi-Fi Android Tablet mit Tab Pen grau",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "149,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=43369524190&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "43369524190",
+        "feedTitel": "Acer Iconia Tab A11 (A11-21M-A3BM) 11\" WUXGA, IPS Touch, Allwinner A523, 4GB RAM, 128GB eMMc, Android 15"
       }
     ]
   },
@@ -579,7 +651,7 @@
     "name": "Lenovo Tab Plus",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1128070/LenovoIdeaTabPlus-TB361ZU-01.avif?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -589,11 +661,19 @@
       {
         "name": "eBay",
         "price": "212,76 €",
-        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005zwXaqU707PrzD5sYOH9WWbZqT1m1ZcBfCgw5HNvavpXBa5CbIBJEUaNSAI3br1WMefb7c3plmU6lB0fAzGlpRNsEiYYOdJq2Ml1NUwv07npltDBGepj%2BBjx42kyXsSlSzl5fgKqlFPE3FPfPAb1vryrsxJthtZVicQj2J01Bwvyg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005x7yJnCjlp2dUqgs53mTWz4NqtFgBQnzMeSiZf68XrTRpQkvVMFJ%2F9fGYidpEjq6DI0jVmT1%2BFzO702MJdZORxV%2F1kAaRIH2KGxj%2FjEuF88PFkCEdFLRL1LwTRgxI%2FbdELVEUXwZ1YmHBu0W8ZIIC9CIS9qgOWNTgaaYCxDIs%2BqQA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|198485789619|0",
         "ebayTitel": "Lenovo Tab TB311XU Android Tablet 10.1 Zoll WiFi + 4G (LTE) 64 GB Luna Grey",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "449,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46306791972&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46306791972",
+        "feedTitel": "Lenovo Idea Tab Plus TB361ZU ZAGF0134DE - 12.1\", Mediatek Dimensity 6400, 8GB RAM, 128GB, Android"
       }
     ]
   },
@@ -602,7 +682,7 @@
     "name": "Lenovo Tab P11",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-tab-p11-p11-11-wp-logo-gray-01-custom_127d.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -617,6 +697,14 @@
         "ebayItem": "v1|405948051760|0",
         "ebayTitel": "Lenovo Tab P11 Tablet 2. Gen 128GB 4GB RAM Storm Grey MediaTek Helio G99 NEU OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "209,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=40333637104&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "40333637104",
+        "feedTitel": "Acer Iconia Tab P11 (P11-11) Tablet 11\" Quantum Dot QLED 2K Touch IPS, MediaTek MT8781, 8GB RAM, 128GB UFS, Android 14, "
       }
     ]
   },
@@ -634,7 +722,7 @@
       },
       {
         "name": "eBay",
-        "price": "309,99 €",
+        "price": "299,99 €",
         "link": "https://www.ebay.de/itm/377559709955?_skw=Lenovo+Tab+P12&hash=item57e84ff903%3Ag%3A%7EiUAAeSwCjlqylCa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|377559709955|0",
@@ -671,7 +759,7 @@
     "name": "Lenovo Idea Tab Pro",
     "brand": "Lenovo",
     "series": "Idea Tab",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Idea_Tab_Pro_Gen_2_CT1_04.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -686,6 +774,14 @@
         "ebayItem": "v1|920060319301|0",
         "ebayTitel": "Lenovo Idea Tab Pro | Tablet | AI | 12.7\" | 8GB | 256GB | Android | Grün",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "479,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=45042406440&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "45042406440",
+        "feedTitel": "Lenovo Idea Tab Pro Gen2 (FL) - ZAHD0283DE-CAMPUS 13\" 3.5k Touch IPS, Snapdragon 8s Gen4, 8GB RAM, 256GB UFS 4.0, Androi"
       }
     ]
   },
@@ -777,7 +873,7 @@
     "name": "Xiaomi Pad 7",
     "brand": "Xiaomi",
     "series": "Xiaomi Pad",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Xiaomi-Pad-7-Blue-Hero_8071.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -792,6 +888,14 @@
         "ebayItem": "v1|377360083386|0",
         "ebayTitel": "Xiaomi Pad 7 11\" Tablet 144 Hz 8GB 256GB, Wi-Fi Grün",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "329,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46251215134&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46251215134",
+        "feedTitel": "Xiaomi Pad 7 128GB Blue 28,45cm (11,2\") LCD Display, Xiaomi HyperOS 2, 13MP Hauptkamera"
       }
     ]
   },
@@ -860,7 +964,7 @@
     "name": "Redmi Pad 2",
     "brand": "Xiaomi",
     "series": "Redmi Pad",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Redmi-Pad-2-4G-Gray-Hero_ed6d.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -875,6 +979,14 @@
         "ebayItem": "v1|178567227759|0",
         "ebayTitel": "Xiaomi REDMI Pad 2 9.7 4GB 64GB Graphite Gray Neu & Versiegelt",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "189,90 €",
+        "link": "https://www.awin1.com/pclick.php?p=46397662216&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46397662216",
+        "feedTitel": "Xiaomi Redmi Pad 2 4G 128GB Graphite Gray 27,94cm (11,0\") LCD Display, Xiaomi HyperOS 2, 8MP Hauptkamera"
       }
     ]
   },
@@ -1008,7 +1120,7 @@
       },
       {
         "name": "eBay",
-        "price": "821,90 €",
+        "price": "819,90 €",
         "link": "https://www.ebay.de/itm/206565005856?_skw=OnePlus+Pad+3&hash=item30183bda20%3Ag%3AockAAeSwqBlo1-Aq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|206565005856|0",
@@ -1068,7 +1180,7 @@
     "name": "Surface Pro 12\"",
     "brand": "Microsoft Surface",
     "series": "Pro",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/MS-Surface-Keyboard-EP2-32018-01_6377.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1083,6 +1195,14 @@
         "ebayItem": "v1|377587865584|0",
         "ebayTitel": "WOW Microsoft Surface Pro 12 Business 5G 16GB 256GB EP2-54476 Platin NEU OVP 13\"",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "116,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=41224008326&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "41224008326",
+        "feedTitel": "Microsoft Surface Pro 12\" Keyboard, Anthrazit"
       }
     ]
   },
@@ -1101,7 +1221,7 @@
       {
         "name": "eBay",
         "price": "1709,00 €",
-        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135t6t8FgKTMORXlhR4PSPbFu7tgBioBPk67FGuVjUzoJz9e2PoJmwC3exKT%2B%2F65Wy%2F0F9Kj10S0meMsINks5QiYgbZRLBKBe7Yhe6aJf%2FpN6BKsqhPJhCvnk2T%2BLXHBjOpnuEuqEOKZ1sK6bgMg%2Bqa72HO9ra%2FvR8K17s01PZJSzEtUsM0mtkuEd0PGLh5tfvyUgblCo67DMhxE8CNdXIUs95WbCObnwa9oLrKi03FqQt18C5UzkrTNIrIJ%2FMdX2ekxuRPrtd1PStEIt5YRb%2BTrqWOvkRhssSjGFIbeLHkdFNM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135t6t8FgKTMORXlhR4PSPbFu7tgBioBPk67FGuVjUzoJz9e2PoJmwC3exKT%2B%2F65Wy%2F0F9Kj10S0meMsINks5QiYgbZRLBKBe7Yhe6aJf%2FpN6BKTx10wG0NvurMibf0huIirGOcRHPvs%2Fk6vQp8VeHA4WXFCq3bSoJcsvZfnJoSDW%2B4H5QsUWhEhyFv3ywSyhrPCNWwsWprOFQ263lwhF4H7qFfxNuT8ZyGY7L7UgNo0gxjlAkOyKK66dowuNqUUcKmptTDlgX9ArID2JCfw3RCtqRfP5McZEvxe2gJpqYoySYE%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|137800166058|0",
         "ebayTitel": "Microsoft Surface Pro 10 256GB Wi-Fi Titan Grau Neu",
@@ -1400,7 +1520,7 @@
     "name": "Amazon Fire HD 10",
     "brand": "Amazon Fire",
     "series": "HD",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/840268960346_0_dd7b.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1415,6 +1535,14 @@
         "ebayItem": "v1|178356675812|0",
         "ebayTitel": "Amazon Fire HD 10 (9th Generation) 32GB, WLAN, 10,1Zoll - Schwarz, Mit Werbung ",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "164,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=43140293601&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "43140293601",
+        "feedTitel": "Das neue Amazon Fire HD 10 Tablet (2023) für Entspannung optimiert, brillantes 10,1-Zoll-Full-HD-Display, Octa-Core-Proz"
       }
     ]
   },
@@ -1423,7 +1551,7 @@
     "name": "Amazon Fire HD 10 Kids",
     "brand": "Amazon Fire",
     "series": "HD",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/FireKidsHD10_BLU_30L_DE_6e59.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1438,6 +1566,14 @@
         "ebayItem": "v1|860050987998|0",
         "ebayTitel": "Amazon Fire HD 10 Kids (neuste Generation) Kinder Tablet  32 GB Rosa NEU OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "214,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=43850949818&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "43850949818",
+        "feedTitel": "Amazon Fire HD 10 Kids-Tablet (2021), Himmelblau 25,6cm (10,1\") Full-HD Display, 32 GB Speicher"
       }
     ]
   },
@@ -1446,7 +1582,7 @@
     "name": "Amazon Fire HD 10 Kids Pro",
     "brand": "Amazon Fire",
     "series": "HD",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/B0BL6QPYXC_9278.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1461,6 +1597,14 @@
         "ebayItem": "v1|407300829425|0",
         "ebayTitel": "Amazon Fire HD 10 Kids Pro Tablet 32 GB 10,1 Zoll WLAN Mintgrün 13. Gen. 2023",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "214,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44310151643&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44310151643",
+        "feedTitel": "Amazon Fire HD 10 Kids Pro-Tablet (2023), Happy-Day-Design für Kinder ab dem Grundschulalter, Mit 10-Zoll-Display, lange"
       }
     ]
   },
@@ -1538,7 +1682,7 @@
     "name": "Amazon Fire Max 11",
     "brand": "Amazon Fire",
     "series": "Max",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Right_DE_7aa4.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1553,6 +1697,14 @@
         "ebayItem": "v1|960069949497|0",
         "ebayTitel": "Amazon Fire Max 11 Tablet - 64GB/4GB RAM - komplett NEU/OVP - Garantie",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "269,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44369177438&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44369177438",
+        "feedTitel": "Amazon Fire Max 11 Tablet, grau mit klarem 11-Zoll-Display, Octa-Core-Prozessor, 4 GB RAM, 14 Stunden Akkulaufzeit, 64 G"
       }
     ]
   }

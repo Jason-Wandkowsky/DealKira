@@ -50,7 +50,7 @@
     "name": "Samsung Galaxy S24 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02042-Samsung-Galaxy-S24-Ultra-Premium-Glass-FC-Anti-ReflexwXkBFGLbZ7NIe_666d.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -65,6 +65,14 @@
         "ebayItem": "v1|327421769937|0",
         "ebayTitel": "Samsung Galaxy S24 Ultra - 256GB - Titanium Black (Ohne Simlock) (Dual SIM)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "24,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=40220717271&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "40220717271",
+        "feedTitel": "DISPLEX Premium Glasschutzfolie FCAR f. Samsung Galaxy S24 Ultra"
       }
     ]
   },
@@ -73,7 +81,7 @@
     "name": "Samsung Galaxy S25",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02117-Samsung-Galaxy-S25-CamGlass-All-In-One_af8f.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -88,6 +96,14 @@
         "ebayItem": "v1|820265890497|0",
         "ebayTitel": "Samsung Galaxy S25 Smartphone 128 GB Silber (Originalverpackung)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "14,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=41926064713&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "41926064713",
+        "feedTitel": "DISPLEX CamGlass All-In-One Samsung Galaxy S25"
       }
     ]
   },
@@ -96,7 +112,7 @@
     "name": "Samsung Galaxy S25+",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02118-Samsung-Galaxy-S25-CamGlass-All-In-One_9a68.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -111,6 +127,14 @@
         "ebayItem": "v1|198696021907|0",
         "ebayTitel": "Smartphone Samsung Galaxy S25 5G 6,2” S931 12+128GB DualSim Blue Black 19% MwSt",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "14,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=41926064714&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "41926064714",
+        "feedTitel": "DISPLEX CamGlass All-In-One Samsung Galaxy S25+"
       }
     ]
   },
@@ -165,7 +189,7 @@
     "name": "Samsung Galaxy S26",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Otterbox-000031-01_4195.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -180,6 +204,14 @@
         "ebayItem": "v1|267821181344|0",
         "ebayTitel": "Samsung Galaxy S26 5G 256GB 12GB RAM schwarz black - wie neu",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44293164571&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44293164571",
+        "feedTitel": "OtterBox Glass Samsung Galaxy S26 -clear"
       }
     ]
   },
@@ -188,7 +220,7 @@
     "name": "Samsung Galaxy S26+",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02241-Samsung-Galaxy-S26-S26-CamGlass-All-In-One_e1e1.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -203,6 +235,14 @@
         "ebayItem": "v1|188982396515|0",
         "ebayTitel": "Samsung Galaxy S26 256GB Schwarz + OVP",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "14,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44234638233&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44234638233",
+        "feedTitel": "DISPLEX CamGlass All-In-One Sam. Galaxy S26/S26+ 2 Stück"
       }
     ]
   },
@@ -211,7 +251,7 @@
     "name": "Samsung Galaxy S26 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02246-Samsung-Galaxy-S26-Ultra-CamGlass-Single-Lens_11fe.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -226,6 +266,14 @@
         "ebayItem": "v1|307230635614|0",
         "ebayTitel": "Samsung Galaxy S26 Ultra Edition Weiß mit S Pen 5G Android 6,9\" 12MP 256MB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "6,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44235416559&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44235416559",
+        "feedTitel": "DISPLEX CamGlass Single Lens Samsung Gal S26 Ultra 2 Stück"
       }
     ]
   },
@@ -234,7 +282,7 @@
     "name": "Samsung Galaxy A57 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1127445/02295-Samsung-A37-5G-A57-5G-Smart-Glass-2D.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -243,12 +291,20 @@
       },
       {
         "name": "eBay",
-        "price": "331,18 €",
-        "link": "https://www.ebay.de/itm/960082647430?_skw=Samsung+Galaxy+A57+5G&hash=itemdf89629986%3Ag%3AmkAAAeSwCbNq1JLL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "336,19 €",
+        "link": "https://www.ebay.de/itm/840042307259?_skw=Samsung+Galaxy+A57+5G&hash=itemc3966c5ebb%3Ag%3AdhQAAeSwG4Jqz-Fa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|960082647430|0",
-        "ebayTitel": "Samsung Galaxy A57 5g 128gb 8gb Awesome Grey Android Smartphone",
+        "ebayItem": "v1|840042307259|0",
+        "ebayTitel": "Samsung Galaxy A57 5G 128GB Blau Ohne Simlock (SM-A576B/DS)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "11,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46157215008&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46157215008",
+        "feedTitel": "DISPLEX Smart Glass Samsung A37 5G/A57 5G"
       }
     ]
   },
@@ -289,11 +345,11 @@
       },
       {
         "name": "eBay",
-        "price": "218,98 €",
-        "link": "https://www.ebay.de/itm/407300600293?_skw=Samsung+Galaxy+A55+5G&hash=item5ed501f1e5%3Ag%3APuQAAeSwZxpq0KBU&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mrv9ARu60Bl%2FYlFOD%2BB%2FAe9tuHTRlz1g6jYiJOmT4CMuQo3Wu1kf3R1Sl04277wm4lYkExoWZg%2FTo%2F6JlTF2ELlRqAHh5O%2F0eRLu%2B2Ru6raPHAE5aW1WIZK6%2FjWNMM5AzogMzCfLEZLJJ53gh%2BE%2BudQP82Yg596MQaXYPsB0CphcmS8sxozN%2F%2Bvv2DH0RLKBU6sPiYLLOf6cbGtJk2e%2Fv87Hv7uPGBwJ%2FNl5KP5s%2F2m%2BDgKepiKDGbp3DePgUEMWWaBLRn09Zv3%2FmiXacmf3Wg0lxtkiLQOX%2Fr5GwMco79Mw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "230,00 €",
+        "link": "https://www.ebay.de/itm/157544664688?_skw=Samsung+Galaxy+A55+5G&hash=item24ae64ce70%3Ag%3A4EIAAeSwid5pP-Ap&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407300600293|0",
-        "ebayTitel": "Samsung Galaxy A55 5G Navy 128GB 8GB 6,6\" 50MP Android ohne Simlock",
+        "ebayItem": "v1|157544664688|0",
+        "ebayTitel": "Samsung Galaxy A55 5G - wie neu, keine Kratzer",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -395,7 +451,7 @@
     "name": "Samsung Galaxy A17 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1129003/a0c40ac0-9767-4f50-be42-90c2cba9a66d_screenGr.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -410,6 +466,14 @@
         "ebayItem": "v1|880046663887|0",
         "ebayTitel": "Samsung Galaxy A17 5G 128GB - Black / schwarz - ohne Simlock Neu!",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46314871594&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46314871594",
+        "feedTitel": "OtterBox Glass Samsung Galaxy A18/A17/A17 5G/A16/A16 5G -clear"
       }
     ]
   },
@@ -418,7 +482,7 @@
     "name": "Samsung Galaxy A16 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1129003/a0c40ac0-9767-4f50-be42-90c2cba9a66d_screenGr.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -433,6 +497,14 @@
         "ebayItem": "v1|296892649213|0",
         "ebayTitel": "Samsung Galaxy A16 5G 128GB 6,7\" SM-A166B/DS 50MP Smartphone Handy 50MP Händler",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46314871594&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46314871594",
+        "feedTitel": "OtterBox Glass Samsung Galaxy A18/A17/A17 5G/A16/A16 5G -clear"
       }
     ]
   },
@@ -464,7 +536,7 @@
     "name": "Samsung Galaxy Z Fold8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1127557/02338-Samsung-Galaxy-Z-Fold8-Smart-Glass-2DF06O62ejXvh8O.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -479,6 +551,14 @@
         "ebayItem": "v1|327420957981|0",
         "ebayTitel": "Samsung Galaxy Z Fold 8 Cream 256GB, 1 Ladezyklus",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "11,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46157215012&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46157215012",
+        "feedTitel": "DISPLEX Smart Glass Samsung Galaxy Z Fold8"
       }
     ]
   },
@@ -487,7 +567,7 @@
     "name": "Samsung Galaxy Z Flip8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1127556/02337-Samsung-Galaxy-Z-Flip-7-8-Smart-Glass-2D.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -502,6 +582,14 @@
         "ebayItem": "v1|147647257102|0",
         "ebayTitel": "Samsung Galaxy Z Flip8 5G 256GB Pink",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "11,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46157215011&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46157215011",
+        "feedTitel": "DISPLEX Smart Glass Samsung Galaxy Z Flip7/Z Flip8"
       }
     ]
   },
@@ -510,7 +598,7 @@
     "name": "Samsung Galaxy Z Flip7",
     "brand": "Samsung",
     "series": "Z",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/1127556/02337-Samsung-Galaxy-Z-Flip-7-8-Smart-Glass-2D.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -522,9 +610,17 @@
         "price": "629,00 €",
         "link": "https://www.ebay.de/itm/318921017254?_skw=Samsung+Galaxy+Z+Flip7&hash=item4a412c87a6%3Ag%3ANxIAAeSw1rlqt9QL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|318921017254|617125207395",
+        "ebayItem": "v1|318921017254|617125207393",
         "ebayTitel": "Samsung Galaxy Z Flip7 256GB/512GB",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "11,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=46157215011&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46157215011",
+        "feedTitel": "DISPLEX Smart Glass Samsung Galaxy Z Flip7/Z Flip8"
       }
     ]
   },
@@ -589,7 +685,7 @@
       {
         "name": "eBay",
         "price": "500,00 €",
-        "link": "https://www.ebay.de/itm/237137899299?_skw=Samsung+Galaxy+Z+Fold5&hash=item3736852f23%3Ag%3AqiUAAeSwelRq2iMi&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nRyem%2BrpEI6%2B6wSI2SMMkhm8ct%2FxJJzXTHMovBqTYeAGZLaOBVbZYbkLAMGOmWf%2B470mhQ4%2BmBFF7dlKJubICeVBxfiwbC4mIOlrRhApRxeMyhRViq3%2F4SXhVJkdKtiPLAVK6rFlRyQAoM1lw5cv3T2tYDq0inF9H7lpCx8pk1uXVgf3%2BDl%2F8uAdlvHhKD9gKkFOjhPudRlSNBe%2BfRYpSly8k31cMxiz1KL7QS0FKbfe93YeJ7HrJJu8aneraPqwwJ%2F2LPS7gFrirylhuJubeoeBO5IaxXpEH9887Z7jlM4A%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/237137899299?_skw=Samsung+Galaxy+Z+Fold5&hash=item3736852f23%3Ag%3AqiUAAeSwelRq2iMi&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nRyem%2BrpEI6%2B6wSI2SMMkhm8ct%2FxJJzXTHMovBqTYeAGZLaOBVbZYbkLAMGOmWf%2B470mhQ4%2BmBFF7dlKJubICeVBxfiwbC4mIOlrRhApRxeMyhRViq3%2F4SXhVJkdKtiPK8SsUNeinZRkS9PywLUjTZFBdh8oY%2FX1aVQHmGTKLBuD2t9LBPgTxG1JQZwm1taltIiqCrtnI07in5Yh%2BylkkMeqcGrf21dyVIcL6v33BMMSP6a0J04LfFBbmtkEfrTDFcX06bqCpFm3JtubkE%2Bj93IVA1pwflAdaXackQg5LvGQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|237137899299|0",
         "ebayTitel": "Samsung Galaxy Z Fold 5 256 GB.",
@@ -648,7 +744,7 @@
     "name": "Samsung Galaxy XCover7",
     "brand": "Samsung",
     "series": "XCover",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/SamsungTemperedGlass-GP-TTG556AEATW_6c02.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -663,6 +759,14 @@
         "ebayItem": "v1|307247461676|0",
         "ebayTitel": "Samsung Galaxy XCover7 Smartphone 128 GB Schwarz, Originalverpackung (OVP)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "9,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44293164408&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44293164408",
+        "feedTitel": "Samsung by Mobeen Tempered Glass, Galaxy Xcover7"
       }
     ]
   },
@@ -749,11 +853,11 @@
       },
       {
         "name": "eBay",
-        "price": "196,19 €",
-        "link": "https://www.ebay.de/itm/306729441100?_skw=Apple+iPhone+11&hash=item476a7fd74c%3Ag%3A1BUAAeSwPHZpdW5p&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nO9tX5TUoR1svQRPktHhGj3Ddn3LdDqCjkgU04LpSi5UyAAExO6xO5d7emyOm6xtHyg1Yr7RKrrBGgWea44a8PBHbMeYo9R3CVxCRi3XIZ0nHypLULTOPBlvH8r8a1k%2Ftn020w6cYXxwEIU6%2FZbM5osSsEHFW8ekt0x00HFXz8afwClB3Y7APZuMbZm12iX7Xmd4ZGtrwjj6EHcFvhaAHmutac5tX4ik0%2B43xwZcEaO6zMsS59pxZjIUMGfieEjN9XCGLd1%2FWIy8aSkHr4FCMLJb3ctTXQaAaenbHUv6UQJA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "156,19 €",
+        "link": "https://www.ebay.de/itm/227246122480?_skw=Apple+iPhone+11&hash=item34e8eca5f0%3Ag%3AntQAAeSwlvBprDkg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|306729441100|0",
-        "ebayTitel": "Apple iPhone 11 128GB - ohne Simlock - 100% Batterie",
+        "ebayItem": "v1|227246122480|0",
+        "ebayTitel": "Apple iPhone 11 64 GB Lila",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -796,7 +900,7 @@
       {
         "name": "eBay",
         "price": "286,19 €",
-        "link": "https://www.ebay.de/itm/356901822265?_skw=Apple+iPhone+11+Pro+Max&hash=item5319019f39%3Ag%3AXjAAAOSwDnhjCKFj&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7na2%2FQo7uhkSdROZkVZAwi8HEm8m0MP5zGijJmM4r5hVPKErDvy9oDQ7QWDarhL8vpUlVN%2FvlONJeCCtOQhEMNt6ZgHRiAwagwbKB7sIsjZkoQ5bROA50zH2f%2FK12Jtfux1gDDT0I4WyvDsdt7DvBIh0ewGMkCkeC4oCLgsuChmAJ%2F6ZrSYxceGiFsGF%2Bcpsk7hYrD6HLBGwfIeILUY0%2BmepGqUaaX9KNtiuJQvJmGpPB%2Bn5crNTumn6QizYiF1Hi%2BYFcIjjDtLtdoN3c82OMJ0NobYS2E7sCyogKQ%2BycH33g%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/356901822265?_skw=Apple+iPhone+11+Pro+Max&hash=item5319019f39%3Ag%3AXjAAAOSwDnhjCKFj&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7na2%2FQo7uhkSdROZkVZAwi8HEm8m0MP5zGijJmM4r5hVPKErDvy9oDQ7QWDarhL8vpUlVN%2FvlONJeCCtOQhEMNt6ZgHRiAwagwbKB7sIsjZkoQ5bROA50zH2f%2FK12JtfuwqQt4frSnOm%2FhaE6n%2BvIj3jlU6eRXOc%2B1HgkH4SxbTaoqG233uKB3rXPdxKNqZfbnJHc%2FMvk1iZs2UU0izQ%2BULqJWYaziaN40bAJ7AoLb0Acy2NqyFr6XU6KAcolmqrep%2BoEtJbD%2BBD2lyOtwUyz20xhVQYdKjZtVZmRoBUfz%2BmQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|356901822265|0",
         "ebayTitel": "iPhone 11pro Max",
@@ -841,11 +945,11 @@
       },
       {
         "name": "eBay",
-        "price": "156,19 €",
-        "link": "https://www.ebay.de/itm/820256225150?_skw=Apple+iPhone+12+mini&hash=itembefb14b77e%3Ag%3AOAsAAeSwVTZq1lsc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "168,72 €",
+        "link": "https://www.ebay.de/itm/227518372970?_skw=Apple+iPhone+12+mini&hash=item34f926dc6a%3Ag%3AlbMAAeSw-OhqpVOR&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n689KNOtiLfvWXIJqAhDtl2a5p8vZ99mF%2BO3WcgGKYo1xTt994N%2B8IkfnQFs4dEZwxPu%2F9ebd5C3tpoeNYhLqZambLils8S0CShpi8rVYLFds5a61pi3o4KctUom4jGcvSfkduYMoMGRzGNKGtwPmOIjdEYzBBTp%2FB8Sd5bRN1vcdKPRZUGjP5Vy3FW4ek8tZoTKcRAZpGNMoFtbv3uduxPE%2Buki7GffYZuaVHyqhp389nLcParFIAJvT0hPVTyDfbLwJJEXKz6qwzBhqVQPRmg9fYE1yiap5US5V2pfkpyQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|820256225150|0",
-        "ebayTitel": "Apple iPhone 12 mini 5G 64GB Grün A2399 MGE23ZD/A Ohne Simlock",
+        "ebayItem": "v1|227518372970|0",
+        "ebayTitel": "IPhone 12 Mini 64GB Blau",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -980,7 +1084,7 @@
       {
         "name": "eBay",
         "price": "469,99 €",
-        "link": "https://www.ebay.de/itm/167897984051?_skw=Apple+iPhone+13+Pro+Max&hash=item27177fec33%3Ag%3AdGUAAeSwniBqwnpX&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lKVEBO6QQ7JYYdVXelMKT8Vomfqwu0B0qC2ih%2B%2B93%2BwwrKGQ%2BDtxYWhsODNfWLMWiFWqgp1iQp%2B94Je5y3iO0TEgbT53H%2B0KvWQRZSXJE4oIJ%2F4jiB64ytKD%2FRCmrtTjE3P9iYCXAOv26YZY50vsaYx0waaQvgrU%2BVmRepiDwBnyL7fBamStF6moGks4RZsfwwqL1lSyrXfk6Cow54d20N1jcHQIcKxPIaPAlW4nnhapxVWWIQEd9h3y8qncvpbiPxBK5f6atOOXIfmSjF%2FXh%2Fb4%2FXrOPoMhoK2lhGL5exLw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/167897984051?_skw=Apple+iPhone+13+Pro+Max&hash=item27177fec33%3Ag%3AdGUAAeSwniBqwnpX&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lKVEBO6QQ7JYYdVXelMKT8Vomfqwu0B0qC2ih%2B%2B93%2BwwrKGQ%2BDtxYWhsODNfWLMWiFWqgp1iQp%2B94Je5y3iO0TEgbT53H%2B0KvWQRZSXJE4oIJ%2F4jiB64ytKD%2FRCmrtTjFh6UKP4chOj2Jsli1UHheyCemijgmczesECQ0HVLgS7IIXTOAzOQknOBn52SCRJuYf5xoG1M3RajBy2veEOx%2F7RQdADFOToWO7h5r9ceGpedcN5wCUKGSCXKv2ODD%2BNcJAky7V1DhzEzWfzW2LvwXAAmiErd%2BKB%2FRQRYFg8NLGQA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|167897984051|467435488068",
         "ebayTitel": "Apple iPhone 13 Pro Max 128GB 256GB 512GB 1TB Wie neu 100% Batterie mit OVP",
@@ -1003,7 +1107,7 @@
       {
         "name": "eBay",
         "price": "300,00 €",
-        "link": "https://www.ebay.de/itm/920030362212?_skw=Apple+iPhone+14&hash=itemd636153a64%3Ag%3Aj-EAAeSwWfNqy9my&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mn8KcYtgjy5HBL3pAOhUOhs9sZgHCeqkm4aD0f%2BG%2BlwWPqSqtINo0dmnRy0KtjL%2BwhBBJMIFqY3O2WzC1ceiQPjr%2BW1ZtO2TSJIEEqyhOBemLE9wcHmm3XMY9CDHzYNtIzDauSY54Ebzd4wEUjvAhzXzVjt8ghmLfe0Ii8b9YDU%2F0YzJo5o84dy7gSxdS%2Bp2%2Fej6NVZy0KGIqeb3vYqlmAiBQRDIS8L8qzS4%2Bk6PyDCDE1pBGVbMcgerrOCavzGyY9Ex23%2FArqskClbnzPTseVv1ogHuKO%2Bkep8eJvZ%2F%2BrkQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/920030362212?_skw=Apple+iPhone+14&hash=itemd636153a64%3Ag%3Aj-EAAeSwWfNqy9my&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mn8KcYtgjy5HBL3pAOhUOhs9sZgHCeqkm4aD0f%2BG%2BlwWPqSqtINo0dmnRy0KtjL%2BwhBBJMIFqY3O2WzC1ceiQPjr%2BW1ZtO2TSJIEEqyhOBemLE9wcHmm3XMY9CDHzYNtL8cXmZnpJtKgQ3PpeUtRwMivR%2BA%2BU%2Faesx8cJTMWrJX%2By0gsotIfKfgme%2FpdivKZb6BX7B2HfAJmJ7pZyKxr%2BxAsxxNpphsVwDUcK3vAEAaJx%2FtfgYJcFw%2FvKFLhIeNgAJb4BeNau%2FKCbZTN8PMT84bH6CVmGpY60Lb9SuLC%2FNSA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|920030362212|0",
         "ebayTitel": "Apple iPhone 14 128GB Lila ohne Simlock iOS Smartphone Handy Mobiltelefon",
@@ -1026,7 +1130,7 @@
       {
         "name": "eBay",
         "price": "446,19 €",
-        "link": "https://www.ebay.de/itm/168280501696?_skw=Apple+iPhone+14+Plus&hash=item272e4cadc0%3Ag%3AwwYAAeSwvohpzgDg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ndXukXuHox6VuV9e8ypmEMmU8PPFnWJl99D0LGuYZrvBNjz5D5lDB0CREvgr00TFPIBBvFQzbF%2BzsoKFQ3MadxjqKTJPHzVHxaU1xn3gU8LK3Y6J72lmCntkUoLbFfxxGhw8SMwDwCle1pBD40thEEYOLqP%2FTaHgFawYgPJRymy9j7L%2BDja%2FTNYwWrT2EFYlwWKDQAupkJTqSgkyeYyE1kwXBd4OxiqBzVbClOoclc%2BCGKBDh4cSGpawbLnDhiwa4YztF%2FhHzIHZyqyxcy5RTEbZspLnhZwWb4Ex%2FS%2BRNHZQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/168280501696?_skw=Apple+iPhone+14+Plus&hash=item272e4cadc0%3Ag%3AwwYAAeSwvohpzgDg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ndXukXuHox6VuV9e8ypmEMmU8PPFnWJl99D0LGuYZrvBNjz5D5lDB0CREvgr00TFPIBBvFQzbF%2BzsoKFQ3MadxjqKTJPHzVHxaU1xn3gU8LK3Y6J72lmCntkUoLbFfxxFKEZOQDew5NR9m2S0dOdcf4PCXWeYw30fjFSptf3Xp03OqH%2B%2BY%2B4N4Ko%2FCAia1UX64UgQ0B5C9%2BEkadmOf%2FAcm6xxHxko5uh5sUcOWnpRzN0vU3IDnCMXu%2F3dLX1NOhJg4GUwB6zqj8sf6OQgUiWSaIWIH7EYj0wUzrjCyjZqKdw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|168280501696|0",
         "ebayTitel": "Apple iPhone 14 Plus - Blau, 128 GB, ohne Simlock",
@@ -1085,7 +1189,7 @@
     "name": "Apple iPhone 15",
     "brand": "iPhone",
     "series": "15",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/skittles-gla-clear-exp_1_7bdf.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1095,11 +1199,19 @@
       {
         "name": "eBay",
         "price": "427,60 €",
-        "link": "https://www.ebay.de/itm/406723588702?_skw=Apple+iPhone+15&hash=item5eb29d725e%3Ag%3AtB0AAeSwS85poFJg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n%2FipAzF8F9T6TbwH%2ByiUPPJYLwsku0Cq1kKdfy1f3JeA4sO23jCV60DTlpAYxL0GQytdH45bSrX%2BNqij%2B0B8ahBkgoWWSmjiGwI2CdTwLGqHTvX4%2F5OAfyrKjTfDgG%2FwL%2Fb97q%2BLrLUrRNonSIdgpCcTFfqFJfcDaPgQNNsrbrCzb017y1uzbWUs4Te0AogwYMkhz4c%2BQLkrbLr548nEFtMsQs923Hh%2FNLFKExUHk9xu6TTfxFjWsXw%2Bff9OGcaDBPox%2FwgML2FfHg%2FuREFnygXzrUQ01Wi4uLlKmKnSKQOg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/406723588702?_skw=Apple+iPhone+15&hash=item5eb29d725e%3Ag%3AtB0AAeSwS85poFJg&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n%2FipAzF8F9T6TbwH%2ByiUPPJYLwsku0Cq1kKdfy1f3JeA4sO23jCV60DTlpAYxL0GQytdH45bSrX%2BNqij%2B0B8ahBkgoWWSmjiGwI2CdTwLGqHTvX4%2F5OAfyrKjTfDgG%2FwJotiFCVL24QHk9jm7cb1DsJVPGzDuZ7ZWa6X%2BMA%2Fl0qEY2KVoahRRJ4QJTYIYUdYW0krt2uQ39UicGdTMFiczjlBqjF6SJ00UCZR%2BtPDLiNHaVgIZvn1VUTKIEEYFeyjCRv5xdAav2z1s2PQ%2Fv%2Fhd9BnzkaOxQjyyX0RPeiOQhjQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|406723588702|0",
         "ebayTitel": "iPhone 15 128 GB Pink ",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "12,02 €",
+        "link": "https://www.awin1.com/pclick.php?p=36490325703&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "36490325703",
+        "feedTitel": "OtterBox Premium Glass Antimicrobial Apple iPhone 15 -clear"
       }
     ]
   },
@@ -1108,7 +1220,7 @@
     "name": "Apple iPhone 15 Plus",
     "brand": "iPhone",
     "series": "15",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02113-iPhone-15-15-Plus-CamGlass-All-In-One_d743.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1123,6 +1235,14 @@
         "ebayItem": "v1|376763992236|0",
         "ebayTitel": "iPhone 15 Plus - Schwarz - Top Zustand - 128gb ",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "4,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=41904164056&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "41904164056",
+        "feedTitel": "DISPLEX CamGlass All-In-One iPhone 15/15 Plus"
       }
     ]
   },
@@ -1131,7 +1251,7 @@
     "name": "Apple iPhone 15 Pro",
     "brand": "iPhone",
     "series": "15",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/airheads-gla-clear-exp_1_63af.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1146,6 +1266,14 @@
         "ebayItem": "v1|377594504064|0",
         "ebayTitel": "Apple iPhone 15 Pro 128 GB Schwarz iOS Dreifach-Kamera Face ID",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "12,43 €",
+        "link": "https://www.awin1.com/pclick.php?p=45858503742&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "45858503742",
+        "feedTitel": "OtterBox Premium Glass Antimicrobial Apple iPhone 15 Pro -clear"
       }
     ]
   },
@@ -1177,7 +1305,7 @@
     "name": "Apple iPhone 16e",
     "brand": "iPhone",
     "series": "16",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02282_iPhone_16e_17e_Real_Glass_2D__8602.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1192,6 +1320,14 @@
         "ebayItem": "v1|168797671911|0",
         "ebayTitel": "Apple iPhone 16e 128 GB, wie NEU mit Rechnung  29.12.2025",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "15,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44988015277&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44988015277",
+        "feedTitel": "DISPLEX Real Glass MM Apple iPhone 16e/17e"
       }
     ]
   },
@@ -1200,7 +1336,7 @@
     "name": "Apple iPhone 16",
     "brand": "iPhone",
     "series": "16",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16-gla-clear-d-exp_d6b4.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1210,11 +1346,19 @@
       {
         "name": "eBay",
         "price": "621,19 €",
-        "link": "https://www.ebay.de/itm/960096312773?_skw=Apple+iPhone+16&hash=itemdf8a331dc5%3Ag%3AGbEAAeSwM3Fq2LFW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7maZDqBQVwcrQmuuBlZHxr2xUzZNqEkdPggUFlC6JeSS%2FmvNvGVQVKWSJ%2BuJyKYsEt%2FHoD5DI4d5g6DdTJoTYTZH%2F%2B2FE6V8P1iOQiRR5h8hZXKXQ%2Bndjy9idI92kG8f1AKqcoZvHvxX4BGglQBXJcS1c4rhb9zNexX5X5i%2Bj11Bt8D1dS8pFU67KZZsmaPKIGpjpvJXgqp83kgJywlLSh822G3mjV1%2Bkfn6wHYXFehhbeI9dGEs5wvC%2BTj8L%2FrO%2FUAvBufHLTltv2rf5Q5krBLFbXCBwrk7Fejs0XTRfgPPA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/960096312773?_skw=Apple+iPhone+16&hash=itemdf8a331dc5%3Ag%3AGbEAAeSwM3Fq2LFW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7maZDqBQVwcrQmuuBlZHxr2xUzZNqEkdPggUFlC6JeSS%2FmvNvGVQVKWSJ%2BuJyKYsEt%2FHoD5DI4d5g6DdTJoTYTZH%2F%2B2FE6V8P1iOQiRR5h8hZXKXQ%2Bndjy9idI92kG8f1Dm838xFyna6B3z3SEpcHIWH%2F%2BEVHTZYeE95YR37Wzv8XjjzkhlAqcFUVxNdyRe%2BjYyxhSssGmE4eSe50zDq%2BLCmnnyuL9sVjuN34eRKCg0SGPs7nftbqFVhfaB9yl5dJmul4AVe6Z%2B4CTIXT3vwKvw0AV5zSIdJER%2FgwsekT8mHA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|960096312773|0",
         "ebayTitel": "Apple iPhone 16 128GB Blaugrün A3287 MYED3ZD/A Ohne Simlock",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "10,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=39054643313&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "39054643313",
+        "feedTitel": "OtterBox Glass Apple iPhone 16 - transparent"
       }
     ]
   },
@@ -1223,7 +1367,7 @@
     "name": "Apple iPhone 16 Plus",
     "brand": "iPhone",
     "series": "16",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02115-iPhone-16-16-Plus-17-CamGlass-All-In-OneJd0WsNj5tKYHj_51ef.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1238,6 +1382,14 @@
         "ebayItem": "v1|389621939660|0",
         "ebayTitel": "Apple Iphone 16 Plus Pink",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "4,92 €",
+        "link": "https://www.awin1.com/pclick.php?p=41904164058&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "41904164058",
+        "feedTitel": "DISPLEX CamGlass All-In-One iPhone 16/16 Plus/17 2 Stück"
       }
     ]
   },
@@ -1246,7 +1398,7 @@
     "name": "Apple iPhone 16 Pro",
     "brand": "iPhone",
     "series": "16",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16_pro-gla-clear-d-exp_9a16.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1261,6 +1413,14 @@
         "ebayItem": "v1|407306220941|0",
         "ebayTitel": "Apple iPhone 16 Pro 128 GB Gold Smartphone mit Originalverpackung (OVP)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "14,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=39054643316&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "39054643316",
+        "feedTitel": "OtterBox Glass Apple iPhone 16 Pro - transparent"
       }
     ]
   },
@@ -1269,7 +1429,7 @@
     "name": "Apple iPhone 16 Pro Max",
     "brand": "iPhone",
     "series": "16",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16_Pro_Max-gla-clear-d-exp_2_1c41.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1278,12 +1438,20 @@
       },
       {
         "name": "eBay",
-        "price": "751,19 €",
-        "link": "https://www.ebay.de/itm/900027821412?_skw=Apple+iPhone+16+Pro+Max&hash=itemd18dd6ad64%3Ag%3AOekAAeSwrx5q15Qy&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "757,99 €",
+        "link": "https://www.ebay.de/itm/189023111308?_skw=Apple+iPhone+16+Pro+Max&hash=item2c02a7c88c%3Ag%3AfHsAAeSwBEVqvhpC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|900027821412|0",
-        "ebayTitel": "Apple iPhone 16 Pro Max 256 GB Naturtitan, iOS ,sehr guter Zustand",
+        "ebayItem": "v1|189023111308|0",
+        "ebayTitel": "WIE NEU! Apple iPhone 16 Pro Max - 256 GB - Desert Titanium (O2)",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "13,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=39054643319&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "39054643319",
+        "feedTitel": "OtterBox Premium Glass Apple iPhone 16 Pro Max - transparent"
       }
     ]
   },
@@ -1292,7 +1460,7 @@
     "name": "Apple iPhone 17",
     "brand": "iPhone",
     "series": "17",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02250_iPhone_17_Real_Glass_2D__e736.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1307,6 +1475,14 @@
         "ebayItem": "v1|147648969117|0",
         "ebayTitel": "Apple Iphone 17 - 256 GB - Battery 100% - looks new",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "13,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44630121901&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44630121901",
+        "feedTitel": "DISPLEX Real Glass MM Apple iPhone 17"
       }
     ]
   },
@@ -1338,7 +1514,7 @@
     "name": "Apple iPhone 17 Pro",
     "brand": "iPhone",
     "series": "17",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02251_iPhone_17_Pro_Real_Glass_2D__8270.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1353,6 +1529,14 @@
         "ebayItem": "v1|377576986830|0",
         "ebayTitel": "Apple iPhone 17 Pro 256GB Orange Neuwertig Händler Rechnung Garantie",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "13,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44634165546&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44634165546",
+        "feedTitel": "DISPLEX Real Glass MM Apple iPhone 17 Pro"
       }
     ]
   },
@@ -1361,7 +1545,7 @@
     "name": "Apple iPhone 17 Pro Max",
     "brand": "iPhone",
     "series": "17",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/02252_iPhone_17_Pro_Max_Real_Glass_2D__a98e.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1376,6 +1560,14 @@
         "ebayItem": "v1|287662097013|0",
         "ebayTitel": "Apple iPhone 17 Pro Max 256GB Tiefblau - ohne Simlock",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "14,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44634165547&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44634165547",
+        "feedTitel": "DISPLEX Real Glass MM Apple iPhone 17 Pro Max"
       }
     ]
   },
@@ -1430,7 +1622,7 @@
     "name": "Xiaomi 15",
     "brand": "Xiaomi",
     "series": "",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/c267dsdsng_79c1.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -1445,6 +1637,14 @@
         "ebayItem": "v1|198678242273|0",
         "ebayTitel": "Xiaomi 15 512GB 12RAM DS White, NEU Sonstige",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "10,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=34253818853&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "34253818853",
+        "feedTitel": "Goobay Micro-USB Netzteil (15W) [u.a. für, Samsung Galaxy Serie, Sony, Huawei, LG, Xiaomi aber auch für Kleincomputer wi"
       }
     ]
   },
@@ -2177,7 +2377,7 @@
       {
         "name": "eBay",
         "price": "924,77 €",
-        "link": "https://www.ebay.de/itm/820255664279?_skw=Google+Pixel+11+Pro+XL&hash=itembefb0c2897%3Ag%3AMngAAeSwoupq1ij1&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kyuliKjIEZAiZiB2s3HfboF1%2BqJMLXYFXBLgJEE4pYAg9KEn1ebKNxg5LGdo4gJHRvuQpa%2B6ishpRGk3Q6Pvq%2BW4LOv3fr3lcmgNNFyI8COMDlSd1xEGyS7mJHeomQMvjh8x%2FJNCkHrMerKAJNQbY4mGNhFPWPHwXM5QsUlUlhJ6VaNXyc48EpIX%2Fe1XwupO5NhWyJqqQd4PpmO35ZY6GU%2FL%2FRaEGdXVDPKcknvPfUQkheD%2BvK3C5i2H8oDWq8IZr%2BxLSHQsQfDrKIYN4yAtB0wDwnku560W7dt%2FMTXdWqOY%2FunFVqNDvnTjiloGTgPaM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/820255664279?_skw=Google+Pixel+11+Pro+XL&hash=itembefb0c2897%3Ag%3AMngAAeSwoupq1ij1&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kyuliKjIEZAiZiB2s3HfboF1%2BqJMLXYFXBLgJEE4pYAg9KEn1ebKNxg5LGdo4gJHRvuQpa%2B6ishpRGk3Q6Pvq%2BW4LOv3fr3lcmgNNFyI8COMDlSd1xEGyS7mJHeomQMvg0Y9yyPy2csNov5Qd0sgSgKXr730B%2F2J9lZkK6BE1smVwRlU6Qlh6wZsIqx1Yti5RAiLR7wa6XYB0BUX6Suh2PJX%2BTjUj9ICNrFo2sGKTzihy%2B0DgPmuG10xxD%2FhMlfKg%2FSbS6KMdRhYB32LNLi9fSlFxjMs8fYizrsA6sNnq96MqSCPIGBLDlYzL6ulg70Wc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|820255664279|0",
         "ebayTitel": "Google Pixel 11 Pro XL 256 GB Obsidian 16 GB RAM 6,8 Zoll Android",
@@ -2213,7 +2413,7 @@
     "name": "Google Pixel 10 Pro",
     "brand": "Google Pixel",
     "series": "10",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Otterbox-77-98025-01_55a5.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -2228,6 +2428,14 @@
         "ebayItem": "v1|366759043515|0",
         "ebayTitel": "Google Pixel 10 Pro 128GB Obsidian - 5G Smartphone - Ohne Simlock - OVP - NEU",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "16,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=42721648398&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "42721648398",
+        "feedTitel": "OtterBox Premium Glass Displayfolie Google Pixel 10/Pixel 10 Pro"
       }
     ]
   },
@@ -2292,7 +2500,7 @@
       {
         "name": "eBay",
         "price": "449,00 €",
-        "link": "https://www.ebay.de/itm/147217615953?_skw=Google+Pixel+9&hash=item2246da8c51%3Ag%3ARWMAAeSwY0hpv9tu&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7k2KMK3T5pez8nhDsC9RHWNDKL4bw3go%2Fjy3BfoIWdTEwOEGSMh7jrC64LUmlXL%2BIjaS5kIpLHjlw%2BoHNhb0vXzlbL%2BKdUgom2TrwYtsAWUfA%2Fan63HBUKDJJe9xA8qwSpImrxeWpCLsqIEKqP8gRG2x5KuT8UGIWxJaqOyjj5seSNPSfeFI0zh%2B3sUAD%2FFNJVCn4%2FgR5rCtuHcjRKfqTt1J1QFJCifpX4BmQSQtH1%2BmM%2Fs%2B0Keujg8WSYT81U1NfgkAtDfD%2BCWVl6UXOuU2MqDxxcbo7ej66N0P1LCLN%2FXFg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/147217615953?_skw=Google+Pixel+9&hash=item2246da8c51%3Ag%3ARWMAAeSwY0hpv9tu&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7k2KMK3T5pez8nhDsC9RHWNDKL4bw3go%2Fjy3BfoIWdTEwOEGSMh7jrC64LUmlXL%2BIjaS5kIpLHjlw%2BoHNhb0vXzlbL%2BKdUgom2TrwYtsAWUfA%2Fan63HBUKDJJe9xA8qwSo4JJ8L8bD2TOssaCpaByLBhit%2FXMpew2Dmswdn1NYPFDBVfyRkXIvOF7tvGHa6OS1GdGQLCzAGMGxpxkJ7O%2BqXoT4njJ65Hii4Rt%2Fo57hwsZMcPKP1cgWjwvBu1sXREh570F8praTNyxT%2BqeatECjB5CV4iUTMv7HXvLszkBBisA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|147217615953|0",
         "ebayTitel": "Handy Google Pixel a9 128GB  Android 24 Hours Battery Obsidian Bläck Ai Kamera",
@@ -2407,7 +2615,7 @@
       {
         "name": "eBay",
         "price": "306,19 €",
-        "link": "https://www.ebay.de/itm/407275135303?_skw=Google+Pixel+8a&hash=item5ed37d6147%3Ag%3A3MUAAeSwGPlqx0ML&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nW9HXnKXT4CBiIg%2BAaqSl9Mo934S4sp2wy%2BSrxiPSunKQ97QJJkufEZGQ2SufKxCe4Uy4O9CNVnHqCbDlzPg02ln2CHXijzAm2Ng89oeCWponqK2AXfKiYQ6%2BTf4oxXOBaeD4VxtFObvUj3ieGYiw6T%2B3B%2B8%2BFGl3kCIZSUxV6w4ct8HV5FJtHU7aCcH3YpoK28ZkVMBjPClN6dkhVeo%2FuyOarMqz9MbeU1aXZCNxTA3FRQa43FHeSS0rAk0f0GUK31Vscn%2FTRrglwnVTy7YyCxh7fLQvkQWWzDKKH4EtoWA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407275135303?_skw=Google+Pixel+8a&hash=item5ed37d6147%3Ag%3A3MUAAeSwGPlqx0ML&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nW9HXnKXT4CBiIg%2BAaqSl9Mo934S4sp2wy%2BSrxiPSunKQ97QJJkufEZGQ2SufKxCe4Uy4O9CNVnHqCbDlzPg02ln2CHXijzAm2Ng89oeCWponqK2AXfKiYQ6%2BTf4oxXOC7i1oEZsK4WgzetJmT5KjCTmQNCJKgHMfu63Q%2FG8iv3%2FF1Q6ltT6CVeEAL6tat2jf8ueJV3NuzS0O%2B6Y7gwm7R5yuwapIgWDEwtF86CDRCW5ivnbQ31NyvZDX5KJkG%2FKRJz%2FIwzahtoDTA%2FpIdPhuaR5MH0Yb3KZ3k9UjgfszV3Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407275135303|0",
         "ebayTitel": "Google Pixel 8a Smartphone - 128 GB - Blau - Android Betriebssystem",
@@ -2453,7 +2661,7 @@
       {
         "name": "eBay",
         "price": "266,19 €",
-        "link": "https://www.ebay.de/itm/317471215064?_skw=Google+Pixel+7+Pro&hash=item49eac24dd8%3Ag%3AEwMAAeSw%7Eelo%7E4G0&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kvLflkaqzZaMSrdtjKULJibKQyizUAPexPVw%2BXk6QeMOgJ%2FrKhqxfas%2BMhRgJoihf2D3RBn3pVgqVP7imJuVyC0a%2F48bOhVnLbHPj42q7cz2Wc8H7%2FgTLia%2FqiGhmkLiSrXkfwkvWHDfK0avp6%2FMkmHXe1amCKqNS0Bn429bRFwKCPUGmqBZWl8zXUI8jAr1kZqDa94xywMD%2B8oyn2e8A%2B0tpytoCI4gk7p0FJf5Dk1%2FRocfjMzibxXS5VRAiLdU92XNWfs5ai1A2wyf0Gi4F9dixxc3fd%2FKsVIwyvGrGRHA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/317471215064?_skw=Google+Pixel+7+Pro&hash=item49eac24dd8%3Ag%3AEwMAAeSw%7Eelo%7E4G0&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kvLflkaqzZaMSrdtjKULJibKQyizUAPexPVw%2BXk6QeMOgJ%2FrKhqxfas%2BMhRgJoihf2D3RBn3pVgqVP7imJuVyC0a%2F48bOhVnLbHPj42q7cz2Wc8H7%2FgTLia%2FqiGhmkLiQ2n141GjPWF7U58QrfaroG5kFybqbvBEr8KbxjAbCzsHOSUTg%2BjMazjNWkVYHEc%2BoM0RtDgsi9Eyo89LPRd3IBfl9%2FVsJ2IMwu0oTuZZCB9Nsctk0ytOfggLkPQBNCIsijL7GSAMr8fcEaHz79JTg2MCJmPu1zfv1qM3hr4Zrtxg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|317471215064|0",
         "ebayTitel": "Google Pixel 7 Pro 128GB",
@@ -2977,11 +3185,11 @@
       },
       {
         "name": "eBay",
-        "price": "516,19 €",
-        "link": "https://www.ebay.de/itm/800749265073?_skw=Motorola+Razr+70+Plus&hash=itemba706020b1%3Ag%3AlysAAeSw8z5qv%7ESw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "500,00 €",
+        "link": "https://www.ebay.de/itm/920072984753?_skw=Motorola+Razr+70+Plus&hash=itemd6389f98b1%3Ag%3AprsAAeSwyhVq3dBJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800749265073|0",
-        "ebayTitel": "Motorola razr 70 plus mountain view dark green 12GB 512GB - NEU & OVP",
+        "ebayItem": "v1|920072984753|0",
+        "ebayTitel": "NEU & OVP Motorola Razr 70 Plus 512GB 12GB + Rechnung / Herstellergarantie",
         "ebayKat": "9355:Handys & Smartphones,15032:Handys & Kommunikation"
       }
     ]
@@ -3208,7 +3416,7 @@
       {
         "name": "eBay",
         "price": "306,19 €",
-        "link": "https://www.ebay.de/itm/840051634289?_skw=Motorola+Edge+60&hash=itemc396fab071%3Ag%3AVe8AAeSw%7E7pqhqgT&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m0t42zrLOZw1DuwMkFT1h4mw22K7DpXqEsBJMekXS4FVwX13FxC3y08C9jbujPIRLnk43fvdgW2KGsaHM47MRhGGolQ1y%2FapVqNzqNro7qPRTFwxToLIzP0oSTyBmmf3swy%2B8qxjPvSc06vwnOyd9neZf1f8qlBfEgkdhvr%2FRl5feibVSYQ2GBiLnVhhk%2BUJUH%2FvNH2KnwcI%2FopYQhaJ%2FlYTt1KGIrdwBu5P3YV4miLaSABhOJGnK6B4yEISlvBQsVRibPSVhRd7XDGUiSUjGy1ct51l1DdhUnHloDHcmiDQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/840051634289?_skw=Motorola+Edge+60&hash=itemc396fab071%3Ag%3AVe8AAeSw%7E7pqhqgT&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m0t42zrLOZw1DuwMkFT1h4mw22K7DpXqEsBJMekXS4FVwX13FxC3y08C9jbujPIRLnk43fvdgW2KGsaHM47MRhGGolQ1y%2FapVqNzqNro7qPRTFwxToLIzP0oSTyBmmf3sxoZ3FHjnDZ7eWARBLjv1DZ3P0rp08fIvJGcIoTp3tdM%2B9XN1cGoAWhKeGRADS06XTTGGVb6jHxLz77LztSRammoBW0mHSmOW%2F3Wk50PPYEhllgsJnE0ZyzBKWviwvssIB7pmof3mAyDyKyAtOVMq19swERB0Qfxu%2BJMnxaodB3g%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|840051634289|0",
         "ebayTitel": "Motorola Edge 60 ",
