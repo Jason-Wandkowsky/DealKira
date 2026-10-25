@@ -50,7 +50,7 @@
     "name": "Samsung Galaxy S24 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/02042-Samsung-Galaxy-S24-Ultra-Premium-Glass-FC-Anti-ReflexwXkBFGLbZ7NIe_666d.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -73,7 +73,7 @@
     "name": "Samsung Galaxy S25",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/02117-Samsung-Galaxy-S25-CamGlass-All-In-One_af8f.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -96,7 +96,7 @@
     "name": "Samsung Galaxy S25+",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/02118-Samsung-Galaxy-S25-CamGlass-All-In-One_9a68.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -165,7 +165,7 @@
     "name": "Samsung Galaxy S26",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/Otterbox-000031-01_4195.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -188,7 +188,7 @@
     "name": "Samsung Galaxy S26+",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/02241-Samsung-Galaxy-S26-S26-CamGlass-All-In-One_e1e1.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -211,7 +211,7 @@
     "name": "Samsung Galaxy S26 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/02246-Samsung-Galaxy-S26-Ultra-CamGlass-Single-Lens_11fe.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -234,7 +234,7 @@
     "name": "Samsung Galaxy A57 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://media2.nbb-cdn.de/images/products/1127445/02295-Samsung-A37-5G-A57-5G-Smart-Glass-2D.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -395,7 +395,7 @@
     "name": "Samsung Galaxy A17 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://media2.nbb-cdn.de/images/products/1129003/a0c40ac0-9767-4f50-be42-90c2cba9a66d_screenGr.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -418,7 +418,7 @@
     "name": "Samsung Galaxy A16 5G",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://media2.nbb-cdn.de/images/products/1129003/a0c40ac0-9767-4f50-be42-90c2cba9a66d_screenGr.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -464,7 +464,7 @@
     "name": "Samsung Galaxy Z Fold8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://media2.nbb-cdn.de/images/products/1127557/02338-Samsung-Galaxy-Z-Fold8-Smart-Glass-2DF06O62ejXvh8O.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -487,7 +487,7 @@
     "name": "Samsung Galaxy Z Flip8",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://media2.nbb-cdn.de/images/products/1127556/02337-Samsung-Galaxy-Z-Flip-7-8-Smart-Glass-2D.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -510,7 +510,7 @@
     "name": "Samsung Galaxy Z Flip7",
     "brand": "Samsung",
     "series": "Z",
-    "image": "https://media2.nbb-cdn.de/images/products/1127556/02337-Samsung-Galaxy-Z-Flip-7-8-Smart-Glass-2D.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -648,7 +648,7 @@
     "name": "Samsung Galaxy XCover7",
     "brand": "Samsung",
     "series": "XCover",
-    "image": "https://media2.nbb-cdn.de/images/products/SamsungTemperedGlass-GP-TTG556AEATW_6c02.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1085,7 +1085,7 @@
     "name": "Apple iPhone 15",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://media2.nbb-cdn.de/images/products/skittles-gla-clear-exp_1_7bdf.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1108,7 +1108,7 @@
     "name": "Apple iPhone 15 Plus",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://media2.nbb-cdn.de/images/products/02113-iPhone-15-15-Plus-CamGlass-All-In-One_d743.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1131,7 +1131,7 @@
     "name": "Apple iPhone 15 Pro",
     "brand": "iPhone",
     "series": "15",
-    "image": "https://media2.nbb-cdn.de/images/products/airheads-gla-clear-exp_1_63af.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1177,7 +1177,7 @@
     "name": "Apple iPhone 16e",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://media2.nbb-cdn.de/images/products/02282_iPhone_16e_17e_Real_Glass_2D__8602.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1200,7 +1200,7 @@
     "name": "Apple iPhone 16",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16-gla-clear-d-exp_d6b4.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1223,7 +1223,7 @@
     "name": "Apple iPhone 16 Plus",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://media2.nbb-cdn.de/images/products/02115-iPhone-16-16-Plus-17-CamGlass-All-In-OneJd0WsNj5tKYHj_51ef.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1246,7 +1246,7 @@
     "name": "Apple iPhone 16 Pro",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16_pro-gla-clear-d-exp_9a16.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1269,7 +1269,7 @@
     "name": "Apple iPhone 16 Pro Max",
     "brand": "iPhone",
     "series": "16",
-    "image": "https://media2.nbb-cdn.de/images/products/iPhone_16_Pro_Max-gla-clear-d-exp_2_1c41.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1292,7 +1292,7 @@
     "name": "Apple iPhone 17",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://media2.nbb-cdn.de/images/products/02250_iPhone_17_Real_Glass_2D__e736.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1338,7 +1338,7 @@
     "name": "Apple iPhone 17 Pro",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://media2.nbb-cdn.de/images/products/02251_iPhone_17_Pro_Real_Glass_2D__8270.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1361,7 +1361,7 @@
     "name": "Apple iPhone 17 Pro Max",
     "brand": "iPhone",
     "series": "17",
-    "image": "https://media2.nbb-cdn.de/images/products/02252_iPhone_17_Pro_Max_Real_Glass_2D__a98e.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1430,7 +1430,7 @@
     "name": "Xiaomi 15",
     "brand": "Xiaomi",
     "series": "",
-    "image": "https://media2.nbb-cdn.de/images/products/c267dsdsng_79c1.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2213,7 +2213,7 @@
     "name": "Google Pixel 10 Pro",
     "brand": "Google Pixel",
     "series": "10",
-    "image": "https://media2.nbb-cdn.de/images/products/Otterbox-77-98025-01_55a5.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",

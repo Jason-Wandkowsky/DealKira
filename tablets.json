@@ -4,7 +4,7 @@
     "name": "Galaxy Tab S11 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/DISPLEX_Tablet_Glass_Samsung_Galaxy_Tab_S10_Ultra_1_e96e.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -50,7 +50,7 @@
     "name": "Galaxy Tab S10 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "https://media2.nbb-cdn.de/images/products/DISPLEX_Tablet_Glass_Samsung_Galaxy_Tab_S10_Ultra_1_e96e.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -120,7 +120,8 @@
         "feedId": "40906695404",
         "feedTitel": "Samsung Galaxy Tab S10 FE+ Gray 13,1\" WQXGA+ Display / Octa-Cora / 8GB RAM / 128GB Speicher / Android /inkl. S-Pen"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s10-fe",
@@ -220,14 +221,15 @@
         "feedId": "43709993030",
         "feedTitel": "Samsung Galaxy Tab A11+ Wi-Fi Grey 11\" WUXGADisplay/ Octa-Core/ 6 GB RAM / 128 GB Speicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-a11",
     "name": "Galaxy Tab A11",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-a11-a11-21m-wp-vapor-silver-11-custom_351a.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -365,7 +367,7 @@
     "name": "iPad mini (6. Generation)",
     "brand": "Apple",
     "series": "mini",
-    "image": "https://media2.nbb-cdn.de/images/products/iPad_mini_A17_Pro_Starlight_Wi-Fi_2-Up_Print__USEN_4d2d.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -412,14 +414,15 @@
         "feedId": "45135467668",
         "feedTitel": "Apple iPad mini 8,3\" Wi-Fi 128GB (polarstern) 7.Gen 2024"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ipad-air-5",
     "name": "iPad Air (5. Generation)",
     "brand": "Apple",
     "series": "Air",
-    "image": "https://media2.nbb-cdn.de/images/products/iPad_Air_11-inch_M4_Chip_Wi-Fi_Blue_2-Up_Screen__USEN_5c1b.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -512,7 +515,8 @@
         "feedId": "45113078094",
         "feedTitel": "Apple iPad Pro 11 Cellular 256GB Silber M5"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ipad-pro-13-m5",
@@ -543,7 +547,8 @@
         "feedId": "42831789539",
         "feedTitel": "Apple iPad Pro 13 Cellular 256GB Silber M5"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "lenovo-tab-m9",
@@ -573,7 +578,7 @@
     "name": "Lenovo Tab M10",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/1127999/Lenovo-Tab-ZAEJ0043DE-01.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -596,7 +601,7 @@
     "name": "Lenovo Tab M11",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-a11-a11-21m-wp-vapor-silver-11-custom_351a.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -619,7 +624,7 @@
     "name": "Lenovo Tab Plus",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/1128070/LenovoIdeaTabPlus-TB361ZU-01.avif?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -642,7 +647,7 @@
     "name": "Lenovo Tab P11",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/acer-iconia-tab-p11-p11-11-wp-logo-gray-01-custom_127d.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -711,7 +716,7 @@
     "name": "Lenovo Idea Tab Pro",
     "brand": "Lenovo",
     "series": "Idea Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/Idea_Tab_Pro_Gen_2_CT1_04.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -841,7 +846,8 @@
         "feedId": "46251215134",
         "feedTitel": "Xiaomi Pad 7 128GB Blue 28,45cm (11,2\") LCD Display, Xiaomi HyperOS 2, 13MP Hauptkamera"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "xiaomi-pad-6s-pro-12-4",
@@ -932,7 +938,8 @@
         "feedId": "46397662216",
         "feedTitel": "Xiaomi Redmi Pad 2 4G 128GB Graphite Gray 27,94cm (11,0\") LCD Display, Xiaomi HyperOS 2, 8MP Hauptkamera"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "redmi-pad-se-8-7",
@@ -1124,7 +1131,7 @@
     "name": "Surface Pro 12\"",
     "brand": "Microsoft Surface",
     "series": "Pro",
-    "image": "https://media2.nbb-cdn.de/images/products/MS-Surface-Keyboard-EP2-32018-01_6377.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1456,7 +1463,7 @@
     "name": "Amazon Fire HD 10",
     "brand": "Amazon Fire",
     "series": "HD",
-    "image": "https://media2.nbb-cdn.de/images/products/840268960346_0_dd7b.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1503,7 +1510,8 @@
         "feedId": "43850949818",
         "feedTitel": "Amazon Fire HD 10 Kids-Tablet (2021), Himmelblau 25,6cm (10,1\") Full-HD Display, 32 GB Speicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "amazon-fire-hd-10-kids-pro",
@@ -1534,7 +1542,8 @@
         "feedId": "44310151643",
         "feedTitel": "Amazon Fire HD 10 Kids Pro-Tablet (2023), Happy-Day-Design für Kinder ab dem Grundschulalter, Mit 10-Zoll-Display, lange"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "amazon-fire-hd-8",
@@ -1634,6 +1643,7 @@
         "feedId": "44369177438",
         "feedTitel": "Amazon Fire Max 11 Tablet, grau mit klarem 11-Zoll-Display, Octa-Core-Prozessor, 4 GB RAM, 14 Stunden Akkulaufzeit, 64 G"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   }
 ]

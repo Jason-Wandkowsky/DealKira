@@ -19,7 +19,8 @@
         "feedId": "44532686607",
         "feedTitel": "ASUS Vivobook 16 X1607QA-MB058W - 16\" WUXGA IPS, Qualcomm Snapdragon X X1-26-100, 16GB RAM, 512GB SSD, Windows 11 Home"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "monitor-27-b0fhkxpwks",
@@ -50,7 +51,8 @@
         "feedId": "43013988330",
         "feedTitel": "Lenovo Legion 27-10 Gaming Monitor - , 240HZ, 0,5ms - 27\" Full-HD, IPS, 300 Nits, HDMI, DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "logitech-g502-hero",
@@ -81,7 +83,8 @@
         "feedId": "34253806945",
         "feedTitel": "Logitech G502 Hero - Kabelgebundene Gaming Maus"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "steelseries-apex-3-tkl",
@@ -112,7 +115,8 @@
         "feedId": "34253815019",
         "feedTitel": "Steelseries Apex 3 TKL Gaming Tastatur - IP32-wasserresistent, kabelgebunden, 8-Zonen-RGB, QWERTZ-Layout, schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "hyperx-cloud-iii",
@@ -143,7 +147,8 @@
         "feedId": "41320841347",
         "feedTitel": "HyperX Cloud III – Gaming-Headset, Schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "hyperx-quadcast-2",
@@ -174,7 +179,8 @@
         "feedId": "45190501242",
         "feedTitel": "HyperX QuadCast 2 Mikrofon Schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "lexar-es3-1tb",
@@ -204,7 +210,7 @@
     "name": "GeForce RTX 5090",
     "brand": "Nvidia",
     "kategorie": "grafikkarten",
-    "image": "https://media2.nbb-cdn.de/images/products/10434465_0_81ee.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -251,7 +257,8 @@
         "feedId": "44470836132",
         "feedTitel": "MSI GeForce RTX 5080 16GB Gaming Trio OC - 16GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5070-ti",
@@ -282,7 +289,8 @@
         "feedId": "46087949433",
         "feedTitel": "PNY GeForce RTX 5070 Ti ARGB Epic-X OC Grafikkarte - 16GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5070",
@@ -304,7 +312,8 @@
         "feedId": "41277771923",
         "feedTitel": "Palit GeForce RTX 5070 Infinity 3 OC - 12GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5060-ti-16-gb",
@@ -326,7 +335,8 @@
         "feedId": "41046161428",
         "feedTitel": "MSI GeForce RTX 5060 Ti 16G VENTUS 2X OC Plus - 16GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5060-ti-8-gb",
@@ -357,7 +367,8 @@
         "feedId": "45988231266",
         "feedTitel": "PNY GeForce RTX 5060 Ti Overclocked Dual Fan Grafikkarte - 8GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5060",
@@ -388,7 +399,8 @@
         "feedId": "46261228261",
         "feedTitel": "MSI GeForce RTX 5060 8G VENTUS 2X OC V1 - 8GB GDDR7, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-5050",
@@ -419,7 +431,8 @@
         "feedId": "46415519780",
         "feedTitel": "Gainward GeForce RTX 5050 Ghost - 8GB GDDR6, HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rx-9070-xt",
@@ -450,7 +463,8 @@
         "feedId": "40707046563",
         "feedTitel": "XFX Radeon RX 9070XT QUICKSILVER Gaming 16GB - 16GB GDDR6, 1x HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rx-9070",
@@ -481,7 +495,8 @@
         "feedId": "45887066859",
         "feedTitel": "Acer Nitro AMD Radeon RX 9070 16G OC - 16GB GDDR6, 1x HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rx-9060-xt-16-gb",
@@ -512,7 +527,8 @@
         "feedId": "42313647707",
         "feedTitel": "ASRock Radeon RX 9060 XT 16GB Challenger OC Grafikkarte - 16GB GDDR6, 2x HDMI, 2x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rx-9060-xt-8-gb",
@@ -543,7 +559,8 @@
         "feedId": "43957829928",
         "feedTitel": "Sapphire Radeon RX 9060 XT 8GB PULSE Gaming 8GB GDDR6, 2x HDMI, 2x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-4090",
@@ -643,7 +660,7 @@
     "name": "GeForce RTX 4070 (Evo OC)",
     "brand": "Nvidia",
     "kategorie": "grafikkarten",
-    "image": "https://media2.nbb-cdn.de/images/products/24C1_OMEN_BrunoBear_16_FF_NonNumpad_4-Zone_ShadowBlack_HyperX_all_FrontOpen_01_91a1.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -694,7 +711,7 @@
     "name": "GeForce RTX 4060",
     "brand": "Nvidia",
     "kategorie": "grafikkarten",
-    "image": "https://media2.nbb-cdn.de/images/products/Cyborg_15_A13V_photo_02_9fa7.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -847,7 +864,8 @@
         "feedId": "44867495728",
         "feedTitel": "XFX Radeon RX 7600 Speedster SWFT210 GAMING Grafikkarte - 8GB GDDR6, 1x HDMI, 3x DP"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-3090-ti",
@@ -1017,7 +1035,8 @@
         "feedId": "46244560786",
         "feedTitel": "Gainward GeForce RTX 3060 Python II OC Grafikkarte - 12GB, 3x DisplayPort/1x HDMI"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rtx-3060-8-gb",
@@ -1038,7 +1057,7 @@
     "name": "GeForce RTX 3050 8 GB (OC Edition)",
     "brand": "Nvidia",
     "kategorie": "grafikkarten",
-    "image": "https://media2.nbb-cdn.de/images/products/INNO3D_3050_Twin_X2_set_3d03.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1076,7 +1095,8 @@
         "feedId": "43088263233",
         "feedTitel": "Gainward GeForce RTX 3050 Pegasus - 6GB GDDR6, HDMI, 1x DP, DVI"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "gpu-rx-6950-xt",
@@ -1393,7 +1413,8 @@
         "feedId": "44153511602",
         "feedTitel": "AMD Ryzen 5 5600XT Prozessor - 6C/12T, 3.70-4.70GHz, boxed"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-7-5700x3d",
@@ -1470,7 +1491,8 @@
         "feedId": "34253819131",
         "feedTitel": "AMD Ryzen 5 7600X Prozessor"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-7-7800x3d",
@@ -1501,7 +1523,8 @@
         "feedId": "35708061171",
         "feedTitel": "AMD Ryzen 7 7800X3D Prozessor 8C/16T, 4.20-5.00GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-5-9600x",
@@ -1532,7 +1555,8 @@
         "feedId": "38561400169",
         "feedTitel": "AMD Ryzen 5 9600X Prozessor - 6C/12T, 3.90-5.40GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-7-9700x",
@@ -1563,7 +1587,8 @@
         "feedId": "38561400197",
         "feedTitel": "AMD Ryzen 7 9700X Prozessor - 8C/16T, 3.80-5.50GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-7-9800x3d",
@@ -1594,7 +1619,8 @@
         "feedId": "39988467078",
         "feedTitel": "AMD Ryzen 7 9800X3D Prozessor"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-7-9850x3d",
@@ -1625,7 +1651,8 @@
         "feedId": "43826023517",
         "feedTitel": "AMD Ryzen 7 9850X3D Prozessor - 8C/16T, 4.70-5.60GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-amd-ryzen-9-9950x3d",
@@ -1656,14 +1683,15 @@
         "feedId": "40710422861",
         "feedTitel": "AMD Ryzen 9 9950X3D Prozessor - 16C/32T, 4.30-5.70GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-intel-core-i5-14400f",
     "name": "Intel Core i5-14400F",
     "brand": "Intel",
     "kategorie": "cpu",
-    "image": "https://media2.nbb-cdn.de/images/products/10761207_0_ecfc.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1733,7 +1761,8 @@
         "feedId": "44996794557",
         "feedTitel": "Intel Core Ultra 5 250K Plus Prozessor - 4.20-5.30GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-intel-core-ultra-7-270k-plus",
@@ -1764,7 +1793,8 @@
         "feedId": "44374786857",
         "feedTitel": "Intel Core Ultra 7 270K Plus Prozessor - 8P+16E/24T, 3.70-5.50GHz, boxed ohne Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-asus-tuf-gaming-b550-plus-wifi-ii",
@@ -1795,14 +1825,15 @@
         "feedId": "36215804084",
         "feedTitel": "ASUS TUF Gaming B550-Plus WIFI II Mainboard"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-asrock-b650m-pro-rs-wifi",
     "name": "ASRock B650M Pro RS WiFi",
     "brand": "ASRock",
     "kategorie": "mainboards",
-    "image": "https://media2.nbb-cdn.de/images/products/asrock-b650m-pro-rs_cabf.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -1849,7 +1880,8 @@
         "feedId": "37159073787",
         "feedTitel": "GIGABYTE B650 Eagle AX Mainboard Sockel AM5"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-msi-mag-b650-tomahawk-wifi",
@@ -1903,7 +1935,8 @@
         "feedId": "40066537341",
         "feedTitel": "ASUS TUF GAMING B850-PLUS WIFI Mainboard"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-msi-mag-b850-tomahawk-max-wifi",
@@ -1934,7 +1967,8 @@
         "feedId": "40142696236",
         "feedTitel": "MSI MAG B850 TOMAHAWK MAX WIFI Mainboard Sockel AM5"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-gigabyte-b850-aorus-elite-wifi7",
@@ -1988,14 +2022,15 @@
         "feedId": "38962004843",
         "feedTitel": "ASUS ROG STRIX X870-A GAMING WIFI Mainboard Sockel AM5"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-msi-pro-b760m-a-wifi",
     "name": "MSI PRO B760M-A WiFi",
     "brand": "MSI",
     "kategorie": "mainboards",
-    "image": "https://media2.nbb-cdn.de/images/products/MSIPRO-B760M-P-1_e30e.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2042,7 +2077,8 @@
         "feedId": "36214831735",
         "feedTitel": "ASUS TUF GAMING B760-PLUS WIFI Mainboard Sockel 1700"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-msi-mag-z790-tomahawk-wifi",
@@ -2073,7 +2109,8 @@
         "feedId": "34456643391",
         "feedTitel": "MSI MAG Z790 TOMAHAWK WIFI Gaming Mainboard - Sockel 1700"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-msi-mag-b860-tomahawk-wifi",
@@ -2104,14 +2141,15 @@
         "feedId": "40152612058",
         "feedTitel": "MSI MAG B860 TOMAHAWK WIFI"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mb-asus-tuf-gaming-z890-plus-wifi",
     "name": "ASUS TUF Gaming Z890-Plus WiFi",
     "brand": "ASUS",
     "kategorie": "mainboards",
-    "image": "https://media2.nbb-cdn.de/images/products/MSI-Z890GAMINGPlusWIFI6E-01.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2200,7 +2238,8 @@
         "feedId": "34253813787",
         "feedTitel": "Kingston FURY Beast Schwarz 32GB Kit (2x16GB) DDR4-3200 CL16 UDIMM Gaming Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-g-skill-ripjaws-v-32-gb-2x16-ddr4-3600-cl16",
@@ -2222,7 +2261,8 @@
         "feedId": "34253809463",
         "feedTitel": "G.Skill RipJaws V Schwarz Kit 32GB Kit (2x16GB) DDR4-3600 CL16 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-kingston-fury-beast-32-gb-2x16-ddr5-6000-cl30",
@@ -2244,7 +2284,8 @@
         "feedId": "40143750520",
         "feedTitel": "Kingston FURY Beast Schwarz 32GB Kit (2x 16GB) DDR5-6000 EXPO CL30 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-corsair-vengeance-32-gb-2x16-ddr5-6000-cl30",
@@ -2266,7 +2307,8 @@
         "feedId": "44282509199",
         "feedTitel": "Corsair Vengeance Schwarz 32GB Kit (2x16GB) DDR5-6000 CL30 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-g-skill-flare-x5-32-gb-2x16-ddr5-6000-cl30",
@@ -2316,7 +2358,8 @@
         "feedId": "39178214327",
         "feedTitel": "Corsair Vengeance RGB Schwarz 32GB Kit (2x16GB) DDR5-6000 CL30 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-g-skill-trident-z5-neo-rgb-32-gb-2x16-ddr5-6000-cl30",
@@ -2338,7 +2381,8 @@
         "feedId": "34402479409",
         "feedTitel": "G.SKILL Trident Z5 Neo RGB 32GB Kit (2x16GB) DDR5-6000 CL30 EXPO DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-kingston-fury-beast-64-gb-2x32-ddr5-5600",
@@ -2369,7 +2413,8 @@
         "feedId": "35088529423",
         "feedTitel": "Kingston FURY Beast Schwarz 64GB Kit (2x32GB) DDR5-5600 EXPO CL36 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-corsair-vengeance-64-gb-2x32-ddr5-6000-cl30",
@@ -2391,14 +2436,15 @@
         "feedId": "39178214344",
         "feedTitel": "Corsair Vengeance Schwarz 64GB Kit (2x32GB) DDR5-6000 CL30 DIMM Arbeitsspeicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "ram-g-skill-trident-z5-neo-rgb-64-gb-2x32-ddr5-6000-cl30",
     "name": "G.Skill Trident Z5 Neo RGB 64 GB (2×32) DDR5-6000 CL30",
     "brand": "G.Skill",
     "kategorie": "ram",
-    "image": "https://media2.nbb-cdn.de/images/products/G-SKILL_Trident-Z5-Neo_Black_2x_f4ae.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2449,7 +2495,7 @@
     "name": "be quiet! Pure Power 12 650W",
     "brand": "be quiet!",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/01_Pure_Power12_5_b634.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2472,7 +2518,7 @@
     "name": "Corsair RM750e",
     "brand": "Corsair",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/RM750e_Black_RENDER_10_7d04.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2541,7 +2587,7 @@
     "name": "MSI MAG A850GL PCIE5",
     "brand": "MSI",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/MSI-306-7ZP8A24-CE0-01_4030.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2564,7 +2610,7 @@
     "name": "Corsair RM850x",
     "brand": "Corsair",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/RM850x_RENDERS_03_c04f.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2587,7 +2633,7 @@
     "name": "Seasonic Focus GX-850",
     "brand": "Seasonic",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/ATX3.1-FOCUS-GX-850-1000-White-Connector-Plate-Angled_59ce.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2610,7 +2656,7 @@
     "name": "NZXT C850 Gold",
     "brand": "NZXT",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/1715908945-c850-gold-psu-hero-black_c138.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2633,7 +2679,7 @@
     "name": "Cooler Master MWE Gold 850 V2",
     "brand": "Cooler Master",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/CoolerMaster-MPE-8501-AFAAG-3EEU-01_edab.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2656,7 +2702,7 @@
     "name": "Corsair RM1000x",
     "brand": "Corsair",
     "kategorie": "netzteile",
-    "image": "https://media2.nbb-cdn.de/images/products/RM1000x_RENDERS_03_7eef.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2762,7 +2808,7 @@
     "name": "Fractal Design Pop Air",
     "brand": "Fractal Design",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/01_Pop-2-Air_RGB_Black_TGL_Left-Front_f76e.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2831,7 +2877,7 @@
     "name": "NZXT H5 Flow",
     "brand": "NZXT",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/CC-H52FB-01_001_33a6.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2854,7 +2900,7 @@
     "name": "Lian Li Lancool 216",
     "brand": "Lian Li",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/GELI-924_099ebd66070a1ae9ca4d5b4206dca72e38ef6bc7_3528.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2877,7 +2923,7 @@
     "name": "Fractal Design North",
     "brand": "Fractal Design",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/North_White_Mesh_1_Left_Front_4a57.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2900,7 +2946,7 @@
     "name": "be quiet! Shadow Base 800 FX",
     "brand": "be quiet!",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/01_Shadow_Base_800_FX_white_6c09.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2923,7 +2969,7 @@
     "name": "Corsair 3500X",
     "brand": "Corsair",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/3255007_be14b7a49c64_f040.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2946,7 +2992,7 @@
     "name": "Lian Li O11 Dynamic EVO",
     "brand": "Lian Li",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/D30_05_4_a671.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2960,7 +3006,7 @@
     "name": "Lian Li O11 Vision",
     "brand": "Lian Li",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/GELI-995_3fcd7bd67ec8c2a865ef252dc3e888e01ec4b6b6.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -2983,7 +3029,7 @@
     "name": "NZXT H9 Flow",
     "brand": "NZXT",
     "kategorie": "gehaeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/01_H9_Arthas_2025_H9_Flow_black_hero_5946.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -3067,7 +3113,8 @@
         "feedId": "37345722425",
         "feedTitel": "ARCTIC Freezer 36 | CPU-Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "cpu-kuehler-be-quiet-pure-rock-2",
@@ -3190,7 +3237,8 @@
         "feedId": "45311112305",
         "feedTitel": "Noctua NH-D15 G2 HBC | CPU-Kühler"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "wasserkuehlung-arctic-liquid-freezer-iii-240",
@@ -3249,7 +3297,8 @@
         "feedId": "38762349548",
         "feedTitel": "be quiet! LIGHT LOOP 360mm | AiO-Wasserkühlung"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "wasserkuehlung-corsair-nautilus-360-rs",
@@ -3280,14 +3329,15 @@
         "feedId": "41993557597",
         "feedTitel": "CORSAIR NAUTILUS 360 RS | AiO-Wasserkühlung"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "wasserkuehlung-nzxt-kraken-360",
     "name": "NZXT Kraken 360",
     "brand": "NZXT",
     "kategorie": "wasserkuehlung",
-    "image": "https://media2.nbb-cdn.de/images/products/01_Kraken_Elite_Non_RGB_Black_360_9711.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -3334,7 +3384,8 @@
         "feedId": "44251271393",
         "feedTitel": "Lian Li GALAHAD II 360 Trinity Performance weiß | AiO-Wasserkühlung"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "luefter-arctic-p12-pwm-pst-5er-pack",
@@ -3393,7 +3444,8 @@
         "feedId": "34253818483",
         "feedTitel": "be quiet! SILENT WINGS 4 120mm PWM high-speed | Gehäuselüfter"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "luefter-noctua-nf-a12x25-pwm",
@@ -3424,7 +3476,8 @@
         "feedId": "38570704622",
         "feedTitel": "Noctua NF-A12X25 5V PWM | 120mm Gehäuselüfter"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "luefter-lian-li-uni-fan-sl-infinity-120-3er-pack",
@@ -3469,7 +3522,8 @@
         "feedId": "37386907259",
         "feedTitel": "CORSAIR iCUE LINK RX120 RGB weiß | 3er-Pack 120mm Gehäuselüfter"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "webcams-logitech-c920-hd-pro",
@@ -3500,7 +3554,8 @@
         "feedId": "34253804103",
         "feedTitel": "Logitech HD Pro Webcam C920, Full High Definition-Video in 1080p"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "webcams-logitech-c922-pro-stream",
@@ -3554,7 +3609,8 @@
         "feedId": "34253819207",
         "feedTitel": "Logitech Brio 500 Webcam - Graphit (Schwarz), Full-HD Auflösung, 90°-Sichtfeld, 2 Mikrofone, Abdeckblende, USB-C-Anschlu"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "webcams-anker-powerconf-c200",
@@ -3677,7 +3733,8 @@
         "feedId": "38250268181",
         "feedTitel": "UGREEN Hub USB 3.0 A 4-Ports schwarz 1M"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "usb-hubs-anker-7-in-1-usb-c-hub",
@@ -3814,7 +3871,8 @@
         "feedId": "38269865459",
         "feedTitel": "Epson EcoTank ET-2860 - 3in1 Multifunktionsdrucker Drucken, Scannen, Kopieren, A4"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "drucker-epson-ecotank-et-4850",
@@ -3868,7 +3926,8 @@
         "feedId": "37581750506",
         "feedTitel": "HP Officejet Pro 9120e 4in1 - Multifunktionsdrucker Drucken, Kopieren, Scannen, Faxen, Farbe, Instant Ink"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "drucker-brother-hl-l2400dw",
@@ -4295,14 +4354,15 @@
         "feedId": "37386906988",
         "feedTitel": "Logitech G305 Lightspeed - Kabellose Gaming Maus, Schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "maeuse-steelseries-rival-3",
     "name": "SteelSeries Rival 3",
     "brand": "SteelSeries",
     "kategorie": "maeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/rival_3_wl_gen_2_aqua_top_1812.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -4349,14 +4409,15 @@
         "feedId": "35693145828",
         "feedTitel": "Razer DeathAdder V3 Gaming Maus - kabelgebundene Gaming Maus mit 30.000dpi"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "maeuse-razer-basilisk-v3",
     "name": "Razer Basilisk V3",
     "brand": "Razer",
     "kategorie": "maeuse",
-    "image": "https://media2.nbb-cdn.de/images/products/BasiliskV3X_1_2e31.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -4403,7 +4464,8 @@
         "feedId": "44937920229",
         "feedTitel": "Logitech Gaming PRO X Superlight 2 Gaming Maus kabellose LIGHTSPEED Gaming Maus mit 44k Sensor und 8000 Hz Polling Rate,"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "maeuse-logitech-mx-master-3s",
@@ -4434,7 +4496,8 @@
         "feedId": "37593272284",
         "feedTitel": "Logitech MX Master 3S for Business - GRAPHITE"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "tastaturen-keychron-k2",
@@ -4502,14 +4565,15 @@
         "feedId": "42093699875",
         "feedTitel": "Razer Blackwidow V4 TKL Low Profile Orange Switches Kabellose, Flache mechanische Gaming-Tastatur"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "tastaturen-steelseries-apex-pro-tkl",
     "name": "SteelSeries Apex Pro TKL",
     "brand": "SteelSeries",
     "kategorie": "tastaturen",
-    "image": "https://media2.nbb-cdn.de/images/products/Steelseries-64901-01_ab3c.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -4556,7 +4620,8 @@
         "feedId": "34253819891",
         "feedTitel": "Logitech MX KEYS für Business, Graphite"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "headset-razer-blackshark-v2-x",
@@ -4587,7 +4652,8 @@
         "feedId": "40690947181",
         "feedTitel": "Razer Blackshark V2 X Gaming Headset"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "headset-hyperx-cloud-alpha",
@@ -4618,7 +4684,8 @@
         "feedId": "45293534954",
         "feedTitel": "HyperX Cloud Alpha – Gaming-Kopfhörer, schwarz/rot"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "headset-corsair-hs80-rgb-wireless",
@@ -4648,7 +4715,7 @@
     "name": "SteelSeries Arctis Nova 7",
     "brand": "SteelSeries",
     "kategorie": "headset",
-    "image": "https://media2.nbb-cdn.de/images/products/SteelseriesArctisNova7-magenta-01_8766.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -4695,7 +4762,8 @@
         "feedId": "44937920226",
         "feedTitel": "Logitech Gaming PRO X 2 Lightspeed Gaming Headset kabelloses LIGHTSPEED 7.1 Gaming Headset mit Bluetooth, schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "mikrofon-razer-seiren-mini",
@@ -4887,7 +4955,8 @@
         "feedId": "42562144031",
         "feedTitel": "HP OmniBook 5 16-bf0154ng 16\" WUXGA OLED 300 Nits, Snapdragon X X1-26-100, 16GB RAM, 512GB SSD, Windows 11"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "laptops-apple-macbook-air-13-m4",
@@ -4918,7 +4987,8 @@
         "feedId": "44133771657",
         "feedTitel": "Apple MacBook Air 13\" M5 Mitternacht MDHE4D/A Apple M5 chip mit 10-core CPU and 8-core GPU, 16GB, 512GB SSD - Mitternach"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "laptops-lenovo-loq-15",
@@ -4972,7 +5042,8 @@
         "feedId": "43144678193",
         "feedTitel": "Acer Nitro V15 (ANV15-52-50S2) Gaming 15,6\" Full-HD, 165Hz, Intel i5-13420H, 16GB RAM, 1TB SSD, GeForce RTX5050, Windows"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "laptops-asus-tuf-gaming-a15",
@@ -5049,7 +5120,8 @@
         "feedId": "45180363452",
         "feedTitel": "Lenovo Legion 5 - 83LY00XVGE - 15.3\" WUXGA, 165Hz, Intel® Core™ i7-13650HX, 16GB RAM, 1TB SSD, RTX5070™, Dos"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "bildschirme-dell-s2721hn",
@@ -5094,7 +5166,8 @@
         "feedId": "43634587613",
         "feedTitel": "ASUS TUF VG27AQ5A 27\" Gaming Monitor - IPS, QHD, 210Hz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "bildschirme-lg-ultragear-27gr75q",
@@ -5217,7 +5290,8 @@
         "feedId": "38534604271",
         "feedTitel": "Kingston NV3 SSD 1TB M.2 2280 PCIe Gen4 NVMe Internes Solid-State-Module"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-samsung-990-evo-plus-1tb",
@@ -5248,7 +5322,8 @@
         "feedId": "38939288563",
         "feedTitel": "Samsung 990 EVO Plus SSD 1TB M.2 PCIe Gen4/Gen5 NVMe Internes Solid-State-Module"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-wd-black-sn850x-2tb",
@@ -5279,7 +5354,8 @@
         "feedId": "36309664773",
         "feedTitel": "WD_BLACK SN850X SSD 2TB M.2 2280 PCIe Gen4 NVMe Internes Solid-State-Module"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-samsung-990-pro-2tb",
@@ -5310,7 +5386,8 @@
         "feedId": "36309664857",
         "feedTitel": "Samsung 990 PRO SSD 2TB M.2 PCIe Gen4 NVMe Internes Solid-State-Module"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-kingston-fury-renegade-2tb",
@@ -5341,7 +5418,8 @@
         "feedId": "41305548233",
         "feedTitel": "Kingston FURY Renegade G5 SSD 2TB M.2 2280 PCIe Gen5 Internes Solid-State-Module"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-samsung-870-evo-1tb",
@@ -5372,7 +5450,8 @@
         "feedId": "36309664255",
         "feedTitel": "Samsung 870 EVO SSD 1TB 2.5 Zoll SATA 6Gb/s Interne Solid-State-Drive"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "speicherplatten-samsung-t7-shield-2tb",
@@ -5402,7 +5481,7 @@
     "name": "Apple AirPods Pro 3",
     "brand": "Apple",
     "kategorie": "telefon-audio",
-    "image": "https://media2.nbb-cdn.de/images/products/AirPods_Pro_3_PDP_Image_Position_1__DEDE_b9b1.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -5702,14 +5781,15 @@
         "feedId": "44723177390",
         "feedTitel": "UGREEN US334 USB-C Kabel 100W 1m black"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "telefon-kabel-apple-usb-c-auf-lightning-kabel",
     "name": "Apple USB-C auf Lightning Kabel",
     "brand": "Apple",
     "kategorie": "telefon-kabel",
-    "image": "https://media2.nbb-cdn.de/images/products/AnyC3dsdsdds1_1a9b.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -5732,7 +5812,7 @@
     "name": "Apple 20W USB-C Netzteil",
     "brand": "Apple",
     "kategorie": "telefon-netzteile-adapter",
-    "image": "https://media2.nbb-cdn.de/images/products/20-W-Ladeadapter_2_e97e.png?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -5779,7 +5859,8 @@
         "feedId": "36398153552",
         "feedTitel": "Samsung Schnellladegerät, USB-C, 25W ohne Datenkabel, Schwarz"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "telefon-netzteile-adapter-anker-nano-30w",
@@ -5833,7 +5914,8 @@
         "feedId": "44723177365",
         "feedTitel": "UGREEN Nexode X553 65W 3-Port GaN Fast Charger 2x USB-C 1x USB-A"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "telefon-powerbanks-anker-nano-power-bank-10000mah",
@@ -5974,7 +6056,7 @@
     "name": "SanDisk Ultra Dual Drive USB-C 128GB",
     "brand": "SanDisk",
     "kategorie": "telefon-speicher",
-    "image": "https://media2.nbb-cdn.de/images/products/sandisk/SanDisk_Ultra_Opened-Front_9d90_1.jpg?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -7069,7 +7151,8 @@
         "feedId": "43418968311",
         "feedTitel": "Reolink Solarpanel 2 Weiß Für akkubetriebene Reolink Überwachungskameras"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "kamera-zubehoer-ring-solarpanel",

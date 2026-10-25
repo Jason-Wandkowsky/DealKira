@@ -379,6 +379,11 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
                     shops.remove(alt)
                     print(f"  {feed_name}: nicht mehr gefunden: {name}")
                     aenderungen += 1
+                # Bild stammte von diesem Händler → mit entfernen
+                if produkt.get("imageFeed") == feed_name:
+                    produkt["image"] = ""
+                    del produkt["imageFeed"]
+                    aenderungen += 1
                 continue
 
             gefunden += 1
@@ -396,9 +401,12 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
                     print(f"  {feed_name}: NEU zugeordnet: {name} → {titel[:70]} ({preis})")
                 aenderungen += 1
 
+            # Händlerbild nur, wenn das Produkt kein eigenes Bild hat (oder es schon von hier kam)
             bild = feed_bild(zeile)
-            if bild and not produkt.get("image"):
+            if bild and (not produkt.get("image") or produkt.get("imageFeed") == feed_name) \
+                    and produkt.get("image") != bild:
                 produkt["image"] = bild
+                produkt["imageFeed"] = feed_name
                 aenderungen += 1
 
     print(f"{feed_name}: {gefunden} Produkte mit passendem Angebot, {aenderungen} Änderungen")
