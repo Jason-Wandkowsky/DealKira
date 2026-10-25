@@ -26,6 +26,7 @@ jobs:
           AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
           AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
           AWIN_FEED_NARWAL: ${{ secrets.AWIN_FEED_NARWAL }}
+          AWIN_FEED_NOTEBOOKSBILLIGER: ${{ secrets.AWIN_FEED_NOTEBOOKSBILLIGER }}
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: |

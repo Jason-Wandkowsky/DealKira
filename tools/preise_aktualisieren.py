@@ -9,7 +9,15 @@ Feeds werden als GitHub-Secrets hinterlegt (nie im Code!):
   AWIN_FEED_AOSU     → Download-Link des aosu-Feeds
   AWIN_FEED_ANTHBOT  → Download-Link des Anthbot-Feeds
   AWIN_FEED_IMOU     → Download-Link des Imou-Feeds
-Ein neuer Feed: Secret anlegen und unten in FEEDS eintragen.
+  AWIN_FEED_NARWAL   → Download-Link des Narwal-Feeds
+  AWIN_FEED_NOTEBOOKSBILLIGER → Download-Link des notebooksbilliger-Feeds
+Ein neuer Marken-Feed: Secret anlegen und unten in FEEDS eintragen.
+
+Händler-Feeds (HAENDLER_FEEDS, z. B. notebooksbilliger): Dort gibt es keine
+feedId pro Produkt. Jedes Produkt aus produkte.json, telefone.json und
+tablets.json wird automatisch über den Namen zugeordnet (gleiche strenge
+Prüfung wie bei eBay: kein Zubehör, keine falschen Varianten). Fehlt einem
+Produkt das Bild, wird das Händlerbild aus dem Feed übernommen.
 
 eBay (ebay_preise.py) braucht die Secrets EBAY_CLIENT_ID und EBAY_CLIENT_SECRET
 und durchsucht zusätzlich telefone.json und tablets.json.
@@ -39,6 +47,11 @@ FEEDS = {
 # (Zubehör fällt über den Mindestpreis raus)
 AUTO_IMPORT = {
     "narwal": {"shop": "Narwal", "marke": "Narwal", "kategorie": "staubsauger", "mindestpreis": 150},
+}
+
+# Händler mit vielen Marken: Zuordnung automatisch über den Produktnamen
+HAENDLER_FEEDS = {
+    "nbb": {"secret": "AWIN_FEED_NOTEBOOKSBILLIGER", "shop": "notebooksbilliger.de"},
 }
 
 DATEI = "produkte.json"
@@ -154,8 +167,134 @@ def neue_produkte(produkte, feed_name, feed, regel):
     return len(kandidaten)
 
 
+def verfuegbar(zeile):
+    """Google-Format: availability = in_stock; klassisches Format: in_stock = 1/0."""
+    if "availability" in zeile:
+        return zeile["availability"] in ("in_stock", "")
+    if "in_stock" in zeile:
+        return str(zeile["in_stock"]).strip().lower() in ("1", "yes", "true", "")
+    return True
+
+
+def ist_neuware(zeile):
+    zustand = (zeile.get("condition") or "new").strip().lower()
+    return zustand in ("new", "neu", "")
+
+
+def feed_titel(zeile):
+    return (zeile.get("title") or zeile.get("product_name") or "").strip()
+
+
+def feed_preis(zeile):
+    return preis_format(zeile.get("sale_price") or zeile.get("price") or zeile.get("search_price", ""))
+
+
+def feed_bild(zeile):
+    return (zeile.get("image_link") or zeile.get("merchant_image_url")
+            or zeile.get("aw_image_url") or "").strip()
+
+
+def streichpreis(zeile, preis):
+    """Streichpreis des Shops: Google-Format "price" (wenn "sale_price" gesetzt),
+    klassisches Format "product_price_old" bzw. "rrp_price" (UVP)."""
+    if zeile.get("sale_price"):
+        statt, art = preis_format(zeile.get("price", "")), "shop"
+    elif preis_format(zeile.get("product_price_old", "")):
+        statt, art = preis_format(zeile.get("product_price_old", "")), "shop"
+    else:
+        statt, art = preis_format(zeile.get("rrp_price", "")), "uvp"
+    if not preis or not statt or (preis_zahl(statt) or 0) <= (preis_zahl(preis) or 0):
+        return "", ""
+    return statt, art
+
+
+def haendler_abgleich(dateien, feed_name, feed, shop_name):
+    """Ordnet die Produkte aller Dateien einem Händler-Feed zu (über den Namen).
+    Pro Produkt gewinnt das günstigste passende, lieferbare Neuware-Angebot."""
+    # Index: Wort → Feed-Zeilen, damit nicht jedes Produkt den ganzen Feed prüfen muss
+    zeilen = []
+    index = {}
+    for feed_id, zeile in feed.items():
+        if not verfuegbar(zeile) or not ist_neuware(zeile):
+            continue
+        titel = feed_titel(zeile)
+        preis = feed_preis(zeile)
+        link = zeile.get("aw_deep_link") or zeile.get("link") or ""
+        if not titel or not preis or not link:
+            continue
+        nr = len(zeilen)
+        marke = (zeile.get("brand_name") or zeile.get("brand") or "").strip().lower()
+        zeilen.append((feed_id, zeile, titel, preis, link, marke))
+        for wort in set(ebay_preise.woerter(titel)):
+            index.setdefault(wort, []).append(nr)
+
+    aenderungen = 0
+    gefunden = 0
+    for produkte in dateien.values():
+        for produkt in produkte:
+            name = produkt.get("name", "")
+            marke = produkt.get("brand", "")
+            if not name:
+                continue
+            voller_name = name if marke.lower() in name.lower() else f"{marke} {name}".strip()
+            # seltenstes Wort des Namens als Vorfilter
+            name_woerter = [w for w in ebay_preise.woerter(voller_name)
+                            if w not in ebay_preise.FUELLWOERTER]
+            listen = [index.get(w, []) for w in name_woerter]
+            if not name_woerter or not all(listen):
+                kandidaten_nr = []
+            else:
+                kandidaten_nr = min(listen, key=len)
+
+            bestes = None
+            for nr in kandidaten_nr:
+                feed_id, zeile, titel, preis, link, feed_marke = zeilen[nr]
+                if marke and feed_marke and marke.lower() not in feed_marke \
+                        and feed_marke not in marke.lower():
+                    continue
+                if not ebay_preise.passt(name, titel):
+                    continue
+                if bestes is None or preis_zahl(preis) < preis_zahl(bestes[3]):
+                    bestes = zeilen[nr]
+
+            shops = produkt.setdefault("shops", [])
+            alt = next((s for s in shops if s.get("feed") == feed_name), None)
+            if not bestes:
+                if alt:
+                    shops.remove(alt)
+                    print(f"  {feed_name}: nicht mehr gefunden: {name}")
+                    aenderungen += 1
+                continue
+
+            gefunden += 1
+            feed_id, zeile, titel, preis, link, _ = bestes
+            statt, statt_art = streichpreis(zeile, preis)
+            neu = {"name": shop_name, "price": preis, "link": link,
+                   "feed": feed_name, "feedId": feed_id, "feedTitel": titel[:120]}
+            if statt:
+                neu["statt"], neu["stattArt"] = statt, statt_art
+            if alt != neu:
+                if alt:
+                    shops[shops.index(alt)] = neu
+                else:
+                    shops.append(neu)
+                    print(f"  {feed_name}: NEU zugeordnet: {name} → {titel[:70]} ({preis})")
+                aenderungen += 1
+
+            bild = feed_bild(zeile)
+            if bild and not produkt.get("image"):
+                produkt["image"] = bild
+                aenderungen += 1
+
+    print(f"{feed_name}: {gefunden} Produkte mit passendem Angebot, {aenderungen} Änderungen")
+    return aenderungen
+
+
 def main():
     produkte = json.load(open(DATEI, encoding="utf-8"))
+    dateien = {DATEI: produkte}
+    for name in WEITERE_DATEIEN:
+        dateien[name] = json.load(open(name, encoding="utf-8"))
     geaendert = 0
     fehler_gesamt = 0
 
@@ -221,20 +360,33 @@ def main():
                     produkt["image"] = bild
                     geaendert += 1
 
+    # Händler-Feeds (z. B. notebooksbilliger): alle drei Produktdateien, Zuordnung über den Namen
+    for feed_name, info in HAENDLER_FEEDS.items():
+        url = os.environ.get(info["secret"], "").strip()
+        if not url:
+            print(f"{feed_name}: kein Feed-Link hinterlegt – übersprungen")
+            continue
+        try:
+            feed = feed_laden(url)
+        except Exception as fehler:
+            print(f"::error::{feed_name}: Feed konnte nicht geladen werden ({fehler})")
+            fehler_gesamt += 1
+            continue
+        print(f"{feed_name}: {len(feed)} Produkte im Feed")
+        geaendert += haendler_abgleich(dateien, feed_name, feed, info["shop"])
+
     # eBay: alle drei Produktdateien
-    dateien = {DATEI: produkte}
-    for name in WEITERE_DATEIEN:
-        dateien[name] = json.load(open(name, encoding="utf-8"))
     ebay_aenderungen, ebay_fehler = ebay_preise.aktualisieren(dateien)
     fehler_gesamt += ebay_fehler
 
-    if geaendert or ebay_aenderungen:
+    geaendert_vor_ebay = geaendert
+    if geaendert_vor_ebay or ebay_aenderungen:
         for name, liste in dateien.items():
             with open(name, "w", encoding="utf-8") as datei:
                 datei.write(json.dumps(liste, ensure_ascii=False, indent=2) + "\n")
     geaendert += ebay_aenderungen
 
-    historie_und_deals(produkte)
+    historie_und_deals([p for liste in dateien.values() for p in liste])
     print(f"Fertig: {geaendert} Änderungen")
     # Rotes ✗ bei GitHub, wenn ein hinterlegter Feed nicht geladen werden konnte
     return 1 if fehler_gesamt else 0
@@ -270,6 +422,10 @@ def historie_und_deals(produkte):
             if not shop.get("feed") or shop.get("feed") == "ebay":
                 continue
             schluessel = produkt["id"] + "|" + shop["name"]
+            if shop.get("feed") in HAENDLER_FEEDS:
+                # automatisch zugeordnet: wechselt das Angebot (z. B. andere Speichergröße),
+                # beginnt ein neuer Preisverlauf – sonst entstünden falsche Deals
+                schluessel += "|" + shop.get("feedId", "")
             verlauf = [e for e in historie.get(schluessel, []) if e[0] >= grenze and e[0] != heute_text]
             preis = preis_zahl(shop.get("price", ""))
             if preis:
