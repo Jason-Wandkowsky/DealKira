@@ -111,6 +111,14 @@
         "ebayItem": "v1|237142327290|0",
         "ebayTitel": "Samsung Galaxy Tablet S10 FE +5G /128GB Ram/silber/ neuwertig+Rechnung",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "549,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=42831789478&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "42831789478",
+        "feedTitel": "Samsung Galaxy Tab S10 FE Wi-Fi Silver 10,9\" WQXGA+ Display / Octa-Cora / 8GB RAM / 128GB Speicher / Android / inkl. S-P"
       }
     ]
   },
@@ -372,14 +380,6 @@
         "ebayItem": "v1|117441862118|0",
         "ebayTitel": "NEU Apple iPad mini 6. Generation Wifi 256 GB pink OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
-      },
-      {
-        "name": "notebooksbilliger.de",
-        "price": "659,00 €",
-        "link": "https://www.awin1.com/pclick.php?p=45135467668&a=3110253&m=11348",
-        "feed": "nbb",
-        "feedId": "45135467668",
-        "feedTitel": "Apple iPad mini 8,3\" Wi-Fi 128GB (polarstern) 7.Gen 2024"
       }
     ]
   },
@@ -398,7 +398,7 @@
       {
         "name": "eBay",
         "price": "453,99 €",
-        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHvgJgmki43d2fcfGT2y7W6dy6oPfBRMZ9sqwh3EwwJmcSDcy1N%2B8tiVBP%2FFpV%2B5mnE2oz6taD1nInP%2F%2BqNSBJtbRv%2BWvC7WKvlxNlY0%2FQNORfGcx4YkGMON7pSiDj1ZyTE8TuDyAocrTMG7b1eO%2FLEVAraVw3VWmFb3C5jIw7whnVLdYhCjiz7OR1dZjwwPJ6o%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/117441862118?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item1b581499e6%3Ag%3AKisAAeSwcndqvpnQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n8eX%2BND4c7mJQGNPI%2FV30gcH4iXktIxbf2rauK8EJuiz%2F8J%2F3pfX0ByusG1eY6Ck3xJ3avKuAH451GTdEeW5qwo39yqxXo1xTAaPOr%2B1ME7YhCV70zRYjQOU3mIyOYdHs0W%2BVdsdtURUdNUHs9v4g1Aq3TngwIjBFuG6re%2FDGv27U6dcoJc3SI1RFRdZ2DuSKJVdeDg2aPmjOGImruPYkrlKVG8NAppzVW%2FAbjcscJlhg2VHcKQvbauqPVioYlQepEb5Yf9ukTjg%2BvRunj2pUKJ0%2FuR2HAEKgXSXzFjRKzhg3ZcNZuBtG0H5%2FMxskWCsw%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|117441862118|0",
         "ebayTitel": "NEU Apple iPad mini 6. Generation Wifi 256 GB pink OVP",
@@ -434,14 +434,6 @@
         "ebayItem": "v1|397635497346|0",
         "ebayTitel": "Apple iPad Air 2022 5 Generation Tablet WiFi 64 GB Space Grau",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
-      },
-      {
-        "name": "notebooksbilliger.de",
-        "price": "707,00 €",
-        "link": "https://www.awin1.com/pclick.php?p=44145985512&a=3110253&m=11348",
-        "feed": "nbb",
-        "feedId": "44145985512",
-        "feedTitel": "Apple iPad Air 11 M4 Wi-Fi 128GB - Blau"
       }
     ]
   },
@@ -637,7 +629,7 @@
       {
         "name": "eBay",
         "price": "212,76 €",
-        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005xYCbPHWmU%2B2jaVMNnF4bdvLMMjKWdffAbb013LL6nnyi6ChzhVFHfv3VgoUxsSebpnnXW3wasRFhekZIPADdHJxAqWGZ2lnDvbSIcuwzh%2Bjex%2FRUriA7rpSREQSCgIO1xLM4j9a3BFVFaXm7sWbDudUt3MwQYp%2BwO2PPFH%2FEYG5Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005wM4E4pTB0yjk%2FUMHSBf7N0hSEMJhtLQZZUQ%2B3EVN2OVA7B0oUSa8KA241wbDHw8RRs7HQfaq8TG9WaR%2BWr8drI23hdvTBj67iuy4%2ByvA%2BWkPLPk%2BEqVmjZR4PDh%2F23o4cyHXeGX7bWNCOLqF4rXd%2BGhFVkeqNe%2B8V4i2sHO18CkQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|198485789619|0",
         "ebayTitel": "Lenovo Tab TB311XU Android Tablet 10.1 Zoll WiFi + 4G (LTE) 64 GB Luna Grey",
@@ -734,14 +726,6 @@
         "ebayItem": "v1|920060319301|0",
         "ebayTitel": "Lenovo Idea Tab Pro | Tablet | AI | 12.7\" | 8GB | 256GB | Android | Grün",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
-      },
-      {
-        "name": "notebooksbilliger.de",
-        "price": "479,00 €",
-        "link": "https://www.awin1.com/pclick.php?p=45042406440&a=3110253&m=11348",
-        "feed": "nbb",
-        "feedId": "45042406440",
-        "feedTitel": "Lenovo Idea Tab Pro Gen2 (FL) - ZAHD0283DE-CAMPUS 13\" 3.5k Touch IPS, Snapdragon 8s Gen4, 8GB RAM, 256GB UFS 4.0, Androi"
       }
     ]
   },
@@ -1173,7 +1157,7 @@
       {
         "name": "eBay",
         "price": "1709,00 €",
-        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135t6t8FgKTMORXlhR4PSPbFu7tgBioBPk67FGuVjUzoJz9e2PoJmwC3exKT%2B%2F65Wy%2F0F9Kj10S0meMsINks5QiYgbZRLBKBe7Yhe6aJf%2FpN6BI2GzWBTMjVqki9ylobIuKDZX8MzXaV70Ik%2FJYgnzTwrgPJfApxQcq6rKjEh41XC877uRP%2BpQo4JjWmPNBg0O0LCrHhCEJs0N2g9CvZ%2FYJPNIPvxEy2SEJRhZItlIUa8qq3loS5IZjYkmAxCwCiOqDRNz1JJlrq9Fxh0MZv3Y583yzF90ZSx08eDqA8bFEuiic%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135t6t8FgKTMORXlhR4PSPbFu7tgBioBPk67FGuVjUzoJz9e2PoJmwC3exKT%2B%2F65Wy%2F0F9Kj10S0meMsINks5QiYgbZRLBKBe7Yhe6aJf%2FpN6BJ%2BBY8FDsrjmzvY6VF%2FodOJE%2BUblFgIpczEDxKltsljHxda67t%2BUOENqEhH5b%2F5CTH2NJisD2%2Bl0y9YwumbKlaJEIjkdGPu6%2F7D4zVYpxGo8s5RNwX8KVYbBSlVASPbUpcTZ1td1aqt7jqiQDi5KU1ubIrJtd35KtT8zIVJf3z0wiyQCXSSI3mjl9N5rwZo1fg%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|137800166058|0",
         "ebayTitel": "Microsoft Surface Pro 10 256GB Wi-Fi Titan Grau Neu",
