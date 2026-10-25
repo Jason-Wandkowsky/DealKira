@@ -253,6 +253,13 @@ def haendler_passt(name, titel):
         if wort not in name_s and wort in titel_l[:6]:
             return False
 
+    # Varianten-Zusatz muss direkt hinter demselben Wort stehen: "S10 FE+" ≠ "S10 FE … FE/+"
+    for i in range(1, len(name_l)):
+        if name_l[i] in ebay_preise.VARIANTEN and (name_l[i - 1].isdigit()
+                                                    or name_l[i - 1] in ebay_preise.VARIANTEN) \
+                and (name_l[i - 1], name_l[i]) not in paare:
+            return False
+
     # "Gen 2" im Titel, aber nicht im Namen (außer "PCIe Gen4") → Nachfolgemodell
     for j in range(1, len(titel_l)):
         if titel_l[j - 1] == "gen" and titel_l[j].isdigit() and len(titel_l[j]) <= 2 \
