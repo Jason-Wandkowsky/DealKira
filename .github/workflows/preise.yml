@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          # immer den neuesten Stand holen – wartende Läufe hätten sonst alten Code/alte Preise
+          ref: main
 
       - name: Preise aus den Awin-Feeds und von eBay holen
         env:
@@ -44,8 +47,15 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add $DATEIEN
           git commit -m "Preise automatisch aktualisiert"
-          git pull --rebase -q
-          git push
+          # Hat zwischendurch ein anderer Lauf gespeichert, gewinnen unsere (neueren) Preise.
+          # Bis zu 3 Versuche, falls genau in dem Moment noch jemand pusht.
+          for versuch in 1 2 3; do
+            git pull --rebase -X theirs -q origin main && git push -q origin HEAD:main && break
+            echo "Speichern Versuch $versuch fehlgeschlagen – neuer Versuch"
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+            if [ "$versuch" = 3 ]; then exit 1; fi
+          done
           # Website neu veröffentlichen
           curl -s -X POST \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
