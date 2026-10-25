@@ -1,0 +1,31 @@
+name: Diagnose NBB
+on:
+  push:
+    branches: [diagnose-nbb]
+permissions:
+  contents: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - env:
+          AWIN_FEED_NOTEBOOKSBILLIGER: ${{ secrets.AWIN_FEED_NOTEBOOKSBILLIGER }}
+        run: |
+          python3 - <<'PY'
+          import os, re, sys, json
+          sys.path.insert(0, "tools")
+          import preise_aktualisieren as pa
+          feed = pa.feed_laden(os.environ["AWIN_FEED_NOTEBOOKSBILLIGER"])
+          spalten = list(next(iter(feed.values())).keys())
+          muster = re.compile(r"iphone|galaxy (s|a|z)\d|pixel \d|xiaomi 1\d|smartphone|handy", re.I)
+          zeilen = []
+          for fid, z in feed.items():
+              t = pa.feed_titel(z)
+              if muster.search(t):
+                  zeilen.append({k: z.get(k, "") for k in ("product_name","title","search_price","price","brand_name","brand","in_stock","availability","condition","merchant_category","category_name","product_type")} | {"id": fid})
+          json.dump({"anzahl_feed": len(feed), "spalten": spalten, "treffer": zeilen[:400], "anzahl_treffer": len(zeilen)},
+                    open("diagnose.json", "w"), ensure_ascii=False, indent=1)
+          PY
+          git config user.name bot; git config user.email actions@users.noreply.github.com
+          git add diagnose.json; git commit -qm diagnose; git push -q
