@@ -49,6 +49,18 @@ AUTO_IMPORT = {
     "narwal": {"shop": "Narwal", "marke": "Narwal", "kategorie": "staubsauger", "mindestpreis": 150},
 }
 
+# Wörter, die bei Händler-Feeds auf Zubehör oder etwas anderes als das Gerät hindeuten
+# (zusätzlich zu den eBay-Regeln). Steht so ein Wort im Produktnamen selbst, ist es erlaubt.
+HAENDLER_ZUBEHOER = {
+    "glas", "glass", "camglass", "glasschutzfolie", "schutzfolie", "displayschutzfolie",
+    "pen", "stylus", "stift", "earbuds", "in-ear", "kopfhörerkissen", "ohrpolster",
+    "pc", "komplettsystem", "workstation", "barebone", "keyboard-case", "tastaturhülle",
+    "ladegerät", "netzteil", "kabel", "adapter", "dockingstation", "halter", "rucksack",
+    "sleeve", "wallet", "flip-case", "bookcover", "schutzhülle", "lens", "linsenschutz",
+}
+# Preis muss zum Preis der anderen Shops passen (z. B. eBay), sonst ist es ein falscher Treffer
+PREIS_SPANNE = (0.5, 2.0)
+
 # Händler mit vielen Marken: Zuordnung automatisch über den Produktnamen
 HAENDLER_FEEDS = {
     "nbb": {"secret": "AWIN_FEED_NOTEBOOKSBILLIGER", "shop": "notebooksbilliger.de"},
@@ -237,20 +249,38 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
             if not name:
                 continue
             voller_name = name if marke.lower() in name.lower() else f"{marke} {name}".strip()
-            # seltenstes Wort des Namens als Vorfilter
-            name_woerter = [w for w in ebay_preise.woerter(voller_name)
+            # seltenstes Wort des Namens als Vorfilter (Marke zählt nicht: "Nvidia" steht
+            # bei Grafikkarten oft nicht im Titel, dafür "MSI GeForce …")
+            name_woerter = [w for w in ebay_preise.woerter(ebay_preise.ohne_zusatz(name))
                             if w not in ebay_preise.FUELLWOERTER]
             listen = [index.get(w, []) for w in name_woerter]
-            if not name_woerter or not all(listen):
-                kandidaten_nr = []
-            else:
-                kandidaten_nr = min(listen, key=len)
+            kandidaten_nr = min(listen, key=len) if name_woerter and all(listen) else []
+
+            name_set = set(ebay_preise.woerter(voller_name))
+            # Marke oder erstes Wort des Namens (z. B. "GeForce") muss ganz vorne im Titel stehen:
+            # "DISPLEX Schutzglas für Samsung Galaxy S25" ist kein Samsung-Handy
+            vorne_erlaubt = set(ebay_preise.woerter(marke)[:1]) | set(ebay_preise.woerter(name)[:1])
+            # Vergleichspreis der anderen Shops (ohne diesen Händler)
+            andere = [preis_zahl(s.get("price", "")) for s in produkt.get("shops", [])
+                      if s.get("feed") != feed_name]
+            andere = [x for x in andere if x]
+            referenz = min(andere) if andere else None
 
             bestes = None
             for nr in kandidaten_nr:
                 feed_id, zeile, titel, preis, link, feed_marke = zeilen[nr]
                 if marke and feed_marke and marke.lower() not in feed_marke \
                         and feed_marke not in marke.lower():
+                    continue
+                titel_w = ebay_preise.woerter(titel)
+                if not vorne_erlaubt & set(titel_w[:3]):
+                    continue
+                if any(w in HAENDLER_ZUBEHOER and w not in name_set for w in titel_w) \
+                        or any(w in HAENDLER_ZUBEHOER and w not in name_set
+                               for w in re.findall(r"[a-zäöüß-]+", titel.lower())):
+                    continue
+                if referenz and not (PREIS_SPANNE[0] * referenz <= preis_zahl(preis)
+                                     <= PREIS_SPANNE[1] * referenz):
                     continue
                 if not ebay_preise.passt(name, titel):
                     continue
