@@ -4,7 +4,7 @@
     "name": "Galaxy Tab S11 Ultra",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/S11_GR_4.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -19,15 +19,24 @@
         "ebayItem": "v1|147617290572|0",
         "ebayTitel": "Samsung Galaxy Tab S11 Ultra 5G - 256GB Grey - Neuwertig v.Händler",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "1099,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46030420587&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46030420587",
+        "feedTitel": "Samsung Galaxy Tab S11 Ultra Wi-Fi Grey 14,6\" WQXGA+ Display/ Octa-Core/ 12 GB RAM / 512 GB Speicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s11",
     "name": "Galaxy Tab S11",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Samsung_Galaxy_Tab_S11_5G_SM-X736B_Gray_Front_S_Pen_Logoscreen_CMYK_e00d.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -42,8 +51,17 @@
         "ebayItem": "v1|287660328461|0",
         "ebayTitel": "Samsung Galaxy Tab S11 5g    12/512gb   silver",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "899,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46366334228&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46366334228",
+        "feedTitel": "Samsung Galaxy Tab S11 5G Silver 11\" WQXGA+ Display/ Octa-Core/ 12 GB RAM / 128 GB Speicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s10-ultra",
@@ -128,7 +146,7 @@
     "name": "Galaxy Tab S10 FE",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Samsung_Galaxy_Tab_S10_FE_Wi-Fi_SM-X520N_Silver_Single_Cutout_S_Pen_Logoscreen_RGB_2689_1.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -143,8 +161,17 @@
         "ebayItem": "v1|860058745809|0",
         "ebayTitel": "Samsung Galaxy Tab S10 FE Wi‑Fi 128 GB 10,9 Zoll Grau Android Tablet",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "549,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=42831789478&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "42831789478",
+        "feedTitel": "Samsung Galaxy Tab S10 FE Wi-Fi Silver 10,9\" WQXGA+ Display / Octa-Cora / 8GB RAM / 128GB Speicher / Android / inkl. S-P"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s9-ultra",
