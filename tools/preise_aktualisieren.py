@@ -226,6 +226,32 @@ def streichpreis(zeile, preis):
 # Wörter, die eine andere Ausführung bedeuten – müssen in Name UND Titel stehen oder in keinem
 HAENDLER_AUSFUEHRUNG = {"wifi", "ax", "rgb", "gre", "wireless"}
 
+# Marke in unseren Dateien → Marke im Händler-Feed ("iPhone" heißt dort "Apple")
+MARKEN_ALIAS = {"iphone": "apple", "google pixel": "google", "redmi": "xiaomi",
+                "poco": "xiaomi", "cmf": "nothing"}
+
+# Display-Angaben im Händler-Titel sind keine Modell-Varianten:
+# "FHD+ Display" ≠ "Plus", "Super Retina XDR" ≠ "Super"
+DISPLAY_ANGABEN = re.compile(r"\b((?:W?Q?X?GA|WUXGA|[FQWU]?HD|[0-9.,]+K))\+|\bsuper(?=[\s-]+(?:retina|amoled))",
+                             re.I)
+
+
+def ohne_display(titel):
+    return DISPLAY_ANGABEN.sub(lambda t: t.group(1) or "", titel)
+
+
+def feed_marke_passt(marke, feed_marke):
+    marke = marke.lower()
+    marke = MARKEN_ALIAS.get(marke, marke)
+    return not marke or not feed_marke or marke in feed_marke or feed_marke in marke
+
+
+# Handy-Titel im Händler-Feed, die keinem Handy zugeordnet wurden, kommen ins Log
+# (der Feed selbst ist nur über das Secret erreichbar)
+HANDY_ANFANG = re.compile(r"^(apple iphone|iphone|samsung galaxy (?!tab|watch|buds|book)|google pixel (?!watch|buds|tablet)"
+                          r"|xiaomi|redmi|poco|motorola|oneplus (?!pad|buds|watch)|nothing phone|cmf phone|huawei (?:pura|nova|mate|p\d))",
+                          re.I)
+
 
 def haendler_passt(name, titel):
     """Zusätzliche Prüfungen für Händler-Feeds (strenger als eBay, weil dort
@@ -327,6 +353,7 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
 
     aenderungen = 0
     gefunden = 0
+    benutzt = set()
     for produkte in dateien.values():
         for produkt in produkte:
             name = produkt.get("name", "")
@@ -354,8 +381,7 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
             bestes = None
             for nr in kandidaten_nr:
                 feed_id, zeile, titel, preis, link, feed_marke = zeilen[nr]
-                if marke and feed_marke and marke.lower() not in feed_marke \
-                        and feed_marke not in marke.lower():
+                if not feed_marke_passt(marke, feed_marke):
                     continue
                 titel_w = ebay_preise.woerter(titel)
                 if not vorne_erlaubt & set(titel_w[:3]):
@@ -367,7 +393,8 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
                 if referenz and not (PREIS_SPANNE[0] * referenz <= preis_zahl(preis)
                                      <= PREIS_SPANNE[1] * referenz):
                     continue
-                if not ebay_preise.passt(name, titel) or not haendler_passt(name, titel):
+                pruef_titel = ohne_display(titel)
+                if not ebay_preise.passt(name, pruef_titel) or not haendler_passt(name, pruef_titel):
                     continue
                 if bestes is None or preis_zahl(preis) < preis_zahl(bestes[3]):
                     bestes = zeilen[nr]
@@ -388,6 +415,7 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
 
             gefunden += 1
             feed_id, zeile, titel, preis, link, _ = bestes
+            benutzt.add(feed_id)
             statt, statt_art = streichpreis(zeile, preis)
             neu = {"name": shop_name, "price": preis, "link": link,
                    "feed": feed_name, "feedId": feed_id, "feedTitel": titel[:120]}
@@ -410,6 +438,13 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
                 aenderungen += 1
 
     print(f"{feed_name}: {gefunden} Produkte mit passendem Angebot, {aenderungen} Änderungen")
+    handys = sorted({titel for feed_id, _, titel, preis, _, _ in zeilen
+                     if feed_id not in benutzt and HANDY_ANFANG.match(titel)
+                     and (preis_zahl(preis) or 0) >= 100})
+    if handys:
+        print(f"{feed_name}: {len(handys)} Handy-Titel ohne Zuordnung, z. B.:")
+        for titel in handys[:60]:
+            print(f"    {titel[:140]}")
     return aenderungen
 
 
