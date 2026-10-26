@@ -404,3 +404,10 @@ footer a:hover {
 .dk-preis strong { font-size: 20px; color: #111; margin-left: 2px; }
 .dk-preis small { display: block; font-size: 13px; color: #888; margin-top: 2px; }
 .dk-preis-leer { font-size: 14px; color: #888; }
+.dk-preis-vergleich { list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; color: #666; }
+.dk-preis-vergleich li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
+.dk-preis-vergleich li span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dk-preis-vergleich li span:last-child { white-space: nowrap; }
+@media (max-width: 480px) { .dk-preis-vergleich { font-size: 12px; } }
+.dk-preis-vergleich li + li { border-top: 1px solid #eee; }
+.dk-preis-vergleich .dk-preis-bester { color: #111; font-weight: 600; }

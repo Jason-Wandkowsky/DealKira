@@ -451,9 +451,34 @@ document.addEventListener("DOMContentLoaded", function() {
     const strong = document.createElement("strong");
     strong.textContent = best.text;
     el.appendChild(strong);
-    const klein = document.createElement("small");
-    klein.textContent = "bei " + best.shop + (best.anzahl > 1 ? " · " + best.anzahl + " Shops" : "");
-    el.appendChild(klein);
+    // Mehrere Shops mit Preis (z. B. notebooksbilliger und eBay): Preisvergleich direkt auf der Karte
+    const mitPreis = {};
+    ((p && p.shops) || []).forEach(function(s) {
+      const z = zahl(s.price);
+      if (z !== null && (!(s.name in mitPreis) || z < mitPreis[s.name].preis)) {
+        mitPreis[s.name] = { name: s.name, preis: z, text: s.price };
+      }
+    });
+    const vergleich = Object.values(mitPreis).sort(function(a, b) { return a.preis - b.preis; });
+    if (vergleich.length < 2) {
+      const klein = document.createElement("small");
+      klein.textContent = "bei " + best.shop + (best.anzahl > 1 ? " · " + best.anzahl + " Shops" : "");
+      el.appendChild(klein);
+      return el;
+    }
+    const liste = document.createElement("ul");
+    liste.className = "dk-preis-vergleich";
+    vergleich.slice(0, 3).forEach(function(s, i) {
+      const zeile = document.createElement("li");
+      if (i === 0) zeile.className = "dk-preis-bester";
+      const name = document.createElement("span");
+      name.textContent = s.name.replace(/\.de$/, "");
+      const preis = document.createElement("span");
+      preis.textContent = s.text;
+      zeile.append(name, preis);
+      liste.appendChild(zeile);
+    });
+    el.appendChild(liste);
     return el;
   };
 })();
