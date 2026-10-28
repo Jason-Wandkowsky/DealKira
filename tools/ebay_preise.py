@@ -18,6 +18,7 @@ Bilder werden NICHT von eBay übernommen (Händlerfotos).
 """
 
 import base64
+import datetime
 import json
 import os
 import re
@@ -28,6 +29,7 @@ import urllib.request
 CAMPAIGN_ID = "5339218072"   # eBay Partner Network – steht ohnehin in jedem Partnerlink
 MARKTPLATZ = "EBAY_DE"
 SHOP_NAME = "eBay"
+IMPORT_PRO_LAUF = 700        # Tageslimit der Browse API: 5000 Aufrufe, 4 Läufe am Tag
 
 # Erlaubte eBay-Kategorien je DealKira-Kategorie (IDs aus eBay.de; Oberkategorien zählen mit,
 # weil eBay bei jedem Treffer auch die übergeordneten Kategorien mitliefert).
@@ -351,12 +353,18 @@ def aktualisieren(dateien):
     gefunden = 0
     fehler_anzahl = 0
 
+    # Handgepflegte Produkte bei jedem Lauf; aus Händler-Feeds importierte Produkte (Tausende)
+    # reihum, je Lauf IMPORT_PRO_LAUF Stück: nie gesuchte zuerst, dann die am längsten nicht gesuchten
+    heute = datetime.date.today().isoformat()
+    importe = sorted(((p.get("ebayGesucht", ""), p["id"], dateiname)
+                      for dateiname, produkte in dateien.items() for p in produkte if p.get("importFeed")))
+    dran = {(pid, dateiname) for _, pid, dateiname in importe[:IMPORT_PRO_LAUF]}
+
     for dateiname, produkte in dateien.items():
-        # Neu aus Händler-Feeds angelegte Produkte ohne eBay-Preis zuerst, damit sie
-        # auch dann einen Vergleichspreis bekommen, wenn das Tageslimit erreicht wird
-        reihenfolge = sorted(produkte, key=lambda p: not (
-            p.get("importFeed") and not any(s.get("feed") == "ebay" for s in p.get("shops", []))))
-        for produkt in reihenfolge:
+        for produkt in produkte:
+            if produkt.get("importFeed"):
+                if (produkt["id"], dateiname) not in dran:
+                    continue
             name = produkt.get("name", "")
             if not name:
                 continue
@@ -381,6 +389,9 @@ def aktualisieren(dateien):
                     return aenderungen, 0
                 continue
 
+            if produkt.get("importFeed") and produkt.get("ebayGesucht") != heute:
+                produkt["ebayGesucht"] = heute
+                aenderungen += 1
             shops = produkt.setdefault("shops", [])
             alt = next((s for s in shops if s.get("feed") == "ebay"), None)
 

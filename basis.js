@@ -241,7 +241,8 @@ const DK_KATEGORIE_ICON = {
   ventilatoren: "fan", "mobile-heizungen": "heater",
   konsole: "gamepad", tv: "monitor",
   "outdoor-kameras": "camera", "indoor-kameras": "camera",
-  "kamera-sets": "camera", "kamera-zubehoer": "solar", tuerklingeln: "bell", maehroboter: "mower"
+  "kamera-sets": "camera", "kamera-zubehoer": "solar", tuerklingeln: "bell", heimautomatisierung: "plug", maehroboter: "mower",
+  "fertig-pcs": "tower", "software": "box", "laptop-taschen": "laptop", "dockingstations": "plug", "laptop-netzteile": "battery", "displayschutz": "monitor", "router": "plug", "switches": "plug", "nas": "drive", "netzwerk-adapter": "plug", "powerline": "plug", "netzwerk-zubehoer": "plug", "kopfhoerer": "headset", "lautsprecher": "headset", "mauspads": "mouse", "gaming-controller": "gamepad", "monitor-zubehoer": "monitor", "projektoren": "monitor", "druckerzubehoer": "printer", "grafiktabletts": "tablet", "wearables": "phone"
 };
 
 function dkEscape(value) {
@@ -480,5 +481,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     el.appendChild(liste);
     return el;
+  };
+})();
+
+
+/* =====================================================
+   Produktdaten (seit dem notebooksbilliger-Feed viele Tausend Produkte):
+   dkKategorieLaden("laptops") → alle Produkte einer Kategorie (daten/kategorie/…)
+   dkIndexLaden()              → kurze Liste aller Produkte (daten/index.json)
+   dkArtikelLink(p)            → Link zur Produktseite (mit Kategorie, dann lädt sie schneller)
+===================================================== */
+(function() {
+  async function json(url) {
+    const antwort = await fetch(url, { cache: "no-cache" });
+    if (!antwort.ok) throw new Error(url + " konnte nicht geladen werden.");
+    return antwort.json();
+  }
+  let index = null;
+  window.dkKategorieLaden = function(kategorie) {
+    return json("daten/kategorie/" + encodeURIComponent(kategorie) + ".json").catch(function() { return []; });
+  };
+  window.dkIndexLaden = function() {
+    if (!index) index = json("daten/index.json");
+    return index;
+  };
+  window.dkArtikelLink = function(p) {
+    return "artikel.html?id=" + encodeURIComponent(p.id || "") +
+      (p.kategorie ? "&k=" + encodeURIComponent(p.kategorie) : "");
   };
 })();

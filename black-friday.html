@@ -7,11 +7,11 @@
   <meta name="description" content="Black Friday 2026 ist am 27. November. Die besten Technik-Deals für Grafikkarten, Smartphones, Tablets, Mähroboter und Smart Home – mit Preisvergleich und Prüfung auf echte Rabatte.">
   <link rel="canonical" href="https://dealkira.com/black-friday.html">
 
-  <link rel="stylesheet" href="basis.css?v=20261020">
+  <link rel="stylesheet" href="basis.css?v=20261028">
   <link rel="stylesheet" href="bausteine.css?v=20261004b">
   <link rel="stylesheet" href="ratgeber.css?v=20261018">
-  <script src="basis.js?v=20261020"></script>
-  <script src="deals-dynamisch.js?v=20261019"></script>
+  <script src="basis.js?v=20261028"></script>
+  <script src="deals-dynamisch.js?v=20261028"></script>
 
   <style>
     .bf-countdown {
@@ -294,7 +294,7 @@
 
         const knopf = document.createElement("a");
         knopf.className = "product-card-button";
-        knopf.href = "artikel.html?id=" + encodeURIComponent(p.id);
+        knopf.href = dkArtikelLink(p);
         knopf.textContent = "Zum Deal";
         body.appendChild(knopf);
 

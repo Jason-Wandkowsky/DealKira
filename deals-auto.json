@@ -1,5 +1,201 @@
 {
   "stand": "2026-10-28",
   "deals": [],
-  "angebote": []
+  "angebote": [],
+  "produkte": {},
+  "beliebt": [
+    {
+      "id": "corsair-elite-premium-cable-pro-kit-type-4",
+      "name": "Corsair Elite Premium Cable Pro Kit Type 4",
+      "brand": "Corsair",
+      "kategorie": "netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/ELITE_PREMIUM_IND_SLEEVED_CABLES_TYPE4_BW_11_PRO_KIT_300d.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "69,55 €",
+          "link": "https://www.awin1.com/pclick.php?p=44412463844&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "aosu-solarcam-system-max-5mp-2-kameras",
+      "name": "aosu SolarCam System Max 5MP (2 Kameras)",
+      "brand": "aosu",
+      "kategorie": "kamera-sets",
+      "image": "https://cdn.shopify.com/s/files/1/0639/6913/2643/files/71k9VHLnXfL._AC_SL1500.jpg?v=1764851836",
+      "shops": [
+        {
+          "name": "aosu",
+          "price": "159,99 €",
+          "link": "https://www.awin1.com/cread.php?awinmid=128145&awinaffid=3110253&ued=https%3A%2F%2Fde.aosulife.com%2Fproducts%2Fsolarcam-system-max%3Fvariant%3D43489258930275"
+        }
+      ]
+    },
+    {
+      "id": "wasserkuehlung-be-quiet-light-loop-360",
+      "name": "be quiet! Light Loop 360",
+      "brand": "be quiet!",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Light_Loop_360mm_Shopbild_043c.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "109,90 €",
+          "link": "https://www.ebay.de/itm/147549733178?_skw=be+quiet%21+Light+Loop+360&hash=item225aa6413a%3Ag%3AlmAAAeSwxFVqmt5n&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "109,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=38762349548&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "xerox-c300-farblaserdrucker-wlan",
+      "name": "Xerox C300 Farblaserdrucker WLAN",
+      "brand": "Xerox",
+      "kategorie": "drucker",
+      "image": "https://media2.nbb-cdn.de/images/products/1125027/Xerox_C300V_EU_3.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "275,09 €",
+          "link": "https://www.awin1.com/pclick.php?p=46261228219&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "logitech-keys-to-go-2",
+      "name": "Logitech KEYS-TO-GO 2",
+      "brand": "Logitech",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/920-012965nr1_2d2c_1.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "65,95 €",
+          "link": "https://www.ebay.de/itm/800574782929?_skw=Logitech+KEYS-TO-GO+2&hash=itemba65f9bdd1%3Ag%3ArQQAAeSw6o5qkRjP&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "80,09 €",
+          "link": "https://www.awin1.com/pclick.php?p=45230075168&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "cpu-amd-ryzen-7-7800x3d",
+      "name": "AMD Ryzen 7 7800X3D",
+      "brand": "AMD",
+      "kategorie": "cpu",
+      "image": "https://media2.nbb-cdn.de/images/products/100-100000910WOF_1_4aae.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "256,19 €",
+          "link": "https://www.ebay.de/itm/800844753172?_skw=AMD+Ryzen+7+7800X3D&hash=itemba76112914%3Ag%3ALbAAAeSwyglq4Kt8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "359,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=35708061171&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "aosu-wirelesscam-system-pro-2k-2-kameras",
+      "name": "aosu WirelessCam System Pro 2K (2 Kameras)",
+      "brand": "aosu",
+      "kategorie": "kamera-sets",
+      "image": "https://cdn.shopify.com/s/files/1/0639/6913/2643/files/1-_2H_80a9f7c9-b16d-4a0c-9668-fc9c27276493.jpg?v=1766057871",
+      "shops": [
+        {
+          "name": "aosu",
+          "price": "129,99 €",
+          "link": "https://www.awin1.com/cread.php?awinmid=128145&awinaffid=3110253&ued=https%3A%2F%2Fde.aosulife.com%2Fproducts%2Fwirelesscam-system-pro%3Fvariant%3D43489258274915"
+        }
+      ]
+    },
+    {
+      "id": "gpu-rtx-3050-6-gb",
+      "name": "GeForce RTX 3050 6 GB (OC Edition)",
+      "brand": "Nvidia",
+      "kategorie": "grafikkarten",
+      "image": "https://media2.nbb-cdn.de/images/products/RTX3050_PEGASUS_6GB_B-GW301_5ac1.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "269,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=43088263233&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "331,79 €",
+          "link": "https://www.ebay.de/itm/298677171140?_skw=Nvidia+GeForce+RTX+3050+6+GB+%28OC+Edition%29&hash=item458a8bf3c4%3Ag%3AIDwAAeSwmzlq1yxp&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lvUWoxr%2Fa2sHG4uQ6heVzSoYwD9AK4kp%2Fs9Xa023Qj%2F7ffisB%2Fnh8OaJz3zJN4dR0VpOhPepxRxVTa%2BEC3%2Fsh4OFfWMGBHo2%2F7MZx7Fj8MaD15zP25uq80c44V4Z%2FZ24kwDvJ8XMyBtISSEdVFMRgiaiY1XRQy0USixE9cIdUy%2BHhVTETMS8vaNRbb9W892M2gF03qsNj4wj69SK7RnHvZw6VB%2BYRPm%2Fbb5k9Axs723OP97FFo61cKkqsGH4d5E8BHkBJj0RW8wjdfyTWP8%2Fg1G25thqqyReDvbRC90Se9H9ixhK0q7s%2FL2YQezclL9b3KF2b0jyLMY2n3pnf%2FDJgI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "phanteks-premium-vertical-gpu-bracket-pcie-5-0-220mm",
+      "name": "Phanteks Premium Vertical GPU Bracket PCIe 5.0 220mm",
+      "brand": "Phanteks",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/1757918344091_0111_23f2.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "81,44 €",
+          "link": "https://www.awin1.com/pclick.php?p=44723921721&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "ram-g-skill-trident-z5-neo-rgb-32-gb-2x16-ddr5-6000-cl30",
+      "name": "G.Skill Trident Z5 Neo RGB 32 GB (2×16) DDR5-6000 CL30",
+      "brand": "G.Skill",
+      "kategorie": "ram",
+      "image": "https://media2.nbb-cdn.de/images/products/G-SKILL_Trident-Z5-Neo-RGB_Black_2x_96a7.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "749,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34402479409&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "imou-cell-go-mit-solarpanel",
+      "name": "Imou Cell Go mit Solarpanel",
+      "brand": "Imou",
+      "kategorie": "outdoor-kameras",
+      "image": "https://cdn.shopify.com/s/files/1/0727/5711/7240/files/cell-go-100-wireless-3mp-2k-443255.jpg?v=1750840902",
+      "shops": [
+        {
+          "name": "Imou",
+          "price": "49,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44993279904&a=3110253&m=125816"
+        },
+        {
+          "name": "eBay",
+          "price": "69,99 €",
+          "link": "https://www.ebay.de/itm/266969400558?_skw=Imou+Cell+Go+mit+Solarpanel&hash=item3e289dc4ee%3Ag%3AXkIAAOSwHN9mzvro&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nfcwDEsOXab05QvnhpltoB8sKYDqLgI1hvd69Rab0I%2B%2FboVeGm86jDh0BMUKv2EYSiC5EMyBWHTrFV7j%2BaMaV%2B7albYBpVsAwUSllLXUQynnpS0LkHmkoiaOoebM4yKWOg%2BDATqfv11qHvtvJ5ah6M5%2F7huvQzuYmNw5p3GFPHX6acVdiOe9lwqLYfw16NJc963UpQNdQYrvCsW%2BTcRt57LLjYcQB%2FOq9tK1MUA0qLNn2YrULtyugdVtqkVLGJtrHlTRQbe5vPHlH1rH%2BWXtDI%2BAigkwJrBFY9hHAvN2EvJ97YUo8Q0N4FYCDx2nD6RN0%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "nedis-usb-hub-1x-usb-c-3-2-gen2",
+      "name": "Nedis USB-Hub 1x USB-C™ 3.2 Gen2",
+      "brand": "Nedis",
+      "kategorie": "usb-hubs",
+      "image": "https://media2.nbb-cdn.de/images/products/Nedis-UHUBU3450AT-1_ee42.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "31,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=35689372381&a=3110253&m=11348"
+        }
+      ]
+    }
+  ]
 }

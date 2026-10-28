@@ -61,9 +61,9 @@
   }
   </script>
 
-  <link rel="stylesheet" href="basis.css?v=20261020">
-<script src="basis.js?v=20261020"></script>
-<script src="deals-dynamisch.js?v=20261019"></script>
+  <link rel="stylesheet" href="basis.css?v=20261028">
+<script src="basis.js?v=20261028"></script>
+<script src="deals-dynamisch.js?v=20261028"></script>
 
 
 <style>
@@ -646,7 +646,7 @@
         <a href="smart-home.html" class="category-tile">
           <div class="icon">📹</div>
           <h3>Smart Home</h3>
-          <p>Überwachungskameras, Video-Türklingeln und Zubehör.</p>
+          <p>Überwachungskameras, Video-Türklingeln, Zubehör und Heimautomatisierung.</p>
         </a>
 
         <a href="garten.html" class="category-tile">
@@ -829,7 +829,7 @@
 
       const button = document.createElement("a");
       button.className = "home-deal-button";
-      button.href = "artikel.html?id=" + encodeURIComponent(p.id);
+      button.href = dkArtikelLink(p);
       button.textContent = info.badge ? "Zum Deal" : "Preise ansehen";
       body.appendChild(button);
 
@@ -856,8 +856,8 @@
 
         if (!eintraege.length) {
           // Noch keine Deals: Produkte mit Bild und aktuellem Preis zeigen
-          const antwort = await fetch("produkte.json");
-          const produkte = antwort.ok ? await antwort.json() : [];
+          const antwort = await fetch("deals-auto.json", { cache: "no-cache" });
+          const produkte = antwort.ok ? ((await antwort.json()).beliebt || []) : [];
           eintraege = produkte
             .filter(function(p) {
               return p.image && (p.shops || []).some(function(s) { return s.price; });

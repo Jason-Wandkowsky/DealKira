@@ -4,8 +4,8 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Konto / Anmelden – DealKira</title>    <link rel="stylesheet" href="basis.css?v=20261020">
-<script src="basis.js?v=20261020"></script>
+  <title>Konto / Anmelden – DealKira</title>    <link rel="stylesheet" href="basis.css?v=20261028">
+<script src="basis.js?v=20261028"></script>
 
 <style>  
 
@@ -3079,7 +3079,7 @@
       if (!ohneLink.length) return;  
 
       const seiten = {};  
-      const quellen = [["produkte.json", "artikel.html"], ["telefone.json", "produkt.html"], ["tablets.json", "tablet-produkt.html"]];  
+      const quellen = [["daten/index.json", "artikel.html"], ["telefone.json", "produkt.html"], ["tablets.json", "tablet-produkt.html"]];  
       await Promise.all(quellen.map(async function(q) {  
         try {  
           const antwort = await fetch(q[0] + "?t=" + Date.now(), { cache: "no-store" });  

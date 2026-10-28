@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lautsprecher – DealKira</title>
+
+  <link rel="stylesheet" href="basis.css?v=20261028">
+<link rel="stylesheet" href="bausteine.css?v=20261004b">
+<script src="basis.js?v=20261028"></script>
+
+</head>
+
+<body>
+
+  <site-header></site-header>
+
+  <section class="hero">
+    <h1><span>Lautsprecher</span></h1>
+    <p>PC-Lautsprecher, Bluetooth-Boxen und Soundbars</p>
+  </section>
+
+  <main class="products-section">
+
+    <div class="products-top">
+      <button class="filter-button" onclick="toggleFilter()">
+        ⚙️ Filter
+      </button>
+    </div>
+
+    <div class="filter-message" id="filterMessage">
+      Sobald hier Produkte sind, kannst du nach Marke filtern.
+    </div>
+
+    <div class="products" data-kategorie="lautsprecher">
+
+      <div class="empty-state">
+        <div class="empty-icon">🔊</div>
+        <h2>Noch keine Produkte vorhanden</h2>
+        <p>Hier werden bald passende Produkte und Angebote angezeigt.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="kategorie.js?v=20261028"></script>
+
+</body>
+</html>
