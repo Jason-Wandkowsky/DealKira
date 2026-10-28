@@ -69,6 +69,24 @@ HAENDLER_FEEDS = {
     "nbb": {"secret": "AWIN_FEED_NOTEBOOKSBILLIGER", "shop": "notebooksbilliger.de"},
 }
 
+# Neue Produkte aus Händler-Feeds: Feed-Kategorie (merchant_category) → DealKira-Kategorie
+# mit Mindestpreis (Zubehör fällt so raus). Pro Kategorie höchstens HAENDLER_IMPORT_ANZAHL
+# importierte Produkte, höchstens 2 pro Marke. Importierte Produkte haben "importFeed"
+# und werden danach über ihre feedId aktualisiert (nicht über den Namen).
+HAENDLER_IMPORT = {
+    "nbb": {
+        "Notebooks": ("laptops", 300), "Displays": ("bildschirme", 100),
+        "Headset": ("headset", 30), "Tastaturen": ("tastaturen", 30),
+        "Mäuse": ("maeuse", 25), "Webcams": ("webcams", 30),
+        "USB-Hubs": ("usb-hubs", 20), "Drucker": ("drucker", 80),
+        "Solid-State-Drive": ("speicherplatten", 50), "Grafikkarten": ("grafikkarten", 200),
+        "Prozessoren": ("cpu", 80), "Mainboards": ("mainboards", 80),
+        "Arbeitsspeicher": ("ram", 40), "PC Netzteile": ("netzteile", 50),
+        "Gehäuse": ("gehaeuse", 50), "Saugroboter": ("staubsauger", 150),
+    },
+}
+HAENDLER_IMPORT_ANZAHL = 6
+
 DATEI = "produkte.json"
 WEITERE_DATEIEN = ["telefone.json", "tablets.json"]   # nur für eBay
 HISTORIE = "preise-historie.json"
@@ -331,6 +349,135 @@ def haendler_passt(name, titel):
     return True
 
 
+# Hier endet der Modellname in Händler-Titeln: "ASUS Vivobook 15 X1504VA / 15,6\" FHD / …"
+NAME_ENDE = re.compile(r"\s+[-–|/]\s|/\s|,|\(|\s\d+(?:[.,]\d+)?\s*(?:\"|zoll|cm\b)"
+                       r"|\s(?:grafikkarte|gaming-monitor|monitor|notebook|laptop|prozessor|mainboard|"
+                       r"arbeitsspeicher|netzteil|gehäuse|tastatur|maus|headset|webcam|drucker|"
+                       r"saugroboter|saug-|interne|externe|ssd\b)", re.I)
+
+
+def haendler_modellname(titel):
+    """"MSI GeForce RTX 5070 Ti 16G Gaming Trio OC Grafikkarte, PCIe 5.0" → "MSI GeForce RTX 5070 Ti 16G Gaming Trio OC" """
+    name = NAME_ENDE.split(titel.strip(), maxsplit=1)[0].strip(" -–")
+    woerter = name.split()[:8]
+    while woerter and woerter[-1].lower() in {"gaming", "-"}:
+        woerter.pop()
+    return " ".join(woerter) if len(woerter) >= 2 else ""
+
+
+def haendler_marke(titel):
+    marke = titel.split()[0] if titel.split() else ""
+    # "SAMSUNG" → "Samsung", Abkürzungen wie "ASUS", "MSI", "LG" bleiben
+    return marke.capitalize() if marke.isupper() and len(marke) > 4 else marke
+
+
+def haendler_import(produkte, feed_name, feed, shop_name, regeln):
+    """Legt pro Kategorie ein paar neue Produkte aus dem Händler-Feed an (mit Bild)."""
+    vorhandene_ids = {p["id"] for p in produkte}
+    importiert = {}
+    for p in produkte:
+        if p.get("importFeed") == feed_name:
+            importiert[p.get("kategorie")] = importiert.get(p.get("kategorie"), 0) + 1
+    bekannte_ids = {s.get("feedId") for p in produkte for s in p.get("shops", [])
+                    if s.get("feed") == feed_name}
+
+    kandidaten = {}
+    for feed_id, zeile in feed.items():
+        regel = regeln.get((zeile.get("merchant_category") or "").strip())
+        if not regel or feed_id in bekannte_ids or not verfuegbar(zeile) or not ist_neuware(zeile):
+            continue
+        titel, preis, bild = feed_titel(zeile), feed_preis(zeile), feed_bild(zeile)
+        link = zeile.get("aw_deep_link") or zeile.get("link") or ""
+        if not titel or not preis or not bild or not link or (preis_zahl(preis) or 0) < regel[1]:
+            continue
+        titel_w = set(ebay_preise.woerter(titel)) | set(re.findall(r"[a-zäöüß-]+", titel.lower()))
+        if titel_w & (HAENDLER_ZUBEHOER | ebay_preise.ZUBEHOER):
+            continue
+        name = haendler_modellname(titel)
+        if not name:
+            continue
+        kandidaten.setdefault(regel[0], []).append((name, titel, preis, bild, link, feed_id, zeile))
+
+    neu = 0
+    for kategorie, liste in sorted(kandidaten.items()):
+        frei = HAENDLER_IMPORT_ANZAHL - importiert.get(kategorie, 0)
+        if frei <= 0:
+            continue
+        vorhanden = [p for p in produkte if p.get("kategorie") == kategorie]
+        namen = {p["name"].lower() for p in vorhanden}
+        marken_anzahl = {}
+        for p in vorhanden:
+            if p.get("importFeed") == feed_name:
+                marken_anzahl[p.get("brand", "").lower()] = marken_anzahl.get(p.get("brand", "").lower(), 0) + 1
+        # Marken, die im Feed oft vorkommen, zuerst; je Marke ein Gerät aus der Preismitte
+        haeufig = {}
+        for eintrag in liste:
+            haeufig[haendler_marke(eintrag[1]).lower()] = haeufig.get(haendler_marke(eintrag[1]).lower(), 0) + 1
+        preise = sorted(preis_zahl(e[2]) for e in liste)
+        mitte = preise[len(preise) // 2]
+        liste.sort(key=lambda e: (-haeufig[haendler_marke(e[1]).lower()], abs(preis_zahl(e[2]) - mitte), e[5]))
+        for name, titel, preis, bild, link, feed_id, zeile in liste:
+            if frei <= 0:
+                break
+            marke = haendler_marke(titel)
+            if name.lower() in namen or marken_anzahl.get(marke.lower(), 0) >= 2:
+                continue
+            # gibt es das Gerät schon (z. B. mit anderem Namen)?
+            if any(ebay_preise.passt(p["name"], titel) for p in vorhanden):
+                continue
+            pid = slug(name)
+            while pid in vorhandene_ids:
+                pid += "-2"
+            vorhandene_ids.add(pid)
+            shop = {"name": shop_name, "price": preis, "link": link,
+                    "feed": feed_name, "feedId": feed_id, "feedTitel": titel[:120]}
+            statt, statt_art = streichpreis(zeile, preis)
+            if statt:
+                shop["statt"], shop["stattArt"] = statt, statt_art
+            name = re.sub(r"^\S+", marke, name)
+            produkt = {"id": pid, "name": name, "brand": marke, "kategorie": kategorie,
+                       "image": bild, "imageFeed": feed_name, "importFeed": feed_name, "shops": [shop]}
+            produkte.append(produkt)
+            vorhanden.append(produkt)
+            namen.add(name.lower())
+            marken_anzahl[marke.lower()] = marken_anzahl.get(marke.lower(), 0) + 1
+            frei -= 1
+            neu += 1
+            print(f"  {feed_name}: NEU angelegt in {kategorie}: {name} ({preis})")
+    print(f"{feed_name}: {neu} neue Produkte angelegt")
+    return neu
+
+
+def haendler_import_aktualisieren(produkte, feed_name, feed):
+    """Importierte Produkte über ihre feedId aktualisieren; nicht mehr im Feed → entfernen."""
+    aenderungen = 0
+    for produkt in list(produkte):
+        if produkt.get("importFeed") != feed_name:
+            continue
+        shop = next((s for s in produkt.get("shops", []) if s.get("feed") == feed_name), None)
+        zeile = feed.get(shop.get("feedId", "")) if shop else None
+        if not zeile:
+            produkte.remove(produkt)
+            print(f"  {feed_name}: nicht mehr im Feed, entfernt: {produkt['name']}")
+            aenderungen += 1
+            continue
+        preis = feed_preis(zeile) if verfuegbar(zeile) else ""
+        statt, statt_art = streichpreis(zeile, preis)
+        neu = dict(shop, price=preis, link=zeile.get("aw_deep_link") or shop.get("link", ""))
+        neu.pop("statt", None)
+        neu.pop("stattArt", None)
+        if statt:
+            neu["statt"], neu["stattArt"] = statt, statt_art
+        if neu != shop:
+            produkt["shops"][produkt["shops"].index(shop)] = neu
+            aenderungen += 1
+        bild = feed_bild(zeile)
+        if bild and produkt.get("image") != bild:
+            produkt["image"] = bild
+            aenderungen += 1
+    return aenderungen
+
+
 def haendler_abgleich(dateien, feed_name, feed, shop_name):
     """Ordnet die Produkte aller Dateien einem Händler-Feed zu (über den Namen).
     Pro Produkt gewinnt das günstigste passende, lieferbare Neuware-Angebot."""
@@ -358,7 +505,7 @@ def haendler_abgleich(dateien, feed_name, feed, shop_name):
         for produkt in produkte:
             name = produkt.get("name", "")
             marke = produkt.get("brand", "")
-            if not name:
+            if not name or produkt.get("importFeed") == feed_name:
                 continue
             voller_name = name if marke.lower() in name.lower() else f"{marke} {name}".strip()
             # seltenstes Wort des Namens als Vorfilter (Marke zählt nicht: "Nvidia" steht
@@ -532,6 +679,9 @@ def main():
             continue
         print(f"{feed_name}: {len(feed)} Produkte im Feed")
         geaendert += haendler_abgleich(dateien, feed_name, feed, info["shop"])
+        geaendert += haendler_import_aktualisieren(produkte, feed_name, feed)
+        if feed_name in HAENDLER_IMPORT:
+            geaendert += haendler_import(produkte, feed_name, feed, info["shop"], HAENDLER_IMPORT[feed_name])
 
     # eBay: alle drei Produktdateien
     ebay_aenderungen, ebay_fehler = ebay_preise.aktualisieren(dateien)

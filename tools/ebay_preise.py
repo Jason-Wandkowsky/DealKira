@@ -352,7 +352,11 @@ def aktualisieren(dateien):
     fehler_anzahl = 0
 
     for dateiname, produkte in dateien.items():
-        for produkt in produkte:
+        # Neu aus Händler-Feeds angelegte Produkte ohne eBay-Preis zuerst, damit sie
+        # auch dann einen Vergleichspreis bekommen, wenn das Tageslimit erreicht wird
+        reihenfolge = sorted(produkte, key=lambda p: not (
+            p.get("importFeed") and not any(s.get("feed") == "ebay" for s in p.get("shops", []))))
+        for produkt in reihenfolge:
             name = produkt.get("name", "")
             if not name:
                 continue
