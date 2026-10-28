@@ -31,10 +31,13 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ebay_preise  # noqa: E402
+import nbb_kategorien  # noqa: E402
+import daten as website_daten  # noqa: E402
 
 FEEDS = {
     "aosu": "AWIN_FEED_AOSU",
@@ -69,39 +72,11 @@ HAENDLER_FEEDS = {
     "nbb": {"secret": "AWIN_FEED_NOTEBOOKSBILLIGER", "shop": "notebooksbilliger.de"},
 }
 
-# Neue Produkte aus Händler-Feeds: Feed-Kategorie (merchant_category) → DealKira-Kategorie
-# mit Mindestpreis (Zubehör fällt so raus). Pro Kategorie höchstens HAENDLER_IMPORT_ANZAHL
-# importierte Produkte, höchstens 2 pro Marke. Importierte Produkte haben "importFeed"
-# und werden danach über ihre feedId aktualisiert (nicht über den Namen).
-HAENDLER_IMPORT = {
-    "nbb": {
-        "Notebooks": ("laptops", 300), "Displays": ("bildschirme", 100),
-        "Headset": ("headset", 30), "Tastaturen": ("tastaturen", 30),
-        "Mäuse": ("maeuse", 25), "Webcams": ("webcams", 30),
-        "USB-Hubs": ("usb-hubs", 20), "Drucker": ("drucker", 80),
-        "Solid-State-Drive": ("speicherplatten", 50), "Grafikkarten": ("grafikkarten", 200),
-        "Prozessoren": ("cpu", 80), "Mainboards": ("mainboards", 80),
-        "Arbeitsspeicher": ("ram", 40), "PC Netzteile": ("netzteile", 50),
-        "Gehäuse": ("gehaeuse", 50), "Saugroboter": ("staubsauger", 150),
-        # Smart Home: Kategorie hängt vom Titel ab (siehe smart_home_kategorie)
-        "Netzwerk-Kamera": ("kamera", 30), "Heimautomatisierung": ("smarthome", 15),
-    },
-}
-HAENDLER_IMPORT_ANZAHL = 6
-HAENDLER_IMPORT_ANZAHL_KATEGORIE = {"heimautomatisierung": 12}
-
-TUERKLINGEL = re.compile(r"türklingel|tuerklingel|doorbell|türsprechanlage", re.I)
-KAMERA = re.compile(r"kamera|camera|\bcam\b|überwachung", re.I)
-OUTDOOR = re.compile(r"outdoor|außen|aussen|wetterfest|\bip6[4-7]\b|bullet|flutlicht|floodlight|solar", re.I)
-
-
-def smart_home_kategorie(art, titel):
-    """Netzwerk-Kameras und Heimautomatisierung auf die Smart-Home-Unterseiten verteilen."""
-    if TUERKLINGEL.search(titel):
-        return "tuerklingeln"
-    if art == "kamera" or KAMERA.search(titel):
-        return "outdoor-kameras" if OUTDOOR.search(titel) else "indoor-kameras"
-    return "heimautomatisierung"
+# Neue Produkte aus Händler-Feeds: Der ganze Feed wird übernommen und über
+# nbb_kategorien.einsortieren() auf die DealKira-Kategorien verteilt. Importierte Produkte
+# haben "importFeed" und werden danach über ihre feedId aktualisiert (nicht über den Namen).
+# Kategorie "tablets" landet in tablets.json, alles andere in produkte.json.
+HAENDLER_IMPORT = {"nbb": nbb_kategorien}
 
 DATEI = "produkte.json"
 WEITERE_DATEIEN = ["telefone.json", "tablets.json"]   # nur für eBay
@@ -387,114 +362,152 @@ def haendler_marke(titel):
     return marke.capitalize() if marke.isupper() and len(marke) > 4 else marke
 
 
-def haendler_import(produkte, feed_name, feed, shop_name, regeln):
-    """Legt pro Kategorie ein paar neue Produkte aus dem Händler-Feed an (mit Bild)."""
-    vorhandene_ids = {p["id"] for p in produkte}
-    importiert = {}
-    for p in produkte:
-        if p.get("importFeed") == feed_name:
-            importiert[p.get("kategorie")] = importiert.get(p.get("kategorie"), 0) + 1
-    bekannte_ids = {s.get("feedId") for p in produkte for s in p.get("shops", [])
+# Amazon: kein Preis-Feed, aber ein Suchlink mit Partner-Tag (Provision wie bei den anderen Links)
+AMAZON_TAG = "amazonguy001-21"
+
+
+def amazon_suchlink(name):
+    return "https://www.amazon.de/s?" + urllib.parse.urlencode({"k": name, "tag": AMAZON_TAG})
+
+
+def amazon_ergaenzen(produkt):
+    """Importierte Produkte bekommen einen Amazon-Suchlink (handgepflegte Amazon-Links bleiben)."""
+    shops = produkt.setdefault("shops", [])
+    alt = next((s for s in shops if s.get("name") == "Amazon"), None)
+    if alt and not alt.get("amazonSuche"):
+        return 0
+    neu = {"name": "Amazon", "price": "", "link": amazon_suchlink(produkt["name"]), "amazonSuche": True}
+    if alt == neu:
+        return 0
+    if alt:
+        shops[shops.index(alt)] = neu
+    else:
+        shops.append(neu)
+    return 1
+
+
+def import_ziel(kategorie):
+    return "tablets.json" if kategorie == "tablets" else DATEI
+
+
+def import_kategorie(regeln, zeile, titel, preis):
+    """DealKira-Kategorie für eine Feed-Zeile oder None (Zubehör, gebraucht, zu billig …)."""
+    kategorie = regeln.einsortieren(zeile.get("merchant_category"), titel)
+    if not kategorie or regeln.GEBRAUCHT.search(titel):
+        return None
+    if (preis_zahl(preis) or 0) < regeln.MINDESTPREIS.get(kategorie, regeln.STANDARD_MINDESTPREIS):
+        return None
+    if kategorie in regeln.GERAETE and regeln.GERAET_ZUBEHOER.search(titel):
+        return None
+    return kategorie
+
+
+def haendler_import(dateien, feed_name, feed, shop_name, regeln):
+    """Übernimmt alle passenden Produkte aus dem Händler-Feed (mit Bild und Preis).
+    Pro Modellname und Kategorie ein Produkt (die günstigste Variante)."""
+    alle = [p for liste in dateien.values() for p in liste]
+    vorhandene_ids = {p["id"] for p in alle}
+    bekannte_ids = {s.get("feedId") for p in alle for s in p.get("shops", [])
                     if s.get("feed") == feed_name}
+    namen = {(p.get("kategorie") or "tablets", p["name"].lower()) for p in alle}
+    # handgepflegte Produkte je Kategorie: dasselbe Gerät nicht doppelt anlegen
+    gepflegt = {}
+    for dateiname, liste in dateien.items():
+        for p in liste:
+            if not p.get("importFeed"):
+                kat = "tablets" if dateiname == "tablets.json" else p.get("kategorie")
+                gepflegt.setdefault(kat, []).append(p)
 
     kandidaten = {}
     for feed_id, zeile in feed.items():
-        regel = regeln.get((zeile.get("merchant_category") or "").strip())
-        if not regel or feed_id in bekannte_ids or not verfuegbar(zeile) or not ist_neuware(zeile):
+        if feed_id in bekannte_ids or not verfuegbar(zeile) or not ist_neuware(zeile):
             continue
         titel, preis, bild = feed_titel(zeile), feed_preis(zeile), feed_bild(zeile)
         link = zeile.get("aw_deep_link") or zeile.get("link") or ""
-        if not titel or not preis or not bild or not link or (preis_zahl(preis) or 0) < regel[1]:
+        if not titel or not preis or not bild or not link:
             continue
-        titel_w = set(ebay_preise.woerter(titel)) | set(re.findall(r"[a-zäöüß-]+", titel.lower()))
-        if titel_w & (HAENDLER_ZUBEHOER | ebay_preise.ZUBEHOER):
-            continue
-        name = haendler_modellname(titel)
+        kategorie = import_kategorie(regeln, zeile, titel, preis)
+        name = haendler_modellname(titel) if kategorie else ""
         if not name:
             continue
-        kategorie = regel[0]
-        if kategorie in ("kamera", "smarthome"):
-            kategorie = smart_home_kategorie(kategorie, titel)
-        kandidaten.setdefault(kategorie, []).append((name, titel, preis, bild, link, feed_id, zeile))
-
-    neu = 0
-    for kategorie, liste in sorted(kandidaten.items()):
-        frei = HAENDLER_IMPORT_ANZAHL_KATEGORIE.get(kategorie, HAENDLER_IMPORT_ANZAHL) \
-            - importiert.get(kategorie, 0)
-        if frei <= 0:
+        marke = haendler_marke(titel)
+        name = re.sub(r"^\S+", marke, name)
+        schluessel = (kategorie, name.lower())
+        if schluessel in namen:
             continue
-        vorhanden = [p for p in produkte if p.get("kategorie") == kategorie]
-        namen = {p["name"].lower() for p in vorhanden}
-        marken_anzahl = {}
-        for p in vorhanden:
-            if p.get("importFeed") == feed_name:
-                marken_anzahl[p.get("brand", "").lower()] = marken_anzahl.get(p.get("brand", "").lower(), 0) + 1
-        # Marken, die im Feed oft vorkommen, zuerst; je Marke ein Gerät aus der Preismitte
-        haeufig = {}
-        for eintrag in liste:
-            haeufig[haendler_marke(eintrag[1]).lower()] = haeufig.get(haendler_marke(eintrag[1]).lower(), 0) + 1
-        preise = sorted(preis_zahl(e[2]) for e in liste)
-        mitte = preise[len(preise) // 2]
-        liste.sort(key=lambda e: (-haeufig[haendler_marke(e[1]).lower()], abs(preis_zahl(e[2]) - mitte), e[5]))
-        for name, titel, preis, bild, link, feed_id, zeile in liste:
-            if frei <= 0:
-                break
-            marke = haendler_marke(titel)
-            if name.lower() in namen or marken_anzahl.get(marke.lower(), 0) >= 2:
-                continue
-            # gibt es das Gerät schon (z. B. mit anderem Namen)?
-            if any(ebay_preise.passt(p["name"], titel) for p in vorhanden):
-                continue
-            pid = slug(name)
-            while pid in vorhandene_ids:
-                pid += "-2"
-            vorhandene_ids.add(pid)
-            shop = {"name": shop_name, "price": preis, "link": link,
-                    "feed": feed_name, "feedId": feed_id, "feedTitel": titel[:120]}
-            statt, statt_art = streichpreis(zeile, preis)
-            if statt:
-                shop["statt"], shop["stattArt"] = statt, statt_art
-            name = re.sub(r"^\S+", marke, name)
-            produkt = {"id": pid, "name": name, "brand": marke, "kategorie": kategorie,
-                       "image": bild, "imageFeed": feed_name, "importFeed": feed_name, "shops": [shop]}
-            produkte.append(produkt)
-            vorhanden.append(produkt)
-            namen.add(name.lower())
-            marken_anzahl[marke.lower()] = marken_anzahl.get(marke.lower(), 0) + 1
-            frei -= 1
-            neu += 1
-            print(f"  {feed_name}: NEU angelegt in {kategorie}: {name} ({preis})")
-    print(f"{feed_name}: {neu} neue Produkte angelegt")
-    return neu
-
-
-def haendler_import_aktualisieren(produkte, feed_name, feed):
-    """Importierte Produkte über ihre feedId aktualisieren; nicht mehr im Feed → entfernen."""
-    aenderungen = 0
-    for produkt in list(produkte):
-        if produkt.get("importFeed") != feed_name:
+        alt = kandidaten.get(schluessel)
+        if alt and preis_zahl(alt[2]) <= preis_zahl(preis):
             continue
-        shop = next((s for s in produkt.get("shops", []) if s.get("feed") == feed_name), None)
-        zeile = feed.get(shop.get("feedId", "")) if shop else None
-        if not zeile:
-            produkte.remove(produkt)
-            print(f"  {feed_name}: nicht mehr im Feed, entfernt: {produkt['name']}")
-            aenderungen += 1
+        kandidaten[schluessel] = (name, titel, preis, bild, link, feed_id, zeile, marke)
+
+    neu = {}
+    for (kategorie, _), (name, titel, preis, bild, link, feed_id, zeile, marke) in sorted(kandidaten.items()):
+        if any(ebay_preise.passt(p["name"], titel) for p in gepflegt.get(kategorie, [])):
             continue
-        preis = feed_preis(zeile) if verfuegbar(zeile) else ""
+        pid = slug(name)
+        while pid in vorhandene_ids:
+            pid += "-2"
+        vorhandene_ids.add(pid)
+        shop = {"name": shop_name, "price": preis, "link": link,
+                "feed": feed_name, "feedId": feed_id, "feedTitel": titel[:120]}
         statt, statt_art = streichpreis(zeile, preis)
-        neu = dict(shop, price=preis, link=zeile.get("aw_deep_link") or shop.get("link", ""))
-        neu.pop("statt", None)
-        neu.pop("stattArt", None)
         if statt:
-            neu["statt"], neu["stattArt"] = statt, statt_art
-        if neu != shop:
-            produkt["shops"][produkt["shops"].index(shop)] = neu
-            aenderungen += 1
-        bild = feed_bild(zeile)
-        if bild and produkt.get("image") != bild:
-            produkt["image"] = bild
-            aenderungen += 1
+            shop["statt"], shop["stattArt"] = statt, statt_art
+        produkt = {"id": pid, "name": name, "brand": marke}
+        if kategorie != "tablets":
+            produkt["kategorie"] = kategorie
+        produkt.update({"image": bild, "imageFeed": feed_name, "importFeed": feed_name, "shops": [shop]})
+        amazon_ergaenzen(produkt)
+        dateien[import_ziel(kategorie)].append(produkt)
+        neu[kategorie] = neu.get(kategorie, 0) + 1
+    gesamt = sum(neu.values())
+    print(f"{feed_name}: {gesamt} neue Produkte angelegt "
+          + ", ".join(f"{k} {n}" for k, n in sorted(neu.items())))
+    return gesamt
+
+
+def haendler_import_aktualisieren(dateien, feed_name, feed, regeln):
+    """Importierte Produkte über ihre feedId aktualisieren und neu einsortieren;
+    nicht mehr im Feed oder nicht mehr passend → entfernen."""
+    aenderungen = 0
+    for dateiname, produkte in dateien.items():
+        for produkt in list(produkte):
+            if produkt.get("importFeed") != feed_name:
+                continue
+            shop = next((s for s in produkt.get("shops", []) if s.get("feed") == feed_name), None)
+            zeile = feed.get(shop.get("feedId", "")) if shop else None
+            kategorie = import_kategorie(regeln, zeile, feed_titel(zeile), feed_preis(zeile)) \
+                if zeile and verfuegbar(zeile) else None
+            if zeile and not verfuegbar(zeile):
+                kategorie = produkt.get("kategorie") or "tablets"   # nur ausverkauft: behalten
+            if not zeile or not kategorie or import_ziel(kategorie) != dateiname:
+                produkte.remove(produkt)
+                aenderungen += 1
+                continue
+            if dateiname == DATEI and produkt.get("kategorie") != kategorie:
+                produkt["kategorie"] = kategorie
+                aenderungen += 1
+            name = haendler_modellname(feed_titel(zeile))
+            if name:
+                name = re.sub(r"^\S+", produkt.get("brand", ""), name)
+                if name != produkt["name"]:
+                    produkt["name"] = name
+                    aenderungen += 1
+            preis = feed_preis(zeile) if verfuegbar(zeile) else ""
+            statt, statt_art = streichpreis(zeile, preis)
+            neu = dict(shop, price=preis, link=zeile.get("aw_deep_link") or shop.get("link", ""))
+            neu.pop("statt", None)
+            neu.pop("stattArt", None)
+            if statt:
+                neu["statt"], neu["stattArt"] = statt, statt_art
+            if neu != shop:
+                produkt["shops"][produkt["shops"].index(shop)] = neu
+                aenderungen += 1
+            bild = feed_bild(zeile)
+            if bild and produkt.get("image") != bild:
+                produkt["image"] = bild
+                aenderungen += 1
+            aenderungen += amazon_ergaenzen(produkt)
     return aenderungen
 
 
@@ -699,9 +712,10 @@ def main():
             continue
         print(f"{feed_name}: {len(feed)} Produkte im Feed")
         geaendert += haendler_abgleich(dateien, feed_name, feed, info["shop"])
-        geaendert += haendler_import_aktualisieren(produkte, feed_name, feed)
         if feed_name in HAENDLER_IMPORT:
-            geaendert += haendler_import(produkte, feed_name, feed, info["shop"], HAENDLER_IMPORT[feed_name])
+            regeln = HAENDLER_IMPORT[feed_name]
+            geaendert += haendler_import_aktualisieren(dateien, feed_name, feed, regeln)
+            geaendert += haendler_import(dateien, feed_name, feed, info["shop"], regeln)
 
     # eBay: alle drei Produktdateien
     ebay_aenderungen, ebay_fehler = ebay_preise.aktualisieren(dateien)
@@ -715,6 +729,7 @@ def main():
     geaendert += ebay_aenderungen
 
     historie_und_deals([p for liste in dateien.values() for p in liste])
+    website_daten.schreiben(dateien[DATEI], DEALS)
     print(f"Fertig: {geaendert} Änderungen")
     # Rotes ✗ bei GitHub, wenn ein hinterlegter Feed nicht geladen werden konnte
     return 1 if fehler_gesamt else 0

@@ -132,7 +132,7 @@
       "product-card-button";
 
     button.href =
-      "artikel.html?id=" + encodeURIComponent(product.id || "");
+      dkArtikelLink(product);
 
     button.textContent =
       "Zum Deal";
@@ -157,7 +157,7 @@
      data-brand haben (Kategorie und Suche).
   ========================= */
 
-  function buildFilter(items, container, cardSelector) {
+  function buildFilter(items, container, cardSelector, onWahl) {
 
     const message =
       document.getElementById("filterMessage");
@@ -227,6 +227,11 @@
             c.classList.toggle("active", c === chip);
           });
 
+        if (onWahl) {
+          onWahl(value);
+          return;
+        }
+
         container
           .querySelectorAll(cardSelector)
           .forEach(function(card) {
@@ -260,6 +265,8 @@
      START
   ========================= */
 
+  const PRO_SEITE = 48;
+
   async function loadCategory() {
 
     const container =
@@ -274,31 +281,50 @@
 
     try {
 
-      const response =
-        await fetch("produkte.json?t=" + Date.now(), { cache: "no-store" });
-
-      if (!response.ok) {
-        throw new Error("produkte.json konnte nicht geladen werden.");
-      }
-
-      const all =
-        await response.json();
-
       const products =
-        all.filter(function(p) {
-          return p.kategorie === kategorie;
-        });
+        await dkKategorieLaden(kategorie);
 
       if (!products.length) {
         return;
       }
 
-      container.replaceChildren(
-        ...products.map(createCard)
-      );
+      /* Bei Hunderten Produkten (z. B. Laptops) nicht alle Karten
+         auf einmal bauen: erst PRO_SEITE, dann "Mehr anzeigen" */
 
+      let auswahl = products;
+      let gezeigt = 0;
 
-      buildFilter(products, container, ".product-card");
+      const mehr =
+        document.createElement("button");
+
+      mehr.type = "button";
+      mehr.className = "product-more-button";
+
+      mehr.addEventListener("click", function() {
+        weitere();
+      });
+
+      function weitere() {
+        const neu = auswahl.slice(gezeigt, gezeigt + PRO_SEITE).map(createCard);
+        gezeigt += neu.length;
+        mehr.before(...neu);
+        const rest = auswahl.length - gezeigt;
+        mehr.hidden = rest <= 0;
+        mehr.textContent = "Mehr anzeigen (" + rest + " weitere)";
+      }
+
+      function anzeigen(marke) {
+        auswahl = marke
+          ? products.filter(function(p) { return p.brand === marke; })
+          : products;
+        gezeigt = 0;
+        container.replaceChildren(mehr);
+        weitere();
+      }
+
+      anzeigen("");
+
+      buildFilter(products, container, ".product-card", anzeigen);
 
     }
 

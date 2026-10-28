@@ -38,7 +38,7 @@ jobs:
 
       - name: Änderungen speichern
         run: |
-          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json sitemap.xml"
+          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json sitemap.xml daten"
           if [ -z "$(git status --porcelain -- $DATEIEN)" ]; then
             echo "Keine Preisänderungen."
             exit 0

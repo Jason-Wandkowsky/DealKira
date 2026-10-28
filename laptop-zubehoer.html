@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop-Zubehör – DealKira</title>
+
+  <link rel="stylesheet" href="basis.css?v=20261028">
+<link rel="stylesheet" href="bausteine.css?v=20261004b">
+<script src="basis.js?v=20261028"></script>
+
+<style>
+
+    .categories {
+      max-width: 1100px;
+      margin: 55px auto 70px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .category-card {
+      min-height: 210px;
+      background: #fff;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: .2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+
+    .category-icon {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+
+    .category-card h2 {
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+
+    .category-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 550px) {
+
+      .categories {
+        margin: 35px auto 50px;
+        padding: 0 12px;
+        gap: 12px;
+      }
+
+      .category-card {
+        min-height: 175px;
+        padding: 15px 8px;
+        border-radius: 13px;
+      }
+
+      .category-icon {
+        font-size: 43px;
+        margin-bottom: 10px;
+      }
+
+      .category-card h2 {
+        font-size: 16px;
+      }
+
+      .category-card p {
+        font-size: 12px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <site-header></site-header>
+
+  <section class="hero">
+    <h1>Laptop-<span>Zubehör</span></h1>
+    <p>Taschen, Docks, Netzteile und Displayschutz für dein Notebook</p>
+  </section>
+
+  <main class="categories">
+
+    <a href="laptop-taschen.html" class="category-card">
+      <div class="category-icon">💼</div>
+      <h2>Laptop-Taschen</h2>
+      <p>Taschen, Rucksäcke und Sleeves für Notebooks</p>
+    </a>
+
+    <a href="dockingstations.html" class="category-card">
+      <div class="category-icon">🔌</div>
+      <h2>Dockingstations</h2>
+      <p>Dockingstations und USB-C-Docks für Laptops</p>
+    </a>
+
+    <a href="laptop-netzteile.html" class="category-card">
+      <div class="category-icon">🔋</div>
+      <h2>Laptop-Netzteile</h2>
+      <p>Netzteile, Ladegeräte und Ladekabel für Notebooks</p>
+    </a>
+
+    <a href="displayschutz.html" class="category-card">
+      <div class="category-icon">🛡️</div>
+      <h2>Displayschutz</h2>
+      <p>Displayfolien und Blickschutzfilter für Laptops und Monitore</p>
+    </a>
+
+  </main>
+
+  <site-footer></site-footer>
+
+</body>
+</html>

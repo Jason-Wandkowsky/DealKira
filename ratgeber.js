@@ -50,7 +50,7 @@
 
     const knopf = document.createElement("a");
     knopf.className = "product-card-button";
-    knopf.href = "artikel.html?id=" + encodeURIComponent(p.id);
+    knopf.href = dkArtikelLink(p);
     knopf.textContent = "Zum Deal";
     body.appendChild(knopf);
 
@@ -65,8 +65,7 @@
     if (!boxen.length) return;
 
     try {
-      const antwort = await fetch("produkte.json?t=" + Date.now(), { cache: "no-store" });
-      const alle = await antwort.json();
+      const alle = await dkIndexLaden();
       const nachId = {};
       alle.forEach(function(p) { nachId[p.id] = p; });
 

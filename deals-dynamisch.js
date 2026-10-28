@@ -73,7 +73,7 @@
 
     const knopf = document.createElement("a");
     knopf.className = "deal-button";
-    knopf.href = "artikel.html?id=" + encodeURIComponent(p.id);
+    knopf.href = dkArtikelLink(p);
     knopf.textContent = "Zum Deal";
     inhalt.appendChild(knopf);
 
@@ -84,13 +84,19 @@
 
   /* Alle aktuellen Deals als Liste: [{ p, info, art }] – auch für die Startseite */
   async function dealsLaden() {
-    const [produkte, auto, manuell] = await Promise.all([
-      laden("produkte.json"), laden("deals-auto.json"), laden("manuelle-deals.json")
+    const [auto, manuell] = await Promise.all([
+      laden("deals-auto.json"), laden("manuelle-deals.json")
     ]);
-    if (!produkte) return null;
+    if (!auto) return null;
 
-    const nachId = {};
-    produkte.forEach(function(p) { nachId[p.id] = p; });
+    // Der Preis-Bot liefert die Produkte der Deals in deals-auto.json mit ("produkte");
+    // nur für Handarbeits-Deals, die dort fehlen, wird der Produkt-Index geladen
+    const nachId = Object.assign({}, auto.produkte || {});
+    if ((manuell || []).some(function(d) { return !nachId[d.id]; })) {
+      try {
+        (await dkIndexLaden()).forEach(function(p) { if (!nachId[p.id]) nachId[p.id] = p; });
+      } catch (e) {}
+    }
     const heute = new Date().toISOString().slice(0, 10);
     const stand = auto && auto.stand ? " · Stand " + datumText(auto.stand) : "";
 

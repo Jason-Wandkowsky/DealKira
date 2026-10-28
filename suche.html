@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suche – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css?v=20261020">
-<script src="basis.js?v=20261020"></script>
+  <link rel="stylesheet" href="basis.css?v=20261028">
+<script src="basis.js?v=20261028"></script>
 
 <style>
 
@@ -519,7 +519,7 @@
     },
 
     {
-      file: "produkte.json",
+      file: "daten/index.json",
       category: "Computer",
       detailPage: "artikel.html"
     }
@@ -713,7 +713,10 @@
     card.href =
       detailPage +
       "?id=" +
-      encodeURIComponent(productId);
+      encodeURIComponent(productId) +
+      (detailPage === "artikel.html" && product.kategorie
+        ? "&k=" + encodeURIComponent(product.kategorie)
+        : "");
 
     const image =
       getProductImage(product);
@@ -1548,7 +1551,7 @@
 
 </script>
 
-  <script src="kategorie.js?v=20261020"></script>
+  <script src="kategorie.js?v=20261028"></script>
 
 </body>
 </html>

@@ -6,8 +6,8 @@
 
   <title>Produkt – DealKira</title>
 
-  <link rel="stylesheet" href="basis.css?v=20261020">
-<script src="basis.js?v=20261020"></script>
+  <link rel="stylesheet" href="basis.css?v=20261028">
+<script src="basis.js?v=20261028"></script>
 
 <style>
 
@@ -363,24 +363,25 @@
 
       }
 
-      const response =
-        await fetch(
-          "produkte.json",
-          {
-            cache: "no-cache"
-          }
-        );
+      /* Kategorie steht im Link (&k=…), sonst im Produkt-Index nachsehen */
 
-      if (!response.ok) {
+      let kategorie =
+        params.get("k");
 
-        throw new Error(
-          "produkte.json konnte nicht geladen werden."
-        );
+      if (!kategorie) {
+
+        const eintrag =
+          (await dkIndexLaden()).find(function(p) {
+            return p.id === productId;
+          });
+
+        kategorie =
+          eintrag && eintrag.kategorie;
 
       }
 
       const products =
-        await response.json();
+        kategorie ? await dkKategorieLaden(kategorie) : [];
 
       const product =
         products.find(
