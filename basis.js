@@ -241,7 +241,7 @@ const DK_KATEGORIE_ICON = {
   ventilatoren: "fan", "mobile-heizungen": "heater",
   konsole: "gamepad", tv: "monitor",
   "outdoor-kameras": "camera", "indoor-kameras": "camera",
-  "kamera-sets": "camera", "kamera-zubehoer": "solar", tuerklingeln: "bell", maehroboter: "mower"
+  "kamera-sets": "camera", "kamera-zubehoer": "solar", tuerklingeln: "bell", heimautomatisierung: "plug", maehroboter: "mower"
 };
 
 function dkEscape(value) {

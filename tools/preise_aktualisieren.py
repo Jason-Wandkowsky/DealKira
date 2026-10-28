@@ -83,9 +83,25 @@ HAENDLER_IMPORT = {
         "Prozessoren": ("cpu", 80), "Mainboards": ("mainboards", 80),
         "Arbeitsspeicher": ("ram", 40), "PC Netzteile": ("netzteile", 50),
         "Gehäuse": ("gehaeuse", 50), "Saugroboter": ("staubsauger", 150),
+        # Smart Home: Kategorie hängt vom Titel ab (siehe smart_home_kategorie)
+        "Netzwerk-Kamera": ("kamera", 30), "Heimautomatisierung": ("smarthome", 15),
     },
 }
 HAENDLER_IMPORT_ANZAHL = 6
+HAENDLER_IMPORT_ANZAHL_KATEGORIE = {"heimautomatisierung": 12}
+
+TUERKLINGEL = re.compile(r"türklingel|tuerklingel|doorbell|türsprechanlage", re.I)
+KAMERA = re.compile(r"kamera|camera|\bcam\b|überwachung", re.I)
+OUTDOOR = re.compile(r"outdoor|außen|aussen|wetterfest|\bip6[4-7]\b|bullet|flutlicht|floodlight|solar", re.I)
+
+
+def smart_home_kategorie(art, titel):
+    """Netzwerk-Kameras und Heimautomatisierung auf die Smart-Home-Unterseiten verteilen."""
+    if TUERKLINGEL.search(titel):
+        return "tuerklingeln"
+    if art == "kamera" or KAMERA.search(titel):
+        return "outdoor-kameras" if OUTDOOR.search(titel) else "indoor-kameras"
+    return "heimautomatisierung"
 
 DATEI = "produkte.json"
 WEITERE_DATEIEN = ["telefone.json", "tablets.json"]   # nur für eBay
@@ -353,7 +369,7 @@ def haendler_passt(name, titel):
 NAME_ENDE = re.compile(r"\s+[-–|/]\s|/\s|,|\(|\s\d+(?:[.,]\d+)?\s*(?:\"|zoll|cm\b)"
                        r"|\s(?:grafikkarte|gaming-monitor|monitor|notebook|laptop|prozessor|mainboard|"
                        r"arbeitsspeicher|netzteil|gehäuse|tastatur|maus|headset|webcam|drucker|"
-                       r"saugroboter|saug-|interne|externe|ssd\b)", re.I)
+                       r"saugroboter|saug-|interne|externe|ssd\b|(?:wlan-|wifi-)?(?:überwachungs)?kamera\b|camera\b)", re.I)
 
 
 def haendler_modellname(titel):
@@ -396,11 +412,15 @@ def haendler_import(produkte, feed_name, feed, shop_name, regeln):
         name = haendler_modellname(titel)
         if not name:
             continue
-        kandidaten.setdefault(regel[0], []).append((name, titel, preis, bild, link, feed_id, zeile))
+        kategorie = regel[0]
+        if kategorie in ("kamera", "smarthome"):
+            kategorie = smart_home_kategorie(kategorie, titel)
+        kandidaten.setdefault(kategorie, []).append((name, titel, preis, bild, link, feed_id, zeile))
 
     neu = 0
     for kategorie, liste in sorted(kandidaten.items()):
-        frei = HAENDLER_IMPORT_ANZAHL - importiert.get(kategorie, 0)
+        frei = HAENDLER_IMPORT_ANZAHL_KATEGORIE.get(kategorie, HAENDLER_IMPORT_ANZAHL) \
+            - importiert.get(kategorie, 0)
         if frei <= 0:
             continue
         vorhanden = [p for p in produkte if p.get("kategorie") == kategorie]
