@@ -347,19 +347,31 @@ NAME_ENDE = re.compile(r"\s+[-–|/]\s|/\s|,|\(|\s\d+(?:[.,]\d+)?\s*(?:\"|zoll|c
                        r"saugroboter|saug-|interne|externe|ssd\b|(?:wlan-|wifi-)?(?:überwachungs)?kamera\b|camera\b)", re.I)
 
 
+TITEL_PRAEFIX = re.compile(r"^(?:komp\.|komplett-?set:?)\s*", re.I)
+# Wörter, mit denen ein abgeschnittener Name nicht enden soll ("… Set mit", "… bis zu")
+NAME_FUELLWORT = {"gaming", "-", "mit", "bis", "zu", "für", "und", "inkl.", "in", "der", "die", "das", "von", "&", "+"}
+
+
+def titel_bereinigen(titel):
+    return TITEL_PRAEFIX.sub("", titel.strip())
+
+
 def haendler_modellname(titel):
     """"MSI GeForce RTX 5070 Ti 16G Gaming Trio OC Grafikkarte, PCIe 5.0" → "MSI GeForce RTX 5070 Ti 16G Gaming Trio OC" """
-    name = NAME_ENDE.split(titel.strip(), maxsplit=1)[0].strip(" -–")
+    name = NAME_ENDE.split(titel_bereinigen(titel), maxsplit=1)[0].strip(" -–")
     woerter = name.split()[:8]
-    while woerter and woerter[-1].lower() in {"gaming", "-"}:
+    while woerter and woerter[-1].lower() in NAME_FUELLWORT:
         woerter.pop()
     return " ".join(woerter) if len(woerter) >= 2 else ""
 
 
 def haendler_marke(titel):
-    marke = titel.split()[0] if titel.split() else ""
-    # "SAMSUNG" → "Samsung", Abkürzungen wie "ASUS", "MSI", "LG" bleiben
-    return marke.capitalize() if marke.isupper() and len(marke) > 4 else marke
+    woerter = titel_bereinigen(titel).split()
+    marke = woerter[0] if woerter else ""
+    # "SAMSUNG" → "Samsung", Abkürzungen wie "ASUS", "MSI", "LG" und "FRITZ!Box" bleiben
+    if "!" in marke:
+        return marke.split("!")[0] + "!"  # "FRITZ!Box", "FRITZ!DECT" → "FRITZ!"
+    return marke.capitalize() if marke.isupper() and marke.isalpha() and len(marke) > 4 else marke
 
 
 # Amazon: kein Preis-Feed, aber ein Suchlink mit Partner-Tag (Provision wie bei den anderen Links)

@@ -17,7 +17,7 @@ def _r(muster):
 
 
 TUERKLINGEL = _r(r"türklingel|tuerklingel|doorbell|türsprechanlage")
-KAMERA = _r(r"kamera|camera|\bcam\b|überwachung")
+KAMERA = _r(r"kamera|camera|\bcam\b|überwachungskamera")
 OUTDOOR = _r(r"outdoor|außen|aussen|wetterfest|\bip6[4-7]\b|bullet|flutlicht|floodlight|solar")
 
 
@@ -29,11 +29,15 @@ def smart_home(titel, ist_kamera=False):
     return "heimautomatisierung"
 
 
-HANDY = _r(r"iphone|galaxy [asz]\d|galaxy z|pixel \d|smartphone|handy")
+HANDY = _r(r"iphone|galaxy [asmz]\d|galaxy z|galaxy note|galaxy watch|\bflip\s?\d|\bfold\s?\d|pixel \d|"
+            r"xiaomi|redmi|oneplus|motorola|moto [eg]\d|huawei p\d|honor|nothing phone|smartphone|handy|"
+            r"apple watch|smartwatch")
 WASSER = _r(r"\baio\b|wasserkühl|wasserkuehl|liquid|flüssigkeitsk|radiator|pumpe|reservoir|"
             r"ausgleichsbehälter|kühlblock|waterblock|wasserblock|fitting|schlauch|kühlflüssig")
-CPU_KUEHLER = _r(r"cpu|prozessor|kühler|cooler|wärmeleit|waermeleit|thermal|paste|pad\b")
-LUEFTER = _r(r"lüfter|luefter|\bfans?\b|ventilator")
+CPU_KUEHLER = _r(r"cpu|prozessor|kühler|wärmeleit|waermeleit|thermal ?(?:paste|pad|grizzly)|paste|pad\b|"
+                  r"luftkühler|tower|dark rock|pure rock|noctua nh|assassin|ak\d{3}")
+LUEFTER = _r(r"lüfter|luefter|\bfans?\b|ventilator|silent wings|light wings|pure wings|uni fan")
+KABEL_BILD = _r(r"hdmi|displayport|\bdp\b|\bdvi\b|\bvga\b|thunderbolt|usb")
 KABEL_NETZWERK = _r(r"\bcat\s?\.?\d|patch|\blan\b|netzwerk|rj-?45|ethernet|glasfaser|\blwl\b")
 KABEL_KOMPONENTEN = _r(r"\bsata\b|molex|pcie|pci-e|\batx\b|\beps\b|12vhpwr|12v-2x6|sleeve|riser|"
                        r"\bargb\b|\brgb\b|lüfter|\bfan\b|header|y-kabel|splitter|strimer|cable kit")
@@ -47,6 +51,9 @@ GEHAEUSE_SPEICHER = _r(r"festplattengehäuse|enclosure|wechselrahmen|backplane|e
                        r"m\.2.{0,10}gehäuse|ssd.{0,10}gehäuse|hdd.{0,10}gehäuse|icy ?box|docking")
 RISER = _r(r"riser")
 MAUSPAD = _r(r"mauspad|mousepad|mouse pad|goliathus|desk ?mat|schreibtischunterlage|gaming-?pad")
+NOTEBOOK_KUEHLER = _r(r"notebook|laptop|cooling pad|kühlpad|raspberry")
+GRAFIKTABLETT = _r(r"wacom|xp-pen|huion|digitalisierer|grafiktablett|pen display|stift-display")
+LADEGERAET = _r(r"ladegerät|charger|\bgan\b|netzteil|reiseadapter|travel adapter")
 TABLET_ZUBEHOER = _r(r"hülle|huelle|case|cover|folie|tastatur|keyboard|stift|\bpen\b|ständer|"
                      r"halterung|ladegerät|kabel|tasche|sleeve|schutz")
 
@@ -83,13 +90,17 @@ def einsortieren(nbb_kategorie, titel):
     if k == "Kühlung":
         if WASSER.search(t):
             return "wasserkuehlung"
+        if NOTEBOOK_KUEHLER.search(t):
+            return None
+        if LUEFTER.search(t) and not re.search(r"cpu|prozessor|tower", t, re.I):
+            return "luefter"
         if CPU_KUEHLER.search(t):
             return "cpu-kuehler"
         return "luefter"
     if k == "Kabel":
         if KABEL_MANAGEMENT.search(t):
             return "kabel-management"
-        if KABEL_NETZWERK.search(t):
+        if KABEL_NETZWERK.search(t) and not KABEL_BILD.search(t):
             return "netzwerk-zubehoer"
         if KABEL_KOMPONENTEN.search(t):
             return "komponenten-kabel"
@@ -115,7 +126,11 @@ def einsortieren(nbb_kategorie, titel):
     if k == "Displayfolien":
         return "telefon-schutz" if HANDY.search(t) else "displayschutz"
     if k == "Tablet":
+        if GRAFIKTABLETT.search(t):
+            return "grafiktabletts"
         return None if TABLET_ZUBEHOER.search(t) else "tablets"
+    if k in ("Netzwerk-Adapter", "Netzwerk-Module") and LADEGERAET.search(t):
+        return "laptop-netzteile"
     if k == "Netzwerk-Kamera":
         return smart_home(t, ist_kamera=True)
     if k == "Heimautomatisierung":
