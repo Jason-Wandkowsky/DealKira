@@ -22,42 +22,10 @@ jobs:
           # immer den neuesten Stand holen – wartende Läufe hätten sonst alten Code/alte Preise
           ref: main
 
-      - name: Preise aus den Awin-Feeds und von eBay holen
+      - name: Probelauf nbb-Import (nur Ausgabe, speichert nichts)
         env:
-          PYTHONDONTWRITEBYTECODE: "1"
-          AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
-          AWIN_FEED_ANTHBOT: ${{ secrets.AWIN_FEED_ANTHBOT }}
-          AWIN_FEED_IMOU: ${{ secrets.AWIN_FEED_IMOU }}
-          AWIN_FEED_NARWAL: ${{ secrets.AWIN_FEED_NARWAL }}
           AWIN_FEED_NOTEBOOKSBILLIGER: ${{ secrets.AWIN_FEED_NOTEBOOKSBILLIGER }}
-          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
-          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: |
-          python3 tools/preise_aktualisieren.py
-          python3 tools/sitemap.py
-
-      - name: Änderungen speichern
-        run: |
-          DATEIEN="produkte.json telefone.json tablets.json preise-historie.json deals-auto.json sitemap.xml daten"
-          if [ -z "$(git status --porcelain -- $DATEIEN)" ]; then
-            echo "Keine Preisänderungen."
-            exit 0
-          fi
-          git config user.name "DealKira Preis-Bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add $DATEIEN
-          git commit -m "Preise automatisch aktualisiert"
-          # Hat zwischendurch ein anderer Lauf gespeichert, gewinnen unsere (neueren) Preise.
-          # Bis zu 3 Versuche, falls genau in dem Moment noch jemand pusht.
-          for versuch in 1 2 3; do
-            git pull --rebase -X theirs -q origin main && git push -q origin HEAD:main && break
-            echo "Speichern Versuch $versuch fehlgeschlagen – neuer Versuch"
-            git rebase --abort 2>/dev/null || true
-            sleep 5
-            if [ "$versuch" = 3 ]; then exit 1; fi
-          done
-          # Website neu veröffentlichen
-          curl -s -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/pages/builds || true
+          git fetch -q origin claude/project-thread-3aivux
+          git checkout -q FETCH_HEAD -- tools
+          python3 tools/trockenlauf.py
