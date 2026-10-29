@@ -1,179 +1,199 @@
 {
-  "stand": "2026-10-28",
+  "stand": "2026-10-29",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "apple-watch-se-3-44mm-polarstern-aluminium-case",
-      "name": "Apple Watch SE 3 44mm Polarstern Aluminium Case",
-      "brand": "Apple",
-      "kategorie": "wearables",
-      "image": "https://media2.nbb-cdn.de/images/products/Apple_Watch_SE_3_44mm_GPS_Starlight_Aluminum_Sport_Band_Sand_side.jpg?size=400",
+      "id": "msi-mpg-coreliquid-p13-360-schwarz",
+      "name": "MSI MPG CoreLiquid P13 360 schwarz",
+      "brand": "MSI",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/306-7ZWGA11-L80_01_7ae7.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "295,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45952955147&a=3110253&m=11348"
+          "price": "154,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=42643681378&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "wd-elements-desktop-24tb-schwarz",
+      "name": "WD Elements Desktop 24TB Schwarz",
+      "brand": "WD",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/wd_elements-desktop-2020_front-side_8b9c.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "699,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44878303217&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "ecovacs-deebot-t50-omni-gen3",
+      "name": "Ecovacs Deebot T50 Omni Gen3",
+      "brand": "Ecovacs",
+      "kategorie": "staubsauger",
+      "image": "https://media2.nbb-cdn.de/images/products/Ecovacs-T50-Omni-Hero.jpeg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "499,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44901111068&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "arctic-p9-pwm-pst-co-black",
+      "name": "Arctic P9 PWM PST CO Black",
+      "brand": "Arctic",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/P9_PWM_PST_g01_4553.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "10,42 €",
+          "link": "https://www.awin1.com/pclick.php?p=44794156088&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "332,90 €",
-          "link": "https://www.ebay.de/itm/147612027131?_skw=Apple+Watch+SE+3+44mm+Polarstern+Aluminium+Case&hash=item225e5cc8fb%3Ag%3AOjAAAeSwt%7EBo1k9k&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "12,31 €",
+          "link": "https://www.ebay.de/itm/137172346844?_skw=Arctic+P9+PWM+PST+CO+Black&hash=item1ff01be7dc%3Ag%3AFOQAAeSw7rppxpG9&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kYcwv9swNmtw0XaJa395dmp36yE0hLJKKSTIIROsSqeJVVSXtwWqcbRjTnPBnxee670Ljgped18zORqQ5%2BCOBcGg7TDmRLOOHzpqWLSfq8MdjSzVKC3nvG%2FJQXXr19ExIwI7OvHHs86RJ7GhCgyawc%2FAy3yHr0l1dLLrBU4%2BFvRg3QqtNrKQaSVgoaqlr2OgjvRt8drVbsDcO45CXKW26Sa%2FsVGa%2FH6PIqIE7GqPGsSMgE5c%2FYI65KudwKeH%2Bxs2cgtKiOpVKrBIgDz2UD0ASniPCbGP7l8ULh60F7JG8Zd3fEMYsgU3Ywx%2FmyvjpRnGM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "benq-ma320ug",
-      "name": "BenQ MA320UG",
-      "brand": "BenQ",
+      "id": "dell-pro-p2726dev",
+      "name": "Dell Pro P2726DEV",
+      "brand": "Dell",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/ma320ug-front.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/b4ee0667f215909fd05373157e133afb79ca9ff5.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "799,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45230075831&a=3110253&m=11348"
+          "price": "351,05 €",
+          "link": "https://www.awin1.com/pclick.php?p=45942370713&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "hp-235",
-      "name": "HP 235",
-      "brand": "HP",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/c118ca13-8e74-4b49-8937-96b3b7e71e89_1_1687834474_0507.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "29,63 €",
-          "link": "https://www.awin1.com/pclick.php?p=40323255294&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "corsair-icue-link-titan-360-rx-lcd",
-      "name": "Corsair iCUE LINK TITAN 360 RX LCD",
-      "brand": "Corsair",
-      "kategorie": "wasserkuehlung",
-      "image": "https://media2.nbb-cdn.de/images/products/TITAN_360_RX_LCD_BLACK_RENDER_01_2bc2.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "246,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=41690902868&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "epos-adapt-160t-usb-ii-kabelgebundenes",
-      "name": "EPOS ADAPT 160T USB II Kabelgebundenes",
-      "brand": "EPOS",
-      "kategorie": "headset",
-      "image": "https://media2.nbb-cdn.de/images/products/1000901-1_8647.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "44,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253814121&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "acer-100-watt-charger-netzteil-2m-usb-c-ladekabel",
-      "name": "Acer 100 Watt Charger/Netzteil & 2m USB-C Ladekabel",
-      "brand": "Acer",
-      "kategorie": "laptop-netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/Acer100W-Charger-ZL.ADTCC.00L-01.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "49,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45015383561&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "lenovo-thinkstation-p3-tiny-30k50080ge",
-      "name": "Lenovo ThinkStation P3 Tiny 30K50080GE",
-      "brand": "Lenovo",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/P3_Tiny_Gen2_Front1_NEW_7a6c.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1660,45 €",
-          "link": "https://www.awin1.com/pclick.php?p=45694444411&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "sony-playstation-5-disc-laufwerk",
-      "name": "Sony PlayStation 5 Disc Laufwerk",
-      "brand": "Sony",
-      "kategorie": "gaming-controller",
-      "image": "https://media2.nbb-cdn.de/images/products/3081573-l0_d109.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "99,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=40622604218&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "ubiquiti-gateway-professional",
-      "name": "Ubiquiti Gateway Professional",
-      "brand": "Ubiquiti",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti_UXG-Pro_Hero_361a.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "599,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46385247211&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "optoma-hz137x-full-hd-laser-beamer-mit-3-000-iso",
-      "name": "Optoma HZ137X Full HD Laser-Beamer mit 3.000 ISO",
-      "brand": "Optoma",
-      "kategorie": "projektoren",
-      "image": "https://media2.nbb-cdn.de/images/products/1129236/OptomaHZ137X-5-01.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "649,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46387414214&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "fsp-vita-gd-750w",
-      "name": "FSP VITA GD 750W",
-      "brand": "FSP",
+      "id": "be-quiet-system-power-11-750w",
+      "name": "be quiet! SYSTEM POWER 11 750W",
+      "brand": "be",
       "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/PIC24900000000012707_4c42.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/01_System_Power_11_bde6.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "72,98 €",
-          "link": "https://www.awin1.com/pclick.php?p=43886568267&a=3110253&m=11348"
+          "price": "72,93 €",
+          "link": "https://www.awin1.com/pclick.php?p=41468363219&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "87,01 €",
+          "link": "https://www.ebay.de/itm/205685697942?_skw=be+quiet%21+SYSTEM+POWER+11+750W&hash=item2fe3d2ad96%3Am%3AmHrxKYcgFs6edxBd0QGSyjA&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "hp-410-slim-schwarz-bluetooth",
-      "name": "HP 410 Slim schwarz Bluetooth",
-      "brand": "HP",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/Maus_77cd.png?size=400",
+      "id": "asus-pro-b760m-c-csm",
+      "name": "ASUS Pro B760M-C-CSM",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/01_PRO-B760M-CT-CSM-with-box_fae8.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "99,99 €",
+          "link": "https://www.ebay.de/itm/358784835594?_skw=ASUS+Pro+B760M-C-CSM&hash=item53893e200a%3Ag%3AdQAAAeSw02Jqjfff&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "122,83 €",
+          "link": "https://www.awin1.com/pclick.php?p=35689372387&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "gpu-rtx-5080",
+      "name": "GeForce RTX 5080 (Inspire 3X OC Black)",
+      "brand": "Nvidia",
+      "kategorie": "grafikkarten",
+      "image": "https://media2.nbb-cdn.de/images/products/ZT-B50800J2-10P_1_56ef.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "36,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253816689&a=3110253&m=11348"
+          "price": "1879,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44787922191&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "2891,43 €",
+          "link": "https://www.ebay.de/itm/820259517550?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itembefb46f46e%3Ag%3AC4IAAeSwCvFq16r9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kvjHRWnu%2BwTSi%2F14AGtGzzZjW5dnfXgKJ8ItoL%2FpCTUosxRUt4RXNf5oCX6%2F1WcjQAzIJrH8EBDuRRsKdrt%2BOZ28PAOvlZVljFF8jIP93TEza46uSpYWA2l9cnumBT7iE12EHNi8kVo4VyRb9zFmoUlX5AZqs6EdvBg3kE0rMdkgaswme18Q94eLG4Q1LKztWGFNRv8w2NyfwcqpExSSFys16XrPVcUks%2FZgqif0LL4UPUFIROfD%2F9qwsqXFBfKy95FLhPJcjJ7mVB6I3otBKtgEefQb43AJhvQmj%2B%2FrRON3AmGv8I9RCKOWKaqVF3DKA4TB5Mkij%2Bg9GmydpNzsca&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "asus-prime-z790-p",
+      "name": "ASUS PRIME Z790-P",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/ASUS_Prime_Z790-P_Motherboard.MAIN_8e61.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "144,99 €",
+          "link": "https://www.ebay.de/itm/117171508206?_skw=ASUS+PRIME+Z790-P&hash=item1b47f753ee%3Ag%3ABnoAAeSwDeVp9HCw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "185,65 €",
+          "link": "https://www.awin1.com/pclick.php?p=34270753113&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "fractal-design-dynamic-3-12-reverse-rgb-white",
+      "name": "Fractal Design Dynamic 3 12 Reverse RGB White",
+      "brand": "Fractal",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Dynamic-3-120_RGB_White_Reverse_Left-Front.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "21,43 €",
+          "link": "https://www.awin1.com/pclick.php?p=44999505023&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "philips-32b2u3601-office",
+      "name": "Philips 32B2U3601 Office",
+      "brand": "Philips",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/Philips-32B2U360100-01_9bd3.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "279,08 €",
+          "link": "https://www.awin1.com/pclick.php?p=43267247469&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "dicota-perfect-skin-12-12-5",
+      "name": "Dicota Perfect Skin 12-12.5",
+      "brand": "Dicota",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/D31184_01_f700.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "14,81 €",
+          "link": "https://www.awin1.com/pclick.php?p=42646681704&a=3110253&m=11348"
         }
       ]
     }
