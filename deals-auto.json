@@ -126,13 +126,13 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1879,00 €",
+          "price": "1979,00 €",
           "link": "https://www.awin1.com/pclick.php?p=44787922191&a=3110253&m=11348"
         },
         {
           "name": "eBay",
           "price": "2891,43 €",
-          "link": "https://www.ebay.de/itm/820259517550?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itembefb46f46e%3Ag%3AC4IAAeSwCvFq16r9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kvjHRWnu%2BwTSi%2F14AGtGzzZjW5dnfXgKJ8ItoL%2FpCTUosxRUt4RXNf5oCX6%2F1WcjQAzIJrH8EBDuRRsKdrt%2BOZ28PAOvlZVljFF8jIP93TEza46uSpYWA2l9cnumBT7iE12EHNi8kVo4VyRb9zFmoUlX5AZqs6EdvBg3kE0rMdkgaswme18Q94eLG4Q1LKztWGFNRv8w2NyfwcqpExSSFys16XrPVcUks%2FZgqif0LL4UPUFIROfD%2F9qwsqXFBfKy95FLhPJcjJ7mVB6I3otBKtgEefQb43AJhvQmj%2B%2FrRON3AmGv8I9RCKOWKaqVF3DKA4TB5Mkij%2Bg9GmydpNzsca&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/820259517550?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itembefb46f46e%3Ag%3AC4IAAeSwCvFq16r9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kvjHRWnu%2BwTSi%2F14AGtGzzZjW5dnfXgKJ8ItoL%2FpCTUosxRUt4RXNf5oCX6%2F1WcjQAzIJrH8EBDuRRsKdrt%2BOZ28PAOvlZVljFF8jIP93TEza46uSpYWA2l9cnumBT7iGNi9KhNJo8xzfKsOoKRfjA0Pz5%2BcFuwzwU9F%2FCxeEjPbuhwFqnQybQ2btQco9kfJdNRYZ9u31FinOGzGdz%2BOed9f9uxl13Of5FB3aFYDLIjE6G0ss9bj%2FhPV7zhu6Mj9J89zmD6GI%2FmIU%2FUHUR6AtiBZu396b0TR5fpEnnT%2BZuscIKyunnbIl%2FQldGXFee59a%2B8FOUsD1gSAJpHSDRqVyJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -152,6 +152,25 @@
           "name": "notebooksbilliger.de",
           "price": "185,65 €",
           "link": "https://www.awin1.com/pclick.php?p=34270753113&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "captiva-pc-highend-gaming-pc-i89-020-intel-core",
+      "name": "Captiva PC Highend Gaming PC I89-020 Intel Core",
+      "brand": "Captiva",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Captiva_Aqua_1.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "3155,99 €",
+          "link": "https://www.ebay.de/itm/206403648439?_skw=Captiva+PC+Highend+Gaming+PC+I89-020+Intel+Core&hash=item300e9dbbb7%3Ag%3A-wMAAeSw3EVqms3N&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "4000,84 €",
+          "link": "https://www.awin1.com/pclick.php?p=40843605389&a=3110253&m=11348"
         }
       ]
     },
@@ -180,20 +199,6 @@
           "name": "notebooksbilliger.de",
           "price": "279,08 €",
           "link": "https://www.awin1.com/pclick.php?p=43267247469&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "dicota-perfect-skin-12-12-5",
-      "name": "Dicota Perfect Skin 12-12.5",
-      "brand": "Dicota",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/D31184_01_f700.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "14,81 €",
-          "link": "https://www.awin1.com/pclick.php?p=42646681704&a=3110253&m=11348"
         }
       ]
     }
