@@ -76,6 +76,11 @@
           "name": "notebooksbilliger.de",
           "price": "351,05 €",
           "link": "https://www.awin1.com/pclick.php?p=45942370713&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "390,18 €",
+          "link": "https://www.ebay.de/itm/198547071853?_skw=Dell+Pro+P2726DEV&hash=item2e3a53e36d%3Ag%3Av6AAAeSw1MJqxhc4&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n2tt%2BAFqXuuUfeGJ5tLcq0aBQFrYCFLzi3cwppEmgzrCF8rjutposZhtPW5dfjKn0fUDJ1Uwgusw6pPU26asA3I829ZCvQx%2F1SNr7Ncr2LDu%2BMUaW0tMOoapseaQG2TJxobkUvqv%2FX%2BYs7Z%2BcLNEcSTp9i8wiBMY7UiqdssA7%2F17tnIrhBB3c630yixU9c7J7soa7QDYqQjVHuuNurvCppGLLZyvVNDbqJAKqCNJqtiTDImuXwc8rfLpsQFmkhkHxByxVKOCkm9lPnoHUNypX%2Fb7q4isXiCAg6AG1oQBEBOw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -122,17 +127,12 @@
       "name": "GeForce RTX 5080 (Inspire 3X OC Black)",
       "brand": "Nvidia",
       "kategorie": "grafikkarten",
-      "image": "https://media2.nbb-cdn.de/images/products/ZT-B50800J2-10P_1_56ef.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/MSI_GeForce_RTX_5080_16GB_Gaming_Trio_OC_7_4149.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1979,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44787922191&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "2891,43 €",
-          "link": "https://www.ebay.de/itm/820259517550?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itembefb46f46e%3Ag%3AC4IAAeSwCvFq16r9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kvjHRWnu%2BwTSi%2F14AGtGzzZjW5dnfXgKJ8ItoL%2FpCTUosxRUt4RXNf5oCX6%2F1WcjQAzIJrH8EBDuRRsKdrt%2BOZ28PAOvlZVljFF8jIP93TEza46uSpYWA2l9cnumBT7iGNi9KhNJo8xzfKsOoKRfjA0Pz5%2BcFuwzwU9F%2FCxeEjPbuhwFqnQybQ2btQco9kfJdNRYZ9u31FinOGzGdz%2BOed9f9uxl13Of5FB3aFYDLIjE6G0ss9bj%2FhPV7zhu6Mj9J89zmD6GI%2FmIU%2FUHUR6AtiBZu396b0TR5fpEnnT%2BZuscIKyunnbIl%2FQldGXFee59a%2B8FOUsD1gSAJpHSDRqVyJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "2258,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44470836132&a=3110253&m=11348"
         }
       ]
     },
@@ -169,7 +169,7 @@
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "4000,84 €",
+          "price": "4268,49 €",
           "link": "https://www.awin1.com/pclick.php?p=40843605389&a=3110253&m=11348"
         }
       ]

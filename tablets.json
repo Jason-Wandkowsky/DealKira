@@ -100,11 +100,11 @@
       },
       {
         "name": "eBay",
-        "price": "729,21 €",
-        "link": "https://www.ebay.de/itm/377605511753?_skw=Samsung+Galaxy+Tab+S10%2B&hash=item57eb0ada49%3Ag%3AGWgAAeSwIdhq4yKU&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "691,19 €",
+        "link": "https://www.ebay.de/itm/307255430451?_skw=Samsung+Galaxy+Tab+S10%2B&hash=item4789d9cd33%3Ag%3ALlUAAeSw3ehq41Eb&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|377605511753|0",
-        "ebayTitel": "Samsung Galaxy Tab S10 Plus 12.4 Zoll 256GB WiFi Gray - Sehr Gut OVP⁠",
+        "ebayItem": "v1|307255430451|0",
+        "ebayTitel": "Samsung Galaxy Tab S10+ Wi-Fi 12.4 Zoll Tablet Gray 256 GB",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -146,7 +146,7 @@
     "name": "Galaxy Tab S10 FE",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/48462795-85e4-4345-b6c0-9ea6d45598a4_cropped.jpg_2880_f7ab.avif?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -161,8 +161,17 @@
         "ebayItem": "v1|377567475163|0",
         "ebayTitel": "Samsung Galaxy Tab S10 FE X520 Wi-Fi 10.9 Zoll 128 GB 8GB RAM  2Jahre Garantie",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "439,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46495503048&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46495503048",
+        "feedTitel": "Samsung Galaxy Tab S10 FE Wi-Fi Blue 10,9\" WQXGA+ Display / Octa-Cora / 8GB RAM / 128GB Speicher / Android / inkl. S-Pen"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s9-ultra",
@@ -256,11 +265,11 @@
       },
       {
         "name": "eBay",
-        "price": "140,45 €",
-        "link": "https://www.ebay.de/itm/206628387868?_skw=Samsung+Galaxy+Tab+A11&hash=item301c02fc1c%3Ag%3AGDcAAeSwqWZqxpOM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "125,00 €",
+        "link": "https://www.ebay.de/itm/820292377763?_skw=Samsung+Galaxy+Tab+A11&hash=itembefd3c5ca3%3Ag%3Arn0AAeSwPuhqLwJj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|206628387868|0",
-        "ebayTitel": "Samsung Galaxy Tab Serie Galaxy Tab A11 Tablet 8,7 Zoll 64 GB Wi‑Fi",
+        "ebayItem": "v1|820292377763|0",
+        "ebayTitel": "Samsung Galaxy Tab A11 (Wi-Fi, 8,7 Zoll) 64 GB Gray SM-X133",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -302,11 +311,11 @@
       },
       {
         "name": "eBay",
-        "price": "149,49 €",
-        "link": "https://www.ebay.de/itm/226078568818?_skw=Samsung+Galaxy+Tab+A9&hash=item34a3553172%3Ag%3ADuUAAOSw9Q1mEDf-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "114,19 €",
+        "link": "https://www.ebay.de/itm/177907029210?_skw=Samsung+Galaxy+Tab+A9&hash=item296c15d4da%3Ag%3ASSoAAeSwJrNpo2uF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|226078568818|0",
-        "ebayTitel": "Samsung Galaxy Tab A9  WiFi Tablet 64GB 4GB RAM graphite Android 8,7 Zoll (OVP)",
+        "ebayItem": "v1|177907029210|0",
+        "ebayTitel": "Galaxy Tab A9 SM-X115",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -348,11 +357,11 @@
       },
       {
         "name": "eBay",
-        "price": "436,19 €",
-        "link": "https://www.ebay.de/itm/327427837125?_skw=Samsung+Galaxy+Tab+Active5+Pro&hash=item4c3c384cc5%3Ag%3AZe8AAeSw-BBqfgHz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "549,90 €",
+        "link": "https://www.ebay.de/itm/257702000691?_skw=Samsung+Galaxy+Tab+Active5+Pro&hash=item3c003c7833%3Ag%3AZb8AAeSwG9Fqjb1L&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|327427837125|0",
-        "ebayTitel": "Samsung Galaxy Tab Active5 Pro X356 LTE/5G EE Edition Tablet 128GB/6GB grün NEU",
+        "ebayItem": "v1|257702000691|0",
+        "ebayTitel": "Samsung Galaxy Tab Active5 Pro 5G Tablet 128GB 6GB RAM 10,1 Zoll Green",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -395,7 +404,7 @@
       {
         "name": "eBay",
         "price": "424,10 €",
-        "link": "https://www.ebay.de/itm/407317117194?_skw=Apple+iPad+mini+%286.+Generation%29&hash=item5ed5fdf90a%3Ag%3ANS4AAOSw86Rk6LsV&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kaX35Fdr7ohtUHpKOj0PJHSZgRsFEuO1e3pkwrx%2BcQgE9wJSoZEOFiyTan38e5FxlyWeL%2Fe8R9GwIrDIuRbj5PTP4W5pWOkIA13Tr416hO2Iu8BB3A6MHWuIyC4mZWXDyjTPs%2FTnNSCkH2BdaJgilrrJkjXJSEKdDXCmTaxnTePBFENPlNLF8cIfanzFLXVvwYkV%2FtXtItzQnYrETgQpYOH85YJHGVPfa2cuzxKn52KsQ3JNxWOt7NuB1kDqz12JIP2vFAKee30S9e4RzznjbFiRQiBYCkNGJM32Cd07%2BPVCk3sF9crlYohl1mf6%2FfUmg%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407317117194?_skw=Apple+iPad+mini+%286.+Generation%29&hash=item5ed5fdf90a%3Ag%3ANS4AAOSw86Rk6LsV&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kaX35Fdr7ohtUHpKOj0PJHSZgRsFEuO1e3pkwrx%2BcQgE9wJSoZEOFiyTan38e5FxlyWeL%2Fe8R9GwIrDIuRbj5PTP4W5pWOkIA13Tr416hO2Iu8BB3A6MHWuIyC4mZWXDykLnZmIZWX15XGN58eKOs0avizUB4cwK5a9xtFeDNBaOs3EJqqgVLNDXJTwg2bneQT2woiOGUHs82mkcGoho1B7EFvucDfcd26yWogLZ3SHrIHp6Y4my4Vn49ycxh9OMVoe38oNUtl%2FOgh8CcTaxFaZthGBIZ2YrvZIFMN9uF2%2BD9i37r59GawCQ12UxU0Ioc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407317117194|0",
         "ebayTitel": "Apple iPad mini 6. Gen 64GB, Wi-Fi, 8,3 Zoll - Violett (Purple) mit Smart Folio",
@@ -418,7 +427,7 @@
       {
         "name": "eBay",
         "price": "424,10 €",
-        "link": "https://www.ebay.de/itm/407317117194?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item5ed5fdf90a%3Ag%3ANS4AAOSw86Rk6LsV&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kaX35Fdr7ohtUHpKOj0PJHSZgRsFEuO1e3pkwrx%2BcQgE9wJSoZEOFiyTan38e5FxlyWeL%2Fe8R9GwIrDIuRbj5PTP4W5pWOkIA13Tr416hO2Iu8BB3A6MHWuIyC4mZWXDzPgHpLlrM2E8RqCtmRq3eAb92KELG4uT0qFXzozBTOrkm6aNX6xx8XS2RUV6G9ZxR%2BMVxb6qb8F2XpMxsN7ywQDVSel98Q7G2s7ZYgMa3kzMGZ9poGaaZgHGUOKuRjykttRj7gSCvrFalVgX9JI4Ujvfvt%2FMoJ%2FFXjqrayBo0K49teZwmqxfV3h3ovE9wBk9k%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/407317117194?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item5ed5fdf90a%3Ag%3ANS4AAOSw86Rk6LsV&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kaX35Fdr7ohtUHpKOj0PJHSZgRsFEuO1e3pkwrx%2BcQgE9wJSoZEOFiyTan38e5FxlyWeL%2Fe8R9GwIrDIuRbj5PTP4W5pWOkIA13Tr416hO2Iu8BB3A6MHWuIyC4mZWXDzQNu%2Fn928jn5SwY5e%2BEVQnXl4H0hPwbq8eb%2B%2FXtH0uMyKwFllo2Pioht6XPEZkeZozku3u4LUHPby9UNjWWOx%2B0XtZMjE6lCw5mubvd9%2FHu9X0qoAA%2FgNw7FQiohWzuKIlt31v%2BuUDGgA6nIujfmjgFaC0I9TgdkjxoWST0OBOmIKLZeWnDa8nJj7ZPoOqb5M%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|407317117194|0",
         "ebayTitel": "Apple iPad mini 6. Gen 64GB, Wi-Fi, 8,3 Zoll - Violett (Purple) mit Smart Folio",
@@ -652,7 +661,7 @@
       {
         "name": "eBay",
         "price": "212,76 €",
-        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005zlGKLFc%2Bsj5zy5DDME31%2Bf6AdF6RNX%2BPJk9DgKx4aCNbRMpvGGdAy7Qoe4b9XNv3O6APvpBpa7agGLJb5hH34rmNhsnsxws7mCZDwPOVIeYgyR4bnsHN5b9wgAZlOUDdbnWYjjSQ84oldNrpGfk7yBv8Io4P9i%2FRUxj%2BjuO0XbWg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/198485789619?_skw=Lenovo+Tab+Plus&hash=item2e36accbb3%3Ag%3AJmgAAeSwu1dqzhPz&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kmzm4DOFZ2ehf8%2BlYPYLHe0%2B5jHe1gepJtaX3l8dv2N3JUVj2c9nAgrvKiQZfwAROghewKF8N%2FeD7azTiKEzYfSVxtuGqYurZZTUcIAmwxAK6an8wQfRfn3F%2F6vah005y%2BifRDtu4WIi4Xuc3I9w8yKZ9U%2BmU%2B4EpUx%2ByiMKzCGGcFJhvoGnLu0zUkxfHzYHc06OvrXJ8HSfLty6mvZCA%2FKMNmbZ2MY7CmF0a6%2B%2BapMqRAf1i9RwUh0z2lumbMPgje0s%2BPfzuP8eJtGpnmb%2BCw8Mx%2BQIzLH0YtmigOPOTI%2BA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|198485789619|0",
         "ebayTitel": "Lenovo Tab TB311XU Android Tablet 10.1 Zoll WiFi + 4G (LTE) 64 GB Luna Grey",
@@ -900,7 +909,7 @@
     "name": "Redmi Pad 2 Pro",
     "brand": "Xiaomi",
     "series": "Redmi Pad",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Xiaomi_Tablet_9a52.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -915,8 +924,17 @@
         "ebayItem": "v1|257808356230|0",
         "ebayTitel": "Xiaomi Redmi Pad 2 Pro 12.1 Zoll Tablet Grau 128 GB (2.560 x 1.600 Pixel)",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "264,99 €",
+        "link": "https://www.awin1.com/pclick.php?p=44129480914&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "44129480914",
+        "feedTitel": "Xiaomi Redmi Pad 2 Pro 256GB Silber 30,7cm (\"12,1\") LCD Display, Android 15 mit Xiaomi HyperOS 2, 8MP Hauptkamera"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "redmi-pad-2",
@@ -1182,7 +1200,7 @@
       {
         "name": "eBay",
         "price": "1709,00 €",
-        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135tt1%2BMU9VguqF3RKftNBPNOivxNi9vBmnWUryzltCag0zAbM12eKJvqlQ%2FY4ILES4L0mmeqfrSoA6QJZXamYBv3n686P26KC4ERU7Xq6tdFU6amNJbThi4%2BGuuvHiUWQ%2FbIzObXQvFQy%2FBbGeg1cMcTGOSq0QGoJdEP%2FExVPREDBNWQHxpSHtYe5y2g1CSeAUMlheqVltTOVNyqqxSVWiBKB%2FFegAUevIE65SnHj7NNPHv9nWL6JJdF4Q1hq5eY9UuY8dOP6XIxw462apIZeCFUyMRkTAtQAE0qdRC6uQD14k%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|137800166058|0",
         "ebayTitel": "Microsoft Surface Pro 10 256GB Wi-Fi Titan Grau Neu",
@@ -1204,7 +1222,7 @@
       },
       {
         "name": "eBay",
-        "price": "1649,00 €",
+        "price": "1639,00 €",
         "link": "https://www.ebay.de/itm/267659405897?_skw=Microsoft+Surface+Surface+Pro+9&hash=item3e51be6a49%3Ag%3AWz4AAeSw%7EF1p-LBU&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|267659405897|0",
@@ -1399,6 +1417,15 @@
         "name": "Amazon",
         "price": "",
         "link": "https://link.amazon/B060sVZKh"
+      },
+      {
+        "name": "eBay",
+        "price": "219,00 €",
+        "link": "https://www.ebay.de/itm/205225782875?_skw=HONOR+Pad+9&hash=item2fc868ee5b%3Ag%3A-30AAOSwwlpnirKQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "feed": "ebay",
+        "ebayItem": "v1|205225782875|0",
+        "ebayTitel": "Honor Pad 9 LTE 128GB 8RAM Space Grey, NEU Sonstige",
+        "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
   },
@@ -1485,11 +1512,11 @@
       },
       {
         "name": "eBay",
-        "price": "134,99 €",
-        "link": "https://www.ebay.de/itm/287406230354?_skw=HONOR+Pad+X8a&hash=item42eabf0b52%3Ag%3AuZAAAeSw2nhpv6HX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "124,99 €",
+        "link": "https://www.ebay.de/itm/920027287581?_skw=HONOR+Pad+X8a&hash=itemd635e6501d%3Ag%3A30MAAeSwu1pqynH6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|287406230354|0",
-        "ebayTitel": "Honor Pad x8a 11 Zoll LTE 64GB 4GB RAM Display 90Hz 8300mAh 4xLautsprecher WiFi",
+        "ebayItem": "v1|920027287581|666783720603",
+        "ebayTitel": "HONOR Pad X8a 11 Zoll Android Tablet 90 Hz FullView 128GB 64GB 4GB Ram 8300mAh",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1641,11 +1668,11 @@
       },
       {
         "name": "eBay",
-        "price": "97,18 €",
-        "link": "https://www.ebay.de/itm/800616113219?_skw=Amazon+Fire+HD+8+Kids+Pro&hash=itemba68706443%3Ag%3AxzkAAeSwJfhqm-eH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "90,99 €",
+        "link": "https://www.ebay.de/itm/188899819292?_skw=Amazon+Fire+HD+8+Kids+Pro&var=696110382209&hash=item2bfb4e7f1c%3Ag%3Aai4AAeSw15tqs8S3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|800616113219|0",
-        "ebayTitel": "Amazon Fire HD 8 Kids Pro-tablet Neueste Generation | Neu & Ovp",
+        "ebayItem": "v1|188899819292|696110382209",
+        "ebayTitel": "Amazon Fire HD 8 Kids Pro-Tablet (Neueste Generation), für Kinder von 6-12 J. |",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1664,11 +1691,11 @@
       },
       {
         "name": "eBay",
-        "price": "134,49 €",
-        "link": "https://www.ebay.de/itm/366766548344?_skw=Amazon+Fire+Max+11&hash=item5564fd6578%3Ag%3A4V4AAeSw2pJq4dFU&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "144,00 €",
+        "link": "https://www.ebay.de/itm/840043961789?_skw=Amazon+Fire+Max+11&hash=itemc396859dbd%3Ag%3AfzQAAeSwbz9qzQP9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|366766548344|0",
-        "ebayTitel": "Amazon Fire Max 11 Tablet Octa Core Prozessor 4GB RAM 64GB 11 Zoll - Garantie",
+        "ebayItem": "v1|840043961789|0",
+        "ebayTitel": "Amazon Fire Max 11 Tablet | Neuste Generation 64 GB 4GB  mit Werbung NEU/OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
