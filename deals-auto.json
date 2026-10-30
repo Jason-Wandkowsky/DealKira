@@ -1,204 +1,189 @@
 {
-  "stand": "2026-10-29",
+  "stand": "2026-10-30",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "msi-mpg-coreliquid-p13-360-schwarz",
-      "name": "MSI MPG CoreLiquid P13 360 schwarz",
-      "brand": "MSI",
+      "id": "trust-bigfoot-mousepad",
+      "name": "Trust Bigfoot Mousepad",
+      "brand": "Trust",
+      "kategorie": "mauspads",
+      "image": "https://media2.nbb-cdn.de/images/products/26011_pictures_product_visual_1_1ea1.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "10,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=43261627712&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "hp-zbook-8-g2i-16-dk2y9et",
+      "name": "HP ZBook 8 G2i 16 DK2Y9ET",
+      "brand": "HP",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/01_HP_ZBook_Merino_16_G2_WLAN_FPR_RJ45_NonAI_MeteorSilver_Catalog_Front_38bb.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "3426,42 €",
+          "link": "https://www.awin1.com/pclick.php?p=45395970986&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "noctua-nh-u14s-tr5-sp6",
+      "name": "Noctua NH-U14S TR5-SP6",
+      "brand": "Noctua",
+      "kategorie": "cpu-kuehler",
+      "image": "https://media2.nbb-cdn.de/images/products/nh_u14s_tr5_sp6_1_986a.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "134,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=38570704611&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "cooler-master-masterliquid-360-ion",
+      "name": "Cooler Master MasterLiquid 360 Ion",
+      "brand": "Cooler",
       "kategorie": "wasserkuehlung",
-      "image": "https://media2.nbb-cdn.de/images/products/306-7ZWGA11-L80_01_7ae7.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/CoolerMaster-MLY-D36M-A24PZ-R1-01_08ce.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "154,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=42643681378&a=3110253&m=11348"
+          "price": "131,28 €",
+          "link": "https://www.awin1.com/pclick.php?p=40966318633&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "wd-elements-desktop-24tb-schwarz",
-      "name": "WD Elements Desktop 24TB Schwarz",
-      "brand": "WD",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/wd_elements-desktop-2020_front-side_8b9c.jpg?size=400",
+      "id": "tp-link-omada-sg2428lp-smart-switch-28-port",
+      "name": "TP-Link Omada SG2428LP Smart Switch 28-Port",
+      "brand": "TP-Link",
+      "kategorie": "switches",
+      "image": "https://media2.nbb-cdn.de/images/products/TP-Link-SG2328LP-Front-Top_dbf5.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "699,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44878303217&a=3110253&m=11348"
+          "price": "279,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=38792356124&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "ecovacs-deebot-t50-omni-gen3",
-      "name": "Ecovacs Deebot T50 Omni Gen3",
-      "brand": "Ecovacs",
-      "kategorie": "staubsauger",
-      "image": "https://media2.nbb-cdn.de/images/products/Ecovacs-T50-Omni-Hero.jpeg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "499,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44901111068&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "arctic-p9-pwm-pst-co-black",
-      "name": "Arctic P9 PWM PST CO Black",
-      "brand": "Arctic",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/P9_PWM_PST_g01_4553.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "10,42 €",
-          "link": "https://www.awin1.com/pclick.php?p=44794156088&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "12,31 €",
-          "link": "https://www.ebay.de/itm/137172346844?_skw=Arctic+P9+PWM+PST+CO+Black&hash=item1ff01be7dc%3Ag%3AFOQAAeSw7rppxpG9&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kYcwv9swNmtw0XaJa395dmp36yE0hLJKKSTIIROsSqeJVVSXtwWqcbRjTnPBnxee670Ljgped18zORqQ5%2BCOBcGg7TDmRLOOHzpqWLSfq8MdjSzVKC3nvG%2FJQXXr19ExIwI7OvHHs86RJ7GhCgyawc%2FAy3yHr0l1dLLrBU4%2BFvRg3QqtNrKQaSVgoaqlr2OgjvRt8drVbsDcO45CXKW26Sa%2FsVGa%2FH6PIqIE7GqPGsSMgE5c%2FYI65KudwKeH%2Bxs2cgtKiOpVKrBIgDz2UD0ASniPCbGP7l8ULh60F7JG8Zd3fEMYsgU3Ywx%2FmyvjpRnGM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "dell-pro-p2726dev",
-      "name": "Dell Pro P2726DEV",
-      "brand": "Dell",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/b4ee0667f215909fd05373157e133afb79ca9ff5.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "351,05 €",
-          "link": "https://www.awin1.com/pclick.php?p=45942370713&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "390,18 €",
-          "link": "https://www.ebay.de/itm/198547071853?_skw=Dell+Pro+P2726DEV&hash=item2e3a53e36d%3Ag%3Av6AAAeSw1MJqxhc4&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n2tt%2BAFqXuuUfeGJ5tLcq0aBQFrYCFLzi3cwppEmgzrCF8rjutposZhtPW5dfjKn0fUDJ1Uwgusw6pPU26asA3I829ZCvQx%2F1SNr7Ncr2LDu%2BMUaW0tMOoapseaQG2TJxobkUvqv%2FX%2BYs7Z%2BcLNEcSTp9i8wiBMY7UiqdssA7%2F17tnIrhBB3c630yixU9c7J7soa7QDYqQjVHuuNurvCppGLLZyvVNDbqJAKqCNJqtiTDImuXwc8rfLpsQFmkhkHxByxVKOCkm9lPnoHUNypX%2Fb7q4isXiCAg6AG1oQBEBOw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "be-quiet-system-power-11-750w",
-      "name": "be quiet! SYSTEM POWER 11 750W",
-      "brand": "be",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/01_System_Power_11_bde6.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "72,93 €",
-          "link": "https://www.awin1.com/pclick.php?p=41468363219&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "87,01 €",
-          "link": "https://www.ebay.de/itm/205685697942?_skw=be+quiet%21+SYSTEM+POWER+11+750W&hash=item2fe3d2ad96%3Am%3AmHrxKYcgFs6edxBd0QGSyjA&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "asus-pro-b760m-c-csm",
-      "name": "ASUS Pro B760M-C-CSM",
-      "brand": "ASUS",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/01_PRO-B760M-CT-CSM-with-box_fae8.png?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "99,99 €",
-          "link": "https://www.ebay.de/itm/358784835594?_skw=ASUS+Pro+B760M-C-CSM&hash=item53893e200a%3Ag%3AdQAAAeSw02Jqjfff&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "122,83 €",
-          "link": "https://www.awin1.com/pclick.php?p=35689372387&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "gpu-rtx-5080",
-      "name": "GeForce RTX 5080 (Inspire 3X OC Black)",
-      "brand": "Nvidia",
-      "kategorie": "grafikkarten",
-      "image": "https://media2.nbb-cdn.de/images/products/MSI_GeForce_RTX_5080_16GB_Gaming_Trio_OC_7_4149.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "2258,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=44470836132&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-prime-z790-p",
-      "name": "ASUS PRIME Z790-P",
-      "brand": "ASUS",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS_Prime_Z790-P_Motherboard.MAIN_8e61.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "144,99 €",
-          "link": "https://www.ebay.de/itm/117171508206?_skw=ASUS+PRIME+Z790-P&hash=item1b47f753ee%3Ag%3ABnoAAeSwDeVp9HCw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "185,65 €",
-          "link": "https://www.awin1.com/pclick.php?p=34270753113&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "captiva-pc-highend-gaming-pc-i89-020-intel-core",
-      "name": "Captiva PC Highend Gaming PC I89-020 Intel Core",
+      "id": "captiva-highend-gaming-pc-r88-671-amd-ryzen-7",
+      "name": "Captiva Highend Gaming PC R88-671 AMD Ryzen 7",
       "brand": "Captiva",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/Captiva_Aqua_1.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/10752934_5_ae59.jpg?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "3155,99 €",
-          "link": "https://www.ebay.de/itm/206403648439?_skw=Captiva+PC+Highend+Gaming+PC+I89-020+Intel+Core&hash=item300e9dbbb7%3Ag%3A-wMAAeSw3EVqms3N&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "3313,31 €",
+          "link": "https://www.awin1.com/pclick.php?p=40931875759&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "dell-27-plus-qhd-usb-c",
+      "name": "Dell 27 Plus QHD USB-C",
+      "brand": "Dell",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/monitor-dell-plus-s2725dc-gy-gallery-1_71b1.avif?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "254,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=45942370547&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "4268,49 €",
-          "link": "https://www.awin1.com/pclick.php?p=40843605389&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "360,00 €",
+          "link": "https://www.ebay.de/itm/227149214316?_skw=Dell+27+Plus+QHD+USB-C&hash=item34e325f26c%3Ag%3AHPgAAeSwUvpqzLGd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "fractal-design-dynamic-3-12-reverse-rgb-white",
-      "name": "Fractal Design Dynamic 3 12 Reverse RGB White",
-      "brand": "Fractal",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/01_Dynamic-3-120_RGB_White_Reverse_Left-Front.jpg?size=400",
+      "id": "cherry-xtrfy-mx-8-2-kabellose",
+      "name": "Cherry XTRFY MX 8.2 Kabellose",
+      "brand": "Cherry",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/3278976-l0_cb68.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "21,43 €",
-          "link": "https://www.awin1.com/pclick.php?p=44999505023&a=3110253&m=11348"
+          "price": "49,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41949464101&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "75,93 €",
+          "link": "https://www.ebay.de/itm/336593698930?_skw=Cherry+XTRFY+MX+8.2+Kabellose&hash=item4e5e8c4072%3Ag%3AsH4AAeSwkJlqux-M&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "philips-32b2u3601-office",
-      "name": "Philips 32B2U3601 Office",
-      "brand": "Philips",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/Philips-32B2U360100-01_9bd3.png?size=400",
+      "id": "asus-pro-ws-w890-sage",
+      "name": "ASUS Pro WS W890-Sage",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Pro-WS-W890-SAGE_2D.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "279,08 €",
-          "link": "https://www.awin1.com/pclick.php?p=43267247469&a=3110253&m=11348"
+          "price": "860,51 €",
+          "link": "https://www.awin1.com/pclick.php?p=44978459755&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "957,00 €",
+          "link": "https://www.ebay.de/itm/287564209117?_skw=ASUS+Pro+WS+W890-Sage&hash=item42f4299bdd%3Ag%3AckUAAeSwjU9qmfU7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "logitech-signature-comfort-plus-combo-mk880-for-business",
+      "name": "Logitech Signature Comfort Plus Combo MK880 for Business",
+      "brand": "Logitech",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/Screenshot_2026-09-02_154458.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "129,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45862494896&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "zyxel-xmg2230-52hp-managed-switch-16x-2-5-gigabit-ethernet",
+      "name": "Zyxel XMG2230-52HP Managed Switch 16x 2.5 Gigabit Ethernet",
+      "brand": "Zyxel",
+      "kategorie": "switches",
+      "image": "https://media2.nbb-cdn.de/images/products/Zyxel-XMG2230-52HP-Top-Front_6c10.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1528,57 €",
+          "link": "https://www.awin1.com/pclick.php?p=45231049357&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "icy-box-usb-3-1",
+      "name": "ICY BOX USB 3.1",
+      "brand": "ICY",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/IB-377U3_Bild_1_HL_ec50.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "32,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41208531429&a=3110253&m=11348"
         }
       ]
     }
