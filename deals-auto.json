@@ -47,6 +47,20 @@
       ]
     },
     {
+      "id": "viewsonic-td2230-portabler",
+      "name": "Viewsonic TD2230 Portabler",
+      "brand": "Viewsonic",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/Viewsonic_TD2230_cdfc.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "282,09 €",
+          "link": "https://www.awin1.com/pclick.php?p=45858503285&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
       "id": "cooler-master-masterliquid-360-ion",
       "name": "Cooler Master MasterLiquid 360 Ion",
       "brand": "Cooler",
@@ -55,7 +69,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "131,28 €",
+          "price": "149,13 €",
           "link": "https://www.awin1.com/pclick.php?p=40966318633&a=3110253&m=11348"
         }
       ]
@@ -170,20 +184,6 @@
           "name": "notebooksbilliger.de",
           "price": "1529,98 €",
           "link": "https://www.awin1.com/pclick.php?p=45231049357&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "icy-box-usb-3-1",
-      "name": "ICY BOX USB 3.1",
-      "brand": "ICY",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/IB-377U3_Bild_1_HL_ec50.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "32,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41208531429&a=3110253&m=11348"
         }
       ]
     }
