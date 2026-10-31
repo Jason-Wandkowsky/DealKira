@@ -1,189 +1,194 @@
 {
-  "stand": "2026-10-30",
+  "stand": "2026-10-31",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "trust-bigfoot-mousepad",
-      "name": "Trust Bigfoot Mousepad",
-      "brand": "Trust",
-      "kategorie": "mauspads",
-      "image": "https://media2.nbb-cdn.de/images/products/26011_pictures_product_visual_1_1ea1.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "10,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43261627712&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "hp-zbook-8-g2i-16-dk2y9et",
-      "name": "HP ZBook 8 G2i 16 DK2Y9ET",
-      "brand": "HP",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/01_HP_ZBook_Merino_16_G2_WLAN_FPR_RJ45_NonAI_MeteorSilver_Catalog_Front_38bb.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "3426,42 €",
-          "link": "https://www.awin1.com/pclick.php?p=45395970986&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "noctua-nh-u14s-tr5-sp6",
-      "name": "Noctua NH-U14S TR5-SP6",
-      "brand": "Noctua",
-      "kategorie": "cpu-kuehler",
-      "image": "https://media2.nbb-cdn.de/images/products/nh_u14s_tr5_sp6_1_986a.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "134,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=38570704611&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "viewsonic-td2230-portabler",
-      "name": "Viewsonic TD2230 Portabler",
-      "brand": "Viewsonic",
+      "id": "gigabyte-mo27q3",
+      "name": "Gigabyte MO27Q3",
+      "brand": "Gigabyte",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/Viewsonic_TD2230_cdfc.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Gigabyte-MO27Q3-01_771a.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "282,09 €",
-          "link": "https://www.awin1.com/pclick.php?p=45858503285&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "cooler-master-masterliquid-360-ion",
-      "name": "Cooler Master MasterLiquid 360 Ion",
-      "brand": "Cooler",
-      "kategorie": "wasserkuehlung",
-      "image": "https://media2.nbb-cdn.de/images/products/CoolerMaster-MLY-D36M-A24PZ-R1-01_08ce.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "149,13 €",
-          "link": "https://www.awin1.com/pclick.php?p=40966318633&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "tp-link-omada-sg2428lp-smart-switch-28-port",
-      "name": "TP-Link Omada SG2428LP Smart Switch 28-Port",
-      "brand": "TP-Link",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/TP-Link-SG2328LP-Front-Top_dbf5.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "279,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=38792356124&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "captiva-highend-gaming-pc-r88-671-amd-ryzen-7",
-      "name": "Captiva Highend Gaming PC R88-671 AMD Ryzen 7",
-      "brand": "Captiva",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/10752934_5_ae59.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "3313,31 €",
-          "link": "https://www.awin1.com/pclick.php?p=40931875759&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "dell-27-plus-qhd-usb-c",
-      "name": "Dell 27 Plus QHD USB-C",
-      "brand": "Dell",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/monitor-dell-plus-s2725dc-gy-gallery-1_71b1.avif?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "254,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=45942370547&a=3110253&m=11348"
+          "price": "448,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44613530236&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "360,00 €",
-          "link": "https://www.ebay.de/itm/227149214316?_skw=Dell+27+Plus+QHD+USB-C&hash=item34e325f26c%3Ag%3AHPgAAeSwUvpqzLGd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "543,44 €",
+          "link": "https://www.ebay.de/itm/940050769761?_skw=Gigabyte+MO27Q3&hash=itemdadf646761%3Ag%3AsmAAAeSwIaJq4%7ECx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "cherry-xtrfy-mx-8-2-kabellose",
-      "name": "Cherry XTRFY MX 8.2 Kabellose",
-      "brand": "Cherry",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/3278976-l0_cb68.jpg?size=400",
+      "id": "ubiquiti-ai-theta-long-distance-lens-8mp-weitwinkel-objektiv",
+      "name": "Ubiquiti AI Theta Long-Distance Lens 8MP-Weitwinkel-Objektiv",
+      "brand": "Ubiquiti",
+      "kategorie": "indoor-kameras",
+      "image": "https://media2.nbb-cdn.de/images/products/UVC-AI-Theta-Lens-LD-Hero_fbc2.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "49,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41949464101&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "75,93 €",
-          "link": "https://www.ebay.de/itm/336593698930?_skw=Cherry+XTRFY+MX+8.2+Kabellose&hash=item4e5e8c4072%3Ag%3AsH4AAeSwkJlqux-M&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "58,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=36797462768&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "asus-pro-ws-w890-sage",
-      "name": "ASUS Pro WS W890-Sage",
-      "brand": "ASUS",
+      "id": "asrock-phantom-gaming-b860m-lightning-wifi",
+      "name": "ASRock Phantom Gaming B860M Lightning WiFi",
+      "brand": "ASRock",
       "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/01_Pro-WS-W890-SAGE_2D.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/0ece1a3f002a6ba2-l_a718.webp?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "860,51 €",
-          "link": "https://www.awin1.com/pclick.php?p=44978459755&a=3110253&m=11348"
+          "price": "209,48 €",
+          "link": "https://www.awin1.com/pclick.php?p=44284827746&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "sharkoon-sgh10-multiplattform-headset",
+      "name": "Sharkoon SGH10 Multiplattform-Headset",
+      "brand": "Sharkoon",
+      "kategorie": "headset",
+      "image": "https://media2.nbb-cdn.de/images/products/SKILLER_SGH10_01_04eb.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "18,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=39046534772&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lg-27ba65qb-b",
+      "name": "LG 27BA65QB-B",
+      "brand": "LG",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/27BA75QB_01_6551.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "179,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=40915071770&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "zyxel-wax630s-wlan-access-point-wifi-6",
+      "name": "Zyxel WAX630S WLAN Access Point [WiFi 6",
+      "brand": "Zyxel",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Zyxel_WAX630S_Front_3d3d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "339,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45776974311&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "cooler-master-masterfan-m120-argb",
+      "name": "Cooler Master MasterFan M120 ARGB",
+      "brand": "Cooler",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/1128316/MasterFan-M-120-001.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "23,98 €",
+          "link": "https://www.awin1.com/pclick.php?p=46289428788&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "957,00 €",
-          "link": "https://www.ebay.de/itm/287564209117?_skw=ASUS+Pro+WS+W890-Sage&hash=item42f4299bdd%3Ag%3AckUAAeSwjU9qmfU7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "24,96 €",
+          "link": "https://www.ebay.de/itm/168552421999?_skw=Cooler+Master+MasterFan+M120+ARGB&hash=item273e81da6f%3Ag%3A6zwAAeSwOfRqeqMD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "logitech-signature-comfort-plus-combo-mk880-for-business",
-      "name": "Logitech Signature Comfort Plus Combo MK880 for Business",
-      "brand": "Logitech",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/Screenshot_2026-09-02_154458.png?size=400",
+      "id": "be-quiet-dark-rock-slim",
+      "name": "be quiet! DARK ROCK SLIM",
+      "brand": "be",
+      "kategorie": "cpu-kuehler",
+      "image": "https://media2.nbb-cdn.de/images/products/BK024_01_62cf.jpg?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "42,19 €",
+          "link": "https://www.ebay.de/itm/227253082167?_skw=be+quiet%21+DARK+ROCK+SLIM&hash=item34e956d837%3Ag%3ALdoAAeSwINRpsxDS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
-          "price": "129,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45862494896&a=3110253&m=11348"
+          "price": "44,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253807925&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "zyxel-xmg2230-52hp-managed-switch-16x-2-5-gigabit-ethernet",
-      "name": "Zyxel XMG2230-52HP Managed Switch 16x 2.5 Gigabit Ethernet",
-      "brand": "Zyxel",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/Zyxel-XMG2230-52HP-Top-Front_6c10.jpg?size=400",
+      "id": "hp-prodesk-4-mini-g1i-ch7c5et-intel-core",
+      "name": "HP ProDesk 4 Mini G1i CH7C5ET [Intel Core",
+      "brand": "HP",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_ProDesk_4_Mini_G1i_1_8388.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1529,98 €",
-          "link": "https://www.awin1.com/pclick.php?p=45231049357&a=3110253&m=11348"
+          "price": "1079,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=42954970862&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "skullcandy-crusher-1080-anc-sound-by-bose-candy",
+      "name": "Skullcandy Crusher 1080 ANC Sound By Bose Candy",
+      "brand": "Skullcandy",
+      "kategorie": "kopfhoerer",
+      "image": "https://media2.nbb-cdn.de/images/products/1129233/256864-1200Wx1200H.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "249,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46495503567&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "canon-pgi-29lgy-hellgrau",
+      "name": "Canon PGI-29LGY hellgrau",
+      "brand": "Canon",
+      "kategorie": "druckerzubehoer",
+      "image": "https://media2.nbb-cdn.de/images/products/pgi29lgy_1_3e5d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "30,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=37644167398&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "35,99 €",
+          "link": "https://www.ebay.de/itm/352466576952?_skw=Canon+PGI-29LGY+hellgrau&hash=item5210a52638%3Ag%3ACSUAAOSwVctY5MdW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "hp-prelude-pro-recycelter-15",
+      "name": "HP Prelude Pro Recycelter 15",
+      "brand": "HP",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_4Z513AA_INT_1_6f5d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "32,13 €",
+          "link": "https://www.awin1.com/pclick.php?p=45858503420&a=3110253&m=11348"
         }
       ]
     }
