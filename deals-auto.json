@@ -1,199 +1,199 @@
 {
-  "stand": "2026-10-31",
+  "stand": "2026-11-01",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "gigabyte-mo27q3",
-      "name": "Gigabyte MO27Q3",
-      "brand": "Gigabyte",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/Gigabyte-MO27Q3-01_771a.png?size=400",
+      "id": "moza-sr-p-lite-kupplungspedal-extra-kupplungspedal",
+      "name": "MOZA SR-P Lite Kupplungspedal extra Kupplungspedal",
+      "brand": "MOZA",
+      "kategorie": "gaming-controller",
+      "image": "https://media2.nbb-cdn.de/images/products/SRP-Lite-Clutch-png_3b82.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "448,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=44613530236&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "543,44 €",
-          "link": "https://www.ebay.de/itm/940050769761?_skw=Gigabyte+MO27Q3&hash=itemdadf646761%3Ag%3AsmAAAeSwIaJq4%7ECx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "42,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=42887785132&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "ubiquiti-ai-theta-long-distance-lens-8mp-weitwinkel-objektiv",
-      "name": "Ubiquiti AI Theta Long-Distance Lens 8MP-Weitwinkel-Objektiv",
-      "brand": "Ubiquiti",
-      "kategorie": "indoor-kameras",
-      "image": "https://media2.nbb-cdn.de/images/products/UVC-AI-Theta-Lens-LD-Hero_fbc2.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "58,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=36797462768&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asrock-phantom-gaming-b860m-lightning-wifi",
-      "name": "ASRock Phantom Gaming B860M Lightning WiFi",
-      "brand": "ASRock",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/0ece1a3f002a6ba2-l_a718.webp?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "209,48 €",
-          "link": "https://www.awin1.com/pclick.php?p=44284827746&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "sharkoon-sgh10-multiplattform-headset",
-      "name": "Sharkoon SGH10 Multiplattform-Headset",
-      "brand": "Sharkoon",
-      "kategorie": "headset",
-      "image": "https://media2.nbb-cdn.de/images/products/SKILLER_SGH10_01_04eb.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "18,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=39046534772&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "lg-27ba65qb-b",
-      "name": "LG 27BA65QB-B",
-      "brand": "LG",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/27BA75QB_01_6551.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "179,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=40915071770&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "199,00 €",
-          "link": "https://www.ebay.de/itm/135768719803?_skw=LG+27BA65QB-B&hash=item1f9c7241bb%3Ag%3A8ywAAeSw1A1q35%7Eh&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "zyxel-wax630s-wlan-access-point-wifi-6",
-      "name": "Zyxel WAX630S WLAN Access Point [WiFi 6",
-      "brand": "Zyxel",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/Zyxel_WAX630S_Front_3d3d.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "339,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45776974311&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "cooler-master-masterfan-m120-argb",
-      "name": "Cooler Master MasterFan M120 ARGB",
-      "brand": "Cooler",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/1128316/MasterFan-M-120-001.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "23,98 €",
-          "link": "https://www.awin1.com/pclick.php?p=46289428788&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "24,96 €",
-          "link": "https://www.ebay.de/itm/168552421999?_skw=Cooler+Master+MasterFan+M120+ARGB&hash=item273e81da6f%3Ag%3A6zwAAeSwOfRqeqMD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "be-quiet-dark-rock-slim",
-      "name": "be quiet! DARK ROCK SLIM",
-      "brand": "be",
+      "id": "asus-rog-strix-rg-05",
+      "name": "ASUS ROG Strix RG-05",
+      "brand": "ASUS",
       "kategorie": "cpu-kuehler",
-      "image": "https://media2.nbb-cdn.de/images/products/BK024_01_62cf.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/ASUS_ROG_STRIX_RG-05_Waermeleitpastee_ee93.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "42,19 €",
-          "link": "https://www.ebay.de/itm/227253082167?_skw=be+quiet%21+DARK+ROCK+SLIM&hash=item34e956d837%3Ag%3ALdoAAeSwINRpsxDS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "6,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44965523425&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "44,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253807925&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "22,14 €",
+          "link": "https://www.ebay.de/itm/820216589382?_skw=ASUS+ROG+Strix+RG-05&hash=itembef8b7ec46%3Ag%3Aj3gAAeSwSEpqx1-s&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "hp-prodesk-4-mini-g1i-ch7c5et-intel-core",
-      "name": "HP ProDesk 4 Mini G1i CH7C5ET [Intel Core",
+      "id": "lenovo-tio24-gen5-business",
+      "name": "Lenovo TIO24 Gen5 Business",
+      "brand": "Lenovo",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/0de0cb003f7a11f4741b9339b703c559_a659.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "151,63 €",
+          "link": "https://www.awin1.com/pclick.php?p=38595673431&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "219,00 €",
+          "link": "https://www.ebay.de/itm/318296368487?_skw=Lenovo+TIO24+Gen5+Business&hash=item4a1bf12567%3Ag%3ADkkAAeSwdlZpHgqJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "viewsonic-va3420c-2-curved-office",
+      "name": "ViewSonic VA3420C-2 Curved Office",
+      "brand": "ViewSonic",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/ViewSonic-VA3420C-2-01_839b.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "259,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44996794554&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "zotac-geforce-gt-1030",
+      "name": "Zotac GeForce GT 1030",
+      "brand": "Zotac",
+      "kategorie": "grafikkarten",
+      "image": "https://media2.nbb-cdn.de/images/products/Zotac_GeForce_GT_1030_01_853f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "103,82 €",
+          "link": "https://www.awin1.com/pclick.php?p=45862487434&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lian-li-dan-cases-b4-matx-mesh-white",
+      "name": "Lian Li DAN Cases B4-mATX Mesh White",
+      "brand": "Lian",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/G99.B4W.00_001.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "74,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=45816924287&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "gigabyte-b760-ds3h-gen5",
+      "name": "Gigabyte B760 DS3H GEN5",
+      "brand": "Gigabyte",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/e199468b4d2ee025-l_e59d.webp?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "109,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44787922217&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "118,70 €",
+          "link": "https://www.ebay.de/itm/205685690675?_skw=Gigabyte+B760+DS3H+GEN5&hash=item2fe3d29133%3Ag%3A%7Eu8AAeSw%7Eu5qv7pl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "hp-z2-mini-g1a-workstation-a40myet-amd-ryzen",
+      "name": "HP Z2 Mini G1a Workstation A40MYET [AMD Ryzen",
       "brand": "HP",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/HP_ProDesk_4_Mini_G1i_1_8388.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_Z2_Mini_G1a_1_c054.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1079,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=42954970862&a=3110253&m=11348"
+          "price": "3580,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41527486121&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "skullcandy-crusher-1080-anc-sound-by-bose-candy",
-      "name": "Skullcandy Crusher 1080 ANC Sound By Bose Candy",
-      "brand": "Skullcandy",
-      "kategorie": "kopfhoerer",
-      "image": "https://media2.nbb-cdn.de/images/products/1129233/256864-1200Wx1200H.jpg?size=400",
+      "id": "aqara-panel-hub-s1-plus-eu",
+      "name": "Aqara Panel Hub S1 Plus EU",
+      "brand": "Aqara",
+      "kategorie": "heimautomatisierung",
+      "image": "https://media2.nbb-cdn.de/images/products/0/3_4_View.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "249,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=46495503567&a=3110253&m=11348"
+          "price": "299,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46453683357&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "canon-pgi-29lgy-hellgrau",
-      "name": "Canon PGI-29LGY hellgrau",
-      "brand": "Canon",
-      "kategorie": "druckerzubehoer",
-      "image": "https://media2.nbb-cdn.de/images/products/pgi29lgy_1_3e5d.jpg?size=400",
+      "id": "gigabyte-a620m-h",
+      "name": "Gigabyte A620M H",
+      "brand": "Gigabyte",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/A620M_H-01_31ad.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "30,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=37644167398&a=3110253&m=11348"
+          "price": "74,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=40220717018&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "35,99 €",
-          "link": "https://www.ebay.de/itm/352466576952?_skw=Canon+PGI-29LGY+hellgrau&hash=item5210a52638%3Ag%3ACSUAAOSwVctY5MdW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "76,99 €",
+          "link": "https://www.ebay.de/itm/117359352584?_skw=Gigabyte+A620M+H&hash=item1b53299b08%3Ag%3AuxUAAeSwYPFqfzw-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "hp-prelude-pro-recycelter-15",
-      "name": "HP Prelude Pro Recycelter 15",
-      "brand": "HP",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/HP_4Z513AA_INT_1_6f5d.jpg?size=400",
+      "id": "aoc-cu34v5cw-office",
+      "name": "AOC CU34V5CW Office",
+      "brand": "AOC",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/httpsaocpims3amazonawscomAOCCU34V5CWBKPVFRONTpngc_fit_w_1200_h_1200_f707.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "32,13 €",
-          "link": "https://www.awin1.com/pclick.php?p=45858503420&a=3110253&m=11348"
+          "price": "312,03 €",
+          "link": "https://www.awin1.com/pclick.php?p=35274653335&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "fractal-design-epoch-black-tg-rgb",
+      "name": "Fractal Design Epoch Black TG RGB",
+      "brand": "Fractal",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Epoch_RGB_Charcoal_TGL_Left-Front_c2f6.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "91,89 €",
+          "link": "https://www.ebay.de/itm/307052593588?_skw=Fractal+Design+Epoch+Black+TG+RGB&hash=item477dc2c1b4%3Ag%3ADRMAAeSwUk1qT%7EMp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "114,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41798884983&a=3110253&m=11348"
         }
       ]
     }
