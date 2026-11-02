@@ -1,199 +1,199 @@
 {
-  "stand": "2026-11-01",
+  "stand": "2026-11-02",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "moza-sr-p-lite-kupplungspedal-extra-kupplungspedal",
-      "name": "MOZA SR-P Lite Kupplungspedal extra Kupplungspedal",
-      "brand": "MOZA",
-      "kategorie": "gaming-controller",
-      "image": "https://media2.nbb-cdn.de/images/products/SRP-Lite-Clutch-png_3b82.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "42,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=42887785132&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-rog-strix-rg-05",
-      "name": "ASUS ROG Strix RG-05",
-      "brand": "ASUS",
-      "kategorie": "cpu-kuehler",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS_ROG_STRIX_RG-05_Waermeleitpastee_ee93.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "6,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=44965523425&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "22,14 €",
-          "link": "https://www.ebay.de/itm/820216589382?_skw=ASUS+ROG+Strix+RG-05&hash=itembef8b7ec46%3Ag%3Aj3gAAeSwSEpqx1-s&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "lenovo-tio24-gen5-business",
-      "name": "Lenovo TIO24 Gen5 Business",
-      "brand": "Lenovo",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/0de0cb003f7a11f4741b9339b703c559_a659.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "151,66 €",
-          "link": "https://www.awin1.com/pclick.php?p=38595673431&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "219,00 €",
-          "link": "https://www.ebay.de/itm/318296368487?_skw=Lenovo+TIO24+Gen5+Business&hash=item4a1bf12567%3Ag%3ADkkAAeSwdlZpHgqJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "viewsonic-va3420c-2-curved-office",
-      "name": "ViewSonic VA3420C-2 Curved Office",
-      "brand": "ViewSonic",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/ViewSonic-VA3420C-2-01_839b.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "259,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44996794554&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "zotac-geforce-gt-1030",
-      "name": "Zotac GeForce GT 1030",
-      "brand": "Zotac",
-      "kategorie": "grafikkarten",
-      "image": "https://media2.nbb-cdn.de/images/products/Zotac_GeForce_GT_1030_01_853f.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "103,97 €",
-          "link": "https://www.awin1.com/pclick.php?p=45862487434&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "lian-li-dan-cases-b4-matx-mesh-white",
-      "name": "Lian Li DAN Cases B4-mATX Mesh White",
-      "brand": "Lian",
-      "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/G99.B4W.00_001.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "74,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=45816924287&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "gigabyte-b760-ds3h-gen5",
-      "name": "Gigabyte B760 DS3H GEN5",
-      "brand": "Gigabyte",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/e199468b4d2ee025-l_e59d.webp?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "109,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44787922217&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "118,70 €",
-          "link": "https://www.ebay.de/itm/205685690675?_skw=Gigabyte+B760+DS3H+GEN5&hash=item2fe3d29133%3Ag%3A%7Eu8AAeSw%7Eu5qv7pl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "hp-z2-mini-g1a-workstation-a40myet-amd-ryzen",
-      "name": "HP Z2 Mini G1a Workstation A40MYET [AMD Ryzen",
-      "brand": "HP",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/HP_Z2_Mini_G1a_1_c054.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "3580,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41527486121&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "aqara-panel-hub-s1-plus-eu",
-      "name": "Aqara Panel Hub S1 Plus EU",
-      "brand": "Aqara",
-      "kategorie": "heimautomatisierung",
-      "image": "https://media2.nbb-cdn.de/images/products/0/3_4_View.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "299,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46453683357&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "gigabyte-a620m-h",
-      "name": "Gigabyte A620M H",
-      "brand": "Gigabyte",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/A620M_H-01_31ad.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "74,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=40220717018&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "76,99 €",
-          "link": "https://www.ebay.de/itm/117359352584?_skw=Gigabyte+A620M+H&hash=item1b53299b08%3Ag%3AuxUAAeSwYPFqfzw-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "aoc-cu34v5cw-office",
-      "name": "AOC CU34V5CW Office",
-      "brand": "AOC",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/httpsaocpims3amazonawscomAOCCU34V5CWBKPVFRONTpngc_fit_w_1200_h_1200_f707.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "312,03 €",
-          "link": "https://www.awin1.com/pclick.php?p=35274653335&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "fractal-design-epoch-black-tg-rgb",
-      "name": "Fractal Design Epoch Black TG RGB",
+      "id": "fractal-design-pop-silent-black-solid",
+      "name": "Fractal Design Pop Silent Black Solid",
       "brand": "Fractal",
       "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/01_Epoch_RGB_Charcoal_TGL_Left-Front_c2f6.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Pop_ATX_Silent_Black_Sheetmetal_1_Front_Left_5757.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "91,46 €",
+          "link": "https://www.awin1.com/pclick.php?p=43315674468&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "corsair-icue-link-rx140-rgb-weiss",
+      "name": "Corsair iCUE LINK RX140 RGB weiß",
+      "brand": "Corsair",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/RX140_RGB_WHITE_RENDER_01_3012.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "22,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=37386907262&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "34,95 €",
+          "link": "https://www.ebay.de/itm/257742095304?_skw=Corsair+iCUE+LINK+RX140+RGB+wei%C3%9F&hash=item3c02a043c8%3Ag%3AAy0AAeSwmydqp9aq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "acer-7-in-1-type-c-dongle",
+      "name": "Acer 7-in-1 Type-C Dongle",
+      "brand": "Acer",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/acer_dongle_aaec.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "39,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40715642027&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "48,53 €",
+          "link": "https://www.ebay.de/itm/940013442840?_skw=Acer+7-in-1+Type-C+Dongle&hash=itemdadd2ad718%3Ag%3A2eYAAeSwMc9q3l-f&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "dell-p2424ht-office",
+      "name": "DELL P2424HT Office",
+      "brand": "DELL",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/DELL_DELL-P2424HT_INT_1_8a63.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "313,50 €",
+          "link": "https://www.awin1.com/pclick.php?p=43709992875&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "gigabyte-b650e-aorus-stealth-ice",
+      "name": "Gigabyte B650E AORUS Stealth ICE",
+      "brand": "Gigabyte",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/9f8ddecdd442dc55-l_b53d.webp?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "261,67 €",
+          "link": "https://www.awin1.com/pclick.php?p=44359042980&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "292,90 €",
+          "link": "https://www.ebay.de/itm/318847733907?_skw=Gigabyte+B650E+AORUS+Stealth+ICE&hash=item4a3cce5093%3Ag%3AimYAAeSwotNqoTCa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "lenovo-thinkpad-x13-g2-20wk00ahge",
+      "name": "Lenovo ThinkPad X13 G2 20WK00AHGE",
+      "brand": "Lenovo",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/Lenovo_ThinkPad_X13_01_1_f19f.jpg?size=400",
       "shops": [
         {
           "name": "eBay",
-          "price": "91,89 €",
-          "link": "https://www.ebay.de/itm/307052593588?_skw=Fractal+Design+Epoch+Black+TG+RGB&hash=item477dc2c1b4%3Ag%3ADRMAAeSwUk1qT%7EMp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "999,00 €",
+          "link": "https://www.ebay.de/itm/225297701174?_skw=Lenovo+ThinkPad+X13+G2+20WK00AHGE&hash=item3474ca1936%3Ag%3A6wgAAOSwAa5hvzn0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "114,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=41798884983&a=3110253&m=11348"
+          "price": "1399,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34475679385&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lenovo-essential",
+      "name": "Lenovo Essential",
+      "brand": "Lenovo",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/489d40ab-4543-4340-9c63-1a7c4f007d94_8f1c.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "20,96 €",
+          "link": "https://www.ebay.de/itm/407316554648?_skw=Lenovo+Essential&hash=item5ed5f56398%3Ag%3AQfEAAeSw9yFq3tQ%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "22,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41179233164&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "apple-mac-mini-cz1ua-000100-m6",
+      "name": "Apple Mac mini CZ1UA-000100 M6",
+      "brand": "Apple",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Mac_mini_Pure_Front_Print__USEN.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1059,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46366334266&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "samsung-typ-c-256gb-usb-stick-blau-mit-schutzkappe",
+      "name": "Samsung Typ-C 256GB USB-Stick Blau Mit Schutzkappe",
+      "brand": "Samsung",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/Samsung_USB_FlashDrive_TypC_Front_Closed_Blue_92c1.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "59,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44643075310&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "qnap-tl-r1200s-rp-erweiterungsgehaeuse-12-bay-0-12-hdd-ssd",
+      "name": "QNAP TL-R1200S-RP Erweiterungsgehäuse 12-Bay [0/12 HDD/SSD]",
+      "brand": "QNAP",
+      "kategorie": "nas",
+      "image": "https://media2.nbb-cdn.de/images/products/QNAP_TL-R1200S-RP_Front_1d0d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1429,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=33673897079&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "steuersparerklaerung-2023-rentner-mac-steuerjahr-2023",
+      "name": "SteuerSparErklärung 2023 Rentner Mac Steuerjahr 2023",
+      "brand": "SteuerSparErklärung",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/SteuerSparErklaerung_2023_Rentner_Mac_007b.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "33,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37078055997&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "hp-omnibook-x-14-ka0171ng",
+      "name": "HP OmniBook X 14-ka0171ng",
+      "brand": "HP",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Chiharu_14_CS_OmniBook_X_GlacierSilver_T_NT_CanvasGray_KB_OLED_Catalog_Front.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1299,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45180363437&a=3110253&m=11348"
         }
       ]
     }
