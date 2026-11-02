@@ -23,6 +23,7 @@ jobs:
           ref: main
 
       - name: Preise aus den Awin-Feeds und von eBay holen
+        id: preise
         env:
           PYTHONDONTWRITEBYTECODE: "1"
           AWIN_FEED_AOSU: ${{ secrets.AWIN_FEED_AOSU }}
@@ -33,7 +34,14 @@ jobs:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: |
+          # Exit-Code 3 = einzelne Feeds fehlten, der Rest ist aber sauber geschrieben.
+          # Dann trotzdem speichern und erst am Ende rot melden (sonst gehen alle Preise des Laufs verloren).
+          set +e
           python3 tools/preise_aktualisieren.py
+          code=$?
+          set -e
+          if [ "$code" != 0 ] && [ "$code" != 3 ]; then exit "$code"; fi
+          echo "teilweise=$([ "$code" = 3 ] && echo ja || echo nein)" >> "$GITHUB_OUTPUT"
           python3 tools/sitemap.py
 
       - name: Änderungen speichern
@@ -61,3 +69,9 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/pages/builds || true
+
+      - name: Teilweise Fehler melden
+        if: steps.preise.outputs.teilweise == 'ja'
+        run: |
+          echo "::error::Mindestens ein Feed oder eBay war nicht erreichbar (Details oben im Schritt 'Preise ... holen'). Die übrigen Preise wurden gespeichert."
+          exit 1
