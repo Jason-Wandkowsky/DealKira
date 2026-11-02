@@ -31,6 +31,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -98,9 +99,23 @@ def preis_format(text):
     return f"{wert:.2f}".replace(".", ",") + " €"
 
 
-def feed_laden(url):
-    with urllib.request.urlopen(url, timeout=120) as antwort:
-        daten = antwort.read()
+# Exit-Code, wenn einzelne Feeds/eBay fehlten, alle Dateien aber sauber geschrieben wurden.
+# Der Workflow speichert die Preise dann trotzdem und zeigt erst danach ein rotes ✗.
+TEILWEISE_FEHLER = 3
+
+
+def feed_laden(url, versuche=3):
+    # Awin liefert ab und zu kurz HTTP 500 o. ä. – dann nach einer Pause erneut versuchen
+    for versuch in range(1, versuche + 1):
+        try:
+            with urllib.request.urlopen(url, timeout=120) as antwort:
+                daten = antwort.read()
+            break
+        except Exception as fehler:
+            if versuch == versuche:
+                raise
+            print(f"  Feed-Download fehlgeschlagen ({fehler}) – Versuch {versuch + 1} in {30 * versuch} s")
+            time.sleep(30 * versuch)
     if daten[:2] == b"\x1f\x8b":
         daten = gzip.decompress(daten)
     text = daten.decode("utf-8-sig", errors="replace")
@@ -744,7 +759,7 @@ def main():
     website_daten.schreiben(dateien[DATEI], DEALS)
     print(f"Fertig: {geaendert} Änderungen")
     # Rotes ✗ bei GitHub, wenn ein hinterlegter Feed nicht geladen werden konnte
-    return 1 if fehler_gesamt else 0
+    return TEILWEISE_FEHLER if fehler_gesamt else 0
 
 
 def preis_zahl(text):
