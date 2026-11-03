@@ -5,6 +5,25 @@
   "produkte": {},
   "beliebt": [
     {
+      "id": "lexware-lohn-plus-gehalt-2027-jahresversion",
+      "name": "Lexware lohn+gehalt 2027 Jahresversion",
+      "brand": "Lexware",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/loge-26_3D_c132.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "409,90 €",
+          "link": "https://www.ebay.de/itm/115595494919?_skw=Lexware+lohn%2Bgehalt+2027+Jahresversion&hash=item1aea074607%3Ag%3AjmEAAeSwQKxpw8Ct&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "547,28 €",
+          "link": "https://www.awin1.com/pclick.php?p=46575851139&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
       "id": "asrock-phantom-gaming-z890i-nova-wifi",
       "name": "ASRock Phantom Gaming Z890I Nova WiFi",
       "brand": "ASRock",
@@ -13,7 +32,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "262,94 €",
+          "price": "262,73 €",
           "link": "https://www.awin1.com/pclick.php?p=39305136492&a=3110253&m=11348"
         }
       ]
@@ -51,7 +70,7 @@
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "342,99 €",
+          "price": "249,99 €",
           "link": "https://www.awin1.com/pclick.php?p=39346704456&a=3110253&m=11348"
         }
       ]
@@ -122,7 +141,7 @@
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "101,51 €",
+          "price": "101,48 €",
           "link": "https://www.awin1.com/pclick.php?p=46397661403&a=3110253&m=11348"
         }
       ]
@@ -185,25 +204,6 @@
           "name": "notebooksbilliger.de",
           "price": "334,84 €",
           "link": "https://www.awin1.com/pclick.php?p=38611010729&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "gigabyte-b760m-aorus-elite-wifi6e-gen5",
-      "name": "Gigabyte B760M AORUS Elite WIFI6E GEN5",
-      "brand": "Gigabyte",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/654004663c5d540b-l_fb21.webp?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "144,30 €",
-          "link": "https://www.awin1.com/pclick.php?p=44613530235&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "176,20 €",
-          "link": "https://www.ebay.de/itm/157705132912?_skw=Gigabyte+B760M+AORUS+Elite+WIFI6E+GEN5&hash=item24b7f55b70%3Ag%3AsB8AAeSwyRFqee9w&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     }
