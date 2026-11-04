@@ -1,209 +1,204 @@
 {
-  "stand": "2026-11-03",
+  "stand": "2026-11-04",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "lexware-lohn-plus-gehalt-2027-jahresversion",
-      "name": "Lexware lohn+gehalt 2027 Jahresversion",
-      "brand": "Lexware",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/loge-26_3D_c132.png?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "409,90 €",
-          "link": "https://www.ebay.de/itm/115595494919?_skw=Lexware+lohn%2Bgehalt+2027+Jahresversion&hash=item1aea074607%3Ag%3AjmEAAeSwQKxpw8Ct&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "547,28 €",
-          "link": "https://www.awin1.com/pclick.php?p=46575851139&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asrock-phantom-gaming-z890i-nova-wifi",
-      "name": "ASRock Phantom Gaming Z890I Nova WiFi",
-      "brand": "ASRock",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/ASRock_Phantom_Gaming_Z890I_Nova_WiFi_1_77af.jpg?size=400",
+      "id": "logitech-signature-comfort-plus-combo-mk880",
+      "name": "Logitech Signature Comfort Plus Combo MK880",
+      "brand": "Logitech",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/Screenshot_2026-06-11_145000.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "262,73 €",
-          "link": "https://www.awin1.com/pclick.php?p=39305136492&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "fractal-design-north-xl-rc-chalk-white-tg",
-      "name": "Fractal Design North XL RC Chalk White TG",
-      "brand": "Fractal",
-      "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/North-XL-RC_Studio_White_TGC_Left-Front_8de2.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "168,44 €",
-          "link": "https://www.awin1.com/pclick.php?p=40894562981&a=3110253&m=11348"
+          "price": "119,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45012884126&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "188,19 €",
-          "link": "https://www.ebay.de/itm/157705042476?_skw=Fractal+Design+North+XL+RC+Chalk+White+TG&hash=item24b7f3fa2c%3Ag%3ACw8AAeSw1clqecjw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "137,85 €",
+          "link": "https://www.ebay.de/itm/178565483740?_skw=Logitech+Signature+Comfort+Plus+Combo+MK880&hash=item2993550cdc%3Ag%3A%7Ep0AAeSwSWNqxrXG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "asus-rog-strix-1200w-platinum",
-      "name": "ASUS ROG Strix 1200W Platinum",
-      "brand": "ASUS",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/ROG-STRIX-1200W-Platinum_0034_fc5b.png?size=400",
+      "id": "epson-co-fh01-full-hd-beamer-fuer-home-entertainment",
+      "name": "Epson CO-FH01 Full-HD-Beamer für Home Entertainment",
+      "brand": "Epson",
+      "kategorie": "projektoren",
+      "image": "https://media2.nbb-cdn.de/images/products/w01_w_std_03_0621.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "230,00 €",
-          "link": "https://www.ebay.de/itm/117416015570?_skw=ASUS+ROG+Strix+1200W+Platinum&hash=item1b568a36d2%3Ag%3AZZAAAeSwYllqqxFs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "409,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46151036342&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "logitech-h570e",
+      "name": "Logitech H570E",
+      "brand": "Logitech",
+      "kategorie": "headset",
+      "image": "https://media2.nbb-cdn.de/images/products/Logitech_H570e_01_4f62.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "37,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253803701&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "249,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=39346704456&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "satechi-thunderbolt-4-dock-space-grey",
-      "name": "Satechi Thunderbolt 4 Dock space grey",
-      "brand": "Satechi",
-      "kategorie": "dockingstations",
-      "image": "https://media2.nbb-cdn.de/images/products/default111_27d0.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "228,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43583185400&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-prime-b860-plus-wifi",
-      "name": "ASUS PRIME B860-PLUS WIFI",
-      "brand": "ASUS",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/01_ATX-PRIME-B860-PLUS-WIFI-with-box_c536.jpg?size=400",
-      "shops": [
-        {
           "name": "eBay",
-          "price": "149,00 €",
-          "link": "https://www.ebay.de/itm/287556507063?_skw=ASUS+PRIME+B860-PLUS+WIFI&hash=item42f3b415b7%3Ag%3ABsgAAeSwsx9qlbuU&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "181,40 €",
-          "link": "https://www.awin1.com/pclick.php?p=40164049591&a=3110253&m=11348"
+          "price": "39,99 €",
+          "link": "https://www.ebay.de/itm/254985018880?_skw=Logitech+H570E&hash=item3b5e4a9e00%3Ag%3AQHgAAOSwVidh2B%7E5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "toshiba-canvio-flex-hdd-1tb-silber",
-      "name": "Toshiba Canvio Flex HDD 1TB Silber",
-      "brand": "Toshiba",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/toshiba-canvio-flex-hero_96b1.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "83,90 €",
-          "link": "https://www.ebay.de/itm/880055699897?_skw=Toshiba+Canvio+Flex+HDD+1TB+Silber&hash=itemcce76849b9%3Ag%3AiC4AAeSwkxporWFl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "102,49 €",
-          "link": "https://www.awin1.com/pclick.php?p=44720204620&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "aoc-gaming-24g15n2",
-      "name": "AOC Gaming 24G15N2",
-      "brand": "AOC",
+      "id": "lcd-dell-u3225qe-ultrasharp-32-4k-thunderbolt-hub-mnt",
+      "name": "LCD DELL-U3225QE UltraSharp 32 4K Thunderbolt Hub MNT",
+      "brand": "LCD",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/G15_FRONT-big_1_d51f.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/monitor-ultrasharp-u3225qe-gy-gallery-1_6c31.avif?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "779,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=43886568257&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "thermaltake-tr2-s",
+      "name": "Thermaltake TR2 S",
+      "brand": "Thermaltake",
+      "kategorie": "netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/TR2_S_700W_1_cdc2.jpg?size=400",
       "shops": [
         {
           "name": "eBay",
-          "price": "85,00 €",
-          "link": "https://www.ebay.de/itm/407119072130?_skw=AOC+Gaming+24G15N2&hash=item5eca300b82%3Ag%3AeJsAAeSwzOhqcaED&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "45,00 €",
+          "link": "https://www.ebay.de/itm/127916262590?_skw=Thermaltake+TR2+S&hash=item1dc86744be%3Ag%3A004AAeSw61NqKr9l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "101,48 €",
-          "link": "https://www.awin1.com/pclick.php?p=46397661403&a=3110253&m=11348"
+          "price": "52,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=37381660840&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "rivacase-7532-grau",
-      "name": "Rivacase 7532 Grau",
-      "brand": "Rivacase",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/7532_grey_darkblue.4260403578285.ver02_a077.jpg?size=400",
+      "id": "trust-niven-comfort-multidevice-wireless-mouse",
+      "name": "Trust Niven Comfort Multidevice Wireless Mouse",
+      "brand": "Trust",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/26021_pictures_product_visual_1_6e66.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "27,04 €",
-          "link": "https://www.awin1.com/pclick.php?p=42019485224&a=3110253&m=11348"
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=43261627717&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "d-link-dgs-1520-52mp-smart-managed-switch-44x-gigabit",
-      "name": "D-Link DGS-1520-52MP Smart Managed Switch [44x Gigabit",
-      "brand": "D-Link",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/D-Link_DGS-1520-52MP_Front_6cdf.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1451,29 €",
-          "link": "https://www.awin1.com/pclick.php?p=41646535958&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "brother-mfc-l2827dwxl-4in1-multifunktionsdrucker-s-w",
-      "name": "Brother MFC-L2827DWXL 4in1 Multifunktionsdrucker s/w",
-      "brand": "Brother",
-      "kategorie": "drucker",
-      "image": "https://media2.nbb-cdn.de/images/products/Brother-MFCL2827DWXLRE1-2_ae85.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "307,92 €",
-          "link": "https://www.awin1.com/pclick.php?p=37450394598&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "amd-ryzen-9-9900x",
-      "name": "AMD Ryzen 9 9900X",
-      "brand": "AMD",
-      "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/Ryzen_9_9000_2638.jpg?size=400",
+      "id": "delock-usb-2-0-kabel-usb-type-c-stecker",
+      "name": "Delock USB 2.0 Kabel USB Type-C™ Stecker",
+      "brand": "Delock",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/64f9ccd4c02db2.43782477_78dd.jpg?size=400",
       "shops": [
         {
           "name": "eBay",
-          "price": "329,99 €",
-          "link": "https://www.ebay.de/itm/880056674532?_skw=AMD+Ryzen+9+9900X&hash=itemcce77728e4%3Ag%3AlHMAAeSwVnJq4MKD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "10,19 €",
+          "link": "https://www.ebay.de/itm/198699586626?_skw=Delock+USB+2.0+Kabel+USB+Type-C%E2%84%A2+Stecker&hash=item2e436b1442%3Ag%3AOPcAAeSwtdhqyBTE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "334,84 €",
-          "link": "https://www.awin1.com/pclick.php?p=38611010729&a=3110253&m=11348"
+          "price": "16,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=38015597021&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "captiva-pc-workstation-r99-514-amd-ryzen-9-9900x",
+      "name": "Captiva PC Workstation R99-514 AMD Ryzen 9 9900X",
+      "brand": "Captiva",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Captiva_AG_120_1_8495.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1599,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44152016499&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "sandisk-ultra-dual-typ-a-typ-c-128gb-usb-stick-slider",
+      "name": "SanDisk Ultra Dual Typ-A/Typ-C 128GB USB-Stick Slider",
+      "brand": "SanDisk",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/SanDisk_Ultra-Dual-Drive-USB-C_Front-Open_85e9.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "31,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253804289&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "corel-pinnacle-studio-26-ultimate",
+      "name": "Corel Pinnacle Studio 26 Ultimate",
+      "brand": "Corel",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/0735163164633_ESDPNST26ULML_b76c.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "29,90 €",
+          "link": "https://www.ebay.de/itm/155120032055?_skw=Corel+Pinnacle+Studio+26+Ultimate&hash=item241ddfd937%3Ag%3ApEQAAeSwMwtn%7EqmO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "87,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=36309664782&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "iiyama-lh4375uhs-b2ag",
+      "name": "Iiyama LH4375UHS-B2AG",
+      "brand": "Iiyama",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/LH4375UHS-B2AG10_06bc.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "599,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44073929279&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "686,25 €",
+          "link": "https://www.ebay.de/itm/136259915699?_skw=Iiyama+LH4375UHS-B2AG&hash=item1fb9b94fb3%3Ag%3A%7EeAAAeSwtkVq4A1R&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "lian-li-lancool-217-inf-black",
+      "name": "Lian Li LANCOOL 217 INF Black",
+      "brand": "Lian",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/GELI-987_e13d1f2fc0111b595d367a7f8145e1e34e2d15bc_275a.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "124,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44420681878&a=3110253&m=11348"
         }
       ]
     }
