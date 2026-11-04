@@ -356221,5 +356221,20 @@
       }
     ],
     "ebayGesucht": "2026-11-03"
+  },
+  {
+    "id": "haarstyler-dyson-airwrap-co-anda2x",
+    "name": "Dyson Airwrap Co-anda2x",
+    "brand": "Dyson",
+    "kategorie": "haarstyler",
+    "image": "",
+    "shops": [
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://www.amazon.de/s?k=Dyson+Airwrap+Co-anda2x&tag=amazonguy001-21",
+        "amazonSuche": true
+      }
+    ]
   }
 ]
