@@ -216,6 +216,7 @@ const DK_ICONS = {
   bell:     '<rect x="6" y="2.5" width="12" height="19" rx="3"/><circle cx="12" cy="8.5" r="2.5"/><circle cx="12" cy="16" r="1.5"/>',
   mower:    '<path d="M3 15.5l2-6h11l3 6z"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/><path d="M9 9.5V7h5v2.5M3 20.5h18"/>',
   solar:    '<path d="M3 18l3-11h12l3 11z"/><path d="M4.5 12.5h15M9 7l-1 11M15 7l1 11M12 18v3"/>',
+  hair:     '<path d="M4 8.5a5.5 5.5 0 0 1 11 0 5.5 5.5 0 0 1-11 0z"/><circle cx="9.5" cy="8.5" r="2"/><path d="M15 6.5l5.5-1.5v7L15 10.5M10.5 14l1.5 7h-3.5l-1-6.5"/>',
   box:      '<path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/>'
 };
 
@@ -242,7 +243,8 @@ const DK_KATEGORIE_ICON = {
   konsole: "gamepad", tv: "monitor",
   "outdoor-kameras": "camera", "indoor-kameras": "camera",
   "kamera-sets": "camera", "kamera-zubehoer": "solar", tuerklingeln: "bell", heimautomatisierung: "plug", maehroboter: "mower",
-  "fertig-pcs": "tower", "software": "box", "laptop-taschen": "laptop", "dockingstations": "plug", "laptop-netzteile": "battery", "displayschutz": "monitor", "router": "plug", "switches": "plug", "nas": "drive", "netzwerk-adapter": "plug", "powerline": "plug", "netzwerk-zubehoer": "plug", "kopfhoerer": "headset", "lautsprecher": "headset", "mauspads": "mouse", "gaming-controller": "gamepad", "monitor-zubehoer": "monitor", "projektoren": "monitor", "druckerzubehoer": "printer", "grafiktabletts": "tablet", "wearables": "phone"
+  "fertig-pcs": "tower", "software": "box", "laptop-taschen": "laptop", "dockingstations": "plug", "laptop-netzteile": "battery", "displayschutz": "monitor", "router": "plug", "switches": "plug", "nas": "drive", "netzwerk-adapter": "plug", "powerline": "plug", "netzwerk-zubehoer": "plug", "kopfhoerer": "headset", "lautsprecher": "headset", "mauspads": "mouse", "gaming-controller": "gamepad", "monitor-zubehoer": "monitor", "projektoren": "monitor", "druckerzubehoer": "printer", "grafiktabletts": "tablet", "wearables": "phone",
+  haarstyler: "hair"
 };
 
 function dkEscape(value) {
