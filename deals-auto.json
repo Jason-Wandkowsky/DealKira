@@ -43,6 +43,20 @@
       ]
     },
     {
+      "id": "lexware-handwerk-premium-2027-jahresversion",
+      "name": "Lexware handwerk premium 2027 Jahresversion",
+      "brand": "Lexware",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/1128264/hw-premium-neutral_3D.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1285,08 €",
+          "link": "https://www.awin1.com/pclick.php?p=46621543846&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
       "id": "mau-trust-primo-kabellose",
       "name": "MAU TRUST Primo kabellose",
       "brand": "MAU",
@@ -103,7 +117,7 @@
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "160,10 €",
+          "price": "160,39 €",
           "link": "https://www.awin1.com/pclick.php?p=41808153307&a=3110253&m=11348"
         }
       ]
@@ -180,20 +194,6 @@
           "name": "notebooksbilliger.de",
           "price": "24,99 €",
           "link": "https://www.awin1.com/pclick.php?p=36039836058&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "seasonic-g12-gm-850",
-      "name": "Seasonic G12 GM-850",
-      "brand": "Seasonic",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/G12-GM-850-back-panel-angled_309d.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "79,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=38983561255&a=3110253&m=11348"
         }
       ]
     }
