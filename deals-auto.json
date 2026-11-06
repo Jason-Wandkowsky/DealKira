@@ -1,199 +1,189 @@
 {
-  "stand": "2026-11-05",
+  "stand": "2026-11-06",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "xilence-xp850r10",
-      "name": "Xilence XP850R10",
-      "brand": "Xilence",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/6a7e13a296f4e0c74b2ec839efb3aac1_a0b7.jpg?size=400",
+      "id": "hp-200-desinfizierbare-schreibtischunterlage",
+      "name": "HP 200 Desinfizierbare Schreibtischunterlage",
+      "brand": "HP",
+      "kategorie": "mauspads",
+      "image": "https://media2.nbb-cdn.de/images/products/c08817158_5977.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "64,93 €",
-          "link": "https://www.awin1.com/pclick.php?p=44796693819&a=3110253&m=11348"
+          "price": "15,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37439660614&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "68,03 €",
-          "link": "https://www.ebay.de/itm/205685824245?_skw=Xilence+XP850R10&hash=item2fe3d49af5%3Ag%3AossAAeSwAz9q0i8%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "17,90 €",
+          "link": "https://www.ebay.de/itm/147652569519?_skw=HP+200+Desinfizierbare+Schreibtischunterlage&hash=item2260c769af%3Ag%3ALAYAAeSwtkVq30TD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "be-quiet-light-loop-io-lcd-240mm-white",
-      "name": "be quiet! LIGHT LOOP IO LCD 240mm White",
-      "brand": "be",
-      "kategorie": "wasserkuehlung",
-      "image": "https://media2.nbb-cdn.de/images/products/01_Light_Loop_IO_LCD_240mm_white.jpg?size=400",
+      "id": "trust-gaming-gxt-265-cintar-rgb",
+      "name": "Trust Gaming GXT 265 Cintar RGB",
+      "brand": "Trust",
+      "kategorie": "headset",
+      "image": "https://media2.nbb-cdn.de/images/products/23647_pictures_package_visual_7_f35a.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "171,47 €",
-          "link": "https://www.awin1.com/pclick.php?p=45510116689&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "172,75 €",
-          "link": "https://www.ebay.de/itm/198570782781?_skw=be+quiet%21+LIGHT+LOOP+IO+LCD+240mm+White&hash=item2e3bbdb03d%3Ag%3Au4kAAeSwxFVqi%7EEd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "35,93 €",
+          "link": "https://www.awin1.com/pclick.php?p=45858503371&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "lexware-handwerk-premium-2027-jahresversion",
-      "name": "Lexware handwerk premium 2027 Jahresversion",
-      "brand": "Lexware",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/1128264/hw-premium-neutral_3D.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1285,08 €",
-          "link": "https://www.awin1.com/pclick.php?p=46621543846&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "mau-trust-primo-kabellose",
-      "name": "MAU TRUST Primo kabellose",
-      "brand": "MAU",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/24795_pictures_product_top_1_f304.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "9,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43261627675&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "dell-p2725h-office",
-      "name": "DELL P2725H Office",
-      "brand": "DELL",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/b6105ece49eaf95247883c0cb99a5e831f407f52_306b.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "167,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=39174258362&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "168,09 €",
-          "link": "https://www.ebay.de/itm/147658362585?_skw=DELL+P2725H+Office&hash=item22611fced9%3Ag%3A7l4AAeSwVmtq5Oqt&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "gigabyte-aorus-master-18-bzhc6ded42sp",
-      "name": "Gigabyte AORUS MASTER 18 BZHC6DED42SP",
-      "brand": "Gigabyte",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/AORUS-MASTER18-01_fa2b.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "5199,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=40707700746&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-b650e-max-gaming-wifi",
-      "name": "ASUS B650E Max Gaming WIFI",
-      "brand": "ASUS",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/01_ATX-B650E_MAX_GAMING_WIFI-with-box_9971.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "142,00 €",
-          "link": "https://www.ebay.de/itm/407328419088?_skw=ASUS+B650E+Max+Gaming+WIFI&hash=item5ed6aa6d10%3Ag%3AqYUAAeSwN7lq5WEb&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "160,39 €",
-          "link": "https://www.awin1.com/pclick.php?p=41808153307&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "aqara-door-window-sensor-p2",
-      "name": "Aqara Door & Window Sensor P2",
-      "brand": "Aqara",
-      "kategorie": "heimautomatisierung",
-      "image": "https://media2.nbb-cdn.de/images/products/p2_sensor_c498.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "24,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=41887827395&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "39,09 €",
-          "link": "https://www.ebay.de/itm/267683542875?_skw=Aqara+Door+%26+Window+Sensor+P2&hash=item3e532eb75b%3Ag%3AjlEAAeSwv4RqGg9l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "asus-prime-mr120-fan-argb-reverse-black",
-      "name": "ASUS Prime MR120 Fan ARGB Reverse Black",
-      "brand": "ASUS",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/MR120_BLK_Rev_One_3D-1_81fe.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "11,78 €",
-          "link": "https://www.awin1.com/pclick.php?p=41815281516&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "lian-li-uni-fan-sl-inf-120-flex-wireless",
-      "name": "Lian Li UNI FAN SL-INF 120 FLEX Wireless",
-      "brand": "Lian",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/LULI-174_de04465e21663c26f132951fb5299f887dfcff0c.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "32,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=45699919629&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "hp-250r-g10-d04rbes",
-      "name": "HP 250R G10 D04RBES",
+      "id": "hp-250r-g10-c91wtes",
+      "name": "HP 250R G10 C91WTES",
       "brand": "HP",
       "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/HP_250R_255R_G10_DarkAsh_nonIRcam_DOS_Front_01_4124.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_250R_255R_G10_DarkAsh_nonIRcam_Win11_Front_01_7f6b.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "529,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44700236635&a=3110253&m=11348"
+          "price": "399,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44698117126&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "jlab-go-charge-bluetooth-maus",
-      "name": "JLab GO Charge Bluetooth-Maus",
-      "brand": "JLab",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/JLAB-IEUMGOCHRGMSRBLK124-01_7de7.jpg?size=400",
+      "id": "lenovo-usb-c-to-hdmi-2-0b-adapter",
+      "name": "Lenovo USB-C to HDMI 2.0b Adapter",
+      "brand": "Lenovo",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/lru3t06egel7hdyfvhox4kzkfqtw08595118_e2ab.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
           "price": "24,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=36039836058&a=3110253&m=11348"
+          "link": "https://www.awin1.com/pclick.php?p=39860178710&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "gigabyte-aero-x16-1vh93dec64ah",
+      "name": "Gigabyte AERO X16 1VH93DEC64AH",
+      "brand": "Gigabyte",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/AERO_X16_Grey-00_d29a.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "1595,50 €",
+          "link": "https://www.ebay.de/itm/227578319448?_skw=Gigabyte+AERO+X16+1VH93DEC64AH&hash=item34fcb99258%3Ag%3ATwkAAeSwtmpqAtvi&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1599,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41510388842&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "hp-elitebook-8-g1i-16-d0cy3es",
+      "name": "HP EliteBook 8 G1i 16 D0CY3ES",
+      "brand": "HP",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Machu_LaPaz_16_GlacierSilver_FrontOpen_Win11Pro_6428.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "2899,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44008608177&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "asus-rog-strix-helios-ii-black",
+      "name": "ASUS ROG Strix Helios II Black",
+      "brand": "ASUS",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/GX601_II_BLK_3D-1_59a9.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "281,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=43390609295&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "332,90 €",
+          "link": "https://www.ebay.de/itm/407254622550?_skw=ASUS+ROG+Strix+Helios+II+Black&hash=item5ed2446156%3Ag%3AIOMAAeSwTnRqu6zm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "cherry-mx-lp-2-1-compact-wireless-anti-ghosting",
+      "name": "Cherry MX-LP 2.1 Compact Wireless Anti-Ghosting",
+      "brand": "Cherry",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/Cherry-G80-3860LVADE-0-1_ceba.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "49,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=35823926974&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "synology-ds1825-plus-16tb-plus-hdd-nas-bundle-nas",
+      "name": "Synology DS1825+ 16TB Plus HDD NAS-Bundle NAS",
+      "brand": "Synology",
+      "kategorie": "nas",
+      "image": "https://media2.nbb-cdn.de/images/products/Syno-DS1825-Plus-Syno-Plus-2x8TB_c4df.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "2287,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=43267247498&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "asus-nuc-15-pro-plus-kit-rnuc15crsu9084a2",
+      "name": "ASUS NUC 15 Pro+ Kit RNUC15CRSU9084A2",
+      "brand": "ASUS",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/NUC15_ProPlus_Side_Rightview_Low_e47d.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "2227,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46606911766&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "corsair-elite-premium-cable-pro-kit-type-4",
+      "name": "Corsair Elite Premium Cable Pro Kit Type 4",
+      "brand": "Corsair",
+      "kategorie": "komponenten-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/ELITE_PREMIUM_IND_SLEEVED_CABLES_TYPE4_BW_11_PRO_KIT_300d.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "68,21 €",
+          "link": "https://www.awin1.com/pclick.php?p=44412463844&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "nedis-netzladegeraet-65-w-schnellladefunktion-2-0-2-25-a",
+      "name": "Nedis Netzladegerät 65 W Schnellladefunktion 2.0 2.25 A",
+      "brand": "Nedis",
+      "kategorie": "laptop-netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/Nedis-WCPD65W130BK-1_2134.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "29,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=45803596911&a=3110253&m=11348"
         }
       ]
     }
