@@ -1,209 +1,189 @@
 {
-  "stand": "2026-11-07",
+  "stand": "2026-11-08",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "adobe-photoshop",
-      "name": "Adobe Photoshop",
-      "brand": "Adobe",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/282947-Adobe-Photoshop_ESD-Packshot_DE_171d.png?size=400",
+      "id": "captiva-pc-workstation-i98-426-intel-core-ultra-9",
+      "name": "Captiva PC Workstation I98-426 Intel Core Ultra 9",
+      "brand": "Captiva",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/10434934_0_9db6.jpg?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "59,90 €",
-          "link": "https://www.ebay.de/itm/147655346124?_skw=Adobe+Photoshop&hash=item2260f1c7cc%3Ag%3A1fsAAeSwBK9q4fmi&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7n0p5Y9fiD%2FFtvXJlnIBRO5y2Gazyq%2B6EYG8KmqDgz9%2FsXvg5g7ZCindQT%2Fo6Ca70mYPkHwDOQbKbpIbtyIAvMjHlRnC4COMGbroN7Z15hRGzEL5jdi3D4CiBpnQbuwX4JyUNviQxInOXyfIEqnvGH5hY6L4anWwNkCc0AAJpwfA%2FDB1Z%2Flz8y777lP8jWcGN%2BS3CVwJfa9W1jCwADM3ffaeL1H7WXPC9Co3XIFH7AVgSCGUKOKWhAwiVnZwVK4T2HSyhTYUEZmi%2BOPoe%2BBvdv%2FOnKfUz3KLyK6W%2B6WglkSnA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
           "name": "notebooksbilliger.de",
-          "price": "307,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=44287056813&a=3110253&m=11348"
+          "price": "2902,53 €",
+          "link": "https://www.awin1.com/pclick.php?p=45368218612&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "icybox-ib-ac508a-displayport-1-2-zu-hdmi-dp-1-2",
-      "name": "Icybox IB-AC508a DisplayPort 1.2 zu HDMI DP 1.2",
-      "brand": "Icybox",
-      "kategorie": "computer-setup-kabel",
-      "image": "https://media2.nbb-cdn.de/images/products/7R2ckliQVrImrym5lcrP-560_eb61.png?size=400",
+      "id": "displex-premium-schutzglas-fc-fuer-iphone-16",
+      "name": "Displex Premium Schutzglas FC für iPhone 16",
+      "brand": "Displex",
+      "kategorie": "telefon-schutz",
+      "image": "https://media2.nbb-cdn.de/images/products/02014-iPhone-16-Premium-Glass-FC-7_9851.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "12,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40202497501&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen-7-5700g",
+      "name": "AMD Ryzen 7 5700G",
+      "brand": "AMD",
+      "kategorie": "cpu",
+      "image": "https://media2.nbb-cdn.de/images/products/AMD_Ryzen_5700G_1_7ab3.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "208,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253813751&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "215,00 €",
+          "link": "https://www.ebay.de/itm/178328628948?_skw=AMD+Ryzen+7+5700G&hash=item298536eed4%3Ag%3AVn0AAeSwj0RpvbPX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "tp-link-archer-t2u-plus-wifi-5-adapter-ac600",
+      "name": "TP-Link Archer T2U Plus WiFi 5 Adapter AC600",
+      "brand": "TP-Link",
+      "kategorie": "netzwerk-adapter",
+      "image": "https://media2.nbb-cdn.de/images/products/TP-Link_AC600_Hero_bd85.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "13,29 €",
+          "link": "https://www.awin1.com/pclick.php?p=35016780315&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "philips-27e1n1600ae",
+      "name": "Philips 27E1N1600AE",
+      "brand": "Philips",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/74b091a11c2a4df3983eb10f00811995_4cac.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "169,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=40783901490&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "172,84 €",
+          "link": "https://www.ebay.de/itm/236939526878?_skw=Philips+27E1N1600AE&hash=item372ab242de%3Ag%3AD%7EgAAeSw2S9qV1dr&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "bitdefender-total-security-5-geraete",
+      "name": "Bitdefender Total Security [5 Geräte",
+      "brand": "Bitdefender",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/bitdefender_total_security_1cf7.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "26,99 €",
+          "link": "https://www.ebay.de/itm/266160359894?_skw=Bitdefender+Total+Security+%5B5+Ger%C3%A4te&hash=item3df864c9d6%3Ag%3AJnkAAOSwwd5kBc-y&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "36,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=38089696984&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "hpe-networking-instant-on-ap22-wifi-6-access",
+      "name": "HPE Networking Instant On AP22 WiFi 6 Access",
+      "brand": "HPE",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Aruba-AP22-Front_8630.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "130,02 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253811485&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "speedlink-ludicium-rgb-rainbow",
+      "name": "Speedlink LUDICIUM RGB Rainbow",
+      "brand": "Speedlink",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/SL-670004-BK_01_1920x1920_489a.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
           "price": "14,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253818187&a=3110253&m=11348"
+          "link": "https://www.awin1.com/pclick.php?p=43380997145&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "xerox-c300-farblaserdrucker-wlan",
-      "name": "Xerox C300 Farblaserdrucker WLAN",
-      "brand": "Xerox",
-      "kategorie": "drucker",
-      "image": "https://media2.nbb-cdn.de/images/products/1125027/Xerox_C300V_EU_3.jpg?size=400",
+      "id": "synology-diskstation-ds423-nas-4-bay-0-4-hdd-ssd",
+      "name": "Synology DiskStation DS423 NAS 4-Bay 0/4 HDD/SSD",
+      "brand": "Synology",
+      "kategorie": "nas",
+      "image": "https://media2.nbb-cdn.de/images/products/Synology-DS423-Front_7d56.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "224,91 €",
-          "link": "https://www.awin1.com/pclick.php?p=46261228219&a=3110253&m=11348"
+          "price": "341,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=35855121758&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "asus-proart-pa348cgv-office",
-      "name": "ASUS ProArt PA348CGV Office",
+      "id": "asus-business-va279qgs-w",
+      "name": "ASUS Business VA279QGS-W",
       "brand": "ASUS",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/PA348CGV_F1_54f1_1.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/VA279QGS-W_F_dd4e.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "799,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44716222430&a=3110253&m=11348"
+          "price": "195,47 €",
+          "link": "https://www.awin1.com/pclick.php?p=44149784496&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "epson-eb-770fi-ultrakurzdistanz-laser-beamer-mit-interaktive",
-      "name": "Epson EB-770Fi Ultrakurzdistanz Laser-Beamer mit interaktiver Fingertouch-Funktion",
-      "brand": "Epson",
-      "kategorie": "projektoren",
-      "image": "https://media2.nbb-cdn.de/images/products/770f_760w_w_ceiling_no-mount_06_2a94.png?size=400",
+      "id": "trust-gxt794-3-in-1-gaming-bundle-bundle-bestehend-aus",
+      "name": "Trust GXT794 3-in-1 Gaming Bundle Bundle bestehend aus",
+      "brand": "Trust",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/25908_pictures_product_visual_1_54a6.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2983,72 €",
-          "link": "https://www.awin1.com/pclick.php?p=46099663056&a=3110253&m=11348"
+          "price": "29,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=43010491947&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "acer-aspire-lite-al15-47p-amd-ryzen-3-5400u",
-      "name": "Acer Aspire Lite AL15-47P AMD Ryzen 3 5400U",
-      "brand": "Acer",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/1127572/21.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "479,93 €",
-          "link": "https://www.awin1.com/pclick.php?p=46157215013&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "565,29 €",
-          "link": "https://www.ebay.de/itm/900010939078?_skw=Acer+Aspire+Lite+AL15-47P+AMD+Ryzen+3+5400U&hash=itemd18cd512c6%3Ag%3A7ygAAeSwbVBqzkRc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "aoc-q24g4re",
-      "name": "AOC Q24G4RE",
-      "brand": "AOC",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/0dbb1d362250287ce5bb893e5c240316a2f1f4a6-5280x4920_2a3b.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "144,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=43991083122&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "145,76 €",
-          "link": "https://www.ebay.de/itm/800768365536?_skw=AOC+Q24G4RE&hash=itemba718393e0%3Ag%3AbWIAAeSwgOtq339F&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "dicota-eco-multi-base",
-      "name": "Dicota Eco Multi BASE",
-      "brand": "Dicota",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/D30447-RPET-1_2066.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "23,07 €",
-          "link": "https://www.awin1.com/pclick.php?p=36674415239&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "23,95 €",
-          "link": "https://www.ebay.de/itm/198485798474?_skw=Dicota+Eco+Multi+BASE&hash=item2e36acee4a%3Ag%3ADSAAAeSwOuhqu7zk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "logitech-pro-x-superlight-wireless",
-      "name": "Logitech® PRO X SUPERLIGHT Wireless",
-      "brand": "Logitech®",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/ProXSuperlight_Schwarz_4_d39b.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "76,19 €",
-          "link": "https://www.ebay.de/itm/318555874579?_skw=Logitech%C2%AE+PRO+X+SUPERLIGHT+Wireless&hash=item4a2b68e513%3Ag%3Az18AAeSwoYxqTXRd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "104,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=45278984216&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "acer-p1357-wxga-beamer-mit-4-800-ansi-lumen",
-      "name": "Acer P1357 WXGA Beamer mit 4.800 ANSI Lumen",
-      "brand": "Acer",
-      "kategorie": "projektoren",
-      "image": "https://media2.nbb-cdn.de/images/products/Acer_Projector_P1257_P1257ic_01-light_8bad.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "457,16 €",
-          "link": "https://www.awin1.com/pclick.php?p=44794156129&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-nuc-15-pro-plus-kit-rnuc15crsu500002",
-      "name": "ASUS NUC 15 Pro+ Kit RNUC15CRSU500002",
-      "brand": "ASUS",
+      "id": "captiva-pc-workstation-r98-399-amd-ryzen-9-9900x",
+      "name": "Captiva PC Workstation R98-399 AMD Ryzen 9 9900X",
+      "brand": "Captiva",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/NUC15_ProPlus_Side_Rightview_Low_e47d.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/10434934_0_9db6.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "406,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41316365019&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "462,47 €",
-          "link": "https://www.ebay.de/itm/286749559617?_skw=ASUS+NUC+15+Pro%2B+Kit+RNUC15CRSU500002&hash=item42c39b0b41%3Ag%3AOncAAOSw3lJoNN%7EN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "lenovo-thinkpad-l16-gen-2-ultra-7",
-      "name": "Lenovo ThinkPad L16 Gen 2 Ultra 7",
-      "brand": "Lenovo",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/21SA0014IMPORT_1_3e17.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "1149,07 €",
-          "link": "https://www.ebay.de/itm/127321727881?_skw=Lenovo+ThinkPad+L16+Gen+2+Ultra+7&hash=item1da4f76389%3Ag%3AEuIAAeSwRhpoptI8&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mB8zw0DETMxxJ381vrys9xnNpoeWC8L7iYv%2BKtGzVze84HAZxAHujUfOWgzU5QribHKYuXXEowMLr7%2BT8aKDmOJPDOsCd7vIu8WPjzIJyg4UWGpDQ2koz9km6wUNKWkPZZgaCRLWTr7yooFT%2BgM%2FTUvKzvTmzXWi6TynVjlGzGXvgeaCCskWMYiocYUXwaHNlNAo%2FD5ZVhull9b0w6L7f2xPzPTS%2BQtkYwhDAxDhJFQgHBtoYBjHRKccXbyRzxXTap7Gb6FhOGjFjJHWNVk85t%2Bk7gb%2FEGqZbyJ8yHsPdDwwWz3APXiONQtlwyVTBeIBU%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1390,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=46020467555&a=3110253&m=11348"
+          "price": "2905,36 €",
+          "link": "https://www.awin1.com/pclick.php?p=44779897916&a=3110253&m=11348"
         }
       ]
     }
