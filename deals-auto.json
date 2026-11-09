@@ -1,189 +1,229 @@
 {
-  "stand": "2026-11-08",
+  "stand": "2026-11-09",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "captiva-pc-workstation-i98-426-intel-core-ultra-9",
-      "name": "Captiva PC Workstation I98-426 Intel Core Ultra 9",
-      "brand": "Captiva",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/10434934_0_9db6.jpg?size=400",
+      "id": "gigabyte-b760-ds3h-wifi6e-gen5",
+      "name": "Gigabyte B760 DS3H WIFI6E GEN5",
+      "brand": "Gigabyte",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/dd0823637a77d798-l_ca66.webp?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2902,53 €",
-          "link": "https://www.awin1.com/pclick.php?p=45368218612&a=3110253&m=11348"
+          "price": "122,69 €",
+          "link": "https://www.awin1.com/pclick.php?p=44354654872&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "152,68 €",
+          "link": "https://www.ebay.de/itm/257218372551?_skw=Gigabyte+B760+DS3H+WIFI6E+GEN5&hash=item3be368e3c7%3Ag%3ACcIAAeSwnpRqxXDI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "displex-premium-schutzglas-fc-fuer-iphone-16",
-      "name": "Displex Premium Schutzglas FC für iPhone 16",
-      "brand": "Displex",
-      "kategorie": "telefon-schutz",
-      "image": "https://media2.nbb-cdn.de/images/products/02014-iPhone-16-Premium-Glass-FC-7_9851.jpg?size=400",
+      "id": "keysonic-ksk-5011elc-super-mini",
+      "name": "Keysonic KSK-5011ELC Super-Mini",
+      "brand": "Keysonic",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/KSK-5011ELC_Bild_3_oben_frontal_7e2d.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "12,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=40202497501&a=3110253&m=11348"
+          "price": "44,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=43642348417&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "60,20 €",
+          "link": "https://www.ebay.de/itm/127171662632?_skw=Keysonic+KSK-5011ELC+Super-Mini&hash=item1d9c059328%3Ag%3AwukAAOSwYztoPavD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "amd-ryzen-7-5700g",
-      "name": "AMD Ryzen 7 5700G",
+      "id": "gigabyte-aorus-waterforce-ii-360",
+      "name": "GigaByte AORUS Waterforce II 360",
+      "brand": "GigaByte",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/Gigabyte-AORUS_WATERFORCE-II-360-01_72fc.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "83,13 €",
+          "link": "https://www.awin1.com/pclick.php?p=37741403488&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "95,77 €",
+          "link": "https://www.ebay.de/itm/307052512403?_skw=GigaByte+AORUS+Waterforce+II+360&hash=item477dc18493%3Ag%3AZpQAAeSwZsBqhtlc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "tp-link-deco-x10-wifi-6-mesh-einheit-ax1500",
+      "name": "TP-Link Deco X10 WiFi 6 Mesh Einheit AX1500",
+      "brand": "TP-Link",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/TP-Link-Deco-X10-Single_572c.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "49,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41395767188&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lenovo-legion-go-2-controller",
+      "name": "Lenovo Legion Go 2 Controller",
+      "brand": "Lenovo",
+      "kategorie": "gaming-controller",
+      "image": "https://media2.nbb-cdn.de/images/products/4leib86nwugmcx72moku9smg1rf1ol528394_f5f9.avif?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "47,74 €",
+          "link": "https://www.awin1.com/pclick.php?p=44415216512&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "76,94 €",
+          "link": "https://www.ebay.de/itm/407306771388?_skw=Lenovo+Legion+Go+2+Controller&hash=item5ed5601bbc%3Ag%3AJeMAAeSwlWdq4CTn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "noctua-nf-s12b-redux-1200-pwm-120mm",
+      "name": "Noctua NF-S12B redux-1200 PWM 120mm",
+      "brand": "Noctua",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/Noctua_NF-S12B_redux-1200_120mm_01_1_79a3.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "18,36 €",
+          "link": "https://www.awin1.com/pclick.php?p=45858503250&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "21,14 €",
+          "link": "https://www.ebay.de/itm/158127684903?_skw=Noctua+NF-S12B+redux-1200+PWM+120mm&hash=item24d124fd27%3Ag%3A0HoAAeSw0KxqeqeF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "tryx-holo-argb-360-weiss",
+      "name": "TRYX HOLO ARGB 360 weiß",
+      "brand": "TRYX",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/1-HOLO_ARGB_360-Main_Image-white.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "199,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=45764279576&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "232,25 €",
+          "link": "https://www.ebay.de/itm/960065821920?_skw=TRYX+HOLO+ARGB+360+wei%C3%9F&hash=itemdf8861dce0%3Ag%3AXioAAeSwk4tqz06U&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen-7-8700g",
+      "name": "AMD Ryzen 7 8700G",
       "brand": "AMD",
       "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/AMD_Ryzen_5700G_1_7ab3.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Ryzen_7_8000series_a7cd.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "208,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253813751&a=3110253&m=11348"
+          "price": "250,15 €",
+          "link": "https://www.awin1.com/pclick.php?p=42556229301&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "215,00 €",
-          "link": "https://www.ebay.de/itm/178328628948?_skw=AMD+Ryzen+7+5700G&hash=item298536eed4%3Ag%3AVn0AAeSwj0RpvbPX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "256,28 €",
+          "link": "https://www.ebay.de/itm/127845693664?_skw=AMD+Ryzen+7+8700G&hash=item1dc43278e0%3Ag%3AES8AAeSwRONq387l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "tp-link-archer-t2u-plus-wifi-5-adapter-ac600",
-      "name": "TP-Link Archer T2U Plus WiFi 5 Adapter AC600",
-      "brand": "TP-Link",
-      "kategorie": "netzwerk-adapter",
-      "image": "https://media2.nbb-cdn.de/images/products/TP-Link_AC600_Hero_bd85.jpg?size=400",
+      "id": "hyperx-pulsefire-core",
+      "name": "HyperX Pulsefire Core",
+      "brand": "HyperX",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/4P4F8AA_1_db3d.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "13,29 €",
-          "link": "https://www.awin1.com/pclick.php?p=35016780315&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "philips-27e1n1600ae",
-      "name": "Philips 27E1N1600AE",
-      "brand": "Philips",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/74b091a11c2a4df3983eb10f00811995_4cac.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "169,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=40783901490&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "172,84 €",
-          "link": "https://www.ebay.de/itm/236939526878?_skw=Philips+27E1N1600AE&hash=item372ab242de%3Ag%3AD%7EgAAeSw2S9qV1dr&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "bitdefender-total-security-5-geraete",
-      "name": "Bitdefender Total Security [5 Geräte",
-      "brand": "Bitdefender",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/bitdefender_total_security_1cf7.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
           "price": "26,99 €",
-          "link": "https://www.ebay.de/itm/266160359894?_skw=Bitdefender+Total+Security+%5B5+Ger%C3%A4te&hash=item3df864c9d6%3Ag%3AJnkAAOSwwd5kBc-y&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.awin1.com/pclick.php?p=45287249569&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "49,95 €",
+          "link": "https://www.ebay.de/itm/127858709052?_skw=HyperX+Pulsefire+Core&hash=item1dc4f9123c%3Ag%3AL9kAAeSwhkpqAcF-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "satechi-usb-c-slim-dock-for",
+      "name": "Satechi USB-C Slim Dock for",
+      "brand": "Satechi",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/738607_Satechi_USB-C_Slim_Dock_for_24_inch_iMac_silver_00_8723.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "99,99 €",
+          "link": "https://www.ebay.de/itm/377374246628?_skw=Satechi+USB-C+Slim+Dock+for&hash=item57dd4206e4%3Ag%3AegEAAeSwgCRqZ7o7&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kW0IXefgPgJ0Y%2BvmfKOiIyZHpTZN%2B0L16%2BtZZx2%2Fhx%2BHgxj9plD1%2FR5A9CcO3ulj864M2VsMNErjQcYd4kVdkiTBMl3uto9Gf9lnOf09xlbHheOcIXQGjzgcSHzpu%2BcOt3yLwDdL60yA5GGqwijHSpGUykaRRsp3QYKd5YecwOU%2F5x0O1niIvt4btqPjWjKyI8vcF6XI92a91cvTsnUKwwy%2F0c%2BVdMCIIs5gLMk6dj0Pn5K7JAp%2BWv0QFwQXMSAuT%2B%2Fv%2BssTtKIqp5MxG%2FYYgFEi091KdiUBUB9u1Qne6H8RyDYt%2F1Tqa1ShhHrUbkqQM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "36,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=38089696984&a=3110253&m=11348"
+          "price": "111,10 €",
+          "link": "https://www.awin1.com/pclick.php?p=38071575185&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "hpe-networking-instant-on-ap22-wifi-6-access",
-      "name": "HPE Networking Instant On AP22 WiFi 6 Access",
-      "brand": "HPE",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/Aruba-AP22-Front_8630.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "130,02 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253811485&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "speedlink-ludicium-rgb-rainbow",
-      "name": "Speedlink LUDICIUM RGB Rainbow",
-      "brand": "Speedlink",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/SL-670004-BK_01_1920x1920_489a.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "14,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43380997145&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "synology-diskstation-ds423-nas-4-bay-0-4-hdd-ssd",
-      "name": "Synology DiskStation DS423 NAS 4-Bay 0/4 HDD/SSD",
-      "brand": "Synology",
-      "kategorie": "nas",
-      "image": "https://media2.nbb-cdn.de/images/products/Synology-DS423-Front_7d56.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "341,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=35855121758&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-business-va279qgs-w",
-      "name": "ASUS Business VA279QGS-W",
+      "id": "asus-nuc-15-pro-plus-kit-rnuc15crsu700002",
+      "name": "ASUS NUC 15 Pro+ Kit RNUC15CRSU700002",
       "brand": "ASUS",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/VA279QGS-W_F_dd4e.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "195,47 €",
-          "link": "https://www.awin1.com/pclick.php?p=44149784496&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "trust-gxt794-3-in-1-gaming-bundle-bundle-bestehend-aus",
-      "name": "Trust GXT794 3-in-1 Gaming Bundle Bundle bestehend aus",
-      "brand": "Trust",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/25908_pictures_product_visual_1_54a6.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "29,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43010491947&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "captiva-pc-workstation-r98-399-amd-ryzen-9-9900x",
-      "name": "Captiva PC Workstation R98-399 AMD Ryzen 9 9900X",
-      "brand": "Captiva",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/10434934_0_9db6.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/NUC15_ProPlus_Side_Rightview_Low_e47d.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2905,36 €",
-          "link": "https://www.awin1.com/pclick.php?p=44779897916&a=3110253&m=11348"
+          "price": "510,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41316365025&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "560,42 €",
+          "link": "https://www.ebay.de/itm/267310128864?_skw=ASUS+NUC+15+Pro%2B+Kit+RNUC15CRSU700002&hash=item3e3cecdee0%3Ag%3A17IAAOSwQ3xoUzZc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "cherry-kc-1000",
+      "name": "Cherry KC 1000",
+      "brand": "Cherry",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/cherry-kc-1000-tastatur-englisch-us-hellgrau_580a.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "13,80 €",
+          "link": "https://www.ebay.de/itm/137399280231?_skw=Cherry+KC+1000&hash=item1ffda2a267%3Ag%3ADz0AAeSw1zxqKS2f&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "16,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253803675&a=3110253&m=11348"
         }
       ]
     }
