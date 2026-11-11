@@ -1,194 +1,209 @@
 {
-  "stand": "2026-11-10",
+  "stand": "2026-11-11",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "amd-ryzen-7-5700g",
-      "name": "AMD Ryzen 7 5700G",
-      "brand": "AMD",
-      "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/AMD_Ryzen_5700G_1_7ab3.png?size=400",
+      "id": "sharkoon-1337-v2",
+      "name": "Sharkoon 1337 V2",
+      "brand": "Sharkoon",
+      "kategorie": "mauspads",
+      "image": "https://media2.nbb-cdn.de/images/products/1337_V2_M_01_6661.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "208,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253813751&a=3110253&m=11348"
+          "price": "5,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44941808504&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "215,00 €",
-          "link": "https://www.ebay.de/itm/178328628948?_skw=AMD+Ryzen+7+5700G&hash=item298536eed4%3Ag%3AVn0AAeSwj0RpvbPX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "16,19 €",
+          "link": "https://www.ebay.de/itm/167791145519?_skw=Sharkoon+1337+V2&hash=item271121b22f%3Ag%3AyXYAAeSw6HloxwSF&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7k4ekkPtpAug82zIDV2ZtJyX2xm%2FuvFHg248kzG8otRFyoaVCVR7FOix1zRC6desIJ0%2FNQWmR5CAj6qqtuyO%2B9z3qG0%2FH7EikMFdex3fTHjoB5d2Y6eYs4Lmu0e9KLG9uoZfGThPvH9EaaGMLflwB8tK28o9oS5jjhUw79GDTsLlSN%2FolZDPTydfzjV5%2FIQZhoe27OsSO67zlWSswpaLqE83DAIBAJVpcByEvJ95AtpwK7t1Jk2zzOChvPfL1--Jw6Y2n83XvlyfAA4%2Fuc2uBN%2BUu9UB2CABFs%2BjpnYFAXP8Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "displex-panzerglas-2d",
-      "name": "Displex Panzerglas 2D",
-      "brand": "Displex",
-      "kategorie": "displayschutz",
-      "image": "https://media2.nbb-cdn.de/images/products/Displex-01925-2_30e4.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "14,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=42613987304&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "delock-usb-typ-c-3-1-dockingstation-mit-hdmi",
-      "name": "Delock USB Typ-C 3.1 Dockingstation mit HDMI",
-      "brand": "Delock",
-      "kategorie": "computer-setup-kabel",
-      "image": "https://media2.nbb-cdn.de/images/products/afasdfffd_1790.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "70,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253815885&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "kingston-8gb-ddr4-3200-cl22-so-dimm",
-      "name": "Kingston 8GB DDR4-3200 CL22 SO-DIMM",
-      "brand": "Kingston",
-      "kategorie": "ram",
-      "image": "https://media2.nbb-cdn.de/images/products/Kingston-DDR4-SR-SODIMM-Front_5_c76d.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "115,45 €",
-          "link": "https://www.ebay.de/itm/178546170965?_skw=Kingston+8GB+DDR4-3200+CL22+SO-DIMM&hash=item29922e5c55%3Ag%3AbyoAAeSw4mRqvsRs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "118,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253819199&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-rog-falchion-ace-hfx",
-      "name": "ASUS ROG Falchion ACE HFX",
+      "id": "asus-tuf-gaming-vg328h1b",
+      "name": "ASUS TUF Gaming VG328H1B",
       "brand": "ASUS",
-      "kategorie": "tastaturen",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ROG-Falchion-90MP03VE-BKDA20-01_9a53.png?size=400",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/ASUS_VG328H1B_1_41d9.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "144,99 €",
-          "link": "https://www.ebay.de/itm/389782236541?_skw=ASUS+ROG+Falchion+ACE+HFX&hash=item5ac0d4ed7d%3Ag%3AYnkAAeSwpAtpv8pQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mCuTF0jnUjstjYMj3Pqjfv5AYGV86C8IufZxGNiQLtl60z4pNe9KJt0Bkd0k7akiXoj%2FsRtROhOlsI2XKdpNOfGYvMKfauJv8MZ1sapXKXyx4ZOTGoliuIdQn7FVJ1sPHL%2F%2BnmkuBX2rePmwOvLqHRet4szGKqc13KQ5NG9M5GJWXpD%2B1mDf9hGeNPIEHTOL%2FZb1QAO7PNzOO6kaO9FERXyVQOFpmo0D9XmI2YYCyFB%2FxHbc%2BowP%2FXdpmI6Yb0Cygl4MvxwNbi5sekYsZYWTlCsKL4iBxTf2Ql7Ddi1PKpwwT%2Fva8H5KmndXdXrsRHvGs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "244,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=39689962150&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "167,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=43949562081&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "268,96 €",
+          "link": "https://www.ebay.de/itm/127960266278?_skw=ASUS+TUF+Gaming+VG328H1B&hash=item1dcb06b626%3Ag%3Ae80AAeSwi2Vq42JL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "hp-zbook-8-g1i-16-b30lmes",
-      "name": "HP ZBook 8 G1i 16 B30LMES",
-      "brand": "HP",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/Zbook_8_Machu16W_WLAN_UMA_Catalog_WhiteBG_Front_v1_9166.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1199,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=42803642478&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "apple-mac-mini-cz1uc-001100-m6",
-      "name": "Apple Mac mini CZ1UC-001100 M6",
-      "brand": "Apple",
+      "id": "zotac-zbox-edge-mi648-barebone-intel-core-i5-1340p",
+      "name": "Zotac ZBOX edge MI648 Barebone Intel Core i5-1340P",
+      "brand": "Zotac",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/Mac_mini_Pure_Front_Print__USEN.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/ZBOX-MI648-BE_1_bf27_1.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1759,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46366334262&a=3110253&m=11348"
+          "price": "467,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41706250918&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "corsair-rs120-argb",
-      "name": "Corsair RS120 ARGB",
-      "brand": "Corsair",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/RS120_ARGB_RENDER_01_9080.png?size=400",
+      "id": "captiva-highend-gaming-pc-r88-664-amd-ryzen-7",
+      "name": "Captiva Highend Gaming PC R88-664 AMD Ryzen 7",
+      "brand": "Captiva",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/10752934_5_ae59.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "20,67 €",
-          "link": "https://www.awin1.com/pclick.php?p=38335841052&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "33,99 €",
-          "link": "https://www.ebay.de/itm/960045948234?_skw=Corsair+RS120+ARGB&hash=itemdf87329d4a%3Ag%3A3tEAAeSwagxqyajM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "2710,64 €",
+          "link": "https://www.awin1.com/pclick.php?p=40931875757&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "synology-16gb-ddr4-2666-sodimm",
-      "name": "Synology 16GB DDR4-2666 SODIMM",
-      "brand": "Synology",
-      "kategorie": "ram",
-      "image": "https://media2.nbb-cdn.de/images/products/16G_ECC_SO_DIMM_009e.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1499,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253808327&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "trust-e14-duo-pack-led-cct-wi-fi-smarte-wifi",
-      "name": "Trust E14 DUO-PACK LED CCT WI-FI Smarte WiFi",
-      "brand": "Trust",
-      "kategorie": "heimautomatisierung",
-      "image": "https://media2.nbb-cdn.de/images/products/71284_pictures_product_front_1_1344.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "15,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=39565984785&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "ubiquiti-edgerouter-4-port-router",
-      "name": "Ubiquiti EdgeRouter 4-Port Router",
+      "id": "ubiquiti-dream-router-5g-max-wifi-7",
+      "name": "Ubiquiti Dream Router 5G Max WiFi 7",
       "brand": "Ubiquiti",
       "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/ER-4_Front_56b8.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti-Dream-Router-5G-Max-Front_12ee.jpeg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "184,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=36375470658&a=3110253&m=11348"
+          "price": "679,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44666885442&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "corsair-icue-link-lx140-rgb-white-2er-pack",
-      "name": "Corsair iCUE LINK LX140 RGB White 2er-Pack",
-      "brand": "Corsair",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/Corsair_iCUE_LINK_LX140_RGB__Geh_usel_fter100059216_c472.jpg?size=400",
+      "id": "logitech-zone-300-kabelloses",
+      "name": "Logitech Zone 300 Kabelloses",
+      "brand": "Logitech",
+      "kategorie": "headset",
+      "image": "https://media2.nbb-cdn.de/images/products/981-001407nr1_4836.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "90,42 €",
-          "link": "https://www.awin1.com/pclick.php?p=38508439539&a=3110253&m=11348"
+          "price": "64,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41395767017&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "asus-prime-b760-plus",
+      "name": "ASUS Prime B760-Plus",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/1-Prime-B760-Plus-D4_2D_f5af.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "99,00 €",
+          "link": "https://www.ebay.de/itm/227432200878?_skw=ASUS+Prime+B760-Plus&hash=item34f403faae%3Ag%3AWowAAeSwQw5qVf%7Ez&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "119,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44940556803&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "fractal-design-pop-2-vision-black-rgb",
+      "name": "Fractal Design Pop 2 Vision Black RGB",
+      "brand": "Fractal",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Pop-2-Vision_RGB_Black_TGL_Left-Front_84ff.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "78,12 €",
+          "link": "https://www.ebay.de/itm/198485796076?_skw=Fractal+Design+Pop+2+Vision+Black+RGB&hash=item2e36ace4ec%3Ag%3AfaYAAeSwy1FqtmVC&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m%2BtkD4RVHc4NgArt%2B9DxOU%2FKReZ%2B19PKS3ijm2SmWMxLsBwfX2%2BO9I1etB7juzzG1%2FMT42MUYAYUmVMsS65HWAR8UoCjgxHAMzSgqzd%2F2Utqeyc49cyQoGrjV3EMoxNCMV6FrfEPsylh1ZBd5zCD%2Bc4iG0YnqS6ZNx1IkfcnfVobNWFAGnyCyI47Guk916M7AZJslo0oumbCTgF7Lt2Ps9SZ%2FXehP8ns6EnfMS6KJ%2BWX7lR2IP%2FuSYe8X9NfjaoCv6ndFzo6YgUMtdsD7t3Zj1KQYXEBKPIq8JZmomuTh9%2FQov9VkKn0fUJvcSC0frrCs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "98,08 €",
+          "link": "https://www.awin1.com/pclick.php?p=44639313187&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "brother-lc-3217bk-tintenpatrone-schwarz-fuer-550-seiten-komp",
+      "name": "Brother LC-3217BK Tintenpatrone Schwarz für 550 Seiten Kompatibilität:",
+      "brand": "Brother",
+      "kategorie": "druckerzubehoer",
+      "image": "https://media2.nbb-cdn.de/images/products/LC3217BK_right_2fe1.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "21,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=43957829727&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "intenso-white-buds",
+      "name": "Intenso White Buds",
+      "brand": "Intenso",
+      "kategorie": "kopfhoerer",
+      "image": "https://media2.nbb-cdn.de/images/products/3720302nr1_5180.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "20,00 €",
+          "link": "https://www.ebay.de/itm/326953712289?_skw=Intenso+White+Buds&hash=item4c1ff5baa1%3Ag%3AknoAAeSwbf1pZelQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "27,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41053318883&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "asus-nuc-15-pro-kit-rnuc15crhu500002",
+      "name": "ASUS NUC 15 Pro Kit RNUC15CRHU500002",
+      "brand": "ASUS",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/NUC15__PRO_TALL_Side_rightview_low_angle_e5ff.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "367,69 €",
+          "link": "https://www.ebay.de/itm/227572768509?_skw=ASUS+NUC+15+Pro+Kit+RNUC15CRHU500002&hash=item34fc64defd%3Ag%3AZOQAAeSwR0Bq1NJm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "419,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41201527562&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "western-digital-wd-purple-2tb",
+      "name": "Western Digital WD Purple 2TB",
+      "brand": "Western",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/WestDig_WD-Purple_Kamera-2TB_Hero_7474.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "169,00 €",
+          "link": "https://www.ebay.de/itm/206098261373?_skw=Western+Digital+WD+Purple+2TB&hash=item2ffc69e57d%3Ag%3ABoIAAeSwl%7ExpoWv0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "179,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44846034480&a=3110253&m=11348"
         }
       ]
     }
