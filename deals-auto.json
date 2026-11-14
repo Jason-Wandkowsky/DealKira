@@ -1,209 +1,199 @@
 {
-  "stand": "2026-11-13",
+  "stand": "2026-11-14",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "sandisk-ultra-dual-typ-a-typ-c-256gb-usb-stick-slider",
-      "name": "SanDisk Ultra Dual Typ-A/Typ-C 256GB USB-Stick Slider",
-      "brand": "SanDisk",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/SanDisk_Ultra-Dual-Drive-USB-C_Front-Open_85e9.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "49,49 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253807655&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "ubiquiti-pro-xg-24-poe-managed-switch-2x",
-      "name": "Ubiquiti Pro XG 24 PoE Managed Switch 2x",
-      "brand": "Ubiquiti",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti-USW-Pro-XG-24-PoE-Top-Front_f1c6.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1829,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=41586836450&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "sony-playstation-5-dualsense-controller-weiss",
-      "name": "Sony PlayStation 5 DualSense Controller weiß",
-      "brand": "Sony",
-      "kategorie": "gaming-controller",
-      "image": "https://media2.nbb-cdn.de/images/products/DualSense_weiss_1_840c.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "66,09 €",
-          "link": "https://www.ebay.de/itm/257841959048?_skw=Sony+PlayStation+5+DualSense+Controller+wei%C3%9F&hash=item3c08941088%3Ag%3AzNcAAeSweCBq8HEK&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "69,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=40152611176&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "csl-narrow-box-i3-mini-pc-intel-core",
-      "name": "CSL Narrow Box i3 Mini PC Intel® Core",
-      "brand": "CSL",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/CSL_Narrow_Box_Premium_1_cd80.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "479,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=41578041464&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "noctua-nf-a12x25-g2-ls-pwm",
-      "name": "Noctua NF-A12x25 G2 LS-PWM",
-      "brand": "Noctua",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/noctua_nf_a12x25_g2_1_3e86.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "37,16 €",
-          "link": "https://www.awin1.com/pclick.php?p=44415216584&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "45,00 €",
-          "link": "https://www.ebay.de/itm/206689402429?_skw=Noctua+NF-A12x25+G2+LS-PWM&hash=item301fa5fe3d%3Ag%3A8VQAAeSw429q8wmM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "philips-27e3u7903",
-      "name": "Philips 27E3U7903",
-      "brand": "Philips",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/09ebf262c0d84486aae7b2b9007a9d47-_FP_1c56_1.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "819,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=43825284601&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "934,94 €",
-          "link": "https://www.ebay.de/itm/327253702402?_skw=Philips+27E3U7903&hash=item4c31d73702%3Ag%3AbcAAAeSwJ7tq4IG-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "intel-core-i5-14500",
-      "name": "Intel Core i5-14500",
-      "brand": "Intel",
-      "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/Intel__Core__i5_14400_a6e6.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "236,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=36933881499&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "246,10 €",
-          "link": "https://www.ebay.de/itm/206678545093?_skw=Intel+Core+i5-14500&hash=item301f0052c5%3Ag%3AbNoAAeSwwDFq7Qyh&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "dreame-aqua10-ultra-track-complete-weiss",
-      "name": "Dreame Aqua10 Ultra Track Complete Weiß",
-      "brand": "Dreame",
-      "kategorie": "staubsauger",
-      "image": "https://media2.nbb-cdn.de/images/products/Dreame-Aqua10-Ultra-Track-Complete-White-Front_b2bd.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "608,99 €",
-          "link": "https://www.ebay.de/itm/327291649952?_skw=Dreame+Aqua10+Ultra+Track+Complete+Wei%C3%9F&hash=item4c341a3fa0%3Ag%3Am6wAAeSwNF9q2jRk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1099,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=44347976891&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "aqara-temperatur-und-feuchtigkeitssensor",
-      "name": "Aqara Temperatur- und Feuchtigkeitssensor",
-      "brand": "Aqara",
+      "id": "apple-homepod",
+      "name": "Apple HomePod",
+      "brand": "Apple",
       "kategorie": "heimautomatisierung",
-      "image": "https://media2.nbb-cdn.de/images/products/Xiaomi_Aqara_Temperatursensor_2erPack_92a6.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/HomePod_2nd-Gen_Midnight_Hero_RGB_Hi-Res__USEN_9ac4.jpg?size=400",
       "shops": [
         {
           "name": "eBay",
-          "price": "23,99 €",
-          "link": "https://www.ebay.de/itm/366723090883?_skw=Aqara+Temperatur-+und+Feuchtigkeitssensor&hash=item55626649c3%3Ag%3AGssAAeSwRSxqySQY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "300,00 €",
+          "link": "https://www.ebay.de/itm/800734447938?_skw=Apple+HomePod&hash=itemba6f7e0942%3Ag%3AN2EAAeSwDaRqpZ5d&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "34,49 €",
-          "link": "https://www.awin1.com/pclick.php?p=25015086881&a=3110253&m=11348"
+          "price": "384,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41556563983&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "synology-flashstation-fs3410-nas-24-bay-0-24",
-      "name": "Synology FlashStation FS3410 NAS 24-Bay 0/24",
-      "brand": "Synology",
-      "kategorie": "nas",
-      "image": "https://media2.nbb-cdn.de/images/products/Synology-FS3410-Front_76aa.jpg?size=400",
+      "id": "thermaltake-ts120-ex-rgb-white-3er-pack",
+      "name": "Thermaltake TS120 EX RGB White 3er-Pack",
+      "brand": "Thermaltake",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/CL-F207-PL12SW-A_28_6d5b.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "8999,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=35923988035&a=3110253&m=11348"
+          "price": "90,29 €",
+          "link": "https://www.awin1.com/pclick.php?p=46253077733&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "acer-extensa-15",
-      "name": "Acer Extensa 15",
-      "brand": "Acer",
-      "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/0-etailer-hero-acer-extensa-15-ex215-57-non-fingerprint-non-backlit-wp-logo-pure-silver-01-custom.png?size=400",
+      "id": "asus-prime-b760m-a-wifi-ii",
+      "name": "ASUS Prime B760M-A WIFI II",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/1_PRIME_B760M-A_WIFI_II_2D_fdc7.png?size=400",
       "shops": [
         {
           "name": "eBay",
-          "price": "719,00 €",
-          "link": "https://www.ebay.de/itm/257399445273?_skw=Acer+Extensa+15&hash=item3bee33d719%3Ag%3AlvAAAeSwURJpsG0Q&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "118,00 €",
+          "link": "https://www.ebay.de/itm/287362707965?_skw=ASUS+Prime+B760M-A+WIFI+II&hash=item42e826f1fd%3Ag%3A9jMAAeSwEmJqGpFs&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kQYSOpRTpIO6rkfLAlLXHHyn1YvMdQbkWr%2BmywbdW5qIIV%2FgHErzasLNlnMal7gR%2BUzdshDHNWZJoj6itMepcPlNJ3tDzAHl70Y1OiBgIql9yvz3nRx67uM%2BmBLlIhAq0CsakFWFgrz7iZhLu02aUbg7BGUXxqq06suVKKALu%2FcU%2F4j9kJb38KQJbXTet4C07bFgT5DaQlnv0mbzFN%2B7glle7Rrw3c7ZVdstLMLJmqnXSgyy2lk6Ug18l9sGYXhQ9sKh199sylvXgR3rz6eRA6Tu4qL%2B7KZZCemn6Kwnie6fXbAd3R3FC2ATfldUr7lzs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
-          "price": "764,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45699919641&a=3110253&m=11348"
+          "price": "151,83 €",
+          "link": "https://www.awin1.com/pclick.php?p=44287056800&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "displex-camglass-single-lens-ip-16-pro-16-pro",
-      "name": "Displex CamGlass Single Lens iP 16 Pro/16 Pro",
-      "brand": "Displex",
-      "kategorie": "displayschutz",
-      "image": "https://media2.nbb-cdn.de/images/products/02123-iPhone-16-Pro-16-Pro-Max-CamGlass-Single-Lens_9d83.jpg?size=400",
+      "id": "thermaltake-rtx-5070-ti-black-gaming-pc-amd",
+      "name": "Thermaltake RTX 5070 Ti Black Gaming PC AMD",
+      "brand": "Thermaltake",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Thermaltake-PC-000087-DE-01_636a.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "17,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41926064719&a=3110253&m=11348"
+          "price": "3579,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=43957829933&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "trust-zevo-ultraschnell-aufladbare-funkmaus-mit-mehrgeraete-",
+      "name": "Trust Zevo Ultraschnell aufladbare Funkmaus mit Mehrgeräte-Funkverbindung",
+      "brand": "Trust",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/25991_pictures_product_visual_1_92cc.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "24,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44497128895&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "2er-pack-ubiquiti-uacc-om-sm-10g-d-transceiver-modul-sfp-plu",
+      "name": "2er Pack Ubiquiti UACC-OM-SM-10G-D Transceiver-Modul SFP+",
+      "brand": "2er",
+      "kategorie": "netzwerk-adapter",
+      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti_UACC-OM-SM-10G-D_Hero_5bea.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "85,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253806319&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "razer-mako-gaming-lautsprecher",
+      "name": "Razer Mako Gaming Lautsprecher",
+      "brand": "Razer",
+      "kategorie": "lautsprecher",
+      "image": "https://media2.nbb-cdn.de/images/products/1129006/Mako_Render-01.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "159,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46397662439&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lenovo-origami",
+      "name": "Lenovo Origami",
+      "brand": "Lenovo",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/bmuzsablyv29iais8u83ppugn96ta3961382_832d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "24,52 €",
+          "link": "https://www.awin1.com/pclick.php?p=41179233152&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "71,63 €",
+          "link": "https://www.ebay.de/itm/880085353656?_skw=Lenovo+Origami&hash=itemcce92cc4b8%3Ag%3AP7kAAeSwLV9q7F3T&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "fsp-cmt160",
+      "name": "FSP CMT160",
+      "brand": "FSP",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/FSP-CMT160-01_f053.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "37,93 €",
+          "link": "https://www.awin1.com/pclick.php?p=46274965237&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "43,82 €",
+          "link": "https://www.ebay.de/itm/940077753697?_skw=FSP+CMT160&hash=itemdae1002561%3Ag%3AqicAAeSwd%7E9q8bMC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "thermaltake-view-380-tg-argb-snow-white",
+      "name": "Thermaltake View 380 TG ARGB Snow White",
+      "brand": "Thermaltake",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/DSC_2967_6542.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "113,13 €",
+          "link": "https://www.awin1.com/pclick.php?p=39062704071&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "132,77 €",
+          "link": "https://www.ebay.de/itm/285992117815?_skw=Thermaltake+View+380+TG+ARGB+Snow+White&hash=item4296756637%3Ag%3Ar9UAAOSwCHZmpBkj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "xtorm-33w-go2-slimline-charger",
+      "name": "Xtorm 33W Go2 SlimLine Charger",
+      "brand": "Xtorm",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/1130582/XG2SL033-c02.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "14,95 €",
+          "link": "https://www.awin1.com/pclick.php?p=46743268288&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "inno3d-geforce-rtx-5060-ti-16gb-twin-x2",
+      "name": "INNO3D GeForce RTX 5060 Ti 16GB TWIN X2",
+      "brand": "INNO3D",
+      "kategorie": "grafikkarten",
+      "image": "https://media2.nbb-cdn.de/images/products/INNO3D_GeForce_RTX_5060_Ti_16GB_TWIN_X2_2_6fc2.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "848,79 €",
+          "link": "https://www.awin1.com/pclick.php?p=45870351311&a=3110253&m=11348"
         }
       ]
     }
