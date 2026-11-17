@@ -1,204 +1,189 @@
 {
-  "stand": "2026-11-16",
+  "stand": "2026-11-17",
   "deals": [],
   "angebote": [],
   "produkte": {},
   "beliebt": [
     {
-      "id": "asus-x870-max-gaming-wifi7-w",
-      "name": "ASUS X870 Max Gaming WIFI7 W",
-      "brand": "ASUS",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/01_ATX-X870_MAX_GAMING_WIFI7_W-with-box_65bf.jpg?size=400",
+      "id": "ubiquiti-cloud-gateway-ultra-4x-gigabit-ethernet-lan",
+      "name": "Ubiquiti Cloud Gateway Ultra 4x Gigabit Ethernet LAN",
+      "brand": "Ubiquiti",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti-UCG-Ultra-Front-Left_50f3.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "284,68 €",
-          "link": "https://www.awin1.com/pclick.php?p=41653633950&a=3110253&m=11348"
+          "price": "119,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=37254786684&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "thermaltake-th360-v2-ultra-argb-sync-snow-edition",
+      "name": "Thermaltake TH360 V2 Ultra ARGB Sync Snow Edition",
+      "brand": "Thermaltake",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/cl-w405-pl14sw-a_01_1_b39e.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "118,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44636016685&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "304,39 €",
-          "link": "https://www.ebay.de/itm/407061479572?_skw=ASUS+X870+Max+Gaming+WIFI7+W&hash=item5ec6c14094%3Ag%3AlpMAAeSwmcFqvmZs&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7ksuAdNbJuRRCTwvocMcj4yQgznNoCQT4VCCHHpg5qVeHS4jr2CN9hSz6GyvX8ZnJQShwTDenCDUAHtOw%2FVdfvNPoGlzNTlSxbfv8aV8QrbmL6bZdZjQ%2FcyR9EpsBVYVD9Yu2UOUa05kTBgXZllaPSqsfrpSCFxSXZDIPMj9NPBEVnqmxVFHSw932Z4O7ehZx0TyGIDdvLlEt4JIaCMEkjLY1kE4In0HIgGL9K4F0F1qrElFvEehdiY5i1BCJBaS%2BC8o0jd6F%2BwSY3OyOC%2BSpvqgovtnahjQQP1TGNCk35Xiac6mLlslb8zZqXqJZSCd5U%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "174,32 €",
+          "link": "https://www.ebay.de/itm/257838682279?_skw=Thermaltake+TH360+V2+Ultra+ARGB+Sync+Snow+Edition&hash=item3c086210a7%3Ag%3AYckAAeSwoc1q7beh&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "captiva-pc-workstation-r98-394-amd-ryzen-9-9900x",
-      "name": "Captiva PC Workstation R98-394 AMD Ryzen 9 9900X",
-      "brand": "Captiva",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/10434934_0_9db6.jpg?size=400",
+      "id": "hp-omnibook-ultra-14-kd0173ng",
+      "name": "HP OmniBook Ultra 14-kd0173ng",
+      "brand": "HP",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/01_Graham_14_NGAI_OBUltra_EclipseGray_WLAN_T_IRCam_Backlit_OLED_Catalog_Front.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "1499,00 €",
+          "link": "https://www.ebay.de/itm/257688879269?_skw=HP+OmniBook+Ultra+14-kd0173ng&hash=item3bff7440a5%3Ag%3Auo0AAeSwnu5qdvvk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1899,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45124496874&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "cherry-mouse-mw-2200",
+      "name": "Cherry Mouse MW 2200",
+      "brand": "Cherry",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/cherry-mw-2200-black_0971.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2268,57 €",
-          "link": "https://www.awin1.com/pclick.php?p=44912178983&a=3110253&m=11348"
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40323255278&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "aoc-24p3cw",
-      "name": "AOC 24P3CW",
-      "brand": "AOC",
+      "id": "jabra-evolve2-85-anc-kabelloses-bluetooth",
+      "name": "Jabra Evolve2 85 ANC kabelloses Bluetooth",
+      "brand": "Jabra",
+      "kategorie": "headset",
+      "image": "https://media2.nbb-cdn.de/images/products/Jabra_Evolve2_85_UC_Black_Angled_with_USB-C_Dongle_LB_4c93.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "359,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253809475&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "i-tec-usb-3-0-metal-gigabit-ethernet-adapter",
+      "name": "i-tec USB 3.0 Metal Gigabit Ethernet Adapter",
+      "brand": "i-tec",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/U3METALGLAN_01_6eb5.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "13,76 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253805393&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "19,90 €",
+          "link": "https://www.ebay.de/itm/203580101732?_skw=i-tec+USB+3.0+Metal+Gigabit+Ethernet+Adapter&hash=item2f6651d464%3Ag%3AIZsAAOSwS-BhJgzx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "medion-picoworx-t80-sff-md340011",
+      "name": "Medion Picoworx T80 SFF MD340011",
+      "brand": "Medion",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Medion_PC_T80_III_schwarz_Front_Side_left_Pressebild_52e5.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "799,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=43180895285&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "msi-barebone-cubi-5-1m-437beu-b7150uxx-intel-core-7",
+      "name": "MSI Barebone Cubi 5 1M-437BEU-B7150UXX Intel Core 7",
+      "brand": "MSI",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/Cubi_5_12M_1_d56c.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "403,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=45994097397&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lenovo-thinkvision-e24q-30-business",
+      "name": "Lenovo ThinkVision E24q-30 Business",
+      "brand": "Lenovo",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/AOC_24P3CW_INT_1_5ebc.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/ThinkVision_E24q_30_CT2_01_4608.jpg?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "195,00 €",
-          "link": "https://www.ebay.de/itm/880000588645?_skw=AOC+24P3CW&hash=itemcce41f5b65%3Ag%3AORQAAeSwVppqj-cY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
           "name": "notebooksbilliger.de",
-          "price": "235,69 €",
-          "link": "https://www.awin1.com/pclick.php?p=40847091068&a=3110253&m=11348"
+          "price": "139,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46458986214&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "asus-nuc-13-pro-kit-rnuc13l3hv700000i",
-      "name": "ASUS NUC 13 Pro Kit RNUC13L3HV700000I",
-      "brand": "ASUS",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/NUC13pro_Tall_Side1_41c7.png?size=400",
+      "id": "moza-mtlp-take-off-landing-panel-landing-panel",
+      "name": "MOZA MTLP Take-off Landing Panel Landing Panel",
+      "brand": "MOZA",
+      "kategorie": "gaming-controller",
+      "image": "https://media2.nbb-cdn.de/images/products/MOZA-MTLP-Panel-img-1_b5831f21-7dd6-4744-8035-c3c6b16b482d.webp?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "499,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45699919630&a=3110253&m=11348"
+          "price": "159,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45960474061&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "reolink-p840-ip",
-      "name": "Reolink P840 IP",
-      "brand": "Reolink",
-      "kategorie": "outdoor-kameras",
-      "image": "https://media2.nbb-cdn.de/images/products/Reolink-P840-Front.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "259,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45673309533&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "adobe-acrobat-standard",
-      "name": "Adobe Acrobat Standard",
-      "brand": "Adobe",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/Packshot_Adobe-Acrobat-Standard_DE_c98e.png?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "185,99 €",
-          "link": "https://www.ebay.de/itm/840070978262?_skw=Adobe+Acrobat+Standard&hash=itemc39821dad6%3Ag%3AJO8AAeSwXYNq4vTH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "208,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=42643680047&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "wacom-movinkpad-pro-14-zeichentablet",
-      "name": "Wacom MovinkPad Pro 14 Zeichentablet",
-      "brand": "Wacom",
-      "kategorie": "grafiktabletts",
-      "image": "https://media2.nbb-cdn.de/images/products/MovinkPad_Pro_14_Front_right_with_pen_below_KV_88f2.jpg?size=400",
+      "id": "ntb-erazer-scout-15-e1-30039767",
+      "name": "NTB ERAZER Scout 15 E1 30039767",
+      "brand": "NTB",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/Ecom_ERAZER_Scout_17_E1_Front_8431.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
           "price": "999,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=43079983000&a=3110253&m=11348"
+          "link": "https://www.awin1.com/pclick.php?p=41950943252&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "xmg-apex-16",
-      "name": "XMG APEX 16",
-      "brand": "XMG",
+      "id": "hp-zbook-x-g1i-16-c8bc7es",
+      "name": "HP ZBook X G1i 16 C8BC7ES",
+      "brand": "HP",
       "kategorie": "laptops",
-      "image": "https://media2.nbb-cdn.de/images/products/1128081/XMG-APEX-16-M26_01.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_ZBook_X_G1i_16_in_Mobile_Workstation_PC_WKS_MeteorSilver_T_IRcam_nonODD_FPR_SCREEN_CoreSet_WhiteBG_FrontOpen_v1_d889.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2789,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46415521001&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-rt-ax57-go-wifi-6-travel-router-ax3000",
-      "name": "ASUS RT-AX57 Go WiFi 6 Travel Router AX3000",
-      "brand": "ASUS",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-RT-AX57-Go-Front-Right_83a7.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "54,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=43825284621&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "73,11 €",
-          "link": "https://www.ebay.de/itm/198485791099?_skw=ASUS+RT-AX57+Go+WiFi+6+Travel+Router+AX3000&hash=item2e36acd17b%3Ag%3AvccAAeSw9IJq9dOT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "targus-classic-15-16-briefcase-black",
-      "name": "Targus® Classic 15-16\" Briefcase Black",
-      "brand": "Targus®",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/1129578/CN415GL_FRONT_1024x1024.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "19,28 €",
-          "link": "https://www.awin1.com/pclick.php?p=46554328713&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "75,00 €",
-          "link": "https://www.ebay.de/itm/206633789647?_skw=Targus%C2%AE+Classic+15-16%22+Briefcase+Black&hash=item301c5568cf%3Ag%3Ad1sAAeSw0bVq06Tf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "ubiquiti-unas-pro-nas-7-bay-0-7-hdd-ssd",
-      "name": "Ubiquiti UNAS Pro NAS 7-Bay 0/7 HDD/SSD",
-      "brand": "Ubiquiti",
-      "kategorie": "nas",
-      "image": "https://media2.nbb-cdn.de/images/products/Ubiquiti-UNAS-Pro-Top-Front_218e.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "589,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=40228911558&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "aoc-gaming-q27g3xmn",
-      "name": "AOC Gaming Q27G3XMN",
-      "brand": "AOC",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/Q27G3XMN_BK_F-big_323f.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "219,99 €",
-          "link": "https://www.ebay.de/itm/840120649820?_skw=AOC+Gaming+Q27G3XMN&hash=itemc39b17c85c%3Ag%3A0nkAAeSw4V9q6wiq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "254,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=39918957762&a=3110253&m=11348"
+          "price": "3299,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=42961602933&a=3110253&m=11348"
         }
       ]
     }
