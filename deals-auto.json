@@ -2,6 +2,15 @@
   "stand": "2026-11-18",
   "deals": [
     {
+      "vorher": "402,41 €",
+      "rabatt": 60,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "intel-core-i5-10400",
+      "shop": "notebooksbilliger.de",
+      "preis": "159,00 €"
+    },
+    {
       "vorher": "229,00 €",
       "rabatt": 58,
       "seit": "2026-11-17",
@@ -11,6 +20,24 @@
       "preis": "95,97 €"
     },
     {
+      "vorher": "57,19 €",
+      "rabatt": 56,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "rivacase-8460-aquamarine",
+      "shop": "notebooksbilliger.de",
+      "preis": "25,00 €"
+    },
+    {
+      "vorher": "73,78 €",
+      "rabatt": 53,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "dicota-backpack-seeker-ii-13-16",
+      "shop": "notebooksbilliger.de",
+      "preis": "35,00 €"
+    },
+    {
       "vorher": "1199,00 €",
       "rabatt": 53,
       "seit": "2026-11-16",
@@ -18,6 +45,24 @@
       "id": "mova-mobius-60-schwarz",
       "shop": "notebooksbilliger.de",
       "preis": "569,00 €"
+    },
+    {
+      "vorher": "30,99 €",
+      "rabatt": 52,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "rivacase-8435-schwarz-beschichteter-eco",
+      "shop": "notebooksbilliger.de",
+      "preis": "15,00 €"
+    },
+    {
+      "vorher": "19,99 €",
+      "rabatt": 50,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "rivacase-ultraleichter-rucksack-24l",
+      "shop": "notebooksbilliger.de",
+      "preis": "10,00 €"
     },
     {
       "vorher": "1389,00 €",
@@ -54,6 +99,24 @@
       "id": "brennenstuhl-verlaengerungskabel-3m-extraflacher-schutzkonta",
       "shop": "notebooksbilliger.de",
       "preis": "4,95 €"
+    },
+    {
+      "vorher": "86,28 €",
+      "rabatt": 42,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "dicota-eco-multi-roller-scale-14-15-6",
+      "shop": "notebooksbilliger.de",
+      "preis": "50,00 €"
+    },
+    {
+      "vorher": "26,07 €",
+      "rabatt": 42,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "rivacase-8335-schwarz",
+      "shop": "notebooksbilliger.de",
+      "preis": "15,00 €"
     },
     {
       "vorher": "20,63 €",
@@ -342,6 +405,15 @@
       "id": "be-quiet-pure-rock-slim-3",
       "shop": "notebooksbilliger.de",
       "preis": "17,90 €"
+    },
+    {
+      "vorher": "308,99 €",
+      "rabatt": 28,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "thinkpad-thunderbolt-4-dock-workstation-dock",
+      "shop": "notebooksbilliger.de",
+      "preis": "222,00 €"
     },
     {
       "vorher": "219,99 €",
@@ -686,6 +758,15 @@
       "preis": "382,99 €"
     },
     {
+      "vorher": "640,99 €",
+      "rabatt": 23,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-11-02",
+      "id": "asus-pro-ws-2200w-platin",
+      "shop": "notebooksbilliger.de",
+      "preis": "493,71 €"
+    },
+    {
       "vorher": "102,66 €",
       "rabatt": 22,
       "seit": "2026-11-15",
@@ -758,6 +839,15 @@
       "preis": "499,00 €"
     },
     {
+      "vorher": "188,99 €",
+      "rabatt": 21,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "canon-pixma-tr7650",
+      "shop": "notebooksbilliger.de",
+      "preis": "149,00 €"
+    },
+    {
       "vorher": "69,90 €",
       "rabatt": 21,
       "seit": "2026-11-15",
@@ -803,6 +893,15 @@
       "preis": "59,90 €"
     },
     {
+      "vorher": "424,99 €",
+      "rabatt": 21,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "netgear-nighthawk-m3-mobiler-hotspot-5g",
+      "shop": "notebooksbilliger.de",
+      "preis": "336,99 €"
+    },
+    {
       "vorher": "49,99 €",
       "rabatt": 20,
       "seit": "2026-11-16",
@@ -828,6 +927,15 @@
       "id": "synology-bc800z",
       "shop": "notebooksbilliger.de",
       "preis": "399,00 €"
+    },
+    {
+      "vorher": "749,99 €",
+      "rabatt": 20,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "netgear-nighthawk-m7-pro-5g-wifi-7-mobiler",
+      "shop": "notebooksbilliger.de",
+      "preis": "599,99 €"
     },
     {
       "vorher": "249,00 €",
@@ -965,15 +1073,6 @@
       "preis": "89,90 €"
     },
     {
-      "vorher": "157,27 €",
-      "rabatt": 18,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "gigabyte-b850-eagle-wifi6e",
-      "shop": "notebooksbilliger.de",
-      "preis": "128,72 €"
-    },
-    {
       "vorher": "54,70 €",
       "rabatt": 18,
       "seit": "2026-11-15",
@@ -990,6 +1089,15 @@
       "id": "asus-rt-ax57-go-wifi-6-travel-router-ax3000",
       "shop": "notebooksbilliger.de",
       "preis": "54,90 €"
+    },
+    {
+      "vorher": "544,90 €",
+      "rabatt": 18,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "netgear-nighthawk-m7-mobiler-hotspot-5g",
+      "shop": "notebooksbilliger.de",
+      "preis": "447,90 €"
     },
     {
       "vorher": "46,32 €",
@@ -1035,6 +1143,15 @@
       "id": "gigabyte-m27q2-qd",
       "shop": "notebooksbilliger.de",
       "preis": "179,00 €"
+    },
+    {
+      "vorher": "240,99 €",
+      "rabatt": 17,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "lenovo-thinkpad-thunderbolt-4-smart-dock-gen2-135w",
+      "shop": "notebooksbilliger.de",
+      "preis": "199,00 €"
     },
     {
       "vorher": "59,99 €",
@@ -1107,6 +1224,15 @@
       "id": "verbatim-share-my-screen-usb-c-kabelloser-display-adapter",
       "shop": "notebooksbilliger.de",
       "preis": "49,99 €"
+    },
+    {
+      "vorher": "29,99 €",
+      "rabatt": 17,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "logitech-k270",
+      "shop": "notebooksbilliger.de",
+      "preis": "24,99 €"
     },
     {
       "vorher": "29,66 €",
@@ -1226,6 +1352,15 @@
       "preis": "149,99 €"
     },
     {
+      "vorher": "79,99 €",
+      "rabatt": 16,
+      "seit": "2026-11-16",
+      "vergleich_ab": "2026-10-28",
+      "id": "aqara-spatial-multi-sensor-fp400-kit",
+      "shop": "notebooksbilliger.de",
+      "preis": "66,99 €"
+    },
+    {
       "vorher": "139,89 €",
       "rabatt": 15,
       "seit": "2026-11-13",
@@ -1269,6 +1404,15 @@
       "id": "satechi-usb-c-4-in-1-slim-multiport-adapter-4k-space",
       "shop": "notebooksbilliger.de",
       "preis": "44,99 €"
+    },
+    {
+      "vorher": "129,99 €",
+      "rabatt": 15,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "canon-maxify-mb2750-4in1-tintenstrahl-multifunktionsdrucker",
+      "shop": "notebooksbilliger.de",
+      "preis": "109,99 €"
     },
     {
       "vorher": "879,00 €",
@@ -1442,13 +1586,13 @@
       "preis": "599,00 €"
     },
     {
-      "vorher": "119,00 €",
+      "vorher": "65,30 €",
       "rabatt": 14,
-      "seit": "2026-11-17",
+      "seit": "2026-11-18",
       "vergleich_ab": "2026-10-28",
-      "id": "teltonika-rut200-industrieller-mobilfunk-router-4g-lte",
+      "id": "asus-prime-a520m-r",
       "shop": "notebooksbilliger.de",
-      "preis": "101,93 €"
+      "preis": "55,90 €"
     },
     {
       "vorher": "69,99 €",
@@ -1595,15 +1739,6 @@
       "preis": "48,99 €"
     },
     {
-      "vorher": "217,63 €",
-      "rabatt": 13,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "samsung-s24d604uau",
-      "shop": "notebooksbilliger.de",
-      "preis": "190,41 €"
-    },
-    {
       "vorher": "499,90 €",
       "rabatt": 12,
       "seit": "2026-11-16",
@@ -1694,6 +1829,15 @@
       "preis": "107,50 €"
     },
     {
+      "vorher": "649,00 €",
+      "rabatt": 12,
+      "seit": "2026-11-16",
+      "vergleich_ab": "2026-10-28",
+      "id": "mova-z60-ultra-roller-complete-schwarz",
+      "shop": "notebooksbilliger.de",
+      "preis": "569,00 €"
+    },
+    {
       "vorher": "899,00 €",
       "rabatt": 11,
       "seit": "2026-11-16",
@@ -1739,6 +1883,15 @@
       "preis": "24,12 €"
     },
     {
+      "vorher": "314,99 €",
+      "rabatt": 11,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "lenovo-thinkpad-thunderbolt-5-smart-dock-265w",
+      "shop": "notebooksbilliger.de",
+      "preis": "279,99 €"
+    },
+    {
       "vorher": "89,99 €",
       "rabatt": 11,
       "seit": "2026-11-16",
@@ -1773,15 +1926,6 @@
       "id": "corsair-frame-4000d-wood-rs-white-oak",
       "shop": "notebooksbilliger.de",
       "preis": "119,90 €"
-    },
-    {
-      "vorher": "139,59 €",
-      "rabatt": 11,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "fractal-design-define-r5-black",
-      "shop": "notebooksbilliger.de",
-      "preis": "124,77 €"
     },
     {
       "vorher": "19,99 €",
@@ -1982,6 +2126,15 @@
       "preis": "449,00 €"
     },
     {
+      "vorher": "699,00 €",
+      "rabatt": 10,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-250r-g10-c8tg7es",
+      "shop": "notebooksbilliger.de",
+      "preis": "629,00 €"
+    },
+    {
       "vorher": "19,99 €",
       "rabatt": 10,
       "seit": "2026-11-17",
@@ -2007,6 +2160,15 @@
       "id": "d-link-dwr-933w-4g-lte-plus-wifi-6-mobiler-hotspot",
       "shop": "notebooksbilliger.de",
       "preis": "72,90 €"
+    },
+    {
+      "vorher": "364,89 €",
+      "rabatt": 10,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "fritz-7690-plus-fritz-repeater-1200-ax-bundle",
+      "shop": "notebooksbilliger.de",
+      "preis": "328,90 €"
     },
     {
       "vorher": "209,00 €",
@@ -2063,6 +2225,24 @@
       "preis": "230,83 €"
     },
     {
+      "vorher": "9,99 €",
+      "rabatt": 10,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "samsung-by-mobeen-tempered-glass",
+      "shop": "notebooksbilliger.de",
+      "preis": "8,99 €"
+    },
+    {
+      "vorher": "33,21 €",
+      "rabatt": 10,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "aqara-wall-outlet-h2",
+      "shop": "notebooksbilliger.de",
+      "preis": "29,99 €"
+    },
+    {
       "vorher": "1259,00 €",
       "rabatt": 10,
       "seit": "2026-11-17",
@@ -2108,15 +2288,6 @@
       "preis": "709,90 €"
     },
     {
-      "vorher": "124,37 €",
-      "rabatt": 9,
-      "seit": "2026-11-16",
-      "vergleich_ab": "2026-10-28",
-      "id": "intel-core-i3-14100",
-      "shop": "notebooksbilliger.de",
-      "preis": "112,83 €"
-    },
-    {
       "vorher": "64,90 €",
       "rabatt": 9,
       "seit": "2026-11-15",
@@ -2151,15 +2322,6 @@
       "id": "satechi-usb-c-6-in-1-slim-multiport-adapter-space-grey",
       "shop": "notebooksbilliger.de",
       "preis": "49,99 €"
-    },
-    {
-      "vorher": "348,99 €",
-      "rabatt": 9,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "xerox-c303a-farb-multifunktionsdrucker",
-      "shop": "notebooksbilliger.de",
-      "preis": "319,00 €"
     },
     {
       "vorher": "2199,99 €",
@@ -2243,13 +2405,13 @@
       "preis": "129,67 €"
     },
     {
-      "vorher": "26,69 €",
+      "vorher": "10,95 €",
       "rabatt": 9,
-      "seit": "2026-11-17",
+      "seit": "2026-11-18",
       "vergleich_ab": "2026-10-28",
-      "id": "asus-usb-ax55-nano-wlan-adapter-ax1800-dual-band",
+      "id": "intenso-ultra-line-typ-a-16gb-usb-stick-mit-schutzkappe",
       "shop": "notebooksbilliger.de",
-      "preis": "24,27 €"
+      "preis": "9,95 €"
     },
     {
       "vorher": "489,00 €",
@@ -2324,6 +2486,15 @@
       "preis": "549,00 €"
     },
     {
+      "vorher": "25,99 €",
+      "rabatt": 8,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "dell-netzadapter-mit-netzkabel-65-watt",
+      "shop": "notebooksbilliger.de",
+      "preis": "23,80 €"
+    },
+    {
       "vorher": "151,99 €",
       "rabatt": 8,
       "seit": "2026-11-17",
@@ -2387,15 +2558,6 @@
       "preis": "73,10 €"
     },
     {
-      "vorher": "19499,00 €",
-      "rabatt": 8,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "nvidia-rtx-pro-6000-blackwell-workstation-edition",
-      "shop": "notebooksbilliger.de",
-      "preis": "17999,00 €"
-    },
-    {
       "vorher": "58,99 €",
       "rabatt": 8,
       "seit": "2026-11-14",
@@ -2421,15 +2583,6 @@
       "id": "ubiquiti-g5-professional",
       "shop": "notebooksbilliger.de",
       "preis": "359,00 €"
-    },
-    {
-      "vorher": "364,89 €",
-      "rabatt": 8,
-      "seit": "2026-11-18",
-      "vergleich_ab": "2026-10-28",
-      "id": "fritz-7690-plus-fritz-repeater-1200-ax-bundle",
-      "shop": "notebooksbilliger.de",
-      "preis": "333,99 €"
     },
     {
       "vorher": "169,00 €",
@@ -2459,6 +2612,15 @@
       "preis": "205,27 €"
     },
     {
+      "vorher": "64,99 €",
+      "rabatt": 8,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "adobe-firefly-pro",
+      "shop": "notebooksbilliger.de",
+      "preis": "59,99 €"
+    },
+    {
       "vorher": "737,49 €",
       "rabatt": 8,
       "seit": "2026-11-17",
@@ -2484,15 +2646,6 @@
       "id": "gigabyte-gs25f2a",
       "shop": "notebooksbilliger.de",
       "preis": "104,90 €"
-    },
-    {
-      "vorher": "35,99 €",
-      "rabatt": 8,
-      "seit": "2026-11-12",
-      "vergleich_ab": "2026-10-29",
-      "id": "canon-pgi-555pgbk-xxl",
-      "shop": "notebooksbilliger.de",
-      "preis": "32,99 €"
     },
     {
       "vorher": "236,99 €",
@@ -2666,6 +2819,15 @@
       "preis": "11,99 €"
     },
     {
+      "vorher": "30,19 €",
+      "rabatt": 7,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "dicota-skin-urban-13-navy",
+      "shop": "notebooksbilliger.de",
+      "preis": "27,99 €"
+    },
+    {
       "vorher": "1499,00 €",
       "rabatt": 7,
       "seit": "2026-11-17",
@@ -2754,15 +2916,6 @@
       "id": "synology-rt6600ax-wifi-6-router-ax6600-tri-band",
       "shop": "notebooksbilliger.de",
       "preis": "249,00 €"
-    },
-    {
-      "vorher": "209,00 €",
-      "rabatt": 7,
-      "seit": "2026-11-11",
-      "vergleich_ab": "2026-10-28",
-      "id": "adata-legend-900-pro-heatsink",
-      "shop": "notebooksbilliger.de",
-      "preis": "194,90 €"
     },
     {
       "vorher": "67,49 €",
@@ -2918,6 +3071,15 @@
       "preis": "499,90 €"
     },
     {
+      "vorher": "349,00 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "lg-34u650a-b-ultra-wide",
+      "shop": "notebooksbilliger.de",
+      "preis": "329,00 €"
+    },
+    {
       "vorher": "302,94 €",
       "rabatt": 6,
       "seit": "2026-11-16",
@@ -2936,6 +3098,24 @@
       "preis": "65,90 €"
     },
     {
+      "vorher": "35,32 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "thermaltake-astria-200-argb-white",
+      "shop": "notebooksbilliger.de",
+      "preis": "33,20 €"
+    },
+    {
+      "vorher": "319,00 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "xerox-c303a-farb-multifunktionsdrucker",
+      "shop": "notebooksbilliger.de",
+      "preis": "299,00 €"
+    },
+    {
       "vorher": "1198,30 €",
       "rabatt": 6,
       "seit": "2026-11-17",
@@ -2943,15 +3123,6 @@
       "id": "captiva-workstation-i74-670-intel-core-i7-12700",
       "shop": "notebooksbilliger.de",
       "preis": "1130,03 €"
-    },
-    {
-      "vorher": "1189,00 €",
-      "rabatt": 6,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "captiva-workstation-i74-685-intel-core-i7-12700k",
-      "shop": "notebooksbilliger.de",
-      "preis": "1119,43 €"
     },
     {
       "vorher": "1699,99 €",
@@ -3050,7 +3221,7 @@
       "vergleich_ab": "2026-10-28",
       "id": "thermaltake-stage-450-tg-argb",
       "shop": "notebooksbilliger.de",
-      "preis": "112,61 €"
+      "preis": "112,41 €"
     },
     {
       "vorher": "132,21 €",
@@ -3222,6 +3393,24 @@
       "id": "corsair-vengeance-rgb-grau-32gb-kit",
       "shop": "notebooksbilliger.de",
       "preis": "561,99 €"
+    },
+    {
+      "vorher": "169,98 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "2er-pack-fritz-repeater-1200-ax-wifi-6",
+      "shop": "notebooksbilliger.de",
+      "preis": "159,80 €"
+    },
+    {
+      "vorher": "84,99 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "fritz-1200-ax-wlan-erweiterung",
+      "shop": "notebooksbilliger.de",
+      "preis": "79,90 €"
     },
     {
       "vorher": "504,83 €",
@@ -3413,6 +3602,15 @@
       "preis": "1535,12 €"
     },
     {
+      "vorher": "164,90 €",
+      "rabatt": 6,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "corsair-warthog-airflow-olive-drab",
+      "shop": "notebooksbilliger.de",
+      "preis": "154,90 €"
+    },
+    {
       "vorher": "689,00 €",
       "rabatt": 6,
       "seit": "2026-11-12",
@@ -3474,6 +3672,24 @@
       "id": "iiyama-g-master-gcb3280qsu-b2",
       "shop": "notebooksbilliger.de",
       "preis": "209,00 €"
+    },
+    {
+      "vorher": "209,90 €",
+      "rabatt": 5,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "philips-evnia-34m2c3500l",
+      "shop": "notebooksbilliger.de",
+      "preis": "199,00 €"
+    },
+    {
+      "vorher": "442,79 €",
+      "rabatt": 5,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "intel-core-i9-12900f",
+      "shop": "notebooksbilliger.de",
+      "preis": "422,00 €"
     },
     {
       "vorher": "199,99 €",
@@ -3692,6 +3908,15 @@
       "preis": "66,53 €"
     },
     {
+      "vorher": "125,45 €",
+      "rabatt": 5,
+      "seit": "2026-11-18",
+      "vergleich_ab": "2026-10-28",
+      "id": "d-link-m95-wifi-7-router-be9500-dual-band",
+      "shop": "notebooksbilliger.de",
+      "preis": "119,17 €"
+    },
+    {
       "vorher": "299,00 €",
       "rabatt": 5,
       "seit": "2026-11-17",
@@ -3708,15 +3933,6 @@
       "id": "teltonika-rut951-industrieller-mobilfunk-router-4g-lte",
       "shop": "notebooksbilliger.de",
       "preis": "207,27 €"
-    },
-    {
-      "vorher": "64,99 €",
-      "rabatt": 5,
-      "seit": "2026-11-18",
-      "vergleich_ab": "2026-10-28",
-      "id": "adobe-firefly-pro",
-      "shop": "notebooksbilliger.de",
-      "preis": "61,99 €"
     },
     {
       "vorher": "11,49 €",
@@ -3892,6 +4108,25 @@
   ],
   "angebote": [],
   "produkte": {
+    "intel-core-i5-10400": {
+      "id": "intel-core-i5-10400",
+      "name": "Intel Core i5-10400",
+      "brand": "Intel",
+      "kategorie": "cpu",
+      "image": "https://media2.nbb-cdn.de/images/products/Intel_I5_2_f7f5.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "94,49 €",
+          "link": "https://www.ebay.de/itm/298713753603?_skw=Intel+Core+i5-10400&hash=item458cba2803%3Ag%3ASUcAAeSw1Hpp%7EcC7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "159,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45948793327&a=3110253&m=11348"
+        }
+      ]
+    },
     "cherry-mx-8-2-tkl-wireless": {
       "id": "cherry-mx-8-2-tkl-wireless",
       "name": "Cherry MX 8.2 TKL Wireless",
@@ -3911,6 +4146,39 @@
         }
       ]
     },
+    "rivacase-8460-aquamarine": {
+      "id": "rivacase-8460-aquamarine",
+      "name": "Rivacase 8460 Aquamarine",
+      "brand": "Rivacase",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/rivacase/rivacase8460_aqua_1_a1cf.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "25,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41839988047&a=3110253&m=11348"
+        }
+      ]
+    },
+    "dicota-backpack-seeker-ii-13-16": {
+      "id": "dicota-backpack-seeker-ii-13-16",
+      "name": "Dicota Backpack SEEKER II 13-16",
+      "brand": "Dicota",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/D32119-RPET_03_9832.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "35,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=42478788671&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "145,00 €",
+          "link": "https://www.ebay.de/itm/298520371564?_skw=Dicota+Backpack+SEEKER+II+13-16&hash=item458133616c%3Ag%3AysEAAeSw5Vpqobaq&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m4tj5X7UpvkS4u5jzHrcA5bq8pg0Ho6lZUFIRmAWVwAXJIc7up89rPFmV6rdvsgFHS2PiAZr7fiFsLqkH20OOLvy92flofjGkiZ63Akq4x5yWX9MtYFoORUlXUuQlxUNEvPy0m7uWuU83O%2B1fFqyIaqmC1qFEvuTEU4FpQFUXDZBnQ%2BEqRtq0z6qlIkXSyqw7vvPLtTwtu8G%2BYeHwAfwKjjE%2FJ9AXlwJuFPUiyF8evbQjFdN9xEmGRY7E1fAId3GBS%2Fg4z16yIAMUpztuMJ85Jrknoz71528WEDJcKrtjLbWmu%2Bj2zNB5fZVrb0NlXETs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "mova-mobius-60-schwarz": {
       "id": "mova-mobius-60-schwarz",
       "name": "Mova Mobius 60 Schwarz",
@@ -3922,6 +4190,34 @@
           "name": "notebooksbilliger.de",
           "price": "569,00 €",
           "link": "https://www.awin1.com/pclick.php?p=44176651612&a=3110253&m=11348"
+        }
+      ]
+    },
+    "rivacase-8435-schwarz-beschichteter-eco": {
+      "id": "rivacase-8435-schwarz-beschichteter-eco",
+      "name": "Rivacase 8435 schwarz beschichteter ECO",
+      "brand": "Rivacase",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/843ddd2_0878.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "15,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=35184267759&a=3110253&m=11348"
+        }
+      ]
+    },
+    "rivacase-ultraleichter-rucksack-24l": {
+      "id": "rivacase-ultraleichter-rucksack-24l",
+      "name": "Rivacase Ultraleichter Rucksack 24L",
+      "brand": "Rivacase",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/5562_blue.4260403577851.ver02_4ec6.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "10,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253810743&a=3110253&m=11348"
         }
       ]
     },
@@ -3983,6 +4279,39 @@
           "name": "notebooksbilliger.de",
           "price": "4,95 €",
           "link": "https://www.awin1.com/pclick.php?p=36201166911&a=3110253&m=11348"
+        }
+      ]
+    },
+    "dicota-eco-multi-roller-scale-14-15-6": {
+      "id": "dicota-eco-multi-roller-scale-14-15-6",
+      "name": "Dicota Eco Multi Roller SCALE 14-15.6\"",
+      "brand": "Dicota",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/Screenshot_2024-05-07_at_14-58-31_Laptop_Trolley_Eco_Multi_SCALE_14-15.6_edc6.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "50,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=40800236721&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "156,00 €",
+          "link": "https://www.ebay.de/itm/900048893950?_skw=Dicota+Eco+Multi+Roller+SCALE+14-15.6%22&hash=itemd18f1837fe%3Ag%3AGKgAAeSw-rFq41I3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "rivacase-8335-schwarz": {
+      "id": "rivacase-8335-schwarz",
+      "name": "Rivacase 8335 Schwarz",
+      "brand": "Rivacase",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/Rivacase_8335_schwarz_1_38d0.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "15,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41839988051&a=3110253&m=11348"
         }
       ]
     },
@@ -4551,6 +4880,25 @@
           "name": "eBay",
           "price": "28,27 €",
           "link": "https://www.ebay.de/itm/267761175403?_skw=be+quiet%21+PURE+ROCK+SLIM+3&hash=item3e57cf4b6b%3Ag%3AXN0AAeSwuQVqi%7EDD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "thinkpad-thunderbolt-4-dock-workstation-dock": {
+      "id": "thinkpad-thunderbolt-4-dock-workstation-dock",
+      "name": "ThinkPad Thunderbolt 4 Dock Workstation Dock",
+      "brand": "ThinkPad",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/612743bf2c0e5c165fcd46e9-900Wx900H-820Wx820H_de5f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "222,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253814955&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "268,26 €",
+          "link": "https://www.ebay.de/itm/307273386719?_skw=ThinkPad+Thunderbolt+4+Dock+Workstation+Dock&hash=item478aebcadf%3Ag%3AE8IAAeSwPzBq8QJ8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5181,6 +5529,20 @@
         }
       ]
     },
+    "asus-pro-ws-2200w-platin": {
+      "id": "asus-pro-ws-2200w-platin",
+      "name": "ASUS Pro WS 2200W PLATIN",
+      "brand": "ASUS",
+      "kategorie": "netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/WS-2200W_07_1834.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "493,71 €",
+          "link": "https://www.awin1.com/pclick.php?p=42991929259&a=3110253&m=11348"
+        }
+      ]
+    },
     "be-quiet-pure-base-501-lx-black": {
       "id": "be-quiet-pure-base-501-lx-black",
       "name": "be quiet! PURE BASE 501 LX Black",
@@ -5328,6 +5690,25 @@
         }
       ]
     },
+    "canon-pixma-tr7650": {
+      "id": "canon-pixma-tr7650",
+      "name": "Canon PIXMA TR7650",
+      "brand": "Canon",
+      "kategorie": "drucker",
+      "image": "https://media2.nbb-cdn.de/images/products/pixma-tr7650-tintenstrahl-multifunktionssystem-vorderansicht_1786.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "149,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44347976761&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "176,80 €",
+          "link": "https://www.ebay.de/itm/336822213142?_skw=Canon+PIXMA+TR7650&hash=item4e6c2b1a16%3Ag%3AX70AAeSwpAppeIN5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "be-quiet-pure-base-501-airflow-window-white": {
       "id": "be-quiet-pure-base-501-airflow-window-white",
       "name": "be quiet! PURE BASE 501 Airflow Window White",
@@ -5418,6 +5799,25 @@
         }
       ]
     },
+    "netgear-nighthawk-m3-mobiler-hotspot-5g": {
+      "id": "netgear-nighthawk-m3-mobiler-hotspot-5g",
+      "name": "Netgear Nighthawk M3 Mobiler Hotspot 5G",
+      "brand": "Netgear",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Nighthawk-M3-Front_6a60.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "336,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44545302151&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "538,99 €",
+          "link": "https://www.ebay.de/itm/860118265532?_skw=Netgear+Nighthawk+M3+Mobiler+Hotspot+5G&hash=itemc8430b2ebc%3Ag%3ABy4AAeSwLCpq7Y3u&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lhSRLOzbBapoDIQmL4cKlleRVuFvW3AKfm2NP5AAqd7y1e2Ihclj%2FhZEWMaVU2oU4G7BgkcPUujTS0IW6seFAhwYuSQMF3%2BPFZNyzAjydZT8k8F1c7XiwS%2B4b8WWF5KWbzHDQxT5kWrSd%2FAUHhr9z4qfGJ%2Bl%2F9N2IgxsDhMJBWiHxwgoepiapINLd%2F7vPeYSjA%2BQupJCVGYNRwBVHghLDyRS0bacm37%2BfFGwOhSpqLIP2SeRDftTjdHlik%2BagDZtVkmpSyTZEu4%2BI4kQrOUnblD18jwqNgNDKAcrz9vBXUadfJ6hVU9kmJF4ipp7YIbeZ1jPHtfJkqYazTjzMfC1XL&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "aqara-radiator-thermostat-w600": {
       "id": "aqara-radiator-thermostat-w600",
       "name": "Aqara Radiator Thermostat W600",
@@ -5462,6 +5862,25 @@
           "name": "notebooksbilliger.de",
           "price": "399,00 €",
           "link": "https://www.awin1.com/pclick.php?p=43214949003&a=3110253&m=11348"
+        }
+      ]
+    },
+    "netgear-nighthawk-m7-pro-5g-wifi-7-mobiler": {
+      "id": "netgear-nighthawk-m7-pro-5g-wifi-7-mobiler",
+      "name": "Netgear Nighthawk M7 Pro 5G WiFi 7 Mobiler",
+      "brand": "Netgear",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Nighthawk-M7-Pro-Front_5e60.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "599,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44545302154&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "949,00 €",
+          "link": "https://www.ebay.de/itm/366486053437?_skw=Netgear+Nighthawk+M7+Pro+5G+WiFi+7+Mobiler&hash=item555445623d%3Ag%3ABBgAAeSw2bRqMvFy&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5725,25 +6144,6 @@
         }
       ]
     },
-    "gigabyte-b850-eagle-wifi6e": {
-      "id": "gigabyte-b850-eagle-wifi6e",
-      "name": "Gigabyte B850 EAGLE WIFI6E",
-      "brand": "Gigabyte",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/B850-EAGLE-WIFI6E-Rev10_b8e1.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "128,72 €",
-          "link": "https://www.awin1.com/pclick.php?p=40066537332&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "181,62 €",
-          "link": "https://www.ebay.de/itm/298494103049?_skw=Gigabyte+B850+EAGLE+WIFI6E&hash=item457fa28e09%3Ag%3AFqMAAeSwgiFqw4-4&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "be-quiet-system-power-11-550w": {
       "id": "be-quiet-system-power-11-550w",
       "name": "be quiet! SYSTEM POWER 11 550W",
@@ -5779,6 +6179,25 @@
           "name": "eBay",
           "price": "73,11 €",
           "link": "https://www.ebay.de/itm/198485791099?_skw=ASUS+RT-AX57+Go+WiFi+6+Travel+Router+AX3000&hash=item2e36acd17b%3Ag%3AvccAAeSw9IJq9dOT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "netgear-nighthawk-m7-mobiler-hotspot-5g": {
+      "id": "netgear-nighthawk-m7-mobiler-hotspot-5g",
+      "name": "Netgear Nighthawk M7 Mobiler Hotspot 5G",
+      "brand": "Netgear",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/Nighthawk-M7-Hero_b7e2.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "447,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44545302153&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "538,99 €",
+          "link": "https://www.ebay.de/itm/860118265532?_skw=Netgear+Nighthawk+M7+Mobiler+Hotspot+5G&hash=itemc8430b2ebc%3Ag%3ABy4AAeSwLCpq7Y3u&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7lhSRLOzbBapoDIQmL4cKlleRVuFvW3AKfm2NP5AAqd7y1e2Ihclj%2FhZEWMaVU2oU4G7BgkcPUujTS0IW6seFAhwYuSQMF3%2BPFZNyzAjydZT8k8F1c7XiwS%2B4b8WWF5KWbkvcjOv%2BQ0zoG4soBIu4EKMbkdjKDoptEvxICAmoksUgEd5kZEXpcKHfGyLRgES84YInXnR%2BTjXfh4AHkkxu6XEazTDMOG1QsMqWGwHSlr2muZHea9Krzp42HBiHYP93ER7qFeQCYScuZNF4hISrgeZm1ixCJuet9wtnZL5ksWSrBOmOgTWiH%2FKrT%2BNhxI0qwA%2BfTJRjDsc%2FQqGQO%2Fu4A0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5859,6 +6278,20 @@
           "name": "eBay",
           "price": "215,00 €",
           "link": "https://www.ebay.de/itm/406223061893?_skw=Gigabyte+M27Q2+QD&hash=item5e94c80385%3Ag%3AbzsAAeSw4iFoy%7EE7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "lenovo-thinkpad-thunderbolt-4-smart-dock-gen2-135w": {
+      "id": "lenovo-thinkpad-thunderbolt-4-smart-dock-gen2-135w",
+      "name": "Lenovo ThinkPad Thunderbolt 4 Smart Dock Gen2 135W",
+      "brand": "Lenovo",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/Lenovo_ThinkPad_Thunderbolt_4_Smart_Dock_Gen2_135W_6_13ea.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "199,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=42569557861&a=3110253&m=11348"
         }
       ]
     },
@@ -5991,6 +6424,25 @@
           "name": "notebooksbilliger.de",
           "price": "49,99 €",
           "link": "https://www.awin1.com/pclick.php?p=41151260332&a=3110253&m=11348"
+        }
+      ]
+    },
+    "logitech-k270": {
+      "id": "logitech-k270",
+      "name": "Logitech K270",
+      "brand": "Logitech",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/LogitechK270_db4c.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "16,90 €",
+          "link": "https://www.ebay.de/itm/405327949822?_skw=Logitech+K270&hash=item5e5f6daffe%3Ag%3Aef4AAOSw%7ENNnKUj2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "24,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253820535&a=3110253&m=11348"
         }
       ]
     },
@@ -6221,6 +6673,20 @@
         }
       ]
     },
+    "aqara-spatial-multi-sensor-fp400-kit": {
+      "id": "aqara-spatial-multi-sensor-fp400-kit",
+      "name": "Aqara Spatial Multi-Sensor FP400 Kit",
+      "brand": "Aqara",
+      "kategorie": "heimautomatisierung",
+      "image": "https://media2.nbb-cdn.de/images/products/Front_1.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "66,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46336485026&a=3110253&m=11348"
+        }
+      ]
+    },
     "gigabyte-g27q20t": {
       "id": "gigabyte-g27q20t",
       "name": "Gigabyte G27Q20T",
@@ -6308,6 +6774,25 @@
           "name": "eBay",
           "price": "61,12 €",
           "link": "https://www.ebay.de/itm/357633007298?_skw=Satechi+USB-C+4-in-1+Slim+Multiport+Adapter+4K+Space&hash=item5344969ec2%3Ag%3AnnMAAeSwhPJqm3v8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "canon-maxify-mb2750-4in1-tintenstrahl-multifunktionsdrucker": {
+      "id": "canon-maxify-mb2750-4in1-tintenstrahl-multifunktionsdrucker",
+      "name": "Canon MAXIFY MB2750 4in1 Tintenstrahl-Multifunktionsdrucker",
+      "brand": "Canon",
+      "kategorie": "drucker",
+      "image": "https://media2.nbb-cdn.de/images/products/0958c008-maxify-mb2750-1-67ebb5d318c9e-removebg-preview_9da4.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "109,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41102395542&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "127,78 €",
+          "link": "https://www.ebay.de/itm/366674309187?_skw=Canon+MAXIFY+MB2750+4in1+Tintenstrahl-Multifunktionsdrucker&hash=item555f7df043%3Ag%3AopwAAeSwV7Vq-ZJ7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6562,6 +7047,11 @@
           "name": "notebooksbilliger.de",
           "price": "899,00 €",
           "link": "https://www.awin1.com/pclick.php?p=45988230409&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "1202,00 €",
+          "link": "https://www.ebay.de/itm/900094295827?_skw=MSI+PRO+MAX+27P+Z+8MG-016DE+All-in-One+PC&hash=itemd191ccff13%3Ag%3A71IAAeSwI2Jq-idG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6617,17 +7107,22 @@
         }
       ]
     },
-    "teltonika-rut200-industrieller-mobilfunk-router-4g-lte": {
-      "id": "teltonika-rut200-industrieller-mobilfunk-router-4g-lte",
-      "name": "Teltonika RUT200 Industrieller Mobilfunk-Router 4G LTE",
-      "brand": "Teltonika",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/Teltronika-RUT200-Top-Left.jpg?size=400",
+    "asus-prime-a520m-r": {
+      "id": "asus-prime-a520m-r",
+      "name": "ASUS Prime A520M-R",
+      "brand": "ASUS",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/1-PRIME_A520M-R-2D_0998.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "101,93 €",
-          "link": "https://www.awin1.com/pclick.php?p=45647950771&a=3110253&m=11348"
+          "price": "55,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=46415518601&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "64,22 €",
+          "link": "https://www.ebay.de/itm/198736338397?_skw=ASUS+Prime+A520M-R&hash=item2e459bdddd%3Ag%3AfJAAAeSwI-dq2fQj&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6900,20 +7395,6 @@
         }
       ]
     },
-    "samsung-s24d604uau": {
-      "id": "samsung-s24d604uau",
-      "name": "Samsung S24D604UAU",
-      "brand": "Samsung",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/ce032136cf99dd087c200c22ce964023bbc9a333_329e.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "190,41 €",
-          "link": "https://www.awin1.com/pclick.php?p=42851003176&a=3110253&m=11348"
-        }
-      ]
-    },
     "samsung-odyssey-g7-g75f-s37fg756eu": {
       "id": "samsung-odyssey-g7-g75f-s37fg756eu",
       "name": "Samsung Odyssey G7 G75F S37FG756EU",
@@ -7074,6 +7555,20 @@
         }
       ]
     },
+    "mova-z60-ultra-roller-complete-schwarz": {
+      "id": "mova-z60-ultra-roller-complete-schwarz",
+      "name": "Mova Z60 Ultra Roller Complete Schwarz",
+      "brand": "Mova",
+      "kategorie": "staubsauger",
+      "image": "https://media2.nbb-cdn.de/images/products/Mova-Z60-Ultra-Hero_450e.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "569,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=42276250796&a=3110253&m=11348"
+        }
+      ]
+    },
     "lg-39gs95qe-b": {
       "id": "lg-39gs95qe-b",
       "name": "LG UltraGear 39GS95QE-B",
@@ -7149,6 +7644,25 @@
         }
       ]
     },
+    "lenovo-thinkpad-thunderbolt-5-smart-dock-265w": {
+      "id": "lenovo-thinkpad-thunderbolt-5-smart-dock-265w",
+      "name": "Lenovo ThinkPad Thunderbolt 5 Smart Dock 265W",
+      "brand": "Lenovo",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/Lenovo_ThinkPad_Thunderbolt_5_Smart_Dock_265W_40BA0265EU_2_cf49.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "279,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=42569557862&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "337,00 €",
+          "link": "https://www.ebay.de/itm/287350241503?_skw=Lenovo+ThinkPad+Thunderbolt+5+Smart+Dock+265W&hash=item42e768b8df%3Ag%3Ar8sAAeSw08Zq28Di&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "satechi-type-c-multi-port-hub-4k-ethernet-v2-silver": {
       "id": "satechi-type-c-multi-port-hub-4k-ethernet-v2-silver",
       "name": "Satechi Type-C Multi-Port Hub 4K Ethernet V2 silver",
@@ -7207,20 +7721,6 @@
           "name": "notebooksbilliger.de",
           "price": "119,90 €",
           "link": "https://www.awin1.com/pclick.php?p=44432880219&a=3110253&m=11348"
-        }
-      ]
-    },
-    "fractal-design-define-r5-black": {
-      "id": "fractal-design-define-r5-black",
-      "name": "Fractal Design Define R5 Black",
-      "brand": "Fractal",
-      "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/Fractal_Define_R5_1_81b2.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "124,77 €",
-          "link": "https://www.awin1.com/pclick.php?p=40498130687&a=3110253&m=11348"
         }
       ]
     },
@@ -7306,11 +7806,6 @@
           "name": "notebooksbilliger.de",
           "price": "119,00 €",
           "link": "https://www.awin1.com/pclick.php?p=45699919622&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "142,90 €",
-          "link": "https://www.ebay.de/itm/307126340985?_skw=MSI+MPG+B550+Gaming+WIFI6E&hash=item4782280d79%3Ag%3A2pUAAeSweZpq4wvO&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kiz%2ByFF9I56np939CQan4LqUilFtBv7ChNkbolCR64XpgE458fngMR7ENDRfqMDGtNwB2Wa8XiOsYzfDCGYCHhrPf5ZHng9%2FtpskjCSno%2F8rP5ayyLt9ycFvtJyRXdR7UAMGEqR7Jqh8OftEJXjnReW31EaEyC3rbV4Pd64dhPB7gcXozi85eRcx17R7NTE7kY5GFFzaFY%2Fkk8KhXugMOo2S6tM9%2BRxVU0qs4GCQfRHyrKwsJCiDMk%2Bv86MTZE9W2ys0Sa%2BG%2FByszX3yDsgeYsBn2CIl1RSMfYRguN3iAz%2F5YkOMR%2BJdGT8xCSwQDt690%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7587,8 +8082,22 @@
         },
         {
           "name": "eBay",
-          "price": "499,00 €",
-          "link": "https://www.ebay.de/itm/880088509181?_skw=Acer+Swift+Lite+16&hash=itemcce95ceafd%3Ag%3AEVoAAeSwsNlq9DUa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "489,00 €",
+          "link": "https://www.ebay.de/itm/880088509181?_skw=Acer+Swift+Lite+16&hash=itemcce95ceafd%3Ag%3AlU4AAeSwlaJq%7EXDN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "hp-250r-g10-c8tg7es": {
+      "id": "hp-250r-g10-c8tg7es",
+      "name": "HP 250R G10 C8TG7ES",
+      "brand": "HP",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/HP_250R_255R_G10_DarkAsh_nonIRcam_Win11_Front_01_7f6b.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "629,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44700236639&a=3110253&m=11348"
         }
       ]
     },
@@ -7636,6 +8145,20 @@
           "name": "notebooksbilliger.de",
           "price": "72,90 €",
           "link": "https://www.awin1.com/pclick.php?p=46289428789&a=3110253&m=11348"
+        }
+      ]
+    },
+    "fritz-7690-plus-fritz-repeater-1200-ax-bundle": {
+      "id": "fritz-7690-plus-fritz-repeater-1200-ax-bundle",
+      "name": "FRITZ! 7690 + FRITZ!Repeater 1200 AX Bundle",
+      "brand": "FRITZ!",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/AVM-Fritzbox-7690-Repeater-1200AX_6683.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "328,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=38601405971&a=3110253&m=11348"
         }
       ]
     },
@@ -7743,6 +8266,39 @@
         }
       ]
     },
+    "samsung-by-mobeen-tempered-glass": {
+      "id": "samsung-by-mobeen-tempered-glass",
+      "name": "Samsung by Mobeen Tempered Glass",
+      "brand": "Samsung",
+      "kategorie": "displayschutz",
+      "image": "https://media2.nbb-cdn.de/images/products/SamsungTemperedGlass-GP-TTG556AEATW_6c02.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "7,95 €",
+          "link": "https://www.ebay.de/itm/306595637432?_skw=Samsung+by+Mobeen+Tempered+Glass&hash=item47628628b8%3Ag%3AGGUAAeSwh79pEwC2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "8,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44293164408&a=3110253&m=11348"
+        }
+      ]
+    },
+    "aqara-wall-outlet-h2": {
+      "id": "aqara-wall-outlet-h2",
+      "name": "Aqara Wall Outlet H2",
+      "brand": "Aqara",
+      "kategorie": "heimautomatisierung",
+      "image": "https://media2.nbb-cdn.de/images/products/Aqara-Wall-Outlet-H2-_EU_a890.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "29,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41887827398&a=3110253&m=11348"
+        }
+      ]
+    },
     "narwal-freo-20": {
       "id": "narwal-freo-20",
       "name": "Narwal Freo 20",
@@ -7790,7 +8346,7 @@
         },
         {
           "name": "eBay",
-          "price": "318,85 €",
+          "price": "273,85 €",
           "link": "https://www.ebay.de/itm/147656659827?_skw=MSI+MAG+345CQRDE&hash=item226105d373%3Ag%3A430AAeSwR-dqa3B0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -7811,25 +8367,6 @@
           "name": "notebooksbilliger.de",
           "price": "709,90 €",
           "link": "https://www.awin1.com/pclick.php?p=41904164033&a=3110253&m=11348"
-        }
-      ]
-    },
-    "intel-core-i3-14100": {
-      "id": "intel-core-i3-14100",
-      "name": "Intel Core i3-14100",
-      "brand": "Intel",
-      "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/Intel__Core__i3_14100_8325.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "96,56 €",
-          "link": "https://www.ebay.de/itm/307277632126?_skw=Intel+Core+i3-14100&hash=item478b2c927e%3Ag%3AKvAAAeSwr8Bq9Ilq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "112,83 €",
-          "link": "https://www.awin1.com/pclick.php?p=36933881502&a=3110253&m=11348"
         }
       ]
     },
@@ -7906,25 +8443,6 @@
           "name": "eBay",
           "price": "65,22 €",
           "link": "https://www.ebay.de/itm/327256195031?_skw=Satechi+USB-C+6-in-1+Slim+Multiport+Adapter+Space+Grey&hash=item4c31fd3fd7%3Ag%3AluAAAeSw2EBq9eGk&amdata=enc%3AAQALAAABIOf5zIIojhOf%2BkQK%2Bxzjn7n45Vwq9sHPwaJoYIXYHMhuZnt7QP60rb%2Ffwvur3Ivh01T4b3dgM9cDL%2FZ3Z58iRhzdOGWHTltZlOXCYXkrzx6WiMDPtzWAga6255GmLq%2BUh%2Fk6lEgkOayl5BDI1MAOfVrloPdCLyX4pp7l8TZujRo6b7ZVempQNjAFLoP42U%2BiPUnXSFo9ut7t6iF2aTmtIETVt5yaU%2BwAutOegdghxCIWbYrPeMm0BogobDnYG3%2BhSPMF%2FVlCeC7eANkD68QK0VEZ1Thxo4TWdQHOEv46NJEW0fY4QejApPeXWofW9KUZnTKNe70Vcm9vkJguaBIeY4CIvkgeYS8LxPa3HPFp%2BYpjcb5dCXktRi%2Bcayf8WGV%2BkQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "xerox-c303a-farb-multifunktionsdrucker": {
-      "id": "xerox-c303a-farb-multifunktionsdrucker",
-      "name": "Xerox C303a Farb- Multifunktionsdrucker",
-      "brand": "Xerox",
-      "kategorie": "drucker",
-      "image": "https://media2.nbb-cdn.de/images/products/Xerox_C303a_Farb-_Multifunktionsdrucker1.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "319,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45180363484&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "432,18 €",
-          "link": "https://www.ebay.de/itm/366742410378?_skw=Xerox+C303a+Farb-+Multifunktionsdrucker&hash=item55638d148a%3Ag%3AaIkAAeSwjqhq246c&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8011,14 +8529,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/AirPods_5_Hero_Horizontal_Print__USEN.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "136,09 €",
-          "link": "https://www.ebay.de/itm/336853599858?_skw=AirPods+5+mit+kabellosem+Ladecase&hash=item4e6e0a0672%3Ag%3AoAgAAeSwzrJq1xZN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
           "name": "notebooksbilliger.de",
           "price": "153,00 €",
           "link": "https://www.awin1.com/pclick.php?p=45953906195&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "168,78 €",
+          "link": "https://www.ebay.de/itm/198697223653?_skw=AirPods+5+mit+kabellosem+Ladecase&hash=item2e434705e5%3Ag%3AxRIAAeSw5uVq8Vqa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8074,22 +8592,17 @@
         }
       ]
     },
-    "asus-usb-ax55-nano-wlan-adapter-ax1800-dual-band": {
-      "id": "asus-usb-ax55-nano-wlan-adapter-ax1800-dual-band",
-      "name": "ASUS USB-AX55 Nano WLAN-Adapter AX1800 Dual-Band",
-      "brand": "ASUS",
-      "kategorie": "netzwerk-adapter",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-USB-AX55-Front_bfe0_1.jpg?size=400",
+    "intenso-ultra-line-typ-a-16gb-usb-stick-mit-schutzkappe": {
+      "id": "intenso-ultra-line-typ-a-16gb-usb-stick-mit-schutzkappe",
+      "name": "Intenso Ultra Line Typ-A 16GB USB-Stick Mit Schutzkappe",
+      "brand": "Intenso",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/Intenso_UltraLine_32GB_Main_7126.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "24,27 €",
-          "link": "https://www.awin1.com/pclick.php?p=45189559804&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "29,59 €",
-          "link": "https://www.ebay.de/itm/327253693781?_skw=ASUS+USB-AX55+Nano+WLAN-Adapter+AX1800+Dual-Band&hash=item4c31d71555%3Ag%3ANT0AAeSwhu1qycmS&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7n58dVpD0AG1O3p0K6uSj%2FgJnJw4Mn7%2B%2BsAnhWa94ssZiihE8oW88qnILCd9o426xRjZYjJ7VCO%2FaqdYt%2BeP72Vx%2BosyQYsr7gGAmPGpCG%2FiVty5VLIpOfaeiSPzzLGlynS1LFyYRxTuc9uqCIxhzHzQLqwGU1g4wxSzC7phjjO1LQTPvROSJBqN3Ym8OAG27gk4Xb%2F7%2Bqhp7AYmWXj9wUto8I%2F8simsuuAqJmF5aYXXQz9h7%2FoN1s8kVS%2Bmj%2BsMBu0U1TxUVQnQ%2FK193qGtgb%2F2E0RrXiTbs%2FJpaUIGQi7qicxVRbhiruoZtchckAEyvMIMuAZT2i%2BYaM1VG1%2F5ZJv&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "9,95 €",
+          "link": "https://www.awin1.com/pclick.php?p=46402114569&a=3110253&m=11348"
         }
       ]
     },
@@ -8206,8 +8719,8 @@
         },
         {
           "name": "eBay",
-          "price": "109,00 €",
-          "link": "https://www.ebay.de/itm/800191209097?_skw=Acer+Nitro+VG0&hash=itemba4f1cde89%3Ag%3AEdUAAeSw6MZqMYOD&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nhDI100OwzU1jnGi%2BVWAHPnZ1D5yBn7%2BHgiYbi90sUYE0qFdD45GFusOVlWZydu8gOXtIG4KPYCcXFU4IeLrMHzu7zQ2vEc2S%2FNEOpa5ocaFbDzhRAHD%2BwWpGak53XRc9CryW4WkIjKmwYCEhBzP8OpxeJiDKqb%2BPi84jWczBh3ysZft7UzKq8Ox4ejIzFgZ9SnypflzQ5j05I7VXg02RGJjTyb3%2FhrTNuXy5o4lLy23Nb%2FyuqHYYS451bAPsktkgiLGXSRiizU1Te1Yf1z33ATup1KdawfvSq3X%2B6KBb2wg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "70,00 €",
+          "link": "https://www.ebay.de/itm/335948469425?_skw=Acer+Nitro+VG0&hash=item4e3816d4b1%3Ag%3Ap3MAAeSwJGVoGjJ4&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mkqFOrDF2Ty%2FDtGiud46ikbWnENLcmGcqSUkbfqvjLD9112lCb1abthz09JRgiCSKYZY1xZi5%2FAB37pv8h8Y34YoVKUAe%2BUpdX%2BVzKvZvWzWPYgNCVTlxfaYjxNpoZ6zQb2RXnZgX3mzBGrXKSGvRhIlT8TITW%2BfVX3G4ZxLT7B07NP8194%2FZOQsmsqGLetFSUqJScK0e8QQiTE8L6ynNbUYMj8%2FK%2FWBEvcjgxVKX9jogRE%2BjPnOcVQvkDuptD1l6TpRnb5Z2vje%2BfNnkiAsaaVFbYnJD5EWDSMpObaFzeag%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8225,6 +8738,25 @@
         }
       ]
     },
+    "dell-netzadapter-mit-netzkabel-65-watt": {
+      "id": "dell-netzadapter-mit-netzkabel-65-watt",
+      "name": "Dell Netzadapter mit Netzkabel 65 Watt",
+      "brand": "Dell",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/Dell-19.5V-3.34A-4.5-3.0mm_f71f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "23,80 €",
+          "link": "https://www.awin1.com/pclick.php?p=35814697451&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "25,35 €",
+          "link": "https://www.ebay.de/itm/158183387201?_skw=Dell+Netzadapter+mit+Netzkabel+65+Watt&hash=item24d476f041%3Ag%3AoSgAAeSwWxBpcjv7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "acer-vero-mst-dock-m33": {
       "id": "acer-vero-mst-dock-m33",
       "name": "Acer Vero MST Dock M33",
@@ -8239,8 +8771,8 @@
         },
         {
           "name": "eBay",
-          "price": "235,61 €",
-          "link": "https://www.ebay.de/itm/277144252140?_skw=Acer+Vero+MST+Dock+M33&hash=item408715aeec%3Ag%3AkcEAAeSwAo9q5c%7EA&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "190,00 €",
+          "link": "https://www.ebay.de/itm/900048894653?_skw=Acer+Vero+MST+Dock+M33&hash=itemd18f183abd%3Ag%3AIQ4AAeSwegtq-ibs&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lf2bX8w%2FWJzvaMuZ3fH%2FjxGcj0CwPIYfWpr1s32OtAj2430ZKT3R8gxynpy8R5kkKNAH32sT850R3XcPHswDPJKEkY3C25QQxuipU5oEAX3oYAh36q%2BMtSUcjkeTRUtg5%2BuvExTwoq0qeMzHVeHu18INyJAQbV7JsRjS1cj20tJnmxBpv44xwEZ8YNy%2FanVq10megNqMCXP%2BibF7NcpDwHF%2FhT4rG8LTKnCI69SzcrW9IVrARLB9Rvsr0N8AehyKGBATm4gifaNsXXX3%2FhgkaMQ6GRpUsMu9YDGlFj92zRbA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8333,25 +8865,6 @@
         }
       ]
     },
-    "nvidia-rtx-pro-6000-blackwell-workstation-edition": {
-      "id": "nvidia-rtx-pro-6000-blackwell-workstation-edition",
-      "name": "Nvidia RTX PRO 6000 Blackwell Workstation Edition",
-      "brand": "Nvidia",
-      "kategorie": "grafikkarten",
-      "image": "https://media2.nbb-cdn.de/images/products/nvidia-rtx-pro-6000-blackwell-workstation-edition-back_5e77.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "17999,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45414588808&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "19712,42 €",
-          "link": "https://www.ebay.de/itm/307267473768?_skw=Nvidia+RTX+PRO+6000+Blackwell+Workstation+Edition&hash=item478a919168%3Ai%3A307267473768&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "motorola-moto-buds-2-carbon": {
       "id": "motorola-moto-buds-2-carbon",
       "name": "Motorola moto buds 2 Carbon",
@@ -8401,20 +8914,6 @@
           "name": "notebooksbilliger.de",
           "price": "359,00 €",
           "link": "https://www.awin1.com/pclick.php?p=36347762491&a=3110253&m=11348"
-        }
-      ]
-    },
-    "fritz-7690-plus-fritz-repeater-1200-ax-bundle": {
-      "id": "fritz-7690-plus-fritz-repeater-1200-ax-bundle",
-      "name": "FRITZ! 7690 + FRITZ!Repeater 1200 AX Bundle",
-      "brand": "FRITZ!",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/AVM-Fritzbox-7690-Repeater-1200AX_6683.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "333,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=38601405971&a=3110253&m=11348"
         }
       ]
     },
@@ -8475,6 +8974,20 @@
         }
       ]
     },
+    "adobe-firefly-pro": {
+      "id": "adobe-firefly-pro",
+      "name": "Adobe Firefly Pro",
+      "brand": "Adobe",
+      "kategorie": "software",
+      "image": "https://media2.nbb-cdn.de/images/products/291583-ESD-Packshot_Adobe-Firefly-3-Months_DE_cb07.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "59,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44796694092&a=3110253&m=11348"
+        }
+      ]
+    },
     "hpe-aruba-networking-cx6000-managed-switch": {
       "id": "hpe-aruba-networking-cx6000-managed-switch",
       "name": "HPE Aruba Networking CX6000 Managed Switch",
@@ -8524,25 +9037,6 @@
           "name": "eBay",
           "price": "117,38 €",
           "link": "https://www.ebay.de/itm/206558555544?_skw=Gigabyte+GS25F2A&hash=item3017d96d98%3Ag%3AeS0AAeSwcPtq7gGG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "canon-pgi-555pgbk-xxl": {
-      "id": "canon-pgi-555pgbk-xxl",
-      "name": "Canon PGI-555PGBK XXL",
-      "brand": "Canon",
-      "kategorie": "druckerzubehoer",
-      "image": "https://media2.nbb-cdn.de/images/products/canon-pgi-555pgbk-xxl_0_ed67.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "29,89 €",
-          "link": "https://www.ebay.de/itm/127694538634?_skw=Canon+PGI-555PGBK+XXL&hash=item1dbb30078a%3Ag%3ARWMAAeSwR-xpl9U7&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7llpbmT53VrXjoNTXrj5gHWUdRd4DGCjZCPX4wbqOYuGoFhaSqRm47OVeTzjPm0tDJRUh2h2zXIJ2lMhnN8v3IfJb3fYg3EHM650VMIFA8Sm9yKR0icb8dKYuIT%2F8wyAnQ0Vc90OcXwCxGm7btnw9O%2F4o%2F3t3DXcvPSHbU5C2o5OaVBhEHneUK%2B%2FjiTQG647guxHMuqcDuFvssRFbH4E7kF11w7k%2BP8qW6plg28TCtslvMDdgU3I35JH3GGDYZGN1YuVfvufxijLsov9wmOKGFEYgw3w2jdmGA62dJ6f%2Bk7HA%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "32,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45998681026&a=3110253&m=11348"
         }
       ]
     },
@@ -8778,7 +9272,7 @@
         },
         {
           "name": "eBay",
-          "price": "2755,79 €",
+          "price": "2558,14 €",
           "link": "https://www.ebay.de/itm/820073671283?_skw=MSI+MAG+Infinite+Z+8B+9NVPR7-051AT+AMD+Ryzen&hash=itembef0332a73%3Ag%3A-tUAAeSwJfhqls5J&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -8884,6 +9378,25 @@
           "name": "eBay",
           "price": "21,88 €",
           "link": "https://www.ebay.de/itm/318488960221?_skw=brennenstuhl%C2%AEConnect+WiFi+Steckdose&hash=item4a276bdcdd%3Ag%3ASBQAAeSwfOpqsmYQ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mNih%2FR6EN2Zy5rjyn%2BZxPaoYeFHbCyD29slLLrqRSFlmXw0rT26qFsTerX%2BY%2BYFpJXE%2BkYMKdMad9QeJM8w8NbS6itSLIXmCB2Q7iAm10QzmbsEP68cQSLTV%2FrwnqmfhZmzbqUJPMwFXKWbUfJ%2F%2BiVwMxDKhNqvGwMoNgPuXlNiGkyEEkFIjqFDhI3s4KxdNpPlGM7II%2B6Rd2wgVhPDAEpu3GtNqbeMUJ0GuOSszaITUeH%2BBwFHnR1p7fh9L4oOsK2Z1e%2B9b0NuMZdEyTYXy9vnLhnK0WdnGmwZRalRrvfwAa3%2FosalAilb9v0GcW%2F2U0%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "dicota-skin-urban-13-navy": {
+      "id": "dicota-skin-urban-13-navy",
+      "name": "Dicota Skin URBAN 13 navy",
+      "brand": "Dicota",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/D32153-RPET_01_e146.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "27,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=42646681737&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "63,00 €",
+          "link": "https://www.ebay.de/itm/356652939471?_skw=Dicota+Skin+URBAN+13+navy&hash=item530a2bf8cf%3Ag%3AzngAAeSwrKRq41IL&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ms66GDqKg%2BLpTePvA7aJGuy1lwexFArBXDxh0U2o8L7KmWOoR0QYDv5aprvOPNZK6nm1IQmgBS0wBIeaFPPFj88AxpflD5L%2Fl1TgA%2FnE7%2FeFhWLwrW%2F1h5wSaN%2BiXZfmYyfPUxVI5lMSH8tIVetfy8ACf0Iy053ydI%2Bc6pujhdovxP3E7zrcI3YXlx6j9UmbBJvytwM5v8i6PZjdOqw9CU%2BdYCVQ%2FGeJkjrNTiND7ABExqshBb%2FrJAseme7VHHWQ0ZNb%2FXewsFpsMEIBojrShNa5R2kWFtjGiR3n2K7fjN4Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -9039,20 +9552,6 @@
           "name": "notebooksbilliger.de",
           "price": "249,00 €",
           "link": "https://www.awin1.com/pclick.php?p=34253817717&a=3110253&m=11348"
-        }
-      ]
-    },
-    "adata-legend-900-pro-heatsink": {
-      "id": "adata-legend-900-pro-heatsink",
-      "name": "Adata Legend 900 Pro Heatsink",
-      "brand": "Adata",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/ADATA-Legend-900-Pro-Front_beab.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "194,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=44073929239&a=3110253&m=11348"
         }
       ]
     },
@@ -9344,6 +9843,20 @@
         }
       ]
     },
+    "lg-34u650a-b-ultra-wide": {
+      "id": "lg-34u650a-b-ultra-wide",
+      "name": "LG 34U650A-B Ultra Wide",
+      "brand": "LG",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/thum-1600x1062_8802.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "329,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=43692259850&a=3110253&m=11348"
+        }
+      ]
+    },
     "intel-core-i7-14700f": {
       "id": "intel-core-i7-14700f",
       "name": "Intel Core i7-14700F",
@@ -9382,6 +9895,44 @@
         }
       ]
     },
+    "thermaltake-astria-200-argb-white": {
+      "id": "thermaltake-astria-200-argb-white",
+      "name": "Thermaltake ASTRIA 200 ARGB White",
+      "brand": "Thermaltake",
+      "kategorie": "cpu-kuehler",
+      "image": "https://media2.nbb-cdn.de/images/products/CL-P137-AL12SW-A_17_df9c.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "33,20 €",
+          "link": "https://www.awin1.com/pclick.php?p=40794860210&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "44,85 €",
+          "link": "https://www.ebay.de/itm/198427761482?_skw=Thermaltake+ASTRIA+200+ARGB+White&hash=item2e33375b4a%3Ag%3AKT0AAeSwFONqL7k0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "xerox-c303a-farb-multifunktionsdrucker": {
+      "id": "xerox-c303a-farb-multifunktionsdrucker",
+      "name": "Xerox C303a Farb- Multifunktionsdrucker",
+      "brand": "Xerox",
+      "kategorie": "drucker",
+      "image": "https://media2.nbb-cdn.de/images/products/Xerox_C303a_Farb-_Multifunktionsdrucker1.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "299,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45180363484&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "432,18 €",
+          "link": "https://www.ebay.de/itm/366742410378?_skw=Xerox+C303a+Farb-+Multifunktionsdrucker&hash=item55638d148a%3Ag%3AaIkAAeSwjqhq246c&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "captiva-workstation-i74-670-intel-core-i7-12700": {
       "id": "captiva-workstation-i74-670-intel-core-i7-12700",
       "name": "Captiva Workstation I74-670 Intel Core i7-12700",
@@ -9393,20 +9944,6 @@
           "name": "notebooksbilliger.de",
           "price": "1130,03 €",
           "link": "https://www.awin1.com/pclick.php?p=45858503673&a=3110253&m=11348"
-        }
-      ]
-    },
-    "captiva-workstation-i74-685-intel-core-i7-12700k": {
-      "id": "captiva-workstation-i74-685-intel-core-i7-12700k",
-      "name": "Captiva Workstation I74-685 Intel Core i7-12700K",
-      "brand": "Captiva",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/Captiva_AG_120_1_8495.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1119,43 €",
-          "link": "https://www.awin1.com/pclick.php?p=44630121785&a=3110253&m=11348"
         }
       ]
     },
@@ -9579,7 +10116,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "112,61 €",
+          "price": "112,41 €",
           "link": "https://www.awin1.com/pclick.php?p=46387414127&a=3110253&m=11348"
         },
         {
@@ -9912,6 +10449,39 @@
           "name": "eBay",
           "price": "682,20 €",
           "link": "https://www.ebay.de/itm/168743563309?_skw=Corsair+Vengeance+RGB+Grau+32GB+Kit&hash=item2749e6702d%3Ag%3Ai14AAeSw3hxq6GsT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "2er-pack-fritz-repeater-1200-ax-wifi-6": {
+      "id": "2er-pack-fritz-repeater-1200-ax-wifi-6",
+      "name": "2er Pack FRITZ!Repeater 1200 AX WiFi 6",
+      "brand": "2er",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/AVM-Repeater-1200AX-2er-Pack_1cd7.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "159,80 €",
+          "link": "https://www.awin1.com/pclick.php?p=38601405977&a=3110253&m=11348"
+        }
+      ]
+    },
+    "fritz-1200-ax-wlan-erweiterung": {
+      "id": "fritz-1200-ax-wlan-erweiterung",
+      "name": "FRITZ! 1200 AX WLAN Erweiterung",
+      "brand": "FRITZ!",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/AVM-FRITZ-Repeater-1200-AX_Hero_eae6.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "70,00 €",
+          "link": "https://www.ebay.de/itm/206184704775?_skw=FRITZ%21+1200+AX+WLAN+Erweiterung&hash=item300190eb07%3Ag%3AEDIAAeSwxyNqv6a7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "79,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=37152805462&a=3110253&m=11348"
         }
       ]
     },
@@ -10259,6 +10829,20 @@
         }
       ]
     },
+    "corsair-warthog-airflow-olive-drab": {
+      "id": "corsair-warthog-airflow-olive-drab",
+      "name": "Corsair WARTHOG Airflow Olive Drab",
+      "brand": "Corsair",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/WARTHOG_OLIVE_DRAB_01_HERO_rlo4tr.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "154,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=46323588540&a=3110253&m=11348"
+        }
+      ]
+    },
     "cpu-amd-ryzen-7-9850x3d": {
       "id": "cpu-amd-ryzen-7-9850x3d",
       "name": "AMD Ryzen 7 9850X3D",
@@ -10363,6 +10947,44 @@
         }
       ]
     },
+    "philips-evnia-34m2c3500l": {
+      "id": "philips-evnia-34m2c3500l",
+      "name": "Philips Evnia 34M2C3500L",
+      "brand": "Philips",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/34M2C3500L_EVNIA_INFOSCREEN_96c0.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "199,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44681696841&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "231,77 €",
+          "link": "https://www.ebay.de/itm/227596988991?_skw=Philips+Evnia+34M2C3500L&hash=item34fdd6723f%3Ag%3AgxYAAeSwlKlq9vUN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "intel-core-i9-12900f": {
+      "id": "intel-core-i9-12900f",
+      "name": "Intel Core i9-12900F",
+      "brand": "Intel",
+      "kategorie": "cpu",
+      "image": "https://media2.nbb-cdn.de/images/products/2659490-n0_fc23.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "365,00 €",
+          "link": "https://www.ebay.de/itm/267101323124?_skw=Intel+Core+i9-12900F&hash=item3e307abf74%3Ag%3AFykAAOSwcAhnZCbp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "422,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45858503397&a=3110253&m=11348"
+        }
+      ]
+    },
     "lenovo-thinkpad-usb4-smart-dock-5500-100w": {
       "id": "lenovo-thinkpad-usb4-smart-dock-5500-100w",
       "name": "Lenovo ThinkPad USB4 Smart Dock 5500 100W",
@@ -10452,7 +11074,7 @@
         },
         {
           "name": "eBay",
-          "price": "2210,61 €",
+          "price": "2094,41 €",
           "link": "https://www.ebay.de/itm/298635683644?_skw=MSI+MAG+Infinite+Z+8B+9NVMR5-052AT+AMD+Ryzen&hash=item458812e73c%3Ag%3A%7ENUAAeSw0fJqls5R&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -10749,6 +11371,20 @@
         }
       ]
     },
+    "d-link-m95-wifi-7-router-be9500-dual-band": {
+      "id": "d-link-m95-wifi-7-router-be9500-dual-band",
+      "name": "D-Link M95 WiFi 7 Router BE9500 Dual-Band",
+      "brand": "D-Link",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/D-Link-M95-Front_f4d5.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "119,17 €",
+          "link": "https://www.awin1.com/pclick.php?p=45775608819&a=3110253&m=11348"
+        }
+      ]
+    },
     "fritz-set-1700-3er-set-wlan-mesh-system-bestehend-aus-3x": {
       "id": "fritz-set-1700-3er-set-wlan-mesh-system-bestehend-aus-3x",
       "name": "FRITZ! Set 1700 3er-Set WLAN-Mesh-System bestehend aus 3x",
@@ -10779,20 +11415,6 @@
           "name": "eBay",
           "price": "237,95 €",
           "link": "https://www.ebay.de/itm/257807888310?_skw=Teltonika+RUT951+Industrieller+Mobilfunk-Router+4G+LTE&hash=item3c068c2fb6%3Ag%3A1msAAeSwZW5q8-f8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "adobe-firefly-pro": {
-      "id": "adobe-firefly-pro",
-      "name": "Adobe Firefly Pro",
-      "brand": "Adobe",
-      "kategorie": "software",
-      "image": "https://media2.nbb-cdn.de/images/products/291583-ESD-Packshot_Adobe-Firefly-3-Months_DE_cb07.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "61,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=44796694092&a=3110253&m=11348"
         }
       ]
     },
@@ -11289,7 +11911,7 @@
         },
         {
           "name": "eBay",
-          "price": "81,71 €",
+          "price": "82,32 €",
           "link": "https://www.ebay.de/itm/157741750234?_skw=Adata+XPG+VALOR+MESH+NANO+Black&hash=item24ba2417da%3Ag%3At-UAAeSw0Kxqemka&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]

@@ -13,11 +13,11 @@
       },
       {
         "name": "eBay",
-        "price": "1162,09 €",
-        "link": "https://www.ebay.de/itm/158357148573?_skw=Samsung+Galaxy+Tab+S11+Ultra&hash=item24ded2539d%3Ag%3AMq4AAeSwD3Zqunq%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "899,00 €",
+        "link": "https://www.ebay.de/itm/317794922414?_skw=Samsung+Galaxy+Tab+S11+Ultra&hash=item49fe0dafae%3Ag%3ASbUAAeSwOI5pc9ye&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|158357148573|0",
-        "ebayTitel": "Samsung Galaxy Tab S11 Ultra Wi-Fi 14.5 Zoll Tablet Gray 256 GB",
+        "ebayItem": "v1|317794922414|616381944776",
+        "ebayTitel": "Samsung Galaxy Tab S11 Ultra SM-X930 512GB/1TB Silver und Gray",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       },
       {
@@ -36,7 +36,7 @@
     "name": "Galaxy Tab S11",
     "brand": "Samsung",
     "series": "S",
-    "image": "",
+    "image": "https://media2.nbb-cdn.de/images/products/Samsung_Galaxy_Tab_S11_Ultra_Wi-Fi_SM-X930N_Gray_Front_S_Pen_Logoscreen_CMYK_951e.jpg?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -45,14 +45,23 @@
       },
       {
         "name": "eBay",
-        "price": "707,00 €",
-        "link": "https://www.ebay.de/itm/336886848605?_skw=Samsung+Galaxy+Tab+S11&hash=item4e70055c5d%3Ag%3AY5wAAeSw6l9q8HCy&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "839,00 €",
+        "link": "https://www.ebay.de/itm/127352970064?_skw=Samsung+Galaxy+Tab+S11&hash=item1da6d41b50%3Ag%3Aai0AAeSw5KRq8xId&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|336886848605|0",
-        "ebayTitel": "Samsung Galaxy Tab S11 5G | Sim- Funktion | inkl. Pen | Neuwertig",
+        "ebayItem": "v1|127352970064|0",
+        "ebayTitel": "Samsung Galaxy Tab S11 5G (11 Zoll) 256 GB Silver",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
+      },
+      {
+        "name": "notebooksbilliger.de",
+        "price": "1099,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46784155062&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46784155062",
+        "feedTitel": "Samsung Galaxy Tab S11 5G Silver 11\" WQXGA+ Display/ Octa-Core/ 12 GB RAM / 256 GB Speicher"
       }
-    ]
+    ],
+    "imageFeed": "nbb"
   },
   {
     "id": "samsung-tab-s10-ultra",
@@ -68,11 +77,11 @@
       },
       {
         "name": "eBay",
-        "price": "849,00 €",
-        "link": "https://www.ebay.de/itm/317085432152?_skw=Samsung+Galaxy+Tab+S10+Ultra&hash=item49d3c3b958%3Ag%3Azp0AAeSwreJpc7R9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "839,00 €",
+        "link": "https://www.ebay.de/itm/315932506096?_skw=Samsung+Galaxy+Tab+S10+Ultra&hash=item498f0b77f0%3Ag%3ArVUAAOSwi-hnLT1l&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|317085432152|0",
-        "ebayTitel": "Samsung Galaxy Tab S10 Ultra 256GB SM-X920  Moonstone Gray",
+        "ebayItem": "v1|315932506096|614431325837",
+        "ebayTitel": "Samsung Galaxy Tab S10 Ultra Wi-Fi  256GB-1TB",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -91,11 +100,11 @@
       },
       {
         "name": "eBay",
-        "price": "845,19 €",
-        "link": "https://www.ebay.de/itm/940088506283?_skw=Samsung+Galaxy+Tab+S10%2B&hash=itemdae1a437ab%3Ag%3AumkAAeSwUpxq2xTS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "649,00 €",
+        "link": "https://www.ebay.de/itm/880130282403?_skw=Samsung+Galaxy+Tab+S10%2B&hash=itemccebda53a3%3Ag%3A3oAAAeSwmxBq%7EfEf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|940088506283|0",
-        "ebayTitel": "Samsung Galaxy Tab S10+ 512GB Wi-Fi Moonstone Gray NEUWERTIG + Rechnung",
+        "ebayItem": "v1|880130282403|0",
+        "ebayTitel": "Samsung Galaxy Tab S10+ Wi-Fi 12.4 Zoll Tablet Gray 256 GB",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       },
       {
@@ -124,7 +133,7 @@
       {
         "name": "eBay",
         "price": "409,35 €",
-        "link": "https://www.ebay.de/itm/860131829032?_skw=Samsung+Galaxy+Tab+S10+FE%2B&hash=itemc843da2528%3Ag%3AwocAAeSwIGBq820Q&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mI2qkFmpr78TzkC470iD7zbYZfoeVsdckfTzJ07nQh2xykVw927ncypuwA9mlTRMhvThjopuRpxBXRLn7vTKyOqULSCI9djr%2BghKxvpLTfmjpXHtz78nLkF%2Bvss68kUmAxYPVPhNGRjGe7TU%2F3zSVRz%2F0NK1Wii%2FNGfKz9cSXvSuMvP94hyAmYCRUbdgmzOXxhMSQklz8wxWoFavfIhafaT3gUpEosIOnhT4tJLUNRJZNkJ9QVY%2BLMnlqaR7fis%2Fa4INytpYILd85TEGgvAjRq5vYeKzdzCWChbDd4gCU3rzLDXxs%2B0g4C6A3MMqRYe1k%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/860131829032?_skw=Samsung+Galaxy+Tab+S10+FE%2B&hash=itemc843da2528%3Ag%3AwocAAeSwIGBq820Q&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mI2qkFmpr78TzkC470iD7zbYZfoeVsdckfTzJ07nQh2xykVw927ncypuwA9mlTRMhvThjopuRpxBXRLn7vTKyOqULSCI9djr%2BghKxvpLTfmjpXHtz78nLkF%2Bvss68kUmB%2FUNTrTKCTzXSMSsQ1GUriCl5XgWEP8XCXF5iAyiCt9OCLbknKvw0ZCTBFfs%2FJb38OPLpNoFGD9nMkzrkDq7goC9ownP5reoOMw55LpHTxrE7BFC8d07n8M6gNis%2F9oe080ZzSH%2BA%2Bg79PWSUFlDpa2vM3tr0r6%2BRh8ZOsKMP%2BC91mvLtRPuKrzKEzgWN2Z5I%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|860131829032|0",
         "ebayTitel": "Samsung Galaxy Tab S10 FE Wi‑Fi 128 GB 10,9 Zoll Android Tablet + Tastaturhülle ",
@@ -211,7 +220,7 @@
       {
         "name": "eBay",
         "price": "584,50 €",
-        "link": "https://www.ebay.de/itm/920107736100?_skw=Samsung+Galaxy+Tab+S9&hash=itemd63ab1dc24%3Ag%3Ah-kAAeSwgyhq7FiD&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m0cJw5ysRid%2BZS%2FmVQPmu%2F4kcLD1FBPWPY6YhKLCkhI5QymJcoeAuCisYK5nUkCHohAzeGadQKeKgwea1CaY6bqRI6gntqSGeViN%2BvT1cV%2BnmcI4dtFd6BgesFL%2BcPgsinjgQ%2BnOa5j2MHdf%2Bl5he2HHSjJqrpYe3o4e6ebaVWqh31vwE8iWLS1vd1%2BbsmNN0a6UZS3%2FUBTDP48pGx7AoB26r9A0X6%2FbL3MGmThkGpoXw%2Fg%2F07p2MVNV6mRRHJMjjubJx4RXMzVSOEdZRcpF8EZB9QYXMicCAw4FEUY6kDhyN%2FR7sUYqHstRa21rWGB7k%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/920107736100?_skw=Samsung+Galaxy+Tab+S9&hash=itemd63ab1dc24%3Ag%3Ah-kAAeSwgyhq7FiD&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m0cJw5ysRid%2BZS%2FmVQPmu%2F4kcLD1FBPWPY6YhKLCkhI5QymJcoeAuCisYK5nUkCHohAzeGadQKeKgwea1CaY6bqRI6gntqSGeViN%2BvT1cV%2BnmcI4dtFd6BgesFL%2BcPgsjaezG6lXWf161Mv%2B7Kq7iKsJxujOIilRnIq9rQxTTXETK%2FteZfx6H4HA4ktLwJHUjW6hoeqVmv01LI4ov5pxNEnjcqnfYy3HuUr2pM9qZLt4WnK72YQ6P0tI5AFUI9hDIEy4kg9rfjkN%2FRF%2FsQy1ViDoyyCPyFa9U078n30NqErEfaWr59yzz5io0XTvlknq4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|920107736100|0",
         "ebayTitel": "Samsung X716B Galaxy Tab S9 11,0 Zoll AMOLED Display 5G 128 GB 8GB RAM 12MP grau",
@@ -233,11 +242,11 @@
       },
       {
         "name": "eBay",
-        "price": "139,99 €",
-        "link": "https://www.ebay.de/itm/860131457028?_skw=Samsung+Galaxy+Tab+A11%2B&hash=itemc843d47804%3Ag%3ATh0AAeSwYzFq80eZ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "169,99 €",
+        "link": "https://www.ebay.de/itm/298658793014?_skw=Samsung+Galaxy+Tab+A11%2B&hash=item4589738636%3Ag%3AbNoAAeSwmHNpEfCW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|860131457028|0",
-        "ebayTitel": "Samsung Galaxy Tab A11 64GB 4GB RAM WiFi + LTE Grau – Neu, OVP geöffnet",
+        "ebayItem": "v1|298658793014|0",
+        "ebayTitel": "Samsung Galaxy Tab A11 LTE SM-X135 64GB 4GB WLAN Gray 8,7\" Wi-Fi + LTE NEU + OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       },
       {
@@ -256,7 +265,7 @@
     "name": "Galaxy Tab A11",
     "brand": "Samsung",
     "series": "A",
-    "image": "https://media2.nbb-cdn.de/images/products/SamsungGalaxyTabA11Gray-01_0ea7.png?size=400",
+    "image": "https://media2.nbb-cdn.de/images/products/SamsungGalaxyTabA11silver-01_bc5a.png?size=400",
     "shops": [
       {
         "name": "Amazon",
@@ -275,10 +284,10 @@
       {
         "name": "notebooksbilliger.de",
         "price": "129,00 €",
-        "link": "https://www.awin1.com/pclick.php?p=46702040823&a=3110253&m=11348",
+        "link": "https://www.awin1.com/pclick.php?p=46702040824&a=3110253&m=11348",
         "feed": "nbb",
-        "feedId": "46702040823",
-        "feedTitel": "Samsung Galaxy Tab A11 64GB Wifi Grey 8,7\" / WXGA+ Display / Octa-Core / 4GB RAM / 64GB Speicher / Android 15"
+        "feedId": "46702040824",
+        "feedTitel": "Samsung Galaxy Tab A11 64GB Wifi Silver 8,7\" / WXGA+ Display / Octa-Core / 4GB RAM / 64GB Speicher / Android 15"
       }
     ],
     "imageFeed": "nbb"
@@ -321,7 +330,7 @@
       {
         "name": "eBay",
         "price": "141,19 €",
-        "link": "https://www.ebay.de/itm/940089733561?_skw=Samsung+Galaxy+Tab+A9&hash=itemdae1b6f1b9%3Ag%3AzJIAAeSwgF1q92dW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mqiljg%2F0L6JeQPiqbJjgrABhY8MlJaW6w37jQrCwilXxx559--VXnWM%2FDy%2BLC%2BalK3iJxMjFN79Jo0JuYKSWD0BL%2Ft40cEbolTkGwcOerGJTOM5yTB7y1TNheC%2FQ7%2F5gpb%2BGFn%2FjWlGjdbKk2kAhzRuFpPG8kgi7JVqfnhLzskWC6u%2F%2BzsBUDpGpZRaWnLTBTS6NNdmFrWDjRNyUvNdAQIMTIowpMQ53xvGTyavt8QHxyUWfUduxtFZjKEiiY75KLN4u0%2BZIERjGNqYetrpPeK%2Fa0ZGmO8M8N7xkDr0rvmRg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/940089733561?_skw=Samsung+Galaxy+Tab+A9&hash=itemdae1b6f1b9%3Ag%3AzJIAAeSwgF1q92dW&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mqiljg%2F0L6JeQPiqbJjgrABhY8MlJaW6w37jQrCwilXxx559--VXnWM%2FDy%2BLC%2BalK3iJxMjFN79Jo0JuYKSWD0BL%2Ft40cEbolTkGwcOerGJTOM5yTB7y1TNheC%2FQ7%2F5gpiCruIJdqlmsuswrjdXQNqivVMQzlWW6pyic3TFH5mi8V6vCuJl3BwPrE65P1aOmBnGVaPTNrW0AfDhkxiBhGOWie1LLVSgd9vGZXFFzRAx%2FuKu1WJTJFaa0AVyarz0bw5JJwJSiVwbllQiXRgdUMef0wDVxtT2OaoqSZN9wYv6A%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|940089733561|0",
         "ebayTitel": "Samsung Galaxy Tab A9 8,7\" 64GB [Wi-Fi] graphite - Zustand wie neu",
@@ -389,11 +398,11 @@
       },
       {
         "name": "eBay",
-        "price": "422,58 €",
-        "link": "https://www.ebay.de/itm/237190123619?_skw=Apple+iPad+%2811.+Generation%29&hash=item3739a21063%3Ag%3A6DQAAeSwg2Zq%7EZIx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "454,98 €",
+        "link": "https://www.ebay.de/itm/137914018022?_skw=Apple+iPad+%2811.+Generation%29&hash=item201c50e8e6%3Ag%3AD5QAAeSwfJhq8NI1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|237190123619|0",
-        "ebayTitel": "Apple iPad (A16) 11 Zoll Wi‑Fi Tablet 128 GB Silber MD3Y4TY/A 11. Generation",
+        "ebayItem": "v1|137914018022|0",
+        "ebayTitel": "Apple iPad 11. Generation (neueste) – 128 GB – Wi‑Fi – Silber – Neu & versiegelt",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -413,7 +422,7 @@
       {
         "name": "eBay",
         "price": "469,99 €",
-        "link": "https://www.ebay.de/itm/206708051334?_skw=Apple+iPad+mini+%286.+Generation%29&hash=item3020c28d86%3Ag%3AxFUAAeSw6%7Ehq%7EFmS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kj1OilBQ6xFAHNkiSMKNWYnBd5%2ByB%2Befw%2FKWry7i0MIM4oCpJNzWvb5yxkBIRvHgeR2OF1Y7NsysIoG9epAjqkIAe5fiCElHjK3fT2rpwJXVWVbcD0MaS8%2F0kJLJ%2Fae5vtQk3SWf6S9OPsNovC2mwJqIOTlaSitPdCu8g9RW6hbZb3DbWuBwrpNMcEGVsmJoXdqR6qigY8hAi3aOdOTOVFakX6Mx2mcZRJFKcXiZXyjFBD%2B%2FG2RdMCL9MeTS6nEsyYJgQBME--b0FPVRfLvGKujmDc2szfyLM1JfYIbokgNNAfDRe%2B%2BJ9%2BxtYLadDyOsc%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/206708051334?_skw=Apple+iPad+mini+%286.+Generation%29&hash=item3020c28d86%3Ag%3AxFUAAeSw6%7Ehq%7EFmS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kj1OilBQ6xFAHNkiSMKNWYnBd5%2ByB%2Befw%2FKWry7i0MIM4oCpJNzWvb5yxkBIRvHgeR2OF1Y7NsysIoG9epAjqkIAe5fiCElHjK3fT2rpwJXVWVbcD0MaS8%2F0kJLJ%2Fae5vrbzMNcRMc4an0ti73dHgvQhIAcVGILH%2FpJvxacBYpAUwYi5selxLdb4DgnJCdKLYOVFp%2BmyiV51jgxOr0L8RdCdAuub%2FomSAWTKLOPAsPXm%2BSHND7QJE%2BCLQCdywzHjJya45dLJA%2BGa3lI8%2BkfHauOHstvWDmbJeasI9RvFCrBGOG5PUn0%2B%2Fp0Ciw1Lijaco%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|206708051334|0",
         "ebayTitel": "Apple iPad mini 6. Gen Generation  8,3 Zoll WiFi GPS 256 GB Pink Neu Sonstige",
@@ -436,7 +445,7 @@
       {
         "name": "eBay",
         "price": "669,00 €",
-        "link": "https://www.ebay.de/itm/198715940887?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item2e4464a017%3Ag%3ANdsAAeSwqd5q0AHr&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l%2FvasVohBWt6ffeunWN1SNUWxcq9QScLGw33K%2FWVH3628xVSMxK6QNtd%2FfX7GHA6iJp6xJFD0XDnml1F23CkjUFBkk7uh3BkfreGBOhp%2BypzIOrXrxCSyPeuthLXCwJs8ACDryzBUGSFIoboK7Su%2B4IYJ6D91uEGDhBrj%2BVmj21rIPkf9fRW%2FG95QxhnKNPXCFmcrQLTRzs03Sy2qBDVW6k4zTdwkhgiVYiQlP1segvCMYkv4XQuEqrEaAXgDrbBP0lC%2FvD8JxIsXyo5mXGjaA1%2FhjdtOW2ECup5%2F1R0XcpKRXxuJ1bJ5Qt7EHtKKEDHA%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/198715940887?_skw=Apple+iPad+mini+%287.+Generation%29&hash=item2e4464a017%3Ag%3ANdsAAeSwqd5q0AHr&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l%2FvasVohBWt6ffeunWN1SNUWxcq9QScLGw33K%2FWVH3628xVSMxK6QNtd%2FfX7GHA6iJp6xJFD0XDnml1F23CkjUFBkk7uh3BkfreGBOhp%2BypzIOrXrxCSyPeuthLXCwJs%2BMAr8mS6V7Il3e0ViWXOVIuxLjEdzT0Jlb0pIcXMilLPdNtMWyFvArR52%2B1u44tOxa5ad9PztJAVEQOzOcG7BcdIHZpm63tE99nWIzzPUvH3qYtKdCW5rDV6hxGVIAwWl97qv2GSA620SKFj0y5se3K5%2FziPjYXeC73M98yEDbe5KHijOZzS55mu9BCFAOpX8%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|198715940887|0",
         "ebayTitel": "Apple iPad Mini 7 Gen 256GB WiFi (2024) Starlight A2993",
@@ -660,7 +669,7 @@
     "name": "Lenovo Tab Plus",
     "brand": "Lenovo",
     "series": "Tab",
-    "image": "https://media2.nbb-cdn.de/images/products/1128070/LenovoIdeaTabPlus-TB361ZU-01.avif?size=400",
+    "image": "",
     "shops": [
       {
         "name": "Amazon",
@@ -669,23 +678,14 @@
       },
       {
         "name": "eBay",
-        "price": "176,18 €",
-        "link": "https://www.ebay.de/itm/407343072543?_skw=Lenovo+Tab+Plus&hash=item5ed78a051f%3Ag%3A4KcAAeSwsA5q7PUw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "231,19 €",
+        "link": "https://www.ebay.de/itm/188854424108?_skw=Lenovo+Tab+Plus&hash=item2bf899d22c%3Ag%3AChwAAeSwRHNqkeWb&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nqjkXs6lkpqN96TiyB0Z%2BzjmEYKvvc%2BST8%2BFaPtnjkJQ0pUA9yR%2BmsFzxWOuDGfBwZxPRQvrypeAGD0jnfKWcCrdzdmb7VDVs6%2BZ2v8hS%2B1urRWZUinAqGLffy0JvF20O3E5IETfn%2BSECen5lds%2BioOPS4SlU%2B%2FuJn4Rgxiv%2BN39JWAM6bD8RlVbtP%2FXQquZMjVNOgUFEZOUQCwrtQyEey2kA9Dyt1F4Sm4g4dEmzZsu%2BSeGMCc%2FYPlfuwBnQnShaY1DH8gWFLJss2f6m47inLXt353ns5T49NiSJZYE%2FYsg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407343072543|0",
-        "ebayTitel": "Lenovo Tab M10 Plus (3. Gen) LTE 64GB Storm Grey Neu OVP Tablet Android 10.6\"",
+        "ebayItem": "v1|188854424108|0",
+        "ebayTitel": "Lenovo Tab P11 5G 128GB, Wi-Fi + 4G (Ohne Simlock), 11 Zoll - Grau",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
-      },
-      {
-        "name": "notebooksbilliger.de",
-        "price": "449,00 €",
-        "link": "https://www.awin1.com/pclick.php?p=46306791972&a=3110253&m=11348",
-        "feed": "nbb",
-        "feedId": "46306791972",
-        "feedTitel": "Lenovo Idea Tab Plus TB361ZU ZAGF0134DE - 12.1\", Mediatek Dimensity 6400, 8GB RAM, 128GB, Android"
       }
-    ],
-    "imageFeed": "nbb"
+    ]
   },
   {
     "id": "lenovo-tab-p11",
@@ -738,10 +738,10 @@
       },
       {
         "name": "eBay",
-        "price": "145,99 €",
-        "link": "https://www.ebay.de/itm/407357551261?_skw=Lenovo+Idea+Tab&hash=item5ed866f29d%3Ag%3AWEMAAeSwLO1q9XRr&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "151,05 €",
+        "link": "https://www.ebay.de/itm/117506239515?_skw=Lenovo+Idea+Tab&hash=item1b5beaec1b%3Ag%3AT%7EUAAeSwGEVq%7EHrO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|407357551261|0",
+        "ebayItem": "v1|117506239515|0",
         "ebayTitel": "Lenovo Idea Tab 11 Zoll Tablet Grau 128 GB (2.560 x 1.600 Pixel)",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
@@ -1107,11 +1107,11 @@
       },
       {
         "name": "eBay",
-        "price": "826,90 €",
-        "link": "https://www.ebay.de/itm/206670109053?_skw=OnePlus+Pad+3&hash=item301e7f997d%3Ag%3AockAAeSwqBlo1-Aq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "699,00 €",
+        "link": "https://www.ebay.de/itm/407372597399?_skw=OnePlus+Pad+3&hash=item5ed94c8897%3Ag%3AcnIAAeSwTCJq%7EciN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|206670109053|0",
-        "ebayTitel": "OnePlus Pad 3 WiFi Tablet 256GB 12GB RAM storm blue 13,2 Zoll Touch Android NEU",
+        "ebayItem": "v1|407372597399|0",
+        "ebayTitel": "OnePlus Pad 3 512GB 16GB RAM 13,2 Zoll 144Hz Tablet Snapdragon 8 Elite WiFi",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1200,7 +1200,7 @@
       {
         "name": "eBay",
         "price": "1709,00 €",
-        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "link": "https://www.ebay.de/itm/137800166058?_skw=Microsoft+Surface+Surface+Pro+10&hash=item201587aaaa%3Ag%3AdswAAeSwp0Rq2SKM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8yITQnH537y2QorHB135t7oPjyY0Lu1B%2FZCxuKELevzec%2Bfe6P7RV72v6ucU9%2Fug23yQarvXvNLaIRJGBnu9z50YZYP0Ns2SvgPe4VPSTsT76QafioYeghJg2zifUAmp19uUwCE77BqhU5fxEW3KRbsSQTcHpOSxZ813AlsrD2j8gsc54EiEbQ%2Bkb7aVbQEr5ZmI%2FsTQn%2BVxiZa5BKdnCdPl50RtR9sMN8kEY2tst3crPfNxVN6FFUibUm6JxiMhvIGeKabrkczsC3rHc8SZ6GSR4LXgLrt1VqcE48HsdCma0SOTlo8XTmm349vQNFhs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
         "ebayItem": "v1|137800166058|0",
         "ebayTitel": "Microsoft Surface Pro 10 256GB Wi-Fi Titan Grau Neu",
@@ -1379,11 +1379,11 @@
       },
       {
         "name": "eBay",
-        "price": "225,09 €",
-        "link": "https://www.ebay.de/itm/227617750330?_skw=HONOR+Pad+10&hash=item34ff133d3a%3Ag%3A1O4AAeSwVXNq-5No&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "236,18 €",
+        "link": "https://www.ebay.de/itm/377626911532?_skw=HONOR+Pad+10&hash=item57ec51632c%3Ag%3ACZsAAeSw3Uxq7h5X&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|227617750330|0",
-        "ebayTitel": "Honor Pad 10, Space Gray, 8GB RAM, 256GB  - Neu & Versiegelt -",
+        "ebayItem": "v1|377626911532|0",
+        "ebayTitel": "HONOR Pad 10 – 12,1\" 120 Hz | 8 GB RAM | 256 GB | Grau | NEU & OVP",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1595,11 +1595,11 @@
       },
       {
         "name": "eBay",
-        "price": "60,00 €",
-        "link": "https://www.ebay.de/itm/920145498872?_skw=Amazon+Fire+HD+8&hash=itemd63cf212f8%3Ag%3AvtYAAeSwz89q-ahC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "64,99 €",
+        "link": "https://www.ebay.de/itm/375820104525?_skw=Amazon+Fire+HD+8&hash=item57809fb34d%3Ag%3ALnIAAOSwcc9nRk2C&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|920145498872|0",
-        "ebayTitel": "Amazon Fire HD 8, 32GB, 8 Zoll, Schwarz, Wi‑Fi, Fire OS, USB‑C",
+        "ebayItem": "v1|375820104525|0",
+        "ebayTitel": "Amazon Fire HD 8 Tablet 8 Zoll HD, 32 GB, Schwarz, mit Werbung",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ]
@@ -1714,7 +1714,7 @@
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ],
-    "ebayGesucht": "2026-11-13"
+    "ebayGesucht": "2026-11-18"
   },
   {
     "id": "amazon-fire-7-kids-tablet",
@@ -3823,7 +3823,7 @@
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ],
-    "ebayGesucht": "2026-11-12"
+    "ebayGesucht": "2026-11-18"
   },
   {
     "id": "apple-ipad-mini",
@@ -3849,15 +3849,15 @@
       },
       {
         "name": "eBay",
-        "price": "367,23 €",
-        "link": "https://www.ebay.de/itm/186839504671?_skw=Apple+iPad+mini&hash=item2b8080971f%3Ag%3A7eEAAOSwrWJnWyB8&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nmglzp3mPTRxwdduzHhzkJ3JClOgnFp6YpvkwXZPV%2BNBdkvTDVzN8EG6AiqUb19U4%2B7htV4Uu6ypYKoa29In2jKC%2FrUX7bTX5tZAsIHG%2FIIWSLZKWl9UeRb%2BmFAkrtiGbVO7J2x1c2KSmeA9OtJ8R7esM4Z2AgS64hujE%2BL9BaakRmt3jBCAjRpEpZkOqllnnl1JlExZ5u1dli5q8295An2pUnHeH6pg7n6SPkOEN1RR8zfpBa%2FeeWbkT7psqaQ%2FcObAutfjMHlmI4Xa8anC52nxEzoJMPvfm7TVOou2NLGw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
+        "price": "319,90 €",
+        "link": "https://www.ebay.de/itm/366410738283?_skw=Apple+iPad+mini&hash=item554fc82a6b%3Ag%3AYkYAAeSwDCFqXdI%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049",
         "feed": "ebay",
-        "ebayItem": "v1|186839504671|0",
-        "ebayTitel": "apple ipad mini 5 generation 64gb",
+        "ebayItem": "v1|366410738283|0",
+        "ebayTitel": "Apple iPad Mini (5. Gen. 2019) 256GB, WLAN, NEU & OVP Apple Garantie",
         "ebayKat": "171485:Tablets & eBook-Reader,58058:Computer, Tablets & Netzwerk"
       }
     ],
-    "ebayGesucht": "2026-11-13"
+    "ebayGesucht": "2026-11-18"
   },
   {
     "id": "samsung-galaxy-tab-s10-lite-5g-grey",
@@ -3892,5 +3892,30 @@
       }
     ],
     "ebayGesucht": "2026-11-17"
+  },
+  {
+    "id": "acer-iconia-tab-a16",
+    "name": "Acer Iconia Tab A16",
+    "brand": "Acer",
+    "image": "https://media2.nbb-cdn.de/images/products/1122546/acer-iconia-a-kickstand-a16-21m-wp-vaspor-silver-08.png?size=400",
+    "imageFeed": "nbb",
+    "importFeed": "nbb",
+    "shops": [
+      {
+        "name": "notebooksbilliger.de",
+        "price": "349,00 €",
+        "link": "https://www.awin1.com/pclick.php?p=46858173644&a=3110253&m=11348",
+        "feed": "nbb",
+        "feedId": "46858173644",
+        "feedTitel": "Acer Iconia Tab A16 (A16-21M-86RM) 16,0\" Full HD, IPS Touch, Mediatek MT8786, 6GB RAM, 128GB eMMc, Android 16"
+      },
+      {
+        "name": "Amazon",
+        "price": "",
+        "link": "https://www.amazon.de/s?k=Acer+Iconia+Tab+A16&tag=amazonguy001-21",
+        "amazonSuche": true
+      }
+    ],
+    "ebayGesucht": "2026-11-18"
   }
 ]
