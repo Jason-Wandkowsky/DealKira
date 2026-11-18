@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="bausteine.css?v=20261004b">
   <link rel="stylesheet" href="ratgeber.css?v=20261018">
   <script src="basis.js?v=20261104"></script>
-  <script src="deals-dynamisch.js?v=20261028"></script>
+  <script src="deals-dynamisch.js?v=20261118"></script>
 
   <style>
     .bf-countdown {
@@ -102,7 +102,7 @@
     <article class="artikel">
 
       <div class="ratgeber-meta">
-        <a href="deals.html">← Alle Deals</a> · Stand: Oktober 2026
+        <a href="deals.html">← Alle Deals</a> · Stand: November 2026
       </div>
 
       <div class="kurzantwort">
@@ -244,7 +244,20 @@
 
       if (!deals.length) { leer.hidden = false; return; }
 
-      box.replaceChildren.apply(box, deals.slice(0, 12).map(function(d) {
+      // Abwechselnd aus jedem Shop (jeweils der größte Rabatt zuerst), damit die
+      // Aktionen von Narwal, Anthbot, aosu & Co. nicht in der Masse eines Händlers untergehen
+      const nachShop = {};
+      deals.forEach(function(d) {
+        const shop = d.info.shop || "";
+        (nachShop[shop] = nachShop[shop] || []).push(d);
+      });
+      const gemischt = [];
+      const listen = Object.keys(nachShop).map(function(s) { return nachShop[s]; });
+      for (let i = 0; gemischt.length < deals.length; i++) {
+        listen.forEach(function(l) { if (l[i]) gemischt.push(l[i]); });
+      }
+
+      box.replaceChildren.apply(box, gemischt.slice(0, 24).map(function(d) {
         const p = d.p, info = d.info;
         const card = document.createElement("article");
         card.className = "product-card";

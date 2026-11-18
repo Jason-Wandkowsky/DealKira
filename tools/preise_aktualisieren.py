@@ -87,6 +87,9 @@ DEALS = "deals-auto.json"
 TAGE_BEHALTEN = 120     # so lange werden alte Preise gespeichert
 VERGLEICH_TAGE = 30     # Preisangabenverordnung: niedrigster Preis der letzten 30 Tage
 MIN_RABATT = 5          # erst ab 5 % gilt es als Deal
+MIN_VERLAUF_TAGE = 14   # so viel Preisverlauf braucht es mindestens vor einer Senkung
+DEAL_MAX_TAGE = 30      # so lange nach der Senkung gilt der Preis noch als Deal
+MAX_RABATT = 70         # mehr ist bei Händler-Feeds fast immer ein Daten- oder Zuordnungsfehler
 
 
 def preis_format(text):
@@ -769,11 +772,54 @@ def preis_zahl(text):
         return None
 
 
+def preissenkung(verlauf, heute):
+    """Prüft, ob der aktuelle Preis (letzter Eintrag im Verlauf) eine echte Preissenkung ist.
+
+    Die Senkung ist der Tag, ab dem der heutige Preis gilt. Verglichen wird mit dem
+    niedrigsten Preis der 30 Tage VOR diesem Tag – nicht der 30 Tage vor heute, sonst
+    zählt der schon gesenkte Preis mit und der Deal verschwindet am Tag nach der Senkung.
+    Der Deal bleibt, solange der Preis gilt, höchstens DEAL_MAX_TAGE nach der Senkung.
+    Vor der Senkung braucht es mindestens MIN_VERLAUF_TAGE Preisverlauf; ist er kürzer
+    als 30 Tage, wird mit dem Tiefstpreis seit Beginn der Aufzeichnung verglichen
+    ("vergleich_ab" sagt dann, ab wann)."""
+    if len(verlauf) < 2:
+        return None
+    preis = verlauf[-1][1]
+    i = len(verlauf) - 1
+    while i > 0 and verlauf[i - 1][1] == preis:
+        i -= 1
+    if i == 0:
+        return None  # Preis hat sich im ganzen Verlauf nicht geändert
+    seit = datetime.date.fromisoformat(verlauf[i][0])
+    if (heute - seit).days > DEAL_MAX_TAGE:
+        return None
+    if (seit - datetime.date.fromisoformat(verlauf[0][0])).days < MIN_VERLAUF_TAGE:
+        return None  # zu wenig Preisverlauf vor der Senkung
+    ab = (seit - datetime.timedelta(days=VERGLEICH_TAGE)).isoformat()
+    vorher = [p for d, p in verlauf[:i] if d >= ab]
+    if not vorher:
+        return None
+    tiefst = min(vorher)
+    if preis >= tiefst:
+        return None
+    rabatt = round((1 - preis / tiefst) * 100)
+    if rabatt < MIN_RABATT or rabatt > MAX_RABATT:
+        return None
+    deal = {
+        "vorher": f"{tiefst:.2f}".replace(".", ",") + " €",
+        "rabatt": rabatt,
+        "seit": seit.isoformat(),
+    }
+    if verlauf[0][0] > ab:
+        deal["vergleich_ab"] = verlauf[0][0]
+    return deal
+
+
 def historie_und_deals(produkte):
     """Speichert die heutigen Preise und erkennt echte Preissenkungen.
 
-    Ein Deal braucht mindestens 30 Tage Preisverlauf. Verglichen wird mit dem
-    niedrigsten Preis der 30 Tage vor heute (§ 11 Preisangabenverordnung)."""
+    Verglichen wird mit dem niedrigsten Preis der 30 Tage vor der Preissenkung
+    (§ 11 Preisangabenverordnung), siehe preissenkung()."""
     heute = datetime.date.today()
     heute_text = heute.isoformat()
 
@@ -804,25 +850,10 @@ def historie_und_deals(produkte):
             if not preis or not verlauf:
                 continue
 
-            start = (heute - datetime.timedelta(days=VERGLEICH_TAGE)).isoformat()
-            if verlauf[0][0] > start:
-                continue  # noch keine 30 Tage Preisverlauf
-            vorher = [p for d, p in verlauf if start <= d < heute_text]
-            if not vorher:
-                continue
-            tiefst = min(vorher)
-            if preis >= tiefst:
-                continue
-            rabatt = round((1 - preis / tiefst) * 100)
-            if rabatt < MIN_RABATT:
-                continue
-            deals.append({
-                "id": produkt["id"],
-                "shop": shop["name"],
-                "preis": shop["price"],
-                "vorher": f"{tiefst:.2f}".replace(".", ",") + " €",
-                "rabatt": rabatt,
-            })
+            deal = preissenkung(verlauf, heute)
+            if deal:
+                deal.update({"id": produkt["id"], "shop": shop["name"], "preis": shop["price"]})
+                deals.append(deal)
 
     deals.sort(key=lambda d: -d["rabatt"])
 
