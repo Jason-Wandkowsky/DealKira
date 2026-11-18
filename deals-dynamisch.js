@@ -82,6 +82,16 @@
     return card;
   }
 
+  /* Wogegen der Preis-Bot verglichen hat: Tiefstpreis der 30 Tage vor der Senkung
+     (bzw. seit Beginn unserer Preisaufzeichnung, wenn die kürzer ist) */
+  function vergleichText(d) {
+    if (!d.seit) return "Vergleich: niedrigster Preis der letzten 30 Tage";
+    const senkung = "vor der Senkung am " + datumText(d.seit);
+    return d.vergleich_ab
+      ? "Vergleich: niedrigster Preis seit " + datumText(d.vergleich_ab) + " " + senkung
+      : "Vergleich: niedrigster Preis der 30 Tage " + senkung;
+  }
+
   /* Alle aktuellen Deals als Liste: [{ p, info, art }] – auch für die Startseite */
   async function dealsLaden() {
     const [auto, manuell] = await Promise.all([
@@ -108,7 +118,7 @@
           preis: d.preis,
           vorher: d.vorher,
           shop: d.shop,
-          notiz: "Vergleich: niedrigster Preis der letzten 30 Tage" + stand
+          notiz: vergleichText(d) + stand
         }};
       });
 
