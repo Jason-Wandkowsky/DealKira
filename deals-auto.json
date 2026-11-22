@@ -47,15 +47,6 @@
       "preis": "95,97 €"
     },
     {
-      "vorher": "57,19 €",
-      "rabatt": 56,
-      "seit": "2026-11-18",
-      "vergleich_ab": "2026-10-28",
-      "id": "rivacase-8460-aquamarine",
-      "shop": "notebooksbilliger.de",
-      "preis": "25,00 €"
-    },
-    {
       "vorher": "73,78 €",
       "rabatt": 53,
       "seit": "2026-11-18",
@@ -162,15 +153,6 @@
       "id": "rivacase-8335-schwarz",
       "shop": "notebooksbilliger.de",
       "preis": "15,00 €"
-    },
-    {
-      "vorher": "20,63 €",
-      "rabatt": 42,
-      "seit": "2026-11-16",
-      "vergleich_ab": "2026-10-28",
-      "id": "corsair-rs120-argb",
-      "shop": "notebooksbilliger.de",
-      "preis": "11,90 €"
     },
     {
       "vorher": "20,63 €",
@@ -567,15 +549,6 @@
       "id": "delock-kabelkanal-selbstklebend-30-x-8-mm",
       "shop": "notebooksbilliger.de",
       "preis": "10,99 €"
-    },
-    {
-      "vorher": "116,77 €",
-      "rabatt": 27,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "benq-screenbar",
-      "shop": "notebooksbilliger.de",
-      "preis": "85,00 €"
     },
     {
       "vorher": "163,80 €",
@@ -1260,15 +1233,6 @@
       "id": "acer-swift-air",
       "shop": "notebooksbilliger.de",
       "preis": "599,00 €"
-    },
-    {
-      "vorher": "499,00 €",
-      "rabatt": 20,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "synology-bc800z",
-      "shop": "notebooksbilliger.de",
-      "preis": "399,00 €"
     },
     {
       "vorher": "749,99 €",
@@ -2432,15 +2396,6 @@
       "preis": "169,00 €"
     },
     {
-      "vorher": "269,00 €",
-      "rabatt": 11,
-      "seit": "2026-11-21",
-      "vergleich_ab": "2026-10-28",
-      "id": "lg-27up850k-w",
-      "shop": "notebooksbilliger.de",
-      "preis": "239,00 €"
-    },
-    {
       "vorher": "899,00 €",
       "rabatt": 11,
       "seit": "2026-11-16",
@@ -2619,6 +2574,15 @@
       "id": "optoma-hz151x-full-hd-laser-beamer-mit-5-000",
       "shop": "notebooksbilliger.de",
       "preis": "799,00 €"
+    },
+    {
+      "vorher": "78,15 €",
+      "rabatt": 11,
+      "seit": "2026-11-22",
+      "vergleich_ab": "2026-10-28",
+      "id": "d-link-g403c-4g-lte-wlan-router-lte",
+      "shop": "notebooksbilliger.de",
+      "preis": "69,69 €"
     },
     {
       "vorher": "279,90 €",
@@ -3447,6 +3411,15 @@
       "id": "arctic-liquid-freezer-iii-pro-280-argb-white",
       "shop": "notebooksbilliger.de",
       "preis": "77,02 €"
+    },
+    {
+      "vorher": "129,00 €",
+      "rabatt": 8,
+      "seit": "2026-11-22",
+      "vergleich_ab": "2026-10-28",
+      "id": "lenovo-thinkvision-e24q-30-business",
+      "shop": "notebooksbilliger.de",
+      "preis": "119,00 €"
     },
     {
       "vorher": "113,73 €",
@@ -5327,20 +5300,6 @@
         }
       ]
     },
-    "rivacase-8460-aquamarine": {
-      "id": "rivacase-8460-aquamarine",
-      "name": "Rivacase 8460 Aquamarine",
-      "brand": "Rivacase",
-      "kategorie": "laptop-taschen",
-      "image": "https://media2.nbb-cdn.de/images/products/rivacase/rivacase8460_aqua_1_a1cf.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "25,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=41839988047&a=3110253&m=11348"
-        }
-      ]
-    },
     "dicota-backpack-seeker-ii-13-16": {
       "id": "dicota-backpack-seeker-ii-13-16",
       "name": "Dicota Backpack SEEKER II 13-16",
@@ -5472,8 +5431,8 @@
         },
         {
           "name": "eBay",
-          "price": "405,00 €",
-          "link": "https://www.ebay.de/itm/407251086586?_skw=Corsair+Vengeance+RGB+Grau+16GB+Kit&hash=item5ed20e6cfa%3Ag%3AFroAAeSwYONq4Hib&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "475,00 €",
+          "link": "https://www.ebay.de/itm/900106508749?_skw=Corsair+Vengeance+RGB+Grau+16GB+Kit&hash=itemd1928759cd%3Ag%3AdZsAAeSwxaxrAAlH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5521,25 +5480,6 @@
           "name": "notebooksbilliger.de",
           "price": "15,00 €",
           "link": "https://www.awin1.com/pclick.php?p=41839988051&a=3110253&m=11348"
-        }
-      ]
-    },
-    "corsair-rs120-argb": {
-      "id": "corsair-rs120-argb",
-      "name": "Corsair RS120 ARGB",
-      "brand": "Corsair",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/RS120_ARGB_RENDER_01_9080.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "11,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=38335841052&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "28,88 €",
-          "link": "https://www.ebay.de/itm/820331664953?_skw=Corsair+RS120+ARGB&hash=itembeff93d639%3Ag%3AGO8AAeSwJqVq8KWQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6316,25 +6256,6 @@
           "name": "eBay",
           "price": "30,19 €",
           "link": "https://www.ebay.de/itm/940011730347?_skw=Delock+Kabelkanal+selbstklebend+30+x+8+mm&hash=itemdadd10b5ab%3Ag%3A52AAAeSw02pq3Nsn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "benq-screenbar": {
-      "id": "benq-screenbar",
-      "name": "BenQ Screenbar",
-      "brand": "BenQ",
-      "kategorie": "monitor-zubehoer",
-      "image": "https://media2.nbb-cdn.de/images/products/screenbar-top-back_c7fa.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "85,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=42467005345&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "111,61 €",
-          "link": "https://www.ebay.de/itm/307279203944?_skw=BenQ+Screenbar&hash=item478b448e68%3Ag%3ALZEAAeSw0flq9dt1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7362,8 +7283,8 @@
         },
         {
           "name": "eBay",
-          "price": "542,99 €",
-          "link": "https://www.ebay.de/itm/960105764236?_skw=Anthbot+M5&hash=itemdf8ac3558c%3Ag%3A7V0AAeSw%7Ejxq2451&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "579,00 €",
+          "link": "https://www.ebay.de/itm/800659230723?_skw=Anthbot+M5&hash=itemba6b025003%3Ag%3AYE8AAeSwXFhqp5dz&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7629,25 +7550,6 @@
           "name": "eBay",
           "price": "937,79 €",
           "link": "https://www.ebay.de/itm/900011404914?_skw=Acer+Swift+Air&hash=itemd18cdc2e72%3Ag%3Ay0MAAeSwOn1qznuh&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nhn10UjwabXF9msW%2FZYCS8lrY1000ZCsVLJdvH5rqxUZ1%2BasxU4JDF76tnwhcOCEljglLXrTwM8%2FAVEQsEmUiBecs%2F0GhhWCcUio%2BUPaCXoD9EJ4k43dJyvcEt5pB0r0CDLSXcwCCukyGDA4NCfJjS3cb%2FAKMASsAaTIav5mlHV1lzrim1Wvoe9Ed4DhzvJXOnngIqnVf5Z3E71LkXXA5ml04IAb2gIpuPDnm6GOgGADwALPA7bm0YKJNEPInS8NoazN60zosgcH50GA8KWXJ5JOt9lxU9jtzSzbarwx7g3w%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "synology-bc800z": {
-      "id": "synology-bc800z",
-      "name": "Synology BC800Z",
-      "brand": "Synology",
-      "kategorie": "outdoor-kameras",
-      "image": "https://media2.nbb-cdn.de/images/products/Synology-BC800Z-Hero_f981.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "399,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=43214949003&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "577,70 €",
-          "link": "https://www.ebay.de/itm/168875582372?_skw=Synology+BC800Z&hash=item2751c4e3a4%3Ag%3AV7YAAeSwUEFrABtF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8416,8 +8318,8 @@
         },
         {
           "name": "eBay",
-          "price": "35,15 €",
-          "link": "https://www.ebay.de/itm/168635830636?_skw=D-Link+USB-C+auf+2.5G+Ethernet+Adapter&hash=item27437a916c%3Ag%3A1mMAAeSwEjtqjDY7&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mBApzFXX2vdQidywX7Y%2BnkZ5ATKZ5Z8JRfJzoDZkiaHlXTD4T%2B0SBcEo8eBn0iHZ15%2BPu1gx9OKypKmkuiQasA77pPzwwg3nZkit7j%2FdDVqIk6497S5lFEHCX2L12%2F0wirOtNX1kZA6rXm78AMp9WKqubmd5vdO5RR4bgWu9AyOH9E43vCndehS04FoahVJYFLL5cT9BX0K9pgQWusTpfpoLd2AZFDHBmGphK%2By9nbhdzvjwQCyPmCNyK6bjfL3P18AMFHhlO9kfVP%2F9pUUgsIoUygF%2BIBc9AoiSsrl7wDvQF08z5OhdKx9sGw0bo7QUE%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "29,90 €",
+          "link": "https://www.ebay.de/itm/168635830636?_skw=D-Link+USB-C+auf+2.5G+Ethernet+Adapter&hash=item27437a916c%3Ag%3A1mMAAeSwEjtqjDY7&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mBApzFXX2vdQidywX7Y%2BnkZ5ATKZ5Z8JRfJzoDZkiaHlXTD4T%2B0SBcEo8eBn0iHZ15%2BPu1gx9OKypKmkuiQasA77pPzwwg3nZkit7j%2FdDVqIk6497S5lFEHCX2L12%2F0wi8csARGS8ZnvuLX3MFy7uLIb2RZIxFh%2BBL6CAElaWs2MSs6GmzQHFOiOIBmT9l7PqZs1l%2FjWL6eq8LgB1T%2FRFCuV%2BEYvVTBwcdPiIX6nDwLDpqu954YjtyZMgjdvG9UdVcJ%2FFm5VB%2FioXpUirUs7v6ctLgM%2FIE3fhq8mDAajDvo9e%2FgU7HU2iPovZbz9KPYoE%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8563,8 +8465,8 @@
         },
         {
           "name": "eBay",
-          "price": "239,85 €",
-          "link": "https://www.ebay.de/itm/198792937076?_skw=WD_BLACK+SN850X&hash=item2e48fb7e74%3Ag%3AmT0AAeSwHWJq95Hs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "303,27 €",
+          "link": "https://www.ebay.de/itm/157241097389?_skw=WD_BLACK+SN850X&hash=item249c4cbcad%3Ag%3ANRIAAeSwCYxqeaga&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8940,7 +8842,7 @@
         },
         {
           "name": "eBay",
-          "price": "91,27 €",
+          "price": "84,49 €",
           "link": "https://www.ebay.de/itm/940083854627?_skw=Zyxel+GS1100-24E+24-Port+Gigabit+Unmanaged+Switch+V4&hash=itemdae15d3d23%3Ag%3AcJ4AAeSwUfNq9QlS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -9803,25 +9705,6 @@
         }
       ]
     },
-    "lg-27up850k-w": {
-      "id": "lg-27up850k-w",
-      "name": "LG 27UP850K-W",
-      "brand": "LG",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/27UP850K-W_1_c7ac.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "239,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=43784938928&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "242,00 €",
-          "link": "https://www.ebay.de/itm/800475279925?_skw=LG+27UP850K-W&hash=itemba600b7235%3Ag%3AoPsAAeSwaCJq%7EZRl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "lg-39gs95qe-b": {
       "id": "lg-39gs95qe-b",
       "name": "LG UltraGear 39GS95QE-B",
@@ -10142,6 +10025,25 @@
         }
       ]
     },
+    "d-link-g403c-4g-lte-wlan-router-lte": {
+      "id": "d-link-g403c-4g-lte-wlan-router-lte",
+      "name": "D-Link G403C 4G LTE WLAN Router LTE",
+      "brand": "D-Link",
+      "kategorie": "router",
+      "image": "https://media2.nbb-cdn.de/images/products/0/D-Link-G403C-Front.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "69,69 €",
+          "link": "https://www.awin1.com/pclick.php?p=46261228269&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "86,42 €",
+          "link": "https://www.ebay.de/itm/307052590885?_skw=D-Link+G403C+4G+LTE+WLAN+Router+LTE&hash=item477dc2b725%3Ag%3ACL0AAeSw-jdqT%7EKe&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "fritz-7690-wifi-7": {
       "id": "fritz-7690-wifi-7",
       "name": "FRITZ! 7690 WiFi 7",
@@ -10284,8 +10186,8 @@
         },
         {
           "name": "eBay",
-          "price": "77,89 €",
-          "link": "https://www.ebay.de/itm/256786810141?_skw=DeepCool+CG530+4F&hash=item3bc9afc51d%3Ag%3AYEAAAOSwjDlnit1f&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "77,59 €",
+          "link": "https://www.ebay.de/itm/198647543831?_skw=DeepCool+CG530+4F&hash=item2e4050f817%3Ag%3AJDcAAeSwVyhqq5uQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -10756,7 +10658,7 @@
         {
           "name": "eBay",
           "price": "1006,99 €",
-          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHy5HfqGscnbAvlePDIf9dnQKsaLIXoKGwD3xCXgrNOzrcNj0nMTm03UKueFUC796gGKSmaFhQUc42S3o0t5eNdtQexsvsxlI2x5BwKcCzZ3Fvlce%2BUzEtwUTSzejOrJOFRXKFqSxQLp%2F0ly8mhe1ePd3Urc84k7F9pdSgzbSO6L5w%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHwufYJVFeIqYnFiwiH19%2F9GpN1hRfmVqcBwM4pZY3ZGcRfg1hwoeJpbFbuf7xkihb75nBu%2Bj2wqOrZlXIPOeswrV01NFNMrQPp1kVK8%2BiLpvhQq2LRXtmCgN5QySMUWTEoNFghSMqBwOYFwZdt2fKa55FnxlU8uKoHArtzZlAs8Jg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -11668,6 +11570,20 @@
           "name": "notebooksbilliger.de",
           "price": "77,02 €",
           "link": "https://www.awin1.com/pclick.php?p=42566672567&a=3110253&m=11348"
+        }
+      ]
+    },
+    "lenovo-thinkvision-e24q-30-business": {
+      "id": "lenovo-thinkvision-e24q-30-business",
+      "name": "Lenovo ThinkVision E24q-30 Business",
+      "brand": "Lenovo",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/ThinkVision_E24q_30_CT2_01_4608.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "119,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46458986214&a=3110253&m=11348"
         }
       ]
     },
@@ -12738,7 +12654,7 @@
         {
           "name": "eBay",
           "price": "432,18 €",
-          "link": "https://www.ebay.de/itm/366742410378?_skw=Xerox+C303a+Farb-+Multifunktionsdrucker&hash=item55638d148a%3Ag%3AaIkAAeSwjqhq246c&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/366821902459?_skw=Xerox+C303a+Farb-+Multifunktionsdrucker&hash=item55684a087b%3Ag%3AhJ8AAeSwXP5rAXn7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -13486,8 +13402,8 @@
         },
         {
           "name": "eBay",
-          "price": "85,77 €",
-          "link": "https://www.ebay.de/itm/306994240536?_skw=Zyxel+GS1100-24ES+Unmanaged+Switch+24-Port&hash=item477a485c18%3Ag%3AhQoAAeSw%7EhNq-CaD&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "76,57 €",
+          "link": "https://www.ebay.de/itm/327462330048?_skw=Zyxel+GS1100-24ES+Unmanaged+Switch+24-Port&hash=item4c3e469ec0%3Ag%3Ay5MAAeSwtR5q%7ERgA&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -13789,7 +13705,7 @@
         {
           "name": "eBay",
           "price": "1889,00 €",
-          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC6kakpH1JW0Lb6qCcerejpgqiv0abdYULFh5bhb7mQZdAUwLTHjCoVPL2IYM9wjUINfytKKGlxOQlrr7Ot51kVgl0UnoHThwNqz2yJ5RkFjZmwq4lRkIeApkI9E83zjGwtxUUPARPOHnP9R6lvwUi9PO7HebdmZmt0TQ28Kq6u9VgJ3rf9c7lhWI8hWhnZ7OkpXJKHm1mrqSWwLPjkjxvcs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC6CsdeR9UoaR4c4Vp9hICd1cZSIJgoY9ZE8W4WZK147xBKb9OWZs2kyG%2FdG%2F3s5eUKcEy3MtbyIbAVMCAls4tmT%2BHF5VisWr4Dvkg%2Fvr6Nrk34i1DB4PyGca68vgXPDMUztCVRfxyQYTSYmXyeEE%2B34aNgxRL3E2JVfJs7NWopxJMkCwsmu7xT1XHJfCnCtKn0Dcbj5c4WuOoxNaUuClp30&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -13902,7 +13818,7 @@
         },
         {
           "name": "eBay",
-          "price": "535,90 €",
+          "price": "533,90 €",
           "link": "https://www.ebay.de/itm/147639348181?_skw=Dell+Alienware+27+280Hz+QD-OLED&hash=item225ffdabd5%3Ag%3AKqsAAeSw%7EmxpMXpc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -14575,8 +14491,8 @@
         },
         {
           "name": "eBay",
-          "price": "216,30 €",
-          "link": "https://www.ebay.de/itm/306924008905?_skw=WD_BLACK+SN7100&hash=item477618b5c9%3Ag%3A0EYAAeSwPABp%7EIOk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "213,47 €",
+          "link": "https://www.ebay.de/itm/287562799874?_skw=WD_BLACK+SN7100&hash=item42f4141b02%3Ag%3AwGoAAeSwTYtq2pv5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -15054,7 +14970,7 @@
         {
           "name": "eBay",
           "price": "239,00 €",
-          "link": "https://www.ebay.de/itm/296757893552?_skw=Zyxel+USGLITE60AX+Security+Router+Dual-WAN&hash=item45182619b0%3Ag%3AMtIAAeSwFKNqXkwb&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lRqZwrmYI%2BpY%2B8F8QrK1FJBz44yv67UN8T5ydpeABXy7GHOAgHhT3PD7tC5jzPcmCGFV744cACT8QyrmOnRO14l1JhKg%2FDE3S1rD9Vk%2FToK4xEJY%2FjKnCvVOMcZ3Cr1T%2FDoeJCfAb9OEvRjmIYmWq2CgQFApeg1OucBR0Hh72LI%2BLXKM32D4pv3fAkf96OJDr37Pz37Kj3vRgMuWnDg3OEzfyxJJF%2F1dxf9y%2FfYsmZc%2FBrnMdfMDE2jw7%2BTrBXicdXQ%2BFdoIXi8eJd3DcGyNl49KO4P%2B2Umql8QPpGvrI0odnU8zch2e26kTaJQ%2FTlMY4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/296757893552?_skw=Zyxel+USGLITE60AX+Security+Router+Dual-WAN&hash=item45182619b0%3Ag%3AMtIAAeSwFKNqXkwb&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lRqZwrmYI%2BpY%2B8F8QrK1FJBz44yv67UN8T5ydpeABXy7GHOAgHhT3PD7tC5jzPcmCGFV744cACT8QyrmOnRO14l1JhKg%2FDE3S1rD9Vk%2FToK4xEJY%2FjKnCvVOMcZ3Cr1T%2BgFxWYZhZEnr6A1pGLbGSqVC%2Buob7UApwnHoX9GP4FMwG5BbGDulE%2BkkKEAQ5PIkDY9K0ZWNc%2BPodmJx7cNH%2BSkjziRJtQ7EgbiDv9A%2FxXYYD8ynxeUvd8Nn3%2FLhC%2F7hb5%2F7uLV3B5kwsMYGCAXp50B%2BD0y3rJT5y8oozSGmwr%2FFpGozab4VZD0rWMiQg13Dk%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
