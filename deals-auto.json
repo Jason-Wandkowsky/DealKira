@@ -1037,6 +1037,15 @@
       "preis": "382,99 €"
     },
     {
+      "vorher": "12,90 €",
+      "rabatt": 23,
+      "seit": "2026-11-17",
+      "vergleich_ab": "2026-10-28",
+      "id": "tp-link-sm331t-transceiver-modul-sfp",
+      "shop": "notebooksbilliger.de",
+      "preis": "9,90 €"
+    },
+    {
       "vorher": "102,66 €",
       "rabatt": 22,
       "seit": "2026-11-15",
@@ -2405,6 +2414,15 @@
       "preis": "85,98 €"
     },
     {
+      "vorher": "949,00 €",
+      "rabatt": 12,
+      "seit": "2026-11-22",
+      "vergleich_ab": "2026-10-28",
+      "id": "apple-ipad-air-11-m4-wi-fi-plus-cellular",
+      "shop": "notebooksbilliger.de",
+      "preis": "839,00 €"
+    },
+    {
       "vorher": "189,90 €",
       "rabatt": 11,
       "seit": "2026-11-19",
@@ -3521,6 +3539,15 @@
       "preis": "84,99 €"
     },
     {
+      "vorher": "159,99 €",
+      "rabatt": 7,
+      "seit": "2026-11-22",
+      "vergleich_ab": "2026-10-28",
+      "id": "brother-vc500w-etikettendrucker-mit-airprint",
+      "shop": "notebooksbilliger.de",
+      "preis": "148,99 €"
+    },
+    {
       "vorher": "1499,99 €",
       "rabatt": 7,
       "seit": "2026-11-17",
@@ -3717,15 +3744,6 @@
       "id": "optoma-hz41hdr-full-hd-laser-beamer-mit-4-400",
       "shop": "notebooksbilliger.de",
       "preis": "649,00 €"
-    },
-    {
-      "vorher": "230,06 €",
-      "rabatt": 7,
-      "seit": "2026-11-21",
-      "vergleich_ab": "2026-10-28",
-      "id": "asus-expert-wifi-ebm68-wifi-6-mesh-system",
-      "shop": "notebooksbilliger.de",
-      "preis": "214,42 €"
     },
     {
       "vorher": "31,13 €",
@@ -4580,6 +4598,15 @@
       "id": "apple-ipad-air-11-wi-fi-128gb-m3-space",
       "shop": "notebooksbilliger.de",
       "preis": "649,00 €"
+    },
+    {
+      "vorher": "1079,00 €",
+      "rabatt": 6,
+      "seit": "2026-11-22",
+      "vergleich_ab": "2026-10-28",
+      "id": "apple-ipad-air-13-m4-wi-fi-plus-cellular",
+      "shop": "notebooksbilliger.de",
+      "preis": "1019,00 €"
     },
     {
       "vorher": "2099,99 €",
@@ -5511,8 +5538,8 @@
         },
         {
           "name": "eBay",
-          "price": "33,99 €",
-          "link": "https://www.ebay.de/itm/960045948234?_skw=Corsair+RS120+ARGB&hash=itemdf87329d4a%3Ag%3A3tEAAeSwagxqyajM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "28,88 €",
+          "link": "https://www.ebay.de/itm/820331664953?_skw=Corsair+RS120+ARGB&hash=itembeff93d639%3Ag%3AGO8AAeSwJqVq8KWQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6079,7 +6106,7 @@
         },
         {
           "name": "eBay",
-          "price": "259,06 €",
+          "price": "165,50 €",
           "link": "https://www.ebay.de/itm/158232381281?_skw=Corsair+RMe+Series+ThermalProtect+RM850e+White&hash=item24d7628761%3Ag%3A1skAAeSwXSZqkVeJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -6377,8 +6404,8 @@
         },
         {
           "name": "eBay",
-          "price": "44,95 €",
-          "link": "https://www.ebay.de/itm/257439437613?_skw=Corsair+RS120+ARGB+3er-Pack&hash=item3bf096132d%3Ag%3Ao5kAAeSwLM5pzoeO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "41,99 €",
+          "link": "https://www.ebay.de/itm/920131664578?_skw=Corsair+RS120+ARGB+3er-Pack&hash=itemd63c1efac2%3Ag%3ADlMAAeSw4VFq9L7z&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6457,8 +6484,8 @@
       "shops": [
         {
           "name": "eBay",
-          "price": "223,99 €",
-          "link": "https://www.ebay.de/itm/407348653235?_skw=Mova+E40+Ultra&hash=item5ed7df2cb3%3Ag%3AEIwAAeSwokhqwrDu&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "220,49 €",
+          "link": "https://www.ebay.de/itm/287743708330?_skw=Mova+E40+Ultra&hash=item42fedc8caa%3Ag%3Ajw4AAeSwW%7Epq%7EHMR&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -6586,7 +6613,7 @@
         {
           "name": "eBay",
           "price": "45,33 €",
-          "link": "https://www.ebay.de/itm/267822439813?_skw=Corsair+MM+XXL&hash=item3e5b761d85%3Ag%3Aod0AAeSwRQxqgO-0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/287692044938?_skw=Corsair+MM+XXL&hash=item42fbc83a8a%3Ag%3A9c0AAeSwEMdqZUqg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6863,8 +6890,8 @@
         },
         {
           "name": "eBay",
-          "price": "20,99 €",
-          "link": "https://www.ebay.de/itm/920141391249?_skw=Cherry+STREAM+KEYBOARD+TKL&hash=itemd63cb36591%3Ag%3ARvwAAeSwc1hq9%7EPX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "21,20 €",
+          "link": "https://www.ebay.de/itm/318562063145?_skw=Cherry+STREAM+KEYBOARD+TKL&hash=item4a2bc75329%3Ag%3AaYUAAeSw505qT1bu&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6877,8 +6904,8 @@
       "shops": [
         {
           "name": "eBay",
-          "price": "248,89 €",
-          "link": "https://www.ebay.de/itm/336897703381?_skw=Lexware+buchhaltung+2027&hash=item4e70aafdd5%3Ag%3AdpwAAeSwGKlq-LK4&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "249,89 €",
+          "link": "https://www.ebay.de/itm/336908785696?_skw=Lexware+buchhaltung+2027&hash=item4e71541820%3Ag%3AdpwAAeSwGKlq-LK4&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -6933,14 +6960,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/1128231/fo-plus-neutral_3D.jpg?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "549,00 €",
+          "link": "https://www.ebay.de/itm/401614264206?_skw=Lexware+financial+office+plus+2027&hash=item5d8213578e%3Ag%3AW9QAAOSwSidnN7jv&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
           "price": "667,99 €",
           "link": "https://www.awin1.com/pclick.php?p=46575851119&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "729,00 €",
-          "link": "https://www.ebay.de/itm/401614264206?_skw=Lexware+financial+office+plus+2027&hash=item5d8213578e%3Ag%3AW9QAAOSwSidnN7jv&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6958,8 +6985,8 @@
         },
         {
           "name": "eBay",
-          "price": "387,85 €",
-          "link": "https://www.ebay.de/itm/196072679533?_skw=Lexware+lohn%2Bgehalt+2027&hash=item2da6d7a86d%3Ag%3AXpMAAeSwZvtq9z8w&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7k25AYDKxf2eRq5yyU0e%2BYGMJAnqecbROsuzEzZIDyl2b9b5yB7Fj1qoIRuoEWi0S7nbEIORaNIwPis2VYHEswoIVGUlYQVa1NwA2wHjL4cVV%2B4BpZ9%2BFhYOxcilMoB5a7ycLPT74WXH5SHufFXLJd%2B%2BVBVeBc8po1HknQ9EH%2FN5drMxs%2FnKyvxnqQbm9DtHpzKA3TJHi55ILMJNRL57rYgxHn3Te91lS1U0%2FTukZGlZ3QyAScyBLyQ3NU0CjzlhM3T2TgEq8wdsQtTnkmuQWpqDnEyhgglFp6qqO%2Fa1r7dC8sWjtgk2rQUN9GNV7eTUlM%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "387,50 €",
+          "link": "https://www.ebay.de/itm/126013184552?_skw=Lexware+lohn%2Bgehalt+2027&hash=item1d56f89a28%3Ag%3AigoAAeSwegtq-jBa&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6977,8 +7004,8 @@
         },
         {
           "name": "eBay",
-          "price": "898,00 €",
-          "link": "https://www.ebay.de/itm/178455977991?_skw=Lexware+lohn%2Bgehalt+pro+2027&hash=item298cce2007%3Ag%3AnngAAeSwejxq8bxi&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "895,00 €",
+          "link": "https://www.ebay.de/itm/125018109131?_skw=Lexware+lohn%2Bgehalt+pro+2027&hash=item1d1ba8f4cb%3Ag%3AgrUAAeSw8hNq-jQ0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6996,8 +7023,8 @@
         },
         {
           "name": "eBay",
-          "price": "739,00 €",
-          "link": "https://www.ebay.de/itm/178456011391?_skw=Lexware+warenwirtschaft+pro+2027&hash=item298ccea27f%3Ag%3AJ34AAeSwghlq8cCM&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "738,00 €",
+          "link": "https://www.ebay.de/itm/125018710258?_skw=Lexware+warenwirtschaft+pro+2027&hash=item1d1bb220f2%3Ag%3ALO8AAeSwYzJq-j2%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7155,6 +7182,25 @@
         }
       ]
     },
+    "tp-link-sm331t-transceiver-modul-sfp": {
+      "id": "tp-link-sm331t-transceiver-modul-sfp",
+      "name": "TP-Link SM331T Transceiver-Modul SFP",
+      "brand": "TP-Link",
+      "kategorie": "netzwerk-adapter",
+      "image": "https://media2.nbb-cdn.de/images/products/TP-Link-TL-SM331T-1_04bf.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "9,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=35319594785&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "35,24 €",
+          "link": "https://www.ebay.de/itm/940010838676?_skw=TP-Link+SM331T+Transceiver-Modul+SFP&hash=itemdadd031a94%3Ag%3AfgkAAeSwwblq3Bx0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "be-quiet-pure-base-501-lx-black": {
       "id": "be-quiet-pure-base-501-lx-black",
       "name": "be quiet! PURE BASE 501 LX Black",
@@ -7278,8 +7324,8 @@
         },
         {
           "name": "eBay",
-          "price": "1189,00 €",
-          "link": "https://www.ebay.de/itm/192684025317?_skw=Lexware+financial+office+pro+2027&hash=item2cdcdce5e5%3Ag%3AZCMAAOSwhQVnN7Qv&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "1187,00 €",
+          "link": "https://www.ebay.de/itm/125018161246?_skw=Lexware+financial+office+pro+2027&hash=item1d1ba9c05e%3Ag%3ALq4AAeSwz6hq-iNV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7888,8 +7934,8 @@
         },
         {
           "name": "eBay",
-          "price": "109,44 €",
-          "link": "https://www.ebay.de/itm/307052511677?_skw=Corsair+FRAME+4000D+RS+Black&hash=item477dc181bd%3Ag%3AMnUAAeSwQPZq8kh%7E&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kP6pGa6xiSrvgTeLAL6dkwKCMIN8kweYEDk65%2F6J8tZl4%2B6sNj8t9RE%2FN%2FRYsXLt4k0U4Ym8d%2B6mwkn0KVofARfJAVx2e98DZEWF4mK0D5pE9EhRxoBlc5iILyyfhoDGIx%2Bzs%2BVhx%2BS9Zc1M%2B23GsF04m5NQp1zL6MxxPPH8hsGjGswOeHAeUUCsSgKJ6YncmY4SB23v%2FObpVGc0eOKhN5Slkvk5E1YVen37kfbnvjsL8RqToWIlSEyQsaMAmVL9Ht%2BgmWkadVVpkN7mLBvq%2BjlSJ%2BGjbVZhYH9KoUl1Y%2Fgd6Sq0D8ylfLKQhAPREfRwg%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "110,25 €",
+          "link": "https://www.ebay.de/itm/327270504939?_skw=Corsair+FRAME+4000D+RS+Black&hash=item4c32d799eb%3Ag%3AUpoAAeSw-Udq8kig&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mWPwIHobEBScABKJb%2Bdn7s6ARGQyoB%2Bte2Gt4uZjKE3n9PhDG5rwITWSyaZgckMxDTR5sopfxTz9RyQUGvFCkhXUlDVg%2F903W2YHRiYWeM12r9J18cX9twiUoGQeSraxrCF8UHP%2F6D3GQmiYQTNioQJbUq2BAR7D5NxIKvBkBO3Bsg3WoUUZdJTRj%2Fop0vjI%2BvM6q%2BTOahFck6ZSl%2B6aMoCAMhOzSAF61KSrtk93n5MU%2B6u0NIzMEXz7FwkPDdBu4JupPrysHu0kbgqmcaZm8wZZPAqvXVB6T6x3HaovJSltofsepzI3DPBPrPfw8VQlw%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8186,7 +8232,7 @@
         },
         {
           "name": "eBay",
-          "price": "227,25 €",
+          "price": "228,82 €",
           "link": "https://www.ebay.de/itm/168554642216?_skw=Corsair+FRAME+5000D+WOOD+RS+White+Oak&hash=item273ea3bb28%3Ag%3Auz0AAeSweEtqeqNH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -9658,8 +9704,8 @@
         },
         {
           "name": "eBay",
-          "price": "167,46 €",
-          "link": "https://www.ebay.de/itm/168645516151?_skw=Corsair+RMe+Series+ThermalProtect+RM850e&hash=item27440e5b77%3Ag%3Al9IAAeSwva1qkVeF&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "165,50 €",
+          "link": "https://www.ebay.de/itm/158232381281?_skw=Corsair+RMe+Series+ThermalProtect+RM850e&hash=item24d7628761%3Ag%3A1skAAeSwXSZqkVeJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -10156,14 +10202,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/K70_CORE_TKL_01.avif?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "74,99 €",
+          "link": "https://www.ebay.de/itm/366704206036?_skw=Corsair+K70+Core+TKL&hash=item55614620d4%3Ag%3A2LwAAeSwxHtqvomn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
           "price": "79,99 €",
           "link": "https://www.awin1.com/pclick.php?p=45359529353&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "93,65 €",
-          "link": "https://www.ebay.de/itm/355991061527?_skw=Corsair+K70+Core+TKL&hash=item52e2b88417%3Ag%3AVOsAAOSww9dmzqGt&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7mhho6HX%2FkBNmvE48U6sLwH%2F0LNjfZUL5veM4JYUcZUemPX6zv7%2B154%2BAF6AA4F0XM1zfhUyw87wtAqeoyqBCNBglYL5TrqWBh3PQnPsOwAWmu1H%2Fu8mEzHKr7N1cR3%2FWw7%2Fzll5vnbc7nFIiYSBhg2P9WP98CEE4yG71w9o9yml1k%2B1Zv21RDkv7p8wthUDC2t1%2BBi5bZ4RD8pQdN26zkjtDV%2Fi6pfyW6RfCZB7eU49MyICBznLOKNYyPSyKTxyzp9ePEYftYlpuURWcVJTOpRn1T5Ucfo%2Bbp8OzjIxjWFgQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -10710,7 +10756,7 @@
         {
           "name": "eBay",
           "price": "1006,99 €",
-          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHzuptmK6TOmS9AZ6%2BABmxaz58YMaxlBGOsKak6NNRulVL8Yb07u4zt6q5%2FmAHG4Fx0jt9wXoCEMHYvq0WD5zKAWpfVjZnrnQUTJsrMbWv0D2JlRosNQecT1i27tQooK5W5ZZTXY4p9L%2B259deE%2Fz5su6LeTUoO%2BEu%2BtUyScT6lOag%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHy5HfqGscnbAvlePDIf9dnQKsaLIXoKGwD3xCXgrNOzrcNj0nMTm03UKueFUC796gGKSmaFhQUc42S3o0t5eNdtQexsvsxlI2x5BwKcCzZ3Fvlce%2BUzEtwUTSzejOrJOFRXKFqSxQLp%2F0ly8mhe1ePd3Urc84k7F9pdSgzbSO6L5w%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -11007,7 +11053,7 @@
         },
         {
           "name": "eBay",
-          "price": "194,94 €",
+          "price": "196,93 €",
           "link": "https://www.ebay.de/itm/168156693365?_skw=Corsair+RMx+Series+RM750x+ATX+3.1&hash=item2726eb8375%3Ag%3AamoAAeSwtEFqebv%7E&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -11815,6 +11861,20 @@
         }
       ]
     },
+    "brother-vc500w-etikettendrucker-mit-airprint": {
+      "id": "brother-vc500w-etikettendrucker-mit-airprint",
+      "name": "Brother VC500W Etikettendrucker mit AirPrint",
+      "brand": "Brother",
+      "kategorie": "drucker",
+      "image": "https://media2.nbb-cdn.de/images/products/Brother_VC500W_Etikettendrucker_01_63b5.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "148,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44867495661&a=3110253&m=11348"
+        }
+      ]
+    },
     "lenovo-thinkstation-p3-ultra-cff-30ha00bhge": {
       "id": "lenovo-thinkstation-p3-ultra-cff-30ha00bhge",
       "name": "Lenovo ThinkStation P3 Ultra CFF 30HA00BHGE",
@@ -11923,7 +11983,7 @@
         },
         {
           "name": "eBay",
-          "price": "227,25 €",
+          "price": "228,82 €",
           "link": "https://www.ebay.de/itm/168554642216?_skw=Corsair+FRAME+5000D+RS+White&hash=item273ea3bb28%3Ag%3Auz0AAeSweEtqeqNH&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -12173,20 +12233,6 @@
         }
       ]
     },
-    "asus-expert-wifi-ebm68-wifi-6-mesh-system": {
-      "id": "asus-expert-wifi-ebm68-wifi-6-mesh-system",
-      "name": "ASUS Expert WiFi EBM68 WiFi 6 Mesh System",
-      "brand": "ASUS",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ExpertWiFi-EBM68-2er-Pack-Left2_50d2.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "214,42 €",
-          "link": "https://www.awin1.com/pclick.php?p=45189560151&a=3110253&m=11348"
-        }
-      ]
-    },
     "d-link-dwr-932-4g-lte-mobiler-wlan-router-n300": {
       "id": "d-link-dwr-932-4g-lte-mobiler-wlan-router-n300",
       "name": "D-Link DWR-932 4G LTE Mobiler WLAN Router N300",
@@ -12383,14 +12429,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/TITAN_360_RX_LCD_BLACK_RENDER_01_2bc2.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "174,95 €",
-          "link": "https://www.ebay.de/itm/920076273251?_skw=Corsair+iCUE+LINK+TITAN+360+RX+LCD&hash=itemd638d1c663%3Ag%3AVWsAAeSw9bRq31gm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
           "name": "notebooksbilliger.de",
           "price": "194,90 €",
           "link": "https://www.awin1.com/pclick.php?p=41690902868&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "255,01 €",
+          "link": "https://www.ebay.de/itm/407061481416?_skw=Corsair+iCUE+LINK+TITAN+360+RX+LCD&hash=item5ec6c147c8%3Ag%3A1rwAAeSwtR5q-tiG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -12879,7 +12925,7 @@
         },
         {
           "name": "eBay",
-          "price": "125,28 €",
+          "price": "126,28 €",
           "link": "https://www.ebay.de/itm/168743563146?_skw=Corsair+2800X+RS-R+ARGB+schwarz&hash=item2749e66f8a%3Ag%3A9QsAAeSwDJpqvMIN&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -12898,7 +12944,7 @@
         },
         {
           "name": "eBay",
-          "price": "120,67 €",
+          "price": "121,47 €",
           "link": "https://www.ebay.de/itm/940008316637?_skw=Corsair+2800X+RS-R+ARGB+wei%C3%9F&hash=itemdadcdc9edd%3Ag%3AFdgAAeSwZupq1tdJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -13271,8 +13317,8 @@
         },
         {
           "name": "eBay",
-          "price": "205,23 €",
-          "link": "https://www.ebay.de/itm/158232381234?_skw=Corsair+RMe+Series+ThermalProtect+RM1000e&hash=item24d7628732%3Ag%3AnH0AAeSwqX5qkVeG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "206,14 €",
+          "link": "https://www.ebay.de/itm/158232381265?_skw=Corsair+RMe+Series+ThermalProtect+RM1000e&hash=item24d7628751%3Ag%3AjGcAAeSw2ZtqkVeI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -13743,7 +13789,7 @@
         {
           "name": "eBay",
           "price": "1889,00 €",
-          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC5RBxcyu5deFNKO%2B5qSqtZruk1WCrstcXyWid%2FIX9nzFU2iB2absMqNKbdSvZf2FChIEHuAYWOfNd3mx7NrI%2BY3T1u8PPwPO54f7V%2FSG1tU09oKNRN5JuEkTBdIzn3Qos%2BRDNFtHe4o3mBFANFBCxTIkuY%2Bywd1EIokluysw9OQiBFhFE11f4daNq2%2Bz%2FjxuNnJVschiYFcn77Vdp3XgFX1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC6kakpH1JW0Lb6qCcerejpgqiv0abdYULFh5bhb7mQZdAUwLTHjCoVPL2IYM9wjUINfytKKGlxOQlrr7Ot51kVgl0UnoHThwNqz2yJ5RkFjZmwq4lRkIeApkI9E83zjGwtxUUPARPOHnP9R6lvwUi9PO7HebdmZmt0TQ28Kq6u9VgJ3rf9c7lhWI8hWhnZ7OkpXJKHm1mrqSWwLPjkjxvcs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -14289,8 +14335,8 @@
         },
         {
           "name": "eBay",
-          "price": "40,32 €",
-          "link": "https://www.ebay.de/itm/157705091963?_skw=Corsair+RS120+3er-Pack&hash=item24b7f4bb7b%3Ag%3AZdYAAeSwO2lqedyG&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "41,99 €",
+          "link": "https://www.ebay.de/itm/920131664578?_skw=Corsair+RS120+3er-Pack&hash=itemd63c1efac2%3Ag%3ADlMAAeSw4VFq9L7z&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -14898,7 +14944,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "22,91 €",
+          "price": "20,99 €",
           "link": "https://www.awin1.com/pclick.php?p=43595668352&a=3110253&m=11348"
         },
         {
