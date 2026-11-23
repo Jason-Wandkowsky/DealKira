@@ -1,5 +1,5 @@
 {
-  "stand": "2026-11-22",
+  "stand": "2026-11-23",
   "deals": [
     {
       "vorher": "876,99 €",
@@ -5315,7 +5315,7 @@
         {
           "name": "eBay",
           "price": "145,00 €",
-          "link": "https://www.ebay.de/itm/298520371564?_skw=Dicota+Backpack+SEEKER+II+13-16&hash=item458133616c%3Ag%3AysEAAeSw5Vpqobaq&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m4tj5X7UpvkS4u5jzHrcA5bq8pg0Ho6lZUFIRmAWVwAXJIc7up89rPFmV6rdvsgFHS2PiAZr7fiFsLqkH20OOLvy92flofjGkiZ63Akq4x5yWX9MtYFoORUlXUuQlxUNEvPy0m7uWuU83O%2B1fFqyIaqmC1qFEvuTEU4FpQFUXDZBnQ%2BEqRtq0z6qlIkXSyqw7vvPLtTwtu8G%2BYeHwAfwKjjE%2FJ9AXlwJuFPUiyF8evbQjFdN9xEmGRY7E1fAId3GBS%2Fg4z16yIAMUpztuMJ85Jrknoz71528WEDJcKrtjLbWmu%2Bj2zNB5fZVrb0NlXETs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/298520371564?_skw=Dicota+Backpack+SEEKER+II+13-16&hash=item458133616c%3Ag%3AysEAAeSw5Vpqobaq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5508,11 +5508,6 @@
           "name": "notebooksbilliger.de",
           "price": "649,00 €",
           "link": "https://www.awin1.com/pclick.php?p=44347976892&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "784,00 €",
-          "link": "https://www.ebay.de/itm/128196525305?_skw=Dreame+Aqua10+Ultra+Track+Complete+Schwarz&hash=item1dd91bbcf9%3Ag%3Ay7MAAeSwjllq8frs&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5524,14 +5519,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/Dreame-Aqua10-Ultra-Track-Complete-White-Front_b2bd.jpg?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "588,99 €",
+          "link": "https://www.ebay.de/itm/327291649952?_skw=Dreame+Aqua10+Ultra+Track+Complete+Wei%C3%9F&hash=item4c341a3fa0%3Ag%3Am6wAAeSwNF9q2jRk&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
           "price": "649,00 €",
           "link": "https://www.awin1.com/pclick.php?p=44347976891&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "1099,00 €",
-          "link": "https://www.ebay.de/itm/257101452199?_skw=Dreame+Aqua10+Ultra+Track+Complete+Wei%C3%9F&hash=item3bdc70d3a7%3Ag%3A1S0AAeSw5mRq-F4i&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5543,14 +5538,14 @@
       "image": "https://media2.nbb-cdn.de/images/products/840268915742_d1a1.jpg?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "39,95 €",
+          "link": "https://www.ebay.de/itm/267834121525?_skw=Echo+Dot+Kids&hash=item3e5c285d35%3Ag%3A4OEAAeSw271q7G%7E2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
           "price": "39,98 €",
           "link": "https://www.awin1.com/pclick.php?p=44643075263&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "39,99 €",
-          "link": "https://www.ebay.de/itm/880122562428?_skw=Echo+Dot+Kids&hash=itemcceb64877c%3Ag%3A2ScAAeSwIwtq-t01&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -5899,8 +5894,8 @@
         },
         {
           "name": "eBay",
-          "price": "609,99 €",
-          "link": "https://www.ebay.de/itm/880071046943?_skw=Ecovacs+Deebot+X11S+Pro+Omni&hash=itemcce852771f%3Ag%3A1tkAAeSw%7Eopq5wTy&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "603,87 €",
+          "link": "https://www.ebay.de/itm/336901082240?_skw=Ecovacs+Deebot+X11S+Pro+Omni&hash=item4e70de8c80%3Ag%3AW44AAeSwts9qvRPT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6254,7 +6249,7 @@
         },
         {
           "name": "eBay",
-          "price": "30,19 €",
+          "price": "22,72 €",
           "link": "https://www.ebay.de/itm/940011730347?_skw=Delock+Kabelkanal+selbstklebend+30+x+8+mm&hash=itemdadd10b5ab%3Ag%3A52AAAeSw02pq3Nsn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -7586,8 +7581,8 @@
         },
         {
           "name": "eBay",
-          "price": "359,18 €",
-          "link": "https://www.ebay.de/itm/366733060792?_skw=Dreame+D20+Pro+Plus+Schwarz&hash=item5562fe6ab8%3Ag%3A6EQAAeSwBb1qDJux&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "199,99 €",
+          "link": "https://www.ebay.de/itm/128208628166?_skw=Dreame+D20+Pro+Plus+Schwarz&hash=item1dd9d469c6%3Ag%3ABKMAAeSwa4ZrAaP-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -10658,7 +10653,7 @@
         {
           "name": "eBay",
           "price": "1006,99 €",
-          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHwufYJVFeIqYnFiwiH19%2F9GpN1hRfmVqcBwM4pZY3ZGcRfg1hwoeJpbFbuf7xkihb75nBu%2Bj2wqOrZlXIPOeswrV01NFNMrQPp1kVK8%2BiLpvhQq2LRXtmCgN5QySMUWTEoNFghSMqBwOYFwZdt2fKa55FnxlU8uKoHArtzZlAs8Jg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHxogbB07r6vD9v96jI1w%2BYFC%2FH62WoamoqTShuBuBFwr8jyL1onWuCeuKP0KNSQJjDDnwxYY9HHZ9z4yU6CzeSTeTt5JTC93q%2F8Qx9HtYT%2BaIZf4KqX92hVwyzXdmROZFFHPqGFbodQeOygbeG41g71M6yLCZcWW%2FyIMqsIlxVRDg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -12009,7 +12004,7 @@
         {
           "name": "eBay",
           "price": "63,00 €",
-          "link": "https://www.ebay.de/itm/356652939471?_skw=Dicota+Skin+URBAN+13+navy&hash=item530a2bf8cf%3Ag%3AzngAAeSwrKRq41IL&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ms66GDqKg%2BLpTePvA7aJGuy1lwexFArBXDxh0U2o8L7KmWOoR0QYDv5aprvOPNZK6nm1IQmgBS0wBIeaFPPFj88AxpflD5L%2Fl1TgA%2FnE7%2FeFhWLwrW%2F1h5wSaN%2BiXZfmYyfPUxVI5lMSH8tIVetfy8ACf0Iy053ydI%2Bc6pujhdovxP3E7zrcI3YXlx6j9UmbBJvytwM5v8i6PZjdOqw9CU%2BdYCVQ%2FGeJkjrNTiND7ABExqshBb%2FrJAseme7VHHWQ0ZNb%2FXewsFpsMEIBojrShNa5R2kWFtjGiR3n2K7fjN4Q%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/356652939471?_skw=Dicota+Skin+URBAN+13+navy&hash=item530a2bf8cf%3Ag%3AzngAAeSwrKRq41IL&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7ms66GDqKg%2BLpTePvA7aJGuy1lwexFArBXDxh0U2o8L7KmWOoR0QYDv5aprvOPNZK6nm1IQmgBS0wBIeaFPPFj88AxpflD5L%2Fl1TgA%2FnE7%2FeFhWLwrW%2F1h5wSaN%2BiXZfmbliycgZSy98vsBGWKmlHLUhAdp6ZZYb4h%2BsjmBGMXDTMrb7m00sBjLyv0bz6vUMWpCRUvP%2F4YWepvUZvXmAw0di%2Fd2SWsqXe%2BIEo5hvV%2FAKYfr0nB%2F1cRDFSaZxDxP3bx3eK5HdanYCc9JzANU2sNIxY9vBN%2BuAX%2FIAXZZ0rpuSw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -13705,7 +13700,7 @@
         {
           "name": "eBay",
           "price": "1889,00 €",
-          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC6CsdeR9UoaR4c4Vp9hICd1cZSIJgoY9ZE8W4WZK147xBKb9OWZs2kyG%2FdG%2F3s5eUKcEy3MtbyIbAVMCAls4tmT%2BHF5VisWr4Dvkg%2Fvr6Nrk34i1DB4PyGca68vgXPDMUztCVRfxyQYTSYmXyeEE%2B34aNgxRL3E2JVfJs7NWopxJMkCwsmu7xT1XHJfCnCtKn0Dcbj5c4WuOoxNaUuClp30&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC5GtQN1qbjDyzjwgXp%2F2NgBHU1fjhhxgwKx2GDggt%2BWCxWntEzZIXzP%2BhAuNYvJn1736MxArpbcqd9psMUC%2FNpi5uSVGDnVaVH58gsi%2BfysYK9zdxqfwyWZME40F79AE49fArQv6QbKaL1n4OgwUYBq5lZp3rFu2JfpJyVN0OdO3Cbuy0WI24wYrmpx3UWz%2BN7%2FZCTGUAztm7CE%2BVeX3ZbO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -14814,215 +14809,210 @@
   },
   "beliebt": [
     {
-      "id": "brother-td-4650tnwb",
-      "name": "Brother TD-4650TNWB",
-      "brand": "Brother",
-      "kategorie": "drucker",
-      "image": "https://media2.nbb-cdn.de/images/products/Brother_TD4-4T_01_e36e.jpg?size=400",
+      "id": "samsung-screen-protector-fuer-galaxy-a57",
+      "name": "Samsung Screen Protector für Galaxy A57",
+      "brand": "Samsung",
+      "kategorie": "telefon-schutz",
+      "image": "https://media2.nbb-cdn.de/images/products/89c2243f-d72f-4018-ae37-4d7d8237d3b2_screenGr_b140.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "680,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45858503326&a=3110253&m=11348"
+          "price": "11,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44695717239&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "699,00 €",
-          "link": "https://www.ebay.de/itm/227319840587?_skw=Brother+TD-4650TNWB&hash=item34ed517f4b%3Ag%3AwGIAAeSwt5Bqz3Is&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "13,90 €",
+          "link": "https://www.ebay.de/itm/840026188737?_skw=Samsung+Screen+Protector+f%C3%BCr+Galaxy+A57&hash=itemc395766bc1%3Ag%3AkQ0AAeSwojpq0cU6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "fractal-design-momentum-12-rgb-black",
-      "name": "Fractal Design Momentum 12 RGB Black",
-      "brand": "Fractal",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/Momentum-12_RGB_Black_Left-Front_62394b_775b.png?size=400",
+      "id": "canon-cli-36-twin-pack",
+      "name": "Canon \"CLI-36 Twin Pack\"",
+      "brand": "Canon",
+      "kategorie": "druckerzubehoer",
+      "image": "https://media2.nbb-cdn.de/images/products/27409531_2_f9ed.jpg?size=400",
       "shops": [
         {
-          "name": "notebooksbilliger.de",
-          "price": "37,39 €",
-          "link": "https://www.awin1.com/pclick.php?p=46035679382&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "27,39 €",
+          "link": "https://www.ebay.de/itm/406626797385?_skw=Canon+%22CLI-36+Twin+Pack%22&hash=item5eacd88749%3Ag%3ASboAAeSwSs1q9W7T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kXGD0Jut0VRWITvW2ziitz2jJgrMnSJTVV2b19no4t4HqboUWCs8ljU32oGUGIxjvTskgD6AkALZIUVjOhNTqRg6y76ncj9a3sRbUxwGkVmy%2F1Z%2BMuFbMOgGAmaG%2BoZdmZqC1ZY%2BxKQU2ouksApXr3A1dMgVQFa0HTTtLu92zK0IRrrIAR6A0FVaOCUL664zJCtyEsU5feZNMtfOVKQ3X1eNA%2B6uSF%2BK1tkHvCfqTH0VV7zF50jJVLZVFaO6z812rPExnGZUhkgxh%2FXTkD65SHdFNmGemWultk5Wa%2BFJYZ9OJdB99kYZm1tmiGH2dqOUs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
-          "name": "eBay",
-          "price": "77,58 €",
-          "link": "https://www.ebay.de/itm/307052592903?_skw=Fractal+Design+Momentum+12+RGB+Black&hash=item477dc2bf07%3Ag%3AJuMAAeSwS9dqjWUV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "35,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=42096805753&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "shelly-blu-remote-control-zb-white",
-      "name": "Shelly Blu Remote Control ZB white",
-      "brand": "Shelly",
-      "kategorie": "heimautomatisierung",
-      "image": "https://media2.nbb-cdn.de/images/products/Shelly_BLU_Remote_Control_ZB_white_1_3da7.png?size=400",
+      "id": "icy-box-usb-type-c-zu-hdmi-kabel",
+      "name": "ICY BOX USB Type-C zu HDMI Kabel",
+      "brand": "ICY",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/IB-CB020-C_pic1_b3db.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "20,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43595668352&a=3110253&m=11348"
+          "price": "21,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41214502752&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "36,02 €",
-          "link": "https://www.ebay.de/itm/227253346203?_skw=Shelly+Blu+Remote+Control+ZB+white&hash=item34e95adf9b%3Ag%3AhdwAAeSwoD1q%7E4J6&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mN56PaNSDZ%2Bd0bv8D6NpjCGGQtcnSaNzkWQD%2B15ZW6YuT8hkg52HH45OBsv1k152xb3n2d1XZLVoLWwJ0r%2BKV6GLg8ULsol8OPG37VrahdOYboAAKhziKoHE34DtUuONORzmNIa%2FZPCDHO6z%2BEM9m%2FDzLhD8YI5nQHW0sGbRvWLFFJImoY5n1Jho0Q3zAF0n5pk%2F75I%2BHAjRhWKzitqffvaF90MLjYi4RjzGMFtDMDjwno8VVZ1p2fH6X1vgSe2znOQO1pN%2BSBaar4%2FNCAf72x5u7SanKV%2FyYyfyXRgBH2T4c6CBtxG9K09IVv9vZApu4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "22,39 €",
+          "link": "https://www.ebay.de/itm/147627202364?_skw=ICY+BOX+USB+Type-C+zu+HDMI+Kabel&hash=item225f44573c%3Ag%3A-8sAAeSwjflqyIvT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "asrock-h810m-x-gen5",
-      "name": "ASRock H810M-X Gen5",
-      "brand": "ASRock",
-      "kategorie": "mainboards",
-      "image": "https://media2.nbb-cdn.de/images/products/AsrockH810M-X-Gen5-01.png?size=400",
+      "id": "acer-predator-z",
+      "name": "Acer Predator Z",
+      "brand": "Acer",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/1067824/UM-NZ7EE-001-1.webp?size=400",
       "shops": [
         {
-          "name": "notebooksbilliger.de",
-          "price": "88,43 €",
-          "link": "https://www.awin1.com/pclick.php?p=46063058838&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "797,00 €",
+          "link": "https://www.ebay.de/itm/327135902524?_skw=Acer+Predator+Z&hash=item4c2ad1bb3c%3Ag%3AgtwAAeSwXudq0AmJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
-          "name": "eBay",
-          "price": "105,72 €",
-          "link": "https://www.ebay.de/itm/168342896860?_skw=ASRock+H810M-X+Gen5&hash=item273204c0dc%3Ag%3AXaAAAeSwlC5qeoBg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "2099,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45230075374&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "amd-ryzen-7-5700x",
-      "name": "AMD Ryzen 7 5700X",
-      "brand": "AMD",
-      "kategorie": "cpu",
-      "image": "https://media2.nbb-cdn.de/images/products/20614362-A_Ryzen7_5000_3DPIBWOF_LEFT_ROW_e248.png?size=400",
+      "id": "asus-rog-strix-impact-iii",
+      "name": "ASUS ROG Strix Impact III",
+      "brand": "ASUS",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/ImpactIII_6_f05d.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "152,89 €",
-          "link": "https://www.ebay.de/itm/336869435911?_skw=AMD+Ryzen+7+5700X&hash=item4e6efbaa07%3Ag%3AVc0AAeSwsA5q465y&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "24,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=40201467229&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "179,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=43933777075&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "46,19 €",
+          "link": "https://www.ebay.de/itm/366363075602?_skw=ASUS+ROG+Strix+Impact+III&hash=item554cf0e412%3Ag%3AbpkAAeSwcSpp6RFq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "captiva-pc-workstation-i94-176-intel-ultra-9-285k",
-      "name": "Captiva PC Workstation I94-176 Intel Ultra 9 285K",
+      "id": "thinkvision-p49w-30-business",
+      "name": "ThinkVision P49w-30 Business",
+      "brand": "ThinkVision",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/4cf369322438b508b91f8a6e34cc9ab4_5fc0.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1804,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=45238959184&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "captiva-pc-ki-workstation-i10-3008-intel-ultra-7",
+      "name": "Captiva PC KI Workstation I10-3008 Intel Ultra 7",
       "brand": "Captiva",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/Captiva_AG_120_1_8495.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/13094362_0_fd53.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "2215,34 €",
-          "link": "https://www.awin1.com/pclick.php?p=42406006423&a=3110253&m=11348"
+          "price": "4959,29 €",
+          "link": "https://www.awin1.com/pclick.php?p=45389489368&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "nedis-verlaengerungsbuchse",
-      "name": "Nedis Verlängerungsbuchse",
-      "brand": "Nedis",
-      "kategorie": "computer-setup-kabel",
-      "image": "https://media2.nbb-cdn.de/images/products/EXSO430F1PRO_P30_be3c.jpg?size=400",
+      "id": "netgear-gs108tv3-smart-switch-8x-gigabit-ethernet",
+      "name": "Netgear GS108Tv3 Smart Switch [8x Gigabit Ethernet]",
+      "brand": "Netgear",
+      "kategorie": "switches",
+      "image": "https://media2.nbb-cdn.de/images/products/GS108T_Front_091f.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "15,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253818055&a=3110253&m=11348"
+          "price": "82,43 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253809775&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "logitech-pro-x-superlight-wireless",
-      "name": "Logitech® PRO X SUPERLIGHT Wireless",
-      "brand": "Logitech®",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/ProXSuperlight_Schwarz_4_d39b.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "76,19 €",
-          "link": "https://www.ebay.de/itm/318555874579?_skw=Logitech%C2%AE+PRO+X+SUPERLIGHT+Wireless&hash=item4a2b68e513%3Ag%3Az18AAeSwoYxqTXRd&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "104,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=45278984216&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "zyxel-usglite60ax-security-router-dual-wan",
-      "name": "Zyxel USGLITE60AX Security Router Dual-WAN",
-      "brand": "Zyxel",
-      "kategorie": "router",
-      "image": "https://media2.nbb-cdn.de/images/products/Zyxel-USG-LITE-60AX-Hero.jpg?size=400",
+      "id": "asus-rog-ryujin-iii-360-argb-extreme-white",
+      "name": "ASUS ROG Ryujin III 360 ARGB Extreme White",
+      "brand": "ASUS",
+      "kategorie": "wasserkuehlung",
+      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ROG-Ryujin-III-360-ARGB-01_5baf.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "156,53 €",
-          "link": "https://www.awin1.com/pclick.php?p=45942370727&a=3110253&m=11348"
+          "price": "273,96 €",
+          "link": "https://www.awin1.com/pclick.php?p=44720204446&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "239,00 €",
-          "link": "https://www.ebay.de/itm/296757893552?_skw=Zyxel+USGLITE60AX+Security+Router+Dual-WAN&hash=item45182619b0%3Ag%3AMtIAAeSwFKNqXkwb&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lRqZwrmYI%2BpY%2B8F8QrK1FJBz44yv67UN8T5ydpeABXy7GHOAgHhT3PD7tC5jzPcmCGFV744cACT8QyrmOnRO14l1JhKg%2FDE3S1rD9Vk%2FToK4xEJY%2FjKnCvVOMcZ3Cr1T%2BgFxWYZhZEnr6A1pGLbGSqVC%2Buob7UApwnHoX9GP4FMwG5BbGDulE%2BkkKEAQ5PIkDY9K0ZWNc%2BPodmJx7cNH%2BSkjziRJtQ7EgbiDv9A%2FxXYYD8ynxeUvd8Nn3%2FLhC%2F7hb5%2F7uLV3B5kwsMYGCAXp50B%2BD0y3rJT5y8oozSGmwr%2FFpGozab4VZD0rWMiQg13Dk%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "288,81 €",
+          "link": "https://www.ebay.de/itm/298494245028?_skw=ASUS+ROG+Ryujin+III+360+ARGB+Extreme+White&hash=item457fa4b8a4%3Ag%3AT8wAAeSwFk9q-N89&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "icy-box-dockingstation",
-      "name": "ICY BOX Dockingstation",
-      "brand": "ICY",
-      "kategorie": "dockingstations",
-      "image": "https://media2.nbb-cdn.de/images/products/IB-DK408-C41-3_dda6.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "34,63 €",
-          "link": "https://www.ebay.de/itm/880060958117?_skw=ICY+BOX+Dockingstation&hash=itemcce7b885a5%3Ag%3AOLoAAeSw5Wlq4wAS&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "102,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=36623152041&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "sharkoon-usb-3-0-type-c-combo-adapter",
-      "name": "Sharkoon USB 3.0 Type C Combo Adapter",
-      "brand": "Sharkoon",
-      "kategorie": "dockingstations",
-      "image": "https://media2.nbb-cdn.de/images/products/Sharkoon_Shark-USB-3.0-Type-C-Combo-Adapter_Dark-Grey_Hero_43db.jpg?size=400",
+      "id": "philips-evnia-27m2c5200w",
+      "name": "Philips Evnia 27M2C5200W",
+      "brand": "Philips",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/178376bed4f24691873db014012bb83da_7154.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "53,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34878654485&a=3110253&m=11348"
+          "price": "146,62 €",
+          "link": "https://www.awin1.com/pclick.php?p=42856174851&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "57,78 €",
-          "link": "https://www.ebay.de/itm/256970900401?_skw=Sharkoon+USB+3.0+Type+C+Combo+Adapter&hash=item3bd4a8c3b1%3Ag%3AzTEAAOSwOhZmkFJ6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "161,07 €",
+          "link": "https://www.ebay.de/itm/307047935282?_skw=Philips+Evnia+27M2C5200W&hash=item477d7bad32%3Ag%3AKUQAAeSwpspq7FdB&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "lenovo-thinkstation-p3-tower-30ht006cge",
-      "name": "Lenovo ThinkStation P3 Tower 30HT006CGE",
-      "brand": "Lenovo",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/P3_MT_Side1_NEW_9b65.png?size=400",
+      "id": "speicherplatten-samsung-990-evo-plus-1tb",
+      "name": "Samsung 990 EVO Plus 1TB",
+      "brand": "Samsung",
+      "kategorie": "speicherplatten",
+      "image": "https://media2.nbb-cdn.de/images/products/Samsung-990-EVO-Plus-1TB-Front_1d18.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "181,19 €",
+          "link": "https://www.ebay.de/itm/800708470656?_skw=Samsung+990+EVO+Plus+1TB&hash=itemba6df1a780%3Ag%3AR-0AAeSwCFJqtOSg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "189,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=38939288563&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "lian-li-uni-fan-cl120-wireless-reverse-blade",
+      "name": "Lian Li UNI FAN CL120 Wireless Reverse Blade",
+      "brand": "Lian",
+      "kategorie": "luefter",
+      "image": "https://media2.nbb-cdn.de/images/products/LULI-141_6c51c02fcb5790847c6482b2e5004113bf29f1f5_2a09.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1899,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41854052246&a=3110253&m=11348"
+          "price": "16,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44251271483&a=3110253&m=11348"
         }
       ]
     }
