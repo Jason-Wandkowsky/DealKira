@@ -1,6 +1,15 @@
 {
-  "stand": "2026-11-23",
+  "stand": "2026-11-24",
   "deals": [
+    {
+      "vorher": "19,99 €",
+      "rabatt": 70,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-vero-amr020",
+      "shop": "notebooksbilliger.de",
+      "preis": "5,99 €"
+    },
     {
       "vorher": "876,99 €",
       "rabatt": 66,
@@ -9,6 +18,33 @@
       "id": "adobe-creative-cloud-pro",
       "shop": "notebooksbilliger.de",
       "preis": "299,00 €"
+    },
+    {
+      "vorher": "9,99 €",
+      "rabatt": 60,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "dell-cord-pwr-250volt",
+      "shop": "notebooksbilliger.de",
+      "preis": "4,00 €"
+    },
+    {
+      "vorher": "48,90 €",
+      "rabatt": 59,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-predator-cestus-315",
+      "shop": "notebooksbilliger.de",
+      "preis": "19,99 €"
+    },
+    {
+      "vorher": "23,68 €",
+      "rabatt": 58,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-vero-2",
+      "shop": "notebooksbilliger.de",
+      "preis": "9,99 €"
     },
     {
       "vorher": "280,99 €",
@@ -36,6 +72,15 @@
       "id": "cherry-mx-8-2-tkl-wireless",
       "shop": "notebooksbilliger.de",
       "preis": "95,97 €"
+    },
+    {
+      "vorher": "78,99 €",
+      "rabatt": 54,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-7-in-1-usb4-8k-multi-display",
+      "shop": "notebooksbilliger.de",
+      "preis": "35,99 €"
     },
     {
       "vorher": "73,78 €",
@@ -74,6 +119,15 @@
       "preis": "109,00 €"
     },
     {
+      "vorher": "40,99 €",
+      "rabatt": 51,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-45w",
+      "shop": "notebooksbilliger.de",
+      "preis": "19,99 €"
+    },
+    {
       "vorher": "100,99 €",
       "rabatt": 51,
       "seit": "2026-11-19",
@@ -92,6 +146,15 @@
       "preis": "10,00 €"
     },
     {
+      "vorher": "69,90 €",
+      "rabatt": 50,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-predator-cestus-335",
+      "shop": "notebooksbilliger.de",
+      "preis": "34,99 €"
+    },
+    {
       "vorher": "1389,00 €",
       "rabatt": 50,
       "seit": "2026-11-16",
@@ -99,6 +162,15 @@
       "id": "mova-v70-ultra-complete-x",
       "shop": "notebooksbilliger.de",
       "preis": "699,00 €"
+    },
+    {
+      "vorher": "9,90 €",
+      "rabatt": 49,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-usb-c-zu-vga-adapter",
+      "shop": "notebooksbilliger.de",
+      "preis": "5,00 €"
     },
     {
       "vorher": "9,90 €",
@@ -119,6 +191,15 @@
       "preis": "313,99 €"
     },
     {
+      "vorher": "12,90 €",
+      "rabatt": 46,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "dell-wireless",
+      "shop": "notebooksbilliger.de",
+      "preis": "7,00 €"
+    },
+    {
       "vorher": "8,99 €",
       "rabatt": 45,
       "seit": "2026-11-11",
@@ -128,6 +209,15 @@
       "preis": "4,95 €"
     },
     {
+      "vorher": "19,99 €",
+      "rabatt": 45,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-11-02",
+      "id": "acer-vero-obp-protective-sleeve",
+      "shop": "notebooksbilliger.de",
+      "preis": "11,00 €"
+    },
+    {
       "vorher": "44,46 €",
       "rabatt": 44,
       "seit": "2026-11-23",
@@ -135,6 +225,24 @@
       "id": "surfshark-starter-vpn",
       "shop": "notebooksbilliger.de",
       "preis": "24,99 €"
+    },
+    {
+      "vorher": "34,99 €",
+      "rabatt": 43,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "lenovo-legion-k510-mini-pro-gaming-tastatur",
+      "shop": "notebooksbilliger.de",
+      "preis": "19,99 €"
+    },
+    {
+      "vorher": "85,99 €",
+      "rabatt": 42,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-13in1-usb-type-c-minidock",
+      "shop": "notebooksbilliger.de",
+      "preis": "50,00 €"
     },
     {
       "vorher": "86,28 €",
@@ -171,6 +279,15 @@
       "id": "razer-kraken-v4",
       "shop": "notebooksbilliger.de",
       "preis": "99,00 €"
+    },
+    {
+      "vorher": "33,89 €",
+      "rabatt": 41,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-commercial-carry-case",
+      "shop": "notebooksbilliger.de",
+      "preis": "19,99 €"
     },
     {
       "vorher": "1099,00 €",
@@ -216,6 +333,24 @@
       "id": "asus-rog-strix-impact-iii",
       "shop": "notebooksbilliger.de",
       "preis": "24,90 €"
+    },
+    {
+      "vorher": "15,99 €",
+      "rabatt": 38,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-usb-c",
+      "shop": "notebooksbilliger.de",
+      "preis": "9,99 €"
+    },
+    {
+      "vorher": "31,70 €",
+      "rabatt": 37,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-vero-schutzhuelle",
+      "shop": "notebooksbilliger.de",
+      "preis": "19,99 €"
     },
     {
       "vorher": "1099,00 €",
@@ -324,6 +459,15 @@
       "id": "amazon-echo-show-8",
       "shop": "notebooksbilliger.de",
       "preis": "129,98 €"
+    },
+    {
+      "vorher": "7,50 €",
+      "rabatt": 33,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-usb-reisemaus-travel",
+      "shop": "notebooksbilliger.de",
+      "preis": "5,00 €"
     },
     {
       "vorher": "599,00 €",
@@ -524,13 +668,13 @@
       "preis": "99,00 €"
     },
     {
-      "vorher": "37,99 €",
-      "rabatt": 29,
-      "seit": "2026-11-21",
+      "vorher": "13,90 €",
+      "rabatt": 28,
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-28",
-      "id": "i-tec-usb-c-slim-3-port-hub-mit-gigabit-ethernet",
+      "id": "hp-displayport",
       "shop": "notebooksbilliger.de",
-      "preis": "26,99 €"
+      "preis": "9,99 €"
     },
     {
       "vorher": "25,00 €",
@@ -558,15 +702,6 @@
       "id": "razer-kraken-kitty-edition-v2-bluetooth-quartz",
       "shop": "notebooksbilliger.de",
       "preis": "59,90 €"
-    },
-    {
-      "vorher": "248,21 €",
-      "rabatt": 28,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "netgear-gs324p-24-port-unmanaged-switch-16x-gigabit-ethernet",
-      "shop": "notebooksbilliger.de",
-      "preis": "177,99 €"
     },
     {
       "vorher": "608,70 €",
@@ -605,15 +740,6 @@
       "preis": "100,00 €"
     },
     {
-      "vorher": "14,99 €",
-      "rabatt": 27,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "delock-kabelkanal-selbstklebend-30-x-8-mm",
-      "shop": "notebooksbilliger.de",
-      "preis": "10,99 €"
-    },
-    {
       "vorher": "219,00 €",
       "rabatt": 27,
       "seit": "2026-11-23",
@@ -621,15 +747,6 @@
       "id": "zyxel-fwa505v2-5g-indoor-router-mit-nebulaflex-5g",
       "shop": "notebooksbilliger.de",
       "preis": "159,90 €"
-    },
-    {
-      "vorher": "163,80 €",
-      "rabatt": 27,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "fractal-design-define-7-compact-black-solid",
-      "shop": "notebooksbilliger.de",
-      "preis": "119,90 €"
     },
     {
       "vorher": "134,90 €",
@@ -846,6 +963,15 @@
       "id": "razer-kraken-kitty-edition-v2-bluetooth-white",
       "shop": "notebooksbilliger.de",
       "preis": "59,90 €"
+    },
+    {
+      "vorher": "1699,00 €",
+      "rabatt": 24,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "lg-45gx950a-b-aeu",
+      "shop": "notebooksbilliger.de",
+      "preis": "1299,00 €"
     },
     {
       "vorher": "139,90 €",
@@ -1199,6 +1325,15 @@
       "preis": "69,90 €"
     },
     {
+      "vorher": "17,99 €",
+      "rabatt": 22,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-creator-13",
+      "shop": "notebooksbilliger.de",
+      "preis": "13,99 €"
+    },
+    {
       "vorher": "1089,00 €",
       "rabatt": 22,
       "seit": "2026-11-19",
@@ -1305,15 +1440,6 @@
       "id": "be-quiet-pure-base-501-lx-white",
       "shop": "notebooksbilliger.de",
       "preis": "74,90 €"
-    },
-    {
-      "vorher": "177,90 €",
-      "rabatt": 21,
-      "seit": "2026-11-20",
-      "vergleich_ab": "2026-10-28",
-      "id": "fractal-design-north-xl-momentum-edition",
-      "shop": "notebooksbilliger.de",
-      "preis": "139,90 €"
     },
     {
       "vorher": "96,99 €",
@@ -1757,6 +1883,15 @@
       "preis": "139,90 €"
     },
     {
+      "vorher": "79,90 €",
+      "rabatt": 18,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "thermaltake-view-290-black",
+      "shop": "notebooksbilliger.de",
+      "preis": "65,90 €"
+    },
+    {
       "vorher": "90,99 €",
       "rabatt": 18,
       "seit": "2026-11-13",
@@ -1818,6 +1953,15 @@
       "id": "be-quiet-system-power-11-550w",
       "shop": "notebooksbilliger.de",
       "preis": "44,90 €"
+    },
+    {
+      "vorher": "91,12 €",
+      "rabatt": 18,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "thermaltake-toughpower-xt-850w",
+      "shop": "notebooksbilliger.de",
+      "preis": "74,90 €"
     },
     {
       "vorher": "67,27 €",
@@ -1982,15 +2126,6 @@
       "preis": "99,00 €"
     },
     {
-      "vorher": "66,99 €",
-      "rabatt": 17,
-      "seit": "2026-11-23",
-      "vergleich_ab": "2026-10-28",
-      "id": "asus-tuf-gaming-650w-bronze-evo",
-      "shop": "notebooksbilliger.de",
-      "preis": "55,90 €"
-    },
-    {
       "vorher": "234,09 €",
       "rabatt": 17,
       "seit": "2026-11-15",
@@ -2036,6 +2171,15 @@
       "preis": "99,00 €"
     },
     {
+      "vorher": "39,90 €",
+      "rabatt": 17,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-universal-usb-c-multiport-hub-2-2",
+      "shop": "notebooksbilliger.de",
+      "preis": "32,99 €"
+    },
+    {
       "vorher": "71,99 €",
       "rabatt": 17,
       "seit": "2026-11-19",
@@ -2061,6 +2205,15 @@
       "id": "verbatim-usb-c-pro-docking-station-15-port",
       "shop": "notebooksbilliger.de",
       "preis": "78,54 €"
+    },
+    {
+      "vorher": "84,90 €",
+      "rabatt": 16,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "thermaltake-view-290-white",
+      "shop": "notebooksbilliger.de",
+      "preis": "70,90 €"
     },
     {
       "vorher": "41,51 €",
@@ -2297,6 +2450,15 @@
       "preis": "134,90 €"
     },
     {
+      "vorher": "46,99 €",
+      "rabatt": 15,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-wiederaufladbarer-slim-pen-eingabestift",
+      "shop": "notebooksbilliger.de",
+      "preis": "39,99 €"
+    },
+    {
       "vorher": "157,89 €",
       "rabatt": 15,
       "seit": "2026-11-23",
@@ -2531,6 +2693,15 @@
       "preis": "899,00 €"
     },
     {
+      "vorher": "139,90 €",
+      "rabatt": 14,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "fractal-design-north-xl-momentum-edition",
+      "shop": "notebooksbilliger.de",
+      "preis": "119,90 €"
+    },
+    {
       "vorher": "509,25 €",
       "rabatt": 14,
       "seit": "2026-11-16",
@@ -2547,6 +2718,15 @@
       "id": "homey-ethernet-adapter-fuer-homey-pro",
       "shop": "notebooksbilliger.de",
       "preis": "25,00 €"
+    },
+    {
+      "vorher": "28,99 €",
+      "rabatt": 14,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-65w-gan-usb-c-schnellladegeraet",
+      "shop": "notebooksbilliger.de",
+      "preis": "24,99 €"
     },
     {
       "vorher": "699,00 €",
@@ -2684,6 +2864,15 @@
       "preis": "139,90 €"
     },
     {
+      "vorher": "28,90 €",
+      "rabatt": 14,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "hp-325-fhd",
+      "shop": "notebooksbilliger.de",
+      "preis": "24,99 €"
+    },
+    {
       "vorher": "373,81 €",
       "rabatt": 14,
       "seit": "2026-11-12",
@@ -2725,6 +2914,15 @@
       "seit": "2026-11-23",
       "vergleich_ab": "2026-10-28",
       "id": "intel-core-ultra-5-245kf",
+      "shop": "notebooksbilliger.de",
+      "preis": "149,00 €"
+    },
+    {
+      "vorher": "170,99 €",
+      "rabatt": 13,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "dell-pro-smart-dock",
       "shop": "notebooksbilliger.de",
       "preis": "149,00 €"
     },
@@ -3044,6 +3242,15 @@
       "preis": "32,90 €"
     },
     {
+      "vorher": "498,99 €",
+      "rabatt": 12,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "acer-spatiallabs-eyes-3d",
+      "shop": "notebooksbilliger.de",
+      "preis": "440,00 €"
+    },
+    {
       "vorher": "97,29 €",
       "rabatt": 12,
       "seit": "2026-11-20",
@@ -3069,15 +3276,6 @@
       "id": "sandisk-optimus-gx-pro-8100",
       "shop": "notebooksbilliger.de",
       "preis": "213,99 €"
-    },
-    {
-      "vorher": "189,90 €",
-      "rabatt": 11,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "lenovo-thinkvision-e27q-40-business",
-      "shop": "notebooksbilliger.de",
-      "preis": "169,00 €"
     },
     {
       "vorher": "328,25 €",
@@ -3197,6 +3395,15 @@
       "preis": "31,99 €"
     },
     {
+      "vorher": "3344,00 €",
+      "rabatt": 11,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "samsung-galaxy-galaxy-book6-ultra",
+      "shop": "notebooksbilliger.de",
+      "preis": "2969,00 €"
+    },
+    {
       "vorher": "300,78 €",
       "rabatt": 11,
       "seit": "2026-11-23",
@@ -3258,6 +3465,15 @@
       "id": "ugreen-nasync-dxp2800-2-bay-nas-0-2-sata",
       "shop": "notebooksbilliger.de",
       "preis": "319,00 €"
+    },
+    {
+      "vorher": "59,49 €",
+      "rabatt": 11,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "reolink-p320-ip",
+      "shop": "notebooksbilliger.de",
+      "preis": "52,90 €"
     },
     {
       "vorher": "899,00 €",
@@ -3422,6 +3638,15 @@
       "preis": "1349,26 €"
     },
     {
+      "vorher": "77,90 €",
+      "rabatt": 10,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "philips-27e2n1100l-00",
+      "shop": "notebooksbilliger.de",
+      "preis": "69,90 €"
+    },
+    {
       "vorher": "210,58 €",
       "rabatt": 10,
       "seit": "2026-11-17",
@@ -3530,15 +3755,6 @@
       "preis": "95,18 €"
     },
     {
-      "vorher": "90,83 €",
-      "rabatt": 10,
-      "seit": "2026-11-19",
-      "vergleich_ab": "2026-10-28",
-      "id": "gigabyte-ud750gm-pg5-v2-ice",
-      "shop": "notebooksbilliger.de",
-      "preis": "81,53 €"
-    },
-    {
       "vorher": "80,90 €",
       "rabatt": 10,
       "seit": "2026-11-17",
@@ -3629,15 +3845,6 @@
       "preis": "29,99 €"
     },
     {
-      "vorher": "9,89 €",
-      "rabatt": 10,
-      "seit": "2026-11-20",
-      "vergleich_ab": "2026-10-28",
-      "id": "arctic-mx-6-8g",
-      "shop": "notebooksbilliger.de",
-      "preis": "8,91 €"
-    },
-    {
       "vorher": "66,96 €",
       "rabatt": 10,
       "seit": "2026-11-21",
@@ -3672,15 +3879,6 @@
       "id": "razer-huntsman-v2",
       "shop": "notebooksbilliger.de",
       "preis": "59,00 €"
-    },
-    {
-      "vorher": "819,90 €",
-      "rabatt": 9,
-      "seit": "2026-11-16",
-      "vergleich_ab": "2026-10-28",
-      "id": "asus-rog-swift-oled-pg27ucdm",
-      "shop": "notebooksbilliger.de",
-      "preis": "749,90 €"
     },
     {
       "vorher": "185,49 €",
@@ -4565,15 +4763,6 @@
       "preis": "64,99 €"
     },
     {
-      "vorher": "19,80 €",
-      "rabatt": 7,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-28",
-      "id": "netgear-gs105ge-unmanaged-switch-5x-gigabit-ethernet",
-      "shop": "notebooksbilliger.de",
-      "preis": "18,35 €"
-    },
-    {
       "vorher": "21,34 €",
       "rabatt": 7,
       "seit": "2026-11-23",
@@ -4637,6 +4826,15 @@
       "preis": "119,90 €"
     },
     {
+      "vorher": "2158,00 €",
+      "rabatt": 7,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-11-10",
+      "id": "macbook-pro",
+      "shop": "notebooksbilliger.de",
+      "preis": "1999,00 €"
+    },
+    {
       "vorher": "649,00 €",
       "rabatt": 7,
       "seit": "2026-11-13",
@@ -4644,6 +4842,15 @@
       "id": "optoma-hz137x-full-hd-laser-beamer-mit-3-000-iso",
       "shop": "notebooksbilliger.de",
       "preis": "603,97 €"
+    },
+    {
+      "vorher": "236,00 €",
+      "rabatt": 7,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "apple-watch-se-3-40mm-mitternacht-aluminium-case",
+      "shop": "notebooksbilliger.de",
+      "preis": "219,00 €"
     },
     {
       "vorher": "159,99 €",
@@ -4699,13 +4906,22 @@
       "preis": "499,90 €"
     },
     {
-      "vorher": "349,00 €",
+      "vorher": "169,00 €",
       "rabatt": 6,
-      "seit": "2026-11-18",
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-28",
-      "id": "lg-34u650a-b-ultra-wide",
+      "id": "lenovo-thinkvision-e27q-40-business",
       "shop": "notebooksbilliger.de",
-      "preis": "329,00 €"
+      "preis": "159,00 €"
+    },
+    {
+      "vorher": "189,90 €",
+      "rabatt": 6,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "lenovo-thinkvision-m15-mobiler",
+      "shop": "notebooksbilliger.de",
+      "preis": "179,00 €"
     },
     {
       "vorher": "1040,10 €",
@@ -5203,22 +5419,13 @@
       "preis": "70,88 €"
     },
     {
-      "vorher": "604,00 €",
+      "vorher": "425,00 €",
       "rabatt": 6,
-      "seit": "2026-11-12",
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-28",
-      "id": "apple-watch-series-12-cellular-46mm",
+      "id": "apple-watch-series-12-42mm",
       "shop": "notebooksbilliger.de",
-      "preis": "569,00 €"
-    },
-    {
-      "vorher": "1799,00 €",
-      "rabatt": 6,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-29",
-      "id": "apple-imac-m6-blau-mh094d-a",
-      "shop": "notebooksbilliger.de",
-      "preis": "1699,00 €"
+      "preis": "399,00 €"
     },
     {
       "vorher": "2439,00 €",
@@ -5230,15 +5437,6 @@
       "preis": "2299,00 €"
     },
     {
-      "vorher": "1799,00 €",
-      "rabatt": 6,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-29",
-      "id": "apple-imac-m6-gruen-mh084d-a",
-      "shop": "notebooksbilliger.de",
-      "preis": "1699,00 €"
-    },
-    {
       "vorher": "2439,00 €",
       "rabatt": 6,
       "seit": "2026-11-17",
@@ -5246,15 +5444,6 @@
       "id": "apple-imac-m6-gruen-mh1g4d-a-m6-chip",
       "shop": "notebooksbilliger.de",
       "preis": "2299,00 €"
-    },
-    {
-      "vorher": "1799,00 €",
-      "rabatt": 6,
-      "seit": "2026-11-17",
-      "vergleich_ab": "2026-10-29",
-      "id": "apple-imac-m6-pink-mh0a4d-a",
-      "shop": "notebooksbilliger.de",
-      "preis": "1699,00 €"
     },
     {
       "vorher": "1799,00 €",
@@ -5338,15 +5527,6 @@
       "preis": "2299,00 €"
     },
     {
-      "vorher": "689,00 €",
-      "rabatt": 6,
-      "seit": "2026-11-12",
-      "vergleich_ab": "2026-10-28",
-      "id": "apple-ipad-air-11-wi-fi-128gb-m3-space",
-      "shop": "notebooksbilliger.de",
-      "preis": "649,00 €"
-    },
-    {
       "vorher": "1079,00 €",
       "rabatt": 6,
       "seit": "2026-11-22",
@@ -5354,6 +5534,15 @@
       "id": "apple-ipad-air-13-m4-wi-fi-plus-cellular",
       "shop": "notebooksbilliger.de",
       "preis": "1019,00 €"
+    },
+    {
+      "vorher": "689,00 €",
+      "rabatt": 6,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-30",
+      "id": "apple-ipad-air-11-wi-fi-128gb-m3-blau",
+      "shop": "notebooksbilliger.de",
+      "preis": "649,00 €"
     },
     {
       "vorher": "2099,99 €",
@@ -5437,6 +5626,15 @@
       "preis": "209,00 €"
     },
     {
+      "vorher": "147,40 €",
+      "rabatt": 5,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "lg-27g440a-b-aeu",
+      "shop": "notebooksbilliger.de",
+      "preis": "139,90 €"
+    },
+    {
       "vorher": "189,00 €",
       "rabatt": 5,
       "seit": "2026-11-19",
@@ -5444,6 +5642,15 @@
       "id": "msi-pro-mp341cqde-office",
       "shop": "notebooksbilliger.de",
       "preis": "179,00 €"
+    },
+    {
+      "vorher": "161,52 €",
+      "rabatt": 5,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-10-28",
+      "id": "samsung-odyssey-g40h-ls27hg402euxen",
+      "shop": "notebooksbilliger.de",
+      "preis": "153,26 €"
     },
     {
       "vorher": "323,91 €",
@@ -5507,15 +5714,6 @@
       "id": "captiva-pc-workstation-r98-330-amd-ryzen-7-9700x",
       "shop": "notebooksbilliger.de",
       "preis": "1267,91 €"
-    },
-    {
-      "vorher": "1163,99 €",
-      "rabatt": 5,
-      "seit": "2026-11-21",
-      "vergleich_ab": "2026-10-28",
-      "id": "hp-elite-805-g9-sff-9n7e7at-ryzen-7",
-      "shop": "notebooksbilliger.de",
-      "preis": "1102,99 €"
     },
     {
       "vorher": "1999,99 €",
@@ -5878,13 +6076,13 @@
       "preis": "1637,99 €"
     },
     {
-      "vorher": "1999,00 €",
+      "vorher": "1899,00 €",
       "rabatt": 5,
-      "seit": "2026-11-17",
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-29",
       "id": "apple-imac-m6-blau-mh1h4d-a",
       "shop": "notebooksbilliger.de",
-      "preis": "1899,00 €"
+      "preis": "1799,00 €"
     },
     {
       "vorher": "2219,00 €",
@@ -5905,13 +6103,13 @@
       "preis": "2099,00 €"
     },
     {
-      "vorher": "1999,00 €",
+      "vorher": "1899,00 €",
       "rabatt": 5,
-      "seit": "2026-11-17",
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-29",
       "id": "apple-imac-m6-pink-mh1p4d-a",
       "shop": "notebooksbilliger.de",
-      "preis": "1899,00 €"
+      "preis": "1799,00 €"
     },
     {
       "vorher": "2219,00 €",
@@ -5923,13 +6121,13 @@
       "preis": "2099,00 €"
     },
     {
-      "vorher": "1999,00 €",
+      "vorher": "1899,00 €",
       "rabatt": 5,
-      "seit": "2026-11-17",
+      "seit": "2026-11-24",
       "vergleich_ab": "2026-10-29",
       "id": "apple-imac-m6-silber-mh114d-a",
       "shop": "notebooksbilliger.de",
-      "preis": "1899,00 €"
+      "preis": "1799,00 €"
     },
     {
       "vorher": "2219,00 €",
@@ -5968,6 +6166,15 @@
       "preis": "1246,58 €"
     },
     {
+      "vorher": "1899,00 €",
+      "rabatt": 5,
+      "seit": "2026-11-24",
+      "vergleich_ab": "2026-11-07",
+      "id": "apple-imac-m6-gruen-mh1d4d-a",
+      "shop": "notebooksbilliger.de",
+      "preis": "1799,00 €"
+    },
+    {
       "vorher": "1282,71 €",
       "rabatt": 5,
       "seit": "2026-11-17",
@@ -5979,6 +6186,20 @@
   ],
   "angebote": [],
   "produkte": {
+    "acer-vero-amr020": {
+      "id": "acer-vero-amr020",
+      "name": "ACER Vero AMR020",
+      "brand": "ACER",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/acer-eingabegeraete-gp-mce11-023_f189bf8e1511c894896cea9408c2318c_6248.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "5,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37456588956&a=3110253&m=11348"
+        }
+      ]
+    },
     "adobe-creative-cloud-pro": {
       "id": "adobe-creative-cloud-pro",
       "name": "Adobe Creative Cloud Pro",
@@ -5995,6 +6216,58 @@
           "name": "notebooksbilliger.de",
           "price": "299,00 €",
           "link": "https://www.awin1.com/pclick.php?p=36309663998&a=3110253&m=11348"
+        }
+      ]
+    },
+    "dell-cord-pwr-250volt": {
+      "id": "dell-cord-pwr-250volt",
+      "name": "Dell CORD PWR 250Volt",
+      "brand": "Dell",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/s-l1600_5_c6f6.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "4,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41584857603&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-predator-cestus-315": {
+      "id": "acer-predator-cestus-315",
+      "name": "Acer Predator Cestus 315",
+      "brand": "Acer",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/_p_r_predator_mouse_cestus315_04_gp.mce11.014_3dea.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40715642011&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "30,00 €",
+          "link": "https://www.ebay.de/itm/296164722899?_skw=Acer+Predator+Cestus+315&hash=item44f4cb08d3%3Ag%3AO7YAAOSwRGJlo8v9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "acer-vero-2": {
+      "id": "acer-vero-2",
+      "name": "Acer Vero",
+      "brand": "Acer",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/macaron_vero_mouse-amr020-grey_main1000-v2_gp.mce11.022_4fae.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "9,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40715642012&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "22,09 €",
+          "link": "https://www.ebay.de/itm/960019295773?_skw=Acer+Vero&hash=itemdf859bee1d%3Ag%3AhzEAAeSw9HBqw8%7Ev&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6052,6 +6325,20 @@
           "name": "notebooksbilliger.de",
           "price": "95,97 €",
           "link": "https://www.awin1.com/pclick.php?p=40323255280&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-7-in-1-usb4-8k-multi-display": {
+      "id": "acer-7-in-1-usb4-8k-multi-display",
+      "name": "Acer 7 in 1 USB4 8K Multi Display",
+      "brand": "Acer",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/HP.DSCAB.013nr1_2bf2.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "35,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46157214787&a=3110253&m=11348"
         }
       ]
     },
@@ -6116,6 +6403,25 @@
         }
       ]
     },
+    "acer-45w": {
+      "id": "acer-45w",
+      "name": "Acer 45W",
+      "brand": "Acer",
+      "kategorie": "laptop-netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/NP.ADT0A.065_70ff.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "9,99 €",
+          "link": "https://www.ebay.de/itm/820341895100?_skw=Acer+45W&hash=itembf002fefbc%3Ag%3AalsAAeSwZsBqmpxp&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253806521&a=3110253&m=11348"
+        }
+      ]
+    },
     "adobe-firefly-standard": {
       "id": "adobe-firefly-standard",
       "name": "Adobe Firefly Standard",
@@ -6144,6 +6450,25 @@
         }
       ]
     },
+    "acer-predator-cestus-335": {
+      "id": "acer-predator-cestus-335",
+      "name": "ACER Predator Cestus 335",
+      "brand": "ACER",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/Predator_Cestus335_PMW120_gallery_01_6e3b.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "34,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40715641922&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "133,00 €",
+          "link": "https://www.ebay.de/itm/327102466526?_skw=ACER+Predator+Cestus+335&hash=item4c28d389de%3Ag%3APmEAAeSwc2FqzXlw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "mova-v70-ultra-complete-x": {
       "id": "mova-v70-ultra-complete-x",
       "name": "Mova V70 Ultra Complete X",
@@ -6155,6 +6480,25 @@
           "name": "notebooksbilliger.de",
           "price": "699,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46451356851&a=3110253&m=11348"
+        }
+      ]
+    },
+    "hp-usb-c-zu-vga-adapter": {
+      "id": "hp-usb-c-zu-vga-adapter",
+      "name": "HP USB-C zu VGA Adapter",
+      "brand": "HP",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/N9K76AA_1_548f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "5,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=34253804337&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "10,99 €",
+          "link": "https://www.ebay.de/itm/185063102594?_skw=HP+USB-C+zu+VGA+Adapter&hash=item2b169ed882%3Ag%3A3T4AAeSw5A1phgTm&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7l%2FABgWxAG8KuZgM0Yr8V7VXevS1sUO9e2O6lknYXeIRt%2FK6GgK%2FJT0WZ92G1OOE%2FsTDnNhAatxGB3baWBNlHq522GVxjNzllPm1DBf5BIasZSwoa%2FAthPlFm%2FCTZvxJZgE8Z2v670E8lE69UI0yK5x2iLXkm9Oi9xyFO4fvXnrEWdxPY7IrEr9D94SHl58eMZALs6mklRJ0oBbbvLlDZ%2FGqla2vCMKDyHwyy1b90nIFQZUkobyY1L9wGaXIuo2SgxdWyBMFLtnTCSR9hAW1AEenola2s2KBR0ble4y0F%2Bi1w%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6191,6 +6535,25 @@
         }
       ]
     },
+    "dell-wireless": {
+      "id": "dell-wireless",
+      "name": "Dell Wireless",
+      "brand": "Dell",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/dell_wm126_1_3b46.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "7,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44291616635&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "19,99 €",
+          "link": "https://www.ebay.de/itm/267735634963?_skw=Dell+Wireless&hash=item3e56499413%3Ag%3ARVwAAeSw7dlqYOvV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "brennenstuhl-verlaengerungskabel-3m-extraflacher-schutzkonta": {
       "id": "brennenstuhl-verlaengerungskabel-3m-extraflacher-schutzkonta",
       "name": "Brennenstuhl Verlängerungskabel 3m Extraflacher Schutzkontakt-Winkelstecker",
@@ -6202,6 +6565,20 @@
           "name": "notebooksbilliger.de",
           "price": "4,95 €",
           "link": "https://www.awin1.com/pclick.php?p=36201166911&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-vero-obp-protective-sleeve": {
+      "id": "acer-vero-obp-protective-sleeve",
+      "name": "Acer Vero OBP Protective Sleeve",
+      "brand": "Acer",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/GP.BAG11.037nr1_df2c.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "11,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=37456588960&a=3110253&m=11348"
         }
       ]
     },
@@ -6221,6 +6598,34 @@
           "name": "eBay",
           "price": "49,00 €",
           "link": "https://www.ebay.de/itm/314614372837?_skw=Surfshark+Starter+VPN&hash=item49407a59e5%3Ag%3AsrIAAOSwfsdoQx69&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lt5mip8LowOFywB1EqF5bXYRFLMzr5UBtlahv7%2BSwJcUXL%2FgZL3fO%2BYOrPXrGfQW2Jxv2GvJv4I2XDjVJ18AdBoZwA4Hgrc34nHsFIXtJNtJEoo20%2Bf2fZ9o16hRvbrpsSccf17rlW336xJY1DYvXEQqibd6xJjEkP8zcVve5ndXOuzfquu4SKu3v1LJBtZ9Xuiv0FIj%2FOfROsmwpDObvkr8h4XcJM3k8eBUr0uPtMQmn%2BZrmHIelY8psYCYHP89XhOKOWnYW758XuAy666tvatcjsRZRGm7iJDlrvvey5sQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "lenovo-legion-k510-mini-pro-gaming-tastatur": {
+      "id": "lenovo-legion-k510-mini-pro-gaming-tastatur",
+      "name": "Lenovo Legion K510 Mini Pro Gaming-Tastatur",
+      "brand": "Lenovo",
+      "kategorie": "tastaturen",
+      "image": "https://media2.nbb-cdn.de/images/products/0aqtdpmsurdmvnj2qnc9r07qvwa8sr402948_ee14.avif?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44245308583&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-13in1-usb-type-c-minidock": {
+      "id": "acer-13in1-usb-type-c-minidock",
+      "name": "Acer 13in1 USB-Type-C Minidock",
+      "brand": "Acer",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/3.whtie_background_hp.dscab.015_5d06.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "50,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=40843605385&a=3110253&m=11348"
         }
       ]
     },
@@ -6287,6 +6692,25 @@
           "name": "notebooksbilliger.de",
           "price": "99,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46473481053&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-commercial-carry-case": {
+      "id": "acer-commercial-carry-case",
+      "name": "Acer Commercial Carry Case",
+      "brand": "Acer",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/1d3655d15f6b4dad8a81caf3e02780f9_6b53.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37456588946&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "40,01 €",
+          "link": "https://www.ebay.de/itm/327253705768?_skw=Acer+Commercial+Carry+Case&hash=item4c31d74428%3Ag%3AWLcAAeSwZ2Zqu7HA&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7laH%2Fs1%2FVQ6XyLvoHkXENHnR6lXEQkDiGqouOXMNARgVVQqCmmcQev%2FdFSdPSEmyuSwL8cZO1oZlKgY0yCboN8h7N2RgDrRWpdl4OpskXsYmyqlvAoZ6KH5GO%2Bq%2BhK%2BDCztJd36kVHx8ec4HoaHq7VT5XZ9gzGMkLwt7qYh5Tzqe6WB2Z716m7S7NN8jpWanAxQkz1XCm4n%2BVx4epz0g0GWkHTfw4e79I7BYbqlvHQ4dFPQSfYaNQ5pGlMKW3ermm17Dic5AAcwYQ5kLSEN7IHjwy1H0ulkXCuidYr4npFYGO8k6%2FhrYxAoruGGcRPPZ4c%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6377,6 +6801,44 @@
           "name": "eBay",
           "price": "46,19 €",
           "link": "https://www.ebay.de/itm/366363075602?_skw=ASUS+ROG+Strix+Impact+III&hash=item554cf0e412%3Ag%3AbpkAAeSwcSpp6RFq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "hp-usb-c": {
+      "id": "hp-usb-c",
+      "name": "HP USB-C",
+      "brand": "HP",
+      "kategorie": "usb-hubs",
+      "image": "https://media2.nbb-cdn.de/images/products/hp-3-port-usb-c-hub-z6a00aa_76d0.jpg?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "7,30 €",
+          "link": "https://www.ebay.de/itm/407149445777?_skw=HP+USB-C&hash=item5ecbff8291%3Ag%3AndsAAeSwOcNqggYY&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "9,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37541019377&a=3110253&m=11348"
+        }
+      ]
+    },
+    "acer-vero-schutzhuelle": {
+      "id": "acer-vero-schutzhuelle",
+      "name": "Acer Vero Schutzhülle",
+      "brand": "Acer",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/GP.BAG11.01Tnr1_f0b8.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "19,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=40323255180&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "45,79 €",
+          "link": "https://www.ebay.de/itm/940087357967?_skw=Acer+Vero+Schutzh%C3%BClle&hash=itemdae192b20f%3Ag%3AEyQAAeSwpmxq9rdc&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6570,6 +7032,25 @@
           "name": "notebooksbilliger.de",
           "price": "129,98 €",
           "link": "https://www.awin1.com/pclick.php?p=43150526911&a=3110253&m=11348"
+        }
+      ]
+    },
+    "hp-usb-reisemaus-travel": {
+      "id": "hp-usb-reisemaus-travel",
+      "name": "HP USB-Reisemaus Travel",
+      "brand": "HP",
+      "kategorie": "maeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/travel_1_4ed2.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "5,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=37595398387&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "31,05 €",
+          "link": "https://www.ebay.de/itm/820213977936?_skw=HP+USB-Reisemaus+Travel&hash=itembef8901350%3Ag%3AeqcAAeSwgRpqxlKq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -6976,17 +7457,22 @@
         }
       ]
     },
-    "i-tec-usb-c-slim-3-port-hub-mit-gigabit-ethernet": {
-      "id": "i-tec-usb-c-slim-3-port-hub-mit-gigabit-ethernet",
-      "name": "i-tec USB-C Slim 3-Port HUB mit Gigabit Ethernet",
-      "brand": "i-tec",
-      "kategorie": "usb-hubs",
-      "image": "https://media2.nbb-cdn.de/images/products/C31GL3SLIM_01_f33b.jpg?size=400",
+    "hp-displayport": {
+      "id": "hp-displayport",
+      "name": "HP DisplayPort",
+      "brand": "HP",
+      "kategorie": "computer-setup-kabel",
+      "image": "https://media2.nbb-cdn.de/images/products/F7W97AA_7c14.png?size=400",
       "shops": [
         {
+          "name": "eBay",
+          "price": "5,10 €",
+          "link": "https://www.ebay.de/itm/145361539652?_skw=HP+DisplayPort&hash=item21d8391244%3Ag%3AxJ4AAOSw-E9lEJbT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
           "name": "notebooksbilliger.de",
-          "price": "26,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253805401&a=3110253&m=11348"
+          "price": "9,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37541019375&a=3110253&m=11348"
         }
       ]
     },
@@ -7039,20 +7525,6 @@
           "name": "notebooksbilliger.de",
           "price": "59,90 €",
           "link": "https://www.awin1.com/pclick.php?p=36307288359&a=3110253&m=11348"
-        }
-      ]
-    },
-    "netgear-gs324p-24-port-unmanaged-switch-16x-gigabit-ethernet": {
-      "id": "netgear-gs324p-24-port-unmanaged-switch-16x-gigabit-ethernet",
-      "name": "Netgear GS324P 24-Port Unmanaged Switch [16x Gigabit Ethernet",
-      "brand": "Netgear",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/netgear/Netgear_GS324P_Hero_6ff6.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "177,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=43825284330&a=3110253&m=11348"
         }
       ]
     },
@@ -7122,25 +7594,6 @@
         }
       ]
     },
-    "delock-kabelkanal-selbstklebend-30-x-8-mm": {
-      "id": "delock-kabelkanal-selbstklebend-30-x-8-mm",
-      "name": "Delock Kabelkanal selbstklebend 30 x 8 mm",
-      "brand": "Delock",
-      "kategorie": "kabel-management",
-      "image": "https://media2.nbb-cdn.de/images/products/5f912ca6011d90.33133086_651b.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "10,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=38032250899&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "22,72 €",
-          "link": "https://www.ebay.de/itm/940011730347?_skw=Delock+Kabelkanal+selbstklebend+30+x+8+mm&hash=itemdadd10b5ab%3Ag%3A52AAAeSw02pq3Nsn&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "zyxel-fwa505v2-5g-indoor-router-mit-nebulaflex-5g": {
       "id": "zyxel-fwa505v2-5g-indoor-router-mit-nebulaflex-5g",
       "name": "Zyxel FWA505v2 5G Indoor Router mit NebulaFlex 5G",
@@ -7152,25 +7605,6 @@
           "name": "notebooksbilliger.de",
           "price": "159,90 €",
           "link": "https://www.awin1.com/pclick.php?p=46187114251&a=3110253&m=11348"
-        }
-      ]
-    },
-    "fractal-design-define-7-compact-black-solid": {
-      "id": "fractal-design-define-7-compact-black-solid",
-      "name": "Fractal Design Define 7 Compact Black Solid",
-      "brand": "Fractal",
-      "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/Fractal_Design_Define_7_Compact_Black_Solid_01_2ccb.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "119,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=37120555866&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "183,37 €",
-          "link": "https://www.ebay.de/itm/206061265871?_skw=Fractal+Design+Define+7+Compact+Black+Solid&hash=item2ffa3563cf%3Ag%3ADywAAeSw1LlqkCYl&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -7582,6 +8016,25 @@
           "name": "notebooksbilliger.de",
           "price": "59,90 €",
           "link": "https://www.awin1.com/pclick.php?p=46606910458&a=3110253&m=11348"
+        }
+      ]
+    },
+    "lg-45gx950a-b-aeu": {
+      "id": "lg-45gx950a-b-aeu",
+      "name": "LG 45GX950A-B.AEU",
+      "brand": "LG",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/thum-1600x1062_2_d889.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1299,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44420681872&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "2599,99 €",
+          "link": "https://www.ebay.de/itm/147623975198?_skw=LG+45GX950A-B.AEU&hash=item225f13191e%3Ag%3A0FgAAeSwm-xqxmB7&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -8226,6 +8679,20 @@
         }
       ]
     },
+    "hp-creator-13": {
+      "id": "hp-creator-13",
+      "name": "HP Creator 13",
+      "brand": "HP",
+      "kategorie": "laptop-taschen",
+      "image": "https://media2.nbb-cdn.de/images/products/HPCreatorLaptopUmhaengetasche1_5e5d.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "13,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=36294969673&a=3110253&m=11348"
+        }
+      ]
+    },
     "ugreen-nasync-dxp6800-pro-6-bay-nas-0-6-sata": {
       "id": "ugreen-nasync-dxp6800-pro-6-bay-nas-0-6-sata",
       "name": "Ugreen NASync DXP6800 Pro 6-Bay NAS 0/6 SATA",
@@ -8444,25 +8911,6 @@
         }
       ]
     },
-    "fractal-design-north-xl-momentum-edition": {
-      "id": "fractal-design-north-xl-momentum-edition",
-      "name": "Fractal Design North XL Momentum Edition",
-      "brand": "Fractal",
-      "kategorie": "gehaeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/01_North-XL-Momentum-Edition_Left-Front_d32f.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "139,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=43889752961&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "217,94 €",
-          "link": "https://www.ebay.de/itm/168299043558?_skw=Fractal+Design+North+XL+Momentum+Edition&hash=item272f679ae6%3Ag%3AHToAAeSwaRZqenbO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "razer-cobra-pro-kabellose": {
       "id": "razer-cobra-pro-kabellose",
       "name": "Razer Cobra Pro kabellose",
@@ -8638,7 +9086,7 @@
         {
           "name": "eBay",
           "price": "67,99 €",
-          "link": "https://www.ebay.de/itm/405821057090?_skw=Razer+BlackWidow+V4&hash=item5e7cd1e842%3Ag%3AVpoAAOSwmbZoEOW0&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kEcDgfDYFIWmNYnr2gAHmcAGHDpeMp4Y%2BKnkAqdbKqwHBJvlJC1wCHOiEiCLmFS6ACdplgyTPFewRT%2B0KqAgGksvN4LYjgYS7SP3Xc2%2FqFr8MsNK8HS72rTUVZCvP7esOpaT2EuSk7togB73gpYHulB3L%2B89MbsRv8I0AV0wgjPcjFDDsYe1JT7MleRVDlPxUtTdKgYqMtYNlo6ce0aVj8ZPSzCruf9qkZOHUm5NgEbSTYssdxNiDAe0p%2BSMyTqcaCbdveV3dQF7fVIbgVVmj15tdOlaZrMuPijEzjaBvWLQ%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/405821057090?_skw=Razer+BlackWidow+V4&hash=item5e7cd1e842%3Ag%3AVpoAAOSwmbZoEOW0&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -9279,6 +9727,25 @@
         }
       ]
     },
+    "thermaltake-view-290-black": {
+      "id": "thermaltake-view-290-black",
+      "name": "Thermaltake View 290 Black",
+      "brand": "Thermaltake",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/8_8_2e1e.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "65,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41743302285&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "71,54 €",
+          "link": "https://www.ebay.de/itm/820254818088?_skw=Thermaltake+View+290+Black&hash=itembefaff3f28%3Ag%3Aj0gAAeSw2uxq1dlP&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "razer-barracuda-x-chroma-kabelloses-multiplattform-gaming-he": {
       "id": "razer-barracuda-x-chroma-kabelloses-multiplattform-gaming-he",
       "name": "Razer Barracuda X Chroma kabelloses Multiplattform-Gaming-Headset mit 6",
@@ -9404,6 +9871,25 @@
           "name": "eBay",
           "price": "65,89 €",
           "link": "https://www.ebay.de/itm/205685697917?_skw=be+quiet%21+SYSTEM+POWER+11+550W&hash=item2fe3d2ad7d%3Ag%3Aj0YAAeSw5BRq8v%7ER&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "thermaltake-toughpower-xt-850w": {
+      "id": "thermaltake-toughpower-xt-850w",
+      "name": "Thermaltake Toughpower XT 850W",
+      "brand": "Thermaltake",
+      "kategorie": "netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/Thermaltake-PS-TPX-0850FNFAGE-1-05.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "74,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=45116462385&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "99,05 €",
+          "link": "https://www.ebay.de/itm/327242423360?_skw=Thermaltake+Toughpower+XT+850W&hash=item4c312b1c40%3Ag%3AzooAAeSw1LlrAQn2&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -9704,20 +10190,6 @@
         }
       ]
     },
-    "asus-tuf-gaming-650w-bronze-evo": {
-      "id": "asus-tuf-gaming-650w-bronze-evo",
-      "name": "ASUS TUF Gaming 650W Bronze EVO",
-      "brand": "ASUS",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/TUF-650B-EVO-GAMING_5_bf16.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "55,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=44420681896&a=3110253&m=11348"
-        }
-      ]
-    },
     "be-quiet-dark-power-14-1000w": {
       "id": "be-quiet-dark-power-14-1000w",
       "name": "be quiet! DARK POWER 14 1000W",
@@ -9803,6 +10275,25 @@
         }
       ]
     },
+    "hp-universal-usb-c-multiport-hub-2-2": {
+      "id": "hp-universal-usb-c-multiport-hub-2-2",
+      "name": "HP Universal USB-C Multiport-Hub",
+      "brand": "HP",
+      "kategorie": "usb-hubs",
+      "image": "https://media2.nbb-cdn.de/images/products/6G842AABild1_005b.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "32,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=36549960103&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "59,00 €",
+          "link": "https://www.ebay.de/itm/287395946611?_skw=HP+Universal+USB-C+Multiport-Hub&hash=item42ea222073%3Ag%3AT1QAAeSwBhJqL6OX&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "xtorm-140w-nextgen-wall-charger": {
       "id": "xtorm-140w-nextgen-wall-charger",
       "name": "Xtorm 140W NextGen Wall Charger",
@@ -9857,6 +10348,20 @@
           "name": "eBay",
           "price": "105,72 €",
           "link": "https://www.ebay.de/itm/287699900057?_skw=Verbatim+USB-C+Pro+Docking+Station+15+Port&hash=item42fc401699%3Ag%3AsccAAOSwZE5mFGex&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "thermaltake-view-290-white": {
+      "id": "thermaltake-view-290-white",
+      "name": "Thermaltake View 290 White",
+      "brand": "Thermaltake",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/9_6_85d0.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "70,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41743302286&a=3110253&m=11348"
         }
       ]
     },
@@ -10309,6 +10814,25 @@
         }
       ]
     },
+    "hp-wiederaufladbarer-slim-pen-eingabestift": {
+      "id": "hp-wiederaufladbarer-slim-pen-eingabestift",
+      "name": "HP Wiederaufladbarer Slim Pen Eingabestift",
+      "brand": "HP",
+      "kategorie": "grafiktabletts",
+      "image": "https://media2.nbb-cdn.de/images/products/630W7AA-AC3nr1_185d.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "39,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37541019371&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "52,99 €",
+          "link": "https://www.ebay.de/itm/157648445627?_skw=HP+Wiederaufladbarer+Slim+Pen+Eingabestift&hash=item24b49460bb%3Ag%3AkDcAAeSwGjBpfQ4D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "fractal-design-scape-dark": {
       "id": "fractal-design-scape-dark",
       "name": "Fractal Design Scape Dark",
@@ -10718,6 +11242,25 @@
         }
       ]
     },
+    "fractal-design-north-xl-momentum-edition": {
+      "id": "fractal-design-north-xl-momentum-edition",
+      "name": "Fractal Design North XL Momentum Edition",
+      "brand": "Fractal",
+      "kategorie": "gehaeuse",
+      "image": "https://media2.nbb-cdn.de/images/products/01_North-XL-Momentum-Edition_Left-Front_d32f.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "119,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=43889752961&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "217,94 €",
+          "link": "https://www.ebay.de/itm/168299043558?_skw=Fractal+Design+North+XL+Momentum+Edition&hash=item272f679ae6%3Ag%3AHToAAeSwaRZqenbO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "amazon-echo-show-21-wir-stellen-vor-amazon": {
       "id": "amazon-echo-show-21-wir-stellen-vor-amazon",
       "name": "Amazon Echo Show 21 Wir stellen vor: Amazon",
@@ -10748,6 +11291,25 @@
           "name": "eBay",
           "price": "37,01 €",
           "link": "https://www.ebay.de/itm/287316798980?_skw=Homey+Ethernet+Adapter+f%C3%BCr+Homey+Pro&hash=item42e56a6e04%3Ag%3AKe4AAOSwUt1oUJG5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "hp-65w-gan-usb-c-schnellladegeraet": {
+      "id": "hp-65w-gan-usb-c-schnellladegeraet",
+      "name": "HP 65W GaN USB-C Schnellladegerät",
+      "brand": "HP",
+      "kategorie": "laptop-netzteile",
+      "image": "https://media2.nbb-cdn.de/images/products/Kinopio_BPS_HP_65W_GaN_Wall_Charger_1_German_de_DE_7802154.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "21,99 €",
+          "link": "https://www.ebay.de/itm/168867586267?_skw=HP+65W+GaN+USB-C+Schnellladeger%C3%A4t&hash=item27514ae0db%3Ag%3A710AAeSwJUVq-6EC&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kqQIYKbB9b1%2BV76s5RT7eOTnnCnENAcnHlqz3eLAqqXheMCb5QD890lBzjDuXm81IUpJ7roD57OTNfh0ZDoyZ9cp2Xmw1ZslwoQJrqarp05h%2BAYOiUHd2eb%2FyhqlWIcwwFsIRgndZF9kJUXEhPbGnA9XJUDpbXgrzjoOpaCPmQwZUde3WbvXXyAbCOizeeu2mAqPx6T6Qm5MNTisIQYK1EHuJ87Fu9UDIVlmEl7IM6vy%2FnPuqg4u%2FyDoZbOnkw0zYbk0V7hZ5NqbrYGWMWbjMfPahGhPbn%2Fge656gA9vhR%2BxUktEzXm4FtgurdxDmVF%2Bs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "24,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=45284207238&a=3110253&m=11348"
         }
       ]
     },
@@ -10991,6 +11553,25 @@
         }
       ]
     },
+    "hp-325-fhd": {
+      "id": "hp-325-fhd",
+      "name": "HP 325 FHD",
+      "brand": "HP",
+      "kategorie": "webcams",
+      "image": "https://media2.nbb-cdn.de/images/products/2768240-l0_2cdb.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "24,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=37541019408&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "35,75 €",
+          "link": "https://www.ebay.de/itm/267327215608?_skw=HP+325+FHD&hash=item3e3df197f8%3Ag%3AaEsAAeSwRqNod5KK&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "asus-zenscreen-mb17ahg-mobiler": {
       "id": "asus-zenscreen-mb17ahg-mobiler",
       "name": "ASUS ZenScreen MB17AHG Mobiler",
@@ -11073,6 +11654,25 @@
           "name": "eBay",
           "price": "150,00 €",
           "link": "https://www.ebay.de/itm/128065703674?_skw=Intel+Core+Ultra+5+245KF&hash=item1dd14f8efa%3Ag%3A9OQAAeSw4VRqgHhQ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    "dell-pro-smart-dock": {
+      "id": "dell-pro-smart-dock",
+      "name": "Dell Pro Smart Dock",
+      "brand": "Dell",
+      "kategorie": "dockingstations",
+      "image": "https://media2.nbb-cdn.de/images/products/dock-station-sd25-black-gallery-1_0dab.avif?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "119,99 €",
+          "link": "https://www.ebay.de/itm/298590543395?_skw=Dell+Pro+Smart+Dock&hash=item4585621e23%3Ag%3Ai5IAAeSwp49qgIf9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "149,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=42388365259&a=3110253&m=11348"
         }
       ]
     },
@@ -11671,6 +12271,20 @@
         }
       ]
     },
+    "acer-spatiallabs-eyes-3d": {
+      "id": "acer-spatiallabs-eyes-3d",
+      "name": "Acer SpatialLabs Eyes 3D",
+      "brand": "Acer",
+      "kategorie": "webcams",
+      "image": "https://media2.nbb-cdn.de/images/products/acer-spatiallabs-eyes-01-1_ff.r2baa.001_146f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "440,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=41556563978&a=3110253&m=11348"
+        }
+      ]
+    },
     "aoc-24g50f": {
       "id": "aoc-24g50f",
       "name": "AOC 24G50F",
@@ -11701,20 +12315,6 @@
           "name": "eBay",
           "price": "410,05 €",
           "link": "https://www.ebay.de/itm/327270886893?_skw=SanDisk+Optimus+GX+PRO+8100&hash=item4c32dd6ded%3Ag%3ABzAAAeSwtChqveth&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mivdwbiO7M128AXSA4G3NtDQcd1D3Iw6dsWys20aWja%2BPJvhsqQru16cJsBYkXrRLzVwvFiXN6tEZU1Rweh%2FFy4FtrOKPXp7uzk15KT6%2FxAug3Z%2Brlc829PmRP6Tl892XQxe4LcP0kM9Zh94kXVgGk1jmmhh%2FwyC4Zy4PWWzxjYhLvncc%2F9t2hsTyCJ72mA7NlF9m%2BVpnCFFUTsCRcq02XVWo1lrLnX6n66rx9eeMxJeDM4mCcP534Dsq6%2FLmV0hsJwT5Sl6fPy2N%2B%2Fb5MVnQMnHyibSMqRkiASV8VVY2uaWCYUatkLxS1BqeRA%2Fxg4nU%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "lenovo-thinkvision-e27q-40-business": {
-      "id": "lenovo-thinkvision-e27q-40-business",
-      "name": "Lenovo ThinkVision E27Q-40 Business",
-      "brand": "Lenovo",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/LenovoThinkVisionE27Q-40-01_6513.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "169,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45505724262&a=3110253&m=11348"
         }
       ]
     },
@@ -11925,6 +12525,25 @@
         }
       ]
     },
+    "samsung-galaxy-galaxy-book6-ultra": {
+      "id": "samsung-galaxy-galaxy-book6-ultra",
+      "name": "Samsung Galaxy Galaxy Book6 Ultra",
+      "brand": "Samsung",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/SEG_Galaxy_Book6_Ultra_NP960UJH_intel_Core_Ultra7_Gray_Front_offen_RGB_a8be.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "657,69 €",
+          "link": "https://www.ebay.de/itm/189013718004?_skw=Samsung+Galaxy+Galaxy+Book6+Ultra&hash=item2c021873f4%3Ag%3AUb8AAeSw4LxqvA19&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "2969,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44069474210&a=3110253&m=11348"
+        }
+      ]
+    },
     "asus-tuf-gaming-x870-plus-wifi": {
       "id": "asus-tuf-gaming-x870-plus-wifi",
       "name": "ASUS TUF GAMING X870-PLUS WIFI",
@@ -12040,6 +12659,20 @@
           "name": "notebooksbilliger.de",
           "price": "319,00 €",
           "link": "https://www.awin1.com/pclick.php?p=40082850829&a=3110253&m=11348"
+        }
+      ]
+    },
+    "reolink-p320-ip": {
+      "id": "reolink-p320-ip",
+      "name": "Reolink P320 IP",
+      "brand": "Reolink",
+      "kategorie": "outdoor-kameras",
+      "image": "https://media2.nbb-cdn.de/images/products/Reolink-P320-Hero.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "52,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=45673309530&a=3110253&m=11348"
         }
       ]
     },
@@ -12312,6 +12945,25 @@
         }
       ]
     },
+    "philips-27e2n1100l-00": {
+      "id": "philips-27e2n1100l-00",
+      "name": "Philips 27E2N1100L/00",
+      "brand": "Philips",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/e24579bbca8344ed9725b17900fc68a7_0e0a.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "69,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41926064695&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "114,94 €",
+          "link": "https://www.ebay.de/itm/267310573159?_skw=Philips+27E2N1100L%2F00&hash=item3e3cf3a667%3Ag%3AzuwAAeSwtd9oZS9Q&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "xerox-c240-farbdrucker": {
       "id": "xerox-c240-farbdrucker",
       "name": "Xerox C240 Farbdrucker",
@@ -12415,8 +13067,8 @@
         },
         {
           "name": "eBay",
-          "price": "17,99 €",
-          "link": "https://www.ebay.de/itm/377626949012?_skw=HP+kabellose&hash=item57ec51f594%3Ag%3AiuUAAeSwX-1q7iWf&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "18,80 €",
+          "link": "https://www.ebay.de/itm/204003437060?_skw=HP+kabellose&hash=item2f7f8d6a04%3Ag%3Ay%7EYAAeSwtkVq21qV&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -12502,25 +13154,6 @@
           "name": "eBay",
           "price": "113,85 €",
           "link": "https://www.ebay.de/itm/206699805402?_skw=GigaByte+UD1000GM+PG5+V2+ICE&hash=item302044bada%3Ag%3ApQMAAeSwS%7ENq9-PK&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "gigabyte-ud750gm-pg5-v2-ice": {
-      "id": "gigabyte-ud750gm-pg5-v2-ice",
-      "name": "GigaByte UD750GM PG5 V2 ICE",
-      "brand": "GigaByte",
-      "kategorie": "netzteile",
-      "image": "https://media2.nbb-cdn.de/images/products/UD750GM_PG5_V2_ICE-04_eb3e.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "81,53 €",
-          "link": "https://www.awin1.com/pclick.php?p=43007807593&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "89,85 €",
-          "link": "https://www.ebay.de/itm/198801896064?_skw=GigaByte+UD750GM+PG5+V2+ICE&hash=item2e49843280%3Ag%3ANwcAAeSwSNhq%7EBny&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -12689,25 +13322,6 @@
         }
       ]
     },
-    "arctic-mx-6-8g": {
-      "id": "arctic-mx-6-8g",
-      "name": "Arctic MX-6 8g",
-      "brand": "Arctic",
-      "kategorie": "cpu-kuehler",
-      "image": "https://media2.nbb-cdn.de/images/products/MX-6_8g_G00_66b9.jpeg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "8,91 €",
-          "link": "https://www.awin1.com/pclick.php?p=41018520106&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "15,99 €",
-          "link": "https://www.ebay.de/itm/327324127231?_skw=Arctic+MX-6+8g&hash=item4c3609cfff%3Ag%3AlekAAeSwl01qjFa-&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "deepcool-cg380-3f": {
       "id": "deepcool-cg380-3f",
       "name": "DeepCool CG380 3F",
@@ -12737,7 +13351,7 @@
         {
           "name": "eBay",
           "price": "1006,99 €",
-          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHwyj3oLwx9qrNX%2Byl74E6DmiphMhdZAnWlFTbyutv3AG%2FQWc6nZIW9SffkXxEsFrHLB8bvthSEEchDurQDF7cMWdHamlI5O7puB%2BPJczMK0%2FGBgVPrFX4G1uT4BpafpYVWk%2FPEuGjx9mxh4n68p%2FwS3Fcw3U5egbolxkrBO%2FTUSKg%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "link": "https://www.ebay.de/itm/900110955202?_skw=Narwal+Freo+20&hash=itemd192cb32c2%3Ag%3AgWYAAeSwnnxrAjqK&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lT%2FfjIB9mskpB%2FfK64GfBwYMn3YoQxRJZsZiUWg4SeQ%2F3mFGU45%2BDKuPUF6Dmpg4EXHV2AS%2FWMgca67XsLLAVcKjnuNKkPtmXgX0f2%2FeNwBIl1GjK%2Bx3eSZCcpYD5nVHzbBn0iMSDbgg4gXlUFkAZFsYTdlfPUnMmt4oIfOOgOUONjhKrgYL2ioNLmBtz8Vrf2BItCpgXIrjDbocnivZIvIVr7P7Lr2Kp9j7qX5yARqTV2pwvIrpSenKu0ifJXYN4JNzL0K%2F57BkWJ1VhV5w8CuwZbN405VdzQrHdnOeVZpw%3D%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -12757,25 +13371,6 @@
           "name": "eBay",
           "price": "67,99 €",
           "link": "https://www.ebay.de/itm/176628093387?_skw=Razer+Huntsman+V2&hash=item291fdad1cb%3Ag%3AcDoAAOSwKbRnDPuw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "asus-rog-swift-oled-pg27ucdm": {
-      "id": "asus-rog-swift-oled-pg27ucdm",
-      "name": "ASUS ROG Swift OLED PG27UCDM",
-      "brand": "ASUS",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ROGSwiftPG27UC-01_9659.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "749,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=41576868348&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "799,10 €",
-          "link": "https://www.ebay.de/itm/820380105835?_skw=ASUS+ROG+Swift+OLED+PG27UCDM&hash=itembf0276fc6b%3Ag%3AiioAAeSw%7EWZrAXYi&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -13218,7 +13813,7 @@
         },
         {
           "name": "eBay",
-          "price": "699,00 €",
+          "price": "679,00 €",
           "link": "https://www.ebay.de/itm/800532036942?_skw=Anthbot+M9&hash=itemba636d7d4e%3Ag%3AQtQAAeSwhVlqgrOC&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -14416,25 +15011,6 @@
         }
       ]
     },
-    "netgear-gs105ge-unmanaged-switch-5x-gigabit-ethernet": {
-      "id": "netgear-gs105ge-unmanaged-switch-5x-gigabit-ethernet",
-      "name": "Netgear GS105GE Unmanaged Switch [5x Gigabit Ethernet]",
-      "brand": "Netgear",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/NETGEAR-GS105GE-Hero_8307.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "18,35 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253807581&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "22,40 €",
-          "link": "https://www.ebay.de/itm/880057111507?_skw=Netgear+GS105GE+Unmanaged+Switch+%5B5x+Gigabit+Ethernet%5D&hash=itemcce77dd3d3%3Ag%3AeEsAAeSwHUxp9JSg&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "zyxel-gs1200-8v3-smart-managed-switch-8x-gigabit-ethernet": {
       "id": "zyxel-gs1200-8v3-smart-managed-switch-8x-gigabit-ethernet",
       "name": "Zyxel GS1200-8v3 Smart Managed Switch 8x Gigabit Ethernet",
@@ -14553,6 +15129,25 @@
         }
       ]
     },
+    "macbook-pro": {
+      "id": "macbook-pro",
+      "name": "MacBook Pro",
+      "brand": "MacBook",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/1129826/MacBook_Pro_14-in_Space_Black_Pure_Front_Print__USEN.png?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "1199,00 €",
+          "link": "https://www.ebay.de/itm/960162547762?_skw=MacBook+Pro&hash=itemdf8e25c832%3Ag%3Ato4AAeSwa0dq-Fq9&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1999,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46480461239&a=3110253&m=11348"
+        }
+      ]
+    },
     "optoma-hz137x-full-hd-laser-beamer-mit-3-000-iso": {
       "id": "optoma-hz137x-full-hd-laser-beamer-mit-3-000-iso",
       "name": "Optoma HZ137X Full HD Laser-Beamer mit 3.000 ISO",
@@ -14564,6 +15159,20 @@
           "name": "notebooksbilliger.de",
           "price": "603,97 €",
           "link": "https://www.awin1.com/pclick.php?p=46387414214&a=3110253&m=11348"
+        }
+      ]
+    },
+    "apple-watch-se-3-40mm-mitternacht-aluminium-case": {
+      "id": "apple-watch-se-3-40mm-mitternacht-aluminium-case",
+      "name": "Apple Watch SE 3 40mm Mitternacht Aluminium Case",
+      "brand": "Apple",
+      "kategorie": "wearables",
+      "image": "https://media2.nbb-cdn.de/images/products/Apple_Watch_SE_3_40mm_GPS_Midnight_Aluminum_Sport_Band_Navy_Blue-side.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "219,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46030420595&a=3110253&m=11348"
         }
       ]
     },
@@ -14661,17 +15270,31 @@
         }
       ]
     },
-    "lg-34u650a-b-ultra-wide": {
-      "id": "lg-34u650a-b-ultra-wide",
-      "name": "LG 34U650A-B Ultra Wide",
-      "brand": "LG",
+    "lenovo-thinkvision-e27q-40-business": {
+      "id": "lenovo-thinkvision-e27q-40-business",
+      "name": "Lenovo ThinkVision E27Q-40 Business",
+      "brand": "Lenovo",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/thum-1600x1062_8802.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/LenovoThinkVisionE27Q-40-01_6513.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "329,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=43692259850&a=3110253&m=11348"
+          "price": "159,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45505724262&a=3110253&m=11348"
+        }
+      ]
+    },
+    "lenovo-thinkvision-m15-mobiler": {
+      "id": "lenovo-thinkvision-m15-mobiler",
+      "name": "Lenovo ThinkVision M15 Mobiler",
+      "brand": "Lenovo",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/02_Thinkvision_M15_9_8059.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "179,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=35774810919&a=3110253&m=11348"
         }
       ]
     },
@@ -15580,41 +16203,22 @@
         }
       ]
     },
-    "apple-watch-series-12-cellular-46mm": {
-      "id": "apple-watch-series-12-cellular-46mm",
-      "name": "Apple Watch Series 12 Cellular 46mm",
+    "apple-watch-series-12-42mm": {
+      "id": "apple-watch-series-12-42mm",
+      "name": "Apple Watch Series 12 42mm",
       "brand": "Apple",
       "kategorie": "wearables",
-      "image": "https://media2.nbb-cdn.de/images/products/Apple_Watch_Series_12_46mm_Black_Aluminum_Black_Sport_Band_Pure_Front_Print__WWEN_1.png?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Apple_Watch_Series_12_42mm_Light_Gold_Aluminum_Sand_Sport_Band_Pure_Front_Print__WWEN.png?size=400",
       "shops": [
         {
-          "name": "notebooksbilliger.de",
-          "price": "569,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45953906184&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "394,90 €",
+          "link": "https://www.ebay.de/itm/227605709852?_skw=Apple+Watch+Series+12+42mm&hash=item34fe5b841c%3Ag%3AqIkAAeSwFdJq8cKb&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
-          "name": "eBay",
-          "price": "625,19 €",
-          "link": "https://www.ebay.de/itm/860032420442?_skw=Apple+Watch+Series+12+Cellular+46mm&hash=itemc83ded4a5a%3Ag%3AghkAAeSwT0Jqy1BE&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    "apple-imac-m6-blau-mh094d-a": {
-      "id": "apple-imac-m6-blau-mh094d-a",
-      "name": "Apple iMac M6 blau MH094D/A",
-      "brand": "Apple",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/1129829/iMac_24-in_Blue_Pure_Front_Magic_Keyboard_Touch_ID_Magic_Mouse_Print__USEN.png?size=400",
-      "shops": [
-        {
           "name": "notebooksbilliger.de",
-          "price": "1699,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46480461242&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "1918,77 €",
-          "link": "https://www.ebay.de/itm/940086378006?_skw=Apple+iMac+M6+blau+MH094D%2FA&hash=itemdae183be16%3Ag%3Aqa8AAeSwZsdq9go1&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "399,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45953906162&a=3110253&m=11348"
         }
       ]
     },
@@ -15632,25 +16236,6 @@
         }
       ]
     },
-    "apple-imac-m6-gruen-mh084d-a": {
-      "id": "apple-imac-m6-gruen-mh084d-a",
-      "name": "Apple iMac M6 grün MH084D/A",
-      "brand": "Apple",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/1129828/iMac_24-in_Green_Pure_Front_Magic_Keyboard_Touch_ID_Magic_Mouse_Print__USEN.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1699,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46480461241&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "1918,77 €",
-          "link": "https://www.ebay.de/itm/940086377917?_skw=Apple+iMac+M6+gr%C3%BCn+MH084D%2FA&hash=itemdae183bdbd%3Ag%3A9pAAAeSw9GBq9gox&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
     "apple-imac-m6-gruen-mh1g4d-a-m6-chip": {
       "id": "apple-imac-m6-gruen-mh1g4d-a-m6-chip",
       "name": "Apple iMac M6 grün MH1G4D/A M6 Chip",
@@ -15662,25 +16247,6 @@
           "name": "notebooksbilliger.de",
           "price": "2299,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46480461257&a=3110253&m=11348"
-        }
-      ]
-    },
-    "apple-imac-m6-pink-mh0a4d-a": {
-      "id": "apple-imac-m6-pink-mh0a4d-a",
-      "name": "Apple iMac M6 pink MH0A4D/A",
-      "brand": "Apple",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/1129831/iMac_24-in_Pink_Pure_Front_Magic_Keyboard_Touch_ID_Magic_Mouse_Print__USEN.png?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1699,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=46480461244&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "2425,00 €",
-          "link": "https://www.ebay.de/itm/820338299219?_skw=Apple+iMac+M6+pink+MH0A4D%2FA&hash=itembefff91153%3Ag%3AHVMAAeSw9gtq8wT1&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kWHvdLSciu4W1IeSU603OMQA9leuqVOOMLN5Xb8MeXm1fZWzCkTdxYiXepUjfuGXbTN1EbkTDvRAlNua5PS8N6iNw7FN27y8YDwxSniGUIAbjCUtoeJs7rqYnQjaz9jTonvFTDVXhsMI1pak%2FBghx28c%2BZsRsMWEsymRgOTSQQ3qPnB%2BEaxwgZQIqD2gZBVBTCHxjSsou%2BENtD1jUZZFQjAQWGv0y8ToIzP7iesEIy1T8sit8PHAd%2FxMX6OgVvUFrSVIg%2Bn2anDxf2zmi5q%2BfR3XzNbx5%2FndM%2B0Cs%2FGGuPc3JSkSHrvjMDUTNJFKtadOs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -15844,8 +16410,8 @@
       "shops": [
         {
           "name": "eBay",
-          "price": "1806,69 €",
-          "link": "https://www.ebay.de/itm/900107102796?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemd192906a4c%3Ag%3AGvMAAeSwCaprAEgn&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kEcnxQRpBsieHpIc6PziL5W8Rp9lhF5JUX99BjYDfZSQDdLKGGeY%2BHTrgnQ%2BDXQ6Abp8mb6VMxJS4lsJV3j%2FyqE0FqKWbM2OzKqvpoln0c0AvmzD3b0pDODvYCOVkWCCFs9DXlBEt0dMKQ2ja2y8YsH%2FsWlC%2BcKchWVtdAFy57WjjZWO91tLqaLT3oiPSg9YNSF1fVEZTWNQp0g6ebkh2XiNmx3FXvgm5gfET5xmziuN1qjXWGCGkx3BjtLB3vdlMwwim5Us6xS%2BHhcqR%2Bogtos7xJkOuVr7IFov6iNz9qbR99wWGk0W6hMIZbG8kc1%2F0d4QGknx0DcikpOPm3Fbh%2F&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "1889,00 €",
+          "link": "https://www.ebay.de/itm/960219514274?_skw=Nvidia+GeForce+RTX+5080+%28Inspire+3X+OC+Black%29&hash=itemdf918b05a2%3Ag%3AgXUAAeSwAI1q%7E-C9&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kKC8NZYCUITBW%2FIELkA%2FbrGSQdz8rg6O4OpA2fcKKNCH3Sc4%2FW%2FIevyCjeD1j0PLQiSXVUbNCrUF1avIq5RbXHRv1s9kpl5M7aWKLdkYPyCRViZJct9YoxIbXHMfr0EC5zXAFnQS8qTu8bAn20fOw96qGJGvOsB5M46b5%2FiC59WbcS2tfus49--MVI1JK88aCvkjixuyqA0dUk%2Fff5IZVJKXKdza9WPJuFMjrvI6pgw7tWvkbuV9dw3P8HkaC%2FGOd8xhfn6OzgNxhk2p8X9FoaLoPaqi%2BjJBJQBOLSZ9sbhZr8ZdiorZO2UWRA829uHPlujmOuDDPJQU2rquv25GnI&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         },
         {
           "name": "notebooksbilliger.de",
@@ -15868,7 +16434,7 @@
         },
         {
           "name": "eBay",
-          "price": "459,27 €",
+          "price": "459,32 €",
           "link": "https://www.ebay.de/itm/157749700471?_skw=AMD+Ryzen+7+9850X3D&hash=item24ba9d6777%3Ag%3A6h8AAeSwuvdqemlW&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
@@ -15996,6 +16562,25 @@
         }
       ]
     },
+    "lg-27g440a-b-aeu": {
+      "id": "lg-27g440a-b-aeu",
+      "name": "LG 27G440A-B.AEU",
+      "brand": "LG",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/thum-1600x1062_7_bbde.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "139,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=44975549765&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "224,00 €",
+          "link": "https://www.ebay.de/itm/227541267357?_skw=LG+27G440A-B.AEU&hash=item34fa84339d%3Ag%3AuHQAAeSwaeVq0mE8&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "msi-pro-mp341cqde-office": {
       "id": "msi-pro-mp341cqde-office",
       "name": "MSI PRO MP341CQ Office",
@@ -16007,6 +16592,25 @@
           "name": "notebooksbilliger.de",
           "price": "179,00 €",
           "link": "https://www.awin1.com/pclick.php?p=38068288552&a=3110253&m=11348"
+        }
+      ]
+    },
+    "samsung-odyssey-g40h-ls27hg402euxen": {
+      "id": "samsung-odyssey-g40h-ls27hg402euxen",
+      "name": "Samsung Odyssey G40H LS27HG402EUXEN",
+      "brand": "Samsung",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/de-odyssey-g4-g40h-ls27hg402euxen-550905450_440f.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "153,26 €",
+          "link": "https://www.awin1.com/pclick.php?p=44803320228&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "168,94 €",
+          "link": "https://www.ebay.de/itm/198645271971?_skw=Samsung+Odyssey+G40H+LS27HG402EUXEN&hash=item2e402e4da3%3Ag%3Ab%7EEAAeSwX7Nq%7E2qO&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -16125,25 +16729,6 @@
           "name": "notebooksbilliger.de",
           "price": "1267,91 €",
           "link": "https://www.awin1.com/pclick.php?p=44909202026&a=3110253&m=11348"
-        }
-      ]
-    },
-    "hp-elite-805-g9-sff-9n7e7at-ryzen-7": {
-      "id": "hp-elite-805-g9-sff-9n7e7at-ryzen-7",
-      "name": "HP Elite 805 G9 SFF 9N7E7AT [Ryzen 7",
-      "brand": "HP",
-      "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/HP_EliteDesk_805_G9_SFF_01_b482.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "1102,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=40860073600&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "1315,00 €",
-          "link": "https://www.ebay.de/itm/298659834597?_skw=HP+Elite+805+G9+SFF+9N7E7AT+%5BRyzen+7&hash=item4589836ae5%3Ag%3AyicAAeSwF49q05wW&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lkGrM6j4bTcZZ8jbcs84UyWQA8O7Sn2rFxqO8y3OMCg8X3NJExWNOdPL7vHJpjD1MOMSPDdA34UqrbVli6Jr%2B%2B%2FrbzGZ%2F6MQXHVH4TSIyfjw897yLY%2Ff7YeDvBUtXsKlZOcyLYor1%2F3hAkGm9STagzmegf%2BX0Iz%2FxuvClATiwjEKrM5SLvzEGnSwEn9rSAwlR5k4t8rLQS%2FhOAqJEKcbam7jQTcqBwWxhMAk%2FZpbACD9I5G8oQMZhHyMZ5rwK%2BFFJZuPaqOn9rbBEQ07GoY2dFWmKlopO5KFJwkKgOTFXNrHRUV3RNG2jRIvKsUlXLiX4%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
@@ -16786,7 +17371,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1899,00 €",
+          "price": "1799,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46480461246&a=3110253&m=11348"
         },
         {
@@ -16843,7 +17428,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1899,00 €",
+          "price": "1799,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46480461248&a=3110253&m=11348"
         }
       ]
@@ -16871,7 +17456,7 @@
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1899,00 €",
+          "price": "1799,00 €",
           "link": "https://www.awin1.com/pclick.php?p=46480461245&a=3110253&m=11348"
         },
         {
@@ -16942,6 +17527,25 @@
         }
       ]
     },
+    "apple-imac-m6-gruen-mh1d4d-a": {
+      "id": "apple-imac-m6-gruen-mh1d4d-a",
+      "name": "Apple iMac M6 grün MH1D4D/A",
+      "brand": "Apple",
+      "kategorie": "fertig-pcs",
+      "image": "https://media2.nbb-cdn.de/images/products/1129828/iMac_24-in_Green_Pure_Front_Magic_Keyboard_Touch_ID_Magic_Mouse_Print__USEN.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "1799,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=46655737478&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "2691,00 €",
+          "link": "https://www.ebay.de/itm/820338299223?_skw=Apple+iMac+M6+gr%C3%BCn+MH1D4D%2FA&hash=itembefff91157%3Ag%3A-%7EoAAeSwvr1q8wTx&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
     "captiva-workstation-i83-401-intel-core-i7-14700": {
       "id": "captiva-workstation-i83-401-intel-core-i7-14700",
       "name": "Captiva Workstation I83-401 Intel Core i7-14700",
@@ -16959,210 +17563,200 @@
   },
   "beliebt": [
     {
-      "id": "samsung-screen-protector-fuer-galaxy-a57",
-      "name": "Samsung Screen Protector für Galaxy A57",
-      "brand": "Samsung",
-      "kategorie": "telefon-schutz",
-      "image": "https://media2.nbb-cdn.de/images/products/89c2243f-d72f-4018-ae37-4d7d8237d3b2_screenGr_b140.jpg?size=400",
+      "id": "synology-rackstation-rs6426xs-plus-nas-16-bay-intel-celeron-",
+      "name": "Synology RackStation RS6426xs+ NAS 16-Bay Intel Celeron D-1739",
+      "brand": "Synology",
+      "kategorie": "nas",
+      "image": "https://media2.nbb-cdn.de/images/products/Synology-RS6426--Front-Uncover.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "11,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=44695717239&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "13,90 €",
-          "link": "https://www.ebay.de/itm/840026188737?_skw=Samsung+Screen+Protector+f%C3%BCr+Galaxy+A57&hash=itemc395766bc1%3Ag%3AkQ0AAeSwojpq0cU6&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "7190,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45198720333&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "canon-cli-36-twin-pack",
-      "name": "Canon \"CLI-36 Twin Pack\"",
-      "brand": "Canon",
-      "kategorie": "druckerzubehoer",
-      "image": "https://media2.nbb-cdn.de/images/products/27409531_2_f9ed.jpg?size=400",
-      "shops": [
-        {
-          "name": "eBay",
-          "price": "27,39 €",
-          "link": "https://www.ebay.de/itm/406626797385?_skw=Canon+%22CLI-36+Twin+Pack%22&hash=item5eacd88749%3Ag%3ASboAAeSwSs1q9W7T&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kXGD0Jut0VRWITvW2ziitz2jJgrMnSJTVV2b19no4t4HqboUWCs8ljU32oGUGIxjvTskgD6AkALZIUVjOhNTqRg6y76ncj9a3sRbUxwGkVmy%2F1Z%2BMuFbMOgGAmaG%2BoZdmZqC1ZY%2BxKQU2ouksApXr3A1dMgVQFa0HTTtLu92zK0IRrrIAR6A0FVaOCUL664zJCtyEsU5feZNMtfOVKQ3X1eNA%2B6uSF%2BK1tkHvCfqTH0VV7zF50jJVLZVFaO6z812rPExnGZUhkgxh%2FXTkD65SHdFNmGemWultk5Wa%2BFJYZ9OJdB99kYZm1tmiGH2dqOUs%3D&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
-          "name": "notebooksbilliger.de",
-          "price": "35,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=42096805753&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "icy-box-usb-type-c-zu-hdmi-kabel",
-      "name": "ICY BOX USB Type-C zu HDMI Kabel",
-      "brand": "ICY",
+      "id": "intenso-usb-kabel-a60c-nylon-2m-schwarz",
+      "name": "Intenso USB-Kabel A60C Nylon 2m schwarz",
+      "brand": "Intenso",
       "kategorie": "computer-setup-kabel",
-      "image": "https://media2.nbb-cdn.de/images/products/IB-CB020-C_pic1_b3db.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/1130513/7900700_Main.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "21,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=41214502752&a=3110253&m=11348"
+          "price": "8,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=46743268278&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "22,39 €",
-          "link": "https://www.ebay.de/itm/147627202364?_skw=ICY+BOX+USB+Type-C+zu+HDMI+Kabel&hash=item225f44573c%3Ag%3A-8sAAeSwjflqyIvT&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "18,15 €",
+          "link": "https://www.ebay.de/itm/940065369853?_skw=Intenso+USB-Kabel+A60C+Nylon+2m+schwarz&hash=itemdae0432efd%3Ag%3AjqcAAeSw5qRq6%7EiR&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "acer-predator-z",
-      "name": "Acer Predator Z",
-      "brand": "Acer",
+      "id": "homey-ethernet-adapter-fuer-homey-pro",
+      "name": "Homey Ethernet Adapter für Homey Pro",
+      "brand": "Homey",
+      "kategorie": "heimautomatisierung",
+      "image": "https://media2.nbb-cdn.de/images/products/front-ethernet-adapter01_7998.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "25,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44481769008&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "37,01 €",
+          "link": "https://www.ebay.de/itm/287316798980?_skw=Homey+Ethernet+Adapter+f%C3%BCr+Homey+Pro&hash=item42e56a6e04%3Ag%3AKe4AAOSwUt1oUJG5&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "aoc-q32e4u-office",
+      "name": "AOC Q32E4U Office",
+      "brand": "AOC",
       "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/1067824/UM-NZ7EE-001-1.webp?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/Q32E4U_F_KV-big_e766.png?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "797,00 €",
-          "link": "https://www.ebay.de/itm/327135902524?_skw=Acer+Predator+Z&hash=item4c2ad1bb3c%3Ag%3AgtwAAeSwXudq0AmJ&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        },
-        {
           "name": "notebooksbilliger.de",
-          "price": "2099,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=45230075374&a=3110253&m=11348"
+          "price": "214,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=43481141730&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "asus-rog-strix-impact-iii",
-      "name": "ASUS ROG Strix Impact III",
-      "brand": "ASUS",
-      "kategorie": "maeuse",
-      "image": "https://media2.nbb-cdn.de/images/products/ImpactIII_6_f05d.png?size=400",
+      "id": "lenovo-thinkpad-p16-gen-2-i7",
+      "name": "Lenovo ThinkPad P16 Gen 2 i7",
+      "brand": "Lenovo",
+      "kategorie": "laptops",
+      "image": "https://media2.nbb-cdn.de/images/products/21FA005LDEMO_2_a930.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "24,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=40201467229&a=3110253&m=11348"
+          "price": "3563,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=44268050240&a=3110253&m=11348"
         },
         {
           "name": "eBay",
-          "price": "46,19 €",
-          "link": "https://www.ebay.de/itm/366363075602?_skw=ASUS+ROG+Strix+Impact+III&hash=item554cf0e412%3Ag%3AbpkAAeSwcSpp6RFq&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "price": "3899,89 €",
+          "link": "https://www.ebay.de/itm/840142568144?_skw=Lenovo+ThinkPad+P16+Gen+2+i7&hash=itemc39c663ad0%3Ag%3A-k0AAeSw0ulq%7EfRw&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "thinkvision-p49w-30-business",
-      "name": "ThinkVision P49w-30 Business",
-      "brand": "ThinkVision",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/4cf369322438b508b91f8a6e34cc9ab4_5fc0.jpg?size=400",
+      "id": "aqara-valve-controller-t1",
+      "name": "Aqara Valve Controller T1",
+      "brand": "Aqara",
+      "kategorie": "heimautomatisierung",
+      "image": "https://media2.nbb-cdn.de/images/products/01_87_b854.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "1804,99 €",
-          "link": "https://www.awin1.com/pclick.php?p=45238959184&a=3110253&m=11348"
+          "price": "55,34 €",
+          "link": "https://www.awin1.com/pclick.php?p=41887827407&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "captiva-pc-ki-workstation-i10-3008-intel-ultra-7",
-      "name": "Captiva PC KI Workstation I10-3008 Intel Ultra 7",
-      "brand": "Captiva",
+      "id": "lenovo-thinkstation-p3-tower-30ht006cge",
+      "name": "Lenovo ThinkStation P3 Tower 30HT006CGE",
+      "brand": "Lenovo",
       "kategorie": "fertig-pcs",
-      "image": "https://media2.nbb-cdn.de/images/products/13094362_0_fd53.jpg?size=400",
+      "image": "https://media2.nbb-cdn.de/images/products/P3_MT_Side1_NEW_9b65.png?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "4959,29 €",
-          "link": "https://www.awin1.com/pclick.php?p=45389489368&a=3110253&m=11348"
+          "price": "1899,99 €",
+          "link": "https://www.awin1.com/pclick.php?p=41854052246&a=3110253&m=11348"
         }
       ]
     },
     {
-      "id": "netgear-gs108tv3-smart-switch-8x-gigabit-ethernet",
-      "name": "Netgear GS108Tv3 Smart Switch [8x Gigabit Ethernet]",
-      "brand": "Netgear",
-      "kategorie": "switches",
-      "image": "https://media2.nbb-cdn.de/images/products/GS108T_Front_091f.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "82,43 €",
-          "link": "https://www.awin1.com/pclick.php?p=34253809775&a=3110253&m=11348"
-        }
-      ]
-    },
-    {
-      "id": "asus-rog-ryujin-iii-360-argb-extreme-white",
-      "name": "ASUS ROG Ryujin III 360 ARGB Extreme White",
-      "brand": "ASUS",
-      "kategorie": "wasserkuehlung",
-      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ROG-Ryujin-III-360-ARGB-01_5baf.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "273,96 €",
-          "link": "https://www.awin1.com/pclick.php?p=44720204446&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "288,81 €",
-          "link": "https://www.ebay.de/itm/298494245028?_skw=ASUS+ROG+Ryujin+III+360+ARGB+Extreme+White&hash=item457fa4b8a4%3Ag%3AT8wAAeSwFk9q-N89&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "philips-evnia-27m2c5200w",
-      "name": "Philips Evnia 27M2C5200W",
-      "brand": "Philips",
-      "kategorie": "bildschirme",
-      "image": "https://media2.nbb-cdn.de/images/products/178376bed4f24691873db014012bb83da_7154.jpg?size=400",
-      "shops": [
-        {
-          "name": "notebooksbilliger.de",
-          "price": "146,62 €",
-          "link": "https://www.awin1.com/pclick.php?p=42856174851&a=3110253&m=11348"
-        },
-        {
-          "name": "eBay",
-          "price": "161,07 €",
-          "link": "https://www.ebay.de/itm/307047935282?_skw=Philips+Evnia+27M2C5200W&hash=item477d7bad32%3Ag%3AKUQAAeSwpspq7FdB&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
-        }
-      ]
-    },
-    {
-      "id": "speicherplatten-samsung-990-evo-plus-1tb",
-      "name": "Samsung 990 EVO Plus 1TB",
+      "id": "samsung-s27cg554eu",
+      "name": "Samsung S27CG554EU",
       "brand": "Samsung",
-      "kategorie": "speicherplatten",
-      "image": "https://media2.nbb-cdn.de/images/products/Samsung-990-EVO-Plus-1TB-Front_1d18.jpg?size=400",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/de-odyssey-g5-g55c-487094-ls32cg554euxen-539198946_1_d2ef.jpg?size=400",
       "shops": [
         {
-          "name": "eBay",
-          "price": "166,99 €",
-          "link": "https://www.ebay.de/itm/137902392438?_skw=Samsung+990+EVO+Plus+1TB&hash=item201b9f8476%3Ag%3AkBAAAeSw38Nq62ob&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+          "name": "notebooksbilliger.de",
+          "price": "142,90 €",
+          "link": "https://www.awin1.com/pclick.php?p=41904164029&a=3110253&m=11348"
         },
         {
-          "name": "notebooksbilliger.de",
-          "price": "189,00 €",
-          "link": "https://www.awin1.com/pclick.php?p=38939288563&a=3110253&m=11348"
+          "name": "eBay",
+          "price": "145,39 €",
+          "link": "https://www.ebay.de/itm/135150133347?_skw=Samsung+S27CG554EU&hash=item1f77936063%3Ag%3AHFkAAeSwqdFq9LH3&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
         }
       ]
     },
     {
-      "id": "lian-li-uni-fan-cl120-wireless-reverse-blade",
-      "name": "Lian Li UNI FAN CL120 Wireless Reverse Blade",
-      "brand": "Lian",
-      "kategorie": "luefter",
-      "image": "https://media2.nbb-cdn.de/images/products/LULI-141_6c51c02fcb5790847c6482b2e5004113bf29f1f5_2a09.png?size=400",
+      "id": "zyxel-28-port-1-gibt-s-l3-managed-switch-with",
+      "name": "Zyxel 28-Port 1 Gibt/s L3 Managed Switch with",
+      "brand": "Zyxel",
+      "kategorie": "switches",
+      "image": "https://media2.nbb-cdn.de/images/products/zyxel/ZyXEL_XGS4600-32_01_daec.jpg?size=400",
       "shops": [
         {
           "name": "notebooksbilliger.de",
-          "price": "16,90 €",
-          "link": "https://www.awin1.com/pclick.php?p=44251271483&a=3110253&m=11348"
+          "price": "1999,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=45799811686&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "ram-kingston-fury-beast-32-gb-2x16-ddr5-6000-cl30",
+      "name": "Kingston Fury Beast 32 GB (2×16) DDR5-6000 CL30",
+      "brand": "Kingston",
+      "kategorie": "ram",
+      "image": "https://media2.nbb-cdn.de/images/products/Kingston_Fury-Beast-DDR5-K2_Front_1_ec02.jpg?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "699,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=40143750520&a=3110253&m=11348"
+        }
+      ]
+    },
+    {
+      "id": "asus-zenscreen-mb169ck-tragbarer-usb",
+      "name": "ASUS ZenScreen MB169CK tragbarer USB",
+      "brand": "ASUS",
+      "kategorie": "bildschirme",
+      "image": "https://media2.nbb-cdn.de/images/products/ASUS-ZenScreen-MB169CK-01_0458.png?size=400",
+      "shops": [
+        {
+          "name": "notebooksbilliger.de",
+          "price": "96,00 €",
+          "link": "https://www.awin1.com/pclick.php?p=44133771592&a=3110253&m=11348"
+        },
+        {
+          "name": "eBay",
+          "price": "104,90 €",
+          "link": "https://www.ebay.de/itm/198675711654?_skw=ASUS+ZenScreen+MB169CK+tragbarer+USB&hash=item2e41fec6a6%3Ag%3AlqYAAeSwE8lqu9ja&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        }
+      ]
+    },
+    {
+      "id": "asrock-h810m-h",
+      "name": "ASRock H810M-H",
+      "brand": "ASRock",
+      "kategorie": "mainboards",
+      "image": "https://media2.nbb-cdn.de/images/products/226c35e5728631e3-l_716c.webp?size=400",
+      "shops": [
+        {
+          "name": "eBay",
+          "price": "61,89 €",
+          "link": "https://www.ebay.de/itm/820372772316?_skw=ASRock+H810M-H&hash=itembf020715dc%3Ag%3ALqcAAeSwcIhq%7EwKm&mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5339218072&customid=&toolid=10049"
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "price": "66,79 €",
+          "link": "https://www.awin1.com/pclick.php?p=44284827739&a=3110253&m=11348"
         }
       ]
     }
